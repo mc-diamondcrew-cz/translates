@@ -1,0 +1,453 @@
+#
+# The following variables can be used in most messages that involve a punishment:
+#
+# Punishment specific variables
+# $id - The ID of the punishment in the database.
+# $type - Type of punishment - ban, mute, warn, kick.
+# $reason - the reason for the punishment
+# $executor - the moderator's name, or their display name (/nick) if this is enabled in the configuration
+# $executorUUID - the moderator's UUID
+# $permanent - whether this punishment is permanent
+# $ipban - whether this is an IP-ban
+# $silent - whether this punishment was executed silently (-s)
+# $active - whether this punishment is active
+#
+# Affected player specific variables
+# $playerDisplayName - player display name. If display names are not enabled in the configuration or if the player's display name is not available in the message's context, the player's regular name will be used instead.
+# $playerName - player name
+# $playerUUID - UUID of affected player
+# $playerIP - IP of affected player
+# $geoip - Country of affected player, requires GeoIP to be enabled in the configuration, won't work with imported bans
+#
+# Servers
+# These variables represent a server.
+# If the plugin is installed on Spigot, a server is represented by the "server_name" option in config.yml.
+# If the plugin is installed on BungeeCord, a server is represented by their name in the "servers" section in the proxy's config.yml.
+# $serverScope - the scope of the punishment (the server(s) it will affect)
+# $serverOrigin - the origin of the punishment (the server/subserver it was placed on)
+#
+# Dates
+# Example format: "2017-02-03", depends on time_format
+# $dateStart - date the punishment was placed
+# $dateEnd - date the punishment will expire, "forever" if permanent
+#
+# Durations
+# Example format: "20 days, 5 hours, 2 minutes". If permanent, "forever", if expired, "expired" (both are configurable).
+# $duration - time until expiry
+# $originalDuration - the full duration of the punishment.
+# $timeSince - time since placement
+#
+# Configured message variables
+# These variables represent messages in this configuration (messages.yml)
+# $base - banned_message_base
+# $appealMessage - banned_message_appeal_message
+#
+# Global variables
+# $activeBans, $activeMutes, $activeWarnings - total number of global active punishments
+# $totalBans, $totalMutes, $totalWarnings - total number of global punishments (including inactive ones)
+#
+# Vault-specific variables
+# $playerPrefix - Vault chat prefix of affected player
+# $playerSuffix - Vault chat suffix of affected player
+# $executorPrefix - Vault chat prefix of executor
+# $executorSuffix - Vault chat suffix of executor
+# Any message can be disabled by setting it to "". Empty messages will not be sent by the plugin.
+#
+# Hover text requires permission "litebans.json.hover_text" to view, players lacking permission will see messages without hover text.
+# JSON examples:
+# broadcast_ban: '&e$bannedPlayer &chas been banned. {hoverText: &aHover text here!}'
+#
+# https://docs.oracle.com/javase/tutorial/i18n/format/simpleDateFormat.html
+# Example time format with hours + minutes:
+# time_format: 'dd/MM/yyyy HH:mm'
+time_format: yyyy-MM-dd
+history_time_format: yyyy-MM-dd
+banned_message_base: |
+  &8&l&m---------------------------------------------
+  &r
+  &8$dateStart
+  &c&l|!| Váš účet byl zablokován |!|
+  &7Blokace udělena členem &e$executor&7, z důvodu
+  &f$reason
+  &r
+banned_message: |-
+  $base
+  &7Tato blokace vyprší
+  &7za: &e$duration
+  §r
+  $appealMessage
+  §r
+  §emc.diamondcrew.cz
+  §r
+  &8&l&m---------------------------------------------
+banned_message_permanent: |-
+  $base
+  &e&lTRVALÁ BLOKACE!
+  &r
+  $appealMessage
+  §r
+  &emc.diamondcrew.cz
+  &r
+  &8&l&m---------------------------------------------
+banned_message_appeal_message: |-
+  §7Možnosti zrušení blokace:
+  §fstore.diamondcrew.cz
+  §fmc.diamondcrew.cz/discord
+banned_message_geoip_blacklist: |-
+  §e§lEN:
+  §cYour location is blacklisted: $geoip
+  §r
+  §e§lCZ:
+  §cVaše lokace je zablokována: $geoip
+bungee_switch_banned: |-
+  $base
+  §7Seznam serverů:
+  §f$serverScope
+  §r
+  &emc.diamondcrew.cz
+  &r
+  &8&l&m---------------------------------------------
+default_ban_reason: Porušení pravidel
+default_mute_reason: ''
+permission_error: §aDiamondCrew §8» §7Nemáš dostatečné §6pravomoce§7!
+muted: §aDiamondCrew §8» §7Jsi §6umlčený§7! &8(&a$duration&8)
+muted_permanent: §aDiamondCrew §8» §7Jsi §6umlčený§7! &8(&aTrvale&8)
+notify:
+  banned_player_join: '&4&lAT &c$player se pokusil připojit, ale je zabanovaný ($duration)'
+  banned_geoip_blacklist: '&4&lAT &c$player se pokusil připojit, ale je na černé listině
+    ($geoip)'
+error_no_reason_provided: §aDiamondCrew §8» §7Musíš uvést §6důvod§7!
+error_no_sql_connection: §aDiamondCrew §8» §6LiteBans §7není připojeno k databázi!
+error_no_uuid_found: §aDiamondCrew §8» §6Hráč §7neexistuje!
+error_console_only: §aDiamondCrew §8» §7Tento §6příkaz §7může být použit pouze z §6konzole§7!
+internal_error: §aDiamondCrew §8» &cInternal Error
+duration_limit_error: §aDiamondCrew §8» §6Maximální §7povolená délka je §6$duration§7!
+warned_join: '&aDiamondCrew §8» §7Tvé nové §6varování§7:'
+warned_join_entry: |-
+  &7 - Varoval §6$executor&7: §6$reason
+     &8(&apřed $timeSince&8)
+command:
+  ban:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8[&a-s&8] &8<&ahráč&8> &8[&ačas&8]
+      &8[&adůvod&8]'
+    unban_usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8>'
+    example: '§aDiamondCrew §8» §7Ukázka: §6$command &aSkopy 7d Vzpoura'
+    silent_prefix: '&8[&aTiché&8] '
+    broadcast_ban: |-
+      &r
+      &e&lBLOKACE
+      &8» &e$executor &7zablokoval/a hráče/ku &e$bannedPlayer &7za &f$reason
+      &r
+    broadcast_tempban: |-
+      &r
+      &e&lBLOKACE
+      &8» &e$executor &7časově zablokoval/a hráče/ku &e$bannedPlayer §7na &f$tempDuration &7za &f$reason
+      &r
+    broadcast_ip_ban: |-
+      &r
+      &e&lBLOKACE
+      &8» &e$executor &7zablokoval/a IP adresu hráče/ku &e$bannedPlayer &7za &f$reason
+      &r
+    broadcast_temp_ip_ban: |-
+      &r
+      &e&lBLOKACE
+      &8» &e$executor &7časově zablokoval/a IP adresu hráče/ku &e$bannedPlayer §7na &f$tempDuration &7za &f$reason
+      &r
+    broadcast_unban: |-
+      &r
+      &e&lZRUŠENÍ BLOKACE
+      &8» &e$executor &7zrušil/a blokaci hráče/ky &e$bannedPlayer
+      &r
+    previous_ban_removed: '&aDiamondCrew §8» §7Předchozí ban pro §6$bannedPlayer §7odebrán.'
+    previous_ban_existing: §aDiamondCrew §8» §6$bannedPlayer §7je zabanovaný.
+    unban_queue: '&aDiamondCrew §8» §7Pokud se pokusí připojit, budou §6odbanováni§7.'
+    error_no_spec: §aDiamondCrew §8» §6Neplatná §7specifikace §6času§7!
+    unban_fail: §aDiamondCrew §8» §6Cíl §7není zabanovaný!
+    no_override: §aDiamondCrew §8» §7Hráč již je §6zabanovaný§7!
+    exempt: §aDiamondCrew §8» §7Nemůžeš zabanovat §6$player§7!
+    cooldown: §aDiamondCrew §8» §7Musíš §6počkat§7, před použitím tohoto příkazu.
+      &8(&a$duration&8)
+    response: ''
+  mute:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8[&a-s&8] &8<&ahráč&8> &8[&ačas&8]
+      &8[&adůvod&8]'
+    unmute_usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8>'
+    example: '§aDiamondCrew §8» §7Ukázka: §6$command &aSkopy 7d Spamování'
+    broadcast: |-
+      &r
+      &e&lUMLČENÍ
+      &8» &e$executor &7umlčel/a hráče/ku &e$mutedPlayer &7za &f$reason
+      &r
+    broadcast_tempmute: |-
+      &r
+      &e&lUMLČENÍ
+      &8» &e$executor &7umlčel/a hráče/ku &e$mutedPlayer §7na §f$tempDuration &7za &f$reason
+      &r
+    broadcast_ip_mute: |-
+      &r
+      &e&lUMLČENÍ
+      &8» &e$executor &7umlčel/a IP adresu hráče/ku &e$mutedPlayer &7za &f$reason
+      &r
+    broadcast_temp_ip_mute: |-
+      &r
+      &e&lUMLČENÍ
+      &8» &e$executor &7umlčel/a IP adresu hráče/ku &e$mutedPlayer §7na §f$tempDuration &7za &f$reason
+      &r
+    message: |-
+      &cByl/a jsi umlčen/a administrátorem/kou $executor&4 za &c'&4$reason&c'&4.
+      &cUmlčení vyprší za $duration.
+    message_permanent: |-
+      &cByl/a jsi umlčen/a administrátorem/kou $executor&4 za &c'&4$reason&c'&4.
+      &cToto umlčení nemůže expirovat.
+    broadcast_unmute: |-
+      &r
+      &e&lZRUŠENÍ UMLČENÍ
+      &8» &e$executor &7zrušil/a umlčení hráče/ky &e$bannedPlayer
+      &r
+    unmute_fail: §aDiamondCrew §8» §6Cíl §7není umlčený!
+    no_override: §aDiamondCrew §8» §6Cíl §7je umlčený!
+    previous_mute_removed: '&aDiamondCrew §8» §7Předchozí §6umlčení §7hráče odebráno.'
+    previous_mute_existing: §aDiamondCrew §8» §6$mutedPlayer §7je již umlčený!
+    exempt: §aDiamondCrew §8» §7Nemůžeš umlčet §6$player§7!
+    notification: '&4&lAT &c$mutedPlayer se snažil/a zavít do temnoty, no neúspěšně,
+      protože je umlčen/a.'
+    error_not_enabled: §aDiamondCrew §8» §6Umlčení §7není povoleno!
+    response: ''
+  warn:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8[&a-s&8] &8<&ahráč&8> &8[&adůvod&8]'
+    unwarn_usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&aplayer&8>'
+    example: ''
+    broadcast: |-
+      &r
+      &e&lVAROVÁNÍ
+      &8» &e$executor &7varoval/a hráče/ku &e$warnedPlayer &7za &f$reason
+      &r
+    message: |-
+      &4Byl/a jsi upozorněn/a administrátorem/kou $executor&4 za &c'&4$reason&c'&4.
+      &4Toto varování expiruje za $duration.
+    list_entry: '&8&l■ &a$executor&7: &8''&a$reason&8'''
+    unwarn_response: '&aDiamondCrew §8» §7Poslední varování hráče §6$player §7bylo
+      odstraněno.'
+    unwarn_fail: §aDiamondCrew §8» §6Cíl §7nemá žádné varování.
+    exempt: §aDiamondCrew §8» §6Nemůžeš §7varovat §6$player§7!
+    cooldown: §aDiamondCrew §8» §7Musíš počkat před použitím! &8(&a$duration&8)
+    response: ''
+  history:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8> &8[&azáznamy=10&8]'
+    start: '&eHistorie &e$target &8(&aLimit: &o$limit&8)&e:'
+    ban_entry: |-
+      &8┠&m--------------------------------------------
+      §8| &ePřed &o$timeSince
+      §8| &c&lBAN §6$name &8&l► §f$executor &8&l■ §f$reason
+    mute_entry: |-
+      &8┠&m--------------------------------------------
+      §8| &ePřed &o$timeSince
+      §8| &c&lMUTE §6$name &8&l► §f$executor &8&l■ §f$reason
+    warn_entry: |-
+      &8┠&m--------------------------------------------
+      §8| &ePřed &o$timeSince
+      §8| &c&lWARN §6$name &8&l► §f$executor &8&l■ §f$reason
+    kick_entry: |-
+      &8┠&m--------------------------------------------
+      §8| &ePřed &o$timeSince
+      §8| &c&lKICK §6$name &8&l► §f$executor &8&l■ §f$reason
+    unban_entry: |-
+      &8┠&m--------------------------------------------
+      §8| &a&lUNBAN §6$name &8&l► §f$executor
+    unmute_entry: |-
+      &8┠&m--------------------------------------------
+      §8| &a&lUNBAN §6$name &8&l► §f$executor
+    active_suffix: ' &a●'
+    expired_suffix: ' &c●'
+    active_suffix_temp: |-
+      &7 &a●
+      §8| &7Vyprší za $duration
+    error_no_history: §aDiamondCrew §8» §7Žádná §6historie§7.
+    error_no_user: '&cUser not found.'
+  warnings:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8>'
+    start: '&eAktivní varování pro &o$target&e:'
+  prunehistory:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8> [&ačas&8]'
+    message: '&aDiamondCrew §8» §7Historie §6promazána§7.'
+  staffhistory:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8> &8[&azáznamy=10]'
+    start: '&eHistorie &e$target &8(&aLimit: &o$limit&8)&e:'
+  staffrollback:
+    usage: §aDiamondCrew §8» §6$command &8<&ahráč&8> &8[&ačas&8]
+    message: '&aDiamondCrew §8» §7Vrácení změn bylo úspěšně. &8(&a$amount'
+  banlist:
+    start: |-
+      &8┏&m--------------------------------------------
+      §8︱ &8⋘ &aStránka $page/&a$total &8⋙
+  iphistory:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8> &8[&azáznamy=10]'
+    start: '&eHistorie přihlášení &e$target &8(&aLimit: &o$limit&8)&e:'
+    entry: |-
+      &ePřed &o$date
+      &c&lBAN §6$name &8&l► §7$ip
+    error_no_history: §aDiamondCrew §8» §7Žádná §6historie§7.
+  dupeip:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8>'
+    start: '&aDiamondCrew §8» §7Skenuji §6$name§7 pro §6$ip§7. &a&l● &7&l● &c&l●'
+    start_no_ip: '&aDiamondCrew §8» §7Skenuji §6$name§7 pro§7. &a&l● &7&l● &c&l●'
+    separator: '§7, '
+    online: '&a'
+    offline: '&7'
+    banned: '&c'
+    muted: '&6'
+    multiple_addresses: '[$num adresy]'
+  ipreport:
+    start: '&aDiamondCrew §8» §7Skenuji §6$num§7 hráčů. &a&l● &7&l● &c&l●'
+    entry: '§6$player§7: $result'
+  checkban:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8>'
+    no_ban: §aDiamondCrew §8» §6Cíl §7není zabanovaný!
+    banned: |-
+      &c&lDiamondCrew
+      §6Zabanován
+
+      &eInformace:
+      &8&l■ &7$dateStart §7> &7$dateEnd
+      &8&l■ §6$executor
+      &8&l■ §7$reason
+
+      &8&l■ &7Server: &6$serverOrigin §7* &6$serverScope
+
+      &8&l■ §7IP-Ban $ipban
+      &8&l■ §7Tichý $silent
+      &8&l■ §7Trvalý $permanent
+  checkmute:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8>'
+    no_mute: §aDiamondCrew §8» §6Cíl §7není umlčený!
+    muted: |-
+      &c&lDiamondCrew
+      §6Umlčený
+
+      &eInformace:
+      &8&l■ &7$dateStart §7> &7$dateEnd
+      &8&l■ §6$executor
+      &8&l■ §7$reason
+
+      &8&l■ &7Server: &6$serverOrigin §7* &6$serverScope
+
+      &8&l■ §7IP-Ban $ipban
+      &8&l■ §7Tichý $silent
+      &8&l■ §7Trvalý $permanent
+  lastuuid:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8|&aIP&8>'
+    message: §6$name &8&l► §7$uuid
+  geoip:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8|&aIP&8>'
+    message: §6$target &8&l► §7$result
+    error_disabled: §aDiamondCrew §8» §6GEO-IP §7podpora není aktivní.
+    error_unavailable: §aDiamondCrew §8» §7Podpora §6GEO-IP §7není v aktuální chvíli
+      dostupná. Je §6stažena§7?
+    error_not_found: §6$target &8&l► §7Nenalezeno
+  lockdown:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&adůvod&8|&aend&8>'
+    message: '&aDiamondCrew §8» §7Serverové §6uzavření §7je aktivní. &8(&a$reason&8)'
+    stopped: '&aDiamondCrew §8» §7Serverové §6uzavření §7je vypnuté.'
+    kick_message: |-
+      &c&lDiamondCrew
+      §7Server je §6uzavřen§7.
+
+      &eInformace:
+      &8&l■ §7$reason &8&l■
+    kick_message_global: |-
+      &c&lDiamondCrew
+      §7Server je §6uzavřen§7.
+
+      &eInformace:
+      &8&l■ §7$reason &8&l■
+    error_not_active: '&aDiamondCrew §8» §7Uzavření není §6aktivní§7!'
+  kick:
+    usage: '§aDiamondCrew §8» §7Použití: §6$command &8<&ahráč&8> &8[&adůvod&8]'
+    no_match: §aDiamondCrew §8» §6Hráč §7nenalezen.
+    kick_requested: §aDiamondCrew §8» §6$player §7není na serveru. Aktivuje §6mezi-serverový
+      §7požadavek.
+    message: |-
+      &8&l&m---------------------------------------------
+      &r
+      &c&lÚčet byl vykopnut!
+      &7Vykopnutí udělil/a &e$executor&7, za
+      &f$reason
+      &r
+      &8&l&m---------------------------------------------
+    message_no_reason: |-
+      &8&l&m---------------------------------------------
+      &r
+      &c&lÚčet byl vykopnut!
+      &7Vykopnutí udělil/a &e$executor
+      &r
+      &8&l&m---------------------------------------------
+    response: '&aDiamondCrew §8» &a$player &7byl/a vykopnut/a.'
+    broadcast: |-
+      &r
+      &e&lVYKOPNUTÍ
+      &8» &e$executor &7vykopnul/a hráče/ku &e$player &7za &f$reason
+      &r
+    broadcast_no_reason: |-
+      &r
+      &e&lVYKOPNUTÍ
+      &8» &e$executor &7vykopnul/a hráče/ku &e$player
+      &r
+    exempt: §aDiamondCrew §8» §7Nemůžeš vyhodit §6$player§7!
+  togglechat:
+    toggle_off: '&aDiamondCrew §8» §7Chat §6vypnut§7.'
+    toggle_on: '&aDiamondCrew §8» §7Chat §6zapnut§7.'
+  clearchat:
+    broadcast: '&aDiamondCrew §8» §6$executor §7vymazal chat.'
+  mutechat:
+    response: §aDiamondCrew §8» §7Nemůžeš §6psát§7! Chat je §6deaktivován§7.
+    broadcast_disabled: '&aDiamondCrew §8» §7Chat §6deaktivován§7.'
+    broadcast_enabled: '&aDiamondCrew §8» §7Chat §6aktivován§7.'
+  litebans:
+    reload_success: '&aLiteBans reloaded successfully.'
+    reload_fail_connect: '&aLitebans reloaded. &cFailed to connect to database.'
+    reload_fail: '&cReload failed.'
+    reload_fail_config: |-
+      &c[LiteBans] &4config.yml is not valid and could not be loaded, the default configuration will be used.
+      &cPlease check the server console for more information.
+    reload_fail_messages: |-
+      &c[LiteBans] &4messages.yml is not valid and could not be loaded, default messages will be used.
+      &cPlease check the server console for more information.
+    add_history_usage: '&c$command addhistory <name> <UUID> <IP>'
+    add_history: '&aHistory added.'
+    fix_history: '&aFixing history for table $table...'
+    fix_history_result: '&aAdded $amount entries.'
+    fix_history_offline_uuids: '&c$amount UUIDs were not fetched from Mojang since
+      they are offline-mode UUIDs.'
+    import_usage: '&c$command import start'
+    import_start: '&aImporting from $db, this might take a while...'
+    import_finish: '&aImport finished successfully. $bans bans imported, $ipbans IP-bans.'
+    import_finish_litebans: '&aImport finished successfully. Added $amount entries
+      to the database.'
+    import_fail: '&cImport failed. Check console.'
+    import_unsupported: '&cImporting from ''$name'' is not supported yet!'
+    sqlexec_success: '&aSQL query executed successfully.'
+    sqlexec_failure: '&cFailed to execute.'
+duration:
+  expired: expirováno
+  forever: navždy
+  year: rok
+  years: let
+  month: měsíc
+  months: měsíců
+  week: týden
+  weeks: týdnu
+  day: den
+  days: dnů
+  hour: hodinu
+  hours: hodin
+  minute: minutu
+  minutes: minut
+  second: sekundu
+  seconds: sekund
+  format: '%d %s'
+  separator: ', '
+strings:
+  global: globálně
+  'null': neurčeno
+  'true': ano
+  'false': ne

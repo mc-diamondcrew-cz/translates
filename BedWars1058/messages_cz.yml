@@ -1,0 +1,1018 @@
+lobby-items-stats-name: '&eStatistiky'
+lobby-items-arena-selector-name: '&eVýběr Arény'
+lobby-items-leave-name: '&eZpět na Lobby'
+spectator-items-teleporter-name: '&eTeleportace'
+spectator-items-leave-name: '&eZpět na Lobby'
+pre-game-items-stats-name: '&eStatistiky'
+pre-game-items-leave-name: '&eZpět na Lobby'
+prefix: ''
+name: Čeština
+cmd-main-list:
+- ''
+- '&a▪ &6/bw stats'
+- '&a▪ &6/bw join &o<aréna/skupina>'
+- '&a▪ &6/bw leave'
+- '&a▪ &6/bw lang'
+- '&a▪ &6/bw gui'
+- '&a▪ &6/bw start'
+cmd-lang-list-header: '&aBedWars §8» &6Dostupné jazyky:'
+cmd-lang-list-format: '&a▪ &7{iso} - &f{name}'
+cmd-lang-usage: '&aBedWars §8» &7Použití: §6/lang &o<iso>'
+cmd-lang-not-exist: '&aBedWars §8» &7Tento jazyk §6neexistuje§f!'
+cmd-lang-set: '&aBedWars §8» &7Jazyk §6změněn§f!'
+cmd-lang-not-set: '&aBedWars §8» §6Nemůžeš §7změnit jazyk, pokud jsi ve hře.'
+cmd-join-usage: '§a▪ §6Použití: §7/bw join §o<aréna/skupina>'
+cmd-join-not-found: '&aBedWars §8» &7Nebylo možné najít: §6{name}'
+cmd-join-arena-full: |-
+  &aBedWars §8» &7Tato aréna je plná!
+  &7Zvažte prosím zakoupení Premium pro další funkce. &6&o(klik)
+cmd-join-arenas-full: '&aBedWars §8» &7Žádná aréna není k dispozici.'
+cmd-join-arena-full-vips: |-
+  &aBedWars §8» &7Je nám líto, ale tato aréna je plná.
+  &7Bohužel, v této aréně jsou všichni Premium a proto se nemůžete připojit.
+cmd-join-party-big: '&aBedWars §8» &7Vaše parta je přílíš velká.'
+cmd-join-not-leader: '&aBedWars §8» &7Pouze vůdce/kyně může vybrat arénu.'
+cmd-join-success: '&aBedWars §8» &6{player} &7se připojil/a (&a{on}&8/&a{max}&7)!'
+cmd-join-spectate: |-
+  &aBedWars §8» §7Nyní sleduješ §6{arena}§7.
+  &aBedWars §8» §7Můžeš kdykoli opustit arénu pomocí §6/leave§7.
+cmd-join-spectate-denied: '&aBedWars §8» &7Sledující nejsou povolení v této aréně!'
+cmd-tp-player-not-found: '&aBedWars §8» &7Hráč/ka nebyl nalezen!'
+cmd-tp-not-in-arena: '&aBedWars §8» &7Hráč/ka není v této aréně!'
+cmd-tp-not-started: '&aBedWars §8» &7Aréná hráče/ky ještě nezačala!'
+cmd-tp-usage: '&aBedWars §8» &7Použití: §6/bw tp <jméno>'
+cmd-rejoin-no-arena: '&aBedWars §8» &7Není zde aréna pro připojení!'
+cmd-rejoin-denied: '&aBedWars §8» &7Již se nemůžete znovu připojit do arény. Hra skončila,
+  nebo se zničila postel.'
+cmd-rejoin-allowed: '&aBedWars §8» &7Se připojil/a do arény &6{arena}&7!'
+cmd-rejoin-player-reconnected: '&aBedWars §8» &6{player} &6se připojil/a!'
+cmd-not-in-arena: '&aBedWars §8» &7Nejsi v aréně!'
+cmd-leave: '&aBedWars §8» &6{player} &7se odpojil/a!'
+cmd-blocked-in-game: '&aBedWars §8» &7Toto nemůžete udělat, pokud jsi ve hře.'
+cmd-not-found: '&aBedWars §8» &7Příkaz nebyl nalezen, nebo nemáš dostatečné pravomoce!'
+cmd-party-help:
+- '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&aPříkazy party:'
+- '&6/party invite <jméno> &8- &7Pozvání do párty.'
+- '&6/party leave &8- &7Opuštění party.'
+- '&6/party remove <jméno> &8- &7Odebrání z party.'
+- '&6/party accept <jméno> &8- &7Příjmutí pozvánky.'
+- '&6/party disband &8- &7Zrušení party.'
+cmd-party-invite-usage: '&aBedWars §8» &7Použití: &6/party invite <hráč>'
+cmd-party-offline: '&aBedWars §8» &6{player} &7není na serveru!'
+cmd-party-invite: '&aBedWars §8» &7Pozávnka odeslána &6{player}&7.'
+cmd-party-invite-received: '&aBedWars §8» &6{player} &7tě pozval/a do party! &o&6(Klikni
+  pro potvrzení)'
+cmd-party-invite-self: '&aBedWars §8» &7Nemůžeš pozvat sebe!'
+cmd-party-no-invite: '&aBedWars §8» &7Nemáš žádné pozvánky do party.'
+cmd-party-already-in: '&aBedWars §8» &7Již jste v partě!'
+cmd-party-no-perm: '&aBedWars §8» &7Toto může udělat pouze vůdce/kyně!'
+cmd-party-accept-usage: '&aBedWars §8» &7Použití: &6/party accept <hráč>'
+cmd-party-join: '&aBedWars §8» &6{player} &7se připojil/a do party!'
+cmd-party-not-in: '&aBedWars §8» &7Nejsi v partě!'
+cmd-party-cant-leave: |-
+  &aBedWars §8» &7Nemůžeš opustit svou vlastní partu!
+  &7Zkus: &6/party disband
+cmd-party-leave: '&aBedWars §8» &6{player} &7opustil/a partu!'
+cmd-party-disband: '&aBedWars §8» &7Parta rozpuštěna!'
+cmd-party-remove-usage: '&aBedWars §8» &7Použití: &6/party remove <hráč>'
+cmd-party-remove: '&aBedWars §8» &6{player} &7byl/a odebrána z party,'
+cmd-party-remove-not-in: '&aBedWars §8» &6{player} &7není ve Vaší partě!'
+cmd-start-no-game: '&aBedWars §8» §7Nehrajete!'
+cmd-start: '&aBedWars §8» §7Odpočet snížen!'
+cmd-start-no-perm: |-
+  &aBedWars §8» &7Nemůžete restartovat arénu.
+  §7Zvažte prosím zakoupení Premium pro více funkcí.
+cmd-cooldown: '&7Nemůžeš se připojit! Počkej §6{seconds} §7sekund!'
+arena-kicked-by-vip: |-
+  &aBedWars §8» &7Je nám líto, ale byl/a jste vyhozen/a kvůli připojení Premium.
+  &7Zvažte prosím zakoupení Premium pro více funkcí. &6&o(klik)
+arena-countdown-stopped: '&aBedWars §8» §7Není dostatek hráčů, odpočet zrušen!'
+arena-restart-kick: '&aBedWars §8» &7Aréna, ve které jste se restartuje.'
+arena-status-playing: '&cVe hře'
+arena-status-restarting: '&4Restartování..'
+arena-status-waiting: '&2Čeká na hráče.. §c{full}'
+arena-status-starting: '&6Startuje.. §c{full}'
+arena-selector-gui-name: '&8Klikni pro připojení'
+arena-selector-content-name: '&a&l{name}'
+arena-selector-content-lore:
+- ''
+- '&7Stav: {status}'
+- '&7Hráči: &f{on}&7/&f{max}'
+- '&7Typ: &a{group}'
+- ''
+- '&aLevé-Kliknutí pro připojení.'
+- '&ePravé-Kliknutí pro sledování.'
+arena-start-countdown: '&aBedWars §8» &7Hra začíná za &6{time} &7sekund!'
+arena-start-title: '&aJDEME'
+arena-start-tutorial:
+- '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&e                                   &lBedWars'
+- ''
+- §8» §fChraňte svoji postel a zničte postel ostatním.
+- §8» §fVylepšete sebe a svůj tým, pomocí sbírání
+- §8» §fŽeleze, Zlata, Smaragdů a Diamantů z generátorů,
+- §8» §fpro získání mocných vylepšení.
+- ''
+- '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+arena-join-denied-selector: '&aBedWars §8» &cJe nám líto, ale v aktuální chvíli se
+  nemůžete připojit. Použijte pravé-kliknutí pro sledování!'
+arena-spectate-denied-selector: '&aBedWars §8» &cJe nám líto, ale v aktuální chvíli
+  nemůžete sledovat. Použijte levé-kliknutí pro připojení!'
+spectator-tp-gui-name: '&8Teleportace'
+spectator-tp-gui-head-name: '&aBedWars §8» §6{player}'
+spectator-tp-gui-head-lore:
+- '&7Zdraví: &a{health}%'
+- '&7Jídlo: &a{food}'
+- ''
+- §8» §aLevé-kliknutí §7pro sledování
+spectator-tp-name: '&c&lNávrat do Lobby'
+spectator-tp-lore:
+- §8» &aPravé-kliknutí §7pro odpojení.
+spectator-first-person-enter-title: '&7Sledování &6{player}'
+spectator-first-person-enter-subtitle: '&cSHIFT pro zrušení'
+spectator-first-person-quit-title: §aBedWars §8» §7Ukončuji sledování
+spectator-first-person-quit-subtitle: ''
+arena-leave-party-disbanded: '&aBedWars §8» §7Vůdce/kyně party opustil/a hru a parta
+  byla rozpuštěna!'
+generator-tier: '&eÚroveň &c{tier}'
+generator-diamond: '&b&lDiamant'
+generator-emerald: '&a&lSmaragd'
+generator-timer: '&eObjeví se za &c{seconds} &esekund.'
+generator-upgrade-announce: '&aBedWars §8» {generatorType} Generátory &ebyly vylepšeny
+  na úroveň &c{tier}'
+format-chat-lobby: '{level}{vPrefix}&7{player}{vSuffix}: {message}'
+format-chat-waiting: '{level}{vPrefix}&7{player}{vSuffix}: {message}'
+format-chat-global: '{level}{vPrefix}&6[SHOUT] {team} &7{player}&f{vSuffix}: {message}'
+format-chat-team: '{level}{vPrefix}&f{team}&7 {player}{vSuffix} {message}'
+format-chat-spectator: '{level}{vPrefix}&7[SPECTATOR] {player}{vSuffix}: {message}'
+format-sb-health:
+- '&c❤'
+- '&aZdraví'
+format-spectator-team: DIVÁK
+format-spectator-color: '&7'
+format-sb-tab-prefix:
+  restarting:
+  - '{teamColor}&l{teamLetter} &r{teamColor}'
+  playing:
+  - '{teamColor}&l{teamLetter} &r{teamColor}'
+  starting:
+  - '{vPrefix} '
+  waiting:
+  - '{vPrefix} '
+  lobby:
+  - '{vPrefix} '
+format-sb-tab-suffix:
+  restarting: []
+  playing: []
+  starting: []
+  waiting: []
+  lobby: []
+format-sb-date: dd/MM/yy
+format-sb-team-eliminated: '&c&l✘'
+format-sb-bed-destroyed: '&a{remainingPlayers}'
+format-sb-team-alive: '&a&l✓'
+format-sb-generator-timer: mm:ss
+format-sb-you: '&7 VY'
+format-action-tracking: '&fSledování: {team} &f- Vzdálenost: {distance}m'
+format-winner-team: '{TeamColor}{TeamName} &7- {members}'
+format-winner-solo: '{TeamColor}{TeamName} &7- {members}'
+format-tier1: I
+format-tier2: II
+format-tier3: III
+format-despawnable-health: '▮ '
+format-stats-time: yyyy/MM/dd HH:mm
+format-papi-player-team: '{TeamColor}[{TeamName}]'
+format-papi-player-shout: '&6[GLOBAL]'
+format-papi-player-spectator: '&7[SLEDOVÁNÍ]'
+meaning-full: Plný
+meaning-shout: global
+meaning-nobody: Nikdo
+meaning-never: Nikdo
+meaning-iron-singular: Železo
+meaning-iron-plural: Železa
+meaning-gold-singular: Zlato
+meaning-gold-plural: Zlata
+meaning-emerald-singular: Smaragd
+meaning-emerald-plural: Smaragdů
+meaning-diamond-singular: Diamant
+meaning-diamond-plural: Diamantů
+meaning-vault-singular: $
+meaning-vault-plural: $
+interact-cant-place: '&aBedWars §8» &7Zde nemůžeš pokládat kostky!'
+interact-cant-break: '&aBedWars §8» &7Můžeš ničit pouze kostky postavené hráči!'
+interact-cant-destroy-bed: §aBedWars §8» §7Nemůžeš zničit svoji postel!
+interact-bed-destroy-chat: |2
+
+  &f&lDESTRUKCE POSTELE > {TeamColor}Postel Týmu {TeamName} &7byla usmažena hráčem/kou {PlayerColor}{PlayerName}&7!
+interact-bed-destroy-title: '&cPOSTEL ZNIČENA!'
+interact-bed-destroy-subtitle: '&fNyní je smrt konečná!'
+interact-bed-destroy-team: '&f&lDESTRUKCE POSTELE > &7Vaše postel byla usmažena hráčem/kou
+  {PlayerColor}{PlayerName}&7!'
+interact-cant-open-chest: '&cNemůžeš otevřít tuto truhlu, protože tento tým byl eliminován!'
+player-die-void-regular: '{PlayerColor}{PlayerName} &7spadl/a do neznáma.'
+player-die-void-final: '{PlayerColor}{PlayerName} &7spadl/a do neznáma. &b&lKONEČNÁ!'
+player-die-knocked-regular: '{PlayerColor}{PlayerName} &7byl/a vyhozen/a ze světa,
+  s pomocí {KillerColor}{KillerName}&7.'
+player-die-knocked-final: '{PlayerColor}{PlayerName} &7byl/a vyhozen/a ze světa, s
+  pomocí {KillerColor}{KillerName}&7. &b&lKONEČNÁ!'
+player-die-bomb-regular: '{PlayerColor}{PlayerName} &7byl/a zasažen/a milostnou bombou
+  od {KillerColor}{KillerName}&7.'
+player-die-bomb-final: '{PlayerColor}{PlayerName} &7byl/a zasažen/a milostnou bombou
+  od {KillerColor}{KillerName}&7. &b&lKONEČNÁ!'
+player-die-bomb2-regular: '{PlayerColor}{PlayerName} &7byl/a zasažen/a bombou.'
+player-die-bomb2-final: '{PlayerColor}{PlayerName} &7byl/a zasažen/a bombou. &b&lKONEČNÁ!'
+player-die-attack-regular: '{PlayerColor}{PlayerName} &7byl/a zabit/a {KillerColor}{KillerName}&7.'
+player-die-attack-final: '{PlayerColor}{PlayerName} &7byl/a zabit/a {KillerColor}{KillerName}&7.
+  &b&lKONEČNÁ!'
+player-die-unknown-regular: '{PlayerColor}{PlayerName} &7zemřel/a.'
+player-die-unknown-final: '{PlayerColor}{PlayerName} &7zemřel/a. §b§lKONEČNÁ!!'
+player-die-shoot-regular: '{PlayerColor}{PlayerName} &7byl/a zastřelan/a s pomocí
+  {KillerColor}{KillerName}&7!'
+player-die-shoot-final: '{PlayerColor}{PlayerName} &7byl/a zastřelan/a s pomocí {KillerColor}{KillerName}&7!
+  §b§lKONEČNÁ!!'
+player-die-bedbug-regular: '{PlayerColor}{PlayerName} &7byl/a zabit/a pomocí roztoče
+  hráče/ky {KillerColor}{KillerTeamName}§7!'
+player-die-bedbug-final: '{PlayerColor}{PlayerName} &7byl/a zabit/a pomocí roztoče
+  hráče/ky {KillerColor}{KillerTeamName}§7! §b§lKONEČNÁ!!'
+player-die-golem-regular: '{PlayerColor}{PlayerName} &7byl/a zabit/a železným golemem
+  hráče/ky {KillerColor}{KillerTeamName}§7!'
+player-die-golem-final: '{PlayerColor}{PlayerName} &7byl/a zabit/a železným golemem
+  hráče/ky {KillerColor}{KillerTeamName}§7! §b§lKONEČNÁ!!'
+player-loot-diamond: '&aBedWars §8» &b+{amount} {meaning}'
+player-loot-emerald: '&aBedWars §8» &a+{amount} {meaning}'
+player-loot-iron: '&aBedWars §8» &f+{amount} {meaning}'
+player-loot-gold: '&aBedWars §8» &6+{amount} {meaning}'
+player-respawn-title: '&cZEMŘEL/A JSI!'
+player-respawn-subtitle: '&eBudeš oživen/a za &c{time} &esekund!'
+player-respawn-timer-chat: '&aBedWars §8» &7Budeš oživen/a za &6{time} &7sekund!'
+player-respawned-title: '&aZPĚT DO HRY!'
+player-eliminated-chat: '&aBedWars §8» &7Byl/a jsi eliminován/a!'
+game-end-game-over-title: '&c&lGAME OVER!'
+game-end-victory-title: '&6&lVÍTĚZSTVÍ!'
+game-end-winner-team: '&aBedWars §8» {TeamColor}{TeamName} &avyhráli hru!'
+game-end-top-chat:
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&f                                   &lBedWars'
+- ''
+- '{winnerFormat}'
+- ''
+- ''
+- '&e                          &l1. Zabiják &7- {firstName} - {firstKills}'
+- '&6                          &l2. Zabiják &7- {secondName} - {secondKills}'
+- '&c                          &l3. Zabiják &7- {thirdName} - {thirdKills}'
+- ''
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+bed-hologram-defend: '&c&lChraňte svoji postel!'
+bed-hologram-destroyed: '&c&lVaše postel byla zničena!'
+npc-team-upgrades: '&bTÝMOVÉ VYLEPŠENÍ,&e&lPRAVÝ KLIK'
+npc-solo-upgrades: '&bVLASTNÍ VYLEPŠENÍ,&e&lPRAVÝ KLIK'
+npc-team-shop: '&bTÝMOVÝ OBCHOD,&e&lPRAVÝ KLIK'
+npc-solo-shop: '&bOBCHOD PŘEDMĚTŮ,&e&lPRAVÝ KLIK'
+team-eliminated: |2
+
+  &f&lTÝM ELIMINOVÁN > {TeamColor}Tým {TeamName} &cbyl eliminován!
+next-event-beds-destroy: '&cDestrukce Postelí'
+next-event-diamondII: '&fDiamanty §bII'
+next-event-diamondIII: '&fDiamanty §bIII'
+next-event-dragon-spawn: '&fNenadála Smrt'
+next-event-emeraldII: '&fSmaragdy §bII'
+next-event-emeraldIII: '&fSmaragdy §bIII'
+next-event-game-end: '&4Konec Hry'
+next-event-beds-destroy-title: '&cPOSTEL ZNIČENA!'
+next-event-beds-destroy-sub-title: '&fVšechny postele byly zničeny!'
+next-event-beds-destroy-chat: '&c&lVšechny postele byly zničeny!'
+next-event-sudden-death-title: '&cNenadálá Smrt'
+next-event-sudden-death-sub-title: ''
+next-event-sudden-death-chat: '&cNENADÁLÁ SMRT: &6&b{TeamDragons} {TeamColor}Drak
+  {TeamName}!'
+xp-reward-per-minute: '&aBedWars §8» &6+{xp} Přidané BedWars zkušenosti (Herní Čas).'
+xp-reward-game-win: '&aBedWars §8» &6+{xp} Přidané BedWars zkušenosti (Výhra).'
+xp-reward-per-teammate: '&aBedWars §8» &6+{xp} Přidané BedWars zkušenosti (Podpora
+  Týmu).'
+lobby-items-stats-lore:
+- '&fPravé-kliknutí pro zobrazení statistik!'
+lobby-items-arena-selector-lore:
+- '&fPravé-kliknutí pro výběr arény!'
+lobby-items-leave-lore:
+- '&fPravé-kliknutí pro odpojení!'
+pre-game-items-stats-lore:
+- '&fPravé-kliknutí pro zobrazení statistik!'
+pre-game-items-leave-lore:
+- '&fPravé-kliknutí pro odpojení!'
+spectator-items-leave-lore:
+- '&fPravé-kliknutí pro odpojení!'
+stats-inv-name: '&8Statistiky hráče {player}'
+stats-wins-name: '&6Výhry'
+stats-wins-lore:
+- '&f{wins}'
+stats-losses-name: '&6Prohry'
+stats-losses-lore:
+- '&f{losses}'
+stats-kills-name: '&6Zabití'
+stats-kills-lore:
+- '&f{kills}'
+stats-deaths-name: '&6Úmrtí'
+stats-deaths-lore:
+- '&f{deaths}'
+stats-final-kills-name: '&6Finální zabití'
+stats-final-kills-lore:
+- '&f{finalKills}'
+stats-final-deaths-name: '&6Finální úmrtí'
+stats-final-deaths-lore:
+- '&f{finalDeaths}'
+stats-beds-destroyed-name: '&6Zničené postele'
+stats-beds-destroyed-lore:
+- '&f{bedsDestroyed}'
+stats-first-play-name: '&6První hra'
+stats-first-play-lore:
+- '&f{firstPlay}'
+stats-last-play-name: '&6Poslední hra'
+stats-last-play-lore:
+- '&f{lastPlay}'
+stats-games-played-name: '&6Odehraných her'
+stats-games-played-lore:
+- '&f{gamesPlayed}'
+scoreboard:
+  Default:
+    waiting:
+    - §e§lBEDWARS
+    - '&7{date} &8{server}'
+    - ''
+    - '&fTvá úroveň: {level}'
+    - '&fPostup: &a{currentXp}&7/&b{requiredXp}'
+    - '{progress}'
+    - ''
+    - '&fMapa: &a{map}'
+    - ''
+    - '&fHráči: &a{on}§8/§a{max}'
+    - ''
+    - §7Čeká...
+    - ''
+    - '&e{server_ip}'
+    starting:
+    - §e§lBEDWARS
+    - '&7{date} &8{server}'
+    - ''
+    - '&fTvá úroveň: {level}'
+    - '&fPostup: &a{currentXp}&7/&b{requiredXp}'
+    - '{progress}'
+    - ''
+    - '&fMapa: &a{map}'
+    - ''
+    - '&fHráči: &a{on}§8/§a{max}'
+    - ''
+    - '§fStart: §a{time}s'
+    - ''
+    - '&e{server_ip}'
+    playing:
+    - '&e&lBEDWARS'
+    - '&7{date} &8{server}'
+    - ''
+    - '&f{nextEvent}'
+    - '&a{time}'
+    - ''
+    - '&e{server_ip}'
+  DUO:
+    waiting:
+    - §e§lBEDWARS
+    - '&7{date} &8{server}'
+    - ''
+    - '&fTvá úroveň: {level}'
+    - '&fPostup: &a{currentXp}&7/&b{requiredXp}'
+    - '{progress}'
+    - ''
+    - '&fMapa: &a{map}'
+    - ''
+    - '&fHráči: &a{on}§8/§a{max}'
+    - ''
+    - §7Čeká...
+    - ''
+    - '&e{server_ip}'
+    starting:
+    - §e§lBEDWARS
+    - '&7{date} &8{server}'
+    - ''
+    - '&fTvá úroveň: {level}'
+    - '&fPostup: &a{currentXp}&7/&b{requiredXp}'
+    - '{progress}'
+    - ''
+    - '&fMapa: &a{map}'
+    - ''
+    - '&fHráči: &a{on}§8/§a{max}'
+    - ''
+    - '§fStart: §a{time}s'
+    - ''
+    - '&e{server_ip}'
+    playing:
+    - '&e&lBEDWARS'
+    - '&7{date} &8{server}'
+    - ''
+    - '&f{nextEvent}'
+    - '&a{time}'
+    - ''
+    - '§eŽlutá§f: {TeamŽlutáStatus}'
+    - '§aZelená§f: {TeamZelenáStatus}'
+    - '§9Modrá§f: {TeamModráStatus}'
+    - '§cČervená§f: {TeamČervenáStatus}'
+    - ''
+    - '&e{server_ip}'
+  lobby:
+  - '&6&lBedWars,&4&lB&6edWars,&6&lB&4e&6dWars,&6&lBe&4d&6Wars,&6&lBed&4W&6ars,&6&lBedW&4a&6rs,&6&lBedWa&4r&6s,&6&lBedWar&4s,&6&lBedWars'
+  - '&fTvá úroveň: {level}'
+  - ''
+  - '&fPostup: &a{currentXp}&7/&b{requiredXp}'
+  - '{progress}'
+  - ''
+  - '&7{player}'
+  - ''
+  - '&fMince: &a{money}'
+  - ''
+  - '&fVýhry: &a{wins}'
+  - '&fZabití: &a{kills}'
+  - ''
+  - '&e{server_ip}'
+shop-items-messages:
+  inventory-name: '&8Rychlé nakoupení'
+  separator-item-name: '&8⇧ Kategorie'
+  separator-item-lore:
+  - '&8⇩ Předměty'
+  quick-buy-item-name: '&bRychlé nakoupení'
+  quick-buy-item-lore: []
+  quick-buy-empty-item-name: '&cPrázdný slot!'
+  quick-buy-empty-item-lore:
+  - '&7Toto je místo pro rychlé nakoupení!'
+  - '&bShift+Klikni &7na jakýkoli předmět'
+  - '&7v obchodu pro přidání.'
+  can-buy-color: '&a'
+  cant-buy-color: '&c'
+  blocks-category:
+    inventory-name: '&8Kostky'
+    category-item-name: '&aKostky'
+    category-item-lore:
+    - '&eKlikni pro zobrazení!'
+    content-item-wool-name: '{color}Vlna'
+    content-item-wool-lore:
+    - '&7Cena: &f{cost} {currency}'
+    - ''
+    - '&7Skvělé pro stavbu mostů na ostatní'
+    - '&7ostrovy. Změní se na týmovou barvu.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-clay-name: '{color}Tvrzený Jíl'
+    content-item-clay-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Jednoduchá kostka na ochranu Vaší postele.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-glass-name: '{color}Neprůstřelné Sklo'
+    content-item-glass-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Imunní vůči výbuchům.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-stone-name: '{color}Kámen z Konce'
+    content-item-stone-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Solidní kostka na ochranu Vaší postele.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-ladder-name: '{color}Žebřík'
+    content-item-ladder-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Vhodné pro záchranu koček, uvíznutých'
+    - '&7na stromech.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-obsidian-name: '{color}Obsidián'
+    content-item-obsidian-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Extrémní ochrana Vaší postele.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-wood-name: '{color}Dřevo'
+    content-item-wood-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Solidní kostka pro ochranu Vaší postele.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  melee-category:
+    inventory-name: '&8Na Blízko'
+    category-item-name: '&aNa Blízko'
+    category-item-lore:
+    - '&eKlikni pro zobrazení!'
+    content-item-stone-sword-name: '{color}Kamenný Meč'
+    content-item-stone-sword-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-iron-sword-name: '{color}Železný Meč'
+    content-item-iron-sword-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-diamond-sword-name: '{color}Diamantový Meč'
+    content-item-diamond-sword-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-stick-name: '{color}Hůl (Knockback I)'
+    content-item-stick-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  armor-category:
+    inventory-name: '&8Brnění'
+    category-item-name: '&aBrnění'
+    category-item-lore:
+    - '&eKlikni pro zobrazení!'
+    content-item-chainmail-name: '{color}Trvalé Kroužkové Brnění'
+    content-item-chainmail-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Kroužkové kalhoty a boty,'
+    - '&7se kterými se vždy zrodíte.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-iron-armor-name: '{color}Trvalé Železné Brnění'
+    content-item-iron-armor-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Železné kalhoty a boty,'
+    - '&7se kterými se vždy zrodíte.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-diamond-armor-name: '{color}Trvalé Diamantové Brnění'
+    content-item-diamond-armor-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Diamantové kalhoty a boty,'
+    - '&7se kterými se vždy zrodíte.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  tools-category:
+    inventory-name: '&8Nástroje'
+    category-item-name: '&aNástroje'
+    category-item-lore:
+    - '&eKlikni pro zobrazení!'
+    content-item-shears-name: '{color}Trvalé Nůžky'
+    content-item-shears-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Skvělé pro zbavení se vlny. S těmito'
+    - '&7nůžkami se vždy zrodíte.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-pickaxe-name: '{color}Krumpáč {tier}'
+    content-item-pickaxe-lore:
+    - '&7Cena: {cost} {currency}'
+    - '&7Úroveň: &e{tier}'
+    - ''
+    - '&7Vylepšitelný předmět.'
+    - '&7Ztratí 1 Úroveň po úmrtí.'
+    - ''
+    - '&7Vždy se zrodíte s alespoň'
+    - '&7nejnižší úrovní.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-axe-name: '{color}Sekera {tier}'
+    content-item-axe-lore:
+    - '&7Cena: {cost} {currency}'
+    - '&7Úroveň: &e{tier}'
+    - ''
+    - '&7Vylepšitelný předmět.'
+    - '&7Ztratí 1 Úroveň po úmrtí.'
+    - ''
+    - '&7Vždy se zrodíte s alespoň'
+    - '&7nejnižší úrovní.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  ranged-category:
+    inventory-name: '&8Na Dálku'
+    category-item-name: '&aNa Dálku'
+    category-item-lore:
+    - '&eKlikni pro zobrazení!'
+    content-item-arrow-name: '{color}Šíp'
+    content-item-arrow-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bow1-name: '{color}Luk'
+    content-item-bow1-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bow2-name: '{color}Luk (Power I)'
+    content-item-bow2-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bow3-name: '{color}Luk (Power I, Punch I)'
+    content-item-bow3-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  potions-category:
+    inventory-name: '&8Lektvary'
+    category-item-name: '&aLektvary'
+    category-item-lore:
+    - '&eKlikni pro zobrazení!'
+    content-item-speed-potion-name: '{color}Speed II (45 sekund)'
+    content-item-speed-potion-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-jump-potion-name: '{color}Jump V (45 sekund)'
+    content-item-jump-potion-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-invisibility-name: '{color}Neviditelnost (30 sekund)'
+    content-item-invisibility-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  utility-category:
+    inventory-name: '&8Užitečnosti'
+    category-item-name: '&aUžitečnosti'
+    category-item-lore:
+    - '&eKlikni pro zobrazení!'
+    content-item-golden-apple-name: '{color}Zlaté Jablko'
+    content-item-golden-apple-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Skvělé vyléčení.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bedbug-name: '{color}Roztoč'
+    content-item-bedbug-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Zjeví rostoče na místě, kam'
+    - '&7dopadla koule pro rozptýlení'
+    - '&7nepřátel. Přežije 15 sekund.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-dream-defender-name: '{color}Ochránce Snů'
+    content-item-dream-defender-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Železný Golem, který Vám pomůže ochránit'
+    - '&7Vaši základnu. Přejize 4 minuty.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-fireball-name: '{color}Ohnivá Koule'
+    content-item-fireball-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Pravé-kliknutí pro odpálení! Skvélě pro'
+    - '&7zničení všech nadějí a snů Vašich nepřátel!'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-tnt-name: '{color}TNT'
+    content-item-tnt-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Okamžitě zapálené, skvélě na VÝBUCHY!'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-ender-pearl-name: '{color}Ender Perla'
+    content-item-ender-pearl-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Nejlepší způsob invaze!'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-water-bucket-name: '{color}Keblík s Vodou'
+    content-item-water-bucket-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Skvélě na zpomalení nepřátel.'
+    - '&7Také dokáže zabránít výbuchům.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bridge-egg-name: '{color}Vajíčko Mostu'
+    content-item-bridge-egg-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Toto Vajíčko postaví ten nejhezčí most,'
+    - '&7který si jen můžete přát.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-magic-milk-name: '{color}Kouzelné Mléko'
+    content-item-magic-milk-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Vyhnete se všem nástrahám po dobu 60'
+    - '&7sekund po vypití.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-sponge-name: '{color}Houba'
+    content-item-sponge-lore:
+    - '&7Cena: {cost} {currency}'
+    - ''
+    - '&7Skvělé pro nasávání vody.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+shop-insuff-money: '&aBedWars §8» &7Nemáte dostatek §6{currency}§7! Potřebujete §6{amount}
+  §7navíc!'
+shop-new-purchase: '&aBedWars §8» &7Zakoupeno &6{item}'
+shop-already-bought: '&aBedWars §8» &7Toto jsi si již zakoupil/a!'
+shop-utility-silverfish: '{TeamColor}&l{TeamName} &r{TeamColor}Roztoč'
+shop-utility-iron-golem: '{TeamColor}{despawn}s &8[ {TeamColor}{health}&8]'
+shop-lore-status-can-buy: '&eKlikni pro zakoupení!'
+shop-lore-status-cant-afford: '&cNemáš dostatek {currency}!'
+shop-lore-status-tier-maxed: '&aMAXIMÁLNÍ!'
+shop-lore-quick-add: '&bShift+Klik pro přidání do rychlého nákupu.'
+shop-lore-quick-remove: '&bShift+Klik pro odebrání z rychlého nákupu!.'
+meaning-no-trap: Žádné nástrahy!
+format-upgrade-trap-cost: '&7Cena: {currencyColor}{cost} {currency}'
+format-upgrade-color-can-afford: '&e'
+format-upgrade-color-cant-afford: '&c'
+format-upgrade-color-unlocked: '&a'
+format-tier-color-locked: '&7'
+format-tier-color-unlocked: '&a'
+upgrades-lore-click-buy: '{color}Klikni pro zakoupení!'
+upgrades-lore-insuff-money: '{color}Nemáš dostatek {currency}'
+upgrades-lore-locked: '&cUZAMČENO'
+upgrades-lore-unlocked: '{color}ODEMČENO'
+upgrades-new-purchase: '&a{player} zakoupil/a &6{upgradeName}'
+upgrades-upgrade-name-forge-tier-1: '{color}Železné Kovárna'
+upgrades-upgrade-lore-forge-tier-1:
+- '&7Generátory zdrojů na Vašem ostrově.'
+- ''
+- '{tierColor}Úroveň 1: +50% Zdrojů, &b4 Diamanty'
+- '&7Úroveň 2: +100% Zdrojů, &b8 Diamantů'
+- '&7Úroveň 3: Smaragdy, &b12 Diamantů'
+- '&7Úroveň 4: +200% Zdrojů, &b16 Diamantů'
+- ''
+upgrades-upgrade-name-forge-tier-2: '{color}Zlatá Kovárna'
+upgrades-upgrade-lore-forge-tier-2:
+- '&7Generátory zdrojů na Vašem ostrově.'
+- ''
+- '&aÚroveň 1: +50% Zdrojů, &b4 Diamanty'
+- '{tierColor}Úroveň 2: +100% Zdrojů, &b8 Diamantů'
+- '&7Úroveň 3: Smaragdy, &b12 Diamantů'
+- '&7Úroveň 4: +200% Zdrojů, &b16 Diamantů'
+- ''
+upgrades-upgrade-name-forge-tier-3: '{color}Smaragdová Kovárna'
+upgrades-upgrade-lore-forge-tier-3:
+- '&7Generátory zdrojů na Vašem ostrově.'
+- ''
+- '&aÚroveň 1: +50% Zdrojů, &b4 Diamanty'
+- '&aÚroveň 2: +100% Zdrojů, &b8 Diamantů'
+- '{tierColor}Úroveň 3: Smaragdy, &b12 Diamantů'
+- '&7Úroveň 4: +200% Zdrojů, &b16 Diamantů'
+- ''
+upgrades-upgrade-name-forge-tier-4: '{color}Roztavená Kovárna'
+upgrades-upgrade-lore-forge-tier-4:
+- '&7Generátory zdrojů na Vašem ostrově.'
+- ''
+- '&aÚroveň 1: +50% Zdrojů, &b4 Diamanty'
+- '&aÚroveň 2: +100% Zdrojů, &b8 Diamantů'
+- '&aÚroveň 3: Smaragdy, &b12 Diamantů'
+- '{tierColor}Úroveň 4: +200% Zdrojů, &b16 Diamantů'
+- ''
+upgrades-category-item-name-traps: '&eZakoupit nástrahu'
+upgrades-category-item-lore-traps:
+- '&7Zakoupené nástrahy budou ve frontě.'
+- ''
+- '&eKlikni pro prohlížení!'
+upgrades-upgrade-name-swords-tier-1: '{color}Ostré Meče'
+upgrades-upgrade-lore-swords-tier-1:
+- '&7Váš tým získá na všechny meče a sekery'
+- '&7Sharpness I, toto vylepšení je trvalé.'
+- ''
+- '&7Cena: &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-armor-tier-1: '{color}Překované Brnění I'
+upgrades-upgrade-lore-armor-tier-1:
+- '&7Váš tým získá na všechny částí brnění'
+- '&7Protection, toto vylepšení je trvalé!'
+- ''
+- '{tierColor}Úroveň 1: Protection I, &b{cost} {currency}'
+- '&7Úroveň 2: Protection II, &b10 Diamantů'
+- '&7Úroveň 3: Protection III, &b20 Diamantů'
+- '&7Úroveň 4: Protection IV, &b30 Diamantů'
+- ''
+upgrades-upgrade-name-armor-tier-2: '{color}Překované Brnění II'
+upgrades-upgrade-lore-armor-tier-2:
+- '&7Váš tým získá na všechny částí brnění'
+- '&7Protection, toto vylepšení je trvalé!'
+- ''
+- '&aÚroveň 1: Protection I, &b5 Diamantů'
+- '{tierColor}Úroveň 2: Protection II, &b{cost} {currency}'
+- '&7Úroveň 3: Protection III, &b20 Diamantů'
+- '&7Úroveň 4: Protection IV, &b30 Diamantů'
+- ''
+upgrades-upgrade-name-armor-tier-3: '{color}Překované Brnění III'
+upgrades-upgrade-lore-armor-tier-3:
+- '&7Váš tým získá na všechny částí brnění'
+- '&7Protection, toto vylepšení je trvalé!'
+- ''
+- '&aÚroveň 1: Protection I, &b5 Diamantů'
+- '&aÚroveň 2: Protection II, &b10 Diamantů'
+- '{tierColor}Úroveň 3: Protection III, &b{cost} {currency}'
+- '&7Úroveň 4: Protection IV, &b30 Diamantů'
+- ''
+upgrades-upgrade-name-armor-tier-4: '{color}Překované Brnění IV'
+upgrades-upgrade-lore-armor-tier-4:
+- '&7Váš tým získá na všechny částí brnění'
+- '&7Protection, toto vylepšení je trvalé!'
+- ''
+- '&aÚroveň 1: Protection I, &b5 Diamantů'
+- '&aÚroveň 2: Protection II, &b10 Diamantů'
+- '&aÚroveň 3: Protection III, &b20 Diamantů'
+- '{tierColor}Úroveň 4: Protection IV, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-miner-tier-1: '{color}Šílený Horník I'
+upgrades-upgrade-lore-miner-tier-1:
+- '&7Váš tým získá trvale Haste.'
+- ''
+- '{tierColor}Úroveň 1: Haste I, &b{cost} {currency}'
+- '&7Úroveň 2: Haste II, &b6 Diamantů'
+- ''
+upgrades-upgrade-name-miner-tier-2: '{color}Šílený Horník II'
+upgrades-upgrade-lore-miner-tier-2:
+- '&7Váš tým získá trvale Haste.'
+- ''
+- '&aÚroveň 1: Haste I, &b4 Diamantů'
+- '{tierColor}Úroveň 2: Haste II, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-heal-pool-tier-1: '{color}Léčivý Bazén'
+upgrades-upgrade-lore-heal-pool-tier-1:
+- '&7Vytvoří regenerační pole kolem'
+- '&7Vaší základny!'
+- ''
+- '&7Cena: &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-dragon-tier-1: '{color}Dračí Vylepšení'
+upgrades-upgrade-lore-dragon-tier-1:
+- '&7Váš tým bude mít 2 draky, místo 1'
+- '&7v průběhu náhlé smrti!'
+- ''
+- '&7Cena: &b{cost} {currency}'
+- ''
+upgrades-separator-item-name-glass: '&8⬆&7Lze zakoupit'
+upgrades-separator-item-lore-glass:
+- '&8⬇&7Nástrahy ve frontě'
+upgrades-trap-slot-item-name-first: '{color}Nástraha #1: {name}'
+upgrades-trap-slot-item-lore1-first:
+- '&7První nepřítel, který se rozhodne'
+- '&7vejít do Vaší základny, aktivuje'
+- '&7tuto nástrahu!'
+upgrades-trap-slot-item-lore2-first:
+- ''
+- '&7Zakoupení nástrahy ji'
+- '&7přídá zde. Cena nástrahy'
+- '&7se bude odvíjet od množství'
+- '&7nástrah ve frontě.'
+- ''
+- '&7Další nástraha: &b{cost} {currency}'
+upgrades-trap-slot-item-name-second: '{color}Nástraha #2: {name}'
+upgrades-trap-slot-item-lore1-second:
+- '&7Druhý nepřítel, který se rozhodne'
+- '&7vejít do Vaší základny, aktivuje'
+- '&7tuto nástrahu!'
+upgrades-trap-slot-item-lore2-second:
+- ''
+- '&7Zakoupení nástrahy ji'
+- '&7přídá zde. Cena nástrahy'
+- '&7se bude odvíjet od množství'
+- '&7nástrah ve frontě.'
+- ''
+- '&7Další nástraha: &b{cost} {currency}'
+upgrades-trap-slot-item-name-third: '{color}Nástraha #3: {name}'
+upgrades-trap-slot-item-lore1-third:
+- '&7Třetí nepřítel, který se rozhodne'
+- '&7vejít do Vaší základny, aktivuje'
+- '&7tuto nástrahu!'
+upgrades-trap-slot-item-lore2-third:
+- ''
+- '&7Zakoupení nástrahy ji'
+- '&7přídá zde. Cena nástrahy'
+- '&7se bude odvíjet od množství'
+- '&7nástrah ve frontě.'
+- ''
+- '&7Další nástraha: &b{cost} {currency}'
+upgrades-base-trap-name-1: '{color}Je to past!'
+upgrades-base-trap-lore-1:
+- '&7Aplikuje Blindness a Slowness'
+- '&7po dobu 5 sekund.'
+- ''
+upgrades-base-trap-name-2: '{color}Counter-Offensive'
+upgrades-base-trap-lore-2:
+- '&7Aktivuje Speed I na 15 sekund'
+- '&7pro Váš tým.'
+- ''
+upgrades-base-trap-name-3: '{color}Alarm'
+upgrades-base-trap-lore-3:
+- '&7Zruší neviditelnost nepřátelům.'
+- ''
+upgrades-base-trap-name-4: '{color}Vyčerpání'
+upgrades-base-trap-lore-4:
+- '&7Aplikuje Mining Fatigue na dobu 10'
+- '&7sekund.'
+- ''
+upgrades-separator-item-name-back: '&aZpět'
+upgrades-separator-item-lore-back:
+- '&7Do Vylepšení & Nástrah'
+upgrades-category-gui-name-traps: '&8Nástraha do fronty'
+upgrades-trap-queue-full: '&cFronta nástrah je plná!'
+upgrades-trap-default-msg: '&c&lNástraha {trap} byla aktivována!'
+upgrades-trap-default-title: '&cNÁSTRAHA AKTIVOVÁNA!'
+upgrades-trap-default-subtitle: '&fVaše nástraha {trap} byla aktivována!'
+upgrades-base-trap-msg-3: '&c&lAlarm byl spuštěn hráčem/kou &7&l{player} &c&lz týmu
+  {color}&l{team} &c&l!'
+upgrades-base-trap-title-3: '&c&lALARM!!!'
+upgrades-base-trap-subtitle-3: '&fAlarm byl spuštěn týmem {color}{team} &f!'
+upgrades-menu-gui-name-default: '&8Vylepšení & Nástrahy'
+display-group-3v3v3v3: 3v3v3v3
+team-name-bedwarsarena-Šedá: Šedá
+team-name-bedwarsarena-Zelená: Zelená
+team-name-bedwarsarena-Žlutá: Žlutá
+team-name-bedwarsarena-Modrá: Modrá
+display-group-2v2v2v2v2v2v2v2: 2v2v2v2v2v2v2v2
+team-name-islands-Žlutá: Žlutá
+team-name-islands-Růžová: Růžová
+team-name-islands-Šedá: Šedá
+team-name-islands-TZelená: TZelená
+team-name-islands-SModrá: SModrá
+team-name-islands-TModrá: TModrá
+team-name-islands-Červená: Červená
+team-name-islands-SZelená: SZelená
+display-group-default: Default
+team-name-islands-Pink: Pink
+team-name-islands-Green: Green
+display-group-solo: Solo
+team-name-world-RED: RED
+team-name-world-BLUE: BLUE
+display-group-doubles: Doubles
+team-name-clay-Modrá: Modrá
+team-name-clay-Zelená: Zelená
+team-name-clay-Žlutá: Žlutá
+team-name-clay-Červená: Červená
+display-group-2v2v2v2: 2v2v2v2
+display-group-duo: Duo
+team-name-castle-Žlutá: Žlutá
+team-name-castle-Zelená: Zelená
+team-name-castle-Modrá: Modrá
+team-name-castle-Červená: Červená
+addons:
+  team-selector:
+    inventory-name: '&8Výběr Týmu'
+    selector-name: '&9Výběr Týmu §7(Klikni pravým)'
+    selector-lore: []
+    choice:
+      lore:
+      - ''
+      - '&f- {color}&o{members}'
+      - ''
+      - §8» &7Klikněte pro připojení!
+      name: '{color}{team} &f({selected}&7/&f{total})'
+    switch-disabled: '&aBedWars §8» &6Nemůžete §7změnit svůj tým!'
+    team-join: '&aBedWars §8» &ePřipojili jste se do týmu {color}{team}'
+    team-full: '&aBedWars §8» {color}{team} &7je plný!'
+    teams-not-balanced: '&aBedWars §8» &7Do tohoto týmu se aktuálně přidat §6nemůžete§7!'
+    party-deny: '&aBedWars §8» &7Nemůžete si vybrat tým, protože jste v partě!'
+    cant-join-while-starting: '&aBedWars §8» &7Do tohoto týmu se aktuálně přidat §6nemůžete§7.'

@@ -1,0 +1,779 @@
+# AdvancedEnchantments
+# Made by N3kas
+# 
+# AdvancedEnchantments
+# Made by N3kas
+enchanter-enabled: true
+tinkerer-enabled: true
+alchemist-enabled: true
+permissions:
+  enchanter:
+    enabled: false
+    perm: ae.enchanter
+  tinkerer:
+    enabled: false
+    perm: ae.tinkerer
+  gkits:
+    enabled: false
+    perm: ae.gkits
+  alchemist:
+    enabled: false
+    perm: ae.alchemist
+alchemist:
+  settings:
+    combine-books: true
+    combine-dust: true
+  books:
+    add-up-chances: true
+    pre-set-chances:
+      enabled: false
+      success: 50
+      destroy: 50
+  dusts:
+    add-up-and-split: true
+    add-up: false
+  price:
+    exp: true
+    let-plugin-count: true
+    pre-set-pricing:
+      enabled: false
+      price: 250
+    let-plugin-decide: true
+  messages:
+    inv-name: Alchymista
+    item-preview:
+      name: '&e&lZobrazení Předmětů'
+      lore:
+      - '&7Spojený předmět, který dostanete'
+      - '&7od Alchymisty bude zobrazen zde.'
+      item:
+        type: STAINED_GLASS_PANE
+        damage: 0
+    item-explanation:
+      name: '&e&lAlchymista'
+      lore:
+      - '&7Tento Alchymista spojí:'
+      - ''
+      - '&c2 knihy stejné úrovně &7za'
+      - '&c1 knihu vyšší úrovně.'
+      - ''
+      - '&c2 prášky&7 za &c1 prášek s'
+      - §7vyšší šancí na úspěch.
+      item:
+        type: STAINED_GLASS_PANE
+        damage: 14
+    item-combine:
+      name: '&d&lKLIKNĚTE PRO VÝMĚNU'
+      lore:
+      - '&c&lSTOJÍ &c%price% EXP'
+      item:
+        type: STAINED_GLASS_PANE
+        damage: 5
+    item-placeholder:
+      name: ' '
+      lore: []
+      item:
+        type: STAINED_GLASS_PANE
+        damage: 15
+    doesnt-accept: §aKouzla §8» §6Alchymista §7nechce tento předmět.
+    trade-cancelled:
+    - '&cTrade cancelled'
+souls:
+  enabled: true
+  lore: '&cNasbírané duše: %souls%'
+  item:
+    type: PAPER
+    id: 0
+    name: '&f&lPočítadlo Duší'
+    lore:
+    - '&7Aplikujte na předmět, pro počítání'
+    - '&7nasbíraných duší.'
+    messages:
+      success:
+      - §aKouzla §8» §6Úspěšně §7jste aplikovali §6Počítadlo Duší §7na Váš předmět.
+    force-glow: false
+combining:
+  enabled: true
+  chances:
+    use-chances: true
+    break-item: false
+    upgrade: true
+  messages:
+    successfull-combining:
+    - §aKouzla §8» §6Úspěch! §7Kouzlo §6%encnat% §7je nyní na úrovni §6%level§7.
+    failure:
+    - §aKouzla §8» §7Kombinace byla §6neúspěšná§7.
+    already-max-level:
+    - §aKouzla §8» §7Toto kouzlo je již na maximální úrovni.
+slots:
+  enabled: true
+  max: 9
+  display-in-lore: false
+  display: '&eSloty&7: %left%'
+  message:
+  - §aKouzla §8» §7Na toto kouzlo nemáte dostatek místa!
+  max-increase-of-slots: 10
+applying:
+  already-applied:
+  - §aKouzla §8» §7Předmět již má toto kouzlo.
+  applied:
+  - §aKouzla §8» §7Kouzlo bylo aplikováno na Váš předmět.
+  max-level:
+  - §aKouzla §8» §7Toto kouzlo již je na maximální úrovni.
+  wrong-material:
+  - §aKouzla §8» §7Toto kouzlo nemůže být použito na tento předmět.
+  cosmetics:
+    applied:
+      particle: HAPPY_VILLAGER
+      sound: LEVEL_UP
+    failed:
+      particle: HAPPY_VILLAGER
+      sound: LEVEL_UP
+enchanter-books:
+  firework-on-open: true
+  display-right-click-message: true
+  message:
+  - §aKouzla §8» §7Prozkoumali jste %group-color%%group-name% Knihu &7a našli jste
+    %enchant-color% §8[%group-color%%level%§8]§7.
+  type: BOOK
+  id: 0
+  force-glow: false
+  name: '%group-color%%group-name% Kniha &7(Pravé-Kliknutí)'
+  lore:
+  - '&7Prozkoumejte pro získání náhodného'
+  - '%group-color%%group-name% Kouzla§7.'
+  cosmetics:
+    particle: HAPPY_VILLAGER
+    sound: LEVEL_UP
+items:
+  itemnametag:
+    type: NAME_TAG
+    id: 0
+    name: '&6&lPřejmenování &7(Pravé-Kliknutí)'
+    lore:
+    - '&7Přejmenujte a upravte své předměty.'
+    messages:
+      success:
+      - §aKouzla §8» §7Úspěšně jste přejmenovali svůj předmět na §6%name§7.
+      activated:
+      - §aKouzla §8» §7Vaše zpráva přejmenuje Váš předmět v ruce.
+      air:
+      - §aKouzla §8» §7Musíte mít v ruce předmět.
+    settings:
+      colors: true
+      magic: false
+      word-blacklist:
+      - fuck
+      - dick
+      - bitch
+  randomization-scroll:
+    type: PAPER
+    id: 0
+    name: '%group-color%%group-name% &e&lNáhodný Svitek'
+    lore:
+    - '&7Aplikujte na knihu s kouzlem pro'
+    - '&7znovu-vygenerování procentuálních hodnot na úspěch.'
+  black-scroll:
+    type: INK_SACK
+    id: 0
+    name: '&f&lČerný Svitek'
+    lore:
+    - '&7Odebere kouzlo z předmětu a'
+    - '&7vymění ho za knihu!'
+    success: 95
+    destroy: 5
+    random: false
+  secret-dust:
+    type: FIREBALL
+    id: 0
+    name: '%group-color%%group-name% &fTajný Prášek &7(Pravé-Kliknutí)'
+    lore:
+    - '&7Obsahuje: &bKouzelný&7, nebo &fZáhadný &7Prášek.'
+    - '&7Neidentifikovaná brašna soumraku.'
+    success: 1-15
+    chance: 20
+  mystery-dust:
+    type: SULPHUR
+    id: 0
+    name: '&fZáhadný Prášek'
+    lore:
+    - '&7Neúspěšný dvouprodukt'
+    - '&7z Kouzelného Prášku.'
+  magic-dust:
+    type: SUGAR
+    id: 0
+    name: '%group-color%%group-name% &7Kouzelný Prášek'
+    lore:
+    - '&a+%percent%% Úspěšnost'
+    - §7Aplikujte na %group-color%%group-name% Knihu§7,
+    - §7pro zvýšení úspěšnosti o %group-color%%percent%%§7.
+  slot-increaser:
+    name: '&fVylepšovač Slotů'
+    type: STORAGE_MINECART
+    id: 0
+    lore:
+    - '&7Increase slots limit on an item by &b+%count%'
+    messages:
+      success:
+      - '&7You have successfully increased maximum slots by %count%!'
+  stattrak:
+    name: '&aStatTrak Vytvářeč'
+    type: MAGMA_CREAM
+    id: 0
+    lore:
+    - '&7track how many kills you have with a weapon'
+    - '&7Drag ontop of another item to apply it'
+  blocktrak:
+    name: '&aBlockTrak Vytvářeč'
+    type: SLIME_BALL
+    id: 0
+    lore:
+    - '&7Track how many blocks you break with a tool'
+    - '&7Drag ontop of another item to apply it'
+  settings:
+    can-apply-to:
+    - ALL_SWORD
+    - ALL_ARMOR
+    - ALL_PICKAXE
+    - ALL_AXE
+    - ALL_SHOVEL
+    - ALL_HOE
+    - BOOK
+    - ENCHANTED_BOOK
+    - BOW
+  transmogscroll:
+    type: PAPER
+    id: 0
+    name: '&e&lPočítací Svitek'
+    lore:
+    - '&7Oraginzuje Vaše kouzla podle &e&nvzácnosti&7 na předmětu'
+    - '&7a přidá jejich počet do §dpopisu§7.'
+    enchants-count-formatting: '&d[&b&n%count%&d]'
+  soulgem:
+    name: '&c&lKrystal Duší &7[&a%count%&7]'
+    type: EMERALD
+    lore:
+    - '&7Aplikujte na předmět pro přidání duší.'
+    id: 0
+  mobtrak:
+    name: '&3MobTrak Vytvářeč'
+    type: SLIME_BALL
+    id: 0
+    lore:
+    - '&7track how many mob kills you have with a weapon'
+    - '&7Drag ontop of another item to apply it'
+  holywhitescroll:
+    type: PAPER
+    id: 0
+    name: '&6&lBožský Svitek'
+    lore:
+    - '&eLegendární svitek, který můžete'
+    - '&eaplikovat na všechny předěmty,'
+    - '&edává 100% šanci na získání předmětu'
+    - '&epo Vaší smrti.'
+    settings:
+      lore-display: '&e&l*&f&lBOŽSKÁ&e&l* &f&lOCHRANA'
+  orb:
+    armor:
+      name: '&6&lArmor Enchantment Orb &6[&a&n%max%&6]'
+      lore:
+      - '&a%success%% Success Rate'
+      - ''
+      - '&6+%new% Enchantment slots'
+      - '&6%max% Max Enchantment Slots'
+      - ''
+      - '&eIncreases the # of enchantment'
+      - '&eslots on a piece of armor by %new%,'
+      - '&eup to a maximum of %max%'
+      - '&7Drag n'''' Drop onto an item to apply.'
+white-scroll:
+  delete: true
+  lore-display: '&f&lOCHRANA'
+  item:
+    type: EMPTY_MAP
+    id: 0
+    force-glow: false
+    name: '&fBílý Svitek'
+    lore:
+    - '&fOchrání Váš předmět před zničením,'
+    - '&fpokud se Vám nepovede jeho okouzlení.'
+  messages:
+    applied:
+    - §aKouzla §8» §6Bílý Svitek §7byl úspěšně aplikován.
+    failed:
+    - §aKouzla §8» §6Bílý Svitek §7zachránil Váš předmět.
+  whitelist:
+    enabled: true
+    list:
+    - LEATHER_HELMET
+    - LEATHER_CHESTPLATE
+    - LEATHER_LEGGINGS
+    - LEATHER_BOOTS
+    - IRON_HELMET
+    - IRON_CHESTPLATE
+    - IRON_LEGGINGS
+    - IRON_BOOTS
+    - GOLD_HELMET
+    - GOLD_CHESTPLATE
+    - GOLD_LEGGINGS
+    - GOLD_BOOTS
+    - CHAIN_HELMET
+    - CHAIN_CHESTPLATE
+    - CHAIN_LEGGINGS
+    - CHAIN_BOOTS
+    - DIAMOND_HELMET
+    - DIAMOND_CHESTPLATE
+    - DIAMOND_LEGGINGS
+    - DIAMOND_BOOTS
+    - WOOD_AXE
+    - WOOD_PICKAXE
+    - WOOD_SWORD
+    - WOOD_SHOVEL
+    - STONE_AXE
+    - STONE_PICKAXE
+    - STONE_SWORD
+    - STONE_SHOVEL
+    - IRON_AXE
+    - IRON_PICKAXE
+    - IRON_SWORD
+    - IRON_SHOVEL
+    - GOLD_AXE
+    - GOLD_PICKAXE
+    - GOLD_SWORD
+    - GOLD_SHOVEL
+    - DIAMOND_AXE
+    - DIAMOND_PICKAXE
+    - DIAMOND_SWORD
+    - DIAMOND_SHOVEL
+    - BOW
+    message:
+    - §aKouzla §8» §7Na tento předmět nemůžete použít svitek!
+enchanter:
+  open-sound: BLOCK_CHEST_OPEN
+  messages:
+    cannot-afford:
+    - §aKouzla §8» §7Toto si nemůžete dovolit.
+    successfull-purchase:
+    - §aKouzla §8» §7Obdrželi jste knihu. Pro použití s ní klikněte.
+    sound: ENTITY_PLAYER_LEVELUP
+  inventory:
+    size: 36
+    name: '&8&lKOUZELNÍK'
+    items:
+      '0':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '1':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '2':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '3':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '4':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '5':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '6':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '7':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '8':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '9':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '10':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '11':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 3
+          force-glow: false
+        enchant-group: BASIC
+        price: exp:1500
+        name: '&b✯§f✯✯✯✯'
+        lore:
+        - ''
+        - ' &6&l* &e&lCENA &71,500 EXP'
+        - ''
+        - '&8» &7Klikněte pro zakoupení knihy.'
+      '12':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '13':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 5
+          force-glow: false
+        enchant-group: RARE
+        price: exp:5000
+        name: §a✯✯§f✯✯✯
+        lore:
+        - ''
+        - ' &6&l* &e&lCENA &75,000 EXP'
+        - ''
+        - '&8» &7Klikněte pro zakoupení knihy.'
+      '14':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '15':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 1
+          force-glow: false
+        enchant-group: LEGENDARY
+        price: exp:10000
+        name: §6✯✯✯§f✯✯
+        lore:
+        - ''
+        - ' &6&l* &e&lCENA &710,000 EXP'
+        - ''
+        - '&8» &7Klikněte pro zakoupení knihy.'
+      '16':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '17':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '18':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '19':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '20':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '21':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 6
+          force-glow: false
+        enchant-group: DIVINE
+        price: exp:50000
+        name: §c✯✯✯✯§f✯
+        lore:
+        - ''
+        - ' &6&l* &e&lCENA &750,000 EXP'
+        - ''
+        - '&8» &7Klikněte pro zakoupení knihy.'
+      '22':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '23':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 14
+          force-glow: false
+        enchant-group: IMMORTAL
+        price: exp:250000
+        name: §4✯✯✯✯✯
+        lore:
+        - ''
+        - ' &6&l* &e&lCENA &7250,000 EXP'
+        - ''
+        - '&8» &7Klikněte pro zakoupení knihy.'
+      '24':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '25':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '26':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '27':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '28':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '29':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '30':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '31':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '32':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '33':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '34':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+      '35':
+        item:
+          type: STAINED_GLASS_PANE
+          id: 15
+          force-glow: false
+        name: ' '
+    settings:
+      enchanterBookLevel: ALL
+  go-back-item:
+    item:
+      type: NETHER_STAR
+      id: 0
+    name: '&c&lJít zpět'
+    lore: []
+  disabled-in-worlds:
+  - bad_world
+  keep-open: false
+  right-click-to-view-enchants: true
+destroy:
+  enabled: true
+  destroy-item: true
+  message:
+  - §aKouzla §8» §6Okouzlení §7bylo §6neúspěšné§7.
+  sound:
+    enabled: true
+    play: BLOCK_ANVIL_BREAK
+  particles:
+    enabled: true
+    type: FLAME
+chances:
+  random: true
+  success: 92
+  destroy: 8
+  destroy-if-fail:
+    enabled: true
+enchantment-book:
+  item:
+    type: BOOK
+    id: 0
+    force-glow: false
+  name: §8« §aKouzlo §8»
+  lore:
+  - '&fPřetáhněte na předmět pro použití.'
+  - ''
+  - §8╔════════ %group-color%%enchant-no-color% §8════════╗
+  - §8║
+  - §8╠═%group-color%§lÚroveň
+  - §8║ §f%level%
+  - §8║
+  - §8╠═%group-color%§lPopis
+  - §8║ §f%description%
+  - §8║
+  - §8╠═%group-color%§lLze aplikovat na
+  - §8║ §f%applies%
+  - §8║
+  - §8╠═%group-color%§lŠance
+  - §8║ §a%success%% Na úspěch
+  - §8║ §c%destroy%% Na neúspěch
+  - §8║ §7Lze navýšit pomocí §6Kouzelného Prášku§7.
+  - §8║
+  - §8╚════════ %group-color%%enchant-no-color% §8════════╝
+messages:
+  main-hand-only: §aKouzla §8» §7Tento příkaz lze využít pouze v hlavní ruce.
+  command:
+    info:
+    - §8╔════════ §d%enchant% §8════════╗
+    - §8║
+    - §8╠═§d§lPopis
+    - §8║ §f%description%
+    - §8║
+    - §8╠═§d§lLze aplikovat na
+    - §8║ §f%applies%
+    - §8║
+    - §8╠═§d§lMaximální úroveň
+    - §8║ §f%max-level%
+    - §8║
+    - §8╚════════ §d%enchant% §8════════╝
+    enchantment-not-found:
+    - §aKouzla §8» §6%enchantment% §7nebylo nalezeno.
+    player-not-online: §aKouzla §8» §6%player% §7není na serveru.
+    no-permission: §aKouzla §8» §7Nemáte dostatečné pravomoce pro použití tohoto příkazu.
+    not-a-number: §aKouzla §8» &6%number% &7není číslo.
+    invalid-level: '§aKouzla §8» §7Úroveň je příliš vysoká, zkuste použít: §6%levels%§7.'
+confirmation-inventory:
+  name: '&aPotvrzení'
+  enabled: true
+  accept:
+    material: STAINED_GLASS_PANE
+    damage: 5
+    name: '&aKlikněte pro potvrzení.'
+    lore:
+    - '&7Klikněte pro zaplacení s %price% %paymentType%'
+  cancel:
+    material: STAINED_GLASS_PANE
+    damage: 14
+    name: '&cKlikněte pro zrušení.'
+    lore: []
+enchantLimitation:
+  enabled: true
+  lore: '&c&lNemodifikovatelné'
+settings:
+  open-enchanter-by-right-clicking-enchantment-table: false
+  use-legacy-potions-system: false
+  steal-money:
+    message-enabled: false
+  trench-autoadd-items: false
+  trench-do-all-durab: true
+  enable-combo-for-mobs: true
+  clear-potion-effects-on-quit: true
+  ae-market-enabled: true
+  use-numbers: false
+  enchants-debug-mode: false
+  combo-limit: 15
+  itemnametag-max-name-length: 32
+  trench-blacklist:
+  - AIR
+  - WATER
+  - LAVA
+  - BEDROCK
+  - PORTAL
+  - SPAWNER
+  - STATIONARY_LAVA
+  - STATIONARY_WATER
+  trench-whitelist: []
+  whitescroll-material-blacklist:
+  - STONE
+  enchantment-world-blacklist:
+  - no_enchantments_world
+  holy-whitescrolls-world-blacklist:
+  - no_holywhitescrolls_world
+  souls-per-kill: 1
+  trench-optimization:
+    automaticallyDetect: true
+  collect-souls-from-mobs: false
+  showFirstLevel: true
+  heal-check: true
+  invalidSettingWarnings: true
+  anvilCombining: true
+  miningSouls:
+    enabled: true
+    chance: 20
+  bow-full-power: true
+commands:
+  enchanter:
+    enabled: true
+    command: enchanter
+    aliases:
+    - e
+  tinkerer:
+    enabled: true
+    command: tinkerer
+    aliases:
+    - tinker
+  withdrawsouls:
+    enabled: true
+    command: withdrawsouls
+    aliases:
+    - wsouls
+  alchemist:
+    enabled: true
+    command: alchemist
+    aliases:
+    - alchem
+  apply:
+    enabled: true
+    command: apply
+    aliases:
+    - reapply
+armor-switching:
+  enabled: true
+  sound: LEVEL_UP
+  armorSkullsSwitching: true

@@ -1,0 +1,86 @@
+MainMenu:
+  Hats:
+    Name: '&eHlavy'
+    Material: DIAMOND_HELMET
+    Lore:
+    - '&7Posbírej všechny hlavy a'
+    - '&7nasaď si je když jsi v lobby.'
+  Animated Hats:
+    Name: '&eAnimované hlavy'
+    Material: head:5ebfd2396cbabdb42c348bcf41599c87a506a71ef60948c496f95c6cb63141
+    Lore:
+    - '&7Tyto hlavy to vezmou o krok dále'
+    - '&7a pohybují se, když vy sami se'
+    - '&7pohybujete.'
+  Particles:
+    Name: '&eEfekty'
+    Material: BLAZE_POWDER
+    Lore:
+    - '&7Dej si na sebe efekty,'
+    - '&7když stojíš v lobby,'
+    - '&7užívej těchto super'
+    - '&7efektů!'
+  Suits:
+    Name: '&eObleky'
+    Material: GOLDEN_LEGGINGS
+    Lore:
+    - '&7Posbírej a obleč si'
+    - '&7kusy ze specifických obleků,'
+    - '&7aby jsi dostal unikátní efekty!'
+  Gadgets:
+    Name: '&eDoplňky'
+    Material: PISTON
+    Lore:
+    - '&7Tyto vtipné malé hračky,'
+    - '&7mohou být využívány,'
+    - '&7když jsi v lobby.'
+  Pets:
+    Name: '&eMazlíčci'
+    Material: BONE
+    Lore:
+    - '&7Odemkni si tyto mazlíčky, aby'
+    - '&7tě následovali po'
+    - '&7lobby!'
+  Miniatures:
+    Name: '&eMiniatury'
+    Material: head:9da39269ef45f825ec61bb4f8aa09bd3cf07996fb6fac338a6e91d6699ae425
+    Lore:
+    - '&7Odemkněte si tyto miniatury,'
+    - '&7aby jste měli malého kamaráda'
+    - '&7okolo sebe!'
+  Morphs:
+    Name: '&eMorfové'
+    Material: ZOMBIE_HEAD
+    Lore:
+    - '&7Ultimátní transformace!'
+    - '&7Užívání tohoto v lobby'
+    - '&7tě transformuje'
+    - '&7do monstra a odemkne'
+    - '&7jedinečné síly, které ostatní'
+    - '&7uvidí!'
+  Banners:
+    Name: '&ePrapory'
+    Material: CUSTOM_MATERIAL_1
+    Lore:
+    - '&7Odemkni si všechny prapory'
+    - '&7a nasaď si je na hlavu,'
+    - '&7když jsi v lobby!'
+  Emotes:
+    Name: '&eObličeje'
+    Material: head:60c432cbc490a8af6e9dfeb28095c0a0ec79fff705fb184674d1e743bd05baa
+    Lore:
+    - '&7Vyjádři se! Ukaž'
+    - '&7světu jak se cítíš'
+    - '&7S temito unikátními'
+    - '&7obličeji.'
+  Cloaks:
+    Name: '&ePláště'
+    Material: ENCHANTING_TABLE
+    Lore:
+    - '&7Vyrobeno z efektů. Tyto'
+    - '&7pláště poskitují ultimátní'
+    - '&7swag. Aby jsi je aktivoval,'
+    - '&7stůj v klidu 1 sekundu,'
+    - '&7když jsi v lobby.'
+Inventory-Size: 54
+Slot-Layout: 9, 11, 13, 15, 17, 27, 29, 31, 33, 35

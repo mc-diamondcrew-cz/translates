@@ -1,0 +1,31 @@
+General:
+  prefix: ''
+  prefix-debug: '&e<INFO>&7 '
+  prefix-error: '&c<CHYBA>&e '
+  no-permission: §aNičitel §8» §7Na tuto akci nemáte dostatečné pravomoce.
+  no-permission-specific: §aNičitel §8» §7Musíte mít pravomoc §6{perm} §7pro tuto
+    akci.
+  enabled: '&aAktivní'
+  disabled: '&cNeaktivní'
+Hooks:
+  claim-plugin-hooked: '&7[&a✔&7] &aUsing %plugin% as Claim Provider.'
+  claim-plugin-not-found: '&7[&4✘&7] &cError, no valid Claim Provider was found!'
+Time:
+  day-of-week:
+    SUNDAY: Neděle
+    MONDAY: Pondělí
+    TUESDAY: Úterý
+    WEDNESDAY: Středa
+    THURSDAY: Čtvtek
+    FRIDAY: Pátek
+    SATURDAY: Sobota
+  everyday: Každý Den
+Message:
+  durability-left: '§aNičitel §8» &7Výdrž: &6{durability}'
+  config-reloaded: §aNičitel §8» §7Konfigurace znovu načtena.
+  saving-data: §aNičitel §8» §7Ukládám data..
+  saved-data: §aNičitel §8» §7Data úspěšně uložena za &6{ms}ms&7.
+  inside-protected-region: '&cThis Block is inside a Protected Region!'
+  cant-break-by-hand: §aNičitel §8» §7Tuto kostku zničí pouze §6exploze§7.
+  outside-working-hours: '&cDurability can decrease only on {days} from {time-start}
+    to {time-end}.'

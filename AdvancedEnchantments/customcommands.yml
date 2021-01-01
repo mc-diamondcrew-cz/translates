@@ -1,0 +1,196 @@
+# Create customized commands.
+enchantment-info:
+  # Is this command enabled?
+  enabled: true
+  # Change the start of the command
+  # Use it in game: /<command> <enchantment>
+  command: /enchant
+  # Permission for command
+  # Set to '' to disable
+  permission: ''
+  # Message when opening menu
+  # Set to [] to disable
+  # Use %list-of-items% for applyable materials in lore and %list-of-items-msg% for message.
+  message:
+  - "§aKouzla §8» §7Informace o kouzlu §6%enchant%§7."
+  inventory:
+    # If not enabled, only message will be shown.
+    # You can use all variables that are used for items in the message,
+    # if you want the command to only show text.
+    enabled: true
+    # Inventory types
+    # NORMAL is chest-like inventory, HOPPER is hopper-like (has only 5 slots)
+    type: HOPPER
+    # Inventory size (9-18-27-36-45-54)
+    # Does not work with HOPPER inventory
+    size: 45
+    # Inventory name
+    name: "&e%enchant%&7 Informace"
+    items:
+      # Slots start from 0
+      # This number defines the inventory slot.
+      0:
+        type: STAINED_GLASS_PANE
+        id: 15
+        force-glow: false
+        name: " "
+        lore: []
+      1:
+        type: STAINED_GLASS_PANE
+        id: 15
+        force-glow: false
+        name: " "
+        lore: []
+      2:
+        type: ENCHANTED_BOOK
+        id: 0
+        force-glow: false
+        name: "&7Informace o Kouzlu &e%enchant%§7."
+        lore:
+        - §8╔════════ §d%enchant% §8════════╗
+        - §8║
+        - §8╠═§d§lPopis
+        - §8║ §f%desc%
+        - §8║
+        - §8╠═§d§lLze aplikovat na
+        - §8║ §f%applies-to%
+        - §8║
+        - §8╠═§d§lMaximální úroveň
+        - §8║ §f%max-lvl-roman%
+        - §8║
+        - §8╚════════ §d%enchant% §8════════╝
+        # you can as well use %group-color% to get enchantment color
+      3:
+        type: STAINED_GLASS_PANE
+        id: 15
+        force-glow: false
+        name: " "
+        lore: []
+      4:
+        type: STAINED_GLASS_PANE
+        id: 15
+        force-glow: false
+        name: " "
+        lore: []
+enchantments:
+  # Is this command enabled?
+  enabled: true
+  # Change the command
+  # Use it in game: /<command>
+  command: /enchants
+  # Permission for command
+  # Set to '' to disable
+  permission: ''
+  # Message when opening menu
+  # Set to [] to disable
+  message:
+  - "&7Zobrazuji seznam všech kouzel..."
+  mode:
+    # Modes: GROUPS, ALL
+    # If set to GROUPS, first group selection inventory will show up
+    # If set to ALL, first inventory will show all available enchants
+    currentMode: GROUPS
+  inventory:
+    # Inventory size (9-18-27-36-45-54)
+    size: 36
+    # Show 'Go Back' item?
+    go-back-item: true
+    # Display page number with next/previous page item amounts?
+    display-page-number: true
+    # Inventory name
+    name: "&7Všechna Kouzla"
+    items:
+      # Slots start from 0
+      # This number defines the inventory slot.
+      11:
+        type: STAINED_GLASS_PANE
+        id: 3
+        force-glow: false
+        group: BASIC
+        name: '§7Všechna &b✯§f✯✯✯✯ §7Kouzla'
+        lore:
+          - ""
+          - '&8» &7Klikněte pro zobrazení.'
+      13:
+        type: STAINED_GLASS_PANE
+        id: 5
+        force-glow: false
+        group: RARE
+        name: '§7Všechna §a✯✯§f✯✯✯ §7Kouzla'
+        lore:
+          - ""
+          - '&8» &7Klikněte pro zobrazení.'
+      15:
+        type: STAINED_GLASS_PANE
+        id: 1
+        force-glow: false
+        group: LEGENDARY
+        name: '§7Všechna §6✯✯✯§f✯✯ §7Kouzla'
+        lore:
+          - ""
+          - '&8» &7Klikněte pro zobrazení.'
+      21:
+        type: STAINED_GLASS_PANE
+        id: 6
+        force-glow: false
+        group: DIVINE
+        name: '§7Všechna §c✯✯✯✯§f✯ §7Kouzla'
+        lore:
+          - ""
+          - '&8» &7Klikněte pro zobrazení.'
+      23:
+        type: STAINED_GLASS_PANE
+        id: 14
+        force-glow: false
+        group: IMMORTAL
+        name: '§7Všechna §4✯✯✯✯✯ §7Kouzla'
+        lore:
+          - ""
+          - '&8» &7Klikněte pro zobrazení.'
+      fill:
+        type: STAINED_GLASS_PANE
+        id: 15
+        force-glow: false
+        name: " "
+        lore: []
+  group-enchantment-inventory:
+    name: "%color%%group%&7 Kouzla"
+    # Fills empty slots with this item
+    fill-item:
+      material: STAINED_GLASS_PANE
+      id: 15
+      name: " "
+      lore: []
+    previous-page:
+      material: STAINED_GLASS_PANE
+      id: 14
+      name: "&cPředchozí Strana."
+      lore: []
+      slot: '%invSize% - 3'
+    next-page:
+      material: STAINED_GLASS_PANE
+      id: 5
+      name: "&aDalší Strana."
+      lore: []
+      slot: '%invSize% - 2'
+    item:
+      type: ENCHANTED_BOOK
+      id: 0
+      force-glow: false
+      # What command should be ran when player clicks on one of the enchantments?
+      # %max-lvl% - Displays max. level in numbers, %max-lvl-roman% - displays max. level in roman numerals
+      command: '/enchant %enchantment%'
+      name: "&emc.diamondcrew.cz"
+      lore:
+      - §8╔════════ §d%enchant% §8════════╗
+      - §8║
+      - §8╠═§d§lPopis
+      - §8║ §f%desc%
+      - §8║
+      - §8╠═§d§lLze aplikovat na
+      - §8║ §f%applies-to%
+      - §8║
+      - §8╠═§d§lMaximální úroveň
+      - §8║ §f%max-lvl-roman%
+      - §8║
+      - §8╚════════ §d%enchant% §8════════╝

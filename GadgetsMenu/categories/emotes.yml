@@ -1,0 +1,301 @@
+Emotes:
+  Smile:
+    Name: '&aObličej - Usmívající se'
+    Cooldown: 10
+    Mystery Dust: 10
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fsmiles'
+    Lore:
+      Locked: &id001
+      - '&7Cítíš se skvěle? Ukaž'
+      - '&7světu jak šťastný jsi'
+      - '&7s tímto animovaným usmívajícím se'
+      - '&7obličejem!'
+      Unlocked: *id001
+  Cool:
+    Name: '&aObličej - Skvělý'
+    Cooldown: 10
+    Mystery Dust: 12
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fB)'
+    Lore:
+      Locked: &id002
+      - '&7Cíťíš se jako nejlepší kočka'
+      - '&7na serveru? Vzepři se'
+      - '&7vedenímu s tímto animovaným'
+      - '&7obličejem!'
+      Unlocked: *id002
+  Wink:
+    Name: '&aObličej - Mrkací'
+    Cooldown: 10
+    Mystery Dust: 12
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fwinks'
+    Lore:
+      Locked: &id003
+      - '&7Bavíš se? Dej někomu'
+      - '&7vědět, že jdeš do žertu'
+      - '&7s tímto mrkajícím'
+      - '&7obličejem!'
+      Unlocked: *id003
+  Grin:
+    Name: '&aObličej - Šklebící se'
+    Cooldown: 10
+    Mystery Dust: 13
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fYay!'
+    Lore:
+      Locked: &id004
+      - '&7Pokud se cítíš skvěle,'
+      - '&7tak tu není lepší cesta, než'
+      - '&7to ukázat, skrze tohoto'
+      - '&7animovaného šklebícího se obličeje!'
+      Unlocked: *id004
+  Surprised:
+    Name: '&aObličej - Překvapení'
+    Cooldown: 10
+    Mystery Dust: 15
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fOMG'
+    Lore:
+      Locked: &id005
+      - '&7Překvapilo vás něco?'
+      - '&7Jen ať to lobby ví s'
+      - '&7s tímto animovaným překvapeným'
+      - '&7obličejem!'
+      Unlocked: *id005
+  Cry:
+    Name: '&9Obličej - Brečící'
+    Cooldown: 10
+    Mystery Dust: 25
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fWaaaaa!'
+    Lore:
+      Locked: &id006
+      - '&7Cítíš se smutně? Prolévej slzy'
+      - '&7s tímto animovaným brečícím'
+      - '&7obličejem!'
+      Unlocked: *id006
+  Sleepy:
+    Name: '&9Obličej - Spící'
+    Cooldown: 10
+    Mystery Dust: 20
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fZZzzzz'
+    Lore:
+      Locked: &id007
+      - '&7Zůstal jsi celou noc vzhůru, protože jsi hrál'
+      - '&7tvojí oblíbenou hru? Upadněte'
+      - '&7do spánku s tímto animovaným'
+      - '&7spícím obličejem!'
+      Unlocked: *id007
+  Rage:
+    Name: '&9Obličej - Naštvaný'
+    Cooldown: 10
+    Mystery Dust: 23
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&cGRRRRR!!!'
+    Lore:
+      Locked: &id008
+      - '&7Vaří vám něco vaši'
+      - '&7krev? Vypusťte páru s tímto'
+      - '&7animovaným naštvaným obličejem!'
+      Unlocked: *id008
+  Frown:
+    Name: '&9Obličej - Mračící se'
+    Cooldown: 10
+    Mystery Dust: 22
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fsniff'
+    Lore:
+      Locked: &id009
+      - '&7Zkazilo ti něco náladu?'
+      - '&7Dejte to všem vědět'
+      - '&7s tímto animovaným mračícím se obličejem!'
+      Unlocked: *id009
+  Cheeky:
+    Name: '&9Obličej - Nadávající'
+    Cooldown: 10
+    Mystery Dust: 22
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&f:P'
+    Lore:
+      Locked: &id010
+      - '&7Někdo vás naštval? Upozorněte'
+      - '&7všechny jak se momentálně cítíte'
+      - '&7s tímto animovaným nadávajícím'
+      - '&7obličejem!'
+      Unlocked: *id010
+  Sun Tan:
+    Name: '&9Obličej - Opálený'
+    Cooldown: 10
+    Mystery Dust: 25
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fSunny'
+    Lore:
+      Locked: &id011
+      - '&7Zapoměl jsi svůj opalovací'
+      - '&7krém, když jsi šel na'
+      - '&7pláž? Dej ostatním vědět jak'
+      - '&7jsi křupavý s tímto animovaným'
+      - '&7Opáleným obličejem!'
+      Unlocked: *id011
+  Heart Eyes:
+    Name: '&9Obličej - Srdce v očích'
+    Cooldown: 10
+    Mystery Dust: 28
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&d❤  ❤'
+    Lore:
+      Locked: &id012
+      - '&7Cítíš se skvěle? Šiř dobrou'
+      - '&7náladu s tímto animovaným '
+      - '&7obličejem!'
+      Unlocked: *id012
+  Dizzy:
+    Name: '&9Obličej - Závratě'
+    Cooldown: 10
+    Mystery Dust: 28
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fx_x'
+    Lore:
+      Locked: &id013
+      - '&7Horská dráha není'
+      - '&7pro tebe? Ukaž ostatním jak'
+      - '&7se cítíš s tímto animovaným'
+      - '&7obličejem!'
+      Unlocked: *id013
+  RIP:
+    Name: '&9Obličej - RIP'
+    Cooldown: 10
+    Mystery Dust: 28
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fRest In Pepperoni'
+    Lore:
+      Locked: &id014
+      - '&7Dal jsi tu poslední'
+      - '&7ránu? Ukaž milost svým'
+      - '&7oponentům s tímto Rest In'
+      - '&7Pepperoni obličejem!'
+      Unlocked: *id014
+  Relax:
+    Name: '&9Obličej - Relax'
+    Cooldown: 10
+    Mystery Dust: 28
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fPhew'
+    Lore:
+      Locked: &id015
+      - '&7Cítíš se útulně? Určitě se budeš'
+      - '&7s tímto relax obličejem!'
+      Unlocked: *id015
+  Spicy:
+    Name: '&9Obličej - Pikantní'
+    Cooldown: 10
+    Mystery Dust: 28
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fBurns!'
+    Lore:
+      Locked: &id016
+      - '&7Dostal se k tobě'
+      - '&7habaňéro pepř? Nech ostatní vědět'
+      - '&7s tímto pikantním obličejem!'
+      Unlocked: *id016
+  Deal With It:
+    Name: '&9Obličej - Vypořádej se s tím'
+    Cooldown: 10
+    Mystery Dust: 28
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Hologram:
+      Enabled: true
+      Text: '&fDeal With It :)'
+    Lore:
+      Locked: &id017
+      - '&7Cítíš se, že se chceš'
+      - '&7předvádět? Nech ostatní vědět,'
+      - '&7jak úžasně se cítíš s opravdovým'
+      - '&7"Vypořádej se s tím" obličejem!'
+      Unlocked: *id017

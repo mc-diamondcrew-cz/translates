@@ -1,0 +1,166 @@
+Cloaks:
+  Superhero:
+    Name: '&6Superhrdinský plášť'
+    Material: RED_DYE
+    Mystery Dust: 65
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id001
+      - '&7Přímo z komiksových'
+      - '&7knížek přišel ten známý'
+      - '&7červený plášť!'
+      Unlocked: *id001
+  Mystical:
+    Name: '&6Mystický plášť'
+    Material: BOOK
+    Mystery Dust: 85
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id002
+      - '&7Zahalený v tajemstvých, tento'
+      - '&7plášť je středem'
+      - '&7početných legend vypovídajích'
+      - '&7o jeho síle.'
+      Unlocked: *id002
+  Firewings:
+    Name: '&6Ohnivý Plášť'
+    Material: BLAZE_POWDER
+    Mystery Dust: 72
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id003
+      - '&7Znovuzrozen z popele jako'
+      - '&7Fénix v tomto zobrazení'
+      - '&7plamenů!'
+      Unlocked: *id003
+  Vampire Wings:
+    Name: '&6Plášť - Upíří křídla'
+    Material: REDSTONE
+    Mystery Dust: 78
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id004
+      - '&7Obrovské černé a červené křídla'
+      - '&7rozšířené z tvých zad do'
+      - '&7formy hrozivých upířích'
+      - '&7křídel!'
+      Unlocked: *id004
+  Frosty:
+    Name: '&6Mrazivý plášť'
+    Material: SNOWBALL
+    Mystery Dust: 78
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id005
+      - '&7Chlad mi nikdy'
+      - '&7nevadil!'
+      Unlocked: *id005
+  Icewings:
+    Name: '&6Plášť - Ledové křídla'
+    Material: ICE
+    Mystery Dust: 72
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id006
+      - '&7Je to mnou, nebo je tady'
+      - '&7zima?'
+      Unlocked: *id006
+  Shaman:
+    Name: '&6Šamanský plášť'
+    Material: BONE
+    Mystery Dust: 85
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id007
+      - '&7Buď oklopen tornádem,'
+      - '&7podoné šamanskému tornádu'
+      Unlocked: *id007
+  Firerings:
+    Name: '&6Plášť - Ohnivé kruhy'
+    Material: BLAZE_ROD
+    Mystery Dust: 50
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id008
+      - '&7Buď oklopen plameny, '
+      - '&7Možná způsob, jakým chodíte,'
+      - '&7je spálen na popel.'
+      Unlocked: *id008
+  Scanner:
+    Name: '&6Plášť - Skener'
+    Material: BEACON
+    Mystery Dust: 65
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id009
+      - '&7Bleep Bloop!'
+      Unlocked: *id009
+  Archangel:
+    Name: '&6Plášť - Archanděl'
+    Material: head:36f0485453d3a90f354321e8f382bef106bf506424f70c04a207f82bdb2856b9
+    Mystery Dust: 70
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id010
+      - '&7Občas andělé jsou'
+      - '&7obyčejní lidé, kteří pomáhají'
+      - '&7nám uvěřit znova v'
+      - '&7zázraky.'
+      Unlocked: *id010
+  Yin and Yang:
+    Name: '&6Plášť - Yin a Yang'
+    Material: head:7fc0e041e45e1d96934bb9159e7b9e1ed74ff99a9b9342214302fdba57fd2
+    Mystery Dust: 62
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id011
+      - '&7Získej rovnováhu'
+      - '&7vesmíru a koukej jak se točí'
+      - '&7pod tvými nohy.'
+      Unlocked: *id011
+  Flame of the Titans:
+    Name: '&6Plášť - Plameny titánů'
+    Material: MAGMA_CREAM
+    Mystery Dust: 65
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id012
+      - '&7Tyto plameny jsou podle všeho'
+      - '&7duše titánů.'
+      Unlocked: *id012

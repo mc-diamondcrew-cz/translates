@@ -1,0 +1,68 @@
+# This line affects the new naming of spawners, to DISABLE this, change the message back to Monster Spawner
+spawnerName: '&8[§a%creature%§8]'
+
+addedEgg: §aSpawners §8» §7Úspěšně přidáno §6%amount %creature% §7vajíček do Vašeho
+  inventáře.
+addedEggOtherPlayer: '&aSpawners §8» §7Přidáno &6%amount% %creature% §7vajíček do
+  inventáře hráče/ky §6%player%§7.'
+addedSpawner: §aSpawners §8» §7Přidáno §6%amount% %creature% §7Spawnerů do Vašeho
+  inventáře.
+addedSpawnerOtherPlayer: §aSpawners §8» §7Přidáno §6%amount% %creature% §7Spawnerů
+  hráči/ce §6%player%§7.
+noFreeSlot: '&aSpawners §8» §6Nedostatek §7místa v inventáři.'
+noFreeSlotDroppedGround: §aSpawners §8» §6Nedostatek §7místa v inventáři. Předměty
+  na zemi.
+
+noPermission: §aSpawners §8» §7Nemáte dostatečné pravomoce.
+noPermissionChangingEgg: §aSpawners §8» §7Nemáte dostatečné pravomoce na §6změnu vajíček§7.
+noPermissionChangingSpawner: §aSpawners §8» §7Nemáte dostatečné pravomoce na §6změnu
+  Spawnerů§7.
+noPermissionFreeEgg: §aSpawners §8» §7Nemáte dostatečné pravomoce na použití §6vajíček
+  zdarma§7.
+noPermissionFreeSpawner: §aSpawners §8» §7Nemáte dostatečné pravomoce na použití §6Spawnerů
+  zdarma§7.
+noPermissionViewType: §aSpawners §8» §7Nemáte dostatenčé pravomoce pro §6prohlédnutí
+  §7Spawneru tohoto typu.
+noPermissionChangingWithEggs: §aSpawners §8» §7Nemáte dostatečné pravomoce pro změnu
+  Spawnerů pomocí vajíček.
+noPermissionCraft: §aSpawners §8» §7Nemáte dostatečné pravomoce pro vyrobení Spawneru
+  pro §6%creature%§7.
+noPermissionPlace: §aSpawners §8» §7Nemáte dostatečné pravomoce pro položení Spawneru
+  pro §6%creature%§7.
+
+changedEgg: §aSpawners §8» §6Úspěšně §7nastaveno vajíčko na §6%creature%§7.
+changedSpawner: §aSpawners §8» §7Úspěšně změněn Spawner na §6%creature%§7.
+
+playerOffline: §aSpawners §8» §7Hráč §6nenalezen§7.
+changingDeniedFactions: §aSpawners §8» §7Zde §6nemůžete §7pokládat Spawnery.
+changingDeniedWorldGuard: §aSpawners §8» §7Akce zablokována §6WorldGuardem§7.
+getSpawnerType: '§aSpawners §8» §7Typ: §6%creature%§7.'
+unknownArgument: §aSpawners §8» §7/silkspawners help
+unknownCreature: §aSpawners §8» §6%creature% §7nebylo rozpoznáno.
+useNumbers: §aSpawners §8» §7Použijte prosím čísla v rozsahu §61 - 64§7.
+noConsole: §aSpawners §8» §7Tento příkaz je pouze pro hráče.
+configsReloaded: §aSpawners §8» §7Konigurační soubory §6načteny§7.
+
+spawnerBroken: §aSpawners §8» §6%creature% §cZNIČEN
+spawnerPlaced: §aSpawners §8» §6%creature% §aPOLOŽEN
+placingDefault: §aSpawners §8» §7Pokládám výchozí Spawner.
+
+informationOfSpawner1: §8[§aSpawner]
+informationOfSpawner2: '§7Typ: §6%creature%'
+informationOfSpawnerBar: '§7Typ Spawneru: &6%creature%'
+
+spawningDenied: §aSpawers §8» §6%creature% §7není povolen.
+spawning: '&7Spawner §6%creature%'
+noSpawnerHere: '&aSpawners §8» §7Zde Spawner být nemůže!'
+
+lookAtSpawner: '&aSpawners §8» §7Musíte se koukat §6přímo §7na spawner.'
+spawnerNotDeterminable: '&aSpawners §8» §7Musíte mít v ruce Spawner, nebo vajíčko!'
+help: |-
+  '&7------&6SilkSpawners v%version% Help Menu&7------'
+  '&e/ss help &7- &2Displays the help menu.'
+  '&e/ss list|all &7- &2Displays all available creatures.'
+  '&e/ss view|info &7- &2Displays information about the viewed spawner.'
+  '&e/ss reload|rl &7- &2Reloads the configuration files.'
+  '&e/ss change <newMob> &7- &2Changes the spawner you are currently holding or viewing at.'
+  '&e/ss give|add <player> <mob> [amount] &7- &2Gives a spawner or egg to the player. Amount is optional.'
+  '&e/ss selfget|i <mob> [amount] &7- &2Gives a spawner or egg to you. Amount is optional.'

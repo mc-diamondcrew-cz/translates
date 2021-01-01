@@ -1,0 +1,357 @@
+Settings:
+  Prefix: '' #Prefix of when you get Crazy Auctions Messages.
+  GUIName: '&b&lDiamond Aukce' #Name of the Main GUI.
+  Players-Current-Items: '&b&lAktuální Předměty' #The Name of the Player Current Items GUI.
+  Cancelled/Expired-Items: '&b&lZrušené/Expirované předměty' #Name of the Cancelled/Expired GUI.
+  Buying-Item: '&b&lPotvrzení' #Name of the Buying GUI.
+  Bidding-On-Item: '&b&lPřihazuješ na tento předmět' #Name of the Bidding GUI.
+  Categories: '&b&lKategorie' #Name of the Category GUI.
+  Sell-Time: 2d #The time that each item will sell for.
+  Bid-Time: 2m 30s #Time for each item that is biddable.
+  Full-Expire-Time: 10d #The full time the item is in the crazy auctions.
+  Bid-Winner-Time: 20d #The time the winner of a bid has to claim their prize.
+  Minimum-Sell-Price: 10 #Minimum amount you can sell a item for.
+  Max-Beginning-Sell-Price: 42000000 #Max amount you can sell a item for.
+  Minimum-Bid-Price: 10 #Minimum starting bid.
+  Max-Beginning-Bid-Price: 42000000 #Maximum starting bid.
+  Allow-Damaged-Items: true #Allow items that have been damaged.
+  Category-Page-Opens-First: true #If set to true the categories page will open when they do /CA.
+  Feature-Toggle: #Toggle if a feature is on or off.
+    Selling: true #Able to use the selling part of the auction house.
+    Bidding: true #Able to use the bidding part of the auction house.
+  Sounds:
+    Toggle: true #Disable the clicking sound.
+    Sound: 'UI_BUTTON_CLICK' #Make sure if you use 1.8 or lower you use the 1.8 sound and 1.9 and up use 1.9 sounds. The default sound is 1.8.
+    #Sounds are found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  GUISettings: #Settings for things in the gui.
+    SellingItemLore: #The lore on items that are being sold.
+      - ''
+      - '&eKlikni pro koupi.'
+      - ''
+      - '&8■ &fCena: &b$%price%'
+      - '&8■ &fProdejce: &b%seller%'
+      - ''
+    CurrentLore: #Lore on items that are in your current items GUI.
+      - ''
+      - '&eKlikni pro zrušení.'
+      - ''
+      - '&8■ &fCena: &b$%price%'
+      - '&8■ &fExpiruje: &b%time%'
+      - ''
+    Cancelled/ExpiredLore: #Lore on items that are in your canceled/expired GUI.
+      - ''
+      - '&eKlikni pro navrácení.'
+      - ''
+      - '&8■ &fPlně expiruje: &b%time%'
+      - ''
+    Bidding: #Lore on Bidding Items.
+      - ''
+      - '&eKlikni pro přihození.'
+      - ''
+      - '&8■ &fProdejce: &b%seller%'
+      - '&8■ &fAktuální příhoz: &b$%topbid%'
+      - '&8■ &fNejvětší přihazovač: &b%topbidder%'
+      - '&8■ &fZbývající čas: &b%time%'
+      - ''
+    Category-Settings:
+      Armor:
+        Item: 'GOLD_CHESTPLATE'
+        Toggle: true
+        Slot: 11
+        Name: '&b&lBrnění'
+        Lore:
+          - ''
+          - '&fTato kategorie obsahuje všechny'
+          - '&fkusy &bbrnení&f, které se aktuálně prodávají.'
+          - ''
+      Weapons:
+        Item: 'GOLD_SWORD'
+        Toggle: true
+        Slot: 12
+        Name: '&b&lZbraně'
+        Lore:
+          - ''
+          - '&fTato kategorie obsahuje všechny'
+          - '&fkusy &bzbraní&f, které se aktuálně prodávají.'
+          - ''
+      Tools:
+        Item: 'GOLD_PICKAXE'
+        Toggle: true
+        Slot: 13
+        Name: '&b&lNástroje'
+        Lore:
+          - ''
+          - '&fTato kategorie obsahuje všechny'
+          - '&fkusy &bnástrojů&f, které se aktuálně prodávají.'
+          - ''
+      Food:
+        Item: 'GOLDEN_APPLE'
+        Toggle: true
+        Slot: 14
+        Name: '&b&lJídlo'
+        Lore:
+          - ''
+          - '&fTato kategorie obsahuje všechno'
+          - '&fco můžete &bzbaštit&f.'
+          - ''
+      Potions:
+        Item: 'EXP_BOTTLE'
+        Toggle: true
+        Slot: 15
+        Name: '&b&lLektvary'
+        Lore:
+          - ''
+          - '&fTato kategorie obsahuje všechny'
+          - '&frůzné kouzelné &blektvary &fpro zkušené čaroděje/čarodějky.'
+          - ''
+      Blocks:
+        Item: 'GOLD_BLOCK'
+        Toggle: true
+        Slot: 16
+        Name: '&b&lBlocky'
+        Lore:
+          - ''
+          - '&fTato kategorie obsahuje všechny'
+          - '&frůzné &bkostky &fpro nadějné stavitele.'
+          - ''
+      Other:
+        Item: 'GOLD_NUGGET'
+        Toggle: true
+        Slot: 17
+        Name: '&b&lHarampádí'
+        Lore:
+          - ''
+          - '&fTato kategorie obsahuje všechen'
+          - '&bbordel&f, který nikdo nechce. ;('
+          - ''
+      None:
+        Item: 'BARRIER'
+        Toggle: true
+        Slot: 23
+        Name: '&b&lUKAŽ MI VŠECIČKO'
+        Lore:
+          - ''
+          - '&fChápu to, nemůžeš se rozhodnout,'
+          - '&fprostě to chceš &bVŠECHNO &fvidět.'
+          - ''
+    OtherSettings: #Other Settings for the GUIs.
+      SellingItems: #The button for your current items.
+        Item: 'DIAMOND' #The item that this button is.
+        Toggle: true #If the item is in the gui or not.
+        Slot: 46 #The slot it is in. I recommend not changing these. If you do make sure they are still in the bottom row.
+        Name: '&bPředměty&f, které prodáváš.' #Name of the item.
+        Lore: #Lore of the item.
+          - ''
+          - '&fKlikni pro zobrazení všech předmětů,'
+          - '&fkteré aktuálně nabízíš na prodej.'
+          - ''
+      Cancelled/ExpiredItems: #The button for Cancelled/Expired Items.
+        Item: 'POISONOUS_POTATO'
+        Toggle: true
+        Slot: 47
+        Name: '&rExpirované &7/ &fZrušené předměty'
+        Lore:
+          - ''
+          - '&fKlikni pro &bzobrazení &fa &bvybrání'
+          - '&fvšech &bexpirovaných a &bzrušených předmětů.'
+          - ''
+      PreviousPage: #The button for Previous Page.
+        Item: 'PAPER'
+        Toggle: true
+        Slot: 49
+        Name: '&8&l< &fPředchozí strana'
+        Lore: {}
+      Refesh: #The button for Refresh Page.
+        Item: 'DOUBLE_PLANT'
+        Toggle: true
+        Slot: 50
+        Name: '&bObnovit'
+        Lore: {}
+      NextPage: #The button for Next Page.
+        Item: 'PAPER'
+        Toggle: true
+        Slot: 51
+        Name: '&rDalší strana &8&l>'
+        Lore: {}
+      Category1: #The button for Next Page.
+        Item: 'CHEST'
+        Toggle: true
+        Slot: 52
+        Name: '&bKategorie'
+        Lore:
+          - ''
+          - '&8■ &fAktuální kategorie: &b%category%&f.'
+          - '&eKlikni pro vybrání jiné kategorie.'
+          - ''
+      Category2: #The button for Next Page.
+        Item: 'CHEST'
+        Toggle: true
+        Slot: 48
+        Name: '&bKategorie'
+        Lore:
+          - ''
+          - '&8■ &fAktuální kategorie: &b%category%&f.'
+          - '&eKlikni pro vybrání jiné kategorie.'
+          - ''
+      Bidding/Selling: #Switch between Bidding and Selling.
+        Selling:
+          Item: 'SLIME_BALL'
+          Toggle: true
+          Slot: 53
+          Name: '&bKoukáš se na předměty, které můžeš koupit.'
+          Lore:
+            - ''
+            - '&eKlikni pro předměty, na které můžeš přihazovat.'
+            - ''
+        Bidding:
+          Item: 'MAGMA_CREAM'
+          Toggle: true
+          Slot: 53
+          Name: '&bKoukáš se na předměty, na které můžeš přihodit.'
+          Lore:
+            - ''
+            - '&eKlikni pro předměty, které můžeš koupit.'
+            - ''
+      WhatIsThis: #The info on all the Books buttons.
+        SellingShop: #The Book in the main shop.
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&eNevíš si s něčím rady?'
+          Lore:
+            - ''
+            - "&6Prodávání"
+            - '&b/ah sell [cena] [množství] &8- &fPřidá předmět v ruce do aukce.'
+            - ""
+            - "&6Dražba"
+            - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
+            - ''
+            - "&6Užitečné příkazy:"
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah listed &8- &fTvé předměty v aukci."
+        BiddingShop: #The Book in the main shop.
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&eNevíš si s něčím rady?'
+          Lore:
+            - ''
+            - "&6Prodávání"
+            - '&b/ah sell [cena] [množství] &8- &fPřidá předmět v ruce do aukce.'
+            - ""
+            - "&6Dražba"
+            - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
+            - ''
+            - "&6Užitečné příkazy:"
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah listed &8- &fTvé předměty v aukci."
+        CurrentItems: #The Book in the Current items GUI.
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&eNevíš si s něčím rady?'
+          Lore:
+            - ''
+            - "&6Prodávání"
+            - '&b/ah sell [cena] [množství] &8- &fPřidá předmět v ruce do aukce.'
+            - ""
+            - "&6Dražba"
+            - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
+            - ''
+            - "&6Užitečné příkazy:"
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah listed &8- &fTvé předměty v aukci."
+        Cancelled/ExpiredItems: #The Book in the Canceled/Expired Items GUI.
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&eNevíš si s něčím rady?'
+          Lore:
+            - ''
+            - "&6Prodávání"
+            - '&b/ah sell [cena] [množství] &8- &fPřidá předmět v ruce do aukce.'
+            - ""
+            - "&6Dražba"
+            - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
+            - ''
+            - "&6Užitečné příkazy:"
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah listed &8- &fTvé předměty v aukci."
+        Viewing: #The Book in the Viewing Items GUI.
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 50
+          Name: '&eNevíš si s něčím rady?'
+          Lore:
+            - ''
+            - "&6Prodávání"
+            - '&b/ah sell [cena] [množství] &8- &fPřidá předmět v ruce do aukce.'
+            - ""
+            - "&6Dražba"
+            - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
+            - ''
+            - "&6Užitečné příkazy:"
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah listed &8- &fTvé předměty v aukci."
+        Categories: #The Book in the Viewing Items GUI.
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&eNevíš si s něčím rady?'
+          Lore:
+            - ''
+            - "&6Prodávání"
+            - '&b/ah sell [cena] [množství] &8- &fPřidá předmět v ruce do aukce.'
+            - ""
+            - "&6Dražba"
+            - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
+            - ''
+            - "&6Užitečné příkazy:"
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+      Back: #The Back Buttons.
+        Item: 'PAPER'
+        Slot: 46
+        Name: '&bZpět'
+      Return: #The Return Buttons.
+        Item: 'FLOWER_POT'
+        Slot: 50
+        Name: '&bVrátit vše'
+        Lore:
+          - ''
+          - '&fKlikni pro navrácení &bvšech&f předmětů.'
+          - ''
+      Confirm: #The Confirm Buttons.
+        Item: 'LIME_STAINED_GLASS_PANE'
+        Name: '&aPotvrdit'
+      Cancel: #The Cancel Buttons.
+        Item: 'RED_STAINED_GLASS_PANE'
+        Name: '&cZrušit'
+      Your-Item: #The item that shows when you try to buy/bid on your item.
+        Item: 'BARRIER'
+        Name: '&cNemůžeš si zakoupit svůj vlastní předmět!'
+      Cant-Afford: #The item that shows when you cant afford this item.
+        Item: 'BARRIER'
+        Name: '&cNemáš dostatek financína tento předmět!'
+      Top-Bidder: #The item for when a player is already the top bidder.
+        Item: 'BARRIER'
+        Name: '&cJiž jsi přihodil nejvíce.'
+      Bidding: #The item in the middle when bidding on an item.
+        Item: 'BLACK_STAINED_GLASS_PANE'
+        Name: '&bPřihazování'
+        Lore:
+          - ''
+          - '&ePřidat // Odebrat'
+          - ''
+          - '&8■ &fTvůj příhoz: &b$%Bid%'
+          - '&8■ &fNejvětší příhoz: &b%topbid%'
+          - ''
+      Bid: #The button for when you want to confirm your bid.
+        Item: 'LIGHT_BLUE_STAINED_GLASS_PANE'
+        Name: '&bPřihodit'
+        Lore:
+          - ''
+          - '&eKlikni pro přihození.'
+          - ''
+  BlackList:
+    - 'BEDROCK'
+    - 'END_PORTAL_FRAME'

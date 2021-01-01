@@ -1,0 +1,295 @@
+Particles:
+  Water Splash:
+    Name: '&aEfekt - Stříkající voda'
+    Material: NETHER_STAR
+    Mystery Dust: 15
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id001
+      - '&7Vytvoř efekt "Stříkající vody"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id001
+  Drip Water:
+    Name: '&9Efekt - Kapající voda'
+    Material: WATER_BUCKET
+    Mystery Dust: 25
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id002
+      - '&7Vytvoř efekt "Kapající vody"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id002
+  Drip Lava:
+    Name: '&9Efekt - Kapající láva'
+    Material: LAVA_BUCKET
+    Mystery Dust: 25
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id003
+      - '&7Vytvoř efekt "Kapající lávy"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id003
+  Crit:
+    Name: '&9Efekt - Crit'
+    Material: STONE_SWORD
+    Mystery Dust: 22
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id004
+      - '&7Vytvoř efekt "Critu"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id004
+  Magic Crit:
+    Name: '&9Efekt - Magický Crit'
+    Material: SPLASH_POTION:8204
+    Mystery Dust: 20
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id005
+      - '&7Vytvoř efekt "Magického Critu"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id005
+  Spell:
+    Name: '&5Efekt - Kouzlo'
+    Material: ENDER_CHEST
+    Mystery Dust: 30
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id006
+      - '&7Vytvoř efekt "Kouzla"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id006
+  Instant Spell:
+    Name: '&5Efekt - Okamžité kouzlo'
+    Material: GHAST_TEAR
+    Mystery Dust: 32
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id007
+      - '&7Vytvoř efekt "Okamžitého kouzla"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id007
+  Mob Spell:
+    Name: '&5Efekt - Mob kouzlo'
+    Material: EXPERIENCE_BOTTLE
+    Mystery Dust: 35
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id008
+      - '&7Vytvoř efekt "Mob kouzla"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id008
+  Witch Spell:
+    Name: '&6Efekt - Kouzlo čarodějnice'
+    Material: POTION:8260
+    Mystery Dust: 40
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id009
+      - '&7Vytvoř efekt "Kouzla čarodějnice"'
+      - '&7okolo sebe'
+      - '&7v lobby..'
+      Unlocked: *id009
+  Angry Villager:
+    Name: '&5Efekt - Naštvaný vesničan'
+    Material: FIRE_CHARGE
+    Mystery Dust: 32
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id010
+      - '&7Vytvoř efekt "Naštvaného vesničana"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id010
+  Happy Villager:
+    Name: '&5Efekt - Šťastný vesničan'
+    Material: EMERALD
+    Mystery Dust: 35
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id011
+      - '&7Vytvoř efekt "Šťastného vesničana"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id011
+  Town Aura:
+    Name: '&aEfekt - Městská aura'
+    Material: MYCELIUM
+    Mystery Dust: 18
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id012
+      - '&7Vytvoř efekt "Městské aury"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id012
+  Note:
+    Name: '&5Efekt - Noty'
+    Material: NOTE_BLOCK
+    Mystery Dust: 35
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id013
+      - '&7Vytvoř efekt "Not"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id013
+  Portal:
+    Name: '&aEfekt - Portál'
+    Material: ENDER_PEARL
+    Mystery Dust: 18
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id014
+      - '&7Vytvoř efekt "Portálu"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id014
+  Enchantment Table:
+    Name: '&9Efekt - Okouzlující stůl'
+    Material: ENCHANTING_TABLE
+    Mystery Dust: 28
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id015
+      - '&7Vytvoř efekt "Okouzlujícího stolu"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id015
+  Flame:
+    Name: '&6Efekt - Plameny'
+    Material: GOLD_NUGGET
+    Mystery Dust: 45
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id016
+      - '&7Vytvoř efekt "Plamenu"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id016
+  Redstone:
+    Name: '&6Efekt - Rudit'
+    Material: REDSTONE
+    Mystery Dust: 48
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id017
+      - '&7Vytvoř efekt "Ruditu"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id017
+  Heart:
+    Name: '&9Efekt - Srdce'
+    Material: POPPY
+    Mystery Dust: 28
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id018
+      - '&7Vytvoř efekt "Srdce"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id018
+  Fireworks Spark:
+    Name: '&6Efekt - Jiskra ohňostroje'
+    Material: FIREWORK_ROCKET
+    Mystery Dust: 52
+    Rarity: Legendary
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id019
+      - '&7Vytvoř efekt "Jiskry ohňostroje"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id019
+  Smoke:
+    Name: '&aEfekt - Kouř'
+    Material: FIREWORK_STAR
+    Mystery Dust: 18
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id020
+      - '&7Vytvoř efekt "Kouře"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id020
+  Slime:
+    Name: '&aEfekt - Sliz'
+    Material: SLIME_BALL
+    Mystery Dust: 22
+    Rarity: Common
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: &id021
+      - '&7Vytvoř efekt "Slizu"'
+      - '&7okolo sebe'
+      - '&7v lobby.'
+      Unlocked: *id021

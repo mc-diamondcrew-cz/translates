@@ -1,0 +1,49 @@
+# Configuration for Armor Sets GUI
+# This guy will let players preview armor sets on the server
+
+# Command list that will open the GUI
+commands:
+  - '/armorsets'
+  - '/previewsets'
+
+gui:
+  name: '&7Soupravy'
+  size: 27
+  items:
+    '0-27':
+      material: STAINED_GLASS_PANE
+      damage: 15
+      name: ' '
+      lore: []
+
+previewArmorSet:
+  name: '&7Prohlížení Soupravy'
+  size: 27
+  items:
+    '0-27':
+      material: STAINED_GLASS_PANE
+      damage: 15
+      name: ' '
+      lore: []
+    '11':
+      itemType: SET_HELMET
+    '12':
+      itemType: SET_CHESTPLATE
+    '13':
+      itemType: SET_LEGGINGS
+    '14':
+      itemType: SET_BOOTS
+    '15':
+      itemType: SET_WEAPON
+      # Fallback material, if no weapon is present this will be shown instead
+      material: BARRIER
+      damage: 0
+      name: '&cŽádná zbraň'
+      lore:
+        - '&cTato souprava nemá žádnou zbraň!'
+    '26':
+      itemType: GO_BACK
+      material: PAPER
+      damage: 0
+      name: '&cZpět'
+      lore: []

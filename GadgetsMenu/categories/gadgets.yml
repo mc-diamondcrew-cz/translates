@@ -1,0 +1,1010 @@
+Gadgets:
+  Fun And Games:
+    Name: '&eZábava & Hry'
+    Material: head:b89042082bb7a7618b784ee7605a134c58834e21e374c888937161057f6c7
+    GUI-Name: Zábava & Hry
+    Enabled: true
+    Lore:
+    - '&7Zahraj si hry, nebo si jen'
+    - '&7tak blbni s různýma vychytávkama!'
+    Types:
+      Magic 9 Ball:
+        Name: '&aKouzelná Koule'
+        Material: BLACK_WOOL
+        Cooldown: 3
+        Mystery Dust: 22
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Messages:
+        - '&eKočka říká: &fNAKRM MĚ.'
+        - '&eTroll říká: &fTrololololololol'
+        - '&eAdmini říkají: &fNeporušujte pravidla.'
+        - '&eMáma říká: &fNeseď pořád u toho počítače.'
+        - '&eRybář říká: &fPojďmě chytit rybu!'
+        - '&eBryan Mills říká: &fJá si tě najdu, a zabiju tě.'
+        - '&eAnna říká: &fNechceš postavit sněhuláka?'
+        - '&eMimoň říká: &fBEE DO BEE DO BEE DO!'
+        - '&eHerobrine říká: &fNikdo nepřežije!'
+        - '&ePes říká: &fMeow!'
+        - '&eDarth Vader říká: &fJsem tvůj otec.'
+        - '&eElsa říká: &fZima mi stejně nikdy nevadila.'
+        - '&eThe Creeper říká: &fNeboj se. Neodpálím ti dům.'
+        - '&eNotch říká: &fŽivot je zábavnější, když hrajete Minecraft.'
+        - '&eMario říká: &fIt''s me, Mario!'
+        - '&eKočka říká: &fBark!'
+        - '&eBob Ross říká: &fThere are no mistakes, only happy accidents.'
+        Lore:
+          Locked: &id001
+          - '&7Najdi řešení svých problémů'
+          - '&7pomocí nejchytřejší kouzelné'
+          - '&7koule.'
+          Unlocked: *id001
+      Fortune Cookie:
+        Name: '&aKoláček štěstí'
+        Material: COOKIE
+        Cooldown: 0
+        Mystery Dust: 10
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Messages:
+          Player:
+          - '&e{PLAYER}&f: Hele podívej, koláček!'
+          - '&e{PLAYER}&f: Ten koláček byl vynikající!'
+          - '&e{PLAYER}&f: Počkej, byl tam kousek papírku uvnitř! Co je tam napsáno?'
+          Fortune Cookie:
+          - '&eKoláček Štěstí&f: Pokud nejsi šťastný tam kde jsi, Udělej pár kroků
+            do leva. Pokud stále nejsi šťastný tak ti nemůžeme pomoci.'
+          - '&eKoláček Štěstí&f: Někteří z nás se ponaučili z chyb ostatních; zbytek
+            jsou ostatní.'
+          - '&eKoláček Štěstí&f: Zítra, odbočte doleva. Poté odbočte do prava. Poté
+            odbočte doleva. Nyní jste dosáhli vaší destinace.'
+          - '&eKoláček Štěstí&f: Jsi jedinečný, stejně jako všichni ostatní.'
+          - '&eKoláček Štěstí&f: Můžeš nebo nemusíš být nerozhodný člověk.'
+          - '&eKoláček Štěstí&f: Štěstí které hledáš je uvnitř jiné sušenky.'
+          - '&eKoláček Štěstí&f: Na světě jsou 3 druhy lidí: ti kteří umí počítat,
+            a ti kteří neumí'
+          - '&eKoláček Štěstí&f: V kadeřnictví s 2 kadeřníky, si vyber toho s horším
+            sestřihem.'
+          - '&eKoláček Štěstí&f: Čistá koupelna je známka rozbitého počítače.'
+          - '&eKoláček Štěstí&f: Ranní ptáče dostane práci, ale je to hnusné, kdo
+            by chtěl červa???'
+          - '&eKoláček Štěstí&f: 34% statistik na internetu jsou všechny vymyšlené!'
+          - '&eKoláček Štěstí&f: Pokud chceš, aby po tobě nikdo nic nechtěl znova,
+            udělej to špatně už poprvé!'
+          - '&eKoláček Štěstí&f: Silní lidé neschazují ostatní. Silní lidé je zvednou
+            a praští s nimi o zem pro maximální poškození.'
+          - '&eKoláček Štěstí&f: Nestresuj se ohledně statistik - Je důležité, že
+            se bavíš!'
+          - '&eKoláček Štěstí&f: Následující věta je lež. předešlá věta je pravda.'
+          - '&eKoláček Štěstí&f: Pokud tlačíte dostatečně, tak se můžete dostat skrz
+            jakoukoliv překážku - kromě dveří označených ''''sem''''!'
+          - '&eKoláček Štěstí&f: Pokud potřebujete získat pozornost vaší rodiny, pouze
+            na chvíli vypněte WiFi!'
+          - '&eKoláček Štěstí&f: Nic nemůže zkazit pátek víc, než když si uvědomíš,
+            že je vlastně úterý.'
+          - '&eKoláček Štěstí&f: Dej si pozor kde se v noci pohybuješ na serveru.
+            Mohl by jsi zde potkat 9hx a _vondrs_, kteří se začali nudit.'
+          - '&eKoláček Štěstí&f: Udělej to! Jen to udělej! nenech svoje sny být sny,
+            jen to udělej!'
+          - '&eKoláček Štěstí&f: Život je jako bonboniéra. Někteří lidé jsou měkký
+            uvnitř, někteří jsou tvrdý a houževnatí, a pár znich jsou prostě na nic!'
+          - '&eKoláček Štěstí&f: Pokud máma řekne ne, zeptej se otce!'
+          - '&eKoláček Štěstí&f: Vesmír obsahuje protony, neutrony, electrony a kr*tény.'
+          - '&eKoláček Štěstí&f: Dělej si pravidelné přestávky od hraní - je to dobré
+            pro tvé zdraví!'
+          - '&eKoláček Štěstí&f: Pokud tady nejsou žádné otevřené dveře, zkus okno.
+            Pokud tady nejsou žádné otevřené okna, přestaň se dobívat do mého domu!'
+          - '&eKoláček Štěstí&f: Pokud, si myslíš, že se o tebe nikdo nezajímá, zkus
+            nezaplatit daně!'
+          - '&eKoláček Štěstí&f: Poslouchej pouze rady od koláčků - nevěř ostatním
+            jídlům vykládajícím štěstí!'
+          - '&eKoláček Štěstí&f: Nikdy se nevzdávej, Dokud se nedostaneš na mezinárodní
+            vzdávající se soutěž.'
+          - '&eKoláček Štěstí&f: Udělejte někomu den tím že budete hodný, a někdo
+            udělá váš!'
+          - '&eKoláček Štěstí&f: Když ti život dá citróny, udělej limonádu. Když ti
+            život dá limety, vyhoď limety z okna a jdi si koupit limonádu!'
+          - '&eKoláček Štěstí&f: Pokud nemáš jíst v noci, proč je v ledničce světlo?'
+          - '&eKoláček Štěstí&f: Změň svoje heslo na ''''nesprávný''''. Díky tomu,
+            pokud zapomeneš svoje heslo, tak ti to tvůj počítač vždy řekne!'
+          - '&eKoláček Štěstí&f: Pokud jsi zapoměl jak vypadáš, tak se koukni do zrcadla.
+            Pokud se nevidíš v zrcadle, tak je to okno!'
+          - '&eKoláček Štěstí&f: Vyhraješ *vlož hru* hru. Jen se pokoušej, dokud neuspěješ!'
+          - '&eKoláček Štěstí&f: Jediná náhrada za slušné chování jsou rychlé reflexi.'
+          - '&eKoláček Štěstí&f: Vztah je jako abeceda. Koukáš na X a myslíš tím Y?'
+        Lore:
+          Locked: &id002
+          - '&7Co je lepší než'
+          - '&7koláček? Koláček, který ti dává'
+          - '&7dobré živtoní rady! Užij si'
+          - '&7sladkost a moudrá slova'
+          - '&7s tímto koláčkem'
+          - '&7štěstí.'
+          Unlocked: *id002
+      Tetherball:
+        Name: '&5Tetherball'
+        Material: OAK_FENCE
+        Cooldown: 90
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id003
+          - '&7Tvoří tyč, která'
+          - '&7je doplněna upoutanou koulí - '
+          - '&7prefekt pro rychlou hru'
+          - '&7tetherball!'
+          Unlocked: *id003
+      Diving Board:
+        Name: '&6Skokanský můstek'
+        Material: CAULDRON
+        Cooldown: 60
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Messages:
+        - '&eBackflip!'
+        - '&eFrontflip!'
+        - '&eSwan Dive'
+        - '&eBelly Flop!'
+        - '&eCannonball!'
+        Lore:
+          Locked: &id004
+          - '&7všechno šlo'
+          - '&7plavecky, dokud'
+          - '&7náhle... DĚLOVÁ KOULE!'
+          - '&7Předveď své vodní'
+          - '&7dovednosti se Skokanským'
+          - '&7můstkem.'
+          Unlocked: *id004
+      Trampoline:
+        Name: '&6Trampolína'
+        Material: HOPPER
+        Cooldown: 80
+        Mystery Dust: 92
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id005
+          - '&7postaví trampolínu'
+          - '&7která tě pošle do'
+          - '&7vzduchu. Pozvi své přátelé!'
+          Unlocked: *id005
+      Flower Giver:
+        Name: '&9Dárce květin'
+        Material: FLOWER_POT
+        Cooldown: 5
+        Mystery Dust: 25
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Messages:
+          Target-A-Player: '&cKlikni pravým, aby jsi hráčům dal kytku!'
+          Already-Had-A-Flower: '&cTento hráč kytku již má.'
+          Sent-A-Flower: '&ePoslal jsi &r{PLAYER} &ekytku!'
+          Already-Sent-A-Request: '&cJiž jsi odeslal žádost o kytku &r{PLAYER}&c.'
+          Received-Flower: '{PLAYER} &eti daroval kytku!'
+          Accept: '&a&l[PŘIJMOUT]'
+          Decline: '&c&l[ODMÍTNOUT]'
+          Accept-Json-message: '&7Klikni sem, aby jsi přijmul kytku.'
+          Decline-Json-message: '&7Klikni sem, aby jsi odmítnul kytku.'
+          No-Pending-Invite: '&cNemáš žádné pozvání od tohoto hráče.'
+          Accepted-Flower: '{PLAYER} &apřijmul tvojí kytku!'
+          Declined-Flower: '{PLAYER} &codmítnul tvojí kytku!'
+          Right-Click-To-Remove-Flower: '&eKlikni pravím aby jsi odstranil kytku!'
+        Lore:
+          Locked: &id006
+          - '&7Šiř dobrou náladu tím,'
+          - '&7že budeš darovat kytky všem'
+          - '&7okolo tebe!'
+          Unlocked: *id006
+      Sand Castle:
+        Name: '&9Hrad z písku'
+        Material: head:9918b3b7516b1946566fd7b287f82ef44afafea9a2c3bd385691f7f0f42097f8
+        Cooldown: 30
+        Mystery Dust: 28
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id007
+          - '&7Postav si svůj vlastní hrad z'
+          - '&7opravdového písku!'
+          Unlocked: *id007
+      BBQ Grill:
+        Name: '&5BBQ Gril'
+        Material: OBSIDIAN
+        Cooldown: 45
+        Mystery Dust: 58
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id008
+          - '&7Notak, zasloužíš si to!'
+          - '&7Oslavuj s opravdovou BBQ'
+          - '&7párty!'
+          Unlocked: *id008
+      Pocket Beach:
+        Name: '&5Kapesní pláž'
+        Material: SAND
+        Cooldown: 60
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id009
+          - '&7Nemůžeš jít na pláž?'
+          - '&7Nevadí! Nos si svojí vlastní,'
+          - '&7ve své kapse!'
+          Unlocked: *id009
+      Ice Cream Stand:
+        Name: '&6Zmrzlinový stánek'
+        Material: head:239299c36b54bb11e57c686bfe53a5c1c441310f90f69347bacddbf343609d
+        Cooldown: 30
+        Mystery Dust: 68
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Messages:
+        - '&eIce Cream Guy&f: Oříšková poleva... Dvojitá čokoláda... A vanilka...
+          Nezapoměl jsem na nic?'
+        - '&eIce Cream Guy&f: Jahodová zmrzlina, moje oblíbená!'
+        - '&eIce Cream Guy&f: Obávám se, že nemám na rozměnění v tuto chvíli :('
+        - '&eIce Cream Guy&f: Omlouvám se, ale v tuto chvíli přijímáme pouze hotovost!'
+        Lore:
+          Locked: &id010
+          - '&7"Budu mít vanilkový fondán,'
+          - '&7děkuji!".'
+          Unlocked: *id010
+      Tic Tac Toe:
+        Name: '&6Piškvorky'
+        Material: head:a6864136e374f5d676fb4f5b03e10a7bcdb4190b376378ae9492045fb4adf9d
+        Cooldown: 30
+        Mystery Dust: 85
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Messages:
+          Target-A-Player: '&cKlikněte pravým na hráče, pro zahájení hry piškvorek
+            s nimi!'
+          Target-Other-Player: '&cTento hráč již hraje piškvorky. Prosím klikněte
+            pravým na jiného hráče pro zahájení hry piškvorky s ním!'
+          Challenge: '&eVyzval jsi {PLAYER} &ena hru piškvorek.'
+          Already-Sent-A-Request: '&cJiž jsi &r{PLAYER}&cvyzval ke hře.'
+          Received-Challenge: '{PLAYER} &etě vyzval ke hře Piškvorek.'
+          Accept: '&a&l[PŔIJMOUT]'
+          Decline: '&c&l[ODMÍTNOUT]'
+          Accept-Json-message: '&7Klikni sem, aby jsi přijal výzvu.'
+          Decline-Json-message: '&7Klikni sem, aby jsi odmítnul výzvu.'
+          No-Pending-Challenge: '&cNemáš pozvánku ke hře od tohoto hráče.'
+          Accepted-Challenge: '{PLAYER} &aPřijal tvojí výzvu!'
+          Declined-Challenge: '{PLAYER} &cOdmítnul tvojí výzvu!'
+          Draw: '&cHra piškvorek s &r{PLAYER} &cskončila remízou.'
+          Win: '&aPorazil jsi &r{PLAYER} &av piškvorkách!'
+          Loss: '{PLAYER} &ctě porazil v piškvorkách!'
+          Opponent-Left-Game: '&cTvůj oponent opustil hru piškvorek!'
+          Player-Left-Game: '&cOpustil jsi hru piškvorek!'
+        Items:
+          GUI-Name: Piškvorky - {OPPONENT}
+          Place-Symbol:
+            Name: '&aKlikni sem!'
+            Material: ITEM_FRAME
+            Lore:
+            - '&7Klikni sem aby jsi'
+            - '&7vložil svůj symbol.'
+          Not-Your-Turn:
+            Name: '&cNejsi na tahu!'
+            Material: PAINTING
+            Lore:
+            - '&7Nejsi na tahu'
+            - '&7 - nemůžeš nic'
+            - '&7dělat.'
+          Challenger:
+            Name: '&6Orange: &f{PLAYER}'
+            Material: ORANGE_TERRACOTTA
+            Lore:
+            - '&7Oranžový hráč je'
+            - '&7{PLAYER}&7.'
+          Opponent:
+            Name: '&bBlue: &f{PLAYER}'
+            Material: LIGHT_BLUE_TERRACOTTA
+            Lore:
+            - '&7Modrý hráč je'
+            - '&7{PLAYER}&7.'
+          Challenger-Symbol:
+            Name: '&6Orange'
+            Material: ORANGE_TERRACOTTA
+            Lore:
+            - '&7Tento slot náleží'
+            - '&7Oranžovému.'
+          Opponent-Symbol:
+            Name: '&bBlue'
+            Material: LIGHT_BLUE_TERRACOTTA
+            Lore:
+            - '&7Tento slot náleží modrému.'
+        Lore:
+          Locked: &id011
+          - '&7Vyzvi své přátelé na'
+          - '&7hru piškvorek. Kdo'
+          - '&7vyhraje?'
+          Unlocked: *id011
+  Mobs And NPCs:
+    Name: '&eMoby a NPC'
+    Material: CREEPER_HEAD
+    GUI-Name: Mobs & NPCs
+    Enabled: true
+    Lore:
+    - '&7Vytvoř a hraj si s šílenými bytostmi,'
+    - '&7díky použití Moby'
+    - '&7a NPC doplňku!'
+    Types:
+      Piggy Bank:
+        Name: '&9Prasátko'
+        Material: head:198df42f477f213ff5e9d7fa5a4cc4a69f20d9cef2b90c4ae4f29bd17287b5
+        Cooldown: 40
+        Mystery Dust: 35
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id012
+          - '&7Vybuchněte prasátko a získejte'
+          - '&7všechno zlato.'
+          Unlocked: *id012
+      CATapult:
+        Name: '&9Katapult'
+        Material: OCELOT_SPAWN_EGG
+        Cooldown: 50
+        Mystery Dust: 25
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id013
+          - '&7Zaútoč na své nepřátelé s'
+          - '&7jejich nejhorší noční můrou, s kočkami!'
+          - '&7vyšli 5 vybuchujících koček'
+          - '&7ve směru kam míříš.'
+          Unlocked: *id013
+      When Pigs Fly:
+        Name: '&9Když prasata létají'
+        Material: SADDLE
+        Cooldown: 30
+        Mystery Dust: 28
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id014
+          - '&7Vytvoř létající prase s tebou'
+          - '&7vedoucím ho do bitvy!'
+          Unlocked: *id014
+      Creeper Astronaut:
+        Name: '&9Creeper Astronautem'
+        Material: CREEPER_SPAWN_EGG
+        Cooldown: 40
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id015
+          - '&7Vystřel creepera do'
+          - '&7vzduchu, pokud to zvládne až na vršek,'
+          - '&7 tak si užij bezvadnou'
+          - '&7show!'
+          Unlocked: *id015
+      Exploding Sheep:
+        Name: '&9Explodující ovce'
+        Material: SHEARS
+        Cooldown: 15
+        Mystery Dust: 25
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Remain-Time: '&c&l{REMAIN_TIME}s'
+        Lore:
+          Locked: &id016
+          - '&7Přímo ze zemědělského chovu,'
+          - '&7explodující ovce,'
+          - '&7je zpět a'
+          - '&7ještě více expozivní než kdy předtím.'
+          Unlocked: *id016
+      Bat Launcher:
+        Name: '&9Netopýří Launcher'
+        Material: IRON_HORSE_ARMOR
+        Affect-Players: true
+        Cooldown: 10
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id017
+          - '&7Vyšle vlnu netopýrů'
+          - '&7na lidi které'
+          - '&7nemáš rád!'
+          Unlocked: *id017
+      Scarecrow:
+        Name: '&6Strašák'
+        Material: JACK_O_LANTERN
+        Cooldown: 30
+        Mystery Dust: 65
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Jack-O-Lantern-DisplayName: '&cScarecrow'
+        Lore:
+          Locked: &id018
+          - '&7Vytvoří strašáka, který'
+          - '&7změni hlavý nejbližších'
+          - '&7hráčů v dýně.'
+          Unlocked: *id018
+  Movement:
+    Name: '&ePohyb'
+    Material: GOLDEN_BOOTS
+    GUI-Name: Movement
+    Enabled: true
+    Lore:
+    - '&7Změň styl jak chodíš,'
+    - '&7běhej nebo lítej po lobby'
+    - '&7s tímto pohybovým'
+    - '&7doplňkem!'
+    Types:
+      Cowboy:
+        Name: '&5Kovboj'
+        Material: CACTUS
+        Cooldown: 5
+        Mystery Dust: 30
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id019
+          - '&7Dovoluje ti osedlat si'
+          - '&7nejbližšího hráče. vytvářejte'
+          - '&7věže díky osedlávání ostatních'
+          - '&7hráčů!'
+          Unlocked: *id019
+      Teleport Stick:
+        Name: '&9Teleportující klacek'
+        Material: STICK
+        Cooldown: 5
+        Mystery Dust: 18
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Range: 30
+        Lore:
+          Locked: &id020
+          - '&7Dovoluje ti se teleportovat'
+          - '&7kamkoliv díky pravému kliknutí'
+          - '&7a ukazováním díky tomuto'
+          - '&7magickému klacku!'
+          Unlocked: *id020
+      Fire Trail:
+        Name: '&9Ohnivá lajna'
+        Material: BLAZE_POWDER
+        Cooldown: 50
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id021
+          - '&7Daruje ti Rychlost II a'
+          - '&7dá ti lajnu'
+          - '&7ohně za tebe.'
+          Unlocked: *id021
+      Paint Trail:
+        Name: '&9Lajna od barvy'
+        Material: MAGENTA_DYE
+        Blacklist:
+        - SPAWNER
+        Cooldown: 35
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id022
+          - '&7Zanechá lajnu náhodně'
+          - '&7zbarveného jílu za tebou,'
+          - '&7která zmizí'
+          - '&7za pár sekund.'
+          Unlocked: *id022
+      Parachute:
+        Name: '&5Padák'
+        Material: LEAD
+        Cooldown: 60
+        Mystery Dust: 40
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id023
+          - '&7Vystřelí tě k obloze,'
+          - '&7chvilku předtím vyhodí'
+          - '&7tvůj padák pro lehké'
+          - '&7přistání.'
+          Unlocked: *id023
+      Teleporter:
+        Name: '&5Teleport'
+        Material: ENDER_EYE
+        Cooldown: 30
+        Mystery Dust: 45
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Messages:
+          Initiating-Teleport-Sequence: '&e&lZahájení teleportní sekvence. Prosím
+            vydržte!'
+          Scanning-Players: '&e&lSkenování hráčů pro výběr cíle na teleportování...'
+          Target-Acquired: '&e&lCíl získán: &k&lRANDOMCHARATERS&e&l!'
+          Teleport-Initiating: '&e&lPřipoutejte se! Zahájení teleportace...'
+          Teleport-Complete: '&e&lTeleportace dokončena! Děkujeme za využití teleportu
+            rychlého cestování!'
+          Process-Failed: '&c&lProces "najít cíl" selhal! Nenalezen platný cíl!'
+          Aborted-Teleport-Sequence: '&c&lZrušení teleportovací sekvence...'
+        Lore:
+          Locked: &id024
+          - '&7Mrknutím oka'
+          - '&7zmizíš, a magicky se'
+          - '&7objevíš někde jinde.'
+          - '&7Průchod vesmírným časoprostorem'
+          - '&7s tímto'
+          - '&7Teleportérem.'
+          Unlocked: *id024
+      Rocket:
+        Name: '&6Raketa'
+        Material: FIREWORK_ROCKET
+        Cooldown: 120
+        Mystery Dust: 125
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id025
+          - '&7Odstartujte na měsíc s'
+          - '&7touto raketou ve velkém měřítku'
+          - '&7dokonce i s odpočtem,'
+          - '&7zvuky a expolujícím'
+          - '&7koncem.'
+          Unlocked: *id025
+      Let It Snow:
+        Name: '&9Ať sněží'
+        Material: SNOW_BLOCK
+        Cooldown: 80
+        Mystery Dust: 60
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id026
+          - '&7Vypusť malou sněhovou bouři'
+          - '&7okolo sebe, pokrývající'
+          - '&7oblast bíle na malou'
+          - '&7chvíli!'
+          Unlocked: *id026
+  Musical:
+    Name: '&eMuzikál'
+    Material: JUKEBOX
+    GUI-Name: Musical
+    Enabled: true
+    Lore:
+    - '&7Udělejte trošku hluku s tímto'
+    - '&7s tímto zvuk vydávajícím muzikálový'
+    - '&7doplněk!'
+    Types:
+      Jukebox:
+        Name: '&5Hudební automat'
+        Material: MUSIC_DISC_CAT
+        Cooldown: 3
+        Mystery Dust: 52
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id027
+          - '&7Umožní ti otevřít hudební'
+          - '&7přehrávač,kde si můžeš vybrat'
+          - '&7z různých C418 hitových'
+          - '&7singlů k přehrání.'
+          Unlocked: *id027
+        Items:
+          GUI-Name: Jukebox
+          Track:
+            Name: '&b{TRACK}'
+            Lore:
+            - ''
+            - '&eKlikni pro spuštění!'
+          Stop-Track:
+            Name: '&cStop Track'
+            Material: RED_WOOL
+            Lore:
+            - '&7Přestane hrát momentální skladbu.'
+      Radio:
+        Name: '&6Radio'
+        Material: MUSIC_DISC_13
+        Cooldown: 3
+        Mystery Dust: 105
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id028
+          - '&7Poslouchej své oblíbené'
+          - '&7Noteblockové hity s tímto'
+          - '&7patentovaným rádiem!'
+          Unlocked: *id028
+        Items:
+          GUI-Name: Radio
+          Track:
+            Name: '&b{TRACK}'
+            Material: NOTE_BLOCK
+            Lore:
+            - ''
+            - '&eKlikni pro spuštění!'
+          Stop-Track:
+            Name: '&cStop Track'
+            Material: RED_WOOL
+            Lore:
+            - '&7Přestane hrát momentální skladbu.'
+      Disco Ball:
+        Name: '&5Disko koule'
+        Material: LIGHT_BLUE_STAINED_GLASS
+        Duration-Seconds: 60
+        Cooldown: 80
+        Mystery Dust: 60
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id029
+          - '&7Vytvoří disco kouli,'
+          - '&7s ozdobnými efekty'
+          - '&7a muzikou.'
+          Unlocked: *id029
+      DJ Booth:
+        Name: '&6DJ Stánek'
+        Material: NOTE_BLOCK
+        Duration-Seconds: 60
+        Cooldown: 60
+        Mystery Dust: 85
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id030
+          - '&7Pokud ji se někdy chtěl'
+          - '&7stát DJ, tak nyní nebo'
+          - '&7nikdy! Fascinujte vaše'
+          - '&7přátelé s tímto DJ setem'
+          - '&7a tanečním parketem.'
+          Unlocked: *id030
+  Projectile:
+    Name: '&eProjektil'
+    Material: BOW
+    GUI-Name: Projectile
+    Enabled: true
+    Lore:
+    - '&7Střílejte podle libosti! prostřílejte si svojí'
+    - '&7cestu přes lobby s'
+    - '&7tímto zábavným Projektilovým'
+    - '&7doplňkem!'
+    Types:
+      MobGun:
+        Name: '&9Zbraň s Moby'
+        Material: BLAZE_ROD
+        Cooldown: 30
+        Mystery Dust: 28
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id031
+          - '&7Vyšli explodující'
+          - '&7projektily, které využívají 18'
+          - '&7různých typů mobů.'
+          Unlocked: *id031
+        Actionbar-Message: '{GADGET} &r- {MOB}'
+        Mob-Name:
+          Pig: Prase
+          Villager: Vesničan
+          Ocelot: Ocelot
+          Cow: Kráva
+          Creeper: Creeper
+          Spider: Pavouk
+          Squid: Chobotnice
+          Chicken: Slepice
+          Sheep: Ovce
+          Wolf: Vlk
+          Witch: Čarodějnice
+          Blaze: Blaze
+          Horse: Kůň
+          Zombie: Zombie
+          Skeleton: Kostlivec
+          MushroomCow: Houbová kráva
+          CaveSpider: Jeskyní Pavouk
+          PigZombie: Prasečí Zombie
+      Railgun:
+        Name: '&aRailgun'
+        Material: LEVER
+        Cooldown: 5
+        Mystery Dust: 16
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id032
+          - '&7Je to obyčejná railguna'
+          - '&7připravená sřílet podle libosti!'
+          Unlocked: *id032
+      Explosive Bow:
+        Name: '&aExplozivní Luk'
+        Material: BOW
+        Cooldown: 8
+        Mystery Dust: 10
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id033
+          - '&7Teleportující klacky jsou pro'
+          - '&7slabochy. Všechny skvělé děti'
+          - '&7používají explozivní luk'
+          Unlocked: *id033
+      Paintball Gun:
+        Name: '&aPaintball zbraň'
+        Material: DIAMOND_HORSE_ARMOR
+        Radius: 3
+        Blacklist:
+        - SAND
+        - GRAVEL
+        - SPAWNER
+        Cooldown: 3
+        Mystery Dust: 10
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id034
+          - '&7Není lepší cesta jak zlepšit'
+          - '&7lobby než s těmito'
+          - '&7s pár barvičkama? Nebo více,'
+          - '&7kdo to počítá?'
+          Unlocked: *id034
+      Melon Launcher:
+        Name: '&aMelounový Launcher '
+        Material: MELON
+        Cooldown: 3
+        Mystery Dust: 10
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id035
+          - '&7Sněz plátek melounu pro'
+          - '&7dočasné zvýšení rychlosti!'
+          Unlocked: *id035
+  Visual:
+    Name: '&eVzhled'
+    Material: head:fec5963e1f78f2f05943f4dd32224661374c220ecfde1e54754f5ee1e555dd
+    GUI-Name: Visual
+    Enabled: true
+    Lore:
+    - '&7Změň jak vypadáš ty nebo'
+    - '&7lobby s tímto'
+    - '&7vzhledovým doplňkem!'
+    Types:
+      Kookie Fountain:
+        Name: '&5Sušenková fontána'
+        Material: COOKIE
+        Cooldown: 60
+        Mystery Dust: 62
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id036
+          - '&7Nech sušenky pršet okolo'
+          - '&7sebe!'
+          Unlocked: *id036
+      Pyromaniac:
+        Name: '&9Pyromaniak'
+        Material: FLINT_AND_STEEL
+        Cooldown: 30
+        Mystery Dust: 35
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id037
+          - '&7Vznítí tě v hořlavou kouli'
+          - '&7na 10 sekund, než'
+          - '&7znovu vychladeš.'
+          Unlocked: *id037
+      Diamond Shower:
+        Name: '&5Diamantová Sprcha'
+        Material: DIAMOND
+        Cooldown: 60
+        Mystery Dust: 75
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id038
+          - '&7Vysprchuje tě v diamantech,'
+          - '&7úžasné na to ukázat'
+          - '&7jak moc jsi bohatý.'
+          Unlocked: *id038
+      Gold Fountain:
+        Name: '&9Zlatá Fontána'
+        Material: GOLD_NUGGET
+        Cooldown: 60
+        Mystery Dust: 70
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id039
+          - '&7Co je nejlepší dělat'
+          - '&7se zlatem? Udělat z něj pršící'
+          - '&7Zlato.'
+          Unlocked: *id039
+      Kawarimi No Jutsu:
+        Name: '&9Kawarimi No Jutsu'
+        Material: OAK_LOG
+        Cooldown: 30
+        Mystery Dust: 25
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id040
+          - '&7S touto technikou, uživatel'
+          - '&7vymění jeho vlastní tělo s'
+          - '&7a blokem dřeva.'
+          Unlocked: *id040
+      Cryotube:
+        Name: '&9Cryotube'
+        Material: SNOWBALL
+        Cooldown: 45
+        Mystery Dust: 25
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id041
+          - '&7Zmrazí tě uvnitř ledu,'
+          - '&7skvělé pokud plánuješ'
+          - '&7přežít jakýkoliv náhodný'
+          - '&7konec světa.'
+          Unlocked: *id041
+      Ghosts:
+        Name: '&9Duchové'
+        Material: WITHER_SKELETON_SKULL
+        Cooldown: 40
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id042
+          - '&7Vytvoří vznášející se hlavy duchů,'
+          - '&7které odletí předtím, než'
+          - '&7zmizí, stejně rychle jako'
+          - '&7se objevili.'
+          Unlocked: *id042
+      Party Popper:
+        Name: '&9Párty Odpalovač'
+        Material: ENDER_CHEST
+        Affect-Players: true
+        Cooldown: 60
+        Mystery Dust: 50
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id043
+          - '&7Exploduješ v konfety'
+          - '&7se všemi zvuky!'
+          - '&7Vše pro to udělat tvojí lobby'
+          - '&7párty úžasnou.'
+          Unlocked: *id043
+      Poop Bomb:
+        Name: '&5Hovínková Bomba'
+        Material: COCOA_BEANS
+        Cooldown: 40
+        Mystery Dust: 45
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id044
+          - '&7Pokud ti název nevysvětlil o co jde,'
+          - '&7 tak je tohle'
+          - '&7pouze bomba, která exploduje'
+          - '&7a vypustí hovínka uplně všude.'
+          - '&7Ano.'
+          Unlocked: *id044
+      TNT Fountain:
+        Name: '&6TNT Fontána'
+        Material: TNT
+        Cooldown: 80
+        Mystery Dust: 90
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id045
+          - '&7Vytvoří animovanou fontánu,'
+          - '&7ze které teče základní nátěr TNT.'
+          Unlocked: *id045
+      Dracula:
+        Name: '&aDrákula'
+        Material: GHAST_TEAR
+        Cooldown: 30
+        Mystery Dust: 15
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: &id046
+          - '&7Vypustí vlnu netopýrů'
+          - '&7a dá ti dočasnou'
+          - '&7nevyditelnost.'
+          Unlocked: *id046

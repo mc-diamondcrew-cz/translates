@@ -1,0 +1,138 @@
+PREFIX: '&aObchod &8» &7'
+LANG:
+  CONSOLE: Konzole
+MSG:
+  AND: ' a '
+  ERROR: Nastala chyba, kontaktuje prosím administrátora.
+  INGAMEONLY: Tento příkaz lze použít pouze ve hře.
+  NOACCESS: K této akci nemáte dostatečné pravomoce.
+  RELOADED: Konfigurace načtena.
+  USAGE:
+    SUBCOMMAND: Nesprávné použití. Zkuste §6%usage%§7
+  CMD:
+    SHOP:
+      ADDMODIFIER:
+        ITEM:
+          USAGE: /shop addmodifier item <hráč> <obchod> <předmět> <hodnota> [buy|sell]
+          ADDED: Nastavili jste hráči/ce &6%player% §7násobič §6%type% §7pro předmět
+            §6%item% §7v obchodu §6%shop% §7na &6%modifier%&7.
+          ADDEDBY: Váš násobič §6%type% §7pro předmět §6%item% §7v obchodu §6%shop%
+            §7byl nastaven na &6%modifier%§7.
+        SHOP:
+          USAGE: /shop addmodifier shop <hráč> <obchod> <hodnota> [buy|sell]
+          ADDED: Nastavili jste hráči/ce §6%player% §7násobič §6%type% §7v obchodu
+            §6%shop% §7na §6%modifier%§7.
+          ADDEDBY: Váš násobič §6%type% §7pro obchod §6%shop% §7byl nastaven na §6%modifier%§7.
+        GLOBAL:
+          USAGE: /shop addmodifier global <hráč> <hodnota> [buy|sell]
+          ADDED: Nastavili jste hráči/ce §6%player% §7násobič §6%type% §7na §6%modifier%&7.
+          ADDEDBY: Váš násobič §6%type% §7byl nastaven na &6%modifier%&7.
+      CHECKMODIFIERS:
+        VIEW:
+          VIEW: |-
+            §7Násobiče hráče/ky §6%player%§7:
+            §fGlobální:
+            %global%
+            §fPodle obchodu:
+            %shop%
+            §fPodle předmětu:
+            %item%
+          ENTRY:
+            ITEM: §7%item% - %shop%&f, §a%buy% §c%sell%
+            SHOP: §7%shop%&f, §a%buy% §c%sell%
+            GLOBAL: §a%buy% §c%sell%
+      RESETMODIFIER:
+        ITEM:
+          USAGE: /shop resetmodifier item <player> <shop> <item> [buy|sell]
+          RESET: You reset &c%player%&f's %type% price modifier for the %item% item
+            in %shop% shop.
+          RESETBY: Your %type% price modifier for the %item% item in %shop% shop was
+            reset by &c%player%&f.
+        SHOP:
+          USAGE: /shop resetmodifier shop <player> <shop> [buy|sell]
+          RESET: You reset &c%player%&f's %type% price modifier for all items in %shop%
+            shop. to by &c%player%&f.
+          RESETBY: Your %type% price modifier for all items in %shop% shop was set
+            to by &c%player%&f.
+        GLOBAL:
+          USAGE: /shop resetmodifier global <player> [buy|sell]
+          RESET: You reset &c%player%&f's %type% price modifier.
+          RESETBY: Your %type% price modifier was set to &c%modifier%&f by &c%player%&f.
+      CHECK:
+        ITEM: This item's type is &c%material%&f with damage &c%damage%&f.
+        NOITEM: You have to hold an item in your hand in order to check its type.
+  MODIFIER:
+    INVALIDAMOUNT: Neplatná hodnota násobiče. (0.50 = 50%, 2.0 = 200%)
+    INVALIDTYPE: Neplatný typ násobiče, platné typy jsou buy, sell a obojí.
+    BUY: buy
+    SELL: sell
+    BOTH: buy & sell
+  INVALIDPLAYER: Neplatné jméno hráče.
+  INVALIDSHOP: Obchod §6%Shop% §7nebyl nalezen.
+  INVALIDITEM: Předmět §6%item% §7nebyl nalezen v §6%shop%§7.
+  NOACCESSTOSHOP: Nemáte pravomoce pro obchod §6%shop%§7.
+  NODIRECTACCESSTOSHOP: Nemůžete otevřít obchod §6%shop%§7.
+  MAINMENUDISABLED: Nemůžete použít tento příkaz. Zkuste §6/shop <id>§7.
+  WORLDBLACKLISTED: Nemůžete zpřístupnit §6%shop% §7v tomto světě.
+  WORLDBANNED: Nemůžete otevřít obchod v tomto světě.
+  WORLDBANNEDTARGET: §6%player% §7nemůže ve svém světě otevřít obchod.
+  GAMEMODEBANNED: Nemůžete otevřit obchod, s Vaším herním režimem.
+  GAMEMODEBANNEDTARGET: §6%player% §7nemůže otevřít obchod ve svém herním režimu.
+  ITEM:
+    FULLINVENTORY: Nemáte dostatek místa v inventáři.
+    CANNOTAFFORD: Potřebujete §6%price%§7.
+    CANNOTBUY: Nemůžete zakoupit tento předmět.
+    CANNOTSELL: Nemůžete prodat tento předmět.
+    BOUGHT: Zakoupili jste §6%amount%x %item% §7za §6%price%§7.
+    BOUGHTFREE: Obdrželi jste §6%amount%x %item%§7.
+    NOTENOUGH: Nemáte §6%amount%x %item% §7na prodej.
+    SOLD: Prodali jste §6%amount%x %item% §7za §6%price%§7.
+    SOLDFREE: Zahodili jste §6%amount%x %item%§7.
+    SOLDALL: Prodali jste všechny §6%item% §7za §6%price%§7.
+    SOLDALLFREE: Zahodili jste všechny §6%item%§7.
+    NOACCESS: Nemáte přístup k tomuto předmětu.
+  ENCHANT:
+    CANNOTAPPLY: Kouzlo §6%enchantment% §7nemůže být aplikováno na Váš předmět.
+    ALREADYAPPLIED: Váš předmět již má §6%enchantment% §7aplikováno.
+    LEVELDIFF: Musíte mít předmět s alespoň kouzlem §6%enchantment% %level%§7.
+    CANNOTAFFORD: Potřebujete §6%price%§7.
+    MAX: Váš předmět již má maximální počet kouzel.
+    TOOMANY: Nemůžete okouzlit více předmětů najednou.
+    BOUGHT: Zakoupili jste §6%enchantment% §7za §6%price%§7.
+    BOUGHTFREE: Obdrželi jste §6%enchantment%§7.
+  PERMISSION:
+    PERMISSIONSDISABLED: Pravomoce nejsou aktivní, kontaktuje administrátora.
+    ALREADYHAVE: Již máte §6%permission%§7.
+    CANNOTAFFORD: Potřebujete §6%price%§7.
+    BOUGHT: Zakoupili jste §6%permission% §7za §6%price%§7.
+    BOUGHTFREE: Obdrželi jste §6%permission%§7.
+  COMMAND:
+    BOUGHT: Zakoupili jste §6%command% §7za §6%price%§7.
+    CANNOTAFFORD: Potřebujete §6%price%§7.
+    BOUGHTFREE: Obdrželi jste §6%command%§7.
+  SELLHAND:
+    NOITEM: Musíte držet předmět/y v ruce.
+    INVALIDQUANTITY: Neplatné množství.
+    CANNOTSELL: Nemůžete prodat tento předmět.
+    MULTIPLEQUANTITYONLY: Nemůžete prodat toto množství.
+  SELLHANDALL:
+    SOLD: Prodali jste §6%quantity%x %item% §7za §6%price%§7.
+  SELLALL:
+    NOITEMS: Nemáte žádně předměty na prodání.
+    SOLD: Prodali jste §6%quantity% předmětů §7za §6%price%§7.
+    INVALIDSHOP: Neplatný obchod.
+  NOTLOADED: Obchody nejsou načteny, zkuste to za chvíli.
+DIALOG:
+  AMOUNTSELECTION:
+    BUY:
+      NAME: §a%item%
+    SELL:
+      NAME: §c%item%
+    BULKBUY:
+      NAME: §a%item%
+    BULKSELL:
+      NAME: §c%item%
+SHOP:
+  PERMISSION:
+    ALREADYOWNED: '&4(Vlastněno)'
+    NOTOWNED: '&a(Nevlastněno)'

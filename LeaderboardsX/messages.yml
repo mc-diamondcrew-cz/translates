@@ -1,0 +1,84 @@
+prefix: ''
+Command:
+  gui-desc: Zobrazení žebříčku v menu.
+  help-desc: Zobrazení všech dostupných příkazů.
+  help-header: '&7=====[ &5LeaderboardsX&7 ]=====[ v.&7{version}&7 ]====='
+  help-format: ' &e{command} &6{subcommands} &7» &f{description}'
+  info-desc: Zobrazení žebříčku v chatu.
+  info-nofactions: §aŽebříčky §8» §7Na serveru nejsou žádná území, nebo nejsou načtena
+    data.
+  reload-desc: Znovu načte konfiguraci.
+  reload-success: §aŽebříčky §8» §7Konfigurace byla znovu načtena.
+  update-desc: Vypočte hodnotu Frakcí.
+  update-success: §aŽebříčky §8» §7Spustili jste počítání Frakčních hodnot.
+  version-desc: Verze & Debug
+  npcremove-desc: Odstraní NPC, na které se koukáte.
+  npcremove-nonpc: §aŽebříčky §8» §7Musíte se koukat na NPC.
+  npcremove-success: §aŽebříčky §8» §7NPC úspěšně odstraněno.
+  npcremove-failed: §aŽebříčky §8» §7Nepodařilo se odstranit NPC.
+  npccreate-desc: Vytvoří NPC pro zvolenou hodnost.
+  npccreate-failed: §aŽebříčky §8» §7Nepodařilo se vytvořit NPC.
+  npccreate-success: §aŽebříčky §8» §7NPC úspěšně vytvořeno.
+  holocreate-desc: Vytvoří hologram s daným ID.
+  holocreate-no-args: §aŽebříčky §8» §7Musíte specifikovat ID.
+  holocreate-success: §aŽebříčky §8» §7Hologram úspěšně vytvořen.
+  holocreate-failed: §aŽebříčky §8» §7Nepodařilo se vytvořit hologram.
+  holoremove-desc: Odstraní hologram
+  holoremove-success: §aŽebříčky §8» §7Hologram úspěšně odstraněn.
+  holoremove-failed: §aŽebříčky §8» §7Nepodařilo se odstranit hologram.
+  holoremove-no-args: §aŽebříčky §8» §7Musíte specifikovat ID hologramu.
+leaderboard-no-permission: §aŽebříčky §8» §7Nemáte dostatečné pravomoce pro tuto akci.
+leaderboard-require-player: §aŽebříčky §8» §7Tento příkaz je pouze pro hráče.
+leaderboard-missing-page: §aŽebříčky §8» §7Nebylo možné načíst stránku.
+leaderboard-gui-disabed: §aŽebříčky §8» §7Menu je deaktivované.
+papi-string-notfound-placeholder: N/A
+papi-number-notfound-placeholder: '0'
+papi-rank-colors:
+- '&e'
+- '&7'
+- '&6'
+leaderboard-broadcast-start: §aŽebříčky §8» §6Kalkukace hodnot..
+leaderboard-broadcast-finish: §aŽebříčky §8» §7Hodnoty aktualizovány! §6(%time%ms)
+leaderboard-broadcast-knocked:
+- ''
+- '&8&m-----------------------'
+- '&e&l{new:faction} &7&lshodila Frakci &6&l{old:faction} §7§lz Žebříčku.'
+- '&8&m-----------------------'
+- ''
+Format:
+  display-gui-title: '&aFrakční Žebříček &6{page}§7/§6{page:max}'
+  display-gui-next: '&2&lDALŠÍ'
+  display-gui-back: '&4&lPŘEDCHOZÍ'
+  display-gui-empty: '&cNebylo možné nalézt &f#{rank} &cFrakci!'
+  spawners: ' &f» &5{spawner:name} &7x{spawner:amount}'
+  hover-message:
+  - '&6&lHodnota:'
+  - ' &e» &fCelkem: &a${worth:total}'
+  - ' &e» &fSpawnery: &a${worth:spawners}'
+  - ' &e» &fFinance: &a${worth:balance}'
+  - ''
+  - '&6&lSpawnery: {spawners}'
+  - ''
+  - '&6§lKostky:'
+  - ' &e» &fHoppery: &ax{hopper:amount}'
+  percent-message-negative: '&c{percent}'
+  percent-message-positive: '&a{percent}'
+  percent-message-origin: '&7{percent}'
+  cmd-info-header: '&8&m---------&8[ &aFrakční Žebříček &6{page}§7/§6{page:max} &8]&m---------'
+  cmd-info-content: §e#{rank} &f{name} §7- &e${worth:total} &7({percent}%§7)
+  cmd-info-footer: '&8&m-----------------------'
+Hooks:
+  citizens-hologram:
+  - '{rank-color}#{rank} {name}'
+  - '&e$&f{worth:total}'
+  citizens-npc-click-header: '&7====[ {rank-color}#{rank} &5&l{name} &6Info &7 ]===='
+  holographicdisplays:
+    top-hologram-format: '&e#{rank} &f{name} &e${worth:total} &7({percent}%&7)'
+    top-hologram-header: §a§lNEJLEPŠÍ FRAKCE
+  claim-plugin-hooked: '&aUsing %plugin% as Claim Provider.'
+  claim-plugin-not-found: '&cNo valid Claim Provider found!'
+  spawner-plugin-not-found: '&cNo valid Spawner Provider found!'
+  spawner-plugin-hooked: '&aUsing %plugin% as Spawner Provider.'
+  generic-hook-failed: '&cCould not hook to %plugin%. %plugin% support is disabled'
+  economy-hook-failed: '&cEconomy support has been disabled! Error while hooking to
+    Vault, or no Economy Service was found!'

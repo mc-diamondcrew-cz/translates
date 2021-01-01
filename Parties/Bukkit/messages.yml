@@ -1,0 +1,418 @@
+
+
+#
+# Messages configuration file
+#
+# You can find a list of available tags here: https://alessiodp.com/docs/parties/placeholders/
+#
+
+# / = = = = = = = = = = = = = = = = \
+# |        PARTIES  MESSAGES        |
+# \ = = = = = = = = = = = = = = = = /
+parties:
+  # Special tags:
+  # => %version%     = New version found
+  # => %thisversion% = Version installed
+  update-available: "§aParta §8» &7Nová verze nalezena: §6%version% §7(Aktuální: §6%thisversion%§7)"
+  # Special tag:
+  # => %config%      = The config file name that is outdated
+  configuration-outdated: "§aParta §8» &7Konfigurační soubor §6'%config%' §7je zastaralý."
+  common-messages:
+    invalid-command: "§aParta §8» §6Neplatný §7příkaz."
+    configuration-reloaded: "§aParta §8» §7Konfigurace §6načtena§7."
+    not-in-party: "§aParta §8» §7Nejste v §6partě§7."
+    already-in-party: "§aParta §8» §6Již jste §7v partě."
+    party-not-found: "§aParta §8» §7Parta §6%party% §7neexisutje."
+    party-full: "§aParta §8» §7Parta je §6plná§7."
+  permissions:
+    # Special tag:
+    # => %permission%   = Missing permission
+    no-permission: "§aParta §8» §6Nemáte §7přístup k tomuto příkazu."
+    no-permission-in-party-general: "§aParta §8» §6Úroveň §7Vaší party nemá přístup k tomuto příkazu."
+    no-permission-in-party-rank: "§aParta §8» §7Musíte být §6%rank_name% §7pro použití tohoto příkazu."
+  out-party: "Mimo partu"
+  list:
+    player-online-format: "&b%player%"
+    player-offline-format: "&7%player%"
+    player-separator: "&7, "
+    player-empty: "&7Nikdo"
+    player-unknown: "&6Někdo"
+    missing-value: "&7?"
+
+
+
+# / = = = = = = = = = = = = = = = = \
+# |     MAIN COMMANDS  MESSAGES     |
+# \ = = = = = = = = = = = = = = = = /
+main-commands:
+  accept:
+    broadcast: "§aParta §8» &6%player% §7se připojil/a do §6party§7."
+    accepted: "§aParta §8» §7Přijmul/a jsi pozvánku."
+    accept-receipt: "§aParta §8» &6%player% přijal/a Vaši pozvánku."
+    no-invite: "§aParta §8» §6Nemáte §7žádné pozvánky."
+    no-exists: "§aParta §8» §7Tato pozvánka již §6neexistuje§7."
+    multiple-invites: "§aParta §8» §7Vyberte §6partu §7pro §6příjmutí§7:"
+    multiple-invites-party: '[{"text":"%party%","color":"gold"},{"text":" - Klikněte pro příjmutí","color":"gray","clickEvent":{"action":"run_command","value":"/party accept %party%"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Příjmout pozvánku.","color":"gold"}]}}}]'
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party accept [název]"
+
+  chat:
+    enabled: "§aParta §8» §7Chat nastaven na §6partu§7."
+    disabled: "§aParta §8» §7Chat nastave na §6public§7."
+    wrong-command: "§aParta §8» §7Špatné proměnné: §7Použijte &6/party chat [on/off]"
+
+  create:
+    created: '[{"text":"§aParta §8» §7Vytvořil/a jste partu §6%party%§7.\n","color":"aqua","bold":true},{"text":"§7Použijte: ","color":"aqua","bold":false},{"text":"§6/party invite","color":"gray","clickEvent":{"action":"suggest_command","value":"/party invite "}},{"text":" §7pro pozvání přátel.","color":"aqua"}]'
+    created-fixed: "§aParta §8» §7Vytvořil/a jste partu §6%party%§7."
+    name-already-exists: "&7Parta §6%party% §7již existuje, zvolte prosím jiné jméno."
+    name-too-long: "§aParta §8» §7Jméno party je §6příliš dlouhé§7."
+    name-too-short: "§aParta §8» §7Jméno party je §6příliš krátké§7."
+    invalid-name: "§aParta §8» §6Neplatné §7znaky."
+    censored: "§aParta §8» §7Jméno party obsahuje §6nepovolená slova§7."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party create <název>"
+
+  delete:
+    deleted: "§aParta §8» &7Parta §6%party% §7zrušena."
+    deleted-silently: "§aParta §8» &7Parta §6%party% §7v tichosti zrušena."
+    broadcast: "§aParta §8» §7Vaše parta byla §6zrušena§7."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party delete <název> [silent]"
+
+  deny:
+    denied: "§aParta §8» §7Odmítnul/a jste pozvánku."
+    deny-receipt: "§aParta §8» §6%player% §7odmítnul/a pozvánku."
+    no-invite: "§aParta §8» §7Nemáte žádné pozvánky."
+    no-exists: "§aParta §8» §7Pozvánka již §6neexistuje§7."
+    multiple-invites: "§aParta §8» §7Vyberte §6partu §7pro §6odmítnutí§7:"
+    multiple-invites-party: '[{"text":"%party%","color":"gold"},{"text":" - Klikněte pro odmítnutí","color":"gray","clickEvent":{"action":"run_command","value":"/party deny %party%"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Odmítnout pozvánku.","color":"gold"}]}}}]'
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party deny [název]"
+
+  ignore:
+    start-ignore: "§aParta §8» §7Ignorování pozvánek do §6%party%§7."
+    stop-ignore: "§aParta §8» §7Ignorování pozvánek do §6%party% §7zrušeno."
+    ignore-list:
+      header: "§aParta §8» §7Seznam ignorovaných part:"
+      party-prefix: "&c"
+      separator: "&7, "
+      empty: "&7Žádná"
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &7/party ignore [název]"
+
+  info:
+    # Special tags:
+    # => %list_RANK%           = The list of players of that rank
+    #                            Example: %list_member%, %list_moderator% (%list_leader% it's unique)
+    # => %list_RANK_number%    = The number of players of that rank
+    # => %list_RANK_online%    = Online players of that rank
+    # => %online%              = List online players
+    # => %online_number%        = Number of online players
+    content:
+    - "&8============ &a%party% &8============"
+    - "&6Popisek: §7%desc%"
+    - "&6Zpráva dne: §7%motd%"
+    - "&6Vůdce/kyně: §7%list_leader%"
+    - "&6Moderátoři/ky: §7%list_moderator%"
+    - "&6Členové/ky: §7%list_member%"
+    - "&6Online: §7%online_number%"
+
+  invite:
+    sent: "§aParta §8» §7Pozvali jste §6%player% §7do Vaší party."
+    player-invited: '[{"text":"§aParta §8» §6%player% §7Vás pozval/a do §6%party%§7.\n","color":"aqua"},{"text":"§a§lPříjmout","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/party accept %party%"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"§aPříjmout pozvánku.","color":"gold"}]}}},{"text":"§c§lOdmítnout","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/party deny %party%"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"§cOdmítnout. pozvánku.","color":"gold"}]}}}]'
+    timeout:
+      noresponse: "§aParta §8» §6%player% §7nepříjmul/a pozvánku."
+      timeout: "§aParta §8» §7Pozvánka od §6%party% §7vypršela."
+    revoke:
+      sent-revoked: "§aParta §8» §7Pozvání §6%player% §7zrušeno."
+      player-invite-revoked: "§aParta §8» §7Pozávní do §6%party% §7bylo zrušeno."
+    cooldown:
+      global: "§aParta §8» §7Musíte počkat §6%seconds%§7, před pozváním dalších členů."
+      individual: "§aParta §8» §7Musíte počkat §6%seconds%§7, před pozváním znovu."
+    player-offline: "§aParta §8» §7Můžete zvát pouze §6online §7hráče/ky."
+    player-no-permission: "§aParta §8» §6%player% §7nemá pravomoce pro příjmutí."
+    player-in-party: "§aParta §8» §6%player% §7již je v partě."
+    already-invited: "§aParta §8» §6%player% §7již má pozvánku."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party invite <jméno>"
+
+  kick:
+    sent: "§aParta §8» §7Vyhodil/a jste §6%player% §7z party."
+    player-kicked: "§aParta §8» §7Byl/a jste vyhozen/a z §6%party%§7."
+    broadcast: "§aParta §8» &6%player% §7byl/a vyhozen/a z party."
+    broadcast-disband: "§aParta §8» §7Parta byla §6rozpuštěna§7."
+    player-higher-rank: "§aParta §8» §7Nemůžete vyhodit svého §6nadřízeného§7."
+    player-not-in-party: "§aParta §8» §6%player% §7není ve Vaší partě."
+    player-not-in-other-party: "§aParta §8» §6%player% §7není v žadné partě."
+    players-conflict:
+      # Special tags:
+      # => %username%                       = The name of the player
+      # => %rank%                           = The rank
+      # => %list_players%                   = List of each player
+      # => %number%                         = The number of the player
+      # => %lastloginapi_last_logout_date%  = The last logout date (See LastLoginAPI plugin)
+      content:
+      - "§aParta §8» §7Nalezeni hráči se jménem:"
+      - "%list_players%"
+      - "&7Použijte &6'/party kick <jméno> <číslo>' §7pro vyhození."
+      player: '{"text":"","extra":[{"text":"[%number%] ","color":"gray"},{"text":"%username%","color":"gold"},{"text":" [","color":"gray"},{"text":"%party%","color":"aqua"},{"text":"]: poslední připojení %lastloginapi_last_logout_date%","color":"gray"}],"clickEvent":{"action":"run_command","value":"/party kick %username% %number%"},"hoverEvent":{"action":"show_text","value":{"text":"Vyhodit hráče/ku.","color":"gold"}}}'
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party kick <jméno>"
+
+  leave:
+    left: "§aParta §8» §7Opustil/a jste partu §6%party%§7."
+    broadcast: "§aParta §8» &6%player% §7opustil/a partu."
+    party-disbanded: "§aParta §8» §7Parta byla §6rozpuštěna§7."
+
+  p:
+    # Special tag:
+    # => %seconds%   = Remaining time in seconds
+    cooldown: "§aParta §8» §7Musíte počkat §6%seconds% §7sekund."
+    censored: "§aParta §8» §7Zpráva obsahuje §6nepovolená slova§7."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/p <zpráva>"
+
+  rank:
+    # Special tag:
+    # => %rank_name%   = Rank wrote by the player
+    changed: "§aParta §8» §7Hodnost hráče §6%player% §7změněna na §6%rank_name%§7."
+    broadcast: ""
+    wrong-rank: "§aParta §8» §7Hodnost §6'%rank_name%' §7nebyla nalezena."
+    same-rank: "§aParta §8» §6%player% již má hodnost §6%rank_name%§7."
+    low-rank: "§aParta §8» §7Nemůžete upravovat hodnosti vyšší, nebo stejné, jako máte Vy."
+    to-higher-rank: "§aParta §8» §7Nemůžete upravovat hodnosti vyšší, nebo stejné, jako máte Vy."
+    fixed-leader: "§aParta §8» §7Tento typ party nepodporuje změnu vůdce/kyně."
+    changing-yourself: "§aParta §8» §7Nemůžete změnit vlastní hodnost."
+    player-not-in-party: "§aParta §8» §6%player% §7není ve Vaší partě."
+    player-not-in-other-party: "§aParta §8» §6%player% §7není v žádné partě."
+    players-conflict:
+      # Special tags:
+      # => %username%                       = The name of the player
+      # => %rank%                           = The rank
+      # => %list_players%                   = List of each player
+      # => %number%                         = The number of the player
+      # => %lastloginapi_last_logout_date%  = The last logout date (See LastLoginAPI plugin)
+      content:
+        - "§aParta §8» §7Nalezeni hráči se jménem:"
+        - "%list_players%"
+        - "&7Použijte §6'/party rank <jméno> <hodnost> <číslo>' §7pro změnu hodnosti."
+      player: '{"text":"","extra":[{"text":"[%number%] ","color":"gray"},{"text":"%username%","color":"gold"},{"text":" [","color":"gray"},{"text":"%party%","color":"aqua"},{"text":"]: poslední připojení %lastloginapi_last_logout_date%","color":"gray"}],"clickEvent":{"action":"run_command","value":"/party rank %username% %rank% %number%"},"hoverEvent":{"action":"show_text","value":{"text":"Změnit hodnost hráče/ky.","color":"gold"}}}'
+    wrong-command: "§aParta §8» §6Špaté proměnné: §7Použijte &6/party rank <jméno> <hodnost>"
+
+  rename:
+    # Special tag:
+    # => %old%   = Old party name
+    renamed: "§aParta §8» §7Parta §6%old% §7přejměnována na §6%party%§7"
+    broadcast: "§aParta §8» §7Vaše parta byla přejménována na §6%party%§7"
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party rename <název>"
+    wrong-command-admin: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party rename <parta> <název>"
+
+  spy:
+    enabled: "§aParta §8» §7Jste špion."
+    disabled: "§aParta §8» §7Nejste špion."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party spy [on/off]"
+
+  version:
+    # Special tags:
+    # => %version%    = Parties version
+    # => %newversion% = Latest Parties version
+    # => %platform%   = Platform of the plugin (e.g. Bukkit, BungeeCord)
+    updated: "&b&lParties &b%version% &7(%platform%) - Developed by &6AlessioDP"
+    outdated: "&b&lParties &b%version% &7(%platform%) - Developed by &6AlessioDP\n&aNew version found: &2%newversion%"
+
+
+# / = = = = = = = = = = = = = = = = \
+# |  ADDITIONAL COMMANDS  MESSAGES  |
+# \ = = = = = = = = = = = = = = = = /
+additional-commands:
+  claim:
+    claimed: "&aGranted permission to the party"
+    removed: "&aRemoved permission to the party"
+    no-manager: "&cYou need to be the manager of the claim"
+    claim-no-exists: "&cClaim not found"
+    wrong-command: "&cWrong variables: Type &7/party claim <permission>\n&cPermissions: trust, container & access"
+
+  color:
+    info: "§aParta §8» §7Barva Vaší party: %color_code%%color_command%"
+    empty: "§aParta §8» §7Vaše parta §6nemá barvu§7."
+    changed: "§aParta §8» §7Barva party byla změněa na %color_command%"
+    removed: "§aParta §8» §7Barva party §6odstraněna§7."
+    broadcast: ""
+    wrong-color: "§aParta §8» §7Barva nenalezena, použijte prosím §cred§7, §agreen §7nebo §6special§7."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party color <barva>"
+
+  desc:
+    changed: "§aParta §8» §7Popisek změněn."
+    removed: "§aParta §8» §7Popisek odstraněn."
+    broadcast: ""
+    invalid-chars: "§aParta §8» §6Neplatené §7znaky."
+    censored: "§aParta §8» §7Nepovolená slova."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party desc <popisek/remove>"
+
+  exp:
+    # Special tags:
+    # => %exp%        = Experience gained
+    # => %total_exp%  = Total experience dropped by the mob
+    party:
+      gained: "&bGained %exp% party experience for killing the mob"
+    normal:
+      gained-killer: "&bGained %exp% experience for killing the mob"
+      gained-others: "&b%player% has killed a mob, you gained %exp% experience"
+    skillapi:
+      gained-killer: "&bGained %exp% experience for killing the mob"
+      gained-others: "&b%player% has killed a mob, you gained %exp% experience"
+
+  follow:
+    toggle-on: "§aParta §8» §7Vaše parta bude nyní §6následovat vůdce§7."
+    toggle-off: "§aParta §8» §7Vaše parta již §6nebude §7následovat vůdce."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party follow [on/off]"
+
+  home:
+    teleported: "&7Teleported to the party home"
+    # Special tag: %time% = Time of cooldown
+    teleport-in: "&7You will be teleported in %time% seconds..."
+    teleport-denied: "&7Teleport denied"
+    teleport-waiting: "&cYou are already waiting for the teleport!"
+    no-home: "&cThere isn't a home yet"
+    no-exists: "&cThe party %party% doesn't exist"
+    wrong-command: "&cWrong variables: Type &7/party home"
+    wrong-command-admin: "&cWrong variables: Type &7/party home [party]"
+
+  join:
+    joined: "§aParta §8» §7Připojil/a jste se k partě §6%party%§7."
+    player-joined: "§aParta §8» §6%player% §7se připojil/a k partě."
+    wrong-password: "§aParta §8» §7Špatné heslo."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party join <název> [heslo]"
+
+  list:
+    # Special tags:
+    # => %number%    = Number of online parties
+    # => %page%      = Current page of the list
+    # => %maxpages%  = Total pages
+    header: "&8============ &aOnline Party 8============"
+    footer: "&8================ &a%page%/%maxpages% &8================"
+    no-one: "&6Žádná"
+    format-party: '[{"text":"%party%","color":"aqua","clickEvent":{"action":"run_command","value":"/party info %party%"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Více informací.","color":"gold"}]}}},{"text":" [","color":"gray"},{"text":"Online %online_number%","color":"gold"},{"text":"] %desc%","color":"gray"}]'
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party list [strana]"
+
+  motd:
+    changed: "§aParta §8» §7Zpráva dne změna."
+    removed: "§aParta §8» §7Zpráva dne odstraněna."
+    broadcast: ""
+    content:
+    - "&7Zpráva dne:"
+    - "&6%motd%"
+    invalid-chars: "§aParta §8» §7Neplatné znaky."
+    censored: "§aParta §8» §7Nepovolená slova."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &7/party motd <zpráva/remove>"
+
+  mute:
+    toggle-on: "§aParta §8» §7Notifikace zapnuty."
+    toggle-off: "§aParta §8» §7Notifikace vypnuty."
+    wrong-command: "§aParta §8» §6Špatní proměnné: §7Použijte &6/party mute [on/off]"
+
+  password:
+    changed: "§aParta §8» §7Heslo party změněno."
+    removed: "§aParta §8» §7Heslo party odstraněno."
+    broadcast: ""
+    invalid-chars: "§aParta §8» §7Nepovolené znaky."
+    wrong-command: "§aParta §8» §6Špatné proměnné: §7Použijte &6/party password <heslo/remove>"
+
+  protection:
+    toggle-on: "&aNow your party is protected by friendly fire"
+    toggle-off: "&aYour party is not protected anymore by friendly fire"
+    protected: "&cYou can't hit your partymates"
+    warn-on-attack: "&c%player% tried to hit %victim%!"
+    wrong-command: "&cWrong variables: Type &7/party protection [on/off]"
+
+  sethome:
+    changed: ""
+    removed: "&bParty home removed"
+    broadcast: "&aThe party has a new home!"
+    wrong-command: "&cWrong variables: Type &7/party sethome [remove]"
+
+  teleport:
+    teleporting: "§aParta §8» §7Teleportuji Vaši partu.."
+    player-teleported: "§aParta §8» §7Teleportováno na §6%player%§7."
+    # Special tag: %seconds% = Remaining time in seconds
+    cooldown: "§aParta §8» §7Musíte počkat §6%seconds% §7sekund."
+
+  vault:
+    # Special tag: %price% = Price of the command
+    no-money:
+      claim: "&cYou don't have enough money to perform a claim [%price%$]"
+      color: "&cYou don't have enough money to perform the color command [%price%$]"
+      create: "&cYou don't have enough money to create a party [%price%$]"
+      desc: "&cYou don't have enough money to set the description [%price%$]"
+      home: "&cYou don't have enough money to use the home command [%price%$]"
+      join: "&cYou don't have enough money to join a party [%price%$]"
+      motd: "&cYou don't have enough money to set the MOTD [%price%$]"
+      sethome: "&cYou don't have enough money to set the home [%price%$]"
+      teleport: "&cYou don't have enough money to perform a teleport [%price%$]"
+    confirm:
+        warn-onbuy: '[{"text":"Command %cmd% costs %price%$.\n","color":"green"},{"text":"Click here to confirm","color":"dark_green","bold":true,"clickEvent":{"action":"run_command","value":"/party confirm"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Pay the command","color":"gold"}]}}},{"text":" or type ","color":"green","bold":false},{"text":"/party confirm","color":"gray"},{"text":" to use it.","color":"green"}]'
+        confirmed: "&aPerforming the command."
+        no-cmd: "&cThere is no command to confirm"
+
+
+# / = = = = = = = = = = = = = = = = \
+# |         OTHER  MESSAGES         |
+# \ = = = = = = = = = = = = = = = = /
+other:
+  follow:
+    # Special tags: %server% = New server
+    following-server: "§aParta §8» §7Následuji §6%player% §7na §6%server%"
+
+  fixed-parties:
+    # Joined into a default party
+    default-join: "§aParta §8» §7Vstoupil/a jste do §6%party%"
+
+  join-leave:
+    server-join: "§aParta §8» §a§l+ §a%player%"
+    server-leave: "§aParta §8» §c§l- §c%player%"
+
+
+# / = = = = = = = = = = = = = = = = \
+# |          HELP MESSAGES          |
+# \ = = = = = = = = = = = = = = = = /
+help:
+  header: "§8================= &aParta %page%/%maxpages% §8================="
+  footer: ""
+  console-help:
+  - "You can only make these commands:"
+  - " > party create <name> fixed - Create a new party"
+  - " > party delete <party> - Delete a party"
+  - " > party info <party> - Show party information"
+  - " > party list - List of online parties"
+  - " > party kick <player> - Kick a player from the party"
+  - " > party rank <player> <rank> - Change rank of the player"
+  - " > party reload - Reload Parties configuration files"
+  - " > party rename <party> <name> - Rename the party"
+  - " > party version - Show Parties information"
+  main-commands:
+    help: '{"text":"","extra":[{"text":"§8» §6/party help [strana]","color":"aqua"},{"text":" - Zobrazení stran","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party help "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    accept: '{"text":"","extra":[{"text":"§8» §6/party accept","color":"aqua"},{"text":" - Příjmutí pozvánky","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party accept"},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    chat: '{"text":"","extra":[{"text":"§8» §6/party chat [on/off]","color":"aqua"},{"text":" - Chat party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party chat "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    create: '{"text":"","extra":[{"text":"§8» §6/party create <jméno>","color":"aqua"},{"text":" - Vytvoření party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party create "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    delete: '{"text":"","extra":[{"text":"§8» §6/party delete <název>","color":"aqua"},{"text":" - Rozpuštění praty","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party delete "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    deny: '{"text":"","extra":[{"text":"§8» §6/party deny","color":"aqua"},{"text":" - Odmítnutí pozvánky","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party deny"},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    ignore: '{"text":"","extra":[{"text":"§8» §6/party ignore [název]","color":"aqua"},{"text":" - Ignorování part","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party ignore "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    info: '{"text":"","extra":[{"text":"§8» §6/party info [název]","color":"aqua"},{"text":" - Zobrazení informací","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party info "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    invite: '{"text":"","extra":[{"text":"§8» §6/party invite <jméno>","color":"aqua"},{"text":" - Pozvání do party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party invite "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    kick: '{"text":"","extra":[{"text":"§8» §6/party kick <jméno>","color":"aqua"},{"text":" - Vyhození z party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party kick "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    leave: '{"text":"","extra":[{"text":"§8» §6/party leave","color":"aqua"},{"text":" - Opuštění party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party leave "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    p: '{"text":"","extra":[{"text":"§8» §6/p <zpráva>","color":"aqua"},{"text":" - Odeslání zprávy pro partu","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/p "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    rank: '{"text":"","extra":[{"text":"§8» §6/party rank <jméno> <hodnost>","color":"aqua"},{"text":" - Změna hodnosti","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party rank "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    reload: '{"text":"","extra":[{"text":"§8» §6/party reload","color":"aqua"},{"text":" - Načtení konfigurací","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party reload"},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    rename: '{"text":"","extra":[{"text":"§8» §6/party rename [název] <novýNázev>","color":"aqua"},{"text":" - Přejmenování party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party rename "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    spy: '{"text":"","extra":[{"text":"§8» §6/party spy [on/off]","color":"aqua"},{"text":" - Sledování zpráv","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party spy "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    version: '{"text":"","extra":[{"text":"§8» §6/party version","color":"aqua"},{"text":" - Zobrazení informací","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party version"},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+  additional-commands:
+    claim: '{"text":"","extra":[{"text":"/party claim <permission>","color":"aqua"},{"text":" - Grant permissions to the claim","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party claim "},"hoverEvent":{"action":"show_text","value":{"text":"Perform the command","color":"gold"}}}'
+    color: '{"text":"","extra":[{"text":"§8» §6/party color <barva>","color":"aqua"},{"text":" - Změna barvy party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party color "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    desc: '{"text":"","extra":[{"text":"§8» §6/party desc <popis/remove>","color":"aqua"},{"text":" - Změna popisu party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party desc "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    follow: '{"text":"","extra":[{"text":"§8» §6/party follow [on/off]","color":"aqua"},{"text":" - Sledování vůdce party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party follow "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    home: '{"text":"","extra":[{"text":"/party home [party]","color":"aqua"},{"text":" - Teleport to the party home","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party home "},"hoverEvent":{"action":"show_text","value":{"text":"Perform the command","color":"gold"}}}'
+    join: '{"text":"","extra":[{"text":"§8» §6/party join <název> [heslo]","color":"aqua"},{"text":" - Připojení do party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party join "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    list: '{"text":"","extra":[{"text":"§8» §6/party list [strana]","color":"aqua"},{"text":" - Seznam part na serveru","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party list "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    motd: '{"text":"","extra":[{"text":"§8» §6/party motd <zpráva/remove>","color":"aqua"},{"text":" - Nastavení zprávy dne","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party motd "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    mute: '{"text":"","extra":[{"text":"§8» §6/party mute [on/off]","color":"aqua"},{"text":" - Notifikace","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party mute "},"hoverEvent":{"action":"show_text","value":{"text":"Perform the command","color":"gold"}}}'
+    password: '{"text":"","extra":[{"text":"§8» §6/party password <heslo/remove>","color":"aqua"},{"text":" - Změna hesla party","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party password "},"hoverEvent":{"action":"show_text","value":{"text":"Použití příkazu.","color":"gold"}}}'
+    protection: '{"text":"","extra":[{"text":"/party protection [on/off]","color":"aqua"},{"text":" - Toggle friendly fire protection","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party protection "},"hoverEvent":{"action":"show_text","value":{"text":"Perform the command","color":"gold"}}}'
+    sethome: '{"text":"","extra":[{"text":"/party sethome [remove]","color":"aqua"},{"text":" - Set/remove party home","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party sethome "},"hoverEvent":{"action":"show_text","value":{"text":"Perform the command","color":"gold"}}}'
+    teleport: '{"text":"","extra":[{"text":"/party teleport","color":"aqua"},{"text":" - Teleport your party to you","color":"gray"}],"clickEvent":{"action":"suggest_command","value":"/party teleport"},"hoverEvent":{"action":"show_text","value":{"text":"Perform the command","color":"gold"}}}'
+
+dont-edit-this:
+  version: 10

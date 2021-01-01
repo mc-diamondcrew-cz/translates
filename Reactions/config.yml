@@ -1,0 +1,751 @@
+# Big thanks and love for using my plugins! ^^
+
+#|--------------------------------------------------------------------------------------------------------------------|#
+# Plugin: Reactions
+# Author: https://www.mc-market.org/members/89497/
+# Description: Simple plugin for players to interact with.
+# Dependencies:
+#   -> MySQL Database
+#   -> PLJRApi
+#   -> Vault (https://www.spigotmc.org/resources/vault.34315/)
+#   -> PlaceholderAPI<Optional> (https://www.spigotmc.org/resources/placeholderapi.6245/)
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+###############\
+# MySQL Setup ##############################################################################################\
+############### This is the most important part, as the plugin can not work without proper MySQL Database. # \
+              ##############################################################################################  \
+mysql:
+  enabled: false #-> Should we use this database instead of the one configured in PLJRApi config.yml?
+  host: "127.0.0.1"
+  port: "3306"
+  database: "db"
+  username: "root"
+  password: ""
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+##################\
+# Settings Setup #############################################################\
+################## Here, you can enable or disable functions of this plugin. # \
+                 #############################################################  \
+settings:
+  bungee: false #-> Should we use bungee functions?
+  start-on-startup: true #-> Should we launch reactions on server startup?
+  restart-on-end: true #-> Should we start new reaction after ending one?
+  clear-answer: true #-> Should we disable(hide) the message from player, that answered?
+  cooldown: 300 #-> How long should we wait between reactions? (In seconds)
+  time: 20 #-> How long should we give players to react? (In seconds) - MUST be lower than cooldown!
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+###################\
+# Reactions Setup ##########################################################\
+################### Here, you can set EVERYTHING for all of the reactions. # \
+                  ##########################################################  \
+reactions:
+  WORD_SHUFFLE:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &7Rozlušti &6%word &7jako první a vyhraj odměnu!"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&7Rozlušti &e%word &7jako první a vyhraj odměnu!"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&a&lREACTIONS: &7Decipher &e%word &7as first and win a prize!"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+  WORD_COPY:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &7Opiš &6%word &7jako první a vyhraj odměnu!"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&7Opiš &e%word &7jako první a vyhraj odměnu!"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&a&lREACTIONS: &7Copy &e%word &7as first and win a prize!"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+  WORD_HIDE:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &6Přejeď &7přes tuto zprávu, opiš &6slovo &7a vyhraj odměnu!"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&eHover &7over chat message and write the &eword&7!"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&a&lREACTIONS: &eHover &7over chat message and write the &eword&7!"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+  BLOCK_PLACE:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &6Polož &7jakýkoliv blok a vyhraj odměnu!"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&ePlace &7a random block and win a prize!"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&a&lREACTIONS: &ePlace &7a random block and win a prize!"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+  BLOCK_BREAK:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &6Rozbij &7jakýkoliv blok a vyhraj odměnu!"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&eBreak &7a random block and win a prize!"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&a&lREACTIONS: &eBreak &7a random block and win a prize!"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+  MOB_KILL:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &6Zabij &7jakéhokoliv moba a vyhraj odměnu!"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&eKill &7a random mob and win a prize!"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&a&lREACTIONS: &eKill &7a random mob and win a prize!"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+  FISH_CATCH:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &6Chyť rybu &7a vyhraj odměnu!"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&eCatch &7a fish and win a prize!"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&a&lREACTIONS: &eCatch &7a fish and win a prize!"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+  MATH_SUMMATION:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &7Kolik je &6%a&7+&6%b&7?"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&7What is &e%a&7+&e%b&7?"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&7What is &e%a&7+&e%b&7?"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+  MATH_SUBSTRACTION:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &7Kolik je &6%a&7-&6%b&7?"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&7What is &e%a&7-&e%b&7?"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&7What is &e%a&7-&e%b&7?"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+  MATH_MULTIPLICATION:
+    enabled: true
+    win-amount: 50
+    broadcast:
+      chat:
+        enabled: true
+        start:
+          - ""
+          - "&e◆ &8| &aReakce &8» &7Kolik je &6%a&7*&6%b&7?"
+          - ""
+        end:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6%name &7vyhrál &6$%prize&7!"
+          - ""
+        no-winner:
+          - ""
+          - "<hover:show_text:OOdpověď: &6%answer&7.>&e◆ &8| &aReakce &8» &6Nikdo &7nevyhrál."
+          - ""
+      title:
+        enabled: false
+        start:
+          title: "&a&lREAKCE"
+          subtitle: "&7What is &e%a&7*&e%b&7?"
+          in: 10
+          stay: 40
+          out: 10
+        end:
+          title: "&a&lREAKCE"
+          subtitle: "&e%name &7vyhrál &e%prize$&7!"
+          in: 10
+          stay: 40
+          out: 10
+        no-winner:
+          title: "&a&lREAKCE"
+          subtitle: "&eNikdo &7nevyhrál. &c:("
+          in: 10
+          stay: 40
+          out: 10
+      actionbar:
+        enabled: false
+        start:
+          message: "&7What is &e%a&7*&e%b&7?"
+          duration: 40
+        end:
+          message: "&a&lREACTIONS: &e%name &7won &e%prize$&7!"
+          duration: 40
+        no-winner:
+          message: "&eNikdo &7nevyhrál. &c:("
+          duration: 40
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+###############\
+# Menus Setup ###########################################################\
+############### Here, you can customize the looks of all in-game menus. # \
+              ###########################################################  \
+
+stats-menu:
+  title: "&8&lReakce"
+  background-1:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "&0"
+    amount: 1
+    lore:
+      - "&r"
+  background-2:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "&a"
+    amount: 1
+    lore:
+      - "&r"
+  word-shuffle:
+    type: "BOOK"
+    name: "&eRozlušti slovo:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+  word-hide:
+    type: "BARRIER"
+    name: "&eNajdi slovo:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+  word-copy:
+    type: "PAPER"
+    name: "&eOpsaná slova:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+  math-multiplication:
+    head: true
+    head-owner: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTk0YjVlM2RkYzdhOGYzM2M3OTM0Njg2MGQzOTIzYzcxYTU4MmZkYTE2YWNkYmY0YWQzYzBjYzQ2NWZkOTI2In19fQ=="
+    name: "&eNásobení vyřešeno:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+  math-substraction:
+    head: true
+    head-owner: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM1ZTRlMjZlYWZjMTFiNTJjMTE2NjhlMWQ2NjM0ZTdkMWQwZDIxYzQxMWNiMDg1ZjkzOTQyNjhlYjRjZGZiYSJ9fX0="
+    name: "&eOdčítání vyřešeno:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+  math-summation:
+    head: true
+    head-owner: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWEyZDg5MWM2YWU5ZjZiYWEwNDBkNzM2YWI4NGQ0ODM0NGJiNmI3MGQ3ZjFhMjgwZGQxMmNiYWM0ZDc3NyJ9fX0="
+    name: "&eSčítání vyřešeno:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+  block-break:
+    type: "DIAMOND_PICKAXE"
+    name: "&eBloků zníčeno:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+  block-place:
+    type: "GRASS"
+    name: "&eBloků položeno:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+  fish-catch:
+    type: "FISHING_ROD"
+    name: "&eRyb chyceno:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+  mob-kill:
+    type: "IRON_SWORD"
+    name: "&eMobů zabito:"
+    amount: 1
+    lore:
+      - "&8► &7%amount"
+      - ""
+      - "&aServer top:"
+      - "&7%topName &7- &7%topAmount"
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+##############\
+# Lang Setup ################################################################\
+############## Here, you can customize messages, send by the plugin itself. # \
+             ################################################################  \
+
+help:
+  - ""
+  - "&a&lReakce Help"
+  - ""
+  - "&e/reactions <hráč> &8» &7Otevře GUI se statistikami hráče."
+  - "&e/reactions help &8» &7Zobrazí tuto zprávu."
+
+admin-help:
+  - ""
+  - "&a&lReakce Admin"
+  - ""
+  - "&e/areactions help &8» &7Zobrazí tuto zprávu."
+  - "&e/areactions restart &8» &7Zruší stávající a odstartuje novou reakci. (Pokud &erestart-on-end &7je &etrue&7)"
+  - "&e/areactions start &8» &7Odstartuje novou reakci."
+  - "&e/areactions end &8» &7Zruší stávající reakci."
+
+lang:
+  NO_CONSOLE: "&a&lReakce &8» &7This command is for in-game use only!"
+  RESTART_SUCCESS: "&a&lReakce &8» &6Úspěšně &7jsi restartoval reakci."
+  END_SUCCESS: "&a&lReakce &8» &6Úspěšně &7jsi ukončil reakci."
+  START_SUCCESS: "&a&lReakce &8» &6Úspěšně &7jsi odstartoval reakci."
+  START_FAILURE: "&a&lReakce &8» &7Reakce už &6běží&7!"
+  NONE: "&eNone"
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+###############\
+# Words Setup ######################################################################\
+############### Here, you can add or remove words, that will be used in reactions. # \
+              ######################################################################  \
+words:
+  - "mrakodrap"
+  - "vozidlo"
+  - "dům"
+  - "domácnost"
+  - "letadlo"
+  - "diamondcrew"
+  - "minecraft"
+  - "zbraň"
+  - "pistole"
+  - "loď"
+  - "policie"
+  - "dveře"
+  - "slovo"
+  - "opice"
+  - "administrátor"
+  - "operátor"
+  - "nemocnice"
+  - "meč"
+  - "hůl"
+  - "skříň"
+  - "zisk"
+  - "nehoda"
+  - "apokalypsa"
+  - "nářek"
+  - "nepozornost"
+  - "přátelé"
+  - "savec"
+  - "útok"
+  - "samice"
+  - "radiátor"
+  - "kůrovec"
+  - "brusle"
+  - "kameník"
+  - "hrnec"
+  - "houba"
+  - "lékarnice"
+  - "sklenář"
+  - "pole"
+  - "tác"
+  - "vůně"
+  - "úponek"
+  - "paruka"
+  - "židle"
+  - "jehně"
+  - "vlajka"
+  - "krokodýl"
+  - "zeměkoule"
+  - "země"
+  - "šála"
+  - "pruh"
+  - "vězeň"
+  - "květák"
+  - "myšlení"
+  - "převod"
+  - "zahraničí"
+  - "akt"
+  - "pojišťovna"
+  - "maximum"
+  - "přípojka"
+  - "metropole"
+  - "vulkán"
+  - "sprcha"
+  - "tetování"
+  - "poučení"
+  - "dárek"
+#|--------------------------------------------------------------------------------------------------------------------|#

@@ -1,0 +1,6358 @@
+Pets:
+  Silverfish:
+    Name: '&aSilverfish'
+    Material: INFESTED_STONE
+    GUI-Name: Silverfish
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Silverfish:
+        Name: '&aSilverfish'
+        Material: INFESTED_STONE
+        Mystery Dust: 12
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aSilverfish'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Rotten Flesh
+          - Milk
+          - Ball
+          Favourite:
+          - Bone
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Silverfish'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Chicken:
+    Name: '&9Slepice'
+    Material: EGG
+    GUI-Name: Slepice
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčků v této kategorii!'
+    Types:
+      Chicken:
+        Name: '&aChicken'
+        Material: FEATHER
+        Mystery Dust: 10
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aSlepice'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Melon
+          - Cookie
+          - Milk
+          - Stick
+          Favourite:
+          - Flower
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Slepice'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Chicken:
+        Name: '&9Slepice (Mládě)'
+        Material: WHEAT_SEEDS
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Slepice (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Melon
+          - Wheat
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Slepice (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Wolf:
+    Name: '&9Pes'
+    Material: BONE
+    GUI-Name: Pes
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Wolf:
+        Name: '&aPes'
+        Material: BONE
+        Mystery Dust: 10
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aPes'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Hay
+          - Wheat
+          - Lava
+          - Frisbee
+          - Sparring Sword
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Ball
+          Favourite:
+          - Bone
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Pes'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Wolf:
+        Name: '&9Pes (Mládě)'
+        Material: BONE_MEAL
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Pes (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Hay
+          - Wheat
+          - Bread
+          - Cake
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Frisbee
+          - Sparring Sword
+          Really-Like:
+          - Raw Porkchop
+          - Bone
+          - Water
+          - Stick
+          - Leash
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Pes (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Cat:
+    Name: '&5Kočka'
+    Material: COD
+    GUI-Name: Kočka
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Black Cat:
+        Name: '&aKočka: Černá'
+        Material: COOKED_COD
+        Mystery Dust: 12
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aKočka: Černá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Water
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kočka: Černá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Black Cat:
+        Name: '&9Kočka: Černá (Mládě)'
+        Material: COOKED_COD
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Kočka: Černá (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kočka: Černá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Red Cat:
+        Name: '&aKočka: Červená'
+        Material: COOKED_SALMON
+        Mystery Dust: 12
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aKočka: Červená'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Water
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kočka: Červená'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Red Cat:
+        Name: '&9Kočka: Červená (Mládě)'
+        Material: COOKED_SALMON
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Kočka: Červená (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kočka: Červená (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Siamese Cat:
+        Name: '&aKočka: Siamská'
+        Material: TROPICAL_FISH
+        Mystery Dust: 12
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aKočka: Siamská'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Water
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kočka: Siamská'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Siamese Cat:
+        Name: '&9Kočka: Siamská (Mládě)'
+        Material: TROPICAL_FISH
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Kočka: Siamská (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kočka: Siamská (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Wild Ocelot:
+        Name: '&9Divoká Kočka'
+        Material: COD
+        Mystery Dust: 15
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Divoká Kočka'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Water
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Divoká Kočka'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Wild Ocelot:
+        Name: '&5Divoká Kočka (Mládě)'
+        Material: COD
+        Mystery Dust: 35
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Divoká Kočka (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Baked Potato
+          - Flower
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Cookie
+          - Cake
+          - Water
+          - Frisbee
+          Favourite:
+          - Raw Fish
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Divoká Kočka (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Zombie:
+    Name: '&5Zombie'
+    Material: ZOMBIE_HEAD
+    GUI-Name: Zombie
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Zombie:
+        Name: '&aZombie'
+        Material: ROTTEN_FLESH
+        Mystery Dust: 12
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aZombie'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Water
+          - Leash
+          Really-Like:
+          - Raw Porkchop
+          - Milk
+          - Stick
+          Favourite:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Zombie'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Zombie:
+        Name: '&9Zombie (Mládě)'
+        Material: POTATO
+        Mystery Dust: 50
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Zombie (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Water
+          - Frisbee
+          Really-Like:
+          - Cookie
+          - Lava
+          - Ball
+          Favourite:
+          - Rotten Flesh
+          - Milk
+          - Sparring Sword
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Zombie (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Husk:
+        Name: '&9Zombie Husk'
+        Material: head:d674c63c8db5f4ca628d69a3b1f8a36e29d8fd775e1a6bdb6cabb4be4db121
+        Mystery Dust: 45
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Zombie Husk'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Water
+          - Leash
+          Really-Like:
+          - Raw Porkchop
+          - Milk
+          - Ball
+          Favourite:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Zombie Husk'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Husk:
+        Name: '&5Zombie Husk (Mládě)'
+        Material: head:d674c63c8db5f4ca628d69a3b1f8a36e29d8fd775e1a6bdb6cabb4be4db121
+        Mystery Dust: 60
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Zombie Husk (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Water
+          - Leash
+          Really-Like:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Zombie Husk (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Red Little Helper:
+        Name: '&5Červený Malý Pomocník'
+        Material: LEATHER_HELMET:#FF0000
+        Mystery Dust: 50
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Červený Malý Pomocník'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Water
+          - Leash
+          Really-Like:
+          - Cake
+          - Lava
+          - Ball
+          Favourite:
+          - Cookie
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Červený Malý Pomocník'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Green Little Helper:
+        Name: '&5Zelený Malý Pomocník'
+        Material: LEATHER_HELMET:#00FF00
+        Mystery Dust: 30
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Zelený Malý Pomocník'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Flower
+          - Water
+          - Leash
+          Really-Like:
+          - Cookie
+          - Lava
+          - Frisbee
+          Favourite:
+          - Cake
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Zelený Malý Pomocník'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Bat:
+    Name: '&5Netopýr'
+    Material: COAL
+    GUI-Name: Netopýr
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Bat:
+        Name: '&5Netopýr'
+        Material: COAL
+        Mystery Dust: 37
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Netopýr'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Melon
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Netopýr'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Spider:
+    Name: '&5Pavouk'
+    Material: SPIDER_EYE
+    GUI-Name: Pavouk
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Spider:
+        Name: '&5Pavouk'
+        Material: SPIDER_EYE
+        Mystery Dust: 42
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Pavouk'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Leash
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Sparring Sword
+          Favourite:
+          - Rotten Flesh
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Pavouk'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Cave Spider:
+        Name: '&9Jeskynní Pavouk'
+        Material: STRING
+        Mystery Dust: 27
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Jeskynní Pavouk'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Leash
+          Really-Like:
+          - Rotten Flesh
+          - Milk
+          - Stick
+          Favourite:
+          - Angus Steak
+          - Water
+          - Sparring Sword
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Jeskynní Pavouk'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Snowman:
+    Name: '&5Sněhulák'
+    Material: SNOWBALL
+    GUI-Name: Sněhulák
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Snowman:
+        Name: '&5Sněhulák'
+        Material: SNOWBALL
+        Mystery Dust: 52
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Sněhulák'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Pumpkin Pie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Sněhulák'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Rabbit:
+    Name: '&6Králík'
+    Material: CARROT
+    GUI-Name: Králík
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Black Rabbit:
+        Name: '&9Králík: Černá'
+        Material: head:72c58116a147d1a9a26269224a8be184fe8e5f3f3df9b61751369ad87382ec9
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Králík: Černá'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Černá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Black Rabbit:
+        Name: '&5Králík: Černá (Mládě)'
+        Material: CARROT
+        Mystery Dust: 28
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Králík: Černá (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Černá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Black & White Rabbit:
+        Name: '&5Králík: Černá & Bílá'
+        Material: head:cb8cff4b15b8ca37e25750f345718f289cb22c5b3ad22627a71223faccc
+        Mystery Dust: 45
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Králík: Černá & Bílá'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Černá & Bílá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Black & White Rabbit:
+        Name: '&6Králík: Černá & Bílá (Mládě)'
+        Material: CARROT
+        Mystery Dust: 51
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Králík: Černá & Bílá (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Černá & Bílá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Brown Rabbit:
+        Name: '&9Králík: Hnědá'
+        Material: head:7d1169b2694a6aba826360992365bcda5a10c89a3aa2b48c438531dd8685c3a7
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Králík: Hnědá'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Hnědá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Brown Rabbit:
+        Name: '&5Králík: Hnědá (Mládě)'
+        Material: CARROT
+        Mystery Dust: 28
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Králík: Hnědá (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Hnědá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Gold Rabbit:
+        Name: '&5Králík: Gold'
+        Material: head:c977a3266bf3b9eaf17e5a02ea5fbb46801159863dd288b93e6c12c9cb
+        Mystery Dust: 45
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Králík: Gold'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Gold'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Gold Rabbit:
+        Name: '&6Králík: Zlatá (Mládě)'
+        Material: CARROT
+        Mystery Dust: 51
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Králík: Zlatá (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Zlatá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Salt & Pepper Rabbit:
+        Name: '&5Králík: Sůl & Pepř'
+        Material: head:dc29aebe803e5d4dc3b010c9dd56444f863b2d86a6a2afd4a6a721748ba4fa
+        Mystery Dust: 45
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Králík: Sůl & Pepř'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Sůl & Pepř'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Salt & Pepper Rabbit:
+        Name: '&6Králík: Sůl & Pepř (Mládě)'
+        Material: CARROT
+        Mystery Dust: 51
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Králík: Sůl & Pepř (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Sůl & Pepř (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      White Rabbit:
+        Name: '&9Králík: Bílá'
+        Material: head:374d8298797e712bb1f75ad6ffa7734ac4237ea69be1db92f0e41115a2c170cf
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Králík: Bílá'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Ball
+          Favourite:
+          - Carrot
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Bílá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby White Rabbit:
+        Name: '&5Králík: Bílá (Mládě)'
+        Material: CARROT
+        Mystery Dust: 28
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Králík: Bílá (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Bread
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Carrot
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Králík: Bílá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Villager:
+    Name: '&6Vesničan'
+    Material: EMERALD
+    GUI-Name: Vesničan
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Blacksmith Villager:
+        Name: '&9Vesničan: Kovář'
+        Material: IRON_ORE
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Vesničan: Kovář'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Kovář'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Blacksmith Villager:
+        Name: '&5Vesničan: Kovář (Mládě)'
+        Material: IRON_INGOT
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Vesničan: Kovář (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Kovář (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Butcher Villager:
+        Name: '&9Vesničan: Řezník'
+        Material: IRON_AXE
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Vesničan: Řezník'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Řezník'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Butcher Villager:
+        Name: '&5Vesničan: Řezník (Mládě)'
+        Material: WOODEN_AXE
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Vesničan: Řezník (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Řezník (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Farmer Villager:
+        Name: '&9Vesničan: Farmář'
+        Material: IRON_HOE
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Vesničan: Farmář'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Farmář'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Farmer Villager:
+        Name: '&5Vesničan: Farmář (Mládě)'
+        Material: WOODEN_HOE
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Vesničan: Farmář (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Farmář (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Librarian Villager:
+        Name: '&9Vesničan: Knihovník'
+        Material: BOOKSHELF
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Vesničan: Knihovník'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Knihovník'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Librarian Villager:
+        Name: '&5Vesničan: Knihovník (Mládě)'
+        Material: BOOK
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Vesničan: Knihovník (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Knihovník (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Priest Villager:
+        Name: '&9Vesničan: Kněz'
+        Material: WRITABLE_BOOK
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Vesničan: Kněz'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cookie
+          - Milk
+          - Feather
+          Favourite:
+          - Bread
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Kněz'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Priest Villager:
+        Name: '&5Vesničan: Kněz (Mládě)'
+        Material: MAP
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Vesničan: Kněz (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Bread
+          - Water
+          - Frisbee
+          Favourite:
+          - Cookie
+          - Milk
+          - Feather
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Kněz (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Zombie Villager:
+        Name: '&5Vesničan: Zombie'
+        Material: GOLDEN_APPLE
+        Mystery Dust: 52
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Vesničan: Zombie'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Cake
+          - Water
+          - Leash
+          Really-Like:
+          - Raw Porkchop
+          - Milk
+          - Ball
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Zombie'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Zombie Villager:
+        Name: '&6Vesničan: Zombie (Mládě)'
+        Material: GOLDEN_HELMET
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Vesničan: Zombie (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Cake
+          - Water
+          - Leash
+          Really-Like:
+          - Bone
+          - Lava
+          - Stick
+          Favourite:
+          - Rotten Flesh
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vesničan: Zombie (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Witch:
+        Name: '&5Witch'
+        Material: POTION:8196
+        Mystery Dust: 45
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Witch'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Baked Potato
+          - Water
+          - Feather
+          Favourite:
+          - Pumpkin Pie
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Witch'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Evoker:
+        Name: '&6Evoker'
+        Material: head:4f6fb89d1c631bd7e79fe185ba1a6705425f5c31a5ff626521e395d4a6f7e2
+        Mystery Dust: 80
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Evoker'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Feather
+          Favourite:
+          - Bone
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Evoker'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Vindicator:
+        Name: '&6Vindicator'
+        Material: head:4f6fb89d1c631bd7e79fe185ba1a6705425f5c31a5ff626521e395d4a6f7e2
+        Mystery Dust: 80
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Vindicator'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Feather
+          Favourite:
+          - Bone
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Vindicator'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Illusioner:
+        Name: '&6Illusioner'
+        Material: head:1c678c9f4c6dd4d991930f82e6e7d8b89b2891f35cba48a4b18539bbe7ec927
+        Mystery Dust: 85
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Illusioner'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Feather
+          Favourite:
+          - Bone
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Illusioner'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Golem:
+    Name: '&6Golem'
+    Material: head:89091d79ea0f59ef7ef94d7bba6e5f17f2f7d4572c44f90f76c4819a714
+    GUI-Name: Golem
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Golem:
+        Name: '&6Golem'
+        Material: IRON_BLOCK
+        Mystery Dust: 200
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Golem'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Milk
+          - Frisbee
+          Favourite:
+          - Flower
+          - Lava
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Golem'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Enderman:
+    Name: '&6Enderman'
+    Material: head:7a59bb0a7a32965b3d90d8eafa899d1835f424509eadd4e6b709ada50b9cf
+    GUI-Name: Enderman
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Enderman:
+        Name: '&6Enderman'
+        Material: head:7a59bb0a7a32965b3d90d8eafa899d1835f424509eadd4e6b709ada50b9cf
+        Mystery Dust: 150
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Enderman'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Mushroom Soup
+          - Hay
+          - Wheat
+          - Raw Porkchop
+          - Angus Steak
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          Really-Like:
+          - Pumpkin Pie
+          - Bone
+          - Water
+          - Leash
+          - Sparring Sword
+          Favourite:
+          - Baked Potato
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Enderman'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Blaze:
+    Name: '&6Blaze'
+    Material: BLAZE_ROD
+    GUI-Name: Blaze
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Blaze:
+        Name: '&6Blaze'
+        Material: BLAZE_ROD
+        Mystery Dust: 55
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Blaze'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Bone
+          - Milk
+          - Frisbee
+          Favourite:
+          - Magma Cream
+          - Lava
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Blaze'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Endermite:
+    Name: '&6Endermite'
+    Material: ENDERMITE_SPAWN_EGG
+    GUI-Name: Endermite
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Endermite:
+        Name: '&6Endermite'
+        Material: ENDERMITE_SPAWN_EGG
+        Mystery Dust: 55
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Endermite'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Cake
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Raw Porkchop
+          - Milk
+          - Ball
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Endermite'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Cow:
+    Name: '&6Kráva'
+    Material: LEATHER
+    GUI-Name: Kráva
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Cow:
+        Name: '&aKráva'
+        Material: LEATHER
+        Mystery Dust: 10
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aKráva'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Mushroom Soup
+          - Cookie
+          - Water
+          - Ball
+          Favourite:
+          - Wheat
+          - Milk
+          - Feather
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kráva'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Cow:
+        Name: '&9Kráva (Mládě)'
+        Material: WHEAT
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Kráva (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Mushroom Soup
+          - Wheat
+          - Water
+          - Feather
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kráva (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Mushroom Cow:
+        Name: '&5Houbová Kráva'
+        Material: RED_MUSHROOM
+        Mystery Dust: 50
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Houbová Kráva'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Wheat
+          - Milk
+          - Stick
+          Favourite:
+          - Mushroom Soup
+          - Water
+          - Feather
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Houbová Kráva'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Mushroom Cow:
+        Name: '&6Houbová Kráva (Mládě)'
+        Material: BROWN_MUSHROOM
+        Mystery Dust: 90
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Houbová Kráva (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Cookie
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Mushroom Soup
+          - Water
+          - Ball
+          Favourite:
+          - Wheat
+          - Milk
+          - Feather
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Houbová Kráva (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Creeper:
+    Name: '&6Creeper'
+    Material: CREEPER_HEAD
+    GUI-Name: Creeper
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Creeper:
+        Name: '&5Creeper'
+        Material: GUNPOWDER
+        Mystery Dust: 52
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Creeper'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Hay
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Flower
+          - Milk
+          - Frisbee
+          Favourite:
+          - Cake
+          - Lava
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Creeper'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Powered Creeper:
+        Name: '&6Nabitý Creeper'
+        Material: TNT
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Nabitý Creeper'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Hay
+          - Water
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Milk
+          - Stick
+          Favourite:
+          - Flower
+          - Lava
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Nabitý Creeper'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Horse:
+    Name: '&6Kůň'
+    Material: SADDLE
+    GUI-Name: Kůň
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Black Horse:
+        Name: '&5Kůň: Černá'
+        Material: COAL
+        Mystery Dust: 42
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Kůň: Černá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Černá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Black Horse:
+        Name: '&6Kůň: Černá (Mládě)'
+        Material: CHARCOAL
+        Mystery Dust: 60
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Kůň: Černá (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Černá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Brown Horse:
+        Name: '&aKůň: Hnědá'
+        Material: BRICK
+        Mystery Dust: 15
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aKůň: Hnědá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Hnědá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Brown Horse:
+        Name: '&9Kůň: Hnědá (Mládě)'
+        Material: COCOA_BEANS
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Kůň: Hnědá (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Hnědá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Chestnut Horse:
+        Name: '&9Kůň: Kaštanová'
+        Material: MELON_SEEDS
+        Mystery Dust: 25
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Kůň: Kaštanová'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Kaštanová'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Chestnut Horse:
+        Name: '&5Kůň: Kaštanová (Mládě)'
+        Material: PUMPKIN_SEEDS
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Kůň: Kaštanová (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Kaštanová (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Creamy Horse:
+        Name: '&9Kůň: Krémová'
+        Material: MILK_BUCKET
+        Mystery Dust: 25
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Kůň: Krémová'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Krémová'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Creamy Horse:
+        Name: '&5Kůň: Krémová (Mládě)'
+        Material: SUGAR
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Kůň: Krémová (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Krémová (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Dark Brown Horse:
+        Name: '&9Kůň: Tmavě Hnědá'
+        Material: DARK_OAK_LOG
+        Mystery Dust: 25
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Kůň: Tmavě Hnědá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Tmavě Hnědá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Dark Brown Horse:
+        Name: '&5Kůň: Tmavě Hnědá (Mládě)'
+        Material: DARK_OAK_PLANKS
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Kůň: Tmavě Hnědá (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Tmavě Hnědá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Gray Horse:
+        Name: '&9Kůň: Šedá'
+        Material: APPLE
+        Mystery Dust: 25
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Kůň: Šedá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Šedá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Gray Horse:
+        Name: '&5Kůň: Šedá (Mládě)'
+        Material: GRAY_DYE
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Kůň: Šedá (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Šedá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      White Horse:
+        Name: '&5Kůň: Bílá'
+        Material: QUARTZ_BLOCK
+        Mystery Dust: 42
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Kůň: Bílá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Bílá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby White Horse:
+        Name: '&6Kůň: Bílá (Mládě)'
+        Material: DIORITE
+        Mystery Dust: 60
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Kůň: Bílá (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Kůň: Bílá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Donkey:
+        Name: '&9Osel'
+        Material: LEATHER
+        Mystery Dust: 27
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Osel'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Osel'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Donkey:
+        Name: '&5Osel (Mládě)'
+        Material: CARROT
+        Mystery Dust: 40
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Osel (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Osel (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Mule:
+        Name: '&9Mezek'
+        Material: COOKED_MUTTON
+        Mystery Dust: 22
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Mezek'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Mezek'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Mule:
+        Name: '&5Mezek (Mládě)'
+        Material: MUTTON
+        Mystery Dust: 35
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Mezek (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Melon
+          - Hay
+          - Wheat
+          - Water
+          - Leash
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Mezek (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Skeleton Horse:
+        Name: '&6Skeleton Kůň'
+        Material: BONE
+        Mystery Dust: 65
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Skeleton Kůň'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Frisbee
+          Really-Like:
+          - Magma Cream
+          - Milk
+          - Ball
+          Favourite:
+          - Bone
+          - Lava
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Skeleton Kůň'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Skeleton Horse:
+        Name: '&6Skeleton Kůň (Mládě)'
+        Material: BONE_MEAL
+        Mystery Dust: 85
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Skeleton Kůň (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Magma Cream
+          - Lava
+          - Leash
+          Favourite:
+          - Bone
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Skeleton Kůň (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Undead Horse:
+        Name: '&5Nemrtvý Kůň'
+        Material: DARK_OAK_SAPLING
+        Mystery Dust: 63
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Nemrtvý Kůň'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Bone
+          - Milk
+          - Ball
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Nemrtvý Kůň'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Undead Horse:
+        Name: '&6Nemrtvý Kůň (Mládě)'
+        Material: DEAD_BUSH
+        Mystery Dust: 85
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Nemrtvý Kůň (Mládě)'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Bone
+          - Lava
+          - Leash
+          Favourite:
+          - Rotten Flesh
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Nemrtvý Kůň (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Pig:
+    Name: '&6Prase'
+    Material: PORKCHOP
+    GUI-Name: Prase
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Pig:
+        Name: '&aPrase'
+        Material: COOKED_PORKCHOP
+        Mystery Dust: 10
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aPrase'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Melon
+          - Pumpkin Pie
+          - Carrot
+          - Milk
+          - Ball
+          Favourite:
+          - Apple
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Prase'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Pig:
+        Name: '&9Prase (Mládě)'
+        Material: CARROT
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Prase (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Melon
+          - Pumpkin Pie
+          - Baked Potato
+          - Water
+          - Stick
+          - Frisbee
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Prase (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Pig Zombie:
+        Name: '&5Prasečí Zombie'
+        Material: GOLD_INGOT
+        Mystery Dust: 50
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Prasečí Zombie'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Frisbee
+          Really-Like:
+          - Angus Steak
+          - Milk
+          - Stick
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Prasečí Zombie'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Pig Zombie:
+        Name: '&6Prasečí Zombie (Mládě)'
+        Material: GOLD_NUGGET
+        Mystery Dust: 85
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Prasečí Zombie (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Frisbee
+          Really-Like:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Favourite:
+          - Rotten Flesh
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Prasečí Zombie (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Sheep:
+    Name: '&6Ovce'
+    Material: WHITE_WOOL
+    GUI-Name: Ovce
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Black Sheep:
+        Name: '&5Ovce: Černá'
+        Material: BLACK_TERRACOTTA
+        Mystery Dust: 40
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Černá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Černá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Black Sheep:
+        Name: '&6Ovce: Černá (Mládě)'
+        Material: BLACK_WOOL
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Ovce: Černá (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Černá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Blue Sheep:
+        Name: '&9Ovce: Modrá'
+        Material: BLUE_TERRACOTTA
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Modrá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Modrá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Blue Sheep:
+        Name: '&5Ovce: Modrá (Mládě)'
+        Material: BLUE_WOOL
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Modrá (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Modrá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Brown Sheep:
+        Name: '&aOvce: Hnědá'
+        Material: BROWN_TERRACOTTA
+        Mystery Dust: 12
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aOvce: Hnědá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Hnědá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Brown Sheep:
+        Name: '&9Ovce: Hnědá (Mládě)'
+        Material: BROWN_WOOL
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Hnědá (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Hnědá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Cyan Sheep:
+        Name: '&9Ovce: Tyrkysová'
+        Material: CYAN_TERRACOTTA
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Tyrkysová'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Tyrkysová'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Cyan Sheep:
+        Name: '&5Ovce: Tyrkysová (Mládě)'
+        Material: CYAN_WOOL
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Tyrkysová (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Tyrkysová (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Gray Sheep:
+        Name: '&aOvce: Šedá'
+        Material: GRAY_TERRACOTTA
+        Mystery Dust: 12
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aOvce: Šedá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Šedá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Gray Sheep:
+        Name: '&9Ovce: Šedá (Mládě)'
+        Material: GRAY_WOOL
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Šedá (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Šedá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Green Sheep:
+        Name: '&9Ovce: Zelená'
+        Material: GREEN_TERRACOTTA
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Zelená'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Zelená'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Green Sheep:
+        Name: '&5Ovce: Zelená (Mládě)'
+        Material: GREEN_WOOL
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Zelená (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Zelená (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Light Blue Sheep:
+        Name: '&9Ovce: Světle Modrá'
+        Material: LIGHT_BLUE_TERRACOTTA
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Světle Modrá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Světle Modrá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Light Blue Sheep:
+        Name: '&5Ovce: Světle Modrá (Mládě)'
+        Material: LIGHT_BLUE_WOOL
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Světle Modrá (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Světle Modrá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Lime Sheep:
+        Name: '&9Ovce: Lime'
+        Material: LIME_TERRACOTTA
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Lime'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Lime'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Lime Sheep:
+        Name: '&5Ovce: Limetková (Mládě)'
+        Material: LIME_WOOL
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Limetková (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Limetková (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Magenta Sheep:
+        Name: '&9Ovce: Purpurová'
+        Material: MAGENTA_TERRACOTTA
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Purpurová'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Purpurová'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Magenta Sheep:
+        Name: '&5Ovce: Purpurová (Mládě)'
+        Material: MAGENTA_WOOL
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Purpurová (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Purpurová (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Orange Sheep:
+        Name: '&9Ovce: Oranžová'
+        Material: ORANGE_TERRACOTTA
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Oranžová'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Oranžová'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Orange Sheep:
+        Name: '&5Ovce: Oranžová (Mládě)'
+        Material: ORANGE_WOOL
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Oranžová (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Oranžová (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Pink Sheep:
+        Name: '&5Ovce: Růžová'
+        Material: PINK_TERRACOTTA
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Růžová'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Růžová'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Pink Sheep:
+        Name: '&6Ovce: Růžová (Mládě)'
+        Material: PINK_WOOL
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Ovce: Růžová (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Růžová (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Purple Sheep:
+        Name: '&9Ovce: Purple'
+        Material: PURPLE_TERRACOTTA
+        Mystery Dust: 55
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Purple'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Purple'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Purple Sheep:
+        Name: '&5Ovce: Purple (Mládě)'
+        Material: PURPLE_WOOL
+        Mystery Dust: 75
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Purple (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Purple (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Red Sheep:
+        Name: '&9Ovce: Červená'
+        Material: RED_TERRACOTTA
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Červená'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Červená'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Red Sheep:
+        Name: '&5Ovce: Červená (Mládě)'
+        Material: RED_WOOL
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Červená (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Červená (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Silver Sheep:
+        Name: '&aOvce: Silver'
+        Material: LIGHT_GRAY_TERRACOTTA
+        Mystery Dust: 12
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aOvce: Silver'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Silver'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Silver Sheep:
+        Name: '&9Ovce: Silver (Mládě)'
+        Material: LIGHT_GRAY_WOOL
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Silver (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Silver (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      White Sheep:
+        Name: '&aOvce: Bílá'
+        Material: WHITE_TERRACOTTA
+        Mystery Dust: 12
+        Rarity: Common
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&aOvce: Bílá'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Bílá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby White Sheep:
+        Name: '&9Ovce: Bílá (Mládě)'
+        Material: WHITE_WOOL
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Bílá (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Bílá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Yellow Sheep:
+        Name: '&9Ovce: Yellow'
+        Material: YELLOW_TERRACOTTA
+        Mystery Dust: 20
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Ovce: Yellow'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Yellow'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Yellow Sheep:
+        Name: '&5Ovce: Yellow (Mládě)'
+        Material: YELLOW_WOOL
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Ovce: Yellow (Mládě)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Water
+          - Stick
+          - Ball
+          Favourite:
+          - Melon
+          - Milk
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Yellow (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Rainbow Sheep:
+        Name: '&6Ovce: Rainbow'
+        Material: EXPERIENCE_BOTTLE
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Ovce: Rainbow'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Rotten Flesh
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Apple
+          - Carrot
+          - Hay
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Wheat
+          - Water
+          - Leash
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Ovce: Rainbow'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Slime:
+    Name: '&6Slime'
+    Material: SLIME_BLOCK
+    GUI-Name: Slime
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Big Slime:
+        Name: '&6Slime (Velký)'
+        Material: SLIME_BLOCK
+        Mystery Dust: 100
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Slime (Velký)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Rotten Flesh
+          - Water
+          - Stick
+          Favourite:
+          - Bone
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Slime (Velký)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Small Slime:
+        Name: '&5Slime (Menší)'
+        Material: SLIME_BLOCK
+        Mystery Dust: 63
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Slime (Menší)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Rotten Flesh
+          - Water
+          - Stick
+          Favourite:
+          - Bone
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Slime (Menší)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Tiny Slime:
+        Name: '&9Slime (Malinkatý)'
+        Material: SLIME_BALL
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Slime (Malinkatý)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Rotten Flesh
+          - Water
+          - Stick
+          Favourite:
+          - Bone
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Slime (Malinkatý)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Big Magma Cube:
+        Name: '&6Magma Cube (Velký)'
+        Material: MAGMA_CREAM
+        Mystery Dust: 100
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Magma Cube (Velký)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Apple
+          - Melon
+          - Pumpkin Pie
+          - Carrot
+          - Baked Potato
+          - Flower
+          - Hay
+          - Wheat
+          - Bread
+          - Cookie
+          - Cake
+          - Water
+          - Stick
+          Really-Like:
+          - Raw Porkchop
+          - Angus Steak
+          - Bone
+          - Milk
+          - Leash
+          - Frisbee
+          Favourite:
+          - Magma Cream
+          - Lava
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Magma Cube (Velký)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Small Magma Cube:
+        Name: '&5Magma Cube (Menší)'
+        Material: BLAZE_POWDER
+        Mystery Dust: 63
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Magma Cube (Menší)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Apple
+          - Melon
+          - Pumpkin Pie
+          - Carrot
+          - Baked Potato
+          - Flower
+          - Hay
+          - Wheat
+          - Bread
+          - Cookie
+          - Cake
+          - Water
+          - Stick
+          Really-Like:
+          - Raw Porkchop
+          - Angus Steak
+          - Bone
+          - Milk
+          - Leash
+          - Frisbee
+          Favourite:
+          - Magma Cream
+          - Lava
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Magma Cube (Menší)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Tiny Magma Cube:
+        Name: '&9Magma Cube (Malinkatý)'
+        Material: LAVA_BUCKET
+        Mystery Dust: 30
+        Rarity: Rare
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&9Magma Cube (Malinkatý)'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Apple
+          - Melon
+          - Pumpkin Pie
+          - Carrot
+          - Baked Potato
+          - Flower
+          - Hay
+          - Wheat
+          - Bread
+          - Cookie
+          - Cake
+          - Water
+          - Stick
+          Really-Like:
+          - Raw Porkchop
+          - Angus Steak
+          - Bone
+          - Milk
+          - Leash
+          - Frisbee
+          Favourite:
+          - Magma Cream
+          - Lava
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Magma Cube (Malinkatý)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Skeleton:
+    Name: '&6Skeleton'
+    Material: BOW
+    GUI-Name: Skeleton
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Skeleton:
+        Name: '&5Skeleton'
+        Material: BOW
+        Mystery Dust: 50
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Skeleton'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Bone
+          - Milk
+          - Stick
+          Favourite:
+          - Rotten Flesh
+          - Lava
+          - Sparring Sword
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Skeleton'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Wither Skeleton:
+        Name: '&6Wither Skeleton'
+        Material: STONE_SWORD
+        Mystery Dust: 70
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Wither Skeleton'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Rotten Flesh
+          - Milk
+          - Stick
+          Favourite:
+          - Bone
+          - Lava
+          - Sparring Sword
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Wither Skeleton'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Stray Skeleton:
+        Name: '&6Stray Skeleton'
+        Material: head:78ddf76e555dd5c4aa8a0a5fc584520cd63d489c253de969f7f22f85a9a2d56
+        Mystery Dust: 85
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Stray Skeleton'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Melon
+          - Water
+          - Feather
+          Really-Like:
+          - Rotten Flesh
+          - Milk
+          - Frisbee
+          Favourite:
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Stray Skeleton'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Squid:
+    Name: '&6Chobotnice'
+    Material: INK_SAC
+    GUI-Name: Chobotnice
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Squid:
+        Name: '&6Chobotnice'
+        Material: INK_SAC
+        Mystery Dust: 78
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Chobotnice'
+        Move-Speed: 0.7
+        Ride-Speed: 0.45
+        Pet-Item-Interest:
+          Dislike:
+          - Pumpkin Pie
+          - Wheat
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Milk
+          - Stick
+          - Ball
+          Favourite:
+          - Raw Fish
+          - Water
+          - Frisbee
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Chobotnice'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Polar Bear:
+    Name: '&6Polární Medvěd'
+    Material: head:bab178f5cdd750f0e356860aa5539153eb2abec1e146ca57c65d25a5df8fdfe
+    GUI-Name: Polární Medvěd
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Polar Bear:
+        Name: '&5Polární Medvěd'
+        Material: head:bab178f5cdd750f0e356860aa5539153eb2abec1e146ca57c65d25a5df8fdfe
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Polární Medvěd'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Raw Fish
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Polární Medvěd'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Polar Bear:
+        Name: '&6Polární Medvěd (Mládě)'
+        Material: head:bab178f5cdd750f0e356860aa5539153eb2abec1e146ca57c65d25a5df8fdfe
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Polární Medvěd (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Magma Cream
+          - Lava
+          - Leash
+          Really-Like:
+          - Raw Fish
+          - Water
+          - Stick
+          Favourite:
+          - Wheat
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Polární Medvěd (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Llama:
+    Name: '&6Llama'
+    Material: head:83d9b5915912ffc2b85761d6adcb428a812f9b83ff634e331162ce46c99e9
+    GUI-Name: Llama
+    Enabled: true
+    Lore:
+    - '&7Klikni pro zobrazení všech mazlíčku v této kategorii!'
+    Types:
+      Brown Llama:
+        Name: '&5Llama: Hnědá'
+        Material: head:c2b1ecff77ffe3b503c30a548eb23a1a08fa26fd67cdff389855d74921368
+        Mystery Dust: 60
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Llama: Hnědá'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Hay
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Llama: Hnědá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Brown Llama:
+        Name: '&6Llama: Hnědá (Mládě)'
+        Material: head:c2b1ecff77ffe3b503c30a548eb23a1a08fa26fd67cdff389855d74921368
+        Mystery Dust: 80
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Llama: Hnědá (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Water
+          - Stick
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Llama: Hnědá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Creamy Llama:
+        Name: '&5Llama: Krémová'
+        Material: head:80899acfebf947a0effc4022deb080543f7e389116bd4964c2c227ffa34a3375
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Llama: Krémová'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Hay
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Llama: Krémová'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Creamy Llama:
+        Name: '&6Llama: Krémová (Mládě)'
+        Material: head:80899acfebf947a0effc4022deb080543f7e389116bd4964c2c227ffa34a3375
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Llama: Krémová (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Water
+          - Stick
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Llama: Krémová (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Gray Llama:
+        Name: '&5Llama: Šedá'
+        Material: head:cf24e56fd9ffd7133da6d1f3e2f455952b1da462686f753c597ee82299a
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Llama: Šedá'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Hay
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Llama: Šedá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby Gray Llama:
+        Name: '&6Llama: Šedá (Mládě)'
+        Material: head:cf24e56fd9ffd7133da6d1f3e2f455952b1da462686f753c597ee82299a
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Llama: Šedá (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Water
+          - Stick
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Llama: Šedá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      White Llama:
+        Name: '&5Llama: Bílá'
+        Material: head:83d9b5915912ffc2b85761d6adcb428a812f9b83ff634e331162ce46c99e9
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Llama: Bílá'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Milk
+          - Ball
+          Favourite:
+          - Hay
+          - Water
+          - Stick
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Llama: Bílá'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+      Baby White Llama:
+        Name: '&6Llama: Bílá (Mládě)'
+        Material: head:83d9b5915912ffc2b85761d6adcb428a812f9b83ff634e331162ce46c99e9
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Llama: Bílá (Mládě)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Angus Steak
+          - Lava
+          - Leash
+          Really-Like:
+          - Wheat
+          - Water
+          - Stick
+          Favourite:
+          - Cookie
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Ochoč si toto nádherné a'
+          - '&7roztomilé stvoření již dnes!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Typ: &9Llama: Bílá (Mládě)'
+          - ''
+          - '&7Stav: {HAPPINESS}'
+          - ''
+          - '&7Hlad: {HUNGER}'
+          - '&7Žízeň: {THIRST}'
+          - '&7Cvičení: {EXERCISE}'
+  Panda:
+    Name: '&6Panda'
+    Material: head:dca096eea506301bea6d4b17ee1605625a6f5082c71f74a639cc940439f47166
+    GUI-Name: Panda
+    Enabled: true
+    Lore:
+    - '&7Click here to see all pets'
+    - '&7in the Panda category!'
+    Types:
+      Normal Panda:
+        Name: '&5Panda: Normal'
+        Material: head:dca096eea506301bea6d4b17ee1605625a6f5082c71f74a639cc940439f47166
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Panda: Normal'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Normal yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Normal'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Normal Panda:
+        Name: '&6Panda: Normal (Baby)'
+        Material: head:dca096eea506301bea6d4b17ee1605625a6f5082c71f74a639cc940439f47166
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Panda: Normal (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Normal (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Normal (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Lazy Panda:
+        Name: '&5Panda: Lazy'
+        Material: head:7818b681cace1c641919f53edadecb142330d089a826b56219138c33b7a5e0db
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Panda: Lazy'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Lazy yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Lazy'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Lazy Panda:
+        Name: '&6Panda: Lazy (Baby)'
+        Material: head:7818b681cace1c641919f53edadecb142330d089a826b56219138c33b7a5e0db
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Panda: Lazy (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Lazy (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Lazy (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Worried Panda:
+        Name: '&5Panda: Worried'
+        Material: head:c8e921c57e54dd07337ffba629e72caf3850d836b76562b1bc3bc5949f2d41d
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Panda: Worried'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Worried yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Worried'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Worried Panda:
+        Name: '&6Panda: Worried (Baby)'
+        Material: head:c8e921c57e54dd07337ffba629e72caf3850d836b76562b1bc3bc5949f2d41d
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Panda: Worried (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Worried (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Worried (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Playful Panda:
+        Name: '&5Panda: Playful'
+        Material: head:b6463e64ce29764db3cb46806cee606afc24bdf0ce14b6660c270a96c787426
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Panda: Playful'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Playful yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Playful'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Playful Panda:
+        Name: '&6Panda: Playful (Baby)'
+        Material: head:b6463e64ce29764db3cb46806cee606afc24bdf0ce14b6660c270a96c787426
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Panda: Playful (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Playful (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Playful (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Brown Panda:
+        Name: '&5Panda: Brown'
+        Material: head:c5d0d45bf992b072cf5c513e06beefe8bdc809c8150f3d14b883796a7b74e406
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Panda: Brown'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Brown yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Brown'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Brown Panda:
+        Name: '&6Panda: Brown (Baby)'
+        Material: head:c5d0d45bf992b072cf5c513e06beefe8bdc809c8150f3d14b883796a7b74e406
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Panda: Brown (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Brown (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Brown (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Weak Panda:
+        Name: '&5Panda: Weak'
+        Material: head:5c2d25e956337d82791fa0e6617a40086f02d6ebfbfd5a6459889cf206fca787
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Panda: Weak'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Weak yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Weak'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Weak Panda:
+        Name: '&6Panda: Weak (Baby)'
+        Material: head:5c2d25e956337d82791fa0e6617a40086f02d6ebfbfd5a6459889cf206fca787
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Panda: Weak (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Weak (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Weak (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Aggressive Panda:
+        Name: '&5Panda: Aggressive'
+        Material: head:83fe1e782ae96a30336a03ef74681ce3a6905fcc673fa56c046aaee6aa28307d
+        Mystery Dust: 55
+        Rarity: Epic
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&5Panda: Aggressive'
+        Move-Speed: 0.6
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Ball
+          Favourite:
+          - Apple
+          - Milk
+          - Stick
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Aggressive yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Aggressive'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'
+      Baby Aggressive Panda:
+        Name: '&6Panda: Aggressive (Baby)'
+        Material: head:83fe1e782ae96a30336a03ef74681ce3a6905fcc673fa56c046aaee6aa28307d
+        Mystery Dust: 75
+        Rarity: Legendary
+        Enabled: true
+        CanBeFound: true
+        Purchasable: true
+        Default-Pet-Name: '&6Panda: Aggressive (Baby)'
+        Move-Speed: 0.5
+        Ride-Speed: 0.4
+        Pet-Item-Interest:
+          Dislike:
+          - Raw Fish
+          - Raw Porkchop
+          - Angus Steak
+          - Lava
+          - Sparring Sword
+          Really-Like:
+          - Cake
+          - Water
+          - Stick
+          Favourite:
+          - Apple
+          - Milk
+          - Ball
+        Lore:
+          Locked:
+          - '&7Make this awesome and'
+          - '&7cuddly Panda: Aggressive (Baby) yours'
+          - '&7today!'
+          Unlocked:
+          - '{LEVEL}{PET_NAME}'
+          - '&7EXP: {EXP}'
+          - '&7Type: &9Panda: Aggressive (Baby)'
+          - ''
+          - '&7Status: {HAPPINESS}'
+          - ''
+          - '&7Hunger: {HUNGER}'
+          - '&7Thirst: {THIRST}'
+          - '&7Exercise: {EXERCISE}'

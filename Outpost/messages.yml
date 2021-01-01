@@ -1,0 +1,68 @@
+no-permission: §aZákladna §8» &7Nemáš dostatek pravomocí.
+no-factions-hook-found: §aZákladna §8» §7Serverové Frakce nejsou povoleny.
+outpost-capturing: §aZákladna §8» §7Frakce &6{faction} §7zabírá základnu v PvP. §6{percent}%
+outpost-attacking: §aZákladna §8» §7Frakce &6{faction} §7útočí na základnu §6{name}
+  §7v PvP. §6{percent}%
+outpost-neutralize: §aZákladna §8» §7Frakce §6{faction} §7neutralizovala základnu
+  §6{name}§7 v PvP.
+outpost-captured: §aZákladna §8» §7Frakce §6{faction} §7zabrala základnu v §6{name}§7.
+outpost-status-CONTROLLING: Zabírání
+outpost-status-ATTACKING: Pod útokem
+outpost-status-CONTROLLED: Pod kontrolou
+outpost-status-NEUTRALIZED: Neutrální
+outpost-status-CONTESTED: Napadeno
+outpost-none: N/A
+outpost-bonus-shopgui: §aZákladna §8» &7Bonus §6${money}§7!
+outpost-bonus-wildtools: '&e${money} bonus &7- &aYou control &e{amount} Outpost(s)'
+outpost-bonus-voidchest: '&e${money} bonus &7- &aYou control &e{amount} Outpost(s)'
+outpost-workinghours-active: '&aAktivní'
+outpost-workinghours-notactive: '&cNeaktivní'
+outpost-workinghours-activated: §aZákladna §8» &7Základny §6aktivní§7!
+outpost-workinghours-deactivated: §aZákladna §8» §7Základny §6neaktivní§7!
+outpost-no-outposts-set: §aZákladna §8» §7Nejsou zde žádné základny.
+outpost-command-set: §aZákladna §8» §6Úspěšně §7nastaven region pro Základnu §6{name}§7.
+outpost-command-removed: §aZákladna §8» §6Úspěšně §7odebrána Základna §6{name}&7.
+outpost-command-reload: §aZákladna §8» §7Plugin restartován.
+outpost-command-toggled: §aZákladna §8» §7Nastavili jste status Základny §6{name}
+  §7na §6{status}§7.
+outpost-select-fail: §aZákladna §8» §7Musíte označit region §6WorldEditem§7.
+outpost-info-unknown: §aZákladna §8» §7Základna s tímto názvem nebyla nalezena.
+outpost-require-player: §aZákladna §8» §7Musíš být hráč.
+outpost-command-unmute: §aZákladna §8» §6Aktivoval §7jsi notifikace.
+outpost-command-mute: §aZákladna §8» §6Deaktivoval §7jsi notifikace.
+outpost-chestaccess-denied: §aZákladna §8» §7Nemůžeš otevírat truhly, pokud Základnu
+  nemáte pod kontrolou.
+outpost-command-info:
+- '&8&m------------------------------'
+- ' &fZákladna: &a%outpost%'
+- ''
+- ' &fXYZ: &a%posX%§f, &a%posY%§f, &a%posZ%'
+- ''
+- ' &fStav: &a%status%'
+- ' &fKontroluje: &a%faction%'
+- ' &fÚtočníci: &a%attacker%'
+- ' &fZabráno: &a%percent%%'
+- '&8&m------------------------------'
+outpost-command-header: '&8&m------------&8[ &6Základna &8]&m------------'
+outpost-hologram-percentbar: '||||||||||||||||||||||||||||||||||||||'
+outpost-hologram-percentbar-fillcolor: '&e'
+outpost-hologram-percentbar-emptycolor: '&7'
+outpost-hologram:
+- '&fZákladna: &a%outpost%'
+- '&8&m--------------------&r'
+- '&fStav: &a%status%'
+- '&fKontroluje: &a%faction%'
+- '&fÚtočníci: &a%attacker%'
+- '&fZabráno: &a%percent%%'
+- '%percent_bar%'
+- '&8&m--------------------&r'
+- '&7%workinghours%'
+Time:
+  days: days
+  day: day
+  hours: hours
+  hour: hour
+  minutes: minutes
+  minute: minute
+  seconds: seconds
+  second: second

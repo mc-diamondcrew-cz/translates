@@ -1,0 +1,80 @@
+#Tips
+#1. Make sure to use the %prefix% to add the prefix in front of messages.
+#2. If you wish to use more then one line for a message just go from a line to a list.
+#Examples:
+#  Line:
+#    No-Permission: '&cYou do not have permission to use that command.'
+#  List:
+#    No-Permission:
+#      - '&cYou do not have permission'
+#      - '&cto use that command. Please try another.'
+Messages:
+  No-Permission: '&aDiamondCrew &8» &6Nemáš &7dostatečné pravomoce pro tuto akci!'
+  Players-Only: '&aDiamondCrew &8» &7Tento příkaz je pouze pro &6hráče&7!'
+  Not-Online: '&aDiamondCrew &8» &7Tento &6hráč &7není na serveru!'
+  Not-A-Number: '&aDiamondCrew &8» &7Musíš použít &6číslo&7!'
+  Reloaded: '&aDiamondCrew &8» &6Úspěšně &7jsi načetl všechny soubory.'
+  Already-Started: '&aDiamondCrew &8» &6Air-Drop &7je již aktivní!'
+  Force-Start: '&aDiamondCrew &8» &6Úspěšně &7jsi spustil &6Air-Drop&7!'
+  Not-Started: '&aDiamondCrew &8» &6Air-Drop &7není aktivní!'
+  Force-Ended: '&aDiamondCrew &8» &6Ukončil &7jsi &6Air-Drop&7.'
+  Warning:
+    - "&7➹ &8&l︳"
+    - "&7➹ &8&l︳ &e&lAIR-DROP"
+    - "&7➹ &8&l︳ &fZapočne za &e%time%&f!"
+    - "&7➹ &8&l︳"
+  Started:
+    - "&7➹ &8&l︳"
+    - "&7➹ &8&l︳ &e&lAIR-DROP"
+    - "&7➹ &8&l︳ &fPrávě &ezapočal&f!"
+    - "&7➹ &8&l︳"
+    - "&7➹ &8&l︳ &fPočet beden &8> &f%amount%"
+    - "&7➹ &8&l︳"
+  Left:
+    - "&7➹ &8&l︳"
+    - "&7➹ &8&l︳ &e&lAIR-DROP"
+    - "&7➹ &8&l︳ &e%player% &fnašel truhlu!"
+    - "&7➹ &8&l︳"
+    - "&7➹ &8&l︳ &fPočet beden &8> &f%amount%"
+    - "&7➹ &8&l︳"
+  Ended:
+    - "&7➹ &8&l︳"
+    - "&7➹ &8&l︳ &e&lAIR-DROP"
+    - "&7➹ &8&l︳ &fPrávě &eskončil&f!"
+    - "&7➹ &8&l︳"
+  Not-Enough-Players: '&aDiamondCrew &8» &7Pro započetí &6Air-Dropu &7není online dostatek hráčů.'
+  Enter-Editor-Mode: '&aDiamondCrew &8» &a&lEditor-Mód'
+  Leave-Editor-Mode: '&aDiamondCrew &8» &c&lEditor-Mód'
+  Kicked-From-Editor-Mode: '&aDiamondCrew &8» &6Air-Drop &7je aktivní.'
+  Add-Location: '&aDiamondCrew &8» &6Přidal &7jsi pozici pro &6Air-Drop&7.'
+  Remove-Location: '&aDiamondCrew &8» &6Odebral &7jsi pozici pro &6Air-Drop&7.'
+  Time-Left: '&aDiamondCrew &8» &7Zbývající čas do konce Air-Dropu: &6%time%'
+  Time-Till-Event: '&aDiamondCrew &8» &7Další &6Air-Drop &7započne za &6%time%&7.'
+  Used-Flare: '&aDiamondCrew &8» &6Aktivoval &7jsi &6Air-Drop &7pomocí &c&lSvětlice&7.'
+  Cant-Use-Flares: '&aDiamondCrew &8» &6Nemáš &7dostatečné pravomoce na použití &c&lSvětlice&7.'
+  Give-Flare: '&aDiamondCrew &8» &7Dal jsi hráči &6%player% %amount% &c&lSvětlic&7.'
+  Given-Flare: '&aDiamondCrew &8» &6Obdržel &7jsi &6%amount% &c&lSvětlic&7.'
+  New-Center: '&aDiamondCrew &8» &7Nastavil jsi &6střed &7pro &6Air-Drop&7.'
+  Not-In-World-Guard-Region: '&aDiamondCrew &8» &7Nejsi v &6zóně &7pro použití &c&lSvětlice&7!'
+  Start-Ignoring-Messages: '&aDiamondCrew &8» &6Nyní ignoruješ &7notifikace z &6Air-Dropu&7.'
+  Stop-Ignoring-Messages: '&aDiamondCrew &8» &6Nyní neignoruješ &7notifikace z &6Air-Dropu&7.'
+  Cooldown-Left: '&aDiamondCrew &8» &7Musíš &6počkat &7ještě &6%time% &7před otevřením další truhly.'
+  Drops-Available: '&aDiamondCrew &8» &7Seznam &6Air-Dropů.'
+  Drops-Possibilities: '&aDiamondCrew &8» &7Seznam lokací pro &6Air-Drop.'
+  Drops-Page: '&aDiamondCrew &8» &7Použij: &6/crazyenvoy drops [strana] pro zobrazení více.'
+  Drops-Format: '&7[&6%id%&7]: %world%, %x%, %y%, %z%'
+  No-Spawn-Locations-Found: '&aDiamondCrew &8» &7Žádná lokace nebyla &6nalezena&7.'
+  Hologram-Placeholders:
+    On-Going: 'Aktivní'
+    Not-Running: 'Neaktivní'
+  Help:
+    - '&6/envoy help &7- Shows the envoy help menu.'
+    - '&6/envoy reload &7- Reloads all the config files.'
+    - '&6/envoy time &7- Shows the time till the envoy starts or ends.'
+    - '&6/envoy drops [page] &7- Shows all current crate locations.'
+    - '&6/envoy ignore &7- Shuts up the envoy collecting message.'
+    - '&6/envoy flare [amount] [player] &7- Give a player a flare to call an envoy event.'
+    - '&6/envoy edit &7- Edit the crate locations with bedrock.'
+    - '&6/envoy start &7- Force starts the envoy.'
+    - '&6/envoy stop &7- Force stops the envoy.'
+    - '&6/envoy center &7- Set the center of the random crate drops.'

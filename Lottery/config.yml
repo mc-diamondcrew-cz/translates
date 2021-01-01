@@ -1,0 +1,333 @@
+# Big thanks and love for using my plugins! ^^
+
+#|--------------------------------------------------------------------------------------------------------------------|#
+# Plugin: Lottery
+# Author: https://www.mc-market.org/members/89497/ | https://www.spigotmc.org/members/radekjenejlepsi.227786/
+# Description: Simple plugin for players to participate in an in-game lottery.
+# Dependencies:
+#   -> PLJRApi
+#   -> Vault
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+###############\
+# MySQL Setup ##############################################################################################\
+############### This is the most important part, as the plugin can not work without proper MySQL Database. # \
+              ##############################################################################################  \
+mysql:
+  enabled: false #-> Should we use this database instead of the one configured in PLJRApi config.yml?
+  host: "127.0.0.1"
+  port: "3306"
+  database: "db"
+  username: "root"
+  password: ""
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+##################\
+# Settings Setup #############################################################\
+################## Here, you can enable or disable functions of this plugin. # \
+                 #############################################################  \
+settings:
+  bungee: false #-> Should we use bungee functions?
+  multiple-tickets: true #-> Should players be able to buy multiple tickets?
+  confirmation: true #-> Should we ask players for confirmation, when buying tickets?
+  broadcast-chat: true #-> Should we broadcast in chat?
+  broadcast-actionbar: true #-> Should we broadcast in actionbar?
+  broadcast-title: false #-> Should we broadcast in Title?
+  start-on-startup: true #-> Should we start the lottery on server startup?
+  restart-on-end: true #-> Should we start a new lottery after ending one?
+  cost: 100 #-> How much should 1 ticket cost?
+  countdown: 500 #-> How long should it take for a lottery to end? (In seconds)
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+####################\
+# Broadcast Setup ####################################################\
+################### Here, you can customize the looks of broadcasts. # \
+                  ####################################################  \
+broadcast:
+  chat:
+    start:
+      - ""
+      - "§e§lLOTERIE"
+      - "§7Nová §6loterie §7právě započala! §8(§6%cost$§7/lístek§8)"
+      - "§8» §7Použijte §6/lottery §7pro více informací!"
+      - ""
+    end:
+      - ""
+      - "§a§lLOTERIE"
+      - "§8» §7Výherce/kyně: §6%winner"
+      - "§8» §7Množství: §6%winAmount"
+      - ""
+    no-winner:
+      - ""
+      - "§c§lLOTERIE"
+      - "§8» §7Nikdo se neúčastnil."
+      - ""
+  actionbar:
+    start:
+      message: "§aLoterie §8» §7Nová §6loterie §7právě započala! §6/lottery"
+      duration: 40
+    end:
+      message: "§aLoterie §8» §6%winner §7vyhrál/a §6%winAmount§7!"
+      duration: 40
+    no-winner:
+      message: "§aLoterie §8» §6Nikdo §7se neúčastnil."
+      duration: 40
+  title:
+    start:
+      title: "§a§lLOTERIE"
+      subtitle: "§7Nová §eloterie §7právě započala! §6/lottery"
+      in: 10
+      stay: 40
+      out: 10
+    end:
+      title: "§a§lLOTERIE"
+      subtitle: "§e%winner §7vyhrál/a §e%winAmount§7!"
+      in: 10
+      stay: 40
+      out: 10
+    no-winner:
+      title: "§a§lLOTERIE"
+      subtitle: "§eNikdo se neúčastnil."
+      in: 10
+      stay: 40
+      out: 10
+
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+###############\
+# Menus Setup ###########################################################\
+############### Here, you can customize the looks of all in-game menus. # \
+              ###########################################################  \
+main-menu:
+  title: "§8§lLoterie"
+  player-head:
+    name: "§e%name"
+    lore:
+      - "§8► §7Klikni pro zobrazení statistik."
+  background-1:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+    amount: 1
+    lore:
+      - "§r"
+  background-2:
+    type: "YELLOW_STAINED_GLASS_PANE"
+    name: "§e"
+    amount: 1
+    lore:
+      - "§e"
+  current-money:
+    type: "CHEST"
+    name: "§e§lAKTUÁLNÍ LOTERIE"
+    amount: 1
+    lore:
+      - "§8► §7Peníze v loterii: §6%amount$"
+  instructions:
+    type: "WRITABLE_BOOK"
+    name: "§e§lINFORMACE"
+    amount: 1
+    lore:
+      - "§7Věříte ve své štěstí?"
+      - "§7Potom se nebojte a kupte pár lístků!"
+      - "§7Čím více lístků máte, tím výše Vaše"
+      - "§7šance na výhru vzrůstá!"
+      - ""
+      - "§eMnožství výhry se odvýjí od celkových"
+      - "§ezakoupených lístků všech hráčů."
+  buy:
+    type: "GOLD_INGOT"
+    name: "§e§lZAKOUPIT LÍSTEK"
+    amount: 1
+    lore:
+      - "§8► §7Klikni pro zakoupení lístků!"
+      - "§6100$/lístek"
+      - ""
+      - "§6§lLevé §6Kliknutí §71 Lístek"
+      - "§6§lKolečko §710 Lístků"
+      - "§6§lPravé §6Kliknutí §730 Lístků"
+  list:
+    type: "PAPER"
+    name: "§e§lSEZNAM ÚČASTNÍKŮ"
+    amount: 1
+    lore:
+      - "§8► §7Klikni pro zobrazení všech hráčů"
+      - "§7účastnících se v aktuální loterii."
+  help:
+    type: "BOOK"
+    name: "§e§lINFORMATION"
+    amount: 1
+    lore:
+      - "§a§lLOTERIE Nápověda"
+      - ""
+      - "§e/lottery §8» §7Otevře hlavní menu."
+      - "§e/lottery help §8» §7Zobrazí tuto zprávu."
+      - "§e/lottery buy <amount> §8» §7Zakoupení lístků."
+      - "§e/lottery info §8» §7Zobrazí informace o aktuální loterii."
+      - "§e/lottery list §8» §7Otevře menu se všemi účastníky"
+      - "§e/lottery stats <player> §8» §7Zobrazí hráčovi statistiky."
+  time-left:
+    type: "CLOCK"
+    name: "§e§lČAS DO DALŠÍHO LOSOVÁNÍ"
+    amount: 1
+    lore:
+      - "§8► §7Čas do dalšího losování je:"
+      - "§6%time"
+  admin:
+    type: "REDSTONE_TORCH"
+    name: "§c§lADMIN FUNCTIONS"
+    amount: 1
+    lore:
+      - "§6Whoa§7, it seems you are an"
+      - "§7administrator!"
+      - ""
+      - "§eClick to see some cool stuff!"
+
+list-menu:
+  title: "§8§lLoterie"
+  heads:
+    name: "§e%name"
+    lore:
+      - "§8► §7Klikni pro zobrazení statistik."
+  background-1:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+    amount: 1
+    lore:
+      - "§r"
+  background-2:
+    type: "YELLOW_STAINED_GLASS_PANE"
+    name: "§e"
+    amount: 1
+    lore:
+      - "§r"
+  back:
+    type: "REDSTONE"
+    name: "§c§lZPĚT"
+    amount: 1
+    lore:
+      - "§8► §7Klikni pro návrat do hlavního menu."
+
+confirm-menu:
+  title: "§8§lLoterie"
+  background:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+    amount: 1
+    lore:
+      - "§r"
+  confirm-1:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "§a§lPOTVRDIT"
+    amount: 1
+    lore:
+      - "§8► §7Klikni pro potvrzení."
+  confirm-2:
+    type: "LIME_STAINED_GLASS"
+    name: "§a§lPOTVRDIT"
+    amount: 1
+    lore:
+      - "§8► §7Klikni pro potvrzení."
+  information:
+    type: "WRITABLE_BOOK"
+    name: "§e§lJSI SI JISTÝ/Á?"
+    amount: 1
+    lore:
+      - "§7Jsi si jistý/a, že chceš pokračovat"
+      - "§7s touto transakcí?"
+  back:
+    type: "REDSTONE"
+    name: "§c§lZPĚT"
+    amount: 1
+    lore:
+      - "§8► §7Klikni pro návrat do hlavního menu."
+  decline-1:
+    type: "RED_STAINED_GLASS_PANE"
+    name: "§c§lZRUŠIT"
+    amount: 1
+    lore:
+      - "§8► §7Klikni pro zrušení."
+  decline-2:
+    type: "RED_STAINED_GLASS"
+    name: "§c§lZRUŠIT"
+    amount: 1
+    lore:
+      - "§8► §7Klikni pro zrušení."
+
+player-menu:
+  title: "§8§lLoterie"
+  player-head:
+    name: "§e%name"
+    lore:
+      - "§r"
+  background-1:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+    amount: 1
+    lore:
+      - "§r"
+  background-2:
+    type: "YELLOW_STAINED_GLASS_PANE"
+    name: "§e"
+    amount: 1
+    lore:
+      - "§e"
+  total-earnings:
+    type: "GOLD_INGOT"
+    name: "§e§lDOHROMADY VYHRÁNO"
+    amount: 1
+    lore:
+      - "§8► §7%amount$"
+  biggest-win:
+    type: "EMERALD"
+    name: "§e§lNEJVYŠŠÍ VÝHRA"
+    amount: 1
+    lore:
+      - "§8► §7%amount$"
+  tickets-bought:
+    type: "PAPER"
+    name: "§e§lZAKOUPENÝCH LÍSTKŮ"
+    amount: 1
+    lore:
+      - "§8► §7%amount v aktuální loterii."
+  back:
+    type: "REDSTONE"
+    name: "§c§lZPĚT"
+    amount: 1
+    lore:
+      - "§8► §7Klikni pro návrat do hlavního menu."
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+##############\
+# Lang Setup ################################################################\
+############## Here, you can customize messages, send by the plugin itself. # \
+             ################################################################  \
+
+help:
+  - ""
+  - "§a§lLOTERIE Nápověda"
+  - ""
+  - "§e/lottery §8» §7Otevře hlavní menu."
+  - "§e/lottery help §8» §7Zobrazí tuto zprávu."
+  - "§e/lottery buy <amount> §8» §7Zakoupení lístků."
+  - "§e/lottery info §8» §7Zobrazí informace o aktuální loterii."
+  - "§e/lottery list §8» §7Otevře menu se všemi účastníky"
+  - "§e/lottery stats <player> §8» §7Zobrazí hráčovi statistiky."
+
+admin-help:
+  - ""
+  - "§a§lLOTERIE Admin"
+  - ""
+  - "§e/alottery restart §8» §7Stops current and starts a brand new lottery."
+  - "§e/alottery help §8» §7Displays this message."
+  - "§e/alottery draw §8» §7Ends the lottery and selects winner."
+  - "§e/alottery add <amount> §8» §7Adds money to lottery."
+
+lang:
+  PLAYER_WIN: "§aLottery §8» §7Vyhrál/a jsi §e%winAmount §7z loterie!"
+  NO_CONSOLE: "§aLottery §8» §7Tento příkaz je pouze pro herní použití!"
+  NO_NUMBER: "§aLottery §8» §6%arg §7není číslo!"
+  BUY_SUCCESS: "§aLottery §8» §7Úspěšně jsi zakoupil/a §6%amount §7lístků!"
+  BUY_FAILURE: "§aLottery §8» §7Nemůžeš si koupit §6%amount §7lístků!"
+  RESTART_SUCCESS: "§aLottery §8» §6Úspěšně §7restartováno loterii."
+  ADD_MONEY_SUCCESS: "§aLottery §8» §6Úsěšně §7přidáno §6%amount$ §7do loterie."
+#|--------------------------------------------------------------------------------------------------------------------|#

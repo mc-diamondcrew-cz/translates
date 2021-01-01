@@ -1,0 +1,249 @@
+#+------------------------------------------------------------------------------------------------------+#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#|                                            J P R E M I U M                                           |#
+#|                                            M E S S A G E S                                           |#
+#|                                                                                                      |#
+#|                                                                                                      |#
+#+------------------------------------------------------------------------------------------------------+#
+
+version: 'CLEARED-Bungee-1.5.0'
+
+preLoginErrorAntiBot: '§aPřihlášení §8» &7Zkuste se prosím připojit znovu za §63 minuty§7.'
+preLoginErrorInvalidNickname: '§aPřihlášení §8» §7Použijte prosím jiné §6uživatelské jméno§7.'
+preLoginErrorInvalidNicknameCases: '§aPřihlášení §8» §7Změňte si prosím své jméno na §6%nickname%&7!'
+preLoginErrorNotAcceptedHostname: '§aPřihlášení §8» §7Připojte se prosím pomocí §6mc.diamondcrew.cz§7!'
+preLoginErrorAlreadyOnline: '§aPřihlášení §8» §7Již jste §6připojeni§7!'
+preLoginErrorServersDown: '§aPřihlášení §8» §6Mojang §7servery neodpovídají!'
+preLoginErrorChangedPremiumNickname: '§aPřihlášení §8» §7Podpora změny jména není povolena, použijte prosím &6%nickname%&7!'
+preLoginErrorRegisterAtWebsite: '§aPřihlášení §8» §7Registrujte se prosím na §6mc.diamondcrew.cz§7!'
+
+redirectionMainServerTitle: '§aPřihlášení'
+redirectionMainServerSubTitle: '§6Přesměrovávám §7na server..'
+redirectionMainServerFadeIn: 30
+redirectionMainServerStay: 100
+redirectionMainServerFadeOut: 30
+redirectionMainServerChat: '§aPřihlášení §8» §7Byli jste §6přesměrováni §7na hlavní server. Důvod: ''§6%reason%&7''!'
+redirectionErrorNoOnlineServers: '§aPřihlášení §8» §7Bohužel §6nejsou §7k dispozici žádné volné servery.'
+
+joinSessionPremiumTitle: '&aPřihlášení'
+joinSessionPremiumSubTitle: '&7Detekován §6originální účet§7.'
+joinSessionPremiumFadeIn: 30
+joinSessionPremiumStay: 100
+joinSessionPremiunFadeOut: 30
+joinSessionPremiumChat: ''
+joinSessionCrackedTitle: '&aPřihlášení'
+joinSessionCrackedSubTitle: '&7Detekován §6neoriginální účet§7.'
+joinSessionCrackedFadeIn: 30
+joinSessionCrackedStay: 100
+joinSessionCrackedFadeOut: 30
+joinSessionCrackedChat: ''
+joinRequireLoginTitle: '§aPřihlášení'
+joinRequireLoginSubTitle: '§7Použijte: &6/login <heslo>'
+joinRequireLoginFadeIn: 30
+joinRequireLoginStay: 1200
+joinRequireLoginFadeOut: 30
+joinRequireLoginChat: ''
+joinRequireRegisterTitle: '§aPřihlášení'
+joinRequireRegisterSubTitle: '§7Použijte: &6/register <heslo>' #<kód(z obrázku)>'
+joinRequireRegisterFadeIn: 30
+joinRequireRegisterStay: 1200
+joinRequireRegisterFadeOut: 30
+joinRequireRegisterChat: ''
+
+loginErrorUserPremium: '§aPřihlášení §8» §7Vlastníte §6originální účet§7.'
+loginErrorUserNotRegistered: '§aPřihlášení §8» §7Nejste §6zaregistrováni§7.'
+loginErrorUserAlreadyLogged: '§aPřihlášení §8» §7Již jste §6přihlášeni§7.'
+loginErrorUsage: '§aPřihlášení §8» &7Použití: §6/login <heslo>'
+loginErrorWrongPassword: '§aPřihlášení §8» §6Nesprávné §7heslo!'
+loginErrorTimeElapsed: '§aPřihlášení §8» §7Připojte se prosím §6znovu§7.'
+loginBossBarTimerTitle: '§7Čas na příhlášení je &6%time%§7.'
+loginBossBarTimerColor: 2
+loginBossBarTimerDivision: 2
+loginSuccessLoggedTitle: '§8§l[&aPřihlášení§8§l]'
+loginSuccessLoggedSubTitle: '§bÚspěšně §7přihlášení.'
+loginSuccessLoggedFadeIn: 30
+loginSuccessLoggedStay: 100
+loginSuccessLoggedFadeOut: 30
+loginSuccessLoggedChat: |
+  §aPřihlášení §8» §7Pokud se nechcete příště §6přihlašovat§7, použijte
+  &f
+  &f  &8» &7/premium <heslo> §7V připadě §6originálního §7účtu.
+  &f  &8» &7/startsession <čas> §7V připadě §6neoriginálního §7účtu.
+  &f
+
+registerErrorUserPremium: '§aPřihlášení §8» §7Vlasntíte §6originální účet§7.'
+registerErrorUserAlreadyRegistered: '§aPřihlášení §8» §7Již jste §6zaregistrováni§7.'
+registerErrorUsage: '§aPřihlášení §8» &7Použití: /register <heslo>' #<kód(z obrázku)>'
+registerErrorUnsafePassword: '§aPřihlášení §8» §7Délka hesla musí být nejméně §66§7!'
+registerErrorWrongCaptcha: '§aPřihlášení §8» §7Nesprávný §6kód§7!'
+registerErrorUserHasTooManyAccounts: '§aPřihlášení §8» §7Z Vaší §6IP §7je zaregistrováno maximum účtů.'
+registerErrorTimeElapsed: '§aPřihlášení §8» §7Připojte se prosím §6znovu§7.'
+registerBossBarTimerTitle: '§7Čas na registraci je §6%time%§7.'
+registerBossBarTimerColor: 2
+registerBossBarTimerDivision: 2
+registerSuccessRegisteredTitle: '&aPřihlášení'
+registerSuccessRegisteredSubTitle: '&7Registrace §6úspěšná§7.'
+registerSuccessRegisteredFadeIn: 30
+registerSuccessRegisteredStay: 100
+registerSuccessRegisteredFadeOut: 30
+registerSuccessRegisteredChat: |
+  §aPřihlášení §8» §7Užitečné příkazy:
+  &f
+  &f  &8» &7/unregister <heslo>
+  &f  &8» &7/changepassword <aktuální-heslo> <nové-heslo>
+  &f  &8» &7/premium <heslo>
+  &f  &8» &7/cracked <heslo>
+  &f  &8» &7/startsession <čas>
+  &f  &8» &7/destroysession
+  &f  &8» &7/changemailaddress <heslo> <e-mailová adresa>
+  &f  &8» &7/recoverypassword <e-mailová adresa>
+  &f
+
+unregisterErrorUserPremium: '§aPřihlášení §8» §7Vlasníte §6originální účet§7!'
+unregisterErrorUserNotRegistered: '§aPřihlášení §8» §7Nejste §6zaregistrováni§7!'
+unregisterErrorUserNotLogged: '§aPřihlášení §8» §7Nejste §6přihlášeni§7!'
+unregisterErrorUsage: '§aPřihlášení §8» &7Použití: /unregister <heslo>'
+unregisterErrorWrongPassword: '§aPřihlášení §8» §7Nesprávné §6heslo§7!'
+unregisterSuccessUnregistered: '§aPřihlášení §8» §7Odregistrace §6úspěšná§7.'
+
+changePasswordErrorUserPremium: '§aPřihlášení §8» §7Vlasníte §6originální účet§7!'
+changePasswordErrorUserNotRegistered: '§aPřihlášení §8» §7Nejste §6zaregistrováni§7!'
+changePasswordErrorUserNotLogged: '§aPřihlášení §8» §7Nejste §6přihlášeni§7!'
+changePasswordErrorUsage: '§aPřihlášení §8» &7Použití: /changepassword <aktuální-heslo> <nové-heslo>'
+changePasswordErrorUnsafeNewPassword: '§aPřihlášení §8» §7Délka hesla musí být nejméně §66§7!'
+changePasswordErrorWrongCurrentPassword: '§aPřihlášení §8» &7Nesprávné §6aktuální §7heslo!'
+changePasswordSuccessPasswordChanged: '§aPřihlášení §8» &7Změna hesla §6úspěšná§7!'
+
+premiumErrorUserPremium: '§aPřihlášení §8» §7Vlasníte §6originální účet§7!'
+premiumErrorUserNotRegistered: '§aPřihlášení §8» §7Nejste §6zaregistrováni§7!'
+premiumErrorUserNotLogged: '§aPřihlášení §8» §7Nejste §6přihlášeni§7!'
+premiumErrorUsage: '§aPřihlášení §8» &7Použití: /premium <heslo>'
+premiumErrorWrongPassword: '§aPřihlášení §8» §7Nesprávné §6heslo§7!'
+premiumErrorServersDown: '§aPřihlášení §8» §6Mojang §7servery neodpovídají!'
+premiumErrorUserNotPremium: '§aPřihlášení §8» &7Nevlastníte §6originální účet§7!'
+premiumSuccessPremiumTurnedOn: '§aPřihlášení §8» &7Nyní vlasníte §6originální účet§7!'
+
+crackedErrorUserNotPremium: '§aPřihlášení §8» &7Nevlasntíte §6originální uživatel§7!'
+crackedErrorUsage: '§aPřihlášení §8» &7Použití: /cracked <heslo>'
+crackedErrorUnsafePassword: '§aPřihlášení §8» §7Délka hesla musí být nejméně §66§7!'
+crackedSuccessCrackedTurnedOn: '§aPřihlášení §8» &7Nyní vlastníte §6neoriginální účet§7!'
+
+startSessionErrorUserPremium: '§aPřihlášení §8» §7Vlasníte §6originální účet§7!'
+startSessionErrorUserNotRegistered: '§aPřihlášení §8» §7Nejste §6zaregistrováni§7!'
+startSessionErrorUserNotLogged: '§aPřihlášení §8» §7Nejste §6přihlášeni§7!'
+startSessionErrorUserHasAlreadySession: '§aPřihlášení §8» &7Již máte aktivní §6pamatovák§7!'
+startSessionErrorUsage: '§aPřihlášení §8» &7Použití: /startsession <čas v minutách>'
+startSessionErrorWrongTime: '§aPřihlášení §8» &7Nesprávný §6čas§7!'
+startSessionSuccessSessionStarted: '§aPřihlášení §8» &7Váš §6pamatovák §7byl aktivován!'
+
+destroySessionErrorUserPremium: '§aPřihlášení §8» §7Vlasníte §6originální účet§7!'
+destroySessionErrorUserNotRegistered: '§aPřihlášení §8» §7Nejste §6zaregistrováni§7!'
+destroySessionErrorUserNotLogged: '§aPřihlášení §8» §7Nejste §6přihlášeni§7!'
+destroySessionErrorUserHasNotSession: '§aPřihlášení §8» &7Nemáte aktivní §6pamatovák§7!'
+destroySessionErrorUsage: '§aPřihlášení §8» &7Použití: /destroysession'
+destroySessionSuccessSessionDestroyed: '§aPřihlášení §8» &7Váš §6pamatovák §7byl ukončen!'
+
+changeMailAddressErrorUserPremium: '§aPřihlášení §8» §7Vlasníte §6originální účet§7!'
+changeMailAddressErrorUserNotRegistered: '§aPřihlášení §8» §7Nejste §6zaregistrováni§7!'
+changeMailAddressErrorUserNotLogged: '§aPřihlášení §8» §7Nejste §6přihlášeni§7!'
+changeMailAddressErrorUsage: '§aPřihlášení §8» &7Použití: /changemail <heslo> <e-mailová adresa>'
+changeMailAddressErrorWrongPassword: '§aPřihlášení §8» §7Nesprávné §6heslo§7!'
+changeMailAddressErrorWrongMailAddress: '§aPřihlášení §8» §7Nesprávná §6e-mailová adresa§7!'
+changeMailAddressSuccessMailAddressChanged: '§aPřihlášení §8» &7Vaše §6e-mailová adresa §7byla změněna!'
+
+recoveryPasswordErrorUserPremium: '§aPřihlášení §8» §7Vlasníte §6originální účet§7!'
+recoveryPasswordErrorUserNotRegistered: '§aPřihlášení §8» §7Nejste §6zaregistrováni§7!'
+recoveryPasswordErrorUserHasNotMailAddress: '§aPřihlášení §8» &7Nevlastníte §6e-mailovou adresu§7!'
+recoveryPasswordErrorUsage: '§aPřihlášení §8» &7Použití: /recoverypassword <e-mailová adresa>'
+recoveryPasswordErrorWrongMailAddress: '§aPřihlášení §8» §7Nesprávná §6e-mailová adresa§7!'
+recoveryPasswordSuccessPasswordRecovered: '§aPřihlášení §8» &7Vaše heslo bylo §6odesláno§7!'
+recoveryPasswordSuccessMailSubject: 'Znovuzískání Hesla'
+recoveryPasswordSuccessMailMessage: 'Zdravíme, %nickname%! Požadavek o změnu hesla z IP Adresy %address% byl úspěšně z pracován! Toto je Vaše nové heslo: <b>%password%</b>. Změňte si jej prosím, pomocí herního příkazu <i>/changepassword %password% &lt;nové-heslo&gt;</i>!'
+
+forceViewUserProfileErrorUsage: '§aPřihlášení §8» &7Použití: /userprofile <jméno>'
+forceViewUserProfileErrorUserNotExist: '§aPřihlášení §8» &6%nickname% §7neexistuje!'
+forceViewUserProfileSuccessProfile: |
+  &f
+  §8[&a»&8] ══════════════════════════════ [&a«&8]
+  &f  &a&l» &7Jméno &a&l» &7%nickname%
+  &f  &a&l» &7UUID &a&l» &7%unique_id%
+  &f  &a&l» &7Premium UUID &a&l» &7%premium_id%
+  &f  &a&l» &7E-Mailová Adresa &a&l» &7%mail_address%
+  &f  &a&l» &7Pamatovák &a&l» &7%session_expire%
+  &f  &a&l» &7Poslední Server &a&l» &7%last_server%
+  &f  &a&l» &7Poslední Adresa &a&l» &7%last_address%
+  &f  &a&l» &7Naposledy Připojen/a &a&l» &7%last_seen%
+  &f  &a&l» &7První Adresa &a&l» &7%first_address%
+  &f  &a&l» &7Prnví Připojení &a&l» &7%first_seen%
+  §8[&a»&8] ══════════════════════════════ [&a«&8]
+  &f
+
+forceLoginErrorUsage: '§aPřihlášení §8» &7Použití: /forcelogin <jméno>'
+forceLoginErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forceLoginErrorUserPremium: '§aPřihlášení §8» §6%nickname% §7vlastní §6originální účet§7!'
+forceLoginErrorUserNotOnline: '§aPřihlášení §8» §6%nickname% §7is not online!'
+forceLoginErrorUserNotRegistered: '§aPřihlášení §8» §6%nickname% §7není §6zaregistrován/a§7!'
+forceLoginErrorUserAlreadyLogged: '§aPřihlášení §8» §6%nickname% §7is already logged!'
+forceLoginSuccessLogged: '§aPřihlášení §8» §6%nickname% §7has been logged!'
+
+forceRegisterErrorUsage: '§aPřihlášení §8» &7Použití: /forceregister <jméno> <heslo>'
+forceRegisterErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forceRegisterErrorUserPremium: '§aPřihlášení §8» §6%nickname% §7vlastní §6originální účet§7!'
+forceRegisterErrorUserAlreadyRegistered: '§aPřihlášení §8» §6%nickname% §7is already registered!'
+forceRegisterSuccessRegistered: '§aPřihlášení §8» §6%nickname% §7has been registered!'
+
+forceUnregisterErrorUsage: '§aPřihlášení §8» &7Použití: /forceunregister <jméno>'
+forceUnregisterErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forceUnregisterErrorUserPremium:  '§aPřihlášení §8» §6%nickname% §7vlastní §6originální účet§7!'
+forceUnregisterErrorUserNotRegistered: '§aPřihlášení §8» §6%nickname% §7není §6zaregistrován/a§7!'
+forceUnregisterSuccessUnregistered: '§aPřihlášení §8» §6%nickname% §7has been unregistered!'
+
+forceChangePasswordErrorUsage: '§aPřihlášení §8» &7Použití: /forcechangepassword <jméno> <heslo>'
+forceChangePasswordErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forceChangePasswordErrorUserPremium: '§aPřihlášení §8» §6%nickname% §7vlastní §6originální účet§7!'
+forceChangePasswordErrorUserNotRegistered: '§aPřihlášení §8» §6%nickname% §7není §6zaregistrován/a§7!'
+forceChangePasswordSuccessPasswordChanged: '§aPřihlášení §8» &7%nickname%''s password has been changed!'
+
+forcePremiumErrorUsage: '§aPřihlášení §8» &7Použití: /forcepremium <jméno>'
+forcePremiumErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forcePremiumErrorUserAlreadyPremium: '§aPřihlášení §8» §6%nickname% §7is already a premium player!'
+forcePremiumErrorUserNotRegistered: '§aPřihlášení §8» §6%nickname% §7není §6zaregistrován/a§7!'
+forcePremiumErrorServersDown: '§aPřihlášení §8» §6Mojang §7servery neodpovídají!'
+forcePremiumErrorUserNotPremium: '§aPřihlášení §8» §6%nickname% §7does not have a premium account!'
+forcePremiumSuccessPremiumTurnedOn: '§aPřihlášení §8» §6%nickname% §7is a premium player now!'
+
+forceCrackedErrorUsage: '§aPřihlášení §8» &7Použití: /forcecracked <jméno> <heslo>'
+forceCrackedErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forceCrackedUserAlreadyCracked: '§aPřihlášení §8» §6%nickname% §7is already a cracked player!'
+forceCrackedSuccessCrackedTurnedOn: '§aPřihlášení §8» §6%nickname% §7is a cracked player now!'
+
+forceStartSessionErrorUsage: '§aPřihlášení §8» &7Použití: /forcestartsession <jméno> <čas>'
+forceStartSessionErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forceStartSessionErrorUserPremium:  '§aPřihlášení §8» §6%nickname% §7vlastní §6originální účet§7!'
+forceStartSessionErrorUserNotRegistered: '§aPřihlášení §8» §6%nickname% §7není §6zaregistrován/a§7!'
+forceStartSessionErrorUserNotLogged: '§aPřihlášení §8» §6%nickname% §7is not logged!'
+forceStartSessionErrorUserHasAlreadySession: '§aPřihlášení §8» §6%nickname% §7has already a session!'
+forceStartSessionErrorWrongTime: '§aPřihlášení §8» &7A wrong session time!'
+forceStartSessionSuccessSessionStarted: '§aPřihlášení §8» &7%nickname%''s session has been started!'
+
+forceDestroySessionErrorUsage: '§aPřihlášení §8» &7Použití: /forcedestroysession <jméno>'
+forceDestroySessionErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forceDestroySessionErrorUserPremium:  '§aPřihlášení §8» §6%nickname% §7vlastní §6originální účet§7!'
+forceDestroySessionErrorUserNotRegistered: '§aPřihlášení §8» §6%nickname% §7není §6zaregistrován/a§7!'
+forceDestroySessionErrorUserHasNotSession: '§aPřihlášení §8» §6%nickname% §7does not have a session!'
+forceDestroySessionSuccessSessionDestroyed: '§aPřihlášení §8» &7%nickname%''s session has been destroyed!'
+
+forceChangeMailAddressErrorUsage: '§aPřihlášení §8» &7Použití: /forcechangemail <jméno> <e-mailová adresa>'
+forceChangeMailAddressErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forceChangeMailAddressErrorUserPremium:  '§aPřihlášení §8» §6%nickname% §7vlastní §6originální účet§7!'
+forceChangeMailAddressErrorUserNotRegistered: '§aPřihlášení §8» §6%nickname% §7není §6zaregistrován/a§7!'
+forceChangeMailAddressErrorWrongMailAddress: '§aPřihlášení §8» §7Nesprávná §6e-mailová adresa§7!'
+forceChangeMailAddressSuccessMailAddressChanged: '§aPřihlášení §8» &7%nickname%''s mail address has been changed!'
+
+forceRecoveryPasswordErrorUsage: '§aPřihlášení §8» &7Použití: /forcerecoverypassword <jméno>'
+forceRecoveryPasswordErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
+forceRecoveryPasswordErrorUserPremium:  '§aPřihlášení §8» §6%nickname% §7vlastní §6originální účet§7!'
+forceRecoveryPasswordErrorUserNotRegistered: '§aPřihlášení §8» §6%nickname% §7není §6zaregistrován/a§7!'
+forceRecoveryPasswordErrorUserHasNotMailAddress: '§aPřihlášení §8» §6%nickname% §7does not have a mail address!'
+forceRecoveryPasswordSuccessPasswordRecovered: '§aPřihlášení §8» &7%nickname%''s password has been recovered!'

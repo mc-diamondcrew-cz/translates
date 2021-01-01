@@ -1,0 +1,53 @@
+messages:
+  non-tradeable-item:
+  - §aKouzla §8» §6Drotář §7nechce tento předmět.
+  trade-accepted:
+  - §aKouzla §8» §7Obchod §6přijat§7.
+inventory:
+  open-sound: BLOCK_CHEST_OPEN
+  name: Vy                   Drotář
+  inv-size: 54
+  items:
+    agree:
+      type: STAINED_GLASS_PANE
+      id: 14
+      name: '&eKlikněte pro PŘÍJMUTÍ obchodu.'
+      lore: []
+    placeholder-items:
+      type: THIN_GLASS
+      id: 0
+      name: ' '
+      lore: []
+    confirm-agree:
+      enable: true
+      type: STAINED_GLASS_PANE
+      id: 5
+      name: '&aKlikněte pro potvrzení transakce.'
+      lore: []
+      enabled: true
+      sound: BLOCK_LEVER_CLICK
+    confirm-agree-tinkerer:
+      enable: true
+      type: STAINED_GLASS_PANE
+      id: 5
+      name: '&aKlikněte pro potvrzení transakce.'
+      lore: []
+prices:
+  type: exp
+  amount: 10
+  formula: (%amount%*%enchants%)*%durability%
+items:
+  money:
+    type: PAPER
+    id: 0
+    name: '&cPeněžení Poukaz &7(%amount%)'
+    lore:
+    - '&cZískáno od &fDrotáře'
+    - '&cObdržel/a &f%name%'
+  exp:
+    type: EXP_BOTTLE
+    id: 0
+    name: '&cEXP Lahvička &7(%amount%)'
+    lore:
+    - '&cZískáno od &fDrotáře'
+    - '&cObdržel/a &f%name%'

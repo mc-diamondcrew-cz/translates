@@ -1,0 +1,928 @@
+Prefix: '&3DiamondCrew &6» &r'
+GUI-Menus:
+  Main: Hlavní
+  Hats: Hlavy
+  Animated Hats: Animované Hlavy
+  Particles: Efekty
+  Suits: Obleky
+  Gadgets: Doplňky
+  Pets: Mazlíčci
+  Miniatures: Miniatury
+  Morphs: Převtělení
+  Banners: Vlajky
+  Emotes: Smajlíci
+  Cloaks: Kápě
+  Purchase-Menu:
+    GUI-Name: Potvrdit nákup
+    Items:
+      Confirm:
+        Name: '&aPotvrdit'
+        Material: LIME_TERRACOTTA
+        Slot: 11
+        Lore: ''
+      Cancel:
+        Name: '&cZrušit'
+        Material: RED_TERRACOTTA
+        Slot: 15
+        Lore: ''
+  Confirm-Open-Mystery-Box-Menu:
+    GUI-Name: Potvrdit Otevření
+    Items:
+      Open:
+        Name: '&aOtevřít'
+        Material: GREEN_WOOL
+        Slot: 29
+        Lore:
+        - '&7Otevře záhadnou truhlu.'
+        - ''
+        - '&7Tato akce nejde vrátit!'
+      Cancel:
+        Name: '&cZrušit'
+        Material: RED_WOOL
+        Slot: 33
+        Lore:
+        - '&7Vráti tě zpět do seznamu'
+        - '&7Záhadných Truhel.'
+  Mystery-Vault-Menu:
+    GUI-Name: Záhadný Sklad
+    Items:
+      Error:
+        Name: '&cCHYBA!'
+        Material: RED_STAINED_GLASS_PANE
+        Slot: 22
+        Lore:
+        - '&7Nevlastníš žádné &bZáhadné Truhly&7!'
+      Loading-Mystery-Boxes:
+        Name: '&cNačítání...'
+        Material: RED_STAINED_GLASS_PANE
+        Slot: 22
+        Lore:
+        - '&7Načítám tvé záhadné boxy!'
+        - '&7Prosím, znovu otevři záhadný sklad.'
+      Mystery-Box-Information:
+        Name: '&aInformace o Záhadné Truhle'
+        Material: BOOK
+        Slot: 49
+        Loot-Contain-Rarity: true
+        Lore:
+        - '&bZáhadné Truhly &7obsahují téměř'
+        - '&7jakýkoli kosmetický předmět. Pro získání'
+        - '&bZáhadného Boxu&7, vše co musíte udělat,'
+        - '&7je hrát a užívat si hru na serverus!'
+        - ''
+        - '&eTvých 5 posledně otevřených předmětů:'
+        - '&71. {RECENT_LOOT_1}'
+        - '&72. {RECENT_LOOT_2}'
+        - '&73. {RECENT_LOOT_3}'
+        - '&74. {RECENT_LOOT_4}'
+        - '&75. {RECENT_LOOT_5}'
+        - ''
+        - '&7Vlastníš: &b{MYSTERY_BOXES} Záhadných Truhel'
+      Craft-Mystery-Boxes:
+        Name: '&aVyrobit Záhadnou Truhlu'
+        Material: ANVIL
+        Show: true
+        Slot: 50
+        Lore:
+        - '&7Kdykoli otevřete předmět, který vlastníte'
+        - '&7obdržíte místo něj Diamantový Prášek, ze'
+        - '&bkterého můžete postupně vyrábět nové'
+        - '&7Záhadné Boxy a získat tim novou kořist!'
+        - ''
+        - '&7Vlastníš: &b{MYSTERY_DUST} Diamantového Prášku'
+        - '&eKlikni pro otevření menu pro výrobu.'
+      Gift-Inventory:
+        Name: '&aDarovací Inventář'
+        Show: true
+        Material: head:d2ac1c51807e261c12c4f2adbad36b8b2c497c277f7223ec244cb4608c59c
+        Slot: 48
+        Lore:
+        - '&7Odesílej dárky svým přátelům a'
+        - '&7získej unikátní předměty za odměnu!'
+        - ''
+        - '&7Zakoupené darovací balíčky neleznete zde.'
+        - ''
+        - '&7Odeslané dary: &e{GIFT_SENT}'
+        - '&7Obdržené dary: &e{GIFT_RECEIVED}'
+        - ''
+        - '&eKlikni pro zobrazení svého inventáře!'
+      Animations:
+        Name: '&aAnimace'
+        Material: REDSTONE
+        Show: true
+        Slot: 53
+        Lore:
+        - '&7Vyber si animaci, která proběhne'
+        - '&7při otevírání Záhadné Truhly.'
+      Open-Multiple-Boxes:
+        Name: '&cOtevřít Více Truhel'
+        Material: NETHER_STAR
+        Show: true
+        Slot: 51
+        Lore:
+        - '&7Otevří více truhel najednou!'
+  Mystery-Box-Crafting-Menu:
+    GUI-Name: Výroba Záhadných Truhel
+    Items:
+      1-Star:
+        Name: '&bZáhadný Truhla #1'
+        Material: ENDER_CHEST
+        Slot: 9
+        Price: 100
+        Lore:
+        - '&7Tato Záhadná Truhla obsahuje:'
+        - ''
+        - '&aBěžné předměty&7: &b4'
+        - '&9Vzácné předměty&7: &b1'
+        - '&5Epické předměty&7: &b1'
+        - '&6Legendární předměty&7: &b1'
+        - ''
+        - '&7Kvalita: &e✰&7✰✰✰✰'
+      2-Star:
+        Name: '&bZáhadná Truhla #2'
+        Material: ENDER_CHEST
+        Slot: 11
+        Price: 200
+        Lore:
+        - '&7Tato Záhadná Truhla obsahuje:'
+        - ''
+        - '&aBěžné předměty&7: &b3'
+        - '&9Vzácné předměty&7: &b2'
+        - '&5Epické předměty&7: &b1'
+        - '&6Legendární předměty&7: &b1'
+        - ''
+        - '&7Kvalita: &e✰✰&7✰✰✰'
+      3-Star:
+        Name: '&bZáhadná Truhla #3'
+        Material: ENDER_CHEST
+        Slot: 13
+        Price: 300
+        Lore:
+        - '&7Tato Záhadná Truhla obsahuje:'
+        - ''
+        - '&aBěžné předměty&7: &b2'
+        - '&9Vzácné předměty&7: &b2'
+        - '&5Epické předměty&7: &b2'
+        - '&6Legendární předměty&7: &b1'
+        - ''
+        - '&7Kvalita: &e✰✰✰&7✰✰'
+      4-Star:
+        Name: '&bZáhadná Truhla #4'
+        Material: ENDER_CHEST
+        Slot: 15
+        Price: 400
+        Lore:
+        - '&7Tato Záhadná Truhla obsahuje:'
+        - ''
+        - '&aBěžné předměty&7: &b1'
+        - '&9Vzácné předměty&7: &b1'
+        - '&5Epické předměty&7: &b2'
+        - '&6Legendární předměty&7: &b3'
+        - ''
+        - '&7Kvalita: &e✰✰✰✰&7✰'
+      5-Star:
+        Name: '&bZáhadná Truhla #5'
+        Material: ENDER_CHEST
+        Slot: 17
+        Price: 550
+        Lore:
+        - '&7Tato Záhadná Truhla obsahuje:'
+        - ''
+        - '&aBěžné předměty&7: &b0'
+        - '&9Vzácné předměty&7: &b1'
+        - '&5Epické předměty&7: &b2'
+        - '&6Legendární předměty&7: &b4'
+        - ''
+        - '&7Kvalita: &e✰✰✰✰✰'
+  Gift-Inventory-Menu:
+    GUI-Name: Darovací Inventář
+    Items:
+      Mystery-Gift:
+        Name: '&aZáhadný Dar (Balíček 5-ti)'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7Tento balíček obsahuje &a5 &bZáhadných Truhel&7.'
+        - ''
+        - '&eKlikni pro odeslání hráči.'
+      Error:
+        Name: '&cCHYBA!'
+        Material: RED_STAINED_GLASS_PANE
+        Slot: 22
+        Lore:
+        - '&7Nevlastníš žádné &bDarovací Balíčky&7!'
+  Send-Gift-Menu:
+    GUI-Name: Hráči Na Serveru
+    Items:
+      Mystery-Gift:
+        Name: '&aZáhadný Dar (Balíček 5-ti)'
+        Material: ENDER_CHEST
+        Slot: 4
+        Lore:
+        - '&7Tento balíček obsahuje &a5 &bZáhadných Truhel&7.'
+        - ''
+        - '&bVyber komu chceš tento dárek odeslat!'
+      Player:
+        Lore:
+        - ''
+        - '&aKlikni pro odeslání!'
+  Confirm-Send-Gift-Menu:
+    GUI-Name: Potvrdit Odeslání Daru
+    Items:
+      Player:
+        Name: '&7{PLAYER}'
+        Slot: 12
+        Lore: ''
+      Mystery-Gift:
+        Name: '&aZáhadný Dar (Balíček 5-ti)'
+        Material: ENDER_CHEST
+        Slot: 14
+        Lore:
+        - '&7Tento balíček obsahuje &a5 &bZáhadných Truhel&7.'
+      Confirm:
+        Name: '&aPotvrdit'
+        Material: LIME_TERRACOTTA
+        Slot: 29
+        Lore: ''
+      Cancel:
+        Name: '&cZrušit'
+        Material: RED_TERRACOTTA
+        Slot: 33
+        Lore: ''
+  Settings-Menu:
+    GUI-Name: Nastavení
+    Items:
+      Ignore-Cooldown:
+        Name: '&aIgnorování Přebíjecí Doby'
+        Material: BARRIER
+        Slot: 20
+        Lore: ''
+      Self-Morph-View:
+        Name: '&aViditelnost Vlastního Převtělení'
+        Material: ENDER_EYE
+        Slot: 24
+        Lore: ''
+      Enabled:
+        Name: '&e✔'
+        Material: LIME_WOOL
+        Lore: ''
+      Disabled:
+        Name: '&c✖'
+        Material: RED_WOOL
+        Lore: ''
+  Mystery-Vault-Animations-Menu:
+    GUI-Name: Animace Záhadného Skladu
+    Items:
+      Random-Mystery-Vault-Animation:
+        Name: '&eNáhodná Animace'
+        Material: ENDER_PEARL
+        Slot: 40
+        Show: true
+        Lore:
+        - '&7Nechej vybrat nás..'
+        - ''
+        - '&bStav: {STATUS}'
+        - ''
+  Open-Multiple-Boxes-Menu:
+    GUI-Name: Otevřít Více Truhel
+    Items:
+      Open-20-Boxes:
+        Name: '&aOtevřít 20 Truhel'
+        Material: NETHER_STAR
+        Slot: 19
+        Lore:
+        - '&7Otevře až 20 truhel najednou.'
+      Open-50-Boxes:
+        Name: '&aOtevřít 50 Truhel'
+        Material: NETHER_STAR
+        Slot: 22
+        Lore:
+        - '&7Otevře až 50 truhel najednou.'
+      Open-250-Boxes:
+        Name: '&aOtevřít 250 Truhel'
+        Material: NETHER_STAR
+        Slot: 25
+        Lore:
+        - '&7Otevře až 250 truhel najednou.'
+  Confirm-Open-Multiple-Boxes-Menu:
+    GUI-Name: Potvrdit Otevření Více Truhel
+    Items:
+      Confirm:
+        Name: '&aPotvrdit'
+        Material: LIME_TERRACOTTA
+        Slot: 11
+        Lore: ''
+      Cancel:
+        Name: '&cZrušit'
+        Material: RED_TERRACOTTA
+        Slot: 15
+        Lore: ''
+  Pet-Items-Menu:
+    GUI-Name: Jídlo Pro Mazlíčky
+    Items:
+      Your-Pet:
+        Name: '&eTvůj mazlíček'
+        Show: true
+        Slot: 50
+      Zero-Item-Remain:
+        Show-Custom-Item: true
+        Material: GRAY_DYE
+        Play-Sound:
+          Enabled: true
+          Sound: ENTITY_ENDERMAN_TELEPORT
+Items:
+  Go-Back:
+    Name: '&aZpět'
+    Material: ARROW
+    Show: true
+    Slot: 39
+    Lore: ''
+  Previous-Page:
+    Name: '&aPředchozí Strana'
+    Material: ARROW
+    Slot: 39
+    Lore:
+    - '&eStrana {PAGE}'
+  Next-Page:
+    Name: '&aDalší Strana'
+    Material: ARROW
+    Slot: 41
+    Lore:
+    - '&eStrana {PAGE}'
+  Already-Selected:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&7Vybráno'
+  Click-To-Select:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&eKlikni pro výběr.'
+  Unlocked:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&7Odemčeno: &c{HASPERMISSION}/{SIZE} &8({PERCENTAGE}%)'
+    - ''
+    - '&eKlikni pro prohlížení!'
+  Settings:
+    Name: '&eNastavení'
+    Material: COMPARATOR
+    Show: true
+    Slot: 53
+    Lore:
+    - '&7Dovolí ti upravovat a konfigurovat'
+    - '&7různé personální nastavení.'
+  MainMenu-Item:
+    Name: '&aHlavní menu'
+    Material: TRAPPED_CHEST
+    Show: true
+    Slot: 49
+    Lore:
+    - '&7Diamantový Prášek: &b{MYSTERY_DUST}'
+    - '&7Záhadné Truhly: &b{MYSTERY_BOXES}'
+    - ''
+    - '&7Úživej si své kosmetické doplňky!'
+    - '&7Více věcí se bude postupně přidávat,'
+    - '&7nezapomeň sledovat novinky na fóru!'
+    - '&7Děkujeme za podporování serveru.'
+  Morph-Slimeball:
+    Name: '&aAktivovat Převtělení'
+  Self-Morph-View:
+    Name: '&eVidění Vlastního Převtělení'
+    Material: ENDER_EYE
+    Show: true
+    Slot: 50
+    Lore:
+    - '&7Stav: {STATUS}'
+    - ''
+    - '&eKlikni pro použití.'
+  Rename-Pet:
+    Name: '&ePojmenování Mazlíčka'
+    Material: NAME_TAG
+    Show: true
+    Slot: 53
+    Lore:
+    - '&7Přejmenuj svého mazlíčka, napsáním jména do chatu.'
+  Send-Pet-On-Mission:
+    Name: '&aPoslat Mazlíčka Na Misi'
+    Material: OAK_BOAT
+    Show: true
+    Slot: 45
+    Lore:
+    - '&7Odešle všechny &2Šťastné, &aVelmi'
+    - '&aŠťastné&7 a &bSuper Šťastné &7mazlíčky'
+    - '&7na super-tajnou misi pro získání'
+    - '&7spousty mazlíčkovských EXP!'
+    - ''
+    - '&7Množství získaných EXP se zvyšuje'
+    - '&7podle nálady mazlíčka.'
+  Pages:
+    Name: ' &r(Strana {CURRENT_PAGE}/{MAX_PAGES})'
+  Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&eKlikni pro výrobu za &b{COST} &eDiamantového Prášku!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&cKlikni pro výrobu za &b{COST} &cDiamantového Prášku!'
+    - '&cPotřebuješ &b{COST_LEFT} &cDiamantového Prášku navíc!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&7Cena: &a{COST} &7Diamantového Prášku'
+    - '&aKlikni pro výrobu!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&7Cena: &a{COST} &7Diamantového Prášku'
+    - '&cNemáš dostatek pro výrobu!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Item-Unpurchasable:
+    Lore:
+    - ''
+    - '&cNemůže být vyrobeno pomoci Diamantového Prášku.'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Failed-To-Purchase:
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Multiple-Boxes-Loot-Book:
+  - '       &1&lZÁHADNÁ TRUHLA'
+  - ''
+  - '&0Našel jsi následující'
+  - '&0předměty, po otevření'
+  - '&0Záhadné Truhly:'
+  - '&9&l+{MYSTERY_DUST} Diamantového Prášku'
+  - '&a&l+{PET_ITEMS} Mazlíčkovských Předmětů'
+  - ''
+  - '&9&l{MYSTERY_BOXES_OPENED} &0Záhadných Truhel otevřeno.'
+  - ''
+  - ''
+  - '&0Jdi na další stránku pro'
+  - '&0zobrazení všech předmětů.'
+  Settings-Status:
+  - '&e&l{SETTING}'
+  - ''
+  - '  &bStav: {STATUS}'
+  - ''
+  Current-Spawned-Pet:
+    Name: '&eAktuální Mazlíček'
+    Show: true
+    Slot: 41
+  Equip-Entire-Suit:
+    Name: '&aObléknout Celý Oblek'
+    Material: LEATHER
+    Show: true
+    Slot: 41
+    Lore:
+    - '&7Oblékne všechny části obleku,'
+    - '&7které máte odemčeny.'
+Reset-Buttons:
+  Reset-Cosmetics:
+    Name: '&cRestartovat Doplňky'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 50
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Hat:
+    Name: '&cRestartovat Hlavy'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Animated-Hat:
+    Name: '&cRestartovat Animované Hlavy'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Particle:
+    Name: '&cRestartovat Efekty'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Suit:
+    Name: '&cRestartovat Obleky'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Gadget:
+    Name: '&cRestartovat Doplňky'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Pet:
+    Name: '&cRestartovat Mazlíčky'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Miniature:
+    Name: '&cRestartovat Miniatury'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Morph:
+    Name: '&cRestartovat Převtělení'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Banner:
+    Name: '&cRestartovat Vlajky'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Emote:
+    Name: '&cRestartovat Smajlíky'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Cloak:
+    Name: '&cRestartovat Kápě'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+Cooldown-In-Action-Bar:
+  Enabled: true
+  Cooldown-Block:
+    Remain: '&c|'
+    Retain: '&a|'
+    Amount-Of-Blocks: 100
+  Cooldown-Message: '{NAME} &f{COOLDOWN_BLOCK} &f{TIME_LEFT}s'
+Item-Purchase-Messages:
+  Purchase-Hat: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Animated-Hat: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Particle: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Suit: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Gadget: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Pet: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Miniature: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Morph: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Banner: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Emote: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+  Purchase-Cloak: '{PREFIX}&eZakoupil jsi {ITEM}&e.'
+Checking-For-Update: '{PREFIX}&rKontroluji aktualizace...'
+Cooldown: '{PREFIX}&cMusíš počkat &b{COOLDOWN}s &cpřed dalším použitím!'
+Error: '{PREFIX}&cPři pokusu o provedení akce nastala chyba!'
+No-Permission: '{PREFIX}&cNemáš požadovanou pravomoc {PERMISSION}!'
+World-Disabled: '{PREFIX}&cV tomto světě tuto akci nemůžeš použít!'
+Banners-Are-Disabled: '{PREFIX}&cVlajky jsou vypnuty!'
+Cloaks-Are-Disabled: '{PREFIX}&cKápě jsou vypnuty!'
+Emotes-Are-Disabled: '{PREFIX}&cSmajlíci jsou vypnuty!'
+Gadgets-Are-Disabled: '{PREFIX}&cDoplňky jsou vypnuty!'
+Hats-Are-Disabled: '{PREFIX}&cHlavy jsou vypnuty!'
+Animated-Hats-Are-Disabled: '{PREFIX}&cAnimované Hlavy jsou vypnuty!'
+Morphs-Are-Disabled: '{PREFIX}&cPřevtělení jsou vypnuty!'
+Particles-Are-Disabled: '{PREFIX}&cEfekty jsou vypnuty!'
+Pets-Are-Disabled: '{PREFIX}&cMazlíčci jsou vypnuty!'
+Miniatures-Are-Disabled: '{PREFIX}&cMiniatury jsou vypnuty!'
+Suits-Are-Disabled: '{PREFIX}&cObleky jsou vypnuty!'
+Equip-Animated-Hat-For-Player: '&eOblékl jsi {ANIMATED_HAT} hráči &b{PLAYER}&e.'
+Equip-Banner-For-Player: '&eOblékl jsi {BANNER} hráči &b{PLAYER}&e.'
+Equip-Cloak-For-Player: '&eOblékl jsi {CLOAK} hráči &b{PLAYER}&e.'
+Equip-Emote-For-Player: '&eOblékl jsi {EMOTE} hráči &b{PLAYER}&e.'
+Equip-Gadget-For-Player: '&eOblékl jsi {GADGET} hráči &b{PLAYER}&e.'
+Equip-Hat-For-Player: '&eOblékl jsi {HAT} hráči &b{PLAYER}&e.'
+Equip-Miniature-For-Player: '&eVytvořil jsi {MINIATURE} hráči &b{PLAYER}.'
+Equip-Morph-For-Player: '&ePřevtělil jsi hráče &b{PLAYER} &edo {MORPH}&e.'
+Equip-Particle-For-Player: '&eOblékl jsi {PARTICLE} hráči &b{PLAYER}&e.'
+Equip-Pet-For-Player: '&eVytvořil jsi mazlíčka {PET} &ehráči &b{PLAYER}.'
+Equip-Suit-For-Player: '&eOblékl jsi {SUIT} hráči &b{PLAYER}&e.'
+Select-Animated-Hat: '&aVybral jsi &e{ANIMATED_HAT}&a.'
+Select-Banner: '&aVybral jsi &e{BANNER}&a.'
+Select-Cloak: '&aVybral jsi &e{CLOAK}&a.'
+Select-Emote: '&aVybral jsi &e{EMOTE}&a.'
+Select-Gadget: '&aVybral jsi &e{GADGET}&a.'
+Select-Hat: '&aVybral jsi &e{HAT}&a.'
+Select-Miniature: '&aPřivolán &e{MINIATURE}&a.'
+Select-Morph: '&aNyní jsi převtělný jako &e{MORPH}&a.'
+Select-Particle: '&aVybral jsi &e{PARTICLE}&a.'
+Select-Pet: '&aPřivolán tvůj mazlíček &e{PET}&a.'
+Select-Suit: '&aVybral jsi &e{SUIT}&a.'
+Select-Entire-Suit: '&aOblékl jsi {PIECES} kusů obleku &e{SUIT}&a.'
+No-Suit-Pieces-To-Equip: '&cNemáš žádné kusy tohoto obleku pro oblečení!'
+Reset-Cosmetics: '&aAktivní Doplňky resetovány.'
+Reset-Animated-Hat: '&aAnimované Hlavy resetovány.'
+Reset-Banner: '&aVlajky resetovány.'
+Reset-Cloak: '&aKápě resetovány.'
+Reset-Emote: '&aSmajlíci resetovány.'
+Reset-Gadget: '&aDoplňky resetovány.'
+Reset-Hat: '&aHlavy resetovány.'
+Reset-Miniature: '&aMiniatury resetovány.'
+Reset-Morph: '&aPřevtělení resetováno.'
+Reset-Particle: '&aEfekty resetovány.'
+Reset-Pet: '&aMazlíčci resetováni.'
+Reset-Suit: '&aObleky resetovány.'
+Reset-Suit-Helmet: '&aHelmy resetovány.'
+Reset-Suit-Chestplate: '&aTorsa resetovány.'
+Reset-Suit-Leggings: '&aKalhoty resetovány.'
+Reset-Suit-Boots: '&aBoty resetovány.'
+Granted-Access-To-Animated-Hat: '&eByla ti přidána pravomoc pro oblečení {ANIMATED_HAT}&e.'
+Granted-Access-To-Banner: '&eByla ti přidána pravomoc pro oblečení {BANNER}&e.'
+Granted-Access-To-Cloak: '&eByla ti přidána pravomoc pro oblečení {CLOAK}&e.'
+Granted-Access-To-Emote: '&eByla ti přidána pravomoc pro oblečení {EMOTE}&e.'
+Granted-Access-To-Gadget: '&eByla ti přidána pravomoc pro oblečení {GADGET}&e.'
+Granted-Access-To-Hat: '&eByla ti přidána pravomoc pro oblečení {HAT}&e.'
+Granted-Access-To-Miniature: '&eByla ti přidána pravomoc pro oblečení {MINIATURE}&e.'
+Granted-Access-To-Morph: '&eByla ti přidána pravomoc pro oblečení {MORPH}&e.'
+Granted-Access-To-Particle: '&eByla ti přidána pravomoc pro oblečení {PARTICLE}&e.'
+Granted-Access-To-Pet: '&eByla ti přidána pravomoc pro oblečení {PET}&e.'
+Granted-Access-To-Suit: '&eByla ti přidána pravomoc pro oblečení {SUIT}&e.'
+Granted-Access-To-Animated-Hat-For-Player: '&e{PLAYER} nyní může používat {ANIMATED_HAT}&e.'
+Granted-Access-To-Banner-For-Player: '&e{PLAYER} nyní může používat {BANNER}&e.'
+Granted-Access-To-Cloak-For-Player: '&e{PLAYER} nyní může používat {CLOAK}&e.'
+Granted-Access-To-Emote-For-Player: '&e{PLAYER} nyní může používat {EMOTE}&e.'
+Granted-Access-To-Gadget-For-Player: '&e{PLAYER} nyní může používat {GADGET}&e.'
+Granted-Access-To-Hat-For-Player: '&e{PLAYER} nyní může používat {HAT}&e.'
+Granted-Access-To-Miniature-For-Player: '&e{PLAYER} nyní může používat {MINIATURE}&e.'
+Granted-Access-To-Morph-For-Player: '&e{PLAYER} nyní může používat {MORPH}&e.'
+Granted-Access-To-Particle-For-Player: '&e{PLAYER} nyní může používat {PARTICLE}&e.'
+Granted-Access-To-Pet-For-Player: '&e{PLAYER} nyní může používat {PET}&e.'
+Granted-Access-To-Suit-For-Player: '&e{PLAYER} nyní může používat {SUIT}&e.'
+No-Longer-Have-Access-To-Animated-Hat: '&eJiž nemáš pravomoc pro {ANIMATED_HAT}&e.'
+No-Longer-Have-Access-To-Banner: '&eJiž nemáš pravomoc pro {BANNER}&e.'
+No-Longer-Have-Access-To-Cloak: '&eJiž nemáš pravomoc pro {CLOAK}&e.'
+No-Longer-Have-Access-To-Emote: '&eJiž nemáš pravomoc pro {EMOTE}&e.'
+No-Longer-Have-Access-To-Gadget: '&eJiž nemáš pravomoc pro {GADGET}&e.'
+No-Longer-Have-Access-To-Hat: '&eJiž nemáš pravomoc pro {HAT}&e.'
+No-Longer-Have-Access-To-Miniature: '&eJiž nemáš pravomoc pro {MINIATURE}&e.'
+No-Longer-Have-Access-To-Morph: '&eJiž nemáš pravomoc pro {MORPH}&e.'
+No-Longer-Have-Access-To-Particle: '&eJiž nemáš pravomoc pro {PARTICLE}&e.'
+No-Longer-Have-Access-To-Pet: '&eJiž nemáš pravomoc pro {PET}&e.'
+No-Longer-Have-Access-To-Suit: '&eJiž nemáš pravomoc pro {SUIT}&e.'
+Already-Has-Permission: '&c{PLAYER} již má tuto pravomoc.'
+Successful-Remove-Permission: '&eÚspěšně odebrána pravomoc &c{TYPE} &ehráči {PLAYER}&e.'
+Characters-Too-Long: '{PREFIX}&cJméno mazlíčka nemůže mít více než {CHARACTERS} znaků!'
+Does-Not-Support-Characters: '{PREFIX}&cPro jméno mazlíčka můžeš použít pouze anglickou
+  abecedu.'
+No-Player-Nearby: '{PREFIX}&cPoblíž nejsou žádní hráči!'
+Not-Allowed-From-Console: '{PREFIX}&cTento příkaz nelze použít z konzole!'
+Not-Allow-Cosmetics-In-This-Location: '{PREFIX}&cNemůžeš používat doplňky v této lokaci!'
+Not-Allow-Teleport-To-That-Location: '{PREFIX}&cNemůžeš se teleportovat na tuto lokaci!'
+Not-Enough-Space: '{PREFIX}&cNení kolem tebe dostatek místa, pro použití tohoto doplňku!'
+Not-Enough-Space-For-Target-Block: '{PREFIX}&cNa bloku, který jsi označil není dostatek
+  místa, pro použití tohoto doplňku!'
+Not-On-Ground: '{PREFIX}&cPro použití, musíš stát na zemi!'
+Not-On-Flat-Ground: '{PREFIX}&cPro použití, musíš stát na ploché zemi!'
+Stand-On-Two-Blocks-High: '{PREFIX}&cMusíš stát nejméně na dvou solidních blocích!'
+Player-Not-Found: '{PREFIX}&cHráč nenalezen!'
+Player-Is-Offline: '{PREFIX}&cTento hráč nebyl nalezen na serveru!'
+Plugin-Reloaded: '{PREFIX}&3Plugin byl resetován.'
+Reloading-Plugin: '{PREFIX}&3Restartuji plugin...'
+Required-Number-Format: '{PREFIX}&cČíslo je vyžadováno!'
+Required-Positive-Number: '{PREFIX}&cČíslo musí být positivní!'
+Target-A-Block: '{PREFIX}&cMusíš se koukat na blok!'
+Target-A-Player: '{PREFIX}&cMusíš se koukat na hráče!'
+Remove-Item-From-Slot-To-Equip-Gadget: '{PREFIX}&cMusíš odstranit svůj předmět na
+  slotu {SLOT}(&b{ITEM}&c) pro získání tohoto doplňku!'
+Remove-Item-From-Slot-To-Equip-Morph: '{PREFIX}&cMusíš odstranit svůj předmět na slotu
+  {SLOT}(&b{ITEM}&c) pro získání tohoto převtělení!'
+Remove-Item-From-Slot-To-Equip-Emote: '{PREFIX}&cMusíš odstranit svůj předmět na slotu
+  {SLOT}(&b{ITEM}&c) pro získání tohoto smajlíku!'
+Remove-Helmet-To-Equip-Hat: '{PREFIX}&cMusíš odstranit svoji helmu, pro nasazení hlavy!'
+Remove-Helmet-To-Equip-Animated-Hat: '{PREFIX}&cMusíš odstranit svoji helmu, pro nasazení
+  hlavy!'
+Remove-Helmet-To-Equip-Banner: '{PREFIX}&cMusíš odstranit svoji helmu, pro nasazení
+  vlajky!'
+Remove-Helmet-To-Equip-Emote: '{PREFIX}&cMusíš odstranit svoji helmu, pro nasazení
+  smajlíku!'
+Remove-Armor-To-Equip-Suit: '{PREFIX}&cMusíš odstranit své brnění, pro nasazení obleku!'
+Failed-To-Purchase: '&cNebylo možné vyhledat předmět pro koupi!'
+Item-Unpurchasable: '{PREFIX}&cNemůžeš koupit tento předmět!'
+Player-Not-Enough-MysteryDust: '{PREFIX}&cMáš pouze &b{MYSTERY_DUST} &cDiamantového
+  Prášku!'
+Added-MysteryDust: '{PREFIX}&eÚspěšně jsi přidal &b{MYSTERY_DUST} &eDiamantového Prášku
+  hráči &b{PLAYER}&e.'
+Added-MysteryDust-To-All-Players: '{PREFIX}&eÚspěšně jsi přidal &b{MYSTERY_DUST} &eZáhadného
+  Prášku hráči &b{ONLINE}&e.'
+Check-MysteryDust: '&e{PLAYER} vlastní &b{MYSTERY_DUST} &eDiamantového Prášku.'
+Received-MysteryDust: '{PREFIX}&eObdržel jsi &b{MYSTERY_DUST} &eDiamantového Prášku
+  hráči &b{PLAYER}&e.'
+Removed-MysteryDust: '{PREFIX}&eOdstranil jsi &b{MYSTERY_DUST} &eDiamantového Prášku
+  hráči &b{PLAYER}&e.'
+Sent-MysteryDust: '{PREFIX}&eOdeslal jsi &b{MYSTERY_DUST} &eDiamantového Prášku Hráči
+  &b{PLAYER}&e.'
+Set-MysteryDust: '{PREFIX}&eNastavil jsi &b{MYSTERY_DUST} &eDiamantového Prášku hráči
+  &b{PLAYER}&e.'
+Only-Have-MysteryDust: '{PREFIX}&b{PLAYER} &cmá pouze &b{MYSTERY_DUST} &cDiamantového
+  Prášku!'
+Removed-MysteryDust-From-Player: '{PREFIX}&b{MYSTERY_DUST} &eDiamantového Prášku ti
+  bylo odebráno z účtu.'
+Set-Player-MysteryDust: '{PREFIX}&eTvůj mystery dust have been set to &b{MYSTERY_DUST}&e.'
+Not-Enough-MysteryDust-To-Purchase: '{PREFIX}&cNemáš dostatek Diamantového Prášku
+  pro koupi tohoto předmětu!'
+Pay-MysteryDust-To-Self: '{PREFIX}&cNemůžeš poslat Diamantový Prášek sám sobě!'
+Gave-Mystery-Boxes: '{PREFIX}&eÚspěšně jsi dal &b{MYSTERY_BOXES} Záhadných Truhel
+  &ehráči &b{PLAYER}&e.'
+Gave-Mystery-Boxes-To-All-Players: '{PREFIX}&eÚspěšně jsi dal &b{MYSTERY_BOXES} Záhadných
+  Boxů &ehráči &b{ONLINE}&e.'
+Received-Mystery-Boxes: '{PREFIX}&eObdržel jsi &b{MYSTERY_BOXES} Záhadných Boxů &eod
+  &b{PLAYER}&e.'
+Added-Mystery-Vault: '{PREFIX}&aÚspěšně vytvořen Záhadný Sklad &f''{NAME}''&a.'
+Redefined-Mystery-Vault: '{PREFIX}&aLokace Záhadného Skladu &f''{NAME}'' &abyla změněna.'
+Mystery-Vault-Same-Location: '{PREFIX}&cNa této lokaci již je Záhadný Sklad!'
+Mystery-Vault-Is-Exists: '{PREFIX}&cZáhadný Sklad s tímto jménem již existuje!'
+Do-Not-Have-Any-Mystery-Vault: '{PREFIX}&cNejsou vytvořený žádné Záhadné Sklady!'
+No-Mystery-Vault-Nearby: '{PREFIX}&cV dané oblasti není žádný Záhadný Sklad!'
+Removed-Mystery-Vault: '{PREFIX}&aÚspěšně odebrán Záhadný Sklad &f''{NAME}''&a.'
+Mystery-Vault-Not-Found: '{PREFIX}&cNebylo možné najít žádný Záhadný Sklad v této
+  lokaci!'
+Mystery-Vault-Not-Found-With-Name: '{PREFIX}&cNebylo možné nalézt Záhadný Sklad s
+  názvem &f''{NAME}''&c!'
+Teleport-To-Mystery-Vault: '{PREFIX}&eByl jsi teleportován na lokaci Záhadného Skladu
+  s názvem &f''{NAME}''&e.'
+Open-Mystery-Vault-At-A-Time: '{PREFIX}&cPouze jeden hráč může používat Záhadný Sklad!'
+Can-Only-Open-One-Mystery-Box: '{PREFIX}&cPočkej, než se ukončí animace otevírání!'
+Purchase-Cancelled: '{PREFIX}&cZakoupení zrušeno!'
+Mystery-Boxes-Are-Disabled: '{PREFIX}&cZáhadné Truhly jsou vypnuty!'
+Crafted-Mystery-Box: '&aVyrobil jsi &b{NAME}&a.'
+Gave-Mystery-Gifts: '{PREFIX}&eÚspěšně jsi dal &b{GIFTS} &eZáhadnch Darů&e hráči &r{PLAYER}&e.'
+Received-Mystery-Gifts: '{PREFIX}&eObdržel jsi &b{GIFTS} &eZáhadných Darů &eod &r{PLAYER}&e.'
+Send-A-Gift-To-Player: '&aOdeslal jsi dar obsahující &b5 Záhadných Truhel &ahráči
+  &r{PLAYER}&a!'
+Received-Gift: '&aObdržel jsi dar od hráče &r{PLAYER}&a! Navštiv &bZáhadný Sklad &apro
+  otevření!'
+Mystery-Box-Was-Expired: '{PREFIX}&cTato Záhadná Truhla expirovala. Musíš otevírat
+  rychleji!'
+Check-Mystery-Boxes: '&e{PLAYER} vlastní &b{MYSTERY_BOXES} &eZáhadných Truhel.'
+Select-Mystery-Vault-Animation: '&eVybral jsi &b{ANIMATION} &eza svoji otevírací animaci.'
+Not-Enough-Mystery-Boxes: '&cNemáš dostatek Záhadných Truhel.'
+Counting-Mystery-Boxes: '&cPočítám Záhadné Truhly...'
+No-Permission-To-Open-One-Star-Box: '{PREFIX}&cNemáš dostatečné pravomoce, pro otevření!'
+No-Permission-To-Open-Two-Star-Box: '{PREFIX}&cNemáš dostatečné pravomoce, pro otevření!'
+No-Permission-To-Open-Three-Star-Box: '{PREFIX}&cNemáš dostatečné pravomoce, pro otevření!'
+No-Permission-To-Open-Four-Star-Box: '{PREFIX}&cNemáš dostatečné pravomoce, pro otevření!'
+No-Permission-To-Open-Five-Star-Box: '{PREFIX}&cNemáš dostatečné pravomoce, pro otevření!'
+Emote-Is-Activated: '{PREFIX}&cSmajlík je již aktivní!'
+Gadget-Is-Activated: '{PREFIX}&c{GADGET} je již aktivní!'
+Morph-Skill-Is-Activated: '{PREFIX}&cSchopnost {MORPH} je již aktivní!'
+Suit-Ability-Is-Activated: '{PREFIX}&cSchopnost {SUIT} je již aktivní!'
+Morph-Ability-Is-Disabled: '{PREFIX}&cSchopnost {MORPH} je aktuálně vypnutá!'
+Is-Not-Morphed: '&cNejsi převtělen!'
+No-Pet-Spawned: '{PREFIX}&cNemáš aktuálně přivolaného žádného mazlíčka!'
+Unlock-Pet-Before-Rename: '&c{PLAYER} musíš odemčít mazlíčka {TYPE}, před jeho pojmenováním.'
+Rename-Pet: '&eJméno tvého mazlíčka {TYPE} bylo nastaveno na &a{NAME}&e.'
+Rename-Pet-For-Player: '&eJméno mazlíčka {TYPE} hráče {PLAYER}, bylo nastaveno na
+  &a{NAME}&e.'
+Rename-Pet-In-Chat: |-
+  &eMáš &c20 &eskund na to, napsat do chatu jméno svého mazlíčka.
+  &eNapiš &2Cancel &epro zrušení této akce.
+Not-Allowed-To-Ride-Other-Pet: '&cToto není tvůj mazlíček!'
+Timed-Out: '&cČas vypršel, nestihl jsi přejmenovat svého mazlíčka!'
+Cancel-Rename-Pet: '&cPřejmenování mazlíčka zrušeno.'
+Request-Pet-With-Happy-Status: '&cMusíš mít alespoň jednoho Šťastného mazlíčka.'
+Click-To-Increase-Happiness: '&eKlikni &bpravým &euvnitř menu pro mazlíčky pro nakrmení
+  a zlepšení jejich nálady.'
+Pet-Earn-EXP: '&eTvůj {LEVEL} {PET_NAME} &ezískal &b{EXP} EXP &ez mise!'
+Pet-Level-Up: '&eTvůj {LEVEL} {PET_NAME} &ezískal &b{EXP} EXP &ez mise! Získal Level-Up!'
+Send-Pet-For-Mission-Is-On-Cooldown: '&cTato schopnost se aktuálně přebíjí. Počkej
+  prosím {COOLDOWN_MINUTES} minut navíc.'
+No-Permission-To-Spawn-Pet: '&cNemáš pravomoce na přivolání mazlíčka!'
+Pet-Stat-Fulled: '&cTvůj {PET_NAME} &c{STAT} je již plný!'
+Zero-Pet-Item-Remain: '&cTento předmět může být nalezen uvnitř &bZáhadného Skladu&c!'
+Ate-Food-And-Dont-Like-It: '&eTvůj {PET_NAME} &esnědl &a{ITEM}&e. Moc mu to nechutnalo.
+  (&a+{INCREMENT} &bHlad&e)'
+Ate-Food-And-Like-It: '&eTvůj {PET_NAME} &esnědl &a{ITEM}&e. Chutnalo mu to! (&a+{INCREMENT}
+  &bHlad&e)'
+Ate-Food-And-Really-Like-It: '&eTvůj {PET_NAME} &esnědl &a{ITEM}&e. Moc mu to chutnalo!
+  (&a+{INCREMENT} &bHlad&e)'
+Ate-Favourite-Food: '&eTvůj {PET_NAME} &esnědl &a{ITEM}&e. To je jeho oblíbené jídlo!
+  (&a+{INCREMENT} &bHlad&e)'
+Drank-Drink-And-Dont-Like-It: '&eTvůj {PET_NAME} &evypil &a{ITEM}&e. Moc mu to nechutnalo.
+  (&a+{INCREMENT} &bŽízeň&e)'
+Drank-Drink-And-Like-It: '&eTvůj {PET_NAME} &evypil &a{ITEM}&e. Chutnalo mu to! (&a+{INCREMENT}
+  &bŽízeň&e)'
+Drank-Drink-And-Really-Like-It: '&eTvůj {PET_NAME} &evypil &a{ITEM}&e. Moc mu to chutnalo!
+  (&a+{INCREMENT} &bŽízeň&e)'
+Drank-Favourite-Drink: '&eTvůj {PET_NAME} &evypil &a{ITEM}&e. Je to jejich oblíbené
+  pití! (&a+{INCREMENT} &bŽízeň&e)'
+Played-Toy-And-Dont-Like-It: '&eTvůj {PET_NAME} &esi hrál s &a{ITEM}&e. Moc se mu
+  to nelíbilo. (&a+{INCREMENT} &bCvičení&e)'
+Played-Toy-And-Like-It: '&eTvůj {PET_NAME} &esi hrál s &a{ITEM}&e. Líbilo se mu to!
+  (&a+{INCREMENT} &bCvičení&e)'
+Played-Toy-And-Really-Like-It: '&eTvůj {PET_NAME} &esi hrál s &a{ITEM}&e. Moc se mu
+  to líbilo! (&a+{INCREMENT} &bCvičení&e)'
+Played-Favourite-Toy: '&eTvůj {PET_NAME} &esi hrál s &a{ITEM}&e. To je jeho oblíbená
+  hračka! (&a+{INCREMENT} &bCvičení&e)'
+Added-Pet-Item: '{PREFIX}&eÚspěšně jsi přidal &b{AMOUNT} &e{PET_ITEM} &ehráči &b{PLAYER}&e.'
+Received-Pet-Item: '{PREFIX}&eObdržel jsi &b{AMOUNT} &e{PET_ITEM} &eod &b{PLAYER}&e.'
+Removed-Pet-Item: '{PREFIX}&eOdstranil jsi &b{AMOUNT} &e{PET_ITEM} &ehráči &b{PLAYER}&e.'
+Removed-Pet-Item-From-Player: '{PREFIX}&b{AMOUNT} &e{PET_ITEM} &ebylo odebráno.'
+Set-Pet-Item: '{PREFIX}&eNastavil jsi &b{AMOUNT} &e{PET_ITEM} &ehráči &b{PLAYER}&e.'
+Set-Player-Pet-Item: '{PREFIX}&eTvůj &e{PET_ITEM} &ebyl nastaven na &b{AMOUNT}&e.'
+Rocket-Countdown: '&c&lSTART RAKETY ZA {TIMER}!'
+Rocket-Lift-Off: '&a&lLETÍME DO VESMÍRU!'
+Enabled-Self-Morph-View: '{PREFIX}&eAktivoval jsi vidění svého převtělení!'
+Disabled-Self-Morph-View: '{PREFIX}&eVypnul jsi vidění svého převtělení!'
+Enabled-Bypass-Cooldown: '{PREFIX}&eAktivoval jsi si ignorování přebíjecí doby.'
+Disabled-Bypass-Cooldown: '{PREFIX}&eVypnu jsi si ignorování přebíjecí doby.'
+Enabled-Random-Mystery-Vault-Animation: '{PREFIX}&ePrávě jsi si &aaktivoval &bNáhodnou
+  Animaci &efpro otevírání Záhadného Skladu.'
+Disabled-Random-Mystery-Vault-Animation: '{PREFIX}&ePrávě jsi si &cvypnul &bNáhodnou
+  Animaci &epro otevírání Záhadného Skladu.'
+Disabled-Command-While-Cosmetics-Activated: '{PREFIX}&cNemůžeš použít tento příkaz,
+  když je aktivovaný doplňek!'
+Invalid-Type: '{PREFIX}&cTento {TYPE}, který jsi zadal je neplatný!'
+Type-Is-Not-Enabled: '{PREFIX}&cTento {TYPE} není povolený!'
+Turn-Off-Bumblebee-Song: '{PREFIX}&cBumblebee písnička byla vypnuta!'
+Playing-Song: '{RANDOM_COLOR}Nyní hraje: {SONG}'
+Only-Boolean-Value-Can-Be-Accepted: '&cPouze boolean hodnota je povolena!'
+Required-Time-Format: '{PREFIX}&cProsím vlož platný čas! (''h'' pro hodiny,''d'' pro
+  dny, ''m'' pro měsíce).'
+Required-Full-Data: '{PREFIX}&cUjisti se prosím, že ti nechybí žádná data.'
+Already-Activate-One: '{PREFIX}&cDoplňek {GADGET} je aktivní! Zkus to prosím později.'
+Gadget-Activated-In-Same-Area: '{PREFIX}&cV této oblasti je již aktivní jiný doplňek!
+  Zkus prosím jinou oblast.'
+Enabled: '&a✔'
+Disabled: '&c✖'
+Cooldown-Bypass: Ignorování Přebíjecí Doby
+Self-Morph-View: Vidění Vlastního Převtělení
+Unequip-Cosmetics-Due-To-Low-TPS: '{PREFIX}&cTvé doplňky byli odstraněny kvůli výkonu
+  serveru.'
+Disable-Usage-Of-Cosmetics: '{PREFIX}&cOmlouváme se, ale kvůli výkonu serveru byli
+  všechny Vaše doplňky zrušeny.'
+Not-Allow-Cosmetics-In-Region: '{PREFIX}&cV tomto regionu nemůžeš používat kosmetické
+  doplňky.'
+Not-Allow-Hat-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Animated-Hat-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Particle-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Suit-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Gadget-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Pet-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Miniature-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Morph-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Banner-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Emote-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Cloak-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Not-Allow-Pet-Riding-In-Region: '{PREFIX}&cToto nemůžeš použít v tomto regionu.'
+Second: Sekunda
+Seconds: Sekund
+Minute: minuta
+Minutes: minut
+Hour: hodina
+Hours: hodin
+Day: den
+Days: dní
+No-Cosmetic-Equipped: Prázdné
+No-Recent-Loot-Found: Prázdné
+Pet-Name-In-Blacklist: '&cYou''re not allowed to set the pet to this name as it contains
+  indecent text.'

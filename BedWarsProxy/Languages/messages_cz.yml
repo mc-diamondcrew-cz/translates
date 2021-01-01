@@ -1,0 +1,137 @@
+prefix: ''
+name: Čeština
+format-stats-time: yyyy/MM/dd HH:mm
+arena-status-offline: '&8Offline'
+arena-status-playing: '&cVe hře'
+arena-status-restarting: '&4Restartuje se'
+arena-status-waiting: '&eČeká na hráče..'
+arena-status-starting: '&aStartuje..'
+arena-selector-gui-name: '&8Klikni pro připojení'
+arena-selector-content-name: '&a&l{name}'
+arena-selector-content-lore:
+- ''
+- '&7Stav: {status}'
+- '&7Hráči: &a{on}&8/&a{max}'
+- '&7Typ: &a{group}'
+- ''
+- §8» &aLevé-Kliknutí §7pro připojení.
+- §8» &aPravé-Kliknutí §7pro sledování.
+arena-join-denied-selector: '&aBedWars §8» &7Do arény se nelze připojit, použij §6pravé-kliknutí
+  §7pro §6sledování§7!'
+arena-spectate-denied-selector: '&aBedWars §8» &7Arénu nemůžeš sledovat, pouzij §6levé-kliknutí
+  §7pro §6připojení§7!'
+cmd-not-found: '&aBedWars §8» &7Příkaz §6neexistuje§7, nebo §6nemáte dostatek pravomocí§7!'
+cmd-arena-gui-display: '&8- &6/bw gui &o(skupina) &7otevře výběr arén.'
+cmd-arena-gui-hover: |-
+  &7Vyberte si arénu
+  &fa pusťte se do hry.
+cmd-lang-display: '&8- &6/bw language &o<iso> &7změna jazyku.'
+cmd-lang-hover: '&7Změna jazyku.'
+cmd-rejoin-display: '&8- &6/bw rejoin &7připojení do hry.'
+cmd-rejoin-hover: '&7Připojíte se do hry, ze které jste byl/a odpojen/a.'
+cmd-tp-display: '&8- &6/bw tp <jméno> &7teleportování na hráče.'
+cmd-tp-hover: '&6Sledování hráče. §7Pro administrátory, sledování cheaterů.'
+cmd-lang-list-header: '&aBedWars §8» &6Dostupné jazyky:'
+cmd-lang-list-format: '&a▪  &7{iso} - &6{name}'
+cmd-lang-usage: '&aBedWars §8» &7Usage: §6/lang &o<iso>'
+cmd-lang-not-exist: '&aBedWars §8» &7Tento jazyk §6neexistuje§7.'
+cmd-lang-set: '&aBedWars §8» &6Jazyk §7uložen.'
+cmd-join-usage: '&a▪ &7Použití: §6/bw join &o<aréna/skupina>'
+cmd-join-not-found: '&aBedWars §8» §6{name} §7nebylo možné nalézt.'
+cmd-join-arena-full: |-
+  &aBedWars §8» &7Tato aréna je §6plná§7.
+  &eKlikněte pro zakoupení §d§lPREMIUM§e.
+cmd-join-arenas-full: '&aBedWars §8» &6Žádná §7aréna není k dispozici.'
+cmd-join-party-big: '&aBedWars §8» §7Vaše §6parta §7je příliš velká pro připojení.'
+cmd-join-not-leader: '&aBedWars §8» &7Pouze §6vůdce/kyně §7může vybrat arénu.'
+cmd-join-spectate-denied: '&aBedWars §8» §6Sledování §7není v této aréně povoleno.'
+cmd-rejoin-no-arena: '&aBedWars §8» §7Nelze §6přepojit§7, žádná arená nenalezena.'
+cmd-rejoin-denied: '&aBedWars §8» §7Nelze §6přepojit§7, hra ukončena, nebo Vaše postel
+  zničena.'
+cmd-rejoin-allowed: '&aBedWars §8» &7Připojuji na &6{arena}&7.'
+cmd-party-help:
+- '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&aPříkazy party:'
+- '&6/party invite <jméno> &8- &7Pozvání do párty.'
+- '&6/party leave &8- &7Opuštění party.'
+- '&6/party remove <jméno> &8- &7Odebrání z party.'
+- '&6/party accept <jméno> &8- &7Příjmutí pozvánky.'
+- '&6/party disband &8- &7Zrušení party.'
+cmd-party-invite-usage: '&aBedWars §8» &7Použití: &6/party invite <hráč>'
+cmd-party-offline: '&aBedWars §8» &6{player} &7není na serveru.'
+cmd-party-invite: '&aBedWars §8» §6{player} §7byl/a pozván/a pro připojení do Vaší
+  §6party§7.'
+cmd-party-invite-received: '&aBedWars §8» &6{player} &7Vás pozval/a do party! &o&Příjmout'
+cmd-party-invite-self: '&aBedWars §8» &7Najdi si kamarády.'
+cmd-party-no-invite: '&aBedWars §8» &6Nemáte §7žádnou pozvánku.'
+cmd-party-already-in: '&aBedWars §8» &6Již jste §7v partě.'
+cmd-party-no-perm: '&aBedWars §8» §7Tato akce je pouze pro §6vůdce/kyni§7.'
+cmd-party-accept-usage: '&aBedWars §8» &7Použití: &7/party accept <jméno>'
+cmd-party-join: '&aBedWars §8» &6{player} &7se připojil/a do party!'
+cmd-party-not-in: '&aBedWars §8» &7Nejste v partě.'
+cmd-party-cant-leave: |-
+  &aBedWars §8» &7Nemůžete opustit vlastí partu.
+  &6Zkuste: &7/party disband
+cmd-party-leave: '&aBedWars §8» &6{player} &7opustil/a partu.'
+cmd-party-disband: '&aBedWars §8» &7Parta §6zrušena§7.'
+cmd-party-remove-usage: '&aBedWars §8» &7Použití: &6/party remove <jméno>'
+cmd-party-remove: '&aBedWars §8» &6{player} &7odebrán/a z party.'
+cmd-party-remove-not-in: '&aBedWars §8» &6{player} &7není ve Vaší partě.'
+cmd-tp-usage: '&aBedWars §8» &7Použití: &6/bw tp <jméno>'
+cmd-tp-fail: '&aBedWars §8» &6{player}&7 nenalezen/a.'
+cmd-tp-fai2: '&aBedWars §8» &6{player}&7 nalezen/a na &6{server}&7, připojení ovšem
+  není možné.'
+sign-dynamic-content:
+  waiting:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '&5{current}/{max}'
+  starting:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '&5{current}/{max}'
+  searching:
+  - '&4▆▆▆▆▆▆'
+  - '&1&lBOOTING'
+  - ''
+  - '&4▆▆▆▆▆▆'
+  no-games:
+  - ''
+  - '&8&lWaiting for'
+  - '&7&lopen lobby'
+  - ''
+sign-static-content:
+  waiting:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '&5{current}/{max}'
+  starting:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '&5{current}/{max}'
+  playing:
+  - '&4&l[BedWars-{id}]'
+  - '&9{group}'
+  - '&1{map}'
+  - '{status}'
+  searching:
+  - '&4▆▆▆▆▆▆'
+  - '&1&lBOOTING'
+  - ''
+  - '&4▆▆▆▆▆▆'
+  no-games:
+  - ''
+  - '&8&lWaiting for'
+  - '&7&lopen lobby'
+  - ''
+display-group-duo: DUO
+display-name-clay: Clay
+display-name-castle: Castle
+display-group-trio: TRIO
+display-group-squad: SQUAD
+display-group-solo: SOLO
+display-group-default: DEFAULT

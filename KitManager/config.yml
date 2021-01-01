@@ -1,0 +1,61 @@
+# Big thanks and love for using my plugins! ^^
+
+#|--------------------------------------------------------------------------------------------------------------------|#
+# Plugin: KitManager
+# Author: https://www.mc-market.org/members/89497/
+# Description: Plugin for managing in-game kits.
+# Dependencies:
+#   -> MySQL Database
+#   -> PLJRApi
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+###############\
+# MySQL Setup ##############################################################################################\
+############### This is the most important part, as the plugin can not work without proper MySQL Database. # \
+              ##############################################################################################  \
+mysql:
+  enabled: false
+  host: "127.0.0.1"
+  port: "3306"
+  database: "db"
+  username: "root"
+  password: ""
+#|--------------------------------------------------------------------------------------------------------------------|#
+
+##############\
+# Lang Setup ################################################################\
+############## Here, you can customize messages, send by the plugin itself. # \
+             ################################################################  \
+help:
+  - ""
+  - "§a§lKitManager"
+  - ""
+  - "§e/kit help §8» §7Zobrazí tuto zprávu."
+  - "§e/kit <název> §8» §7Předá kit."
+  - "§e/kit list §8» §7Zobrazí všechny kity, které můžete získat."
+  - ""
+
+admin-help:
+  - ""
+  - "§a§lKitManager Admin"
+  - ""
+  - "§e/akit help §8» §7Displays this message."
+  - "§e/akit <name> §8» §7Gives desired kit, ignores permission and cooldown."
+  - "§e/akit give <player> <name> §8» §7Gives desired kit to player, ignoring his permissions and cooldowns."
+  - "§e/akit create <name> <cooldown> §8» §7Creates kit from items in you inventory."
+  - "§e/akit remove <name> §8» §7Removes desired kit."
+  - ""
+
+lang:
+  NO_CONSOLE: "§aKitManager §8» §7Tento příkaz je pouze pro herní použití!"
+  KIT_SUCCESS: "§aKitManager §8» §7Obrdžel/a jsi kit §6%kit§7."
+  KIT_FAILURE_NO_KIT: "§aKitManager §8» §6%kit §7není v databázi."
+  KIT_FAILURE_COOLDOWN: "§aKitManager §8» §7Musíte počkat %time §7pro získání tohoto kitu!"
+  KITS_SUCCESS_TITLE: "§aKitManager §8» §7Vaše kity:"
+  KITS_SUCCESS_FORMAT_AVAILABLE: "§7- §7%name <hover:show_text:'§eKlikni pro získání'><click:run_command:/kit %name>§e#</click></hover> <hover:show_text:'§cKlikni pro odebrání'><click:run_command:/akit remove %name>§c✕</click></hover>"
+  KITS_SUCCESS_FORMAT_UNAVAILABLE: "§7- §7%name <hover:show_text:'§cKlikni pro odebrání'><click:run_command:/akit remove %name>§c✕</click></hover>"
+  AKIT_GIVE_SUCCESS: "§aKitManager §8» §7Úspěšně jsi daroval kit §6%kit §7hráči/ce §6%player§7."
+  AKIT_GIVE_SUCCESS_NOTIFY: "§aKitManager §8» §7Obdržel/a jsi kit §6%kit §7od §6%player§7."
+  AKIT_CREATE_SUCCESS: "§aKitManager §8» §7Kit §6%kit §7úspěšně vytvořen s cooldownem §6%cooldown§7."
+  AKIT_REMOVE_SUCCESS: "§aKitManager §8» §7Úspěšně odstraněn kit §6%kit§7."
+#|--------------------------------------------------------------------------------------------------------------------|#

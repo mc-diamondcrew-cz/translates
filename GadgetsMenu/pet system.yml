@@ -1,0 +1,407 @@
+Pet-System:
+  Enabled: true
+  Level: '&8Level: &7{LEVEL} '
+  Rename-Pet: '&a(Příkaz /pet pro nastavení jména)'
+  EXP: '{EXP_BLOCKS} &b{OBTAINED_EXP}&f/{MAX_EXP}'
+  Max-EXP: '{EXP_BLOCKS} &bMax &7EXP'
+  EXP-Block:
+    Remain: '&7■'
+    Retain: '&b■'
+    Amount-Of-Blocks: 10
+  Percentage-Bar: '{REMAIN}&f/100'
+  Pet-Name-Command:
+    Enabled: true
+    Description: Pojmenuj svého mazlíčka.
+  Happiness:
+    Okay:
+      DisplayName: '&eOk'
+      Color: '&e'
+    Happy:
+      DisplayName: '&2Šťastný'
+      Color: '&2'
+    Very-Happy:
+      DisplayName: '&aVelmí šťastný'
+      Color: '&a'
+    Super-Happy:
+      DisplayName: '&bSuper šťastný!'
+      Color: '&b'
+  Send-Pet-On-Mission:
+    Cooldown-Minutes: 60
+    Gain-EXP:
+      Happy: 400
+      Very-Happy: 600
+      Super-Happy: 800
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_PLAYER_LEVELUP
+    Lores:
+      Ready-To-Send-Pet-On-Mission:
+      - ''
+      - '&7Přebíjecí doba: &aPŘIPRAVENO'
+      - ''
+      - '&eKlikni pro získání EXP!'
+      Send-Pet-On-Mission-On-Cooldown:
+      - ''
+      - '&7Přebíjecí doba: &c{COOLDOWN_MINUTES} minut'
+      - ''
+      - '&cPřebíjí se..'
+  Stats:
+    Hunger:
+      Name: Hlad
+      Play-Sound:
+        Enabled: true
+        Click-Sound: UI_BUTTON_CLICK
+        Feed-Sound: ENTITY_VILLAGER_AMBIENT
+        Fulled-Sound: BLOCK_NOTE_BLOCK_BELL
+      Lore:
+        Pet-Item:
+        - ''
+        - '&7Zvyšuje hlad mazlíčka.'
+        Item-Remain:
+        - ''
+        - '&7Zbývá: &f{REMAIN}'
+        - '&eKlikni pro nakrmení!'
+    Thirst:
+      Name: Žízeň
+      Play-Sound:
+        Enabled: true
+        Click-Sound: UI_BUTTON_CLICK
+        Feed-Sound: ENTITY_VILLAGER_AMBIENT
+        Fulled-Sound: BLOCK_NOTE_BLOCK_BELL
+      Lore:
+        Pet-Item:
+        - ''
+        - '&7Zvyšuje žízeň mazlíčka.'
+        Item-Remain:
+        - ''
+        - '&7Zbývá: &f{REMAIN}'
+        - '&eKlikni pro nakrmení!'
+    Exercise:
+      Name: Cvičení
+      Play-Sound:
+        Enabled: true
+        Click-Sound: UI_BUTTON_CLICK
+        Feed-Sound: ENTITY_VILLAGER_AMBIENT
+        Fulled-Sound: BLOCK_NOTE_BLOCK_BELL
+      Lore:
+        Pet-Item:
+        - ''
+        - '&7Zvyšuje kondici mazlíčka.'
+        Item-Remain:
+        - ''
+        - '&7Zbývá: &f{REMAIN}'
+        - '&eKlikni pro trénování!'
+  Lores:
+    Summon-Pet:
+    - ''
+    - '&6Levé-Kliknutí &7pro přivolání mazlíčka.'
+    Despawn-Pet:
+    - ''
+    - '&6Levé-Kliknutí &7pro odebrání mazlíčka.'
+    Provide-Care:
+    - '&bPravé-Kliknutí &7pro stárání se o mazlíčka.'
+  Pet-Name-Blacklist:
+    Enabled: true
+    Blacklist:
+    - fuck
+    - bitch
+  General-Settings:
+    Pet-Silent: false
+Pet-Items:
+  Apple:
+    Name: '&bJablko'
+    Material: APPLE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 0
+    Lore:
+    - '&7Vynikající ovoce!'
+  Melon:
+    Name: '&bMeloun'
+    Material: MELON
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 1
+    Lore:
+    - '&7Obsahuje semínka.'
+  Pumpkin-Pie:
+    Name: '&bKoláč'
+    Material: PUMPKIN_PIE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 2
+    Lore:
+    - '&7Mňamka.'
+  Carrot:
+    Name: '&bMrkev'
+    Material: CARROT
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 3
+    Lore:
+    - '&7Skvělé pro oči!'
+  Baked-Potato:
+    Name: '&bUvařená Brambora'
+    Material: BAKED_POTATO
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 4
+    Lore:
+    - '&7Po-Tae-Toe Poe-Tah-Toe.'
+  Mushroom-Soup:
+    Name: '&bHoubová Polévka'
+    Material: MUSHROOM_STEW
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 5
+    Lore:
+    - '&7Moc tomu nevěřím, ale budiž..'
+  Flower:
+    Name: '&bKvětina'
+    Material: RED_TULIP
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 6
+    Lore:
+    - '&7Chutná stejně dobře, jako voní!'
+  Hay:
+    Name: '&bSeno'
+    Material: HAY_BLOCK
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 7
+    Lore:
+    - '&7Dobrota.'
+  Wheat:
+    Name: '&bPšenice'
+    Material: WHEAT
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 8
+    Lore:
+    - '&7Ještě nezpracovaná.'
+  Bread:
+    Name: '&bChleba'
+    Material: BREAD
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 9
+    Lore:
+    - '&7Čersvě upečený.'
+  Cookie:
+    Name: '&bSušenka'
+    Material: COOKIE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 10
+    Lore:
+    - '&7S čokoládou!'
+  Cake:
+    Name: '&bDort'
+    Material: CAKE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 11
+    Lore:
+    - '&7Tento dort není lež.'
+  Raw-Fish:
+    Name: '&bSurová Ryba'
+    Material: COD
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 12
+    Lore:
+    - '&7Chycena místním rybářem.'
+  Raw-Porkchop:
+    Name: '&bSurová Kotleta'
+    Material: PORKCHOP
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 13
+    Lore:
+    - '&7Pro ty, co to rádi surové!'
+  Angus-Steak:
+    Name: '&bPořádnej Stejk'
+    Material: COOKED_BEEF
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 14
+    Lore:
+    - '&7Dobře připravený a kořeněný.'
+  Bone:
+    Name: '&bKost'
+    Material: BONE
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 15
+    Lore:
+    - '&7Vyhrabaná ze země.'
+  Rotten-Flesh:
+    Name: '&bZkažené Maso'
+    Material: ROTTEN_FLESH
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 16
+    Lore:
+    - '&7Fůůůj!'
+  Magma-Cream:
+    Name: '&bLávový Krém'
+    Material: MAGMA_CREAM
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 17
+    Lore:
+    - '&7POZOR: Příliš horké!'
+  Water:
+    Name: '&bVoda'
+    Material: WATER_BUCKET
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 27
+    Lore:
+    - '&7Filtrována.'
+  Milk:
+    Name: '&bMléko'
+    Material: MILK_BUCKET
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 28
+    Lore:
+    - '&7Prostě mléko.'
+  Lava:
+    Name: '&bLáva'
+    Material: LAVA_BUCKET
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 29
+    Lore:
+    - '&7Příliš horká!'
+  Stick:
+    Name: '&bKlacek'
+    Material: STICK
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 33
+    Lore:
+    - '&7Dřevěný klacek.'
+  Ball:
+    Name: '&bMíček'
+    Material: SLIME_BALL
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 34
+    Lore:
+    - '&7Odráží se a kutálí!'
+  Leash:
+    Name: '&bVodítko'
+    Material: LEAD
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 35
+    Lore:
+    - '&7Pojďme se venčit!'
+  Feather:
+    Name: '&bPírko'
+    Material: FEATHER
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 42
+    Lore:
+    - '&7Lechtivé!'
+  Frisbee:
+    Name: '&bFrisbee'
+    Material: MUSIC_DISC_13
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 43
+    Lore:
+    - '&7APORT!'
+  Sparring-Sword:
+    Name: '&bSparingový Meč'
+    Material: WOODEN_SWORD
+    Increment:
+      Dislike: 30
+      Like: 35
+      Really-Like: 40
+      Favourite: 50
+    Slot: 44
+    Lore:
+    - '&7En garde!'
