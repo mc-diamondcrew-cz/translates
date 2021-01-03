@@ -329,113 +329,113 @@ command:
       &cPotvrďte prosím, že chceze zaplatit &4{cost}$ &cjako kompenzaci nájemci &4{player} &cza jeho odstranění:
       [T]&aPotvrdit: &8[KLIK][H]&7Klikni pro potvrzení akce a platby.[/H][C]lands rent removetenant confirm[/C][/T]
     set:
-      land: '&cYou can''t set the whole land&4 {land} &cfor rent. &7You can either create sub areas to set it for rent or you sell (line = sell) it completely.'
-      already: '&cYou currently can''t set this area for rent again. &7The area&6 {area} &7is currently being rented by&3 {player}&7. It will expire in&5 {time}&7.'
-      sold: '&cYou can''t set a area, which has been sold, for rent. &7The area&6 {area} &7has been bought by player&3 {player}&7.'
-      success: '&7You set area&6 {area} &7for rent. The tenant will pay&c ${cost} &7each&5 {time}&7.'
+      land: '&cNemůžete nastavit celé území &4{land} §cna pronájem. &7Můžete vytvořit pod-oblasti, nebo území prodat.'
+      already: '&cAktuálně nemůžete nastavit tuto oblast na pronájem. &7Oblast &6{area} &7je aktuálně pronajmuta hráčem/kou &3{player}&7. &7Expiruje za &5{time}&7.'
+      sold: '&cNemůžete nastavit oblast, která byla prodána, nebo pronajmuta. &7Oblast &6{area} &7byla koupena hráčem/kou &3{player}&7.'
+      success: '&7Nastavili jste oblast &6{area} &7k pronájmu. Nájemce/kyně bude platit ${cost} &7každých &5{time}&7.'
       invalid: |
-        &7Your line format is invalid (line: {line})
-        &81. line:&7 Lands
-        &82. line:&7 rent &8[&7area&8]
-        &83. line:&7 TIME maxTime (not required)
-        &84. line:&7 costs (example: 5 = $5)
+        &7Váš formát řádků je neplatný (řádek: {line})
+        &81. řádek:&7 Území
+        &82. řádek:&7 rent &8[&7oblast&8]
+        &83. řádek:&7 TIME maxČas (nepotřebný)
+        &84. řádek:&7 cena (příklad: 5 = $5)
       info: |
         [NoPrefix]
-        &7---------<- &5&lRent Area &7->---------
-        [T]&7Land:&a {land} &8[&8CLICK&8][H]&7Click here to visualize this area.[/H][C]lands view here[/C][/T]
-        &7Area:&6 {area}
-        &7Cost:&c ${cost} &7each {time}
-        &8Max time: {max}
-        &7---------<- &5&lRent Area &r&7->---------
+        &7---------<- &5&lPronájem Oblasti &7->---------
+        [T]&7Území:&a {land} &8[&8KLIK&8][H]&7Klikněte pro zobrazení této oblasti.[/H][C]lands view here[/C][/T]
+        &7Oblast:&6 {area}
+        &7Cena:&c ${cost} &7každých {time}
+        &8Max. čas: {max}
+        &7---------<- &5&lPronájem Oblasti &r&7->---------
     rent:
-      trusted: '&cYou can''t rent area&4 {area} &cof land&4 {land}&c. &7You''re already trusted in this area.'
-      expire: '&cYou can''t add any more time to your rental of area&4 {area}&c. &7The land&2 {land} &7removed it for rental. It will expire in&5 {time}&7.'
-      max: '&cYou can''t add any more time to your rental of area&4 {area}&c. &7The land&2 {land} &7configured a maximum of&5 {max} &7in total.'
-      add: '&7You added&5 {add} &7to your rental of area&6 {area} &7for&c ${cost}&7. It will expire in&5 {time}&7.'
-      success: '&7You rented area&6 {area} &7of land&2 {land} &7for&c ${cost}&7. It will expire in&5 {time}&7.'
+      trusted: '&cNemůžete si pronajmout oblast &4{area} &cna území &4{land}&c. &7V této oblasti jste již důveryhodní.'
+      expire: '&cNemůžete přidat více času ke svému pronájmu oblasti &4{area}&c. &7Území &2{land} &7ji odebrala k pronájmu. Expiruje za &5{time}&7.'
+      max: '&cNemůžete přidat více času k pronájmu oblasti &4{area}&c. &7Území &2{land} &7nastavili maximum na &5{max}&7.'
+      add: '&7Přidali jste&5 {add} &7k pronájmu oblasti&6 {area} &7za&c ${cost}&7. Expiruje za&5 {time}&7.'
+      success: '&7Pronajmuli jste si oblast&6 {area} &7na území&2 {land} &7za&c ${cost}&7. Expiruje za&5 {time}&7.'
       info: |
         [NoPrefix]
-        &7---------<- &5&lRented Info &7->---------
-        [T]&7Land:&a {land} &8[&8CLICK&8][H]&7Click here to visualize this area.[/H][C]lands view here[/C][/T]
-        &7Area:&6 {area}
-        &7Tenant: {player}
-        &7Time left:&5 {left}
-        &8Rent: ${cost} each {time}
-        &7---------<- &5&lRented Info &r&7->---------
+        &7---------<- &5&lPronájem &7->---------
+        [T]&7Území:&a {land} &8[&8KLIK&8][H]&7Klikněte pro zobrazení této oblasti.[/H][C]lands view here[/C][/T]
+        &7Oblast:&6 {area}
+        &7Nájemce/kyně: {player}
+        &7Zbýva:&5 {left}
+        &8Nájem: ${cost} každých {time}
+        &7---------<- &5&lPronájem &r&7->---------
     cancel:
-      success: '&7You cancelled the rental of area&6 {area}&7. You no longer have access to this area.'
+      success: '&7Zrušili jste pronájem oblasti &6{area}&7. Nyní do této oblastni nemáte přístup.'
     remove:
       offer:
         success:
-          land: '&7Land&2 {land} &7is no longer able to be purchased.'
-          area: '&7Area&6 {area} &7of land&2 {land} &7is no longer able to be rented or purchased.'
+          land: '&7Území&2 {land} &7již nemůže být zakoupeno.'
+          area: '&7Oblast&6 {area} &7na území&2 {land} &7již nemůže být zakoupeno, nebo pronajmuto.'
       tenant:
-        success: '&7You removed the tenant&3 {player} &7from area&6 {area} &7of land&2 {land} &7and payed&c {cost}$ &7as compensation.'
+        success: '&7Odstranili jste nájemce/kyni&3 {player} &7z oblasti&6 {area} &7na území&2 {land} &7a zaplatili&c {cost}$ &7jako kompenzaci.'
   sell:
     sell:
-      rented: '&cYou can''t sell a area, which is being rented by a player. &7The area&6 {area} &7is currently being rented by&3 {player}&7. It will expire in&5 {time}&7.'
+      rented: '&cNemůžete prodat oblast, která je pronajmuta hráčem/kou. &7Oblast &6{area} &7je aktuálně pronajmuta hráčem/kou &3{player}&7. Expiruje za&5 {time}&7.'
       success:
-        area: '&7You set area&6 {area} &7for sale. Cost:&c ${cost}'
-        land: '&7You set the whole land&2 {land} &7for sale. Cost:&c ${cost}'
+        area: '&7Nastavili jste oblast&6 {area} &7na prodej. Cena:&c ${cost}'
+        land: '&7Nastavili jste celé území&2 {land} &7na prodej. Cena:&c ${cost}'
       invalid: |
-        &7Your line format is invalid (line: {line})
-        &81. line:&7 Lands
-        &82. line:&7 sell &8[&7area&8]
-        &83. line:&7 costs (example: 5 = $5)
+        &7Váš formát řádků je neplaný (řádek: {line})
+        &81. řádek:&7 Území
+        &82. řádek:&7 sell &8[&7oblast&8]
+        &83. řádek:&7 cena (příklad: 5 = $5)
     buy:
       success:
-        area: '&7You bought area&6 {area} &7of land&2 {land} &7for&c ${cost}&7.'
-        land: '&7You bought the land&2 {land} &7for&c ${cost}&7.'
+        area: '&7Zakoupili jste oblast&6 {area} &7na území&2 {land} &7za&c ${cost}&7.'
+        land: '&7Zakoupili jste území&2 {land} &7za&c ${cost}&7.'
       info:
         area: |
           [NoPrefix]
-          &7---------<- &5&lBuy Area &7->---------
-          [T]&7Land:&a {land} &8[&8CLICK&8][H]&7Click here to visualize this area.[/H][C]lands view here[/C][/T]
-          &7Area:&6 {area}
-          &7Cost:&c ${cost}
-          &7---------<- &5&lBuy Area &7->---------
+          &7---------<- &5&lZakoupení Oblasti &7->---------
+          [T]&7Území:&a {land} &8[&8KLIK&8][H]&7Klikněte pro zobrazení oblasti.[/H][C]lands view here[/C][/T]
+          &7Oblast:&6 {area}
+          &7Cena:&c ${cost}
+          &7---------<- &5&lZakoupení Oblasti &7->---------
         land: |
           [NoPrefix]
-          &7---------<- &5&lBuy Land &7->---------
-          [T]&7Land:&a {land} &8[&8CLICK&8][H]&7Click here to visualize this land.[/H][C]lands view[/C][/T]
-          &7Cost:&c ${cost}
-          &7---------<- &5&lBuy Land &7->---------
+          &7---------<- &5&lZakoupení Území &7->---------
+          [T]&7Území:&a {land} &8[&8KLIK&8][H]&7Klikněte pro zobrazení oblastí.[/H][C]lands view[/C][/T]
+          &7Cena:&c ${cost}
+          &7---------<- &5&lZakoupení Území &7->---------
     sold: |
       [NoPrefix]
-      &7---------<- &5&lArea Sold &7->---------
-      [T]&7Land:&a {land} &8[&8CLICK&8][H]&7Click here to visualize this area.[/H][C]lands view here[/C][/T]
-      &7Area:&6 {area}
-      &7Sold to&3 {player} &7for&c ${cost}&7.
-      &7---------<- &5&lArea Sold &7->---------
+      &7---------<- &5&lOblast Prodána &7->---------
+      [T]&7Území:&a {land} &8[&8KLIK&8][H]&7Klikněte pro zobrazení oblasti.[/H][C]lands view here[/C][/T]
+      &7Oblast:&6 {area}
+      &7Prodána hráči/ce&3 {player} &7za&c ${cost}&7.
+      &7---------<- &5&lOblast Prodána &7->---------
   general:
-    no-permission: '&cYou don''t have permission to do this. &8You need permission {permission}.'
-    land-not-exist: '&cThe land&2 {land} &cdoesn''t exist. &7There''s no land with this name.'
-    area-not-exist: '&cArea&4 {area} &cdoes not exist in land&4 {land}&c. &7You can create a new area in your land menu in the areas section. &7Překlep?'
-    land-not-member: '&cYou''re not trusted in land&4 {land}&c. &7Use &8/&3Lands menu &7to see the lands you''re a member of.'
-    no-edit-land: '&cYou haven''t selected your edit land yet. &7Use &8/&3Lands edit &8<&3území&8> &7to select it.'
-    name-exists: '&cThe name&4 {name} &cis already taken by another land or nation. &7You need to choose a different one.'
-    money-cost-bank: '&cYou don''t have enough to pay the cost. &7You need&c ${cost}&7. Deposit some money into your land bank: &8/&3Lands deposit {cost}'
-    money-cost: '&cYou don''t have enough to pay the cost. &7You need&c ${cost}&7.'
-    swear-word: '&cDetected a swear word. &7Please do not use mature language. Word:&c {word}'
-    action-cooldown: '&cYou can''t do this now. &7You need to wait&5 {time}&7. &8Bypass: {bypass}'
-    land-none: '&cYou''re not a member of a land. &7Use &8/&3Lands create &7to create one.'
-    land-no-own: '&cYou don''t own a land. &7Use &8/&3Lands create &7to create one.'
-    world-invalid: '&cYou can''t do this in your current world. &7An administrator needs to add world&3 {world} &7to the config first.'
-    wilderness: '&cThere''s no claimed land at your current position. &7Please go into your land first, in order to execute this action. &7You can use &8/&3Lands menu &7to see your lands.'
-    player-not-exist: '&cThere''s no player with the name&4 {player}&c. &7Překlep?'
-    player-offline: '&cThere''s currently no player with the name&4 {player} &conline. &7Překlep?'
-    player-self: '&cYou can''t do that with yourself. &7You''re funny. :)'
-    banks-disabled: '&7Banks were disabled by an administrator. &8They can enable it in the config.'
-    land-not-trusted: '&cPlayer&4 {player} &7isn''t part of this land &8(&7Land:&2 {land}&8)&7. You need to trust him first using &8/&3Lands trust&7.'
-    area-not-trusted: '&cYou can''t do that here. &7You''re not trusted in area&6 {area} &7of land&2 {land}&7.'
-    invalid-number: '&cYour input&4 {input} &cisn''t a number. &7The&3 {argument} &7argument needs to be a number.'
-    number: '&cYour input&4 {input} &cisn''t a number. &7The&3 {argument} &7argument needs to be a number.'
+    no-permission: '&cNemáte dostatečné pravomoce na tuto akci. &8Potřebujete {permission}.'
+    land-not-exist: '&cÚzemí&2 {land} &cneexistuje. &7Neexistuje území s tímto názvem.'
+    area-not-exist: '&cOblast&4 {area} &cneexistuje na území&4 {land}&c. &7Můžete vytvořit novou oblast v menu území v sekci selekci oblastí. &7Překlep?'
+    land-not-member: '&cNejste důvěryhodní na území&4 {land}&c. &7Použijte &8/&3Lands menu &7pro zobrazení území, kde jste důvěryhodní.'
+    no-edit-land: '&cJeště jste nevybrali území úpravy. &7Použijte &8/&3Lands edit &8<&3území&8> &7pro výběr.'
+    name-exists: '&cNázev&4 {name} &cje již zabrána jiným územím, nebo národem. &7Musíte zvolit jiný název.'
+    money-cost-bank: '&cNemáte dostatek financí. &7Potřebujete ${cost}&7. Vložte peníze do banky území: &8/&3Lands deposit {cost}'
+    money-cost: '&cNemáte dostatek financí. &7Potřebujete &c${cost}&7.'
+    swear-word: '&cDetekováno nepovolené slovo. &c{word}'
+    action-cooldown: '&cToto nyní nemůžete použít. &7Musíte počkat&5 {time}&7. &8Pravomoc: {bypass}'
+    land-none: '&cNejste členem území. &7Použijte &8/&3Lands create &7pro vytvoření.'
+    land-no-own: '&cNevlastníte žádné území. &7Použijte &8/&3Lands create &7pro vytvoření.'
+    world-invalid: '&cNemůžete použít tuto akci v tomto světě. &7Administrátor musí přidat svět &3{world}&7.'
+    wilderness: '&cNa Vaší pozici není žádné zabrané území. &7Můžetep oužít &8/&3Lands menu &7pro zobrazení území.'
+    player-not-exist: '&cNení zde žádný hráč/ka s jménem &4{player}&c. &7Překlep?'
+    player-offline: '&cNení zde žádný hráč/ka s jménem &4{player}&c. &7Překlep?'
+    player-self: '&cNa tuto akci potřebujete kamarády/ky. &7¯\_(ツ)_/¯'
+    banks-disabled: '&7Banky byly vypnuty Administrátorem.'
+    land-not-trusted: '&cHráč/ka&4 {player} &7není součástí území &8(&7Území:&2 {land}&8)&7. Nejdříve musí být důvěryhodní, použijte &8/&3Lands trust&7.'
+    area-not-trusted: '&cTuto akci zde nemůžete vykonat. &7Nejste důvěryhodní v oblasti&6 {area} &7na území&2 {land}&7.'
+    invalid-number: '&4{input} &cnení číslo. &7Argument&3 {argument} &7musí být číslo.'
+    number: '&4{input} &cnení číslo. &7Argument&3 {argument} &7musí být číslo.'
     name:
-      number: '&cNemůžete use numbers for this name. &7Please use only letters. Found number:&3 {invalid}'
-      character: '&cYou can''t use invalid characters for the name. &7Please use only letters and numbers. &7Found invalid character:&3 {invalid}'
-      color: '&cNemůžete use color codes for this name. &7Please remove any color codes from your input.'
-      length: '&cThis name is too long. &7Max length is&3 {max} &7characters &8(&7yours: {input}&8)&7. &8This includes color codes.'
-      empty: '&cThis name is invalid. &7You need to enter at least one character other than color codes.'
+      number: '&cNemůžete použít čísla pro tento název. &7Nalezeno číslo:&3 {invalid}'
+      character: '&cNemůžete používat neplatné znaky pro tento název. &7Nalezen neplatný znak:&3 {invalid}'
+      color: '&cNemůžete použít barvy pro tento název.'
+      length: '&cTento název je příliš dlouhý. &7Max. délka je&3 {max} &7znaků &8(&7Vaše: {input}&8)&7. &8Zahrnuje barevné kódy.'
+      empty: '&cToto jméno je neplatné.'
   help:
     header: '[NoPrefix][T]&7----------&6<<<<&7-[H]&7Click here to navigate to the previous page.[/H][C]{cmd} help {previous}[/C][/T] &2Lands Help &7Page&3 {page} &8/&3 {pages} [T]&7-&6>>>>&7----------[H]&7Click here to go to the next page.[/H][C]{cmd} help {next}[/C][/T]'
     footer: |
