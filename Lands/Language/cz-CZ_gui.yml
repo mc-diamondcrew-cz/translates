@@ -22,12 +22,12 @@
 #     size: 27
 #     s:
 #       close:
-#         name: '&cClose'
+#         name: '&cZavřít'
 #         lore:
-#         - '&7Close this menu.'
+#         - '&7Klikněte pro uzavření.'
 #         - ' '
-#         - '&8- &7You can open it again'
-#         - '  &7with &8/&3Lands menu&7.'
+#         - '&8- &7Můžete jej opět otevřít,'
+#         - '  &7pomocí &8/&3Lands menu&7.'
 #         material: 'RED_STAINED_GLASS_PANE'
 #         slot: 9
 # 
@@ -72,40 +72,40 @@
 
 
 general:
-  wYes: '&aYes'
-  wNo: '&cNo'
-  none: '&cNone'
-  now: '&aNow'
-  enabled: '&aEnabled'
-  disabled: '&cDisabled'
-  unlimited: '&aunlimited'
-  previous: '&8previous'
-  offline: '&cOffline'
-  all: '&aAll'
+  wYes: '&aAno'
+  wNo: '&cNe'
+  none: '&cŽádný'
+  now: '&aNyní'
+  enabled: '&aAktivní'
+  disabled: '&cNeaktivní'
+  unlimited: '&aneomezeno'
+  previous: '&8předchozí'
+  offline: '&cOfline'
+  all: '&aVšechno'
   inbox-filter:
-    members: '&eMembers'
-    economy: '&cEconomy'
-    war: '&4War'
+    members: '&eČlenové/ky'
+    economy: '&cEkonomika'
+    war: '&4Válka'
   war:
-    defenders: '&aDefenders'
-    attackers: '&cAttackers'
+    defenders: '&aObránci'
+    attackers: '&cÚtočníci'
     name:
-      land: '&2Land '
+      land: '&2Země '
 physical-Item:
   claim-block:
-    name: '&7Claimblock'
+    name: '&7Zabírací Kostka'
     lore:
-    - '&7You can claim a chunk'
-    - '&7by placing this block'
-    - '&7in the wilderness.'
+    - '&7Můžete zabrat území,'
+    - '&7pomocí položení této'
+    - '&7kostky do přírodu.'
     - ' '
-    - '&7Owner:&3 {owner}'
+    - '&7Majitel/ka:&3 {owner}'
     material: GRASS_BLOCK
   selection:
-    name: '&eClaim Tool'
+    name: '&eZabírací Pomůcka'
     lore:
-    - '&7Use this tool to create a'
-    - '&7selection and claim it:'
+    - '&7Použijte tuto pomůcku pro'
+    - '&7vytvoření selekce a zabrání:'
     - '&8/&3Lands claim'
     material: GOLDEN_HOE
 skull:
@@ -114,40 +114,40 @@ skull:
     sub: OAK_FENCE
 gui:
   main:
-    title: '&8Main Menu'
+    title: '&8Hlavní Menu'
     size: 27
     s:
       lands:
-        name: '&8> &2Lands'
+        name: '&8> &2Země'
         lore:
-        - '&7View all your lands.'
+        - '&7Zobrazení všech zemí.'
         - ' '
-        - '&8- &7This includes your own'
-        - '  &7lands and lands, in which'
-        - '  &7you''re just a member.'
+        - '&8- &7Toto obsahuje Vaše'
+        - '  &7země a ty, ve kterých'
+        - '  &7jste členem/kou.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
         slot: 11
       all-lands:
-        name: '&8> &9All Lands'
+        name: '&8> &9Všechny Země'
         lore:
-        - '&7View all created lands'
-        - '&7on this server.'
+        - '&7Zobrazení všech vytvořených'
+        - '&7zemí na serveru.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzljODg4MWU0MjkxNWE5ZDI5YmI2MWExNmZiMjZkMDU5OTEzMjA0ZDI2NWRmNWI0MzliM2Q3OTJhY2Q1NiJ9fX0=
         slot: 13
       invites:
-        name: '&8> &6Invites'
+        name: '&8> &6Pozvánky'
         lore:
-        - '&7View all your'
-        - '&7received invites.'
+        - '&7Zobrazení všech'
+        - '&7obdržených pozvánek.'
         material: WRITABLE_BOOK
         slot: 15
       close:
-        name: '&cClose'
+        name: '&cZavřít'
         lore:
-        - '&7Close this menu.'
+        - '&7Klikněte pro uzavření menu.'
         - ' '
-        - '&8- &7You can open it again'
-        - '  &7with &8/&3Lands menu main&7.'
+        - '&8- &7Můžete jej opět otevřít,'
+        - '  &7pomocí &8/&3Lands menu main&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 9
         enabled: true
@@ -158,48 +158,48 @@ gui:
         to: 27
     f:
       limitation:
-        name: '&8> &6Your Limitations'
+        name: '&8> &6Vaše Limitace'
         lore:
         - ' '
-        - '&7+ Create&3 {ownlands} &7lands.'
-        - '  &8lands.ownlands.NUMBER'
-        - '&7+ Claim&3 {chunks} &7chunks per land.'
-        - '  &8lands.chunks.NUMBER'
-        - '&7+ Support lands, in which you''re trusted,'
-        - '  &7with &3{support-chunks} &7chunks per land.'
-        - '  &8lands.chunks.support.NUMBER'
+        - '&7+ Vytvoření&3 {ownlands} &7zemí.'
+        - '  &8lands.ownlands.ČÍSLO'
+        - '&7+ Zabrání&3 {chunks} &7území.'
+        - '  &8lands.chunks.ČÍSLO'
+        - '&7+ Podpořte země, ve kterých jste důveryhodní,'
+        - '  &7pomocí &3{support-chunks} &7území.'
+        - '  &8lands.chunks.support.ČÍSLO'
         - ' '
-        - '&7+ Join&3 {lands} &7lands.'
-        - '  &8lands.lands.NUMBER'
-        - '&7+ Have&3 {members} &7members per land.'
-        - '  &8lands.members.NUMBER'
+        - '&7+ Připojte se k&3 {lands} &7zemím.'
+        - '  &8lands.lands.ČÍSLO'
+        - '&7+ Můžete mít&3 {members} &7členů.'
+        - '  &8lands.members.ČÍSLO'
         material: PLAYER_HEAD
         slot: 17
   player_lands:
-    title: '&8Your Lands'
+    title: '&8Vaše Země'
     size: 27
     s: {}
     f:
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 21
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 25
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
@@ -207,14 +207,13 @@ gui:
       object:
         name: '&2{land}'
         lore:
-        - '&7You''re trusted in this land.'
+        - '&7V této zemi jste důvěryhodní.'
         - ' '
-        - '&7Chunks:&3 {chunks} &7/&c {max-chunks}'
+        - '&7Území:&3 {chunks} &7/&c {max-chunks}'
         - ' '
-        - '&9RIGHT CLICK'
-        - '&7View some general'
-        - '&7information about this'
-        - '&7land.'
+        - '&9PRAVÉ KLIKNUTÍ'
+        - '&7Zobrazení základních'
+        - '&7informací o této zemi.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFiNDNiOGMzZDM0ZjEyNWU1YTNmOGI5MmNkNDNkZmQxNGM2MjQwMmMzMzI5ODQ2MWQ0ZDRkN2NlMmQzYWVhIn19fQ==
         from: 10
         to: 18
@@ -223,22 +222,21 @@ gui:
         lore:
         - '&7You own this land.'
         - ' '
-        - '&7Chunks:&3 {chunks} &7/&c {max-chunks}'
+        - '&7Území:&3 {chunks} &7/&c {max-chunks}'
         - ' '
-        - '&9RIGHT CLICK'
-        - '&7View some general'
-        - '&7information about this'
-        - '&7land.'
+        - '&9PRAVÉ KLIKNUTÍ'
+        - '&7Zobrazení základních'
+        - '&7informací o této zemi.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
         from: 10
         to: 18
       no-land:
-        name: '&cNo Lands yet'
+        name: '&cŽádné Země'
         lore:
-        - '&8- &7To create a land execute:'
+        - '&8- &7Pro vytvoření země, použijte:'
         - '  &8/&3Lands create &8<&3name&8>'
         - ' '
-        - '&8- &7Let other lands trust you:'
+        - '&8- &7Pro zdůveryhodnění hráče/ky, použijte:'
         - '  &8/&3Lands trust {player}'
         material: OAK_SIGN
         from: 10
@@ -257,139 +255,136 @@ gui:
     size: 45
     s:
       information:
-        name: '&6Information'
+        name: '&6Informace'
         lore:
-        - '&7In this line you can view'
-        - '&7some detailed information'
-        - '&7about your land. This helps'
-        - '&7to keep track of all events'
-        - '&7in your land.'
+        - '&7Na tomto řádků můžete vidět'
+        - '&7deatilní informce o Vaší zemi.'
+        - '&7Slouží k pomoci hlídat si všechny'
+        - '&7akce ve Vaší zemi.'
         - ' '
-        - '&7Click this item to teleport to'
-        - '&7the spawn.'
+        - '&7Klikněte pro teleportování na'
+        - '&7spawn země.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU3NDcwMTBkODRhYTU2NDgzYjc1ZjYyNDNkOTRmMzRjNTM0NjAzNTg0YjJjYzY4YTQ1YmYzNjU4NDAxMDVmZCJ9fX0=
         slot: 11
       trusted-players:
-        name: '&8> &6Trusted Players'
+        name: '&8> &6Důvěryhodní Hráči'
         lore:
-        - '&7Get a list of all trusted players,'
-        - '&7no matter in which areas they''re'
-        - '&7trusted.'
+        - '&7Získáte seznam všech důvěryhodných hráčů,'
+        - '&7bez jakékoli filtrace oblastí.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
         slot: 14
       invites:
-        name: '&8> &6Invites'
+        name: '&8> &6Pozvánky'
         lore:
-        - '&7Revoke dispatched invites'
-        - '&7or just view some information'
-        - '&7about them.'
+        - '&7Zrušte odesláné pozvánky, nebo'
+        - '&7se pouze podívejte na jejich'
+        - '&7informace.'
         material: WRITABLE_BOOK
         slot: 15
       management:
-        name: '&6Management'
+        name: '&6Správa'
         lore:
-        - '&7In this line you can manage your land.'
-        - '&7You can trust players, assign roles,'
-        - '&7edit land settings or set taxes.'
+        - '&7Na tomto rádků můžete spravovat svou zemi.'
+        - '&7Můžete zdůvěryhodnit hráče, přiřadit role,'
+        - '&7upravit nastavení a daně.'
         - ' '
-        - '&7Click this item to teleport to'
-        - '&7the spawn.'
+        - '&7Klikněte pro teleportování na'
+        - '&7spawn země.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRkNDliYWU5NWM3OTBjM2IxZmY1YjJmMDEwNTJhNzE0ZDYxODU0ODFkNWIxYzg1OTMwYjNmOTlkMjMyMTY3NCJ9fX0=
         slot: 29
       various:
-        name: '&8> &6Cosmetical Settings'
+        name: '&8> &6Kosmetické Nastavení'
         lore:
-        - '&7Edit the land name'
-        - '&7and enter message.'
+        - '&7Upravte název země'
+        - '&7a vložte zprávu.'
         material: BEACON
         slot: 35
     f:
       land-settings:
-        name: '&8> &6Land Settings'
+        name: '&8> &6Nastavení Území'
         lore:
-        - '&7Edit general settings'
-        - '&7of the area&6 {area}&7.'
+        - '&7Upravte základní nastavení'
+        - '&7oblasti&6 {area}&7.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
         slot: 31
       roles:
-        name: '&8> &6Roles'
+        name: '&8> &6Role'
         lore:
-        - '&7View roles of the'
-        - '&7area&6 {area}&7.'
+        - '&7Zobrazte role v'
+        - '&7oblasti&6 {area}&7.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
         slot: 32
       taxes:
-        name: '&8> &6Taxes'
+        name: '&8> &6Daně'
         lore:
-        - '&7View taxes of the'
-        - '&7area&6 {area}&7.'
+        - '&7Zobrazte daně v'
+        - '&7oblasti&6 {area}&7.'
         material: GOLD_INGOT
         slot: 33
       areas:
-        name: '&8> &6Areas'
+        name: '&8> &6Oblasti'
         lore:
-        - '&7View all areas of this land.'
-        - '&7You also can create new'
-        - '&7areas in this menu.'
+        - '&7Zobrazení všech oblastí této země.'
+        - '&7Můžete také vytvářet nové oblasti.'
         - ' '
-        - '&7Areas:&3 {areas} &7/&c {max-areas}'
-        - '&7Claims:&3 {chunks} &7/&c {max-chunks}'
+        - '&7Oblasti:&3 {areas} &7/&c {max-areas}'
+        - '&7Území:&3 {chunks} &7/&c {max-chunks}'
         material: OAK_FENCE
         slot: 13
       inbox:
-        name: '&8> &6Inbox &8(&7{amount}&8)'
+        name: '&8> &6Doručená Pošta &8(&7{amount}&8)'
         lore:
-        - '&7Click to open advanced view.'
+        - '&7Klikněte pro rozsáhlejší zobrazení.'
         - ' '
-        - '&7Received messages:'
+        - '&7Obdržené zprávy:'
         - '{inbox}'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJmM2ZjZGNjZmZkOTYzZTQzMzQ4MTgxMDhlMWU5YWUzYTgwNTY2ZDBkM2QyZDRhYjMwNTFhMmNkODExMzQ4YyJ9fX0=
         slot: 16
       stats:
-        name: '&8> &6Statistics'
+        name: '&8> &6Statistiky'
         lore:
-        - '&7Location: {11}, x={12}, z={13}'
-        - '&7Claims: {0} / {1}'
-        - '&7Members: {2} / {3}'
+        - '&7Lokace: {11}, x={12}, z={13}'
+        - '&7Území: {0} / {1}'
+        - '&7Členové/ky: {2} / {3}'
         - ' '
-        - '&7Economy'
-        - '&8- &7Land'
-        - '  &7Balance: ${4}'
-        - '  &7Next claim cost: ${5}'
-        - '  &7Upkeep of&c ${6} &7in:'
+        - '&7Finance'
+        - '&8- &7Země'
+        - '  &7Zůstatek: ${4}'
+        - '  &7Cena dalšího území: ${5}'
+        - '  &7Náklady na&c ${6} &7v:'
         - '  &7{7}'
         - ' '
-        - '&8- &4You'
-        - '  &7Balance: ${8}'
-        - '  &7Taxes of&c ${9} &7in:'
+        - '&8- &4Vy'
+        - '  &7Zůstatek: ${8}'
+        - '  &7Daně z&c ${9} &7v:'
         - '  &7{10}'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmNmYWZmYThjNmM3ZjYyNjIxNjgyZmU1NjcxMWRjM2I4OTQ0NjVmZGY3YTYyZjQzYjMxYTBkMzQwM2YzNGU3In19fQ==
         slot: 17
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 37
     a:
       failure_teleport_permission:
-        name: '&4Denied: &cPermission'
+        name: '&4Zamítnuto: &cPravomoce'
         lore:
-        - '&cYou''re not allowed to'
-        - '&cteleport to any land spawn.'
+        - '&cNemáte povolení na teleportaci'
+        - '&cdo lokace spawnu země.'
         - ' '
-        - '&8Permission:'
+        - '&8Pravomoc:'
         - '&8{permission}'
       failure_no-spawn:
-        name: '&4Failure: &cNo Spawn set'
+        name: '&4Chyba: &cSpawn Nenastaven'
         lore:
-        - '&7This land has no spawn'
-        - '&7set yet. They need to'
-        - '&7set a land spawn first:'
+        - '&7Tato země nemá nastavený spawn'
+        - '&7Nejdíříve musí nastavit lokaci'
+        - '&7sv jednom z území:'
         - ' '
-        - '&7Execute &8/&3Lands setspawn'
-        - '&7to set the lands spawn.'
+        - '&7Použijte &8/&3Lands setspawn'
+        - '&7pro nastavení spawnu.'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -404,46 +399,46 @@ gui:
         from: 30
         to: 30
   land_areas:
-    title: '&8Areas'
+    title: '&8Oblasti'
     size: 36
     s: {}
     f:
       create:
-        name: '&aCreate Area'
+        name: '&aVytvoření Oblasti'
         lore:
-        - '&7Create a new area for'
-        - '&7this land.'
+        - '&7Vytvoření nové oblasti'
+        - '&7pro tuto zemi.'
         - ' '
-        - '&7Available:&3 {areas} &8/&c {max}'
+        - '&7K dispozici:&3 {areas} &8/&c {max}'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjA1NmJjMTI0NGZjZmY5OTM0NGYxMmFiYTQyYWMyM2ZlZTZlZjZlMzM1MWQyN2QyNzNjMTU3MjUzMWYifX19
         slot: 32
       delete:
-        name: '&cDelete Area'
+        name: '&cOdstranění Oblasti'
         lore:
-        - '&7Delete a area of'
-        - '&7this land.'
+        - '&7Odstranění oblasti'
+        - '&7v této zemi.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
         slot: 33
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 30
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 35
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
@@ -451,51 +446,51 @@ gui:
       object:
         name: '&6{area}'
         lore:
-        - '&7Open the menu for'
-        - '&7this area.'
+        - '&7Otevření menu pro'
+        - '&7tuto oblast.'
         - ' '
-        - '&7Description:'
+        - '&7Popisek:'
         - '{description}'
         material: OAK_FENCE
         from: 10
         to: 27
       area-setup:
-        name: '&cSetup:&6 {area}'
+        name: '&cNastavení:&6 {area}'
         lore:
-        - '&7You haven''t assigned'
-        - '&7any land to this area yet.'
+        - '&7Nepřiřadili jste žádné území'
+        - '&7pro tuto oblast.'
         - ' '
-        - '&7Use &8/&3Lands selection'
-        - '&7to make a selection and then'
+        - '&7Použijte &8/&3Lands selection'
+        - '&7pro vytvoření selekce, poté'
         - '&8/&3Lands selection assign {area}'
-        - '&7to assign land to this area.'
+        - '&7pro přiřazení území této oblasti.'
         material: ACACIA_FENCE
         from: 10
         to: 27
     a:
       failure_rental:
-        name: '&4Failure: &cRental'
+        name: '&4Chyba: &cPronájem'
         lore:
-        - '&7You can''t edit this area'
-        - '&7while it is rented/sold.'
-        - '&7Tenant:&3 {player}'
+        - '&7Nemůžete upravit tuto oblasti,'
+        - '&7když je pronajmuta/prodána.'
+        - '&7Nájemce/kyně:&3 {player}'
       failure_untrusted:
-        name: '&4Denied: &cNot trusted'
+        name: '&4Zamítnuto: &cNedůvěryhodní'
         lore:
-        - '&cYou''re not allowed to'
-        - '&copen the menu for this area.'
+        - '&cNemáte povolení na otevření'
+        - '&cmenu pro tuto oblast.'
         - ' '
-        - '&8- &7You need to be trusted'
-        - '  &7in this area.'
-        - '&8- &7Contact the land owner'
-        - '  &7for help.'
+        - '&8- &7Musíte být důvěryhodní'
+        - '  &7v této oblasti.'
+        - '&8- &7Kontaktujte vůdce/kyni země'
+        - '  &7pro pomoc.'
       failure_max-areas:
-        name: '&4Failure: &cMax Areas'
+        name: '&4Cyhba: &cMax. Oblasti'
         lore:
-        - '&7This land reached their maximum'
-        - '&7amount of&3 {max} &7Areas.'
+        - '&7Tato země dosáhla maximálního'
+        - '&7počtu&3 {max} &7oblastí.'
         - ' '
-        - '&8Permission: lands.areas.NUMBER'
+        - '&8Pravomoc: lands.areas.ČÍSLO'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -506,56 +501,56 @@ gui:
         from: 29
         to: 36
   land_claims:
-    title: '&7{land} - Claims'
+    title: '&7{land} - Území'
     size: 36
     s: {}
     f:
       toggle:
-        name: '&7World:&3 {world}'
+        name: '&7Svět:&3 {world}'
         lore:
-        - '&7Click here to toggle'
-        - '&7the world.'
+        - '&7Klikněte pro zobrazení'
+        - '&7aktuálního světa.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzljODg4MWU0MjkxNWE5ZDI5YmI2MWExNmZiMjZkMDU5OTEzMjA0ZDI2NWRmNWI0MzliM2Q3OTJhY2Q1NiJ9fX0=
         slot: 32
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 30
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 34
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
     l:
       object:
-        name: '&6World: {world} X: {x} Z: {z}'
+        name: '&6Svět: {world} X: {x} Z: {z}'
         lore:
-        - '&7Claimed: {time} &7ago'
+        - '&7Zabráno: před {time}'
         - ' '
-        - '&7Click to teleport.'
+        - '&7Klikněte pro teleportaci.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
         from: 10
         to: 27
     a:
       failure_cooldown:
-        name: '&4Failure: &cCooldown'
+        name: '&4Chyba: &cPřebíjecí Doba'
         lore:
-        - '&7You need to wait another {time}'
-        - '&7before you can do this again.'
+        - '&7Musíte počkat dalších {time}'
+        - '&7před dalším použítím.'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -579,25 +574,25 @@ gui:
         material: HOPPER
         slot: 32
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 30
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 35
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
@@ -633,9 +628,9 @@ gui:
     size: 45
     f:
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 37
@@ -723,7 +718,7 @@ gui:
         - '&7in this area.'
         - ' '
         - '&8Flag: {flag}'
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -760,7 +755,7 @@ gui:
         - '&bLEFT CLICK'
         - '&7▲ Promote'
         - ' '
-        - '&9RIGHT CLICK'
+        - '&9PRAVÉ KLIKNUTÍ'
         - '&7▼ Demote'
         - ' '
         - '&7Middle click:'
@@ -778,7 +773,7 @@ gui:
         - '&7than yours or you''re a'
         - '&7member of this role.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
       noaccess_setrole:
         name: '&4Failure: &cNot permitted'
         lore:
@@ -791,7 +786,7 @@ gui:
         - '&7This land reached their maximum'
         - '&7amount of&3 {max} &7members.'
         - ' '
-        - '&8Permission: lands.members.NUMBER'
+        - '&8Pravomoc: lands.members.ČÍSLO'
     f:
       toggle:
         name: '&8> &6View only Area'
@@ -826,26 +821,26 @@ gui:
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
         slot: 33
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 29
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 35
     p:
@@ -862,25 +857,25 @@ gui:
     size: 36
     f:
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 30
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 34
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
@@ -961,9 +956,9 @@ gui:
         material: OAK_SIGN
         slot: 16
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
@@ -1002,24 +997,24 @@ gui:
         to: 18
     f:
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
         - '&7Current:&3 {current}'
         material: ARROW
         slot: 21
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
         - '&7Current:&3 {current}'
         material: ARROW
@@ -1047,7 +1042,7 @@ gui:
         - '&7This land reached the maximum'
         - '&7amount of&3 {max} &7roles.'
         - ' '
-        - '&8Permission: {permission}'
+        - '&8Pravomoc: {permission}'
       failure_priority:
         name: '&4Failure: &cRole Priority'
         lore:
@@ -1057,14 +1052,14 @@ gui:
         - '&7than yours or you''re a'
         - '&7member of this role.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
       failure_access:
         name: '&4Failure: &cNot allowed'
         lore:
         - '&7You''re not allowed to'
         - '&7edit roles in this area.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -1079,9 +1074,9 @@ gui:
     size: 36
     f:
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
@@ -1158,7 +1153,7 @@ gui:
         - '&7You''re not allowed to'
         - '&7edit roles in this area.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
       failure_priority:
         name: '&4Failure: &cRole Priority'
         lore:
@@ -1168,7 +1163,7 @@ gui:
         - '&7than yours or you''re a'
         - '&7member of this role.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -1196,26 +1191,26 @@ gui:
         to: 27
     f:
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 30
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 35
     p:
@@ -1233,25 +1228,25 @@ gui:
     s: {}
     f:
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 30
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 34
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
@@ -1636,7 +1631,7 @@ gui:
         - '&7You''re not allowed to'
         - '&7edit roles in this area.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
       failure_priority:
         name: '&4Failure: &cRole Priority'
         lore:
@@ -1646,7 +1641,7 @@ gui:
         - '&7than yours or you''re a'
         - '&7member of this role.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -1662,25 +1657,25 @@ gui:
     s: {}
     f:
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 21
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 25
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
@@ -1815,7 +1810,7 @@ gui:
         - '&7You''re not allowed to'
         - '&7edit this setting.'
         - ' '
-        - '&8Permission:'
+        - '&8Pravomoc:'
         - '&8{permission}'
       failure_priority:
         name: '&4Failure: &cRole Priority'
@@ -1826,14 +1821,14 @@ gui:
         - '&7than yours or you''re a'
         - '&7member of this role.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
       failure_access:
         name: '&4Failure: &cNot allowed'
         lore:
         - '&7You''re not allowed to'
         - '&7edit roles in this area.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -1903,9 +1898,9 @@ gui:
           value: 1.0
     f:
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
@@ -2003,25 +1998,25 @@ gui:
     s: {}
     f:
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 30
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 34
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
@@ -2097,7 +2092,7 @@ gui:
         - '&7amount of&3 {max} &7lands'
         - '&7you can be part of.'
         - ' '
-        - '&8Permission:'
+        - '&8Pravomoc:'
         - '&8{permission}'
       failure_inviteOwner:
         name: '&4Failure: &cInvite Owner'
@@ -2124,9 +2119,9 @@ gui:
     size: 27
     f:
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '&e{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
@@ -2173,19 +2168,19 @@ gui:
     size: 27
     s:
       close:
-        name: '&cClose'
+        name: '&cZavřít'
         lore:
-        - '&7Close this menu.'
+        - '&7Klikněte pro uzavření.'
         - ' '
-        - '&8- &7You can open it again'
-        - '  &7with &8/&3Lands info&7.'
+        - '&8- &7Můžete jej opět otevřít,'
+        - '  &7pomocí &8/&3Lands info&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 9
     f:
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '&e{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
@@ -2268,14 +2263,14 @@ gui:
         - '  &8> &3%owner% &8= &7Land owner'
         - '  &8> &3%player% &8= &7Entering player'
         - ' '
-        - '&9RIGHT CLICK'
+        - '&9PRAVÉ KLIKNUTÍ'
         - '&7Display title: {show}'
         material: OAK_SIGN
         slot: 7
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 1
@@ -2318,9 +2313,9 @@ gui:
         material: OAK_FENCE
         slot: 17
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
@@ -2336,107 +2331,106 @@ gui:
         from: 1
         to: 27
   global_lands:
-    title: '&8All Lands'
+    title: '&8Všechny Země'
     size: 54
     s:
       close:
-        name: '&cClose'
+        name: '&cZavřít'
         lore:
-        - '&7Close this menu.'
+        - '&7Klikněte pro uzavření.'
         - ' '
-        - '&8- &7You can open it again by'
-        - '  &7executing &8/&3Lands list&7.'
+        - '&8- &7Menu můžete opět otevřít,'
+        - '  &7pomocí &8/&3Lands list&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 46
     f:
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 46
       toggle-allowed:
-        name: '&6Show only public Lands?'
+        name: '&6Zobrazit pouze veřejné země?'
         lore:
-        - '&7Show only lands where you''re'
-        - '&7allowed to enter and teleport'
-        - '&7to the land spawn?'
+        - '&7Zobrazit pouze země, do kterých'
+        - '&7můžete normálně vejít a teleportovat'
+        - '&7se na jejich spawn?'
         - ' '
-        - '&7Click here to toggle this setting.'
-        - '&7Only public: {only-allowed}'
+        - '&7Klikněte pro přepnutí tohoto nastavení.'
+        - '&Pouze veřejné: {only-allowed}'
         material: HOPPER
         slot: 50
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 48
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 52
     l:
       object:
         name: '&2{land}'
         lore:
-        - '&bLEFT CLICK'
-        - '&7Teleport to the land spawn'
-        - '&7of this land.'
+        - '&bLEVÉ KLIKNUTÍ'
+        - '&7Telepotace na spawn'
+        - '&7této země.'
         - ' '
-        - '&9RIGHT CLICK'
-        - '&7Open the land information'
-        - '&7menu of this land.'
+        - '&9PRAVÉ KLIKNUTÍ'
+        - '&7Zobrazení informací'
+        - '&7o této zemi.'
         - ' '
-        - '&7Title:'
+        - '&7Titul:'
         - '&7{title}'
         material: PLAYER_HEAD
         from: 10
         to: 45
       no-land:
-        name: '&cNo Lands found'
+        name: '&cŽádné Země Nenalezeny'
         lore:
-        - '&7There aren''t any created lands,'
-        - '&7which match your filter.'
+        - '&7Nejsou zde vytvořené žándé země,'
+        - '&7s filtry, které jste zadali.'
         - ' '
-        - '&8- &7To create a land execute:'
+        - '&8- &7Pro vytvoření země, použijte:'
         - '  &8/&3Lands create &8<&3name&8>'
         material: PAPER
         from: 10
         to: 45
     a:
       failure_teleport_permission:
-        name: '&4Denied: &cPermission'
+        name: '&4Zatmínuto: &cPravomoce'
         lore:
-        - '&cYou''re not allowed to'
-        - '&cteleport to any land spawn.'
+        - '&cNemáte povolení na teleportaci'
+        - '&cdo jakéhokoli spawnu.'
         - ' '
-        - '&8Permission:'
+        - '&8Pravomoc:'
         - '&8{permission}'
       failure_no-spawn:
-        name: '&4Failure: &cNo Spawn set'
+        name: '&4Chyba: &cSpawn Nenastaven'
         lore:
-        - '&7This land has no spawn'
-        - '&7set yet. They need to'
-        - '&7set a land spawn first.'
+        - '&7Tato země nemá nastavený spawn.'
+        - '&7Nejdříve jej musí vytvořit.'
         - ' '
-        - '&8- &7They can execute'
-        - '  &8/&3Lands setspawn &7to'
-        - '  &7set the lands spawn.'
+        - '&8- &7Můžou použít přikaz'
+        - '  &8/&3Lands setspawn &7pro'
+        - '  &7nastavení spawnu země.'
       failure_teleport_cost:
-        name: '&4Denied: &cCosts'
+        name: '&4Zamítnuto: &cCena'
         lore:
-        - '&cYou can''t afford to'
-        - '&cteleport to this land spawn.'
+        - '&cNemůžete si dovolit teleportovat'
+        - '&cse na spawn této země.'
         - ' '
-        - '&7You need&c ${costs}&7.'
+        - '&7Potřebujete&c ${costs}&7.'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -2447,45 +2441,45 @@ gui:
         from: 36
         to: 54
   war-state:
-    title: '&8War'
+    title: '&8Válka'
     size: 27
     f:
       attackers:
-        name: '&8> &cAttackers'
+        name: '&8> &cÚtočníci'
         lore:
-        - '&7View all attacking lands'
-        - '&7of this war.'
+        - '&7Zobrazte všechny útočící'
+        - '&7země v této válce.'
         - ' '
-        - '&8- &7Information'
-        - '  &7Name: {attacker}'
-        - '  &7Players: {players}'
+        - '&8- &7Informace'
+        - '  &7Název: {attacker}'
+        - '  &7Členové/ky: {players}'
         - ' '
-        - '  &7Kills: {kills}'
-        - '  &7Deaths: {deaths}'
+        - '  &7Zabití: {kills}'
+        - '  &7Úmrtí: {deaths}'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTU0OTQ3ZGU3ZjUyNTk4MjU1ZDZhZmVlOWQ3N2JlZmFkOWI0ZjI0YzBjNDY2M2QyOGJjZGY4YTY0NTdmMzQifX19
         slot: 11
       defenders:
-        name: '&8> &aDefenders'
+        name: '&8> &aObránci'
         lore:
-        - '&7View all defending lands'
-        - '&7of this war.'
+        - '&7Zobrazte všechny bránící země'
+        - '&7této války.'
         - ' '
-        - '&8- &7Information'
-        - '  &7Name: {defender}'
-        - '  &7Players: {players}'
+        - '&8- &7Informace'
+        - '  &7Název: {defender}'
+        - '  &7Členové/ky: {players}'
         - ' '
-        - '  &7Kills: {kills}'
-        - '  &7Deaths: {deaths}'
+        - '  &7Zabití: {kills}'
+        - '  &7Úmrtí: {deaths}'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRkYmNiN2UxZmJlY2VhOWE3MzUwNDM2Y2JiZWEyYjQ5NmY3NGMyOTcyMDRmMWJiOWFjYzM4NzhkNTQyY2NiIn19fQ==
         slot: 13
       info_declaration:
-        name: '&8> &6Information'
+        name: '&8> &6Informace'
         lore:
-        - '&7The war starts in '
+        - '&7Válka započne za '
         - '&5~{time}'
         - ' '
-        - '&7The enemy can do these'
-        - '&7things in your land:'
+        - '&7Nepřítel má povolení na'
+        - '&7tyto akce ve Vaší zemi:'
         - ' '
         - '{settings}'
         material: IRON_SWORD
@@ -2493,108 +2487,106 @@ gui:
       info_war:
         name: '&8> &6Information'
         lore:
-        - '&7The war ends in '
+        - '&7Válka končí za '
         - '&5~{time}'
         - ' '
-        - '&7The enemy can do these'
-        - '&7things in your land:'
+        - '&7Nepřítel má povolení na'
+        - '&7tyto akce ve Vaší zemi:'
         - ' '
         - '{settings}'
         material: IRON_SWORD
         slot: 15
       tribute_attacker:
-        name: '&8> &6Tribute:&c ${tribute}'
+        name: '&8> &6Hold:&c ${tribute}'
         lore:
-        - '&7Change the tribute value'
-        - '&7for this war.'
+        - '&7Změnit nastavení hodnoty'
+        - '&7válečného holdu pro tuto válku.'
         - ' '
-        - '&7If the defenders surrender:'
-        - '&7Defenders need to pay&c ${tribute}'
-        - '&7to you. &7If the value equals 0, the'
-        - '&7defenders wont be able to surrender.'
+        - '&7Pokud obránci kapitulují:'
+        - '&7Obránci musí zaplatit&c ${tribute}'
+        - '&7jako hold. &7Pokud se hodnota rovná 0,'
+        - '&7možnost kapitulace není možná.'
         - ' '
-        - '&9RIGHT CLICK'
-        - '&7If the attackers want to'
-        - '&7surrender, they''ll need'
-        - '&7to pay&c ${tribute-att} &7to'
-        - '&7the defenders.'
+        - '&9PRAVÉ KLIKNUTÍ'
+        - '&7Pokud útočníci chtějí'
+        - '&7kapitulovat, budou muset'
+        - '&7zaplatit&c ${tribute-att}'
+        - '&7obráncům.'
         material: GOLD_INGOT
         slot: 17
       tribute_attacker_mutual:
-        name: '&8> &6Tribute:&c ${tribute}'
+        name: '&8> &6Hold:&c ${tribute}'
         lore:
-        - '&7Surrender as a attacker:'
-        - '&7Attackers need to pay&c ${tribute-att}'
-        - '&7to the defenders.'
+        - '&7Kapitulace jako útočníci:'
+        - '&7Útočníci musí zaplatit&c ${tribute-att}'
+        - '&7jako hold obráncům.'
         - ' '
-        - '&7If the defenders surrender:'
-        - '&7Defenders need to pay&c ${tribute}'
-        - '&7to you. &7If the value equals 0, the'
-        - '&7defenders wont be able to surrender.'
+        - '&7Pokud obránci kapitulují:'
+        - '&7Obránci musí zaplatit&c ${tribute}'
+        - '&7jako hold. &7Pokud se hodnota rovná 0,'
+        - '&7možnost kapitulace není možná.'
         material: GOLD_INGOT
         slot: 17
       tribute_defender:
         name: '&8> &6Surrender:&c ${tribute}'
         lore:
-        - '&7Click here to surrender in this'
-        - '&7war. The defenders will need'
-        - '&7to pay the tribute of&c {tribute}'
-        - '&7to the attackers.'
+        - '&7Klikněte pro kapitulaci v této'
+        - '&7válce. Obránci budou muset zaplatit'
+        - '&7hold útočníkům, ve výši&c ${tribute}'
         - ' '
-        - '&7If the value equals 0:'
-        - '&7That means that the attackers'
-        - '&7don''t accept a surrender.'
+        - '&7Pokud se hodnota rovná 0:'
+        - '&7Útočníci nedovolují kapitulaci.'
         material: GOLD_INGOT
         slot: 17
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
       close:
-        name: '&cClose'
+        name: '&cZavřít'
         lore:
-        - '&7Close this menu.'
+        - '&7Klikněte pro uzavření.'
         - ' '
-        - '&8- &7You can open it again by'
-        - '  &7executing &8/&3Wars menu&7.'
+        - '&8- &7Můžete jej otevřít znovu,'
+        - '  &7pomocí &8/&3Wars menu&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 9
     a:
       failure_permission:
-        name: '&4Failure: &cNo Access'
+        name: '&4Chyba: &cNedostatečný Přístup'
         lore:
-        - '&7You''re not allowed to'
-        - '&7do this for &8({object}&8)'
+        - '&7Nemáte povolení na  úskutečnění'
+        - '&7této akce pro &8({object}&8)'
         - ' '
-        - '&8Setting: {flag}'
-        - '&8Bypass: {bypass}'
+        - '&8Nastavení: {flag}'
+        - '&8Pravomoc: {bypass}'
       failure_surrender:
-        name: '&4Failure: &cSurrender rejected'
+        name: '&4Chyba: &cKapitulace Odmítnuta'
         lore:
-        - '&7The enemy does not allow'
-        - '&7you to surrender.'
+        - '&7Nepřítel Vám nedovoluje'
+        - '&7kapitulovat.'
         - ' '
-        - '&7That''s because they didn''t'
-        - '&7set a tribute. They can do that'
-        - '&7in their war menu.'
+        - '&7Z důvodu, že při nastavení nevybrali'
+        - '&7žádný válečný hold. Ten můžou nastavit'
+        - '&7ve svém válačném menu.'
       failure_attacker:
-        name: '&4Failure: &cNot allowed'
+        name: '&4Chyba: &cNepovolená Akce'
         lore:
-        - '&7Attackers are not allowed'
-        - '&7to surrender. Only defenders'
-        - '&7can surrender.'
+        - '&7Útočníci nemají povoleno'
+        - '&7kapitulovat. Pouze obránci'
+        - '&7mají toto privilegium.'
         - ' '
-        - '&8This has been configured'
-        - '&8in config.'
+        - '&8Můžete požádat administrátora'
+        - '&8o změnu.'
       failure_cost:
-        name: '&4Failure: &cNot enough Money'
+        name: '&4Chyba: &cNedostatek Financí'
         lore:
-        - '&7You &8({object}&8) &7have'
-        - '&7not enough money to pay the'
-        - '&7tribute of&c ${tribute}&7.'
+        - '&7Vy &8({object}&8)&7, nemáte'
+        - '&7dostatek finančních prostředků'
+        - '&7na vyplacení holdu&c ${tribute}&7.'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -2605,37 +2597,36 @@ gui:
     size: 36
     f:
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 30
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 34
     l:
       object:
         name: '&2{land}'
         lore:
-        - '&7Open the land information'
-        - '&7menu of this land.'
+        - '&7Otevřete informace o zemi.'
         - ' '
-        - '&7Total players:&3 {players}'
-        - '&7Title: {title}'
+        - '&7Členové/ky:&3 {players}'
+        - '&7Titul: {title}'
         material: PLAYER_HEAD
         from: 10
         to: 27
@@ -2649,144 +2640,142 @@ gui:
         from: 29
         to: 36
   war-declaration_tribute:
-    title: '&8Tribute'
+    title: '&8Válečný Hold'
     size: 27
     s:
       plus-1:
-        name: '&aAdd $1'
+        name: '&aPřidat $1'
         lore:
-        - '&7Add $1 to the'
-        - '&7tribute value.'
+        - '&7Přidání $1 do hodnoty'
+        - '&7válečného holdu.'
         material: GLOWSTONE_DUST
         slot: 11
         amount: 1
         data:
           value: 1.0
       plus-2:
-        name: '&aAdd $100'
+        name: '&aPřidat $100'
         lore:
-        - '&7Add $100 to the'
-        - '&7tribute value.'
+        - '&7Přidání $100 do hodnoty'
+        - '&7válečného holdu.'
         material: GLOWSTONE_DUST
         slot: 12
         data:
           value: 100.0
       plus-3:
-        name: '&aAdd $1000'
+        name: '&aPřidat $1000'
         lore:
-        - '&7Add $1000 to the'
-        - '&7tribute value.'
+        - '&7Přidání $1000 do hodnoty'
+        - '&7válečného holdu.'
         material: GLOWSTONE_DUST
         slot: 13
         data:
           value: 1000.0
       minus-3:
-        name: '&cRemove $1000'
+        name: '&cOdebrat $1000'
         lore:
-        - '&7Remove $1000 from'
-        - '&7the tribute value.'
+        - '&7Odebrat $1000 z hodnoty'
+        - '&7válečného holdu.'
         material: REDSTONE
         slot: 15
         data:
           value: 1000.0
       minus-2:
-        name: '&cRemove $100'
+        name: '&cOdebrat $100'
         lore:
-        - '&7Remove $100 from'
-        - '&7the tribute value.'
+        - '&7Odebrat $100 z hodnoty'
+        - '&7válečného holdu.'
         material: REDSTONE
         slot: 16
         data:
           value: 100.0
       minus-1:
-        name: '&cRemove $1'
+        name: '&cOdebrat $1'
         lore:
-        - '&7Remove $1 from'
-        - '&7the tribute value.'
+        - '&7Odebrat $1 z hodnoty'
+        - '&7válečného holdu.'
         material: REDSTONE
         slot: 17
         data:
           value: 1.0
     f:
       tribute:
-        name: '&7Tribute:&c ${tribute}'
+        name: '&7Hold:&c ${tribute}'
         lore:
-        - '&7The defending land will need to'
-        - '&7to pay this value in order to'
-        - '&7surrender.'
+        - '&7Země obránců bude muset zaplatit'
+        - '&7tento hold, pokud budou chtít'
+        - '&7kapitulovat.'
         - ' '
-        - '&8- &7The maximum tribute for '
-        - '  &7this land is&3 ${max}&7.'
-        - '  &7A server administrator can'
-        - '  &7change that in the config.'
+        - '&8- &7Maximální hold pro tuto zemi '
+        - '  &7aktuálně činí&3 ${max}&7.'
+        - '  &7Administrátor může tuto hodnotu'
+        - '  &7změnit v konfiguraci.'
         - ' '
-        - '&cNOTE: &7If you set the tribute'
-        - '&7value to 0, the defending land'
-        - '&7won''t be able to surrender.'
+        - '&cINFO: &7Pokud nastavíte hodnotu'
+        - '&7holdu na 0, obránci nebudou mít'
+        - '&7možnost kapitulace po započetí.'
         material: GOLD_INGOT
         slot: 14
       send-declaration:
-        name: '&aSend War Declaration'
+        name: '&aOdeslat Vyhlášení Války'
         lore:
-        - '&7Click here to send this'
-        - '&7war declaration to the'
-        - '&7enemy.'
+        - '&7Klikněte pro odeslání'
+        - '&7vyhlášení války nepříteli.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
         slot: 27
       abort-declaration:
-        name: '&cAbort War Declaration'
+        name: '&cZrušit Vyhlášení Války'
         lore:
-        - '&7Click here to abort this'
-        - '&7war declaration.'
+        - '&7Klikněte pro zrušení'
+        - '&7vyhlášení války.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
         slot: 19
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
     a:
       max-tribute:
-        name: '&4Max Value reached'
+        name: '&4Dosažena Maximální Hodnota'
         lore:
-        - '&7You can''t set the tribute'
-        - '&7value higher than&3 {max}&7.'
+        - '&7Nemůžete nastavit hold vyšší,'
+        - '&7než je&3 {max}&7.'
         - ' '
-        - '&8- &7You can ask an administrator'
-        - '  &7to change this.'
+        - '&8- &7Můžete požádat administrátora'
+        - '  &7o změnu.'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
         from: 1
         to: 27
   admin_wilderness:
-    title: '&8Wilderness Settings'
+    title: '&8Nastavení Přířody'
     size: 9
     s:
       player-settings:
-        name: '&8> &6Player Settings'
+        name: '&8> &6Hráčské Nastavení'
         lore:
-        - '&7Customize what players'
-        - '&7should be able to do'
-        - '&7in the wilderness.'
+        - '&7Nastavte, na co by hráči/ky měli'
+        - '&7mít pravomoce v přírodě.'
         slot: 3
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
       land-settings:
-        name: '&8> &6Land Settings'
+        name: '&8> &6Nastavení Země'
         lore:
-        - '&7Here you can edit general'
-        - '&7settings like mob spawning.'
+        - '&7Zde můžete upravovat základní'
+        - '&7nastavení jako spawn příšer.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
         slot: 7
       close:
-        name: '&cClose'
+        name: '&cZavřít'
         lore:
-        - '&7Close this menu.'
+        - '&7Klikněte pro uzavření.'
         - ' '
-        - '&8- &7You can open it again'
-        - '  &7with &8/&3Lands admin wilderness&7.'
+        - '&8- &7Můžete jej opět otevřít,'
+        - '  &7pomocí &8/&3Lands admin wilderness&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 9
         enabled: true
@@ -2796,43 +2785,42 @@ gui:
         from: 1
         to: 9
   admin_wilderness_player-settings:
-    title: '&8Player Settings'
+    title: '&8Hráčské Nastavení'
     size: 36
     l:
       object:
         name: '&6{setting}'
         lore:
-        - '&7Status: {enabled}'
+        - '&7Stav: {enabled}'
         - ' '
-        - '&7Click here to allow'
-        - '&7or disallow players to do'
-        - '&7this in the wilderness.'
+        - '&7Klikněte pro povolení, nebo'
+        - '&7zakázání akcí hráčům v přírodě.'
         - ' '
-        - '&8Bypass: {bypass}'
+        - '&8Pravomoc: {bypass}'
         material: STONE
         from: 10
         to: 27
     f:
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 30
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 35
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 28
@@ -2846,40 +2834,40 @@ gui:
         from: 27
         to: 36
   admin_wilderness_land-settings:
-    title: '&8Land Settings'
+    title: '&8Nastavení Země'
     size: 27
     l:
       object:
         name: '&6{setting}'
         lore:
-        - '&7Status: {enabled}'
+        - '&7Stav: {enabled}'
         - ' '
-        - '&7Click here to toggle'
-        - '&7this setting.'
+        - '&7Klikněte pro přepnutí'
+        - '&7tohoto nastavení.'
         material: STONE
         from: 10
         to: 18
     f:
       page_previous:
-        name: '&9Previous Page'
+        name: '&9Předchozí Strana'
         lore:
-        - '&7Go to previous page:&9 {previous}'
+        - '&7Přejděte na předchozí stránku:&9 {previous}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 21
       page_next:
-        name: '&aNext Page'
+        name: '&aDalší Strana'
         lore:
-        - '&7Go to next page:&9 {next}'
+        - '&7Přejděte na další stránku:&9 {next}'
         - ' '
-        - '&8- &7Current:&3 {current}'
+        - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 25
       back:
-        name: '&cBack'
+        name: '&cZpět'
         lore:
-        - '&7Go back to'
+        - '&7Jít zpět na'
         - '{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
