@@ -1,0 +1,683 @@
+{
+  "useCreditsForUpgradePricing": false,
+  "upgrades": {
+    "DOUBLE_TALL": [
+      {
+        "enabled": true,
+        "name": "CACTUS",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 0.25,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 0.4,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 0.5,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 0.8,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 1.0,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "CACTUS",
+          "name": "&2Vylepšení kaktusů",
+          "lore": [
+            "&7Šance na růst &2dvou&7 blocků.",
+            "&7Úroveň: &2&l{level}",
+            "&7Cena vylepšení: &2&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Šance na růst &2dvou&7 blocků.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "CACTUS"
+      },
+      {
+        "enabled": true,
+        "name": "SUGARCANE",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 0.25,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 0.4,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 0.5,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 0.8,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 1.0,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "SUGAR_CANE",
+          "name": "&aVylepšení sugar canu",
+          "lore": [
+            "&7Šance na růst &2dvou&7 blocků.",
+            "&7Úroveň: &a&l{level}",
+            "&7Cena vylepšení: &a&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Šance na růst &2dvou&7 blocků.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "SUGAR_CANE"
+      }
+    ],
+    "SPECIAL": [
+      {
+        "enabled": true,
+        "name": "FACTION_POWER",
+        "scope": "GLOBAL",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 5.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 10.0,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 12.5,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 15.0,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 20.0,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "GHAST_TEAR",
+          "name": "&bVylepšení Síly",
+          "lore": [
+            "&7Vylepšená &bextra&7 síla Frakčních členů.",
+            "&7Úroveň: &b&l{level}",
+            "&7Cena vylepšení: &b&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Vylepšená &bextra&7 síla Frakčních členů.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "INVALID_PARAMETER"
+      },
+      {
+        "enabled": true,
+        "name": "WHEAT_INSTANT_GROWTH",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 0.25,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 0.4,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 0.5,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 0.8,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 1.0,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "WHEAT",
+          "name": "&eRůst pšenice",
+          "lore": [
+            "&7Šance &einstantního&7 růstu.",
+            "&7Úroveň: &e&l{level}",
+            "&7Cena vylepšení: &e&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Šance &einstantního&7 růstu.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "INVALID_PARAMETER"
+      },
+      {
+        "enabled": true,
+        "name": "FACTION_MEMBERS",
+        "scope": "GLOBAL",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 5.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 5.0,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 5.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 5.0,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 5.0,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "PLAYER_HEAD",
+          "name": "&aVylepšení členů",
+          "lore": [
+            "&7Větší &amaximální&7 počet členu.",
+            "&7Úroveň: &a&l{level}",
+            "&7Cena vylepšení: &a&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Větší &amaximální&7 počet členu.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "INVALID_PARAMETER"
+      },
+      {
+        "enabled": true,
+        "name": "FACTION_WARPS",
+        "scope": "GLOBAL",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 1.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 1.0,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 1.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 2.0,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 5.0,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "ENDER_EYE",
+          "name": "&6Vylepšení warpů",
+          "lore": [
+            "&7Větší &6maximální počet&7 Frakčních warpů.",
+            "&7Úroveň: &6&l{level}",
+            "&7Cena vylepšení: &6&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Větší &6maximální počet&7 Frakčních warpů.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "INVALID_PARAMETER"
+      },
+      {
+        "enabled": true,
+        "name": "ENEMY",
+        "scope": "GLOBAL",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 1.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 1.0,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 1.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 2.0,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 5.0,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "BLAZE_POWDER",
+          "name": "&cVylepšení nepřátel",
+          "lore": [
+            "&7Větší &cmaximální počet&7 nepřátelských Frakcí.",
+            "&7Úroveň: &c&l{level}",
+            "&7Cena vylepšení: &c&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Větší &cmaximální počet&7 nepřátelských Frakcí.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "INVALID_PARAMETER"
+      },
+      {
+        "enabled": true,
+        "name": "ALLY",
+        "scope": "GLOBAL",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 1.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 1.0,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 1.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 2.0,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 5.0,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "PINK_TULIP",
+          "name": "&dVylepšení spojenců",
+          "lore": [
+            "&7Větší &dmaximální počet&7 spojeneckých Frakcí.",
+            "&7Úroveň: &d&l{level}",
+            "&7Cena vylepšení: &d&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Větší &dmaximální počet&7 spojeneckých Frakcí.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "INVALID_PARAMETER"
+      },
+      {
+        "enabled": true,
+        "name": "TRUCE",
+        "scope": "GLOBAL",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 1.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 1.0,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 1.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 2.0,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 5.0,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "ALLIUM",
+          "name": "&5Vylepšení příměří",
+          "lore": [
+            "&7Větší &5maximální počet&7 Frakcí s příměřím.",
+            "&7Úroveň: &5&l{level}",
+            "&7Cena vylepšení: &5&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Větší &5maximální počet&7 Frakcí s příměřím.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "INVALID_PARAMETER"
+      },
+      {
+        "enabled": true,
+        "name": "MOB_EXP",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 1.2,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 1.4,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 1.6,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 2.0,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 2.5,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "EXPERIENCE_BOTTLE",
+          "name": "&aVylepšení zkušeností z příšer",
+          "lore": [
+            "&7Více &azkušeností z príšer&7.",
+            "&7Úroveň: &5&l{level}",
+            "&7Cena vylepšení: &c&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Více &azkušeností z príšer&7.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "INVALID_PARAMETER"
+      }
+    ],
+    "MOB_DROP_MULTIPLIER": [
+      {
+        "enabled": true,
+        "name": "SKELETON",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 2.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 2.5,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 3.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 3.25,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 3.5,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "BONE",
+          "name": "&fVylepšení skeletonů",
+          "lore": [
+            "&7Šance na vypadnutí &fextra&7 předmětů.",
+            "&7Úroveň: &f&l{level}",
+            "&7Cena vylepšení: &f&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Šance na vypadnutí &fextra&7 předmětů.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "SKELETON"
+      },
+      {
+        "enabled": true,
+        "name": "BLAZE",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 2.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 2.5,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 3.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 3.25,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 3.5,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "BLAZE_POWDER",
+          "name": "&6Vylepšení blazů",
+          "lore": [
+            "&7Šance na vypadnutí &fextra&7 předmětů.",
+            "&7Úroveň: &6&l{level}",
+            "&7Cena vylepšení: &6&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Šance na vypadnutí &fextra&7 předmětů.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "BLAZE"
+      },
+      {
+        "enabled": true,
+        "name": "CREEPER",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 2.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 2.5,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 3.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 3.25,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 3.5,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "GUNPOWDER",
+          "name": "&aVylepšení creeperů",
+          "lore": [
+            "&7Šance na vypadnutí &fextra&7 předmětů.",
+            "&7Úroveň: &a&l{level}",
+            "&7Cena vylepšení: &a&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Šance na vypadnutí &fextra&7 předmětů.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "CREEPER"
+      },
+      {
+        "enabled": true,
+        "name": "ZOMBIE",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 2.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 2.5,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 3.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 3.25,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 3.5,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "ROTTEN_FLESH",
+          "name": "&2Vylepšení zombie",
+          "lore": [
+            "&7Šance na vypadnutí &fextra&7 předmětů.",
+            "&7Úroveň: &2&l{level}",
+            "&7Cena vylepšení: &2&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Šance na vypadnutí &fextra&7 předmětů.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "ZOMBIE"
+      },
+      {
+        "enabled": true,
+        "name": "IRON_GOLEM",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 2.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 2.5,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 3.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 3.25,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 3.5,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "IRON_INGOT",
+          "name": "&4Vylepšení Iron Golemů",
+          "lore": [
+            "&7Šance na vypadnutí &fextra&7 předmětů.",
+            "&7Úroveň: &4&l{level}",
+            "&7Cena vylepšení: &4&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Šance na vypadnutí &fextra&7 předmětů.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "IRON_GOLEM"
+      },
+      {
+        "enabled": true,
+        "name": "ZOMBIE_PIGMAN",
+        "scope": "TERRITORY",
+        "costLevel": {
+          "1": {
+            "upgradeParam": 2.0,
+            "price": 10000.0
+          },
+          "2": {
+            "upgradeParam": 2.5,
+            "price": 50000.0
+          },
+          "3": {
+            "upgradeParam": 3.0,
+            "price": 100000.0
+          },
+          "4": {
+            "upgradeParam": 3.25,
+            "price": 500000.0
+          },
+          "5": {
+            "upgradeParam": 3.5,
+            "price": 1000000.0
+          }
+        },
+        "upgradeItem": {
+          "material": "GOLD_NUGGET",
+          "name": "&eVylepšení zombie pigmanů",
+          "lore": [
+            "&7Šance na vypadnutí &fextra&7 předmětů.",
+            "&7Úroveň: &e&l{level}",
+            "&7Cena vylepšení: &e&l${cost}"
+          ],
+          "amt": 1
+        },
+        "upgradeMaxLevelLore": [
+          "&7Šance na vypadnutí &fextra&7 předmětů.",
+          "&c&lMAXIMÁLNÍ ÚROVEŇ"
+        ],
+        "upgradeParam": "PIG_ZOMBIE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1560 @@
+{
+  "mainMenuTitle": "&aPravomoce",
+  "mainMenuRows": 4,
+  "mainMenuBackgroundItem": {
+    "material": "BLACK_STAINED_GLASS_PANE",
+    "name": "&c",
+    "lore": [],
+    "amt": 1
+  },
+  "mainMenuRelationItems": {
+    "NEUTRAL": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 2
+      },
+      "displayItem": {
+        "material": "WHITE_TULIP",
+        "name": "&7Upravení pravomocí pro &fneutrální&7 Frakce.",
+        "lore": [
+          "&7Upraví pravomoce pro všechny &fneutralní&7 Frakce.",
+          "&7Toto je výchozí vztah s Frakcemi."
+        ],
+        "amt": 1
+      }
+    },
+    "ENEMY": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 3
+      },
+      "displayItem": {
+        "material": "BLAZE_POWDER",
+        "name": "&7Upravení pravomocí pro &cnepřátelské&7 Frakce.",
+        "lore": [
+          "&7Upraví pravomoce pro všechny &cnepřátelské&7 Frakce."
+        ],
+        "amt": 1
+      }
+    },
+    "ALLY": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 5
+      },
+      "displayItem": {
+        "material": "PINK_TULIP",
+        "name": "&7Upravení pravomocí pro &dalianční&7 Frakce.",
+        "lore": [
+          "&7Upraví pravomoce pro všechny &dalianční&7 Frakce."
+        ],
+        "amt": 1
+      }
+    },
+    "TRUCE": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 6
+      },
+      "displayItem": {
+        "material": "ALLIUM",
+        "name": "&7Upravení pravomocí pro Frakce s &5příměřím§7.",
+        "lore": [
+          "&7Upraví pravomoce pro všechny Frakce s &5příměřím§7."
+        ],
+        "amt": 1
+      }
+    }
+  },
+  "mainMenuRoleInterfaceItem": {
+    "hideItem": false,
+    "name": "&7{role-tag}",
+    "lore": [
+      "&7Upravení pravomocí pro {role-tag}."
+    ]
+  },
+  "mainMenuPreviousPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 2,
+      "column": 1
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Předchozí strana",
+      "lore": [
+        "&7Zobrazení rolí na předchozí straně."
+      ],
+      "amt": 1
+    }
+  },
+  "mainMenuNextPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 2,
+      "column": 7
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Další strana",
+      "lore": [
+        "&7Zobrazení rolí na další straně."
+      ],
+      "amt": 1
+    }
+  },
+  "roleItemsPerPage": 3,
+  "roleItemsStartCoordinate": {
+    "row": 2,
+    "column": 3
+  },
+  "hurtPlayerActionIcon": "IRON_SWORD",
+  "hurtMobActionIcon": "BONE",
+  "buttonActionIcon": "STONE_BUTTON",
+  "leverActionIcon": "LEVER",
+  "pressurePlaceActionIcon": "STONE_PRESSURE_PLATE",
+  "fenceGateActionIcon": "OAK_FENCE_GATE",
+  "trapdoorActionIcon": "OAK_TRAPDOOR",
+  "hookActionIcon": "TRIPWIRE_HOOK",
+  "hopperActionIcon": "HOPPER",
+  "lecternActionIcon": "BOOKSHELF",
+  "comparatorActionIcon": "COMPARATOR",
+  "repeaterActionIcon": "REPEATER",
+  "dispenserActionIcon": "DISPENSER",
+  "doorActionIcon": "OAK_DOOR",
+  "chestActionIcon": "CHEST",
+  "barrelActionIcon": "CHEST",
+  "enderChestActionIcon": "ENDER_CHEST",
+  "anvilActionIcon": "ANVIL",
+  "brewingStandActionIcon": "BREWING_STAND",
+  "enchantingTableActionIcon": "ENCHANTING_TABLE",
+  "furnanceActionIcon": "FURNACE",
+  "dropperActionIcon": "DROPPER",
+  "cauldronActionIcon": "CAULDRON",
+  "spawnEggActionIcon": "EGG",
+  "breakBlockActionIcon": "DIAMOND_PICKAXE",
+  "placeBlockActionIcon": "OAK_PLANKS",
+  "emptyBucketActionIcon": "BUCKET",
+  "fillBucketActionIcon": "WATER_BUCKET",
+  "blackListedBlocksActionIcon": "BEDROCK",
+  "useEntityActionIcon": "CREEPER_SPAWN_EGG",
+  "trampleSoilActionIcon": "LEATHER_BOOTS",
+  "kickActionIcon": "LEATHER_BOOTS",
+  "disbandActionIcon": "TNT",
+  "inviteActionIcon": "WRITABLE_BOOK",
+  "deInviteActionIcon": "WRITTEN_BOOK",
+  "demoteActionIcon": "IRON_BARS",
+  "prefixActionIcon": "CYAN_DYE",
+  "renameActionIcon": "NAME_TAG",
+  "unClaimAllActionIcon": "MYCELIUM",
+  "changeDescriptionActionIcon": "GREEN_DYE",
+  "flyActionIcon": "FEATHER",
+  "homeActionIcon": "COMPASS",
+  "setHomeActionIcon": "RED_BED",
+  "claimActionIcon": "GRASS_BLOCK",
+  "unClaimActionIcon": "COARSE_DIRT",
+  "warpActionIcon": "ENDER_PEARL",
+  "setWarpActionIcon": "BEACON",
+  "delWarpActionIcon": "FIRE_CHARGE",
+  "viewWarpPasswordIcon": "ENDER_EYE",
+  "relationActionIcon": "ARROW",
+  "promoteActionIcon": "LADDER",
+  "openActionIcon": "CLOCK",
+  "paypalActionIcon": "GOLD_INGOT",
+  "discordActionIcon": "DIAMOND",
+  "bankWithdrawIcon": "SUNFLOWER",
+  "bankDepositIcon": "FEATHER",
+  "bankPayIcon": "GOLD_NUGGET",
+  "bankLogsIcon": "PAPER",
+  "altsInviteIcon": "PLAYER_HEAD",
+  "altsKickIcon": "WOODEN_SWORD",
+  "altsRevokeIcon": "BARRIER",
+  "altsOpenIcon": "OAK_DOOR",
+  "altsCloseIcon": "IRON_DOOR",
+  "altsInvitesIcon": "MAP",
+  "altsListIcon": "FILLED_MAP",
+  "permsMenuStatusPlaceholderLocked": "&4&lUZAMČENO SERVEREM",
+  "permsMenuStatusPlaceholderTrue": "&a&lPOVOLENO",
+  "permsMenuStatusPlaceholderFalse": "&c&lZAKÁZÁNO",
+  "relationMenuTitle": "{relation} pravomoce.",
+  "relationMenuRows": 5,
+  "relationMenuBackgroundItem": {
+    "material": "BLACK_STAINED_GLASS_PANE",
+    "name": "&c",
+    "lore": [],
+    "amt": 1
+  },
+  "relationMenuSpecialItems": [
+    {
+      "commandsToRunAsPlayer": [
+        "/f perms"
+      ],
+      "item": {
+        "hide": false,
+        "coordinate": {
+          "row": 4,
+          "column": 8
+        },
+        "displayItem": {
+          "material": "OAK_DOOR",
+          "name": "&cZpět",
+          "lore": [
+            "&7Klikněte pro přechod do &chlavního menu&7."
+          ],
+          "amt": 1
+        }
+      }
+    }
+  ],
+  "relationMenuItems": {
+    "DOOR": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 4
+      },
+      "displayItem": {
+        "material": "OAK_DOOR",
+        "name": "&aUse Doors",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "FENCE_GATE": {
+      "hide": false,
+      "coordinate": {
+        "row": 0,
+        "column": 5
+      },
+      "displayItem": {
+        "material": "OAK_FENCE_GATE",
+        "name": "&aUse Fence Gates",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ENDER_CHEST": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 7
+      },
+      "displayItem": {
+        "material": "ENDER_CHEST",
+        "name": "&aOpen Enderchest",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "HOPPER": {
+      "hide": false,
+      "coordinate": {
+        "row": 0,
+        "column": 8
+      },
+      "displayItem": {
+        "material": "HOPPER",
+        "name": "&aOpen Hoppers",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "COMPARATOR": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 1
+      },
+      "displayItem": {
+        "material": "COMPARATOR",
+        "name": "&aUse Comparators",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "CHEST": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 5
+      },
+      "displayItem": {
+        "material": "CHEST",
+        "name": "&aOpen Chests",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "PRESSURE_PLATE": {
+      "hide": false,
+      "coordinate": {
+        "row": 0,
+        "column": 4
+      },
+      "displayItem": {
+        "material": "STONE_PRESSURE_PLATE",
+        "name": "&aStand On Pressure Plates",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "PLACE_BLOCK": {
+      "hide": false,
+      "coordinate": {
+        "row": 2,
+        "column": 7
+      },
+      "displayItem": {
+        "material": "OAK_PLANKS",
+        "name": "&aPlace Blocks",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "DISPENSER": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 3
+      },
+      "displayItem": {
+        "material": "DISPENSER",
+        "name": "&aUse Dispensers",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "DROPPER": {
+      "hide": false,
+      "coordinate": {
+        "row": 2,
+        "column": 3
+      },
+      "displayItem": {
+        "material": "DROPPER",
+        "name": "&aUse Dropper",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ANVIL": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 8
+      },
+      "displayItem": {
+        "material": "ANVIL",
+        "name": "&aUse Anvil",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ENCHANTING_TABLE": {
+      "hide": false,
+      "coordinate": {
+        "row": 2,
+        "column": 1
+      },
+      "displayItem": {
+        "material": "ENCHANTING_TABLE",
+        "name": "&aUse Enchanting Table",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BUTTON": {
+      "hide": false,
+      "coordinate": {
+        "row": 0,
+        "column": 2
+      },
+      "displayItem": {
+        "material": "STONE_BUTTON",
+        "name": "&aPush Buttons",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "FURNACE": {
+      "hide": false,
+      "coordinate": {
+        "row": 2,
+        "column": 2
+      },
+      "displayItem": {
+        "material": "FURNACE",
+        "name": "&aPoužití Pece",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BREWING_STAND": {
+      "hide": false,
+      "coordinate": {
+        "row": 2,
+        "column": 0
+      },
+      "displayItem": {
+        "material": "BREWING_STAND",
+        "name": "&aUse Brewing Stand",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "SPAWN_EGG": {
+      "hide": false,
+      "coordinate": {
+        "row": 2,
+        "column": 5
+      },
+      "displayItem": {
+        "material": "EGG",
+        "name": "&aUse Spawn Eggs",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "HURT_MOB": {
+      "hide": false,
+      "coordinate": {
+        "row": 0,
+        "column": 1
+      },
+      "displayItem": {
+        "material": "BONE",
+        "name": "&aHurt Mobs",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BARREL": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 6
+      },
+      "displayItem": {
+        "material": "CHEST",
+        "name": "&aOpen Barrels",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BREAK_BLOCK": {
+      "hide": false,
+      "coordinate": {
+        "row": 2,
+        "column": 6
+      },
+      "displayItem": {
+        "material": "DIAMOND_PICKAXE",
+        "name": "&aBreak Blocks",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "TRAMPLE_SOIL": {
+      "hide": false,
+      "coordinate": {
+        "row": 3,
+        "column": 3
+      },
+      "displayItem": {
+        "material": "LEATHER_BOOTS",
+        "name": "&aTrample Soil",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "CAULDRON": {
+      "hide": false,
+      "coordinate": {
+        "row": 2,
+        "column": 4
+      },
+      "displayItem": {
+        "material": "CAULDRON",
+        "name": "&aUse Cauldron",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "EMPTY_BUCKET": {
+      "hide": false,
+      "coordinate": {
+        "row": 2,
+        "column": 8
+      },
+      "displayItem": {
+        "material": "BUCKET",
+        "name": "&aEmpty Buckets",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "HOOK": {
+      "hide": false,
+      "coordinate": {
+        "row": 0,
+        "column": 7
+      },
+      "displayItem": {
+        "material": "TRIPWIRE_HOOK",
+        "name": "&aUse Hooks",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "FILL_BUCKET": {
+      "hide": false,
+      "coordinate": {
+        "row": 3,
+        "column": 0
+      },
+      "displayItem": {
+        "material": "WATER_BUCKET",
+        "name": "&aFill Buckets",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "LECTERN": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 0
+      },
+      "displayItem": {
+        "material": "BOOKSHELF",
+        "name": "&aUse Lecterns",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "USE_BLACKLISTED_BLOCKS": {
+      "hide": false,
+      "coordinate": {
+        "row": 3,
+        "column": 1
+      },
+      "displayItem": {
+        "material": "BEDROCK",
+        "name": "&aUse Blacklisted Blocks",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "TRAPDOOR": {
+      "hide": false,
+      "coordinate": {
+        "row": 0,
+        "column": 6
+      },
+      "displayItem": {
+        "material": "OAK_TRAPDOOR",
+        "name": "&aUse Trapdoors",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "HURT_PLAYER": {
+      "hide": false,
+      "coordinate": {
+        "row": 0,
+        "column": 0
+      },
+      "displayItem": {
+        "material": "IRON_SWORD",
+        "name": "&aHurt Players",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "USE_ENTITY": {
+      "hide": false,
+      "coordinate": {
+        "row": 3,
+        "column": 2
+      },
+      "displayItem": {
+        "material": "CREEPER_SPAWN_EGG",
+        "name": "&aUse Entity",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "REPEATER": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 2
+      },
+      "displayItem": {
+        "material": "REPEATER",
+        "name": "&aUse Repeaters",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "LEVER": {
+      "hide": false,
+      "coordinate": {
+        "row": 0,
+        "column": 3
+      },
+      "displayItem": {
+        "material": "LEVER",
+        "name": "&aFlip Levers",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    }
+  },
+  "roleMenuTitle": "{role} pravomoce.",
+  "roleMenuRows": 6,
+  "roleMenuBackgroundItem": {
+    "material": "BLACK_STAINED_GLASS_PANE",
+    "name": "&c",
+    "lore": [],
+    "amt": 1
+  },
+  "roleMenuSpecialItems": [
+    {
+      "commandsToRunAsPlayer": [
+        "/f perms"
+      ],
+      "item": {
+        "hide": false,
+        "coordinate": {
+          "row": 5,
+          "column": 8
+        },
+        "displayItem": {
+          "material": "OAK_DOOR",
+          "name": "&cZpět",
+          "lore": [
+            "&7Klikněte pro přechod do &chlavního menu&7."
+          ],
+          "amt": 1
+        }
+      }
+    }
+  ],
+  "roleMenuPlayerActionItems": {
+    "DOOR": {
+      "hide": false,
+      "item": {
+        "material": "OAK_DOOR",
+        "name": "&aUse Doors",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "FENCE_GATE": {
+      "hide": false,
+      "item": {
+        "material": "OAK_FENCE_GATE",
+        "name": "&aUse Fence Gates",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ENDER_CHEST": {
+      "hide": false,
+      "item": {
+        "material": "ENDER_CHEST",
+        "name": "&aOpen Enderchest",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "HOPPER": {
+      "hide": false,
+      "item": {
+        "material": "HOPPER",
+        "name": "&aOpen Hoppers",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "COMPARATOR": {
+      "hide": false,
+      "item": {
+        "material": "COMPARATOR",
+        "name": "&aUse Comparators",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "CHEST": {
+      "hide": false,
+      "item": {
+        "material": "CHEST",
+        "name": "&aOpen Chests",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "PRESSURE_PLATE": {
+      "hide": false,
+      "item": {
+        "material": "STONE_PRESSURE_PLATE",
+        "name": "&aStand On Pressure Plates",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "PLACE_BLOCK": {
+      "hide": false,
+      "item": {
+        "material": "OAK_PLANKS",
+        "name": "&aPlace Blocks",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "DISPENSER": {
+      "hide": false,
+      "item": {
+        "material": "DISPENSER",
+        "name": "&aUse Dispensers",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "DROPPER": {
+      "hide": false,
+      "item": {
+        "material": "DROPPER",
+        "name": "&aUse Dropper",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ANVIL": {
+      "hide": false,
+      "item": {
+        "material": "ANVIL",
+        "name": "&aUse Anvil",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ENCHANTING_TABLE": {
+      "hide": false,
+      "item": {
+        "material": "ENCHANTING_TABLE",
+        "name": "&aUse Enchanting Table",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BUTTON": {
+      "hide": false,
+      "item": {
+        "material": "STONE_BUTTON",
+        "name": "&aPush Buttons",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "FURNACE": {
+      "hide": false,
+      "item": {
+        "material": "FURNACE",
+        "name": "&aUse Furnace",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BREWING_STAND": {
+      "hide": false,
+      "item": {
+        "material": "BREWING_STAND",
+        "name": "&aUse Brewing Stand",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "SPAWN_EGG": {
+      "hide": false,
+      "item": {
+        "material": "EGG",
+        "name": "&aUse Spawn Eggs",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "HURT_MOB": {
+      "hide": false,
+      "item": {
+        "material": "BONE",
+        "name": "&aHurt Mobs",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BARREL": {
+      "hide": false,
+      "item": {
+        "material": "CHEST",
+        "name": "&aOpen Barrels",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BREAK_BLOCK": {
+      "hide": false,
+      "item": {
+        "material": "DIAMOND_PICKAXE",
+        "name": "&aBreak Blocks",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "TRAMPLE_SOIL": {
+      "hide": false,
+      "item": {
+        "material": "LEATHER_BOOTS",
+        "name": "&aTrample Soil",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "CAULDRON": {
+      "hide": false,
+      "item": {
+        "material": "CAULDRON",
+        "name": "&aUse Cauldron",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "EMPTY_BUCKET": {
+      "hide": false,
+      "item": {
+        "material": "BUCKET",
+        "name": "&aEmpty Buckets",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "HOOK": {
+      "hide": false,
+      "item": {
+        "material": "TRIPWIRE_HOOK",
+        "name": "&aUse Hooks",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "FILL_BUCKET": {
+      "hide": false,
+      "item": {
+        "material": "WATER_BUCKET",
+        "name": "&aFill Buckets",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "LECTERN": {
+      "hide": false,
+      "item": {
+        "material": "BOOKSHELF",
+        "name": "&aUse Lecterns",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "USE_BLACKLISTED_BLOCKS": {
+      "hide": false,
+      "item": {
+        "material": "BEDROCK",
+        "name": "&aUse Blacklisted Blocks",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "TRAPDOOR": {
+      "hide": false,
+      "item": {
+        "material": "OAK_TRAPDOOR",
+        "name": "&aUse Trapdoors",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "HURT_PLAYER": {
+      "hide": false,
+      "item": {
+        "material": "IRON_SWORD",
+        "name": "&aHurt Players",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "USE_ENTITY": {
+      "hide": false,
+      "item": {
+        "material": "CREEPER_SPAWN_EGG",
+        "name": "&aUse Entity",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "REPEATER": {
+      "hide": false,
+      "item": {
+        "material": "REPEATER",
+        "name": "&aUse Repeaters",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "LEVER": {
+      "hide": false,
+      "item": {
+        "material": "LEVER",
+        "name": "&aFlip Levers",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    }
+  },
+  "roleMenuMemberActionItems": {
+    "BANK_WITHDRAW": {
+      "hide": false,
+      "item": {
+        "material": "SUNFLOWER",
+        "name": "&aBank Withdraw",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "SET_WARP": {
+      "hide": false,
+      "item": {
+        "material": "BEACON",
+        "name": "&aSet Warp",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ALTS_INVITES": {
+      "hide": false,
+      "item": {
+        "material": "MAP",
+        "name": "&aAlts Invites",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ALTS_LIST": {
+      "hide": false,
+      "item": {
+        "material": "FILLED_MAP",
+        "name": "&aAlts List",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "CHANGE_DESCRIPTION": {
+      "hide": false,
+      "item": {
+        "material": "GREEN_DYE",
+        "name": "&aChange Description",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "DEMOTE": {
+      "hide": false,
+      "item": {
+        "material": "IRON_BARS",
+        "name": "&aDemote",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "INVITE": {
+      "hide": false,
+      "item": {
+        "material": "WRITABLE_BOOK",
+        "name": "&aInvite",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BANK_PAY": {
+      "hide": false,
+      "item": {
+        "material": "GOLD_NUGGET",
+        "name": "&aBank Pay",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "WARP": {
+      "hide": false,
+      "item": {
+        "material": "ENDER_PEARL",
+        "name": "&aWarp",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "RENAME": {
+      "hide": false,
+      "item": {
+        "material": "NAME_TAG",
+        "name": "&aRename",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "VIEW_WARP_PASSWORD": {
+      "hide": false,
+      "item": {
+        "material": "ENDER_EYE",
+        "name": "&aView Warp Password",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ALTS_OPEN": {
+      "hide": false,
+      "item": {
+        "material": "OAK_DOOR",
+        "name": "&aAlts Open",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "DEL_WARP": {
+      "hide": false,
+      "item": {
+        "material": "FIRE_CHARGE",
+        "name": "&aDel Warp",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "SETHOME": {
+      "hide": false,
+      "item": {
+        "material": "RED_BED",
+        "name": "&aSet Home",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "DEINVITE": {
+      "hide": false,
+      "item": {
+        "material": "WRITTEN_BOOK",
+        "name": "&aDeinvite",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "DISCORD_SET": {
+      "hide": false,
+      "item": {
+        "material": "DIAMOND",
+        "name": "&aSetdiscord",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "KICK": {
+      "hide": false,
+      "item": {
+        "material": "LEATHER_BOOTS",
+        "name": "&aKick",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ALTS_INVITE": {
+      "hide": false,
+      "item": {
+        "material": "PLAYER_HEAD",
+        "name": "&aAlts Invite",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "DISBAND": {
+      "hide": false,
+      "item": {
+        "material": "TNT",
+        "name": "&aDisband",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "CLAIM": {
+      "hide": false,
+      "item": {
+        "material": "GRASS_BLOCK",
+        "name": "&aClaim",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "PROMOTE": {
+      "hide": false,
+      "item": {
+        "material": "LADDER",
+        "name": "&aPromote",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "PAYPAL_SET": {
+      "hide": false,
+      "item": {
+        "material": "GOLD_INGOT",
+        "name": "&aSetpaypal",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ALTS_KICK": {
+      "hide": false,
+      "item": {
+        "material": "WOODEN_SWORD",
+        "name": "&aAlts Kick",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ALTS_CLOSE": {
+      "hide": false,
+      "item": {
+        "material": "IRON_DOOR",
+        "name": "&aAlts Close",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "RELATION": {
+      "hide": false,
+      "item": {
+        "material": "ARROW",
+        "name": "&aRelation",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "UNCLAIMALL": {
+      "hide": false,
+      "item": {
+        "material": "MYCELIUM",
+        "name": "&aUnclaimall",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BANK_DEPOSIT": {
+      "hide": false,
+      "item": {
+        "material": "FEATHER",
+        "name": "&aBank Deposit",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "OPEN": {
+      "hide": false,
+      "item": {
+        "material": "CLOCK",
+        "name": "&aOpen",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "FLY": {
+      "hide": false,
+      "item": {
+        "material": "FEATHER",
+        "name": "&aFly",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "ALTS_REVOKE": {
+      "hide": false,
+      "item": {
+        "material": "BARRIER",
+        "name": "&aAlts Revoke",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "PREFIX": {
+      "hide": false,
+      "item": {
+        "material": "CYAN_DYE",
+        "name": "&aPrefix",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "BANK_LOGS": {
+      "hide": false,
+      "item": {
+        "material": "PAPER",
+        "name": "&aBank Logs",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "UNCLAIM": {
+      "hide": false,
+      "item": {
+        "material": "COARSE_DIRT",
+        "name": "&aUnclaim",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    },
+    "HOME": {
+      "hide": false,
+      "item": {
+        "material": "COMPASS",
+        "name": "&aHome",
+        "lore": [
+          "&7Klikněte pro &azměnu&7 stavu.",
+          "&7Stav: {status}"
+        ],
+        "amt": 1
+      }
+    }
+  },
+  "roleMenuPreviousPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 5,
+      "column": 1
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Předchozí strana",
+      "lore": [
+        "&7Zobrazení pravomocí na předchozí straně."
+      ],
+      "amt": 1
+    }
+  },
+  "roleMenuNextPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 5,
+      "column": 7
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Další strana",
+      "lore": [
+        "&7Zobrazení pravomocí na další straně."
+      ],
+      "amt": 1
+    }
+  },
+  "roleMenuItemsPerPage": 36,
+  "roleMenuStartCoordinate": {
+    "row": 1,
+    "column": 0
+  }
+}

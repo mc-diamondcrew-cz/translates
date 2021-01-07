@@ -1,0 +1,323 @@
+{
+  "scopesMenuTitle": "&7Výběr kategorie.",
+  "scopesMenuRows": 3,
+  "scopesMenuBackgroundItem": {
+    "material": "BLACK_STAINED_GLASS_PANE",
+    "name": "&7",
+    "lore": [],
+    "amt": 1
+  },
+  "scopesMenuItems": {
+    "TERRITORY": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 3
+      },
+      "displayItem": {
+        "material": "GRASS_BLOCK",
+        "name": "&a&lVylepšení území",
+        "lore": [
+          "&7Nastavení vylepšení &aúzemí&7.",
+          "&7Ovlivňuje pouze &aspecifické&7 území."
+        ],
+        "amt": 1
+      }
+    },
+    "GLOBAL": {
+      "hide": false,
+      "coordinate": {
+        "row": 1,
+        "column": 5
+      },
+      "displayItem": {
+        "material": "BEACON",
+        "name": "&b&lGlobální vylepšení",
+        "lore": [
+          "&7Nastavení &aglobálních&7 vylepšení.",
+          "&7Ovlivňuje Vaši Frakci &bvšude&7."
+        ],
+        "amt": 1
+      }
+    }
+  },
+  "territoryChooseMenuTitle": "&aVyber území.",
+  "territoryChooseMenuRows": 6,
+  "territoryChooseMenuBackgroundItem": {
+    "material": "BLACK_STAINED_GLASS_PANE",
+    "name": "&7",
+    "lore": [],
+    "amt": 1
+  },
+  "territoryChooseMenuChunkHereItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 1,
+      "column": 4
+    },
+    "displayItem": {
+      "material": "NETHER_STAR",
+      "name": "&aAktuální území",
+      "lore": [
+        "&7Svět: &a{world}",
+        "&7X: &a{x}",
+        "&7Z: &a{z}",
+        "&7Území ve kterém &astojíš&7.",
+        "&7Klikni pro &a&lSPRÁVU"
+      ],
+      "amt": 1
+    }
+  },
+  "territoryBrowserStartCoordinate": {
+    "row": 3,
+    "column": 0
+  },
+  "territoryBrowserItemsPerPage": 27,
+  "territoryItemFormat": {
+    "material": "GRASS_BLOCK",
+    "name": "&aÚzemí",
+    "lore": [
+      "&7Svět: &a{world}",
+      "&7X: &a{x}",
+      "&7Z: &a{z}",
+      "&7Klikni pro &a&lSPRÁVU"
+    ],
+    "amt": 1
+  },
+  "territoryBrowserPreviousPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 2,
+      "column": 1
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Předchozí strana",
+      "lore": [
+        "&7Klikni pro zobrazení území na předchozí straně."
+      ],
+      "amt": 1
+    }
+  },
+  "territoryBrowserNextPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 2,
+      "column": 7
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Další strana",
+      "lore": [
+        "&7Klikni pro zobrazení území na další straně."
+      ],
+      "amt": 1
+    }
+  },
+  "territoryBrowserSpecialItems": [
+    {
+      "commandsToRunAsPlayer": [
+        "/f upgrade"
+      ],
+      "item": {
+        "hide": false,
+        "coordinate": {
+          "row": 2,
+          "column": 8
+        },
+        "displayItem": {
+          "material": "OAK_DOOR",
+          "name": "&cZpět",
+          "lore": [
+            "&7Klikni pro návrat do &chlavního menu&7."
+          ],
+          "amt": 1
+        }
+      }
+    }
+  ],
+  "territoryManageMenuTitle": "&7Správa území",
+  "territoryManageMenuRows": 6,
+  "defaultClaimName": "&aZrušit",
+  "defaultClaimRenameCancelMessage": "cancel",
+  "defaultClaimIcon": "GRASS_BLOCK",
+  "defaultClaimIconAssignCancelMessage": "cancel",
+  "territoryManageMenuBackgroundItem": {
+    "material": "BLACK_STAINED_GLASS_PANE",
+    "name": "&7",
+    "lore": [],
+    "amt": 1
+  },
+  "territoryManageMenuNicknameItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 1,
+      "column": 3
+    },
+    "displayItem": {
+      "material": "NAME_TAG",
+      "name": "&aPřejmenovat Území",
+      "lore": [
+        "&7Dejte tomuto území &anázev&7.",
+        "&7Názvy pomáhají s &ahledáním území&7."
+      ],
+      "amt": 1
+    }
+  },
+  "territoryManageMenuIconItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 1,
+      "column": 5
+    },
+    "displayItem": {
+      "material": "DIAMOND",
+      "name": "&bIkona",
+      "lore": [
+        "&7Dejte tomuto území &aikonu&7.",
+        "&7Ikony pomáhají s &ahledáním území&7."
+      ],
+      "amt": 1
+    }
+  },
+  "territoryManageMenuCurrentItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 2,
+      "column": 4
+    },
+    "displayItem": {
+      "material": "GRASS_BLOCK",
+      "name": "&bAktuální území",
+      "lore": [
+        "&7Svět: &a{world}",
+        "&7X: &a{x}",
+        "&7Z: &a{z}",
+        "&7Aktuálně &a&lSPRAVUJETE&7 toto území."
+      ],
+      "amt": 1
+    }
+  },
+  "territoryManageMenuPreviousPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 3,
+      "column": 1
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Předchozí strana",
+      "lore": [
+        "&7Klikni pro zobrazení území na předchozí straně."
+      ],
+      "amt": 1
+    }
+  },
+  "territoryManageMenuNextPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 3,
+      "column": 7
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Další strana",
+      "lore": [
+        "&7Klikni pro zobrazení území na další straně."
+      ],
+      "amt": 1
+    }
+  },
+  "territoryManageMenuSpecialItems": [
+    {
+      "commandsToRunAsPlayer": [
+        "/f upgrade TERRITORY"
+      ],
+      "item": {
+        "hide": false,
+        "coordinate": {
+          "row": 3,
+          "column": 8
+        },
+        "displayItem": {
+          "material": "OAK_DOOR",
+          "name": "&cZpět",
+          "lore": [
+            "&7Klikni pro návrat do &chlavního menu&7."
+          ],
+          "amt": 1
+        }
+      }
+    }
+  ],
+  "territoryManageMenuItemsPerPage": 18,
+  "territoryManageMenuPageStartCoordinate": {
+    "row": 4,
+    "column": 0
+  },
+  "globalUpgradesTitle": "&bGlobální vylepšení",
+  "globalUpgradesRows": 4,
+  "globalUpgradesBackgroundItem": {
+    "material": "BLACK_STAINED_GLASS_PANE",
+    "name": "&7",
+    "lore": [],
+    "amt": 1
+  },
+  "globalUpgradesStartCoordinate": {
+    "row": 1,
+    "column": 0
+  },
+  "globalUpgradesItemsPerPage": 18,
+  "globalPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 3,
+      "column": 1
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Předchozí strana",
+      "lore": [
+        "&7Zobrazení vylepšení na předchozí straně."
+      ],
+      "amt": 1
+    }
+  },
+  "globalNextPageItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 3,
+      "column": 7
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&7Další strana",
+      "lore": [
+        "&7Zobrazení vylepšení na další straně."
+      ],
+      "amt": 1
+    }
+  },
+  "globalMenuSpecialItems": [
+    {
+      "commandsToRunAsPlayer": [
+        "/f upgrade"
+      ],
+      "item": {
+        "hide": false,
+        "coordinate": {
+          "row": 3,
+          "column": 8
+        },
+        "displayItem": {
+          "material": "OAK_DOOR",
+          "name": "&cZpět",
+          "lore": [
+            "&7Klikni pro návrat do &chlavního menu&7."
+          ],
+          "amt": 1
+        }
+      }
+    }
+  ]
+}

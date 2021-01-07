@@ -2084,21 +2084,21 @@ gui:
         material: NAME_TAG
         slot: 3
       titles:
-        name: "&8> &6Enter Message"
+        name: "&8> &6Vstupní Zpráva"
         lore:
-          - "&7Change the enter message of"
-          - "&7the land. It appears to players,"
+          - "&7Změňte vstupní zprávu, když někdo"
+          - "&7někd"
           - "&7which enter your land."
           - " "
           - "&7Aktuálně:"
           - "{title}"
           - " "
-          - "&7Dostupné: placeholders"
-          - "  &8> &3%owner% &8= &7Land owner"
-          - "  &8> &3%player% &8= &7Entering player"
+          - "&7Dostupné proměnné:"
+          - "  &8> &3%owner% &8= &7Vůdce/kyně"
+          - "  &8> &3%player% &8= &7Vstupující hráč/ka"
           - " "
           - "&9PRAVÉ KLIKNUTÍ"
-          - "&7Display title: {show}"
+          - "&7Zobrazený titul: {show}"
         material: OAK_SIGN
         slot: 7
       back:

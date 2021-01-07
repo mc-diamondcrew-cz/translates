@@ -1,0 +1,385 @@
+{
+  "factionsPermissionPrefix": "factionsx",
+  "autoSave": true,
+  "autoSaveBroadcast": true,
+  "autoSaveBroadcastMessage": "&7[&6✕&7] &7Saving factions data...",
+  "autoSaveBroadcastComplete": true,
+  "autoSaveBroadcastCompleteMessage": "&7[&6✕&7] &7Saved factions data successfully.",
+  "autoSaveIntervalInMilliseconds": 21600000,
+  "wildernessDescription": "&7pozor, tady na tebe může číhat nebezpečí!",
+  "safezoneDescription": "&7PvP je vypnuto.",
+  "warzoneDescription": "&7PvP je zapnuto, buď &4opatrný/á&7!",
+  "defaultFactionDescription": "&7Výchozí popis Frakce :(.",
+  "allowMobsNaturalSpawnInWarZone": false,
+  "allowMobsNaturalSpawnInSafeZone": false,
+  "allowMobsNaturalSpawnInWilderness": true,
+  "warZoneNoPowerLoss": false,
+  "safeZoneNoPowerLoss": false,
+  "wildernessNoPowerLoss": false,
+  "denyHomeTeleportInEnemyLand": true,
+  "denyWarpTeleportInEnemyLand": true,
+  "timeFormatted": "{hours}h {minutes}m {seconds}s",
+  "deleteInactiveFactions": false,
+  "deleteFactionIfInactiveForDays": 30,
+  "helpGeneratorPageEntries": 10,
+  "relationOwnColor": "&a",
+  "relationNeutralColor": "&f",
+  "relationEnemyColor": "&c",
+  "relationAllyColor": "&d",
+  "relationTruceColor": "&5",
+  "relationWarzoneColor": "&4",
+  "relationSafezoneColor": "&e",
+  "relationWildernessColor": "&8",
+  "relationNeutralReplacement": "Neutrální",
+  "relationEnemyReplacement": "Nepřítel",
+  "relationAllyReplacement": "Aliance",
+  "relationTruceReplacement": "Přímeří",
+  "defaultRelation": "NEUTRAL",
+  "disabledRelations": [],
+  "disableSetHomeInRelationTerritory": [
+    "ENEMY"
+  ],
+  "sendPrefixForWhoCommand": true,
+  "whoFormatWilderness": [
+    "&7Tag &l&7» &6{tag}"
+  ],
+  "blacklistedCommands": [],
+  "whoFormat": [
+    "&7Tag &l&7» &6{tag}",
+    "&7Popis &l&7» &6{description}",
+    "&7Vůdce &l&7» &6{leader}",
+    "&7Aktivní &l&7» &6{online_members}",
+    "&7Neaktivní &l&7» &6{offline_members}",
+    "&7Území &l&7» &6{claims}&7/&6{max-claims}",
+    "&7Síla &l&7» &6{faction-power}&7/&6{faction-max-power}",
+    "&7Spojenci &l&7» &6{allies}",
+    "&7Nepřátelé &l&7» &6{enemies}",
+    "&7Příměří &l&7» &6{truces}"
+  ],
+  "whoMemberFormat": "&7{chat-tag}&r{prefix}&r &6{member-name}",
+  "fNearRadiusInBlocks": 25.0,
+  "positionMonitorChunkChanged": "&7Vstupuješ do &6{tag}&7 - &6{description}.",
+  "positionMonitorChunkChangedMessage": false,
+  "positionMonitorChunkChangeTitle": true,
+  "positionMonitorChunkChangedTitle": {
+    "title": "{tag}",
+    "subtitle": "{description}"
+  },
+  "warpTeleportWarmupSeconds": 5,
+  "homeTeleportWarmupSeconds": 3,
+  "warpLimit": 5,
+  "allyLimit": 3,
+  "truceLimit": 3,
+  "enemyLimit": 5,
+  "listCommandPageRows": 9,
+  "factionTagEnforceLength": true,
+  "factionTagsMinLength": 4,
+  "factionTagsMaxLength": 12,
+  "factionTagEnforceAlphaNumeric": true,
+  "triedToHurtYouFactionNotify": false,
+  "factionCreationDateFormat": "MMMM dd, yyyy, HH:mm",
+  "factionStrikeAlerts": true,
+  "factionStrikeMax": 3,
+  "factionStrikeActions": {
+    "3": [
+      "[faction:message] &7Vaše Frakce obdržela &6&l3 &7upozornění!"
+    ]
+  },
+  "territoryDeniedCommands": {
+    "ENEMY": [
+      "/sethome",
+      "/esethome"
+    ]
+  },
+  "chatChannelTruce": "truce",
+  "chatChannelTruceShortHand": "T",
+  "chatChannelTruceFormat": "&5Příměří {tag} &8&l> &r{prefix} {chat-tag}{member-name}: {message}",
+  "chatChannelAlly": "ally",
+  "chatChannelAllyShortHand": "A",
+  "chatChannelAllyFormat": "&dAliance {tag} &8&l> &r{prefix} {chat-tag}{member-name}: {message}",
+  "chatChannelFaction": "faction",
+  "chatChannelFactionShortHand": "F",
+  "chatChannelFactionFormat": "&6Frakce &8&l> &r{prefix} {chat-tag}{member-name}: {message}",
+  "chatChannelPublic": "public",
+  "chatChannelPublicShortHand": "P",
+  "seeChunkWildernessColor": {
+    "r": 1,
+    "g": 153,
+    "b": 51
+  },
+  "seeChunkOwnFactionColor": {
+    "r": 1,
+    "g": 255,
+    "b": 0
+  },
+  "seeChunkWarzoneColor": {
+    "r": 255,
+    "g": 0,
+    "b": 0
+  },
+  "seeChunkSafezoneColor": {
+    "r": 255,
+    "g": 255,
+    "b": 0
+  },
+  "seeChunkTruceColor": {
+    "r": 128,
+    "g": 0,
+    "b": 128
+  },
+  "seeChunkEnemyColor": {
+    "r": 255,
+    "g": 0,
+    "b": 0
+  },
+  "seeChunkNeutralColor": {
+    "r": 255,
+    "g": 255,
+    "b": 255
+  },
+  "seeChunkAllyColor": {
+    "r": 255,
+    "g": 0,
+    "b": 255
+  },
+  "teleportFromEnemyClaimOnJoin": false,
+  "teleportFromEnemyClaimLocation": {
+    "x": 1340.0,
+    "y": 64.0,
+    "z": 10.0,
+    "world": "world"
+  },
+  "nearbyEnemyDisallowedCommandsDistance": 15.0,
+  "nearbyEnemyDisallowedCommands": [
+    "spawn",
+    "tpa"
+  ],
+  "creditSettings": {
+    "startingCredits": 50.0,
+    "maximumCredits": 500.0,
+    "minimumCreditsPay": 1.0,
+    "enabled": true
+  },
+  "powerSettings": {
+    "maxPlayerPower": 10.0,
+    "minPlayerPower": -10.0,
+    "startingPower": 5.0,
+    "powerOfflineLossPerDay": 0.0,
+    "powerOfflineLossLimit": 0.0,
+    "powerPerDeath": 4.0,
+    "powerRegenPerMinute": 0.2,
+    "powerRegenOffline": false
+  },
+  "maxClaimLimit": -1,
+  "maxClaimRadius": 20,
+  "claimWorldBorderBuffer": 0,
+  "setHomeOnClaimIfNotSetYet": false,
+  "disbandRequireConfirmation": true,
+  "minFactionMembers": false,
+  "minFactionMembersToClaim": 2,
+  "turnBlacklistWorldsToWhitelist": false,
+  "allowClaimInWorldGuardRegion": false,
+  "worldGuardRegionAllowedClaimInWorlds": {
+    "example_world": "myRegion"
+  },
+  "worldsNoClaiming": [
+    "example-no-claiming-world-1",
+    "example-no-claiming-world-2"
+  ],
+  "worldsNoPvpHandling": [
+    "example-world-to-ignore-factions-pvp"
+  ],
+  "worldsNoFlyHandling": [
+    "example-world-to-not-handle-fly"
+  ],
+  "worldsNoPowerLoss": [
+    "example-world-with-no-power-loss"
+  ],
+  "worldsNoInteractionHandling": [
+    "example-world-with-no-interact-block-checking-etc"
+  ],
+  "barLength": 49,
+  "factionShieldEnabled": false,
+  "factionShield": {
+    "durationInSeconds": 28800
+  },
+  "factionShieldInfoItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 0,
+      "column": 13
+    },
+    "displayItem": {
+      "material": "WRITABLE_BOOK",
+      "name": "&7Faction Shield Schedule",
+      "lore": [
+        "&7Set your shield schedule",
+        "&7Once selected, it cannot be changed",
+        "&7Current Server Time:",
+        "&7{server-time}"
+      ],
+      "amt": 1
+    }
+  },
+  "factionShieldTimes": {
+    "row": 1,
+    "column": 0
+  },
+  "shieldsGUIRows": 5,
+  "shieldsGUIName": "&8§lFrakční Štíty",
+  "shieldsGUIBackgroundItem": {
+    "material": "BLACK_STAINED_GLASS_PANE",
+    "name": "&8",
+    "lore": [],
+    "amt": 1
+  },
+  "shieldTimeLeftInvalid": "N/A",
+  "shieldActivePlaceholderTrue": "Ano",
+  "shieldActivePlaceholderFalse": "Ne",
+  "shieldTimerItem": {
+    "material": "CLOCK",
+    "name": "&a{time}",
+    "lore": [
+      "&6Časy každý den:",
+      "§7-> Začíná: §a{time}",
+      "§7-> Končí: §a{end}"
+    ],
+    "amt": 1
+  },
+  "shieldMode": "PAGINATION",
+  "shieldModeTwoTimerItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 2,
+      "column": 4
+    },
+    "displayItem": {
+      "material": "CLOCK",
+      "name": "&a{time}",
+      "lore": [
+        "&6Časy každý den:",
+        "§7-> Začíná: §a{time}",
+        "§7-> Končí: §a{end}"
+      ],
+      "amt": 1
+    }
+  },
+  "shieldModeTwoPreviousItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 2,
+      "column": 3
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&6< Předchozí",
+      "lore": [],
+      "amt": 1
+    }
+  },
+  "shieldModeTwoNextItem": {
+    "hide": false,
+    "coordinate": {
+      "row": 2,
+      "column": 5
+    },
+    "displayItem": {
+      "material": "STONE_BUTTON",
+      "name": "&6Další >",
+      "lore": [],
+      "amt": 1
+    }
+  },
+  "scoreboardOptions": {
+    "enabled": false,
+    "internal": false,
+    "perTerritory": false
+  },
+  "chatHandledByAnotherPlugin": false,
+  "chatFactionPlaceholder": "[FACTION]",
+  "chatFactionReplaceString": "[FACTION]",
+  "chatNoFactionReplaceString": "",
+  "defaultWildernessTag": "&a&lPříroda",
+  "defaultWarzoneTag": "&4&lVálečná Zóna",
+  "defaultSafezoneTag": "&e&lBezpečná Zóna",
+  "factionMemberLimit": 20,
+  "factionAltLimit": 10,
+  "altsInvitesFormat": "&6%s",
+  "altsInvitesSeparator": "&7, ",
+  "altsListFormat": "&6%s",
+  "altsListSeparator": "&7, ",
+  "hurtPlayerAction": "hurt_players",
+  "hurtMobsAction": "hurt_mobs",
+  "buttonAction": "push_buttons",
+  "leverAction": "flip_levers",
+  "pressurePlateAction": "stand_on_pressure_plates",
+  "fenceGateAction": "use_fence_gates",
+  "trapdoorAction": "use_trapdoors",
+  "hookAction": "use_hooks",
+  "hopperAction": "open_hoppers",
+  "lecternAction": "use_lecterns",
+  "comparatorAction": "use_comparators",
+  "repeaterAction": "use_repeaters",
+  "dispenserAction": "use_dispensers",
+  "doorAction": "use_doors",
+  "chestAction": "open_chests",
+  "barrelAction": "open_barrels",
+  "enderChestAction": "open_enderchest",
+  "anvilAction": "use_anvil",
+  "brewingStandAction": "use_brewing_stand",
+  "enchantingTableAction": "use_enchanting_table",
+  "dropperAction": "use_dropper",
+  "furnaceAction": "use_furnace",
+  "cauldronAction": "use_cauldron",
+  "spawnEggAction": "use_spawn_eggs",
+  "breakBlockAction": "break_blocks",
+  "placeBlockAction": "place_blocks",
+  "emptyBucketAction": "empty_buckets",
+  "fillBucketAction": "fill_buckets",
+  "blackListedBlockAction": "use_blacklisted_blocks",
+  "useEntityAction": "use_entity",
+  "trampleSoilAction": "trample_soil",
+  "memberActionKick": "kick",
+  "memberActionDisband": "disband",
+  "memberActionDeInvite": "deinvite",
+  "memberActionDemote": "demote",
+  "memberActionInvite": "invite",
+  "memberActionPrefix": "prefix",
+  "memberActionRename": "rename",
+  "memberActionUnclaimall": "unclaimall",
+  "memberActionFly": "fly",
+  "memberActionHome": "home",
+  "memberActionSetHome": "set_home",
+  "memberActionChangeDescription": "change_description",
+  "memberActionClaim": "claim",
+  "memberActionUnclaim": "unclaim",
+  "memberActionWarp": "warp",
+  "memberActionSetWarp": "set_warp",
+  "memberActionDelWarp": "del_warp",
+  "memberActionViewWarpPassword": "view_warp_password",
+  "memberActionRelation": "relation",
+  "memberActionPromote": "promote",
+  "memberActionOpen": "open",
+  "memberActionSetPaypal": "setpaypal",
+  "memberActionSetDiscord": "setdiscord",
+  "memberActionBankWithdraw": "bank_withdraw",
+  "memberActionBankDeposit": "bank_deposit",
+  "memberActionBankPay": "bank_pay",
+  "memberActionBankLogs": "bank_logs",
+  "memberActionAltsInvite": "alts_invite",
+  "memberActionAltsKick": "alts_kick",
+  "memberActionAltsRevoke": "alts_revoke",
+  "memberActionAltsOpen": "alts_open",
+  "memberActionAltsClose": "alts_close",
+  "memberActionAltsInvites": "alts_invites",
+  "memberActionAltsList": "alts_list",
+  "confirmTimeOutSeconds": 10,
+  "placeholderCouldntBeParsedValue": "N/A",
+  "placeholderNameCoundntBeParsed": "N/A",
+  "systemOwnedFactionPlaceholderValue": "System",
+  "placeholderFactionNameCustom": " {name}",
+  "placeholderFactionNameCustomWilderness": "",
+  "placeholderRelationNonePresent": "None",
+  "placeholderFactionAltsEmpty": "None",
+  "internalPlaceholderRelationsColor": false
+}
