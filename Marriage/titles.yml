@@ -1,0 +1,24 @@
+DIVORCE_PLAYER:
+  title: §cRozvod
+  subtitle: §c✖ §fByli jste rozvedeni.
+  in: 20
+  stay: 40
+  out: 20
+DIVORCE_PARTNER:
+  title: §cRozvod
+  subtitle: §c✖ §fByli jste rozvedeni.
+  in: 20
+  stay: 40
+  out: 20
+MARRY_PLAYER:
+  title: §c§l❤ §aSvatba §c§l❤
+  subtitle: §bPříjmuli §fjste žádost od §b{name}§f.
+  in: 20
+  stay: 40
+  out: 20
+MARRY_PARTNER:
+  title: §c§l❤ §aSvatba §c§l❤
+  subtitle: §b{name} §fpřimul/a Vaši žádost!
+  in: 20
+  stay: 40
+  out: 20

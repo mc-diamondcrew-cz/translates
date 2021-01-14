@@ -1,0 +1,16 @@
+COMMAND_FAIL:
+  type: ENTITY_VILLAGER_NO
+  volume: 10.0
+  pitch: 1.0
+TELEPORT_TICK:
+  type: UI_BUTTON_CLICK
+  volume: 10.0
+  pitch: 1.0
+TELEPORT_FAIL:
+  type: ENTITY_VILLAGER_HURT
+  volume: 10.0
+  pitch: 1.0
+TELEPORT_TP:
+  type: ENTITY_CAT_PURR
+  volume: 10.0
+  pitch: 1.0

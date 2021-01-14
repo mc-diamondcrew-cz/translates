@@ -1,0 +1,11 @@
+ADMIN_HELP: |2-
+
+  §a§lItemCommands Admin Nápověda
+
+  §e/aitemcommands help §8» §fZobrazí tuto zprávu.
+  §e/aitemcommands list §8» §fZobrazí seznam všech předmětů.
+  §e/aitemcommands get <název> §8» §fZískání předmětu.
+GET_SUCCESS: §aItemCommands §8» §b{item} §fbyl přidán do Vašeho inventáře.
+GET_FAILURE_NO_ITEM: §aItemCommands §8» §b{item} §fnení uložen.
+LIST_TITLE: '§aItemCommands §8» §bSeznam předmětů:'
+LIST_FORMAT: §7- §f{name}

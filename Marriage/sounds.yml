@@ -1,0 +1,20 @@
+FAIL:
+  type: ENTITY_VILLAGER_NO
+  volume: 1.0
+  pitch: 1.0
+DIVORCE:
+  type: ITEM_SHIELD_BREAK
+  volume: 1.0
+  pitch: 1.0
+MENU_CLICK:
+  type: BLOCK_NOTE_BLOCK_PLING
+  volume: 1.0
+  pitch: 1.0
+MARRY_ACCEPT:
+  type: ENTITY_PLAYER_LEVELUP
+  volume: 1.0
+  pitch: 1.0
+NOTIFY:
+  type: ENTITY_EXPERIENCE_ORB_PICKUP
+  volume: 1.0
+  pitch: 1.0

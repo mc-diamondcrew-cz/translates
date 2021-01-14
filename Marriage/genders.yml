@@ -1,0 +1,12 @@
+MALE:
+  name: Muž
+  symbol: ♂
+  color: '&b'
+FEMALE:
+  name: Žena
+  symbol: ♀
+  color: '&d'
+NONE:
+  name: Nic
+  symbol: ●
+  color: '&7'

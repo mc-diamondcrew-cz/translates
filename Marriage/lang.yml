@@ -1,0 +1,74 @@
+HELP: |2
+
+  &a&lNápověda Svatby
+
+  &e/marry <hráč> &8» &fOdešle/Příjme žádost o manželství.
+  &e/marry seen &8» &fZobrazí, kdy byl/a partner/ka naposledy na serveru.
+  &e/marry tp &8» &fTeleportace k partnerovi/ce.
+  &e/marry gift &8» &fOdešle předmět v ruce partnerovi/ce, jako dar.
+  &e/marry sethome &8» &fNastaví Vaši lokaci jako sdílený domov.
+  &e/marry home &8» &fTeleportace do sdíleného domu.
+  &e/marry chat <zpráva> &8» &fOdešle zprávu do společného chatu.
+  &e/marry pvp &8» &fPřepne PvP stav.
+  &e/marry xp &8» &fPřepne stav sdílených XP
+  &e/marry food &8» &fPřepne stav sdíleného jídla.
+  &e/marry list &8» &fSeznam online párů.
+  &eStatus: &f%marriage_state%
+ADMIN_HELP: "\n&a&lNápověda Svatby - Admin\n\n&e/amarry spy &8» &fPřepne zobrazová\
+  ní společných zpráv hráčů.\n&e/amarry marry <hráč> <hráč> &8» &fPřinutí hráče ke\
+  \ sňatku. &7(Zdarma)\n&e/amarry unmarry <hráč> &8» &fPřinutí hráče k rozvodu. &7(Zdarma)\n\
+  &e/amarry sethome <hráč> &8» &fNastaví Vaši aktuální lokaci jako hráčův sdílený\
+  \ domov.\n&e/amarry home <hráč> &8» &fTeleportace na sdílený domov hráče.\n&e/amarry\
+  \ pvp <hráč> &8» &fPřepne stav hráčova PvP.\n&e/amarry food <hráč> &8» &fPřepne\
+  \ stav hráčova sdílení jídla\n&e/amarry xp <hráč> &8» &fPřepne stav hráčova sdí\
+  lení XP.\n&e/amarry reload &8» &fZnovu načte konfiguraci. &7(Nedoporučeno) \n"
+MARRY_MENU_TITLE: '&8&lSvatba'
+RELOAD: '&aKonfigurace byla znovu načtena'
+MARRIED: Ve vztahu
+NOT_MARRIED: Single
+ACTIVE: '&aAktivní'
+INACTIVE: '&cNeaktivní'
+GENDER_CHANGE: '&c&l❤ &aSvatba &8» &fVaše pohlaví bylo nastaveno na {gender}&f.'
+GENDER_CHANGE_ERROR: '&c&l❤ &aSvatba &8» &fNebylo možné změnit pohlaví na {gender}.'
+CHAT_FORMAT: '&4&l❤&c&l-Chat &a{name} &8» &e{message}'
+CHAT_USAGE: '&c&l❤ &aSvatba &8» &bPoužití: &f/marry c <zpráva>'
+CHAT_SPY: '&7❤-Chat &c{name} &7» &c{message}'
+MARRY_BROADCAST: '&c&l❤ &aSvatba &8» &b{player} &fa &b{partner} &fjsou nyní ve vztahu!'
+MARRY_REQUEST: '&c&l❤ &aSvatba &8» &fÚspěšně odeslána žádost hráči/ce {name}.'
+MARRY_REQUEST_PARTNER: |-
+  &c&l❤ &aSvatba &8» &fObdrželi jste žádost o vztah, od {name}.
+  &7Můžete ji příjmout, pomocí &b/marry {name}&7.
+FOOD_TOGGLE: '&c&l❤ &aSvatba &8» &fSdílení jídla je nyní {state}&f.'
+FOOD_TOGGLE_ADMIN: '&c&l❤ &aSvatba &8» &fSdílení jídla bylo nastaveno na {state} &fpro
+  {name}.'
+XP_TOGGLE: '&c&l❤ &aSvatba &8» &fSdílení XP je nyní {state}&f.'
+XP_TOGGLE_ADMIN: '&c&l❤ &aSvatba &8» &fSdílení XP bylo nastaveno na {state} &fpro
+  {name}.'
+PVP_TOGGLE: '&c&l❤ &aSvatba &8» &fPvP je nyní {state}&f.'
+PVP_TOGGLE_ADMIN: '&c&l❤ &aSvatba &8» &fPvP bylo nastaveno na {state} &fpro {name}.'
+SPY_TOGGLE: '&c&l❤ &aSvatba &8» &fZobrazování chatů je nyní {state}&f.'
+HAVE_PARTNER: '&c&l❤ &aSvatba &8» &fJiž &bmáte &fpartnera/ku.'
+HAS_PARTNER: '&c&l❤ &aSvatba &8» &b{name} &fjiž má partnera/ku.'
+NO_HELD_ITEM: '&c&l❤ &aSvatba &8» &fNemáte žádný předmět v ruce!'
+GIFT: '&c&l❤ &aSvatba &8» &fOdeslali jste dar partnerovi/ce.'
+GIFT_PARTNER: '&c&l❤ &aSvatba &8» &fObdrželi jste dar od partnera/ky.'
+NO_HOME: '&c&l❤ &aSvatba &8» &fNemáte sdílený domov.'
+NO_HOME_PLAYER: '&c&l❤ &aSvatba &8» &f{name} nemá sdílený domov.'
+TP_HOME: '&c&l❤ &aSvatba &8» &fByli jste teleportování na Váš sdílený domov.'
+TP_HOME_PARTNER: '&c&l❤ &aSvatba &8» &fPartner/ka se teleportoval/a na Váš sdílený
+  domov.'
+TP_HOME_ADMIN: '&c&l❤ &aSvatba &8» &fByli jste teleportování na sdílený domov hráče/ky
+  {name}.'
+SET_HOME: '&c&l❤ &aSvatba &8» &fÚspěšně jste nastavili sdílený domov.'
+SET_HOME_PARTNER: '&c&l❤ &aSvatba &8» &fPartner/ka nastavil/a sdílený domov.'
+SET_HOME_ADMIN: '&c&l❤ &aSvatba &8» &fNastavili jste sdílený domov pro {name}.'
+LAST_SEEN: '&c&l❤ &aSvatba &8» &fPartner/ka byl/a naposledy viděn/a před {time}&f.'
+TP: '&c&l❤ &aSvatba &8» &fByli jste úspěšně teleportování na partnera/ku.'
+TP_PARTNER: '&c&l❤ &aSvatba &8» &fPartner/ka se na Vás teleportoval/a.'
+PARTNER_OFFLINE: '&c&l❤ &aSvatba &8» &fPartner/ka nený na serveru!'
+NO_PARTNER_PLAYER: '&c&l❤ &aSvatba &8» &b{name} &fnemá partnera/ku.'
+NO_PARTNER: '&c&l❤ &aSvatba &8» &fNemáte &bpartnera/ku&f!'
+LIST_HEADER: '§c§l❤ §aSvatba §8» §fSeznam online párů:'
+LIST_FORMAT: '&7- {player} &f+ {partner}'
+DISABLED: §c§l❤ §aSvatba §8» &fTato možnost je vypnuta!
+UNMARRY_BROADCAST: '&c&l❤ &§aSvatba &8» &b{player} &fa &b{partner} &fbyli rozvedeni.'

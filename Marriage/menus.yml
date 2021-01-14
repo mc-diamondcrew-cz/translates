@@ -1,0 +1,68 @@
+PLAYER_HEAD:
+  name: §e{name}
+  lore:
+  - §8» §fKlikněte pro rozvod.
+MARRY_HEART:
+  type: RED_STAINED_GLASS
+  name: §f
+MARRY_WHITE:
+  type: WHITE_STAINED_GLASS_PANE
+  name: §f
+MARRY_BACKGROUND:
+  type: LIGHT_BLUE_STAINED_GLASS_PANE
+  name: §f
+MARRY_LAST_SEEN:
+  type: REDSTONE_LAMP
+  name: §eNaposledy online
+  lore:
+  - §8» §fKlikněte pro zobrazení,
+  - ' §fkdy byl/a partner/ka'
+  - ' §fnaposledy na serveru.'
+MARRY_SHARED_XP:
+  type: EXPERIENCE_BOTTLE
+  name: §eSdílené XP
+  lore:
+  - §8» §fZískáné XP je rozděleno
+  - ' §fna půlku a sdíleno s parterem/kou.'
+MARRY_TP_HOME:
+  type: RED_BED
+  name: §eTeleportace domů
+  lore:
+  - §8» §fKlikněte pro teleportaci
+  - ' §fna Váš sdílený domov.'
+MARRY_GIFT:
+  type: CHEST
+  name: §eDar
+  lore:
+  - §8» §fKlikněte pro odeslání daru
+  - ' §fpartnerovi/ce.'
+MARRY_TP:
+  type: ENDER_PEARL
+  name: §eTeleportace
+  lore:
+  - §8» §fKlikněte pro teleportaci
+  - ' §fk partnerovi/ce.'
+MARRY_PVP:
+  type: DIAMOND_SWORD
+  name: §ePvP
+  lore:
+  - §8» §fZapnutí/Vypnutí PvP
+  - ' §fs parterem/kou.'
+MARRY_SET_HOME:
+  type: OAK_DOOR
+  name: §eNastavení domu
+  lore:
+  - §8» §fKlikněte pro nastavení
+  - ' §fsdíleného domu na Vaší lokaci.'
+MARRY_SHARED_FOOD:
+  type: COOKED_PORKCHOP
+  name: §eSdílení jídla
+  lore:
+  - §8» §fZískáné jídlo je rozděleno
+  - ' §fna půlku a sdíleno s parterem/kou.'
+MARRY_PRIVATE_CHAT:
+  type: PAPER
+  name: §eSdílený chat
+  lore:
+  - §8» §fKlikněte pro odeslání
+  - ' §fzprávy do sdíleného chatu.'

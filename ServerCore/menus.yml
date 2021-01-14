@@ -1,0 +1,19 @@
+BACK_BACKGROUND:
+  type: BLACK_STAINED_GLASS_PANE
+  name: §0
+BACK_LAST_LOCATION:
+  type: GLOWSTONE_DUST
+  name: §ePoslední lokace
+  lore:
+  - §7Klikni pro teleportaci na tvou poslední známou lokaci.
+BACK_DEATH_LOCATION:
+  type: REDSTONE
+  name: §cLokace smrti
+  lore:
+  - §7Klikni pro teleportaci na polohu tvé poslední smrti.
+WARP_BACKGROUND:
+  type: BLACK_STAINED_GLASS_PANE
+  name: §0
+WARP_ITEM:
+  type: PAPER
+  name: §e{warp}

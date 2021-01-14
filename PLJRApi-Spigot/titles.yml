@@ -1,0 +1,18 @@
+TELEPORT_TICKING:
+  title: §b§lTeleportation
+  subtitle: §7{time}§8s
+  in: 20
+  stay: 40
+  out: 20
+TELEPORT_FAIL:
+  title: §b§lMove detected
+  subtitle: §cTeleportation canceled..
+  in: 20
+  stay: 60
+  out: 20
+TELEPORT_TELEPORT:
+  title: §bTeleportation
+  subtitle: §7Teleporting..
+  in: 20
+  stay: 60
+  out: 20
