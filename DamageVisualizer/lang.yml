@@ -4,6 +4,6 @@ FORMAT_DAMAGE: '####.#'
 FORMAT_HEALTH: '####.#'
 FORMAT_MAX: '####.#'
 PROJECTILE_TEXT: |-
-  §8>> &eTrefil/a jsi &6{target} &eze vzdálenosti &6{distance} kostek &eza &6{damage} poškození&e.
+  §8> &eTrefil/a jsi &6{target} &eze vzdálenosti &6{distance} kostek &eza &6{damage} poškození&e.
   &eAktuální zdraví cíle je &c{currentHealth} ❤
 FORMAT_DISTANCE: '####.#'
