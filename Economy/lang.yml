@@ -1,37 +1,37 @@
 HELP: |2-
 
-  §a§lEconomy
+  &a&lEconomy
 
-  §e/economy §8» §7Zobrazí Váš aktuální zůstatek.
-  §e/economy help §8» §7Zobrazí tuto zprávu.
-  §e/economy balance <hráč> §8» §7Zobrazí aktuální zůstatek hráče.
-  §e/economy send <hráč> <množství> §8» §7Odešle hráči/ce určité množství financí.
+  &e/economy &8» &7Zobrazí Váš aktuální zůstatek.
+  &e/economy help &8» &7Zobrazí tuto zprávu.
+  &e/economy balance <hráč> &8» &7Zobrazí aktuální zůstatek hráče.
+  &e/economy send <hráč> <množství> &8» &7Odešle hráči/ce určité množství financí.
 ADMIN_HELP: |2-
 
-  §a§lEconomy Admin-Help
+  &a&lEconomy Admin-Help
 
-  §e/aeconomy help §8» §7Zobrazí tuto zprávu.
-  §e/aeconomy set <hráč> <množství> §8» §7Nastaví zůstatek hráče/ky.
-  §e/aeconomy add <hráč> <množství> §8» §7Přidá hráči/ce určité množství financí.
-  §e/aeconomy remove <hráč> <množství> §8» §7Odebere hráči/ce určité množství financí.
+  &e/aeconomy help &8» &7Zobrazí tuto zprávu.
+  &e/aeconomy set <hráč> <množství> &8» &7Nastaví zůstatek hráče/ky.
+  &e/aeconomy add <hráč> <množství> &8» &7Přidá hráči/ce určité množství financí.
+  &e/aeconomy remove <hráč> <množství> &8» &7Odebere hráči/ce určité množství financí.
 CONSOLE_NAME: Konzole
-NO_POSITIVE_NUMBER: §aEconomy §8» §7Číslo musí být positivní!
-ECONOMY_SUCCESS: '§aEconomy §8» §7Váš zůstatek činí: §6${money}§7.'
-ECONOMY_BALANCE_SUCCESS: '§aEconomy §8» §7Zůstatek hráče/ky §6{player} §7činí: §6${money}§7.'
-ECONOMY_SEND_SUCCESS: §aEconomy §8» §7Úspěšně odesláno §6{money} §7hráči/ce §6{player}§7.
-ECONOMY_SEND_FAILURE_TOO_MUCH: §aEconomy §8» §7Nemáte dostatek financí!
-ECONOMY_SEND_SUCCESS_NOTIFY: §aEconomy §8» §7Obdrželi jste §6${money} §7od §6{player}§7.
-AECONOMY_SET_SUCCESS: §aEconomy §8» §7Úspěšně jste nastavili zůstatek hráče/ky §6{player}
-  §7na §6${money}§7.
-AECONOMY_SET_SUCCESS_NOTIFY: §aEconomy §8» §7Váš zůstatek byl nastaven na §6${money}§7.
-AECONOMY_ADD_SUCCESS: §aEconomy §8» §7Úspěšně jste přidali §6${money} §7hráči/ce §6{player}§7.
-AECONOMY_ADD_SUCCESS_NOTIFY: §aEconomy §8» §6${money} §7bylo přidáno na Váš účet.
-AECONOMY_REMOVE_SUCCESS: §aEconomy §8» §7Úspěšně jste odebráli §6${money} §7z účtu
-  hráče/ky §6{player}§7.
-AECONOMY_REMOVE_FAILURE_TOO_MUCH: §aEconomy §8» §6{player} §7nemá dostatek financí!
-AECONOMY_REMOVE_SUCCESS_NOTIFY: §aEconomy §8» §6${money} §7bylo odebráno z Vašeho
+NO_POSITIVE_NUMBER: &aEconomy &8» &7Číslo musí být positivní!
+ECONOMY_SUCCESS: '&aEconomy &8» &7Váš zůstatek činí: &6${money}&7.'
+ECONOMY_BALANCE_SUCCESS: '&aEconomy &8» &7Zůstatek hráče/ky &6{player} &7činí: &6${money}&7.'
+ECONOMY_SEND_SUCCESS: &aEconomy &8» &7Úspěšně odesláno &6{money} &7hráči/ce &6{player}&7.
+ECONOMY_SEND_FAILURE_TOO_MUCH: &aEconomy &8» &7Nemáte dostatek financí!
+ECONOMY_SEND_SUCCESS_NOTIFY: &aEconomy &8» &7Obdrželi jste &6${money} &7od &6{player}&7.
+AECONOMY_SET_SUCCESS: &aEconomy &8» &7Úspěšně jste nastavili zůstatek hráče/ky &6{player}
+  &7na &6${money}&7.
+AECONOMY_SET_SUCCESS_NOTIFY: &aEconomy &8» &7Váš zůstatek byl nastaven na &6${money}&7.
+AECONOMY_ADD_SUCCESS: &aEconomy &8» &7Úspěšně jste přidali &6${money} &7hráči/ce &6{player}&7.
+AECONOMY_ADD_SUCCESS_NOTIFY: &aEconomy &8» &6${money} &7bylo přidáno na Váš účet.
+AECONOMY_REMOVE_SUCCESS: &aEconomy &8» &7Úspěšně jste odebráli &6${money} &7z účtu
+  hráče/ky &6{player}&7.
+AECONOMY_REMOVE_FAILURE_TOO_MUCH: &aEconomy &8» &6{player} &7nemá dostatek financí!
+AECONOMY_REMOVE_SUCCESS_NOTIFY: &aEconomy &8» &6${money} &7bylo odebráno z Vašeho
   účtu.
-VAULT_WITHDRAW_PLAYER_FAILURE_NO_ACCOUNT: §c{player} nemá vytvořený účet!
-VAULT_WITHDRAW_PLAYER_FAILURE_TOO_MUCH: §c{player} nemá dostatek financí.
-VAULT_DEPOSIT_PLAYER_FAILURE_NO_ACCOUNT: §c{player} nemá vytvořený účet!
-VAULT_NOT_IMPLEMENTED: §cTyto funkce nejsou implementovány!
+VAULT_WITHDRAW_PLAYER_FAILURE_NO_ACCOUNT: &c{player} nemá vytvořený účet!
+VAULT_WITHDRAW_PLAYER_FAILURE_TOO_MUCH: &c{player} nemá dostatek financí.
+VAULT_DEPOSIT_PLAYER_FAILURE_NO_ACCOUNT: &c{player} nemá vytvořený účet!
+VAULT_NOT_IMPLEMENTED: &cTyto funkce nejsou implementovány!

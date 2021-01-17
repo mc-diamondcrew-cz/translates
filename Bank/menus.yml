@@ -1,0 +1,130 @@
+MAIN_BACKGROUND:
+  type: BLACK_STAINED_GLASS_PANE
+  name: &0
+MAIN_HEAD:
+  head-owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY3ZGNlNDY0NTM0OWU0MWE3ZjM1Nzk3ZTJiOTI3OWUzNWE2NWY1ZTgxYTM0NDk2ODg1ZDI3MjY4ZjM2OTEzOSJ9fX0=
+  type: PLAYER_HEAD
+  name: &a&lBANKA
+  lore:
+  - &8► &7{amount}&8/&7{max}
+  - ''
+  - &eKlikněte &7pro změnu banky.
+MAIN_WITHDRAW:
+  type: BUCKET
+  name: &e&lVYBRAT
+  lore:
+  - &8► &7Klikněte pro vybrání peněz z banky.
+MAIN_DEPOSIT:
+  type: WATER_BUCKET
+  name: &e&lVLOŽIT
+  lore:
+  - &8► &7Klikněte pro vložení peněz do banky.
+DEPOSIT_BACKGROUND:
+  type: BLACK_STAINED_GLASS_PANE
+  name: &0
+DEPOSIT_ADD_10:
+  type: LIME_STAINED_GLASS_PANE
+  name: &a&lPŘIDAT &a10$
+  lore:
+  - &8► &7Klikněte pro vložení &e10$
+DEPOSIT_ADD_100:
+  type: LIME_STAINED_GLASS_PANE
+  name: &a&lPŘIDAT &a100$
+  lore:
+  - &8► &7Klikněte pro vložení &e100$
+DEPOSIT_ADD_1000:
+  type: LIME_STAINED_GLASS_PANE
+  name: &a&lPŘIDAT &a1,000$
+  lore:
+  - &8► &7Klikněte pro vložení &e1,000$
+DEPOSIT_ADD_10000:
+  type: LIME_STAINED_GLASS_PANE
+  name: &a&lPŘIDAT &a10,000$
+  lore:
+  - &8► &7Klikněte pro vložení &e10,000$
+DEPOSIT_ADD_100000:
+  type: LIME_STAINED_GLASS_PANE
+  name: &a&lPŘIDAT &a100,000$
+  lore:
+  - &8► &7Klikněte pro vložení &e100,000$
+DEPOSIT_ADD_1000000:
+  type: LIME_STAINED_GLASS_PANE
+  name: &a&lPŘIDAT &a1,000,000$
+  lore:
+  - &8► &7Klikněte pro vložení &e1,000,000$
+DEPOSIT_ADD_10000000:
+  type: LIME_STAINED_GLASS_PANE
+  name: &a&lPŘIDAT &a10,000,000$
+  lore:
+  - &8► &7Klikněte pro vložení &e10,000,000$
+DEPOSIT_ADD_100000000:
+  type: LIME_STAINED_GLASS_PANE
+  name: &a&lPŘIDAT &a100,000,000$
+  lore:
+  - &8► &7Klikněte pro vložení &e100,000,000$
+DEPOSIT_ADD_ALL:
+  type: LIME_STAINED_GLASS
+  name: &a&lPŘIDAT &aVšechno
+  lore:
+  - &8► &7Klikněte pro vložení &eVŠECH &7Vašich financí.
+DEPOSIT_ADD_CUSTOM:
+  type: COMMAND_BLOCK
+  name: &a&lPŘIDAT &aVlastní
+  lore:
+  - &8► &7Klikněte pro vložení &eVlastní &7sumy peněz.
+WITHDRAW_BACKGROUND:
+  type: BLACK_STAINED_GLASS_PANE
+  name: &0
+WITHDRAW_REMOVE_10:
+  type: RED_STAINED_GLASS_PANE
+  name: &c&lODEBRAT &c10$
+  lore:
+  - &8► &7Klikněte pro vybrání &e10$
+WITHDRAW_REMOVE_100:
+  type: RED_STAINED_GLASS_PANE
+  name: &c&lODEBRAT &c100$
+  lore:
+  - &8► &7Klikněte pro vybrání &e100$
+WITHDRAW_REMOVE_1000:
+  type: RED_STAINED_GLASS_PANE
+  name: &c&lODEBRAT &c1,000$
+  lore:
+  - &8► &7Klikněte pro vybrání &e1,000$
+WITHDRAW_REMOVE_10000:
+  type: RED_STAINED_GLASS_PANE
+  name: &c&lODEBRAT &c10,000$
+  lore:
+  - &8► &7Klikněte pro vybrání &e10,000$
+WITHDRAW_REMOVE_100000:
+  type: RED_STAINED_GLASS_PANE
+  name: &c&lODEBRAT &c100,000$
+  lore:
+  - &8► &7Klikněte pro vybrání &e100,000$
+WITHDRAW_REMOVE_1000000:
+  type: RED_STAINED_GLASS_PANE
+  name: &c&lODEBRAT &c1,000,000$
+  lore:
+  - &8► &7Klikněte pro vybrání &e1,000,000$
+WITHDRAW_REMOVE_10000000:
+  type: RED_STAINED_GLASS_PANE
+  name: &c&lODEBRAT &c10,000,000$
+  lore:
+  - &8► &7Klikněte pro vybrání &e10,000,000$
+WITHDRAW_REMOVE_100000000:
+  type: RED_STAINED_GLASS_PANE
+  name: &c&lODEBRAT &c100,000,000$
+  lore:
+  - &8► &7Klikněte pro vybrání &e100,000,000$
+WITHDRAW_REMOVE_ALL:
+  type: RED_STAINED_GLASS
+  name: &c&lODEBRAT &cALL
+  lore:
+  - &8► &7Klikněte pro vybrání &eVŠECH &7uložených financí.
+WITHDRAW_REMOVE_CUSTOM:
+  type: COMMAND_BLOCK
+  name: &c&lODEBRAT &cVlastní
+  lore:
+  - &8► &7Klikněte pro vybrání &eVlastní &7sumy financí.
+BANKS_BACKGROUND:
+  type: BLACK_STAINED_GLASS_PANE
+  name: &0

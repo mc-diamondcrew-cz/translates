@@ -1,0 +1,8 @@
+MENTION:
+  type: ENTITY_PLAYER_LEVELUP
+  volume: 1.0
+  pitch: 1.0
+PRIVATE_MESSAGE:
+  type: ENTITY_PLAYER_LEVELUP
+  volume: 1.0
+  pitch: 1.0

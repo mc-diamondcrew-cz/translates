@@ -1,0 +1,9 @@
+BROADCAST_START:
+  message: '&a&lLOTERIE: &7Nová &eloterie &7právě započala! &b/lottery'
+  duration: 40
+BROADCAST_END:
+  message: '&a&lLOTERIE: &e{winner} &7vyhrál/a &e{winAmount}&7!'
+  duration: 40
+BROADCAST_NO_WINNER:
+  message: '&a&lLOTERIE: &eNikdo se neúčastnil.'
+  duration: 40

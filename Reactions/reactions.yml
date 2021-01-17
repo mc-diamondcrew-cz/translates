@@ -1,0 +1,264 @@
+WORD_SHUFFLE:
+  enabled: true
+  menu-slot: 11
+  menu-item:
+    type: BOOK
+    name: '&eRozluštěných slov:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&7Rozluštěte &e{word} &7jako první a vyhrajte!'
+WORD_COPY:
+  enabled: true
+  menu-slot: 15
+  menu-item:
+    type: PAPER
+    name: '&eOkopírovaných slov:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&7Napište &e{word} &7jako první a vyhrajte!'
+WORD_HIDE:
+  enabled: true
+  menu-slot: 4
+  menu-item:
+    type: BARRIER
+    name: '&eNalezených slov:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&e<hover:show_text:''{word}''>&ePřejeďte myškou&7, přes tuto zprávu, opište
+    slovo a vyhrajte!'
+BLOCK_PLACE:
+  enabled: true
+  menu-slot: 49
+  menu-item:
+    type: GRASS
+    name: '&ePoložených kostek:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&ePoložte &7náhodnou kostku a vyhrajte!'
+BLOCK_BREAK:
+  enabled: true
+  menu-slot: 23
+  menu-item:
+    type: DIAMOND_PICKAXE
+    name: '&eZničených kostek:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eZničte &7náhodnou kostku a vyhrajte!'
+MOB_KILL:
+  enabled: true
+  menu-slot: 21
+  menu-item:
+    type: IRON_SWORD
+    name: '&eZabitých příšer:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eZabijte &7náhodnou příšeru a vyhrajte!'
+FISH_CATCH:
+  enabled: true
+  menu-slot: 40
+  menu-item:
+    type: FISHING_ROD
+    name: '&eChycených ryb:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eChyťte &7rybu a vyhrajte!'
+MATH_SUMMATION:
+  enabled: true
+  menu-slot: 21
+  menu-item:
+    head-owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWEyZDg5MWM2YWU5ZjZiYWEwNDBkNzM2YWI4NGQ0ODM0NGJiNmI3MGQ3ZjFhMjgwZGQxMmNiYWM0ZDc3NyJ9fX0=
+    type: PLAYER_HEAD
+    name: '&eSčítáních výřešeno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&7Kolik je &e{word}&7?'
+MATH_SUBTRACTION:
+  enabled: true
+  menu-slot: 31
+  menu-item:
+    head-owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM1ZTRlMjZlYWZjMTFiNTJjMTE2NjhlMWQ2NjM0ZTdkMWQwZDIxYzQxMWNiMDg1ZjkzOTQyNjhlYjRjZGZiYSJ9fX0=
+    type: PLAYER_HEAD
+    name: '&eOdčítání výřešeno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&7Kolik je &e{word}&7?'
+MATH_MULTIPLICATION:
+  enabled: true
+  menu-slot: 13
+  menu-item:
+    head-owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTk0YjVlM2RkYzdhOGYzM2M3OTM0Njg2MGQzOTIzYzcxYTU4MmZkYTE2YWNkYmY0YWQzYzBjYzQ2NWZkOTI2In19fQ==
+    type: PLAYER_HEAD
+    name: '&eNásobení vyřešeno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&7Kolik je &e{word}&7?'
+JUMP:
+  enabled: true
+  menu-slot: 9
+  menu-item:
+    type: FEATHER
+    name: '&eSkoků provedeno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&7První, kdo &evyskočí &7vyhrajte!'
+ARMOR_CHANGE:
+  enabled: true
+  menu-slot: 10
+  menu-item:
+    type: DIAMOND_CHESTPLATE
+    name: '&eBrnění vyměněno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&7První, kdo si &evymění brnení &7vyhraje!'
+BED_ENTER:
+  enabled: true
+  menu-slot: 16
+  menu-item:
+    type: RED_BED
+    name: '&ePostelí využito:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&7První, kdo si &elehne do postele &7vyhraje!'
+BUCKET_EMPTY:
+  enabled: true
+  menu-slot: 12
+  menu-item:
+    type: BUCKET
+    name: '&eKbelíků vylito:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eVylijte &7kbelík a vyhrajte!'
+BUCKET_FILL:
+  enabled: true
+  menu-slot: 14
+  menu-item:
+    type: WATER_BUCKET
+    name: '&eKbelíků naplněno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eNaplňte &7kbelík a vyhrajte!'
+PICKUP_ITEM:
+  enabled: true
+  menu-slot: 3
+  menu-item:
+    type: DIAMOND
+    name: '&ePředmětů zvednuto:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eZvědněte předmět &7a vyhrajte!'
+DROP_ITEM:
+  enabled: true
+  menu-slot: 4
+  menu-item:
+    type: DIAMOND
+    name: '&ePředmětů vyhozeno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eVyhoďte předmět &7a vyhrajte!'
+SNEAK:
+  enabled: true
+  menu-slot: 17
+  menu-item:
+    type: BOOK
+    name: '&eSkrčení provedeno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eSkrčte se &7a vyhrajte!'
+QUIT:
+  enabled: true
+  menu-slot: 0
+  menu-item:
+    type: REDSTONE_LAMP
+    name: '&eHer odpojeno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eOpusťte server &7a vyhrajte!'
+EAT:
+  enabled: true
+  menu-slot: 8
+  menu-item:
+    type: COOKED_BEEF
+    name: '&eJídla snězeno:'
+    lore:
+    - '&8► &7{amount}'
+    - ''
+    - '&aServer top:'
+    - '&7{topName} &7- &7{topAmount}'
+  win-amount: 100.0
+  message: '&eSnězte jídlo &7a vyhrajte!'

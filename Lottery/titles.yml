@@ -1,0 +1,18 @@
+BROADCAST_START:
+  title: &a&lLOTERIE
+  subtitle: "&7Nová &eloterie &7právě započala! &6/lottery"
+  in: 10
+  stay: 40
+  out: 20
+BROADCAST_END:
+  title: &a&lLOTERIE
+  subtitle: &e{winner} &6vyhrál/a &e{winAmount}&6!
+  in: 10
+  stay: 40
+  out: 20
+BROADCAST_NO_WINNER:
+  title: &a&lLOTERIE
+  subtitle: "&eNikdo se neúčastnil."
+  in: 10
+  stay: 40
+  out: 20

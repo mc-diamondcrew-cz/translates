@@ -1,0 +1,6 @@
+JOIN_ACTIONBAR:
+  message: '&fVítej na server, &b{player}&f!'
+  duration: 40
+MENTION_ACTIONBAR:
+  message: '&e{player} &ase o Vás zmínil/a!'
+  duration: 40

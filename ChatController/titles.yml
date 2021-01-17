@@ -1,0 +1,12 @@
+JOIN_TITLE:
+  title: '&fVítej na serveru, &b{player}&f!'
+  subtitle: '&emc.diamondcrew.cz'
+  in: 0
+  stay: 40
+  out: 20
+MENTION_TITLE:
+  title: '&a&lZmínka'
+  subtitle: '&e{player} &bse o Vás zmínil/a!'
+  in: 10
+  stay: 40
+  out: 10

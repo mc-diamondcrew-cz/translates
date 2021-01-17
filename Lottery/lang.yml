@@ -1,0 +1,39 @@
+HELP: |2-
+
+  &a&lLottery Help
+
+  &e/lottery &8» &7Otevře hlavní menu.
+  &e/lottery help &8» &7Zobrazí tuto zprávu.
+  &e/lottery buy <možství> &8» &7Zakoupí lístky.
+  &e/lottery list &8» &7Zobrazí menu s aktuálně zapojenými hráči.
+  &e/lottery stats <hráč/ka> &8» &7Zobrazí statistiky hráče/ky.
+ADMIN_HELP: |2-
+
+  &a&lLottery Admin-Help
+
+  &e/alottery restart &8» &7Ukončí a započne novou loterii.
+  &e/alottery help &8» &7Zobrazí tuto zprávu.
+  &e/alottery draw &8» &7Ukončí loterii a vybere výherce/kyni.
+  &e/alottery add <možství> &8» &7Přidá finance do loterie.
+BROADCAST_START: |2
+
+  &a&lLOTERIE
+  &7Nová eloterie &7právě započala! &7(&6${cost}&7/lístek&7)
+  &8» &7Použijte &6/lottery &7pro více informací!
+BROADCAST_END: |2
+
+  &a&lLOTERIE
+  &eLoterie &7právě skončila!
+  &8» &7Výherce/kyně: &e{winner}
+  &8» &7Výhra: &e{winAmount}
+BROADCAST_NO_WINNER: |2
+
+  &a&lLOTERIE
+  &eLoterie &7právě skončila!
+  &8» &7Nikdo se neúčastnil.
+MENU_TITLE: &8&lLoterie
+PLAYER_WIN: &aLoterie &8» &7Výhráli jste &e${winAmount} &7z loterie!
+BUY_SUCCESS: &aLoterie &8» &7Úspěšně jste si zakoupili &6{amount} &7lístků!
+BUY_FAILURE: &aLoterie &8» &7Nemůžete si zakoupit &6{amount} &7lístků!
+RESTART_SUCCESS: &aLoterie &8» &6ÚSpěšně &7restartována loterie.
+ADD_MONEY_SUCCESS: &aLoterie &8» &6Úspěšně &7přidáno &6${amount} &7do loterie.

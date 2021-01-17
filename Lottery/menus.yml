@@ -1,0 +1,153 @@
+MAIN_HEAD:
+  type: PLAYER_HEAD
+  name: &e{name}
+  lore:
+  - "&8► &7Klikněte pro zobrazení statistik."
+MAIN_BACKGROUND_1:
+  type: BLACK_STAINED_GLASS_PANE
+  name: &0
+MAIN_BACKGROUND_2:
+  type: YELLOW_STAINED_GLASS_PANE
+  name: &0
+MAIN_CURRENT_MONEY:
+  type: CHEST
+  name: &e&lAKTUÁKLNÍ LOTERIE
+  lore:
+  - '&8► &7Peníze v loterii: &6${amount}'
+MAIN_INSTRUCTIONS:
+  type: WRITABLE_BOOK
+  name: &e&lINFORMACE
+  lore:
+  - &7Věříte ve své štěstí?
+  - &7Potom se nebojte a kupte pár lístků!
+  - &7Čím více lístků máte, tím výše Vaše
+  - &7šance na výhru vzrůstá!
+  - ''
+  - &eMnožství výhry se odvýjí od celkových
+  - &ezakoupených lístků všech hráčů.
+MAIN_BUY:
+  type: "GOLD_INGOT"
+  name: "&e&lZAKOUPIT LÍSTEK"
+  amount: 1
+  lore:
+    - "&8► &7Klikněte pro zakoupení lístků!"
+    - "&6100$/lístek"
+    - ""
+    - "&6&lLevé &6Kliknutí &71 Lístek"
+    - "&6&lKolečko &710 Lístků"
+    - "&6&lPravé &6Kliknutí &730 Lístků"
+MAIN_LIST:
+  type: "PAPER"
+  name: "&e&lSEZNAM ÚČASTNÍKŮ"
+  amount: 1
+  lore:
+    - "&8► &7Klikněte pro zobrazení všech hráčů"
+    - "&7účastnících se v aktuální loterii."
+MAIN_HELP:
+  type: "BOOK"
+  name: "&e&lINFORMACE"
+  amount: 1
+  lore:
+    - "&a&lLOTERIE Nápověda"
+    - ""
+    - "&e/lottery &8» &7Otevře hlavní menu."
+    - "&e/lottery help &8» &7Zobrazí tuto zprávu."
+    - "&e/lottery buy <možství> &8» &7Zakoupení lístků."
+    - "&e/lottery info &8» &7Zobrazí informace o aktuální loterii."
+    - "&e/lottery list &8» &7Otevře menu se všemi účastníky"
+    - "&e/lottery stats <hráč/ka> &8» &7Zobrazí statistiky."
+MAIN_TIME_LEFT:
+  type: "CLOCK"
+  name: "&e&lČAS DO DALŠÍHO LOSOVÁNÍ"
+  amount: 1
+  lore:
+  - "&8► &7Čas do dalšího losování je:"
+  - &6{time}
+MAIN_ADMIN:
+  type: REDSTONE_TORCH
+  name: &c&lADMIN FUNKCE
+  lore:
+  - &6Whoa&7, výpadá to, že jste
+  - &7administrátor!
+  - ''
+  - &eKlikněte pro zobrazení super věcí!
+LIST_HEADS:
+  type: PLAYER_HEAD
+  name: '{name}'
+  lore:
+  - "&8► &7Klikněte pro zobrazení statistik."
+LIST_BACKGROUND_1:
+  type: BLACK_STAINED_GLASS_PANE
+  name: &0
+LIST_BACKGROUND_2:
+  type: YELLOW_STAINED_GLASS_PANE
+  name: &0
+LIST_BACK:
+  type: REDSTONE
+  name: &c&lZPĚT
+  lore:
+  - "&8► &7Klikněte pro návrat do hlavního menu."
+CONFIRM_BACKGROUND:
+  type: BLACK_STAINED_GLASS_PANE
+  name: &0
+CONFIRM_CONFIRM_1:
+  type: LIME_STAINED_GLASS_PANE
+  name: &a&lPOTVRDIT
+  lore:
+  - &8► &7Klikněte pro potvrzení.
+CONFIRM_CONFIRM_2:
+  type: LIME_STAINED_GLASS
+  name: &a&lPOTVRDIT
+  lore:
+  - &8► &7Klikněte pro potvrzení.
+CONFIRM_INFORMATION:
+  type: "WRITABLE_BOOK"
+  name: "&e&lJSTE SI JIST/A?"
+  amount: 1
+  lore:
+    - "&7Jste si jist/a, že chcete pokračovat"
+    - "&7s touto transakcí?"
+CONFIRM_DECLINE_1:
+  type: RED_STAINED_GLASS_PANE
+  name: &c&lODMÍTNOUT
+  lore:
+  - &8► &7Klikněte pro odmítnutí.
+CONFIRM_DECLINE_2:
+  type: RED_STAINED_GLASS
+  name: &c&lODMÍTNOUT
+  lore:
+  - &8► &7Klikněte pro odmítnutí.
+CONFIRM_BACK:
+  type: REDSTONE_LAMP
+  name: &c&lZPĚT
+  lore:
+  - &8► &7Klikněte pro návrat do hlavního menu.
+PLAYER_HEAD:
+  type: PLAYER_HEAD
+  name: &e{name}
+PLAYER_BACKGROUND_1:
+  type: BLACK_STAINED_GLASS_PANE
+  name: &0
+PLAYER_BACKGROUND_2:
+  type: YELLOW_STAINED_GLASS_PANE
+  name: &0
+PLAYER_EARNINGS:
+  type: GOLD_INGOT
+  name: &e&lDOHROMADY VYHRÁNO
+  lore:
+  - &8► &7${amount}
+PLAYER_BIGGEST_WIN:
+  type: EMERALD
+  name: &e&lNEJVYŠŠÍ VÝHRA
+  lore:
+  - &8► &7${amount}
+PLAYER_TICKETS:
+  type: PAPER
+  name: &e&lZAKOUPENÝCH LÍSTKŮ
+  lore:
+  - &8► &7${amount} v aktuální loterii.
+PLAYER_BACK:
+  type: REDSTONE_LAMP
+  name: &c&lZPĚT
+  lore:
+  - &8► &7Klikněte pro návrat do hlavního menu.

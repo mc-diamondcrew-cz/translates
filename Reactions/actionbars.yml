@@ -1,0 +1,9 @@
+BROADCAST_START:
+  message: '&e◆ &8| &aReakce &8» {message}'
+  duration: 40
+BROADCAST_END:
+  message: '&e◆ &8| &aReakce &8» &e{name} &7vyhrál/a &6${prize}&7!'
+  duration: 40
+BROADCAST_NO_WINNER:
+  message: '&e◆ &8| &aReakce &8» &7Nikdo nevyhrál.'
+  duration: 40

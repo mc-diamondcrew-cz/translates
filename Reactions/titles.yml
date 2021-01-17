@@ -1,0 +1,18 @@
+BROADCAST_START:
+  title: '&aReakce'
+  subtitle: '{message}'
+  in: 10
+  stay: 40
+  out: 10
+BROADCAST_END:
+  title: '&aReakce'
+  subtitle: '&e{name} &7vyhrál/a &6${prize}&7!'
+  in: 10
+  stay: 40
+  out: 10
+BROADCAST_NO_WINNER:
+  title: '&aReakce'
+  subtitle: '&e◆ &8|  &8» &7Nikdo nevyhrál.'
+  in: 10
+  stay: 40
+  out: 10
