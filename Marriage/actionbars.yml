@@ -1,21 +1,21 @@
 NO_PVP:
-  message: §c§l❤ §aSvatba §8» &fNemůžete útočit na partnera/ku.
+  message: '&c&l❤ &aSvatba &8» &fNemůžete útočit na partnera/ku.'
   duration: 20
 KISS:
-  message: §c§l❤ §aSvatba §8» &fPolíbili jste partnera/ku.
+  message: '&c&l❤ &aSvatba &8» &fPolíbili jste partnera/ku.'
   duration: 20
 KISS_PARTNER:
-  message: §c§l❤ §aSvatba §8» &fVáš partner Vás políbil/a.
+  message: '&c&l❤ &aSvatba &8» &fVáš partner Vás políbil/a.'
   duration: 20
 SHARE_FOOD:
-  message: §c§l❤ §aSvatba §8» &fRozdělili jste se o jídlo. &7({amount})
+  message: '&c&l❤ &aSvatba &8» &fRozdělili jste se o jídlo. &7({amount})'
   duration: 20
 SHARE_FOOD_PARTNER:
-  message: §c§l❤ §aSvatba §8» &fPartner/ka se s Vámi rozdělil/a o jídlo. &7({amount})
+  message: '&c&l❤ &aSvatba &8» &fPartner/ka se s Vámi rozdělil/a o jídlo. &7({amount})'
   duration: 20
 SHARE_XP:
-  message: §c§l❤ §aSvatba §8» &fRozdělili jste se o XP. &7({amount})
+  message: '&c&l❤ &aSvatba &8» &fRozdělili jste se o XP. &7({amount})'
   duration: 20
 SHARE_XP_PARTNER:
-  message: §c§l❤ §aSvatba §8» &fPartner/ka se s Vámi rozdělil/a o XP. &7({amount})
+  message: '&c&l❤ &aSvatba &8» &fPartner/ka se s Vámi rozdělil/a o XP. &7({amount})'
   duration: 20

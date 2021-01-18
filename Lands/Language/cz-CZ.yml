@@ -329,7 +329,7 @@ command:
       &cPotvrďte prosím, že chceze zaplatit &4{cost}$ &cjako kompenzaci nájemci &4{player} &cza jeho odstranění:
       [T]&aPotvrdit: &8[KLIK][H]&7Klikni pro potvrzení akce a platby.[/H][C]lands rent removetenant confirm[/C][/T]
     set:
-      land: '&cNemůžete nastavit zemi &4{land} §cna pronájem. &7Můžete vytvořit pod-oblasti, nebo zemi prodat.'
+      land: '&cNemůžete nastavit zemi &4{land} &cna pronájem. &7Můžete vytvořit pod-oblasti, nebo zemi prodat.'
       already: '&cAktuálně nemůžete nastavit tuto oblast na pronájem. &7Oblast &6{area} &7je aktuálně pronajmuta hráčem/kou &3{player}&7. &7Expiruje za &5{time}&7.'
       sold: '&cNemůžete nastavit oblast, která byla prodána, nebo pronajmuta. &7Oblast &6{area} &7byla koupena hráčem/kou &3{player}&7.'
       success: '&7Nastavili jste oblast &6{area} &7k pronájmu. Nájemce/kyně bude platit ${cost} &7každých &5{time}&7.'

@@ -5,7 +5,7 @@ ADMIN_HELP: |2-
   &e/aitemcommands help &8» &7Zobrazí tuto zprávu.
   &e/aitemcommands list &8» &7Zobrazí seznam všech předmětů.
   &e/aitemcommands get <název> &8» &7Získání předmětu.
-GET_SUCCESS: &aItemCommands &8» &b{item} &7byl přidán do Vašeho inventáře.
-GET_FAILURE_NO_ITEM: &aItemCommands &8» &b{item} &7není uložen.
+GET_SUCCESS: '&aItemCommands &8» &b{item} &7byl přidán do Vašeho inventáře.'
+GET_FAILURE_NO_ITEM: '&aItemCommands &8» &b{item} &7není uložen.'
 LIST_TITLE: '&aItemCommands &8» &bSeznam předmětů:'
-LIST_FORMAT: &7- &7{name}
+LIST_FORMAT: '&7- &7{name}'

@@ -1,53 +1,53 @@
 DEFAULT:
   menu-item:
     type: SOUL_SAND
-    name: &7&lBĚŽNÝ &7Účet
+    name: "&7&lBĚŽNÝ &7Účet"
     lore:
-    - &7Max. Vložení &8► &7{max}
+    - "&7Max. Vložení &8► &7{max}"
   max-deposit: 100000
   cost: 0
   perm: ''
 TWO:
   menu-item:
     type: DIRT
-    name: &f&lOBYČEJNÝ &fÚčet
+    name: "&f&lOBYČEJNÝ &fÚčet"
     lore:
-    - &7Max. Vložení &8► &7{max}
-    - &7Cema &8► &7{cost}
-    - &7Pravomoc &8► &7{perm}
+    - "&7Max. Vložení &8► &7{max}"
+    - "&7Cena &8► &7{cost}"
+    - "&7Pravomoc &8► &7{perm}"
   max-deposit: 200000
   cost: 50000
   perm: bank.tier.2
 THREE:
   menu-item:
     type: GRASS
-    name: &e&lNEOBYČEJNÝ &eÚčet
+    name: "&e&lNEOBYČEJNÝ &eÚčet"
     lore:
-    - &7Max. Vložení &8► &7{max}
-    - &7Cema &8► &7{cost}
-    - &7Pravomoc &8► &7{perm}
+    - "&7Max. Vložení &8► &7{max}"
+    - "&7Cena &8► &7{cost}"
+    - "&7Pravomoc &8► &7{perm}"
   max-deposit: 300000
   cost: 100000
   perm: bank.tier.3
 FOUR:
   menu-item:
     type: CHEST
-    name: &b&lEPICKÝ &bÚčet
+    name: "&b&lEPICKÝ &bÚčet"
     lore:
-    - &7Max. Vložení &8► &7{max}
-    - &7Cema &8► &7{cost}
-    - &7Pravomoc &8► &7{perm}
+    - "&7Max. Vložení &8► &7{max}"
+    - "&7Cena &8► &7{cost}"
+    - "&7Pravomoc &8► &7{perm}"
   max-deposit: 400000
   cost: 200000
   perm: bank.tier.4
 FIVE:
   menu-item:
     type: ENDER_CHEST
-    name: &d&lLEGENDÁRNÍ &dÚčet
+    name: "&d&lLEGENDÁRNÍ &dÚčet"
     lore:
-    - &7Max. Vložení &8► &7{max}
-    - &7Cema &8► &7{cost}
-    - &7Pravomoc &8► &7{perm}
+    - "&7Max. Vložení &8► &7{max}"
+    - "&7Cena &8► &7{cost}"
+    - "&7Pravomoc &8► &7{perm}"
   max-deposit: 500000
   cost: 250000
   perm: bank.tier.5

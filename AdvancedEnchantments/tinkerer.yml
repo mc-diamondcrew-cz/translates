@@ -1,8 +1,8 @@
 messages:
   non-tradeable-item:
-  - §aKouzla §8» §6Drotář §7nechce tento předmět.
+  - "&aKouzla &8» &6Drotář &7nechce tento předmět."
   trade-accepted:
-  - §aKouzla §8» §7Obchod §6přijat§7.
+  - "&aKouzla &8» &7Obchod &6přijat&7."
 inventory:
   open-sound: BLOCK_CHEST_OPEN
   name: Vy                   Drotář

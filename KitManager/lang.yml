@@ -14,19 +14,16 @@ ADMIN_HELP: |2
   &e/akit give <hráč/ka> <název> &8» &7Předá kit cíly, ignoruje pravomoce a přebíjecí dobu.
   &e/akit create <název> <přebíjecí doba(sekund)> &8» &7Vyvoří nový kit, z předmětů ve Vašem inventáři.
   &e/akit remove <název> &8» &7Odstraní kit.
-KIT_SUCCESS: &aKitManager &8» &7Obdrželi jste kit &6{kit}&7.
-KIT_FAILURE_NO_KIT: &aKitManager &8» &6{kit} &7nebylo možné nalézt.
-KIT_FAILURE_COOLDOWN: &aKitManager &8» &7Musíte počkat {time} &7pro získání tohoto kitu!
+KIT_SUCCESS: '&aKitManager &8» &7Obdrželi jste kit &6{kit}&7.'
+KIT_FAILURE_NO_KIT: '&aKitManager &8» &6{kit} &7nebylo možné nalézt.'
+KIT_FAILURE_COOLDOWN: '&aKitManager &8» &7Musíte počkat {time} &7pro získání tohoto kitu!'
 KITS_SUCCESS_TITLE: '&aKitManager &8» &7Vaše kity:'
-KITS_SUCCESS_FORMAT_AVAILABLE: &7- &7{name} <hover:show_text:'&eKlikněte pro získání'><click:run_command:/kit
-  {name}>&e#</click></hover> <hover:show_text:'&cKlikněte pro odstranění'><click:run_command:/akit
-  remove {name}>&c✕</click></hover>
-KITS_SUCCESS_FORMAT_UNAVAILABLE: &7- &7{name} <hover:show_text:'&cKlikněte pro odstranení'><click:run_command:/akit
-  remove {name}>&c✕</click></hover>
-AKIT_GIVE_SUCCESS: &aKitManager &8» &7Úspěšně jste předali hráči/ce &6{player} &7kit
-  &6{kit}&7.
-AKIT_GIVE_SUCCESS_NOTIFY: &aKitManager &8» &7Obdrželi jste kit &6{kit} &7od
-  &6{player}&7.
-AKIT_CREATE_SUCCESS: &aKitManager &8» &7Úspěšně jste vytvořili kit &6{kit} &7s přebíjecí dobou
-  &6{cooldown}s&7.
-AKIT_REMOVE_SUCCESS: &aKitManager &8» &7ÚSpěšně odstraněn kit &6{kit}&7.
+KITS_SUCCESS_FORMAT_AVAILABLE: '&7- &7{name} <hover:show_text:''&eKlikněte pro získání''><click:run_command:/kit
+  {name}>&e#</click></hover> <hover:show_text:''&cKlikněte pro odstranění''><click:run_command:/akit
+  remove {name}>&c✕</click></hover>'
+KITS_SUCCESS_FORMAT_UNAVAILABLE: '&7- &7{name} <hover:show_text:''&cKlikněte pro odstranení''><click:run_command:/akit
+  remove {name}>&c✕</click></hover>'
+AKIT_GIVE_SUCCESS: '&aKitManager &8» &7Úspěšně jste předali hráči/ce &6{player} &7kit &6{kit}&7.'
+AKIT_GIVE_SUCCESS_NOTIFY: '&aKitManager &8» &7Obdrželi jste kit &6{kit} &7od &6{player}&7.'
+AKIT_CREATE_SUCCESS: '&aKitManager &8» &7Úspěšně jste vytvořili kit &6{kit} &7s přebíjecí dobou &6{cooldown}s&7.'
+AKIT_REMOVE_SUCCESS: '&aKitManager &8» &7ÚSpěšně odstraněn kit &6{kit}&7.'

@@ -1,18 +1,18 @@
 TELEPORT_TICKING:
-  title: &b&lTeleportace
-  subtitle: &7{time}&8s
+  title: '&b&lTeleportace'
+  subtitle: '&7{time}&8s'
   in: 20
   stay: 40
   out: 20
 TELEPORT_FAIL:
-  title: &b&lZaznamenán pohyb
-  subtitle: &cTeleporace zrušena..
+  title: '&b&lZaznamenán pohyb'
+  subtitle: '&cTeleporace zrušena..'
   in: 20
   stay: 60
   out: 20
 TELEPORT_TELEPORT:
-  title: &bTeleportace
-  subtitle: &7Teleportuji..
+  title: '&bTeleportace'
+  subtitle: '&7Teleportuji..'
   in: 20
   stay: 60
   out: 20

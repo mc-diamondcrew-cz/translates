@@ -1,5 +1,5 @@
-HOLOGRAM_TEXT: &c-{damage}
-ACTIONBAR_TEXT: &8>> &a{currentHealth}&7/&a{maxHealth} &8<<
+HOLOGRAM_TEXT: '&c-{damage}'
+ACTIONBAR_TEXT: '&8>> &a{currentHealth}&7/&a{maxHealth} &8<<'
 FORMAT_DAMAGE: '####.#'
 FORMAT_HEALTH: '####.#'
 FORMAT_MAX: '####.#'

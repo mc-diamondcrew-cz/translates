@@ -1,147 +1,127 @@
-NO_CONSOLE: &aServerCore &8» &7Tento příkaz je pouze pro herní použití!
+NO_CONSOLE: '&aServerCore &8» &7Tento příkaz je pouze pro herní použití!'
 CI_USAGE: '&aServerCore &8» &6Použití: &7/ci <hráč>'
-CI_SUCCESS: &aServerCore &8» &7Inventář úspěšně vyčištěn.
-CI_SUCCESS_OTHERS: &aServerCore &8» &7Inventář hráče &6{player} &7byl úspěšně vyčištěn.
-CI_SUCCESS_OTHERS_PLAYER: &aServerCore &8» &7Váš inventář byl vyčištěn hráčem &6{player}&7.
+CI_SUCCESS: '&aServerCore &8» &7Inventář úspěšně vyčištěn.'
+CI_SUCCESS_OTHERS: '&aServerCore &8» &7Inventář hráče &6{player} &7byl úspěšně vyčištěn.'
+CI_SUCCESS_OTHERS_PLAYER: '&aServerCore &8» &7Váš inventář byl vyčištěn hráčem &6{player}&7.'
 I_USAGE: '&aServerCore &8» &6Použití: &7/i <materiál>'
-I_SUCCESS: &aServerCore &8» &7Úspěšně jsi obdržel &6{material}&7.
-BACK_SUCCESS: &aServerCore &8» &7Otevírám menu..
+I_SUCCESS: '&aServerCore &8» &7Úspěšně jsi obdržel &6{material}&7.'
+BACK_SUCCESS: '&aServerCore &8» &7Otevírám menu..'
 FLY_USAGE: '&aServerCore &8» &6Použití: &7/fly <hráč>'
-FLY_SUCCESS_ON: &aServerCore &8» &7Létání &6aktivováno&7.
-FLY_SUCCESS_OFF: &aServerCore &8» &7Létání &6deaktivováno&7.
-FLY_SUCCESS_OTHERS_ON: &aServerCore &8» &7Úspěšně &6aktivováno &7létání hráči &6{player}&7.
-FLY_SUCCESS_OTHERS_OFF: &aServerCore &8» &7Úspěšně &6deaktivoáno &7létání hráči &6{player}&7.
-FLY_SUCCESS_OTHERS_ON_PLAYER: &aServerCore &8» &7Vaše létání bylo &6aktivoáno &7hráčem
-  &6{player}&7.
-FLY_SUCCESS_OTHERS_OFF_PLAYER: &aServerCore &8» &7Vaše létání bylo &6deaktivováno
-  &7hráčem &6{player}&7.
+FLY_SUCCESS_ON: '&aServerCore &8» &7Létání &6aktivováno&7.'
+FLY_SUCCESS_OFF: '&aServerCore &8» &7Létání &6deaktivováno&7.'
+FLY_SUCCESS_OTHERS_ON: '&aServerCore &8» &7Úspěšně &6aktivováno &7létání hráči &6{player}&7.'
+FLY_SUCCESS_OTHERS_OFF: '&aServerCore &8» &7Úspěšně &6deaktivoáno &7létání hráči &6{player}&7.'
+FLY_SUCCESS_OTHERS_ON_PLAYER: '&aServerCore &8» &7Vaše létání bylo &6aktivoáno &7hráčem &6{player}&7.'
+FLY_SUCCESS_OTHERS_OFF_PLAYER: '&aServerCore &8» &7Vaše létání bylo &6deaktivováno &7hráčem &6{player}&7.'
 FSPEED_USAGE: '&aServerCore &8» &6Použití: &7/fspeed <hráč> <speed>'
-FSPEED_SUCCESS: &aServerCore &8» &7Rychlost létání úspěšně nastavena na &6{speed}&7.
-FSPEED_SUCCESS_OTHERS: &aServerCore &8» &7Rychlost létání hráče &6{player} &7byla
-  nastavena na &6{speed}&7.
-FSPEED_SUCCESS_OTHERS_PLAYER: &aServerCore &8» &7Rychlost tvého létání byla nastavena
-  na &6{speed} &7hráčem &6{player}&7.
+FSPEED_SUCCESS: '&aServerCore &8» &7Rychlost létání úspěšně nastavena na &6{speed}&7.'
+FSPEED_SUCCESS_OTHERS: '&aServerCore &8» &7Rychlost létání hráče &6{player} &7byla nastavena na &6{speed}&7.'
+FSPEED_SUCCESS_OTHERS_PLAYER: '&aServerCore &8» &7Rychlost tvého létání byla nastavena na &6{speed} &7hráčem &6{player}&7.'
 WSPEED_USAGE: '&aServerCore &8» &6Použití: &7/wspeed <hráč> <speed>'
-WSPEED_SUCCESS: &aServerCore &8» &7Rychlost chůze úspěšně nastavena na &6{speed}&7.
-WSPEED_SUCCESS_OTHERS: &aServerCore &8» &7Rychlost chůze hráče &6{player} &7byla nastavena
-  na &6{player}&7.
-WSPEED_SUCCESS_OTHERS_PLAYER: &aServerCore &8» &7Rychlost tvé chůze byla nastavena
-  na &6{speed} &7hráčem &6{player}&7.
+WSPEED_SUCCESS: '&aServerCore &8» &7Rychlost chůze úspěšně nastavena na &6{speed}&7.'
+WSPEED_SUCCESS_OTHERS: '&aServerCore &8» &7Rychlost chůze hráče &6{player} &7byla nastavena na &6{player}&7.'
+WSPEED_SUCCESS_OTHERS_PLAYER: '&aServerCore &8» &7Rychlost tvé chůze byla nastavena na &6{speed} &7hráčem &6{player}&7.'
 GAMEMODE_USAGE: '&aServerCore &8» &6Použití: &7/gamemode <type> <hráč>'
-GAMEMODE_SUCCESS: &aServerCore &8» &7Herní režim nastaven na &6{type}&7.
-GAMEMODE_SUCCESS_OTHERS: &aServerCore &8» &7Herní režim hráče &6{player} &7nastaven
-  na &6{type}&7.
-GAMEMODE_SUCCESS_OTHERS_PLAYER: &aServerCore &8» &7Váš herní režim byl nastaven na
-  &6{type} &7hráčem &6{player}&7.
-GAMEMODE_FAILURE_NO_GAMEMODE: &aServerCore &8» &6{type} &7není platný herní režim!
+GAMEMODE_SUCCESS: '&aServerCore &8» &7Herní režim nastaven na &6{type}&7.'
+GAMEMODE_SUCCESS_OTHERS: '&aServerCore &8» &7Herní režim hráče &6{player} &7nastaven na &6{type}&7.'
+GAMEMODE_SUCCESS_OTHERS_PLAYER: '&aServerCore &8» &7Váš herní režim byl nastaven na &6{type} &7hráčem &6{player}&7.'
+GAMEMODE_FAILURE_NO_GAMEMODE: '&aServerCore &8» &6{type} &7není platný herní režim!'
 GAMEMODE_GMC_USAGE: '&aServerCore &8» &6Použití: &7/gmc <hráč>'
 GAMEMODE_GMS_USAGE: '&aServerCore &8» &6Použití: &7/gms <hráč>'
 GAMEMODE_GMA_USAGE: '&aServerCore &8» &6Použití: &7/gma <hráč>'
 GAMEMODE_GMSP_USAGE: '&aServerCore &8» &6Použití: &7/gmsp <hráč>'
 SETHOME_USAGE: '&aServerCore &8» &6Použití: &7/sethome <název>'
-SETHOME_SUCCESS: &aServerCore &8» &7Úspěšně nastaven nový domov s názvem &6{name}&7.
-SETHOME_FAILURE_MAX_HOMES: &aServerCore &8» &7Nemůžeš vytvářet více domů!
+SETHOME_SUCCESS: '&aServerCore &8» &7Úspěšně nastaven nový domov s názvem &6{name}&7.'
+SETHOME_FAILURE_MAX_HOMES: '&aServerCore &8» &7Nemůžeš vytvářet více domů!'
 ASETHOME_USAGE: '&aServerCore &8» &6Použití: &7/asethome <hráč> <název>'
-ASETHOME_SUCCESS: &aServerCore &8» &7Úspěšně vytvořen domov s názvem &6{name} &7pro
-  &6{player}&7.
-ASETHOME_SUCCESS_PLAYER: &aServerCore &8» &6{player} &7pro Vás vytvořil nový domov
-  s názvem &6{name}&7.
+ASETHOME_SUCCESS: '&aServerCore &8» &7Úspěšně vytvořen domov s názvem &6{name} &7pro &6{player}&7.'
+ASETHOME_SUCCESS_PLAYER: '&aServerCore &8» &6{player} &7pro Vás vytvořil nový domov s názvem &6{name}&7.'
 HOME_USAGE: '&aServerCore &8» &6Použití: &7/home <název>'
-HOME_SUCCESS: &aServerCore &8» &7Úspěšně teleportováno na domov &6{home}&7.
-HOME_FAILURE_NO_HOME: &aServerCore &8» &7Nevlastníte domov s názvem &6{name}&7.
+HOME_SUCCESS: '&aServerCore &8» &7Úspěšně teleportováno na domov &6{home}&7.'
+HOME_FAILURE_NO_HOME: '&aServerCore &8» &7Nevlastníte domov s názvem &6{name}&7.'
 AHOME_USAGE: '&aServerCore &8» &6Použití: &7/ahome <hráč> <název>'
-AHOME_SUCCESS: &aServerCore &8» &7Successfully teleported to home &6{home} &7of &6{player}&7.
-AHOME_FAILURE_NO_HOME: &aServerCore &8» &6{player} &7does not have a home with name
-  &6{name}&7.
+AHOME_SUCCESS: '&aServerCore &8» &7Successfully teleported to home &6{home} &7of &6{player}&7.'
+AHOME_FAILURE_NO_HOME: '&aServerCore &8» &6{player} &7does not have a home with name &6{name}&7.'
 DELHOME_USAGE: '&aServerCore &8» &6Použití: &7/delhome <name>'
-DELHOME_SUCCESS: &aServerCore &8» &7Úspěšně odstraněn domov &6{name}&7.
-DELHOME_FAILURE_NO_HOME: &aServerCore &8» &7Nevlastníte domov s názvem &6{name}&7.
+DELHOME_SUCCESS: '&aServerCore &8» &7Úspěšně odstraněn domov &6{name}&7.'
+DELHOME_FAILURE_NO_HOME: '&aServerCore &8» &7Nevlastníte domov s názvem &6{name}&7.'
 ADELHOME_USAGE: '&aServerCore &8» &6Použití: &7/adelhome <hráč> <název>'
-ADELHOME_SUCCESS: &aServerCore &8» &7Úspěšně odstraněn domov &6{name} &7hráče &6{player}&7.
-ADELHOME_SUCCESS_PLAYER: &aServerCore &8» &7Váš domov &6{name} &7byl odtraněn hráčem
-  &6{player}&7.
-ADELHOME_FAILURE_NO_HOME: &aServerCore &8» &6{player} &7nevlastní domov s názvem &6{name}&7.
+ADELHOME_SUCCESS: '&aServerCore &8» &7Úspěšně odstraněn domov &6{name} &7hráče &6{player}&7.'
+ADELHOME_SUCCESS_PLAYER: '&aServerCore &8» &7Váš domov &6{name} &7byl odtraněn hráčem &6{player}&7.'
+ADELHOME_FAILURE_NO_HOME: '&aServerCore &8» &6{player} &7nevlastní domov s názvem &6{name}&7.'
 HOMES_SUCCESS_TITLE: '&aServerCore &8» &6Tvé domy:'
-HOMES_SUCCESS_FORMAT: &7- &7{name} <hover:show_text:'&eKlikni pro teleportaci'><click:run_command:/home
-  {name}>&e➹</hover></click> <hover:show_text:'&cKlikni pro odstranění'><click:run_command:/delhome
-  {name}>&c✕</hover></click>
+HOMES_SUCCESS_FORMAT: '&7- &7{name} <hover:show_text:''&eKlikni pro teleportaci''><click:run_command:/home
+  {name}>&e➹</hover></click> <hover:show_text:''&cKlikni pro odstranění''><click:run_command:/delhome
+  {name}>&c✕</hover></click>'
 AHOMES_USAGE: '&aServerCore &8» &6Použití: &7/ahomes <hráč>'
 AHOMES_SUCCESS_TITLE: '&aServerCore &8» &6Domy hráče {player}:'
-AHOMES_SUCCESS_FORMAT: &7- &7{name} <hover:show_text:'&eKlikni pro teleportaci'><click:run_command:/ahome
-  {player} {name}>&e➹</hover></click> <hover:show_text:'&cKlikni pro odstranění'><click:run_command:/adelhome
-  {player} {name}>&c✕</hover></click>
-RELORE_USAGE: '&aServerCore &8» &6Použití: &7/relore <line> <text> &7(S předmětem
-  v ruce)'
-RELORE_SUCCESS: &aServerCore &8» &7Řádek &6{line} &7nastaven na &6{text}&7.
+AHOMES_SUCCESS_FORMAT: '&7- &7{name} <hover:show_text:''&eKlikni pro teleportaci''><click:run_command:/ahome
+  {player} {name}>&e➹</hover></click> <hover:show_text:''&cKlikni pro odstranění''><click:run_command:/adelhome
+  {player} {name}>&c✕</hover></click>'
+RELORE_USAGE: '&aServerCore &8» &6Použití: &7/relore <line> <text> &7(S předmětem v ruce)'
+RELORE_SUCCESS: '&aServerCore &8» &7Řádek &6{line} &7nastaven na &6{text}&7.'
 RENAME_USAGE: '&aServerCore &8» &6Použití: &7/rename <název> &7(S předmětem v ruce)'
-RENAME_SUCCESS: &aServerCore &8» &7Předmět úspěšně přejmenován na &6{name}&7.
+RENAME_SUCCESS: '&aServerCore &8» &7Předmět úspěšně přejmenován na &6{name}&7.'
 SKULL_USAGE: '&aServerCore &8» &6Použití: &7/skull <název>'
-SKULL_SUCCESS: &aServerCore &8» &7Úspěšně získáná hlava &6{name}&7.
+SKULL_SUCCESS: '&aServerCore &8» &7Úspěšně získáná hlava &6{name}&7.'
 TP_USAGE: '&aServerCore &8» &6Použití: &7/tp <hráč> <hráč>'
-TP_SUCCESS: &aServerCore &8» &7Úspěšně jsi se teleportoval na &6{player}&7.
-TP_SUCCESS_PLAYER: &aServerCore &8» &6{player} &7se na tebe teleportoval/a.
-TP_SUCCESS_OTHERS: &aServerCore &8» &7Úspěšně teleportováno &6{player}1 &7na &6{player}2&7.
-TP_SUCCESS_OTHERS_PLAYER1: &aServerCore &8» &7Byl/a jsi teleportován/a na &6{target}
-  &7hráčem/kou &6{player}&7.
-TP_SUCCESS_OTHERS_PLAYER2: &aServerCore &8» &6{target} &7byl/a teleportován/a na tebe,
-  hráčem/kou &6{player}&7.
+TP_SUCCESS: '&aServerCore &8» &7Úspěšně jsi se teleportoval na &6{player}&7.'
+TP_SUCCESS_PLAYER: '&aServerCore &8» &6{player} &7se na tebe teleportoval/a.'
+TP_SUCCESS_OTHERS: '&aServerCore &8» &7Úspěšně teleportováno &6{player1} &7na &6{player2}&7.'
+TP_SUCCESS_OTHERS_PLAYER1: '&aServerCore &8» &7Byl/a jsi teleportován/a na &6{target} &7hráčem/kou &6{player}&7.'
+TP_SUCCESS_OTHERS_PLAYER2: '&aServerCore &8» &6{target} &7byl/a teleportován/a na tebe, hráčem/kou &6{player}&7.'
 TPHERE_USAGE: '&aServerCore &8» &6Použití: &7/tphere <hráč>'
-TPHERE_SUCCESS: &aServerCore &8» &7Úspěšně jsi na sebe teleportoval &6{player}&7.
-TPHERE_SUCCESS_PLAYER: &aServerCore &8» &7Byl/a jsi úspěšně teleportován/a na &6{player}&7.
-TOPBLOCK_SUCCESS: &aServerCore &8» &7Byl/a jsi teleportován/a na nejvyšší block.
+TPHERE_SUCCESS: '&aServerCore &8» &7Úspěšně jsi na sebe teleportoval &6{player}&7.'
+TPHERE_SUCCESS_PLAYER: '&aServerCore &8» &7Byl/a jsi úspěšně teleportován/a na &6{player}&7.'
+TOPBLOCK_SUCCESS: '&aServerCore &8» &7Byl/a jsi teleportován/a na nejvyšší block.'
 TPA_USAGE: '&aServerCore &8» &6Použití: &7/tpa <hráč>'
-TPA_SUCCESS: &aServerCore &8» &7Žádost o teleportaci odeslána hráči/ce &6{player}&7.
+TPA_SUCCESS: '&aServerCore &8» &7Žádost o teleportaci odeslána hráči/ce &6{player}&7.'
 TPA_SUCCESS_PLAYER: "&aServerCore &8» &6{player} &7žáda o teleportaci. \n<hover:show_text:'&\
   aKlikni pro potvrzení'><click:run_command:/tpaccept>&a&lPotvrdit &a✓</click></hover>\
   \ \n<hover:show_text:'&cKlikni pro odmítnutí'><click:run_command:/tpdeny>&c&lOdmí\
   tnout &c✕</click></hover>"
-TPA_FAILURE_BLOCKED: &aServerCore &8» &7Jsi v seznamu blokovaných hráče/ky &6{player}&7.
-TPACCEPT_SUCCESS: &aServerCore &8» &7Žádost o teleportaci hráče/ky &6{player} &7byla
-  &6potvrzena&7.
-TPACCEPT_SUCCESS_PLAYER: &aServerCore &8» &6{player} &7potvrdil/a Vaši žádost o telportaci.
-TPACCEPT_FAILURE_NO_REQUEST: &aServerCore &8» &7Nemáš žádné žádosti o teleportaci.
-TPDENY_SUCCESS: &aServerCore &8» &7Žádost o teleportaci hráče/ky &6{player} &7byla
-  &6odmítnuta&7.
-TPDENY_SUCCESS_PLAYER: &aServerCore &8» &6{player} &7odmítnul/a Vaši žádost o teleportaci.
-TPDENY_FAILURE_NO_REQEUST: &aServerCore &8» &7Nemáš žádné žádosti o teleportaci.
+TPA_FAILURE_BLOCKED: '&aServerCore &8» &7Jsi v seznamu blokovaných hráče/ky &6{player}&7.'
+TPACCEPT_SUCCESS: '&aServerCore &8» &7Žádost o teleportaci hráče/ky &6{player} &7byla &6potvrzena&7.'
+TPACCEPT_SUCCESS_PLAYER: '&aServerCore &8» &6{player} &7potvrdil/a Vaši žádost o telportaci.'
+TPACCEPT_FAILURE_NO_REQUEST: '&aServerCore &8» &7Nemáš žádné žádosti o teleportaci.'
+TPDENY_SUCCESS: '&aServerCore &8» &7Žádost o teleportaci hráče/ky &6{player} &7byla &6odmítnuta&7.'
+TPDENY_SUCCESS_PLAYER: '&aServerCore &8» &6{player} &7odmítnul/a Vaši žádost o teleportaci.'
+TPDENY_FAILURE_NO_REQEUST: '&aServerCore &8» &7Nemáš žádné žádosti o teleportaci.'
 TPIGNORE_USAGE: '&aServerCore &8» &6Použití: &7/tpignore <hráč>'
-TPIGNORE_SUCCESS_ADD: &aServerCore &8» &6{player} &7byl/a přidán/a do seznamu blokovaných.
-TPIGNORE_SUCCESS_REMOVE: &aServerCore &8» &6{player} &7byl/a odebrána ze seznamu blokovaných.
-DAY_SUCCESS: &aServerCore &8» &7Úspěšně nastaven čas na &6den.
-NIGHT_SUCCESS: &aServerCore &8» &7Úspěšně nastaven čas na &6noc.
-RAIN_SUCCESS: &aServerCore &8» &7Úspěšně nastaveno počasí na &6deštivo.
-SUN_SUCCESS: &aServerCore &8» &7Úspěšně nastaveno počasí na &6slunečno.
-THUNDER_SUCCESS: &aServerCore &8» &7Úspěšně nastaveno počasí na &6bouřku.
+TPIGNORE_SUCCESS_ADD: '&aServerCore &8» &6{player} &7byl/a přidán/a do seznamu blokovaných.'
+TPIGNORE_SUCCESS_REMOVE: '&aServerCore &8» &6{player} &7byl/a odebrána ze seznamu blokovaných.'
+DAY_SUCCESS: '&aServerCore &8» &7Úspěšně nastaven čas na &6den.'
+NIGHT_SUCCESS: '&aServerCore &8» &7Úspěšně nastaven čas na &6noc.'
+RAIN_SUCCESS: '&aServerCore &8» &7Úspěšně nastaveno počasí na &6deštivo.'
+SUN_SUCCESS: '&aServerCore &8» &7Úspěšně nastaveno počasí na &6slunečno.'
+THUNDER_SUCCESS: '&aServerCore &8» &7Úspěšně nastaveno počasí na &6bouřku.'
 WARP_USAGE: '&aServerCore &8» &6Použití: &7/warp <název>'
-WARP_SUCCESS: &aServerCore &8» &7Teleportuji na &6{warp}&7.
-WARP_FAILURE_NO_WARP: &aServerCore &8» &6{warp} &7není v databázi.
+WARP_SUCCESS: '&aServerCore &8» &7Teleportuji na &6{warp}&7.'
+WARP_FAILURE_NO_WARP: '&aServerCore &8» &6{warp} &7není v databázi.'
 SETWARP_USAGE: '&aServerCore &8» &6Použití: &7/setwarp <název>'
 SETWARP_SUCCESS: "&aServerCore &8» &7Úspěšně vytvořen warp &6{warp}&7. \n<hover:show_text:'&\
   eKlikni pro teleportaci'><click:run_command:/warp {warp}>&e&lTeleportovat &e➹</click></hover>\
   \ \n<hover:show_text:'&cKlikni pro odstranění'><click:run_command:/delwarp {warp}>&\
   c&lOdstranit &c✕</click></hover>"
 DELWARP_USAGE: '&aServerCore &8» &6Použití: &7/delwarp <název>'
-DELWARP_SUCCESS: &aServerCore &8» &7Úspěšně odstraněn warp &6{warp}&7.
-DELWARP_FAILURE_NO_WARP: &aServerCore &8» &6{warp} &7není v databázi.
+DELWARP_SUCCESS: '&aServerCore &8» &7Úspěšně odstraněn warp &6{warp}&7.'
+DELWARP_FAILURE_NO_WARP: '&aServerCore &8» &6{warp} &7není v databázi.'
 WARPS_SUCCESS_TITLE: '&aServerCore &8» &6Serverové warpy:'
-WARPS_SUCCESS_FORMAT: &7- &7{name} <hover:show_text:'&eKlikni pro teleportaci'><click:run_command:/warp
-  {name}>&e➹</hover></click>
-WARPS_SUCCESS_FORMAT_REMOVE: &7- &7{name} <hover:show_text:'&eKlikni pro teleportaci'><click:run_command:/warp
-  {name}>&e➹</hover></click> <hover:show_text:'&cKlikni pro odstranění'><click:run_command:/delwarp
-  {name}>&c✕</hover></click>
-SPAWN_SUCCESS: &aServerCore &8» &7Teleportace na Spawn úspěšna.
-SPAWN_FAILURE_NO_SPAWN: &aServerCore &8» &7Spawn lokace &6není &7nastavena.
+WARPS_SUCCESS_FORMAT: '&7- &7{name} <hover:show_text:''&eKlikni pro teleportaci''><click:run_command:/warp {name}>&e➹</hover></click>'
+WARPS_SUCCESS_FORMAT_REMOVE: '&7- &7{name} <hover:show_text:''&eKlikni pro teleportaci''><click:run_command:/warp
+  {name}>&e➹</hover></click> <hover:show_text:''&cKlikni pro odstranění''><click:run_command:/delwarp
+  {name}>&c✕</hover></click>'
+SPAWN_SUCCESS: '&aServerCore &8» &7Teleportace na Spawn úspěšna.'
+SPAWN_FAILURE_NO_SPAWN: '&aServerCore &8» &7Spawn lokace &6není &7nastavena.'
 ASPAWN_USAGE: '&aServerCore &8» &6Použití: &7/aspawn <hráč>'
-ASPAWN_SUCCESS: &aServerCore &8» &6{player} &7byl/a teleportován/a na spawn.
-ASPAWN_SUCCESS_PLAYER: &aServerCore &8» &7Byl/a jsi teleportován/a na spawn hráčem/kou
-  &6{player}&7.
-SETSPAWN_SUCCESS: &aServerCore &8» &6Spawn &7úspěšně nastaven.
+ASPAWN_SUCCESS: '&aServerCore &8» &6{player} &7byl/a teleportován/a na spawn.'
+ASPAWN_SUCCESS_PLAYER: '&aServerCore &8» &7Byl/a jsi teleportován/a na spawn hráčem/kou &6{player}&7.'
+SETSPAWN_SUCCESS: '&aServerCore &8» &6Spawn &7úspěšně nastaven.'
 SERVERCORE_USAGE: '&aServerCore &8» &6Použití: &7/servercore spy'
-SERVERCORE_SPY_SUCCESS_ON: &aServerCore &8» &7Úpsěšně &6aktivováno &7sledování.
-SERVERCORE_SPY_SUCCESS_OFF: &aServerCore &8» &7Úpsěšně &6deaktivováno &7sledování.
-BACK_MENU_TITLE: &aServerCore &8> &6/back
-WARP_MENU_TITLE: &aServerCore &8> &6Warpy
-AWARP_SUCCESS: &aServerCore &8» &fÚspěšně jste teleportovali &6{player} &fna &6{warp}&f.
-AWARP_SUCCESS_PLAYER: &aServerCore &8» &fByli jste teleportování na &6{warp} &fadministrátorem
-  &6{player}&f.
+SERVERCORE_SPY_SUCCESS_ON: '&aServerCore &8» &7Úpsěšně &6aktivováno &7sledování.'
+SERVERCORE_SPY_SUCCESS_OFF: '&aServerCore &8» &7Úpsěšně &6deaktivováno &7sledování.'
+BACK_MENU_TITLE: '&aServerCore &8> &6/back'
+WARP_MENU_TITLE: '&aServerCore &8> &6Warpy'
+AWARP_SUCCESS: '&aServerCore &8» &fÚspěšně jste teleportovali &6{player} &fna &6{warp}&f.'
+AWARP_SUCCESS_PLAYER: '&aServerCore &8» &fByli jste teleportování na &6{warp} &fadministrátorem &6{player}&f.'
 AWARP_USAGE: '&aServerCore &8» &6Použití: &f/awarp <hráč/ka> <warp>'

@@ -1,7 +1,7 @@
 HELP: |2-
-
+  
   &a&lBank Help
-
+  
   &e/bank &8» &7Otevře hlavní menu.
   &e/bank help &8» &7Zobrazí tuto zprávu.
   &e/bank add <množství> &8» &7Vloží částku do banky.
@@ -25,24 +25,21 @@ WITHDRAW_MESSAGE: |2
   &e&lBANKA
   <click:suggest_command:'/bank remove '>&8» &7Klikni na tuto zprávu pro &eodebrání &7vlástní částky z banky.</click>
 MENU_TITLE: '&8&lBanka'
-ADD_SUCCESS: &aBanka &8» &6${money} &7bylo vloženo na Váš účet.
-ADD_FAILURE_TOO_MUCH: &aBanka &8» &7Nemůžete přidat &6${money} &7na Váš účet!
-ADD_FAILURE_NOT_ENOUGH: &aBanka &8» &7Nemáte dostatek financí na tuto akci!
-REMOVE_SUCCESS: &aBanka &8» &7Úspěšně odebráno &6${money} &7z Vašeho účtu.
-REMOVE_FAILURE_TOO_MUCH: &aBanka &8» &7Nemáte dostatek financí na Vašem účtu!
-SHOW_PLAYER: &aBanka &8» &6{player} &7má na kontě $&6{amount}&7.
-PERM_YES: &aAno
-PERM_NO: &aNe
-BUY_SUCCESS: &aBanka &8» &7Úspěšně jste si zakoupili &6nový bankovní účet&7!
-BUY_FAILURE: &aBanka &8» &7Nemáte dostatek financí na zakoupení tohoto účtu!
-NO_POSITIVE: &aBanka &8» &7Číslo musí být vyšší než 0!
-ADMIN_SET_SUCCESS: &aBanka &8» &7Úspěšně nastaven zůstatek na kontě hráče/ky &6{player} &7na &6${money}&7.
-ADMIN_SET_SUCCESS_NOTIFY: &aBanka &8» &Váš bankovní zůstatek byl nastaven na &6${money}
-  &7administrátorem &6{player}&7.
-ADMIN_ADD_SUCCESS: &aBanka &8» &7ÚSpěšně přidáno &6${money} &7na účet hráče
-  &6{player}&7.
-ADMIN_ADD_SUCCESS_NOTIFY: &aBanka &8» &6${money} &7bylo přidáno na Váš účet
-  adminem &6{player}&7.
-ADMIN_REMOVE_SUCCESS: &aBanka &8» &7Úspěšně odebráno &6${money} &7z účtu hráče/ky &6{player}&7.
-ADMIN_REMOVE_FAILURE_TOO_MUCH: &aBanka &8» &6{player} &7nemá dostatek financí na svém účtě!
-ADMIN_REMOVE_SUCCESS_NOTIFY: &aBanka &8» &6${money} &7bylo odebráno z Vašeho účtu administrátorem &6{player}&7.
+ADD_SUCCESS: '&aBanka &8» &6${money} &7bylo vloženo na Váš účet.'
+ADD_FAILURE_TOO_MUCH: '&aBanka &8» &7Nemůžete přidat &6${money} &7na Váš účet!'
+ADD_FAILURE_NOT_ENOUGH: '&aBanka &8» &7Nemáte dostatek financí na tuto akci!'
+REMOVE_SUCCESS: '&aBanka &8» &7Úspěšně odebráno &6${money} &7z Vašeho účtu.'
+REMOVE_FAILURE_TOO_MUCH: '&aBanka &8» &7Nemáte dostatek financí na Vašem účtu!'
+SHOW_PLAYER: '&aBanka &8» &6{player} &7má na kontě $&6{amount}&7.'
+PERM_YES: '&aAno'
+PERM_NO: '&aNe'
+BUY_SUCCESS: '&aBanka &8» &7Úspěšně jste si zakoupili &6nový bankovní účet&7!'
+BUY_FAILURE: '&aBanka &8» &7Nemáte dostatek financí na zakoupení tohoto účtu!'
+NO_POSITIVE: '&aBanka &8» &7Číslo musí být vyšší než 0!'
+ADMIN_SET_SUCCESS: '&aBanka &8» &7Úspěšně nastaven zůstatek na kontě hráče/ky &6{player} &7na &6${money}&7.'
+ADMIN_SET_SUCCESS_NOTIFY: '&aBanka &8» &Váš bankovní zůstatek byl nastaven na &6${money} &7administrátorem &6{player}&7.'
+ADMIN_ADD_SUCCESS: '&aBanka &8» &7ÚSpěšně přidáno &6${money} &7na účet hráče &6{player}&7.'
+ADMIN_ADD_SUCCESS_NOTIFY: '&aBanka &8» &6${money} &7bylo přidáno na Váš účet adminem &6{player}&7.'
+ADMIN_REMOVE_SUCCESS: '&aBanka &8» &7Úspěšně odebráno &6${money} &7z účtu hráče/ky &6{player}&7.'
+ADMIN_REMOVE_FAILURE_TOO_MUCH: '&aBanka &8» &6{player} &7nemá dostatek financí na svém účtě!'
+ADMIN_REMOVE_SUCCESS_NOTIFY: '&aBanka &8» &6${money} &7bylo odebráno z Vašeho účtu administrátorem &6{player}&7.'

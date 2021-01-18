@@ -1,30 +1,30 @@
 MAIN_HEAD:
   type: PLAYER_HEAD
-  name: &e{name}
+  name: '&e{name}'
   lore:
   - "&8► &7Klikněte pro zobrazení statistik."
 MAIN_BACKGROUND_1:
   type: BLACK_STAINED_GLASS_PANE
-  name: &0
+  name: '&0'
 MAIN_BACKGROUND_2:
   type: YELLOW_STAINED_GLASS_PANE
-  name: &0
+  name: '&0'
 MAIN_CURRENT_MONEY:
   type: CHEST
-  name: &e&lAKTUÁKLNÍ LOTERIE
+  name: '&e&lAKTUÁKLNÍ LOTERIE'
   lore:
   - '&8► &7Peníze v loterii: &6${amount}'
 MAIN_INSTRUCTIONS:
   type: WRITABLE_BOOK
-  name: &e&lINFORMACE
+  name: '&e&lINFORMACE'
   lore:
-  - &7Věříte ve své štěstí?
-  - &7Potom se nebojte a kupte pár lístků!
-  - &7Čím více lístků máte, tím výše Vaše
-  - &7šance na výhru vzrůstá!
+  - '&7Věříte ve své štěstí?'
+  - '&7Potom se nebojte a kupte pár lístků!'
+  - '&7Čím více lístků máte, tím výše Vaše'
+  - '&7šance na výhru vzrůstá!'
   - ''
-  - &eMnožství výhry se odvýjí od celkových
-  - &ezakoupených lístků všech hráčů.
+  - '&eMnožství výhry se odvýjí od celkových'
+  - '&ezakoupených lístků všech hráčů.'
 MAIN_BUY:
   type: "GOLD_INGOT"
   name: "&e&lZAKOUPIT LÍSTEK"
@@ -62,15 +62,15 @@ MAIN_TIME_LEFT:
   amount: 1
   lore:
   - "&8► &7Čas do dalšího losování je:"
-  - &6{time}
+  - '&6{time}'
 MAIN_ADMIN:
   type: REDSTONE_TORCH
-  name: &c&lADMIN FUNKCE
+  name: '&c&lADMIN FUNKCE'
   lore:
-  - &6Whoa&7, výpadá to, že jste
-  - &7administrátor!
+  - '&6Whoa&7, výpadá to, že jste'
+  - '&7administrátor!'
   - ''
-  - &eKlikněte pro zobrazení super věcí!
+  - '&eKlikněte pro zobrazení super věcí!'
 LIST_HEADS:
   type: PLAYER_HEAD
   name: '{name}'
@@ -78,28 +78,28 @@ LIST_HEADS:
   - "&8► &7Klikněte pro zobrazení statistik."
 LIST_BACKGROUND_1:
   type: BLACK_STAINED_GLASS_PANE
-  name: &0
+  name: '&0'
 LIST_BACKGROUND_2:
   type: YELLOW_STAINED_GLASS_PANE
-  name: &0
+  name: '&0'
 LIST_BACK:
   type: REDSTONE
-  name: &c&lZPĚT
+  name: '&c&lZPĚT'
   lore:
   - "&8► &7Klikněte pro návrat do hlavního menu."
 CONFIRM_BACKGROUND:
   type: BLACK_STAINED_GLASS_PANE
-  name: &0
+  name: '&0'
 CONFIRM_CONFIRM_1:
   type: LIME_STAINED_GLASS_PANE
-  name: &a&lPOTVRDIT
+  name: '&a&lPOTVRDIT'
   lore:
-  - &8► &7Klikněte pro potvrzení.
+  - '&8► &7Klikněte pro potvrzení.'
 CONFIRM_CONFIRM_2:
   type: LIME_STAINED_GLASS
-  name: &a&lPOTVRDIT
+  name: '&a&lPOTVRDIT'
   lore:
-  - &8► &7Klikněte pro potvrzení.
+  - '&8► &7Klikněte pro potvrzení.'
 CONFIRM_INFORMATION:
   type: "WRITABLE_BOOK"
   name: "&e&lJSTE SI JIST/A?"
@@ -109,45 +109,45 @@ CONFIRM_INFORMATION:
     - "&7s touto transakcí?"
 CONFIRM_DECLINE_1:
   type: RED_STAINED_GLASS_PANE
-  name: &c&lODMÍTNOUT
+  name: '&c&lODMÍTNOUT'
   lore:
-  - &8► &7Klikněte pro odmítnutí.
+  - '&8► &7Klikněte pro odmítnutí.'
 CONFIRM_DECLINE_2:
   type: RED_STAINED_GLASS
-  name: &c&lODMÍTNOUT
+  name: '&c&lODMÍTNOUT'
   lore:
-  - &8► &7Klikněte pro odmítnutí.
+  - '&8► &7Klikněte pro odmítnutí.'
 CONFIRM_BACK:
   type: REDSTONE_LAMP
-  name: &c&lZPĚT
+  name: '&c&lZPĚT'
   lore:
-  - &8► &7Klikněte pro návrat do hlavního menu.
+  - '&8► &7Klikněte pro návrat do hlavního menu.'
 PLAYER_HEAD:
   type: PLAYER_HEAD
-  name: &e{name}
+  name: '&e{name}'
 PLAYER_BACKGROUND_1:
   type: BLACK_STAINED_GLASS_PANE
-  name: &0
+  name: '&0'
 PLAYER_BACKGROUND_2:
   type: YELLOW_STAINED_GLASS_PANE
-  name: &0
+  name: '&0'
 PLAYER_EARNINGS:
   type: GOLD_INGOT
-  name: &e&lDOHROMADY VYHRÁNO
+  name: '&e&lDOHROMADY VYHRÁNO'
   lore:
-  - &8► &7${amount}
+  - '&8► &7${amount}'
 PLAYER_BIGGEST_WIN:
   type: EMERALD
-  name: &e&lNEJVYŠŠÍ VÝHRA
+  name: '&e&lNEJVYŠŠÍ VÝHRA'
   lore:
-  - &8► &7${amount}
+  - '&8► &7${amount}'
 PLAYER_TICKETS:
   type: PAPER
-  name: &e&lZAKOUPENÝCH LÍSTKŮ
+  name: '&e&lZAKOUPENÝCH LÍSTKŮ'
   lore:
-  - &8► &7${amount} v aktuální loterii.
+  - '&8► &7${amount} v aktuální loterii.'
 PLAYER_BACK:
   type: REDSTONE_LAMP
-  name: &c&lZPĚT
+  name: '&c&lZPĚT'
   lore:
-  - &8► &7Klikněte pro návrat do hlavního menu.
+  - '&8► &7Klikněte pro návrat do hlavního menu.'
