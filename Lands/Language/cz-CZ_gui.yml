@@ -711,16 +711,16 @@ gui:
         - ' '
         - '&8Pravomoc: {bypass}'
       noaccess_setrole:
-        name: '&4Failure: &cNot permitted'
+        name: '&4Chyba: &cNedostatečné povolení'
         lore:
-        - '&7You''re not allowed to do this.'
-        - '&7The land owner can give you'
-        - '&7permission to do so.'
+        - '&7Nemáte povolení na tuto akci.'
+        - '&7Vlastník Vám musí tát oprávnení'
+        - '&7na tuto akci.'
       failure_max-players:
-        name: '&4Failure: &cMax trusted Players'
+        name: '&4Chyba: &cMax. Počet Členů/ek'
         lore:
-        - '&7This land reached their maximum'
-        - '&7amount of&3 {max} &7members.'
+        - '&7Tato země dosáhla maximálního'
+        - '&7počtu&3 {max} &7členů/ek.'
         - ' '
         - '&8Pravomoc: lands.members.ČÍSLO'
     f:
