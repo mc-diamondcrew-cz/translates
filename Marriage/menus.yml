@@ -1,5 +1,6 @@
 PLAYER_HEAD:
   name: '&e{name}'
+  type: PLAYER_HEAD
   lore:
   - '&8» &fKlikněte pro rozvod.'
 MARRY_HEART:

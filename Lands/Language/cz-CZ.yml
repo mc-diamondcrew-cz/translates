@@ -123,8 +123,10 @@ general:
     hover:
       wilderness: '&7Toto území je příroda. Klikněte pro zabrání.'
       yours: '&7Toto území vlastníte Vy. Klikněte pro zobrazení informací o &3{land}&7.'
-      trusted: '&7V tomto území jste důvěryhodní. Klikněte pro zobrazení informací o &3{land}&7.'
-      others: '&7V tomto území nejste důveryhodní. Klikněte pro zobrazení informací o &3{land}&7.'
+      trusted: '&7V tomto území jste důvěryhodní. Klikněte pro zobrazení informací
+        o &3{land}&7.'
+      others: '&7V tomto území nejste důveryhodní. Klikněte pro zobrazení informací
+        o &3{land}&7.'
       position: '&7Toto je Vaše aktuální pozice.'
   inbox:
     general:
@@ -136,8 +138,10 @@ general:
     economy:
       upkeep:
         warning: '&8{0}: &cNebylo možné zaplatit náklady: ${1}'
-        unclaimed: '&8{0}: &cNebylo možné zaplatit náklady ${1}. Poslední zabrané území (X: {2} Z: {3}) odebráno.'
+        unclaimed: '&8{0}: &cNebylo možné zaplatit náklady ${1}. Poslední zabrané
+          území (X: {2} Z: {3}) odebráno.'
         paid: '&8{0}: &7Zaplaceny náklady: ${1}'
+        nation: '&8{0}: &7Národ {1} nebyl schopný zapaltit náklady ve výši ${2} a byl odstraněn.'
       bank:
         withdraw: '&8{0}: &cHráč/ka {1} vybral/a ${2} -> zůstatek = ${3}'
         deposit: '&8{0}: &7Hráč/ka {1} vložil/a ${2} -> zůstatek = ${3}'
@@ -151,7 +155,8 @@ general:
         received: '&8{0}: &c{1} &cVám vyhlásili válku: &8/Wars info'
         mutual:
           sent: '&8{0}: &7Odeslána žádost o válku {1}. &7Musí ji příjmout.'
-          received: '&8{0}: &c{1} &codeslali žádost o válku. Příjmutí: &8/&3Wars declare {2}'
+          received: '&8{0}: &c{1} &codeslali žádost o válku. Příjmutí: &8/&3Wars declare
+            {2}'
       surrender:
         sent: '&8{0}: &cKapitulovali jste. Zaplatili jste ${1}, jako hold nepříteli.'
         received: '&8{0}: &7Nepřítel {1} &7kapituloval. Obdrželi jste ${2} jako hold.'
@@ -159,6 +164,20 @@ general:
         won: '&8{0}: Vyhráli jste válku s {1} zabití a {2} smrtí.'
         draw: '&8{0}: Válka skončila remízou s {1} zabití a {2} smrtí.'
         lost: '&8{0}: Prohráli jste válku s {2} smrtí a {1} zabití.'
+    nation:
+      general:
+        created: '&8{0}: &7Národ vytvořen.'
+      member:
+        join: '&8{0}: &7Země {1} se připojila.'
+        leave: '&8{0}: &7Země {1} se odpojila.'
+      economy:
+        upkeep:
+          warning: '&8{0}: &cNebylo možné zaplatit náklady: ${1}'
+          paid: '&8{0}: &7Náklady zaplaceny: ${1}'
+        taxes:
+          warning: '&8{0}: &cZemě {1} nemohla zaplatit daně.'
+          untrusted: '&8{0}: &cZemě {1} nemohla zaplatit daně. Byla odstraněna.'
+          received: '&8{0}: &7Obdrženo celkem ${1} z daní, od všech zemí -> zůstatek = ${2}'
   wars:
     object:
       enemy: '&cNepřítel'
@@ -170,78 +189,164 @@ general:
     bossbar: '&7Počkejte&5 {time} &7sekund před teleportací.'
 help:
   command:
-    help: '[T]&8/&3Lands help &8[&3strana&8] - &7Nápověda[H]&7Klikněte pro zkopírování.[/H][SC]lands help[/SC][/T]'
-    edit: '[T]&8/&3Lands edit &8<&3země&8> &8- &7Režim úpravy pro území[H]&7Režim úpravy se používá pro zabírání území, jako /Lands claim. &7Klikněte pro zkopírování.[/H][SC]lands edit[/SC][/T]'
-    claim: '[T]&8/&3Lands claim &8[&3země | auto&8] - &7Zabere území[H]&7Zabere území, ve kterém stojíte. Také můžete specifikovat, k jaké zemi bude přiřazeno. &7Klikněte pro zkopírování.[/H][SC]lands claim[/SC][/T]'
-    create: '[T]&8/&3Lands create &8<&3název&8> - &7Vytvoří zemi[H]&7Klikněte pro zkopírování.[/H][SC]lands create[/SC][/T]'
-    leave: '[T]&8/&3Lands leave &8[&3země&8] &8- &7Opustí zemi, nebo oblast.[H]&7Pokud nespecifikujete zemi, opustíte oblast, ve které se nacházíte. &7Klikněte pro zkopírování.[/H][SC]lands leave[/SC][/T]'
-    unclaim: '[T]&8/&3Lands unclaim &8- &7Odebere území[H]&7Toto také podporuje /Lands selection. &7Klikněte pro zkopírování.[/H][SC]lands unclaim[/SC][/T]'
-    delete: '[T]&8/&3Lands delete &8<&3země&8> &8- &7Odstraní zemi.[H]&7Klikněte pro zkopírování.[/H][SC]lands delete[/SC][/T]'
-    trust: '[T]&8/&3Lands trust &8<&3hráč/ka&8> [&3oblast&8] - &7Zdůveryhodní hráče/ku.[H]&7Použijte *, pro zdůveryhodnění hráče/ky všude. &7Klikněte pro zkopírování.[/H][SC]lands trust[/SC][/T]'
-    untrust: '[T]&8/&3Lands untrust &8<&3hráč/ka&8> &8[&3oblast&8] - &7Znedůvěryhodní hráče/ku.[H]&7Použijte *, pro znedůvěryhodnění hráče/ky všude. &7Klikněte pro zkopírování.[/H][SC]lands untrust[/SC][/T]'
-    setRole: '[T]&8/&3Lands setrole &8<&3hráč/ka&8> &8<&3oblast&8> <&3role&8> - &7Nastaví roli.[H]&7Klikněte pro zkopírování.[/H][SC]lands setrole[/SC][/T]'
-    accept: '[T]&8/&3Lands accept &8<&3země&8> - &7Potvrdí pozvánku.[H]&7Můžete zobrazit všechny obdržené pozvánky, pomocí /Lands invites. &7Klikněte pro zkopírování.[/H][SC]lands accept[/SC][/T]'
-    deny: '[T]&8/&3Lands deny &8<&3země&8> - &7Odmítne pozvánku.[H]&7Klikněte pro zkopírování.[/H][SC]lands deny[/SC][/T]'
-    view: '[T]&8/&3Lands view &8[&3disable&8] &8- &7Informace o zemích.[H]&7Tento příkaz zobrazí také blízké země. &7Klikněte pro zkopírování.[/H][SC]lands view[/SC][/T]'
-    menu: '[T]&8/&3Lands menu &8[&3here&8] &8- &7Otevře menu země / oblasti.[H]&7Klikněte pro zkopírování.[/H][SC]lands menu[/SC][/T]'
-    setSpawn: '[T]&8/&3Lands setspawn - &7Nastaví pozici spawnu.[H]&7Klikněte pro zkopírování.[/H][SC]lands setspawn[/SC][/T]'
-    spawn: '[T]&8/&3Lands spawn &8[&3země&8] - &7Teleportace do země.[H]&7Klikněte pro zkopírování.[/H][SC]lands spawn[/SC][/T]'
-    wild: '[T]&8/&3Lands wild &8[&3svět&8] &8[&3hráč/ka&8] &8- &7Teleportace na náhodnou lokaci.[H]&7Klikněte pro zkopírování.[/H][SC]lands wild[/SC][/T]'
-    top: '[T]&8/&3Lands top &8[&3strana&8] &8- &7Zobrazí až 10 zemí[H]&7Klikněte pro zkopírování.[/H][SC]lands top[/SC][/T]'
-    selection: '[T]&8/&3Lands selection &8[&3assign &8| &3expand &8| &3pos1 &8| &3pos2&8] &8- &7Režim výběru[H]&7Pomocí tohoto příkazu můžete změnit velikost pod-oblasti. &7Klikněte pro zkopírování.[/H][SC]lands selection[/SC][/T]'
-    chat: '[T]&8/&3Lands chat &8[&3země&8] <&3zpráva&8> &8- &7Územní chat[H]&7Klikněte pro zkopírování.[/H][SC]lands chat[/SC][/T]'
-    rename: '[T]&8/&3Lands rename &8<&3název&8> - &7Přejmenování země[H]&7Klikněte pro zkopírování.[/H][SC]lands rename[/SC][/T]'
-    teleport: '[T]&8/&3Lands teleport &8[&3svět&8] <&3x&8> <&3z&8> - &7Teleportace na území.[H]&7Klikněte pro zkopírování.[/H][SC]lands teleport[/SC][/T]'
-    invites: '[T]&8/&3Lands invites &8- &7Zobrazí obdržené pozvánky.[H]&7Klikněte pro zkopírování.[/H][SC]lands invites[/SC][/T]'
-    info: '[T]&8/&3Lands info &8[&3země&8] - &7Zobrazí informace o zemi.[H]&7Klikněte pro zkopírování.[/H][SC]lands info[/SC][/T]'
-    player: '[T]&8/&3Lands player &8<&3hráč/ka&8> - &7Zobrazí informace o hráči/ce.[H]&7Klikněte pro zkopírování.[/H][SC]lands player[/SC][/T]'
-    map: '[T]&8/&3Lands map &8- &7Zobrazení mapy.[H]&7Klikněte pro zkopírování.[/H][SC]lands map[/SC][/T]'
-    balance: '[T]&8/&3Lands balance &8[&3země&8] - &7Zobrazí finanční zůstatek.[H]&7Klikněte pro zkopírování.[/H][SC]lands balance[/SC][/T]'
-    deposit: '[T]&8/&3Lands deposit &8[&3země&8] <&3množství&8> - &7Vložení financí.[H]&7Klikněte pro zkopírování.[/H][SC]lands deposit[/SC][/T]'
-    withdraw: '[T]&8/&3Lands withdraw &8[&3země&8] <&3množství&8> - &7Odebrání financí.[H]&7Klikněte pro zkopírování.[/H][SC]lands withdraw[/SC][/T]'
-    list: '[T]&8/&3Lands list &8[&3svět&8] - &7Seznam všech zemí.[H]&7Klikněte pro zkopírování.[/H][SC]lands list[/SC][/T]'
-    assign: '[T]&8/&3Lands assign &8<&3area&8> - &7Přiřadí selekci oblasti.[H]&7Klikněte pro zkopírování.[/H][SC]lands assign[/SC][/T]'
-    setowner: '[T]&8/&3Lands setowner &8<&3hráč/ka&8> - &7Převede vlastnictví.[H]&7Klikněte pro zkopírování.[/H][SC]lands setowner[/SC][/T]'
-    ban: '[T]&8/&3Lands ban &8<&3hráč/ka&8> [&3oblast&8] - &7Zabanování hráče/ky.[H]&7Klikněte pro zkopírování.[/H][SC]lands ban[/SC][/T]'
-    unban: '[T]&8/&3Lands unban &8<&3hráč/ka&8> [&3oblast&8] - &7Odbanování hráče/ky.[H]&7Klikněte pro zkopírování.[/H][SC]lands unban[/SC][/T]'
-    taxes: '[T]&8/&3Lands taxes &8- &7Zobrazí nadcházející platbu daní.[H]&7Klikněte pro zkopírování.[/H][SC]lands taxes[/SC][/T]'
-    unstuck: '[T]&8/&3Lands unstuck &8- &7Teleportuje pryž z pastí.[H]&7V případě, že jste se zasekli v zemi. &7Klikněte pro zkopírování.[/H][SC]lands unstuck[/SC][/T]'
-    claims: '[T]&8/&3Lands claims &8[&3země&8] &8- &7Seznam Vašich území.[H]&7Tento příkaz zobrazí všechny /Lands claim. &7Klikněte pro zkopírování.[/H][SC]lands claims[/SC][/T]'
-    rent: '[T]&8/&3Lands rent &8<&3cancel &8| &3info &8| &3removeOffer &8| &3removeTenant&8> &8- &7Správa pronájmu.[H]&7Tento příkaz je k spravování Vašeho pronájmu na aktuální pozici. &7Klikněte pro zkopírování.[/H][SC]lands rent[/SC][/T]'
+    help: '[T]&8/&3Lands help &8[&3strana&8] - &7Nápověda[H]&7Klikněte pro zkopírování.[/H][SC]lands
+      help[/SC][/T]'
+    edit: '[T]&8/&3Lands edit &8<&3země&8> &8- &7Režim úpravy pro území[H]&7Režim
+      úpravy se používá pro zabírání území, jako /Lands claim. &7Klikněte pro zkopírování.[/H][SC]lands
+      edit[/SC][/T]'
+    claim: '[T]&8/&3Lands claim &8[&3země | auto&8] - &7Zabere území[H]&7Zabere území,
+      ve kterém stojíte. Také můžete specifikovat, k jaké zemi bude přiřazeno. &7Klikněte
+      pro zkopírování.[/H][SC]lands claim[/SC][/T]'
+    create: '[T]&8/&3Lands create &8<&3název&8> - &7Vytvoří zemi[H]&7Klikněte pro
+      zkopírování.[/H][SC]lands create[/SC][/T]'
+    leave: '[T]&8/&3Lands leave &8[&3země&8] &8- &7Opustí zemi, nebo oblast.[H]&7Pokud
+      nespecifikujete zemi, opustíte oblast, ve které se nacházíte. &7Klikněte pro
+      zkopírování.[/H][SC]lands leave[/SC][/T]'
+    unclaim: '[T]&8/&3Lands unclaim &8- &7Odebere území[H]&7Toto také podporuje /Lands
+      selection. &7Klikněte pro zkopírování.[/H][SC]lands unclaim[/SC][/T]'
+    delete: '[T]&8/&3Lands delete &8<&3země&8> &8- &7Odstraní zemi.[H]&7Klikněte pro
+      zkopírování.[/H][SC]lands delete[/SC][/T]'
+    trust: '[T]&8/&3Lands trust &8<&3hráč/ka&8> [&3oblast&8] - &7Zdůveryhodní hráče/ku.[H]&7Použijte
+      *, pro zdůveryhodnění hráče/ky všude. &7Klikněte pro zkopírování.[/H][SC]lands
+      trust[/SC][/T]'
+    untrust: '[T]&8/&3Lands untrust &8<&3hráč/ka&8> &8[&3oblast&8] - &7Znedůvěryhodní
+      hráče/ku.[H]&7Použijte *, pro znedůvěryhodnění hráče/ky všude. &7Klikněte pro
+      zkopírování.[/H][SC]lands untrust[/SC][/T]'
+    setRole: '[T]&8/&3Lands setrole &8<&3hráč/ka&8> &8<&3oblast&8> <&3role&8> - &7Nastaví
+      roli.[H]&7Klikněte pro zkopírování.[/H][SC]lands setrole[/SC][/T]'
+    accept: '[T]&8/&3Lands accept &8<&3země&8> - &7Potvrdí pozvánku.[H]&7Můžete zobrazit
+      všechny obdržené pozvánky, pomocí /Lands invites. &7Klikněte pro zkopírování.[/H][SC]lands
+      accept[/SC][/T]'
+    deny: '[T]&8/&3Lands deny &8<&3země&8> - &7Odmítne pozvánku.[H]&7Klikněte pro
+      zkopírování.[/H][SC]lands deny[/SC][/T]'
+    view: '[T]&8/&3Lands view &8[&3disable&8] &8- &7Informace o zemích.[H]&7Tento
+      příkaz zobrazí také blízké země. &7Klikněte pro zkopírování.[/H][SC]lands view[/SC][/T]'
+    menu: '[T]&8/&3Lands menu &8[&3here&8] &8- &7Otevře menu země / oblasti.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands menu[/SC][/T]'
+    setSpawn: '[T]&8/&3Lands setspawn - &7Nastaví pozici spawnu.[H]&7Klikněte pro
+      zkopírování.[/H][SC]lands setspawn[/SC][/T]'
+    spawn: '[T]&8/&3Lands spawn &8[&3země&8] - &7Teleportace do země.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands spawn[/SC][/T]'
+    wild: '[T]&8/&3Lands wild &8[&3svět&8] &8[&3hráč/ka&8] &8- &7Teleportace na náhodnou
+      lokaci.[H]&7Klikněte pro zkopírování.[/H][SC]lands wild[/SC][/T]'
+    top: '[T]&8/&3Lands top &8[&3strana&8] &8- &7Zobrazí až 10 zemí[H]&7Klikněte pro
+      zkopírování.[/H][SC]lands top[/SC][/T]'
+    selection: '[T]&8/&3Lands selection &8[&3assign &8| &3expand &8| &3pos1 &8| &3pos2&8]
+      &8- &7Režim výběru[H]&7Pomocí tohoto příkazu můžete změnit velikost pod-oblasti.
+      &7Klikněte pro zkopírování.[/H][SC]lands selection[/SC][/T]'
+    chat: '[T]&8/&3Lands chat &8[&3země&8] <&3zpráva&8> &8- &7Územní chat[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands chat[/SC][/T]'
+    rename: '[T]&8/&3Lands rename &8<&3název&8> - &7Přejmenování země[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands rename[/SC][/T]'
+    teleport: '[T]&8/&3Lands teleport &8[&3svět&8] <&3x&8> <&3z&8> - &7Teleportace
+      na území.[H]&7Klikněte pro zkopírování.[/H][SC]lands teleport[/SC][/T]'
+    invites: '[T]&8/&3Lands invites &8- &7Zobrazí obdržené pozvánky.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands invites[/SC][/T]'
+    info: '[T]&8/&3Lands info &8[&3země&8] - &7Zobrazí informace o zemi.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands info[/SC][/T]'
+    player: '[T]&8/&3Lands player &8<&3hráč/ka&8> - &7Zobrazí informace o hráči/ce.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands player[/SC][/T]'
+    map: '[T]&8/&3Lands map &8- &7Zobrazení mapy.[H]&7Klikněte pro zkopírování.[/H][SC]lands
+      map[/SC][/T]'
+    balance: '[T]&8/&3Lands balance &8[&3země&8] - &7Zobrazí finanční zůstatek.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands balance[/SC][/T]'
+    deposit: '[T]&8/&3Lands deposit &8[&3země&8] <&3množství&8> - &7Vložení financí.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands deposit[/SC][/T]'
+    withdraw: '[T]&8/&3Lands withdraw &8[&3země&8] <&3množství&8> - &7Odebrání financí.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands withdraw[/SC][/T]'
+    list: '[T]&8/&3Lands list &8[&3svět&8] - &7Seznam všech zemí.[H]&7Klikněte pro
+      zkopírování.[/H][SC]lands list[/SC][/T]'
+    assign: '[T]&8/&3Lands assign &8<&3area&8> - &7Přiřadí selekci oblasti.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands assign[/SC][/T]'
+    setowner: '[T]&8/&3Lands setowner &8<&3hráč/ka&8> - &7Převede vlastnictví.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands setowner[/SC][/T]'
+    ban: '[T]&8/&3Lands ban &8<&3hráč/ka&8> [&3oblast&8] - &7Zabanování hráče/ky.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands ban[/SC][/T]'
+    unban: '[T]&8/&3Lands unban &8<&3hráč/ka&8> [&3oblast&8] - &7Odbanování hráče/ky.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands unban[/SC][/T]'
+    taxes: '[T]&8/&3Lands taxes &8- &7Zobrazí nadcházející platbu daní.[H]&7Klikněte
+      pro zkopírování.[/H][SC]lands taxes[/SC][/T]'
+    unstuck: '[T]&8/&3Lands unstuck &8- &7Teleportuje pryž z pastí.[H]&7V případě,
+      že jste se zasekli v zemi. &7Klikněte pro zkopírování.[/H][SC]lands unstuck[/SC][/T]'
+    claims: '[T]&8/&3Lands claims &8[&3země&8] &8- &7Seznam Vašich území.[H]&7Tento
+      příkaz zobrazí všechny /Lands claim. &7Klikněte pro zkopírování.[/H][SC]lands
+      claims[/SC][/T]'
+    rent: '[T]&8/&3Lands rent &8<&3cancel &8| &3info &8| &3removeOffer &8| &3removeTenant&8>
+      &8- &7Správa pronájmu.[H]&7Tento příkaz je k spravování Vašeho pronájmu na aktuální
+      pozici. &7Klikněte pro zkopírování.[/H][SC]lands rent[/SC][/T]'
     wars:
-      declare: '[T]&8/&3Wars declare &8<&3země nebo národ&8> - &7Vyhlášení války[H]&7Klikněte pro zkopírování.[/H][SC]wars declare[/SC][/T]'
-      info: '[T]&8/&3Wars info - &7Zobrazí aktuální nadcházející válku.[H]&7Klikněte pro zkopírování.[/H][SC]wars info[/SC][/T]'
-      menu: '[T]&8/&3Wars menu &8- &7Otevře menu války.[H]&7Klikněte pro zkopírování.[/H][SC]wars menu[/SC][/T]'
-      deny: '[T]&8/&3Wars deny &8- &7Odmítne vyhlášení války.[H]&7Klikněte pro zkopírování.[/H][SC]wars deny[/SC][/T]'
+      declare: '[T]&8/&3Wars declare &8<&3země nebo národ&8> - &7Vyhlášení války[H]&7Klikněte
+        pro zkopírování.[/H][SC]wars declare[/SC][/T]'
+      info: '[T]&8/&3Wars info - &7Zobrazí aktuální nadcházející válku.[H]&7Klikněte
+        pro zkopírování.[/H][SC]wars info[/SC][/T]'
+      menu: '[T]&8/&3Wars menu &8- &7Otevře menu války.[H]&7Klikněte pro zkopírování.[/H][SC]wars
+        menu[/SC][/T]'
+      deny: '[T]&8/&3Wars deny &8- &7Odmítne vyhlášení války.[H]&7Klikněte pro zkopírování.[/H][SC]wars
+        deny[/SC][/T]'
     admin:
-      admin: '[T]&8/&3Lands admin &8<&3pod-příkaz&8> &8- &7Administrátorské příkazy.[H]&7Klikněte pro zkopírování.[/H][SC]lands admin[/SC][/T]'
-      debug: '[T]&8/&3Lands debug &8- &7Zobrazí načtená data.[H]&7Klikněte pro zkopírování.[/H][SC]lands debug[/SC][/T]'
-      safezone: '[T]&8/&3Lands safezone &8- &7Konifugrace bezpečné zóny.[H]&7Klikněte pro zkopírování.[/H][SC]lands safezone[/SC][/T]'
-      reload: '[T]&8/&3Lands reload &8- &7Načte konfiguraci a zprávy.[H]&7Klikněte pro zkopírování.[/H][SC]lands reload[/SC][/T]'
-      about: '[T]&8/&3Lands about &8- &7Zobrazí informace o Lands.[H]&7Klikněte pro zkopírování.[/H][SC]lands about[/SC][/T]'
+      admin: '[T]&8/&3Lands admin &8<&3pod-příkaz&8> &8- &7Administrátorské příkazy.[H]&7Klikněte
+        pro zkopírování.[/H][SC]lands admin[/SC][/T]'
+      debug: '[T]&8/&3Lands debug &8- &7Zobrazí načtená data.[H]&7Klikněte pro zkopírování.[/H][SC]lands
+        debug[/SC][/T]'
+      safezone: '[T]&8/&3Lands safezone &8- &7Konifugrace bezpečné zóny.[H]&7Klikněte
+        pro zkopírování.[/H][SC]lands safezone[/SC][/T]'
+      reload: '[T]&8/&3Lands reload &8- &7Načte konfiguraci a zprávy.[H]&7Klikněte
+        pro zkopírování.[/H][SC]lands reload[/SC][/T]'
+      about: '[T]&8/&3Lands about &8- &7Zobrazí informace o Lands.[H]&7Klikněte pro
+        zkopírování.[/H][SC]lands about[/SC][/T]'
     mod:
-      chatspy: '[T]&8/&3Lands chatspy &8[&3země&8] - &7Poslouchání chatů zemí.[H]&7Klikněte pro zkopírování.[/H][SC]lands chatspy[/SC][/T]'
+      chatspy: '[T]&8/&3Lands chatspy &8[&3země&8] - &7Poslouchání chatů zemí.[H]&7Klikněte
+        pro zkopírování.[/H][SC]lands chatspy[/SC][/T]'
+    nations:
+      trust: '[T]&8/&3Nations trust &8<&3land&8> - &7Invite land[H]&7Click to copy.[/H][SC]nations
+        trust[/SC][/T]'
+      untrust: '[T]&8/&3Nations untrust &8<&3land&8> - &7Remove land[H]&7Click to
+        copy.[/H][SC]nations untrust[/SC][/T]'
+      accept: '[T]&8/&3Nations accept &8<&3nation&8> - &7Accept invite[H]&7Click to
+        copy.[/H][SC]nations accept[/SC][/T]'
+      deny: '[T]&8/&3Nations deny &8<&3nation&8> - &7Deny invite[H]&7Click to copy.[/H][SC]nations
+        deny[/SC][/T]'
+      menu: '[T]&8/&3Nations menu &8- &7Menu[H]&7Click to copy.[/H][SC]nations menu[/SC][/T]'
+      create: '[T]&8/&3Nations create &8[&3name&8] - &7Create nation[H]&7Click to
+        copy.[/H][SC]nations create[/SC][/T]'
+      delete: '[T]&8/&3Nations delete &8<&3nation&8> &8- &7Delete nation[H]&7Click
+        to copy.[/H][SC]nations delete[/SC][/T]'
+      leave: '[T]&8/&3Nations leave &8- &7Leave nation[H]&7Click to copy.[/H][SC]nations
+        leave[/SC][/T]'
+      spawn: '[T]&8/&3Nations spawn &8- &7Capital spawn[H]&7Click to copy.[/H][SC]nations
+        spawn[/SC][/T]'
 message:
   world-not-exist: '&cSvět s názvem&4 {world} &cneexistuje. &7Překlep?'
-  world-invalid: '&cTato funkce je v tomto světě vypnuta. &7Požádejte administrátora o nápravu. Svět: {world}'
-  feature-disabled: '&cTato funkce byla deaktivována administrátorem. &8Musí povolit nastavení {setting} v konfiguraci.'
-  current-war: '&cTato funkce je nedostupná. &7Vaše země&2 {land} &7je ve válce. &7Zkuste to prosím po konfliktu.'
+  world-invalid: '&cTato funkce je v tomto světě vypnuta. &7Požádejte administrátora
+    o nápravu. Svět: {world}'
+  feature-disabled: '&cTato funkce byla deaktivována administrátorem. &8Musí povolit
+    nastavení {setting} v konfiguraci.'
+  current-war: '&cTato funkce je nedostupná. &7Vaše země&2 {land} &7je ve válce. &7Zkuste
+    to prosím po konfliktu.'
   noaccess:
-    chunk: '&cNemůžete použít tuto funkci na tomto území &8(&7Země:&2 {land} &7X: {x} &7Z: {z}&8)&c. &8Pravomoc: {bypass}'
-    area: '&cNemůžete použít tuto funkci v této oblasti &8(&7Oblast:&6 {area} &7Země:&2 {land} &7X: {x} &7Z: {z}&8)&c. &8Pravomoc: {bypass}'
-    land: '&cNemůžete použít tuto funkci v této zemi &8(&7Země:&2 {land}&8)&c. &7Můžete si vytvořit vlastní zemi, pomocí &8/&3Lands create &8<&3název&8>&7.'
-    position: '&cNemůžete použít tuto funkci v území&4 {land} &cna aktuální pozici. &8Pravomoc: {bypass}'
-    land-not-owner: '&cNemůžete použít tuto funkci v tomto území&4 {land}&c. &7Vyberte si vlastní území &8(/&3Lands edit &8<&3země&8>)&7, nebo vytvořte &8(/&3Lands create &8<&3název&8>)&7. &8Pravomoc: lands.admin.land_edit'
-    claim: '&cZde nemůžete zabírat území. &7Toto území patří jinému pluginu. Název: {plugin}'
+    chunk: '&cNemůžete použít tuto funkci na tomto území &8(&7Země:&2 {land} &7X:
+      {x} &7Z: {z}&8)&c. &8Pravomoc: {bypass}'
+    area: '&cNemůžete použít tuto funkci v této oblasti &8(&7Oblast:&6 {area} &7Země:&2
+      {land} &7X: {x} &7Z: {z}&8)&c. &8Pravomoc: {bypass}'
+    land: '&cNemůžete použít tuto funkci v této zemi &8(&7Země:&2 {land}&8)&c. &7Můžete
+      si vytvořit vlastní zemi, pomocí &8/&3Lands create &8<&3název&8>&7.'
+    position: '&cNemůžete použít tuto funkci v území&4 {land} &cna aktuální pozici.
+      &8Pravomoc: {bypass}'
+    land-not-owner: '&cNemůžete použít tuto funkci v tomto území&4 {land}&c. &7Vyberte
+      si vlastní území &8(/&3Lands edit &8<&3země&8>)&7, nebo vytvořte &8(/&3Lands
+      create &8<&3název&8>)&7. &8Pravomoc: lands.admin.land_edit'
+    claim: '&cZde nemůžete zabírat území. &7Toto území patří jinému pluginu. Název:
+      {plugin}'
     place: '&cNemůžete zde pokládat kostky. &7Tato oblast patří zemi&2 {land}&7.'
     break: '&cNemůžete zde ničit kostky. &7Tato oblast patří zemi&2 {land}&7.'
     ignite: '&cNemůžete zde zapalovat kostky. &7Tato oblast patří zemi&2 {land}&7.'
-    enter: '&cNemůžete vejít do oblasti&4 {area} &czemě&4 {land}&c. &7Byli jste teleportování na předchozí lokaci.'
+    enter: '&cNemůžete vejít do oblasti&4 {area} &czemě&4 {land}&c. &7Byli jste teleportování
+      na předchozí lokaci.'
     vehicle: '&cNemůžete zde používat vozidla. &7Tato oblast patří zemi&2 {land}&7.'
     fly: '&cNemůžete zde létat. &7Tato oblast patří zemi&2 {land}&7. &8Pravomoc: {bypass}'
     edit: '&cNemůžete zde upravovat. &7Toto území patří&2 {land}&7.'
-    banned: '&cNemůžete zde vejít. &7Jste zablokování v této oblasti &8(&7Oblast:&6 {area} &7Země:&2 {land}&8)&7. &8Pravomoc: {bypass}'
-    teleport: '&cNemůžete použít předmět pro teleportaci na zemi&4 {land}&c. &7Nejste důveryhodní v této zemi.'
+    banned: '&cNemůžete zde vejít. &7Jste zablokování v této oblasti &8(&7Oblast:&6
+      {area} &7Země:&2 {land}&8)&7. &8Pravomoc: {bypass}'
     interact:
       general: '&cNemůžete zde interagovat. &7Tato oblast patří zemi&2 {land}&7.'
       door: '&cNemůžete zde otevírat dveře. &7Tato oblast patří zemi&2 {land}&7.'
@@ -252,9 +357,14 @@ message:
       animal: '&cNemůžete zde útočit do zvířat. &7Tato oblast patří zemi&2 {land}&7.'
       pvp:
         attacker: '&cNemůžete zde útočit na hráče/ky. &7Tato oblast patří zemi&2 {land}&7.'
-        target: '&cVáš cíl zde nemůže útočit na hráče/ky. &7Nemůžete s nimi soupeřit. &7Tato oblast patří zemi&2 {land}&7.'
-        ally: '&cNemůžete zaútočit na hráče/ky v přírodě, protože je součástí jednozo z Vašich úzmeí. &7Souboje v aréně můžou být pomocí povolení PvP v nastavení rolí.'
+        target: '&cVáš cíl zde nemůže útočit na hráče/ky. &7Nemůžete s nimi soupeřit.
+          &7Tato oblast patří zemi&2 {land}&7.'
+        ally: '&cNemůžete zaútočit na hráče/ky v přírodě, protože je součástí jednozo
+          z Vašich úzmeí. &7Souboje v aréně můžou být pomocí povolení PvP v nastavení
+          rolí.'
         wilderness: '&cNemůžete útočit na hráče v přírodě z vlastní země.'
+    ender_pearl: '&cYou''re not allowed to use this item to teleport into the area&6
+      {area} &7of land&4 {land}&c.'
   area:
     exists: '&cOblast s názvem&4 {area} &cjiž existuje v uzemí&4 {land}&c.'
     not-exist: '&cOblast&4 {area} &cneexistuje v zemi&4 {land}&c.'
@@ -271,22 +381,31 @@ message:
       land: '#t#&2&lPříroda[newline]&7Pociťte divočinu'
       safezone: '#t#&2&lPříroda[newline]&7Pociťte divočinu'
   teleportation:
-    already: '&cNemůžete započít další teleportaci. Teleportace již probíhá. &7Počkejte prosím.'
-    started: '&7Teleportační proces započal. Teleportuji za&5 {sec} &7sekund. Nehýbejte se prosím.'
-    cancelled: '&cVaše teleportace byla zrušena. &7Nehýjte se prosím&5 {sec} &7sekund pro teleportování.'
+    already: '&cNemůžete započít další teleportaci. Teleportace již probíhá. &7Počkejte
+      prosím.'
+    started: '&7Teleportační proces započal. Teleportuji za&5 {sec} &7sekund. Nehýbejte
+      se prosím.'
+    cancelled: '&cVaše teleportace byla zrušena. &7Nehýjte se prosím&5 {sec} &7sekund
+      pro teleportování.'
     chunk: '#t#&9&lTeleportován[newline]&7X: {x} Z: {z} Cena:&c ${cost}'
-    plugin: '&cTeleportace byla zrušena pluginem třetí strany. &7V případě problému, kontaktuje prosím administrátora.'
+    plugin: '&cTeleportace byla zrušena pluginem třetí strany. &7V případě problému,
+      kontaktuje prosím administrátora.'
     unsafe: |
       &cTeleportace byla zrušna, protože místo bylo nebezpečné.
-      
+
       [T]&7Teleportovat: &8[KLIK][H]&7Varování: Teleportační destinace není bezpečná.[/H][C]{cmd}[/C][/T]
-    corrected: '&7Originální destinace byla nebezpečná. &7Vaše finální destinace byla upravena na bezpečnější pozici.'
+    corrected: '&7Originální destinace byla nebezpečná. &7Vaše finální destinace byla
+      upravena na bezpečnější pozici.'
+    cmd: '&cYou can''t use any commands while beeing teleported. &7Please wait another&5
+      {sec} seconds &7until the teleportation has been finished.'
   claimblock:
-    dropped: '&cNěkteré zabírací kostky jsou na zemi. &7Ve Vašem inventáři nebylo dostatek místa.'
+    dropped: '&cNěkteré zabírací kostky jsou na zemi. &7Ve Vašem inventáři nebylo
+      dostatek místa.'
     success: '&7Máte&3 {blocks} &7zabíracích kostek. &7Vložte je do území pro zabrání.'
     not-owner: '&cNemáte povolení na použití zabíracích kostek. &7Patří&3 {owner}&7.'
   blacklist:
-    untrusted: '&cNemůžete zde použít tento příkaz. &7Nejste důveryhodní v oblastí&6 {area} &7v zemi&2 {land}&7. &8Pravomoc: {permission}'
+    untrusted: '&cNemůžete zde použít tento příkaz. &7Nejste důveryhodní v oblastí&6
+      {area} &7v zemi&2 {land}&7. &8Pravomoc: {permission}'
     general: '&cNemůžete použít tento příkaz v zabraných územích. &8Pravomoc: {permission}'
     war: '&cNemůžete použít tento příkaz ve válce. &8Pravomoc: {permission}'
   autoAction:
@@ -296,17 +415,25 @@ message:
   role:
     exists: '&cRole s názvem&4 {role} &cjiž existuje. &7Zvolte prosím jiný název.'
     not-exist: '&cRole&e {role} &cneexistuje v této oblasti. &7Překlep?'
-    max: '&cNemůžete vytvořit více rolí pro tuto oblast. &7Již jste dosáhli limitu&3 {max} &7rolí. Pravomoc: lands.roles.ČÍSLO'
+    max: '&cNemůžete vytvořit více rolí pro tuto oblast. &7Již jste dosáhli limitu&3
+      {max} &7rolí. Pravomoc: lands.roles.ČÍSLO'
     player:
-      land: '&cNemůžete upravit roli hráče/ky v zemi&4 {land}&c. &7Role&6 {role} &7má vyšší prioritu než Vaše.'
-      area: '&cNemůžete uravit roli hráče/ky v oblasti&4 {area} &8(&7Země:&2 {land}&8)&c. &7Role&6 {role} &7má vyšší prioritu než Vaše.'
+      land: '&cNemůžete upravit roli hráče/ky v zemi&4 {land}&c. &7Role&6 {role} &7má
+        vyšší prioritu než Vaše.'
+      area: '&cNemůžete uravit roli hráče/ky v oblasti&4 {area} &8(&7Země:&2 {land}&8)&c.
+        &7Role&6 {role} &7má vyšší prioritu než Vaše.'
     weight:
-      land: '&cNemůžete upravit roli&4 {role} &cv zemi&4 {land}&c. &7Role má vyšší prioritu než Vaše.'
-      area: '&cNemůžete upravit roli&4 {role} &coblasti&4 {area} &8(&7Země:&2 {land}&8)&c. &7Role má vyšší prioritu než Vaše..'
+      land: '&cNemůžete upravit roli&4 {role} &cv zemi&4 {land}&c. &7Role má vyšší
+        prioritu než Vaše.'
+      area: '&cNemůžete upravit roli&4 {role} &coblasti&4 {area} &8(&7Země:&2 {land}&8)&c.
+        &7Role má vyšší prioritu než Vaše..'
     delete:
-      owner: '&cNemůžete odstranit majitele/ku této země &7Tato role je vyžadována.'
-      entry: '&cNemůžete odstranit vstupní roli této země. &7Je vyžadována pro nové hráče/ky.'
-      visitor: '&cNemůžete odstranit roli návštěvníka této země. &7Je vyžadována pro procházející hráče/ky.'
+      entry: '&cNemůžete odstranit vstupní roli této země. &7Je vyžadována pro nové
+        hráče/ky.'
+      visitor: '&cNemůžete odstranit roli návštěvníka této země. &7Je vyžadována pro
+        procházející hráče/ky.'
+      role: '&cYou can''t delete the role&4 {role} &cof your land. &7This role is
+        required.'
   chat-action:
     cancelled: '#t#&c&lZrušeno[newline]&c&lAkce Chatu'
     player: '&7Vložte prosím název cíle.'
@@ -317,22 +444,32 @@ message:
     area:
       create: '&7Vložte prosím název nové oblasti.'
       delete: '&7Vložte prosím název oblasti, kterou chcete odstranit.'
-      exists: '&cOblast&4 {area} &cjiž existuje v této zemi &8(&7Země:&2 {land}&8)&c. &7Zvolte prosím jiný název.'
-      max: '&cNemůžete vytvořit více oblastí pro tuto zemi. &7Již jste dovršili limitu&3 {max} &7oblastí. Pravomoc: lands.areas.ČÍSLO'
+      exists: '&cOblast&4 {area} &cjiž existuje v této zemi &8(&7Země:&2 {land}&8)&c.
+        &7Zvolte prosím jiný název.'
+      max: '&cNemůžete vytvořit více oblastí pro tuto zemi. &7Již jste dovršili limitu&3
+        {max} &7oblastí. Pravomoc: lands.areas.ČÍSLO'
 command:
   rent:
-    edit: '&cAktuálně nemůžete upravit oblast&4 {area} &czemě&4 {land}&7, protože je pronajmuto/zakoupeno hráčem/kou&3 {player}&7.'
-    tenant: '&cNemáte pronajmutou oblast na Vaší pozici. &7Oblast&6 {area} &7země&2 {land} &7není pronajmuto Vámi.'
-    none: '&cOblast&4 {area} &czemě&4 {land} &cna Vaší pozici není pronajmutou ani zakoupeno nikým.'
-    status: '&cOblast&4 {area} &czemě&4 {land} &cna Vaší aktuální pozici není nastaveno pro pronájem, ani prodej.'
+    edit: '&cAktuálně nemůžete upravit oblast&4 {area} &czemě&4 {land}&7, protože
+      je pronajmuto/zakoupeno hráčem/kou&3 {player}&7.'
+    tenant: '&cNemáte pronajmutou oblast na Vaší pozici. &7Oblast&6 {area} &7země&2
+      {land} &7není pronajmuto Vámi.'
+    none: '&cOblast&4 {area} &czemě&4 {land} &cna Vaší pozici není pronajmutou ani
+      zakoupeno nikým.'
+    status: '&cOblast&4 {area} &czemě&4 {land} &cna Vaší aktuální pozici není nastaveno
+      pro pronájem, ani prodej.'
     confirm: |
       &cPotvrďte prosím, že chceze zaplatit &4{cost}$ &cjako kompenzaci nájemci &4{player} &cza jeho odstranění:
       [T]&aPotvrdit: &8[KLIK][H]&7Klikni pro potvrzení akce a platby.[/H][C]lands rent removetenant confirm[/C][/T]
     set:
-      land: '&cNemůžete nastavit zemi &4{land} &cna pronájem. &7Můžete vytvořit pod-oblasti, nebo zemi prodat.'
-      already: '&cAktuálně nemůžete nastavit tuto oblast na pronájem. &7Oblast &6{area} &7je aktuálně pronajmuta hráčem/kou &3{player}&7. &7Expiruje za &5{time}&7.'
-      sold: '&cNemůžete nastavit oblast, která byla prodána, nebo pronajmuta. &7Oblast &6{area} &7byla koupena hráčem/kou &3{player}&7.'
-      success: '&7Nastavili jste oblast &6{area} &7k pronájmu. Nájemce/kyně bude platit ${cost} &7každých &5{time}&7.'
+      land: '&cNemůžete nastavit zemi &4{land} &cna pronájem. &7Můžete vytvořit pod-oblasti,
+        nebo zemi prodat.'
+      already: '&cAktuálně nemůžete nastavit tuto oblast na pronájem. &7Oblast &6{area}
+        &7je aktuálně pronajmuta hráčem/kou &3{player}&7. &7Expiruje za &5{time}&7.'
+      sold: '&cNemůžete nastavit oblast, která byla prodána, nebo pronajmuta. &7Oblast
+        &6{area} &7byla koupena hráčem/kou &3{player}&7.'
+      success: '&7Nastavili jste oblast &6{area} &7k pronájmu. Nájemce/kyně bude platit
+        ${cost} &7každých &5{time}&7.'
       invalid: |
         &7Váš formát řádků je neplatný (řádek: {line})
         &81. řádek:&7 Země
@@ -348,11 +485,16 @@ command:
         &8Max. čas: {max}
         &7---------<- &5&lPronájem Oblasti &r&7->---------
     rent:
-      trusted: '&cNemůžete si pronajmout oblast &4{area} &cv zemi &4{land}&c. &7V této oblasti jste již důveryhodní.'
-      expire: '&cNemůžete přidat více času ke svému pronájmu oblasti &4{area}&c. &7Země &2{land} &7ji odebrala k pronájmu. Expiruje za &5{time}&7.'
-      max: '&cNemůžete přidat více času k pronájmu oblasti &4{area}&c. &7V zemi &2{land} &7nastavili maximum na &5{max}&7.'
-      add: '&7Přidali jste&5 {add} &7k pronájmu oblasti&6 {area} &7za&c ${cost}&7. Expiruje za&5 {time}&7.'
-      success: '&7Pronajmuli jste si oblast&6 {area} &7v zemi&2 {land} &7za&c ${cost}&7. Expiruje za&5 {time}&7.'
+      trusted: '&cNemůžete si pronajmout oblast &4{area} &cv zemi &4{land}&c. &7V
+        této oblasti jste již důveryhodní.'
+      expire: '&cNemůžete přidat více času ke svému pronájmu oblasti &4{area}&c. &7Země
+        &2{land} &7ji odebrala k pronájmu. Expiruje za &5{time}&7.'
+      max: '&cNemůžete přidat více času k pronájmu oblasti &4{area}&c. &7V zemi &2{land}
+        &7nastavili maximum na &5{max}&7.'
+      add: '&7Přidali jste&5 {add} &7k pronájmu oblasti&6 {area} &7za&c ${cost}&7.
+        Expiruje za&5 {time}&7.'
+      success: '&7Pronajmuli jste si oblast&6 {area} &7v zemi&2 {land} &7za&c ${cost}&7.
+        Expiruje za&5 {time}&7.'
       info: |
         [NoPrefix]
         &7---------<- &5&lPronájem &7->---------
@@ -363,17 +505,21 @@ command:
         &8Nájem: ${cost} každých {time}
         &7---------<- &5&lPronájem &r&7->---------
     cancel:
-      success: '&7Zrušili jste pronájem oblasti &6{area}&7. Nyní do této oblastni nemáte přístup.'
+      success: '&7Zrušili jste pronájem oblasti &6{area}&7. Nyní do této oblastni
+        nemáte přístup.'
     remove:
       offer:
         success:
           land: '&7Země&2 {land} &7již nemůže být zakoupeno.'
-          area: '&7Oblast&6 {area} &7v zemi&2 {land} &7již nemůže být zakoupeno, nebo pronajmuto.'
+          area: '&7Oblast&6 {area} &7v zemi&2 {land} &7již nemůže být zakoupeno, nebo
+            pronajmuto.'
       tenant:
-        success: '&7Odstranili jste nájemce/kyni&3 {player} &7z oblasti&6 {area} &7v zemi&2 {land} &7a zaplatili&c {cost}$ &7jako kompenzaci.'
+        success: '&7Odstranili jste nájemce/kyni&3 {player} &7z oblasti&6 {area} &7v
+          zemi&2 {land} &7a zaplatili&c {cost}$ &7jako kompenzaci.'
   sell:
     sell:
-      rented: '&cNemůžete prodat oblast, která je pronajmuta hráčem/kou. &7Oblast &6{area} &7je aktuálně pronajmuta hráčem/kou &3{player}&7. Expiruje za&5 {time}&7.'
+      rented: '&cNemůžete prodat oblast, která je pronajmuta hráčem/kou. &7Oblast
+        &6{area} &7je aktuálně pronajmuta hráčem/kou &3{player}&7. Expiruje za&5 {time}&7.'
       success:
         area: '&7Nastavili jste oblast&6 {area} &7na prodej. Cena:&c ${cost}'
         land: '&7Nastavili jste zemi&2 {land} &7na prodej. Cena:&c ${cost}'
@@ -410,34 +556,52 @@ command:
   general:
     no-permission: '&cNemáte dostatečné pravomoce na tuto akci. &8Potřebujete {permission}.'
     land-not-exist: '&cZemě&2 {land} &cneexistuje. &7Neexistuje země s tímto názvem.'
-    area-not-exist: '&cOblast&4 {area} &cneexistuje v zemi&4 {land}&c. &7Můžete vytvořit novou oblast v menu území v sekci selekci oblastí. &7Překlep?'
-    land-not-member: '&cNejste důvěryhodní v zemi&4 {land}&c. &7Použijte &8/&3Lands menu &7pro zobrazení zemí, ve kterých jste důvěryhodní.'
-    no-edit-land: '&cJeště jste nevybrali zemi úpravy. &7Použijte &8/&3Lands edit &8<&3země&8> &7pro výběr.'
-    name-exists: '&cNázev&4 {name} &cje již zabrána jinou zemí, nebo národem. &7Musíte zvolit jiný název.'
-    money-cost-bank: '&cNemáte dostatek financí. &7Potřebujete ${cost}&7. Vložte peníze do banky země: &8/&3Lands deposit {cost}'
+    area-not-exist: '&cOblast&4 {area} &cneexistuje v zemi&4 {land}&c. &7Můžete vytvořit
+      novou oblast v menu území v sekci selekci oblastí. &7Překlep?'
+    land-not-member: '&cNejste důvěryhodní v zemi&4 {land}&c. &7Použijte &8/&3Lands
+      menu &7pro zobrazení zemí, ve kterých jste důvěryhodní.'
+    no-edit-land: '&cJeště jste nevybrali zemi úpravy. &7Použijte &8/&3Lands edit
+      &8<&3země&8> &7pro výběr.'
+    name-exists: '&cNázev&4 {name} &cje již zabrána jinou zemí, nebo národem. &7Musíte
+      zvolit jiný název.'
+    money-cost-bank: '&cNemáte dostatek financí. &7Potřebujete ${cost}&7. Vložte peníze
+      do banky země: &8/&3Lands deposit {cost}'
     money-cost: '&cNemáte dostatek financí. &7Potřebujete &c${cost}&7.'
     swear-word: '&cDetekováno nepovolené slovo. &c{word}'
-    action-cooldown: '&cToto nyní nemůžete použít. &7Musíte počkat&5 {time}&7. &8Pravomoc: {bypass}'
-    land-none: '&cNejste členem země. &7Použijte &8/&3Lands create &7pro vytvoření.'
+    action-cooldown: '&cToto nyní nemůžete použít. &7Musíte počkat&5 {time}&7. &8Pravomoc:
+      {bypass}'
     land-no-own: '&cNevlastníte žádnou zemi. &7Použijte &8/&3Lands create &7pro vytvoření.'
-    world-invalid: '&cNemůžete použít tuto akci v tomto světě. &7Administrátor musí přidat svět &3{world}&7.'
-    wilderness: '&cNa Vaší pozici není žádné zabrané území. &7Můžete použít &8/&3Lands menu &7pro zobrazení území.'
+    world-invalid: '&cNemůžete použít tuto akci v tomto světě. &7Administrátor musí
+      přidat svět &3{world}&7.'
+    wilderness: '&cNa Vaší pozici není žádné zabrané území. &7Můžete použít &8/&3Lands
+      menu &7pro zobrazení území.'
     player-not-exist: '&cNení zde žádný hráč/ka s jménem &4{player}&c. &7Překlep?'
     player-offline: '&cNení zde žádný hráč/ka s jménem &4{player}&c. &7Překlep?'
     player-self: '&cNa tuto akci potřebujete kamarády/ky. &7¯\_(ツ)_/¯'
     banks-disabled: '&7Banky byly vypnuty Administrátorem.'
-    land-not-trusted: '&cHráč/ka&4 {player} &7není součástí území &8(&7Země:&2 {land}&8)&7. Nejdříve musí být důvěryhodní, použijte &8/&3Lands trust&7.'
-    area-not-trusted: '&cTuto akci zde nemůžete vykonat. &7Nejste důvěryhodní v oblasti&6 {area} &7na území&2 {land}&7.'
+    land-not-trusted: '&cHráč/ka&4 {player} &7není součástí území &8(&7Země:&2 {land}&8)&7.
+      Nejdříve musí být důvěryhodní, použijte &8/&3Lands trust&7.'
+    area-not-trusted: '&cTuto akci zde nemůžete vykonat. &7Nejste důvěryhodní v oblasti&6
+      {area} &7na území&2 {land}&7.'
     invalid-number: '&4{input} &cnení číslo. &7Argument&3 {argument} &7musí být číslo.'
     number: '&4{input} &cnení číslo. &7Argument&3 {argument} &7musí být číslo.'
     name:
       number: '&cNemůžete použít čísla pro tento název. &7Nalezeno číslo:&3 {invalid}'
-      character: '&cNemůžete používat neplatné znaky pro tento název. &7Nalezen neplatný znak:&3 {invalid}'
+      character: '&cNemůžete používat neplatné znaky pro tento název. &7Nalezen neplatný
+        znak:&3 {invalid}'
       color: '&cNemůžete použít barvy pro tento název.'
-      length: '&cTento název je příliš dlouhý. &7Max. délka je&3 {max} &7znaků &8(&7Vaše: {input}&8)&7. &8Zahrnuje barevné kódy.'
+      length: '&cTento název je příliš dlouhý. &7Max. délka je&3 {max} &7znaků &8(&7Vaše:
+        {input}&8)&7. &8Zahrnuje barevné kódy.'
       empty: '&cToto jméno je neplatné.'
+    none: |
+      &cNejste součástí žádné země.
+
+        &7Jakákoli země Vás může pozvat, pomocí: &8/&3Lands trust
+        [T]&7Vyvořte si vlastní zemi, pomocí: &8/&3Lands create[H]&7Klikněte pro zkopírování.[/H][SC]lands create[/SC][/T]
   help:
-    header: '[NoPrefix][T]&7----------&6<<<<&7-[H]&7Předchozí strana.[/H][C]{cmd} help {previous}[/C][/T] &2Nápověda Území &7Strana&3 {page} &8/&3 {pages} [T]&7-&6>>>>&7----------[H]&7Další strana.[/H][C]{cmd} help {next}[/C][/T]'
+    header: '[NoPrefix][T]&7----------&6<<<<&7-[H]&7Předchozí strana.[/H][C]{cmd}
+      help {previous}[/C][/T] &2Nápověda Území &7Strana&3 {page} &8/&3 {pages} [T]&7-&6>>>>&7----------[H]&7Další
+      strana.[/H][C]{cmd} help {next}[/C][/T]'
     footer: |
       [NoPrefix]
       &7Click on the arrows below to navigate.
@@ -445,21 +609,34 @@ command:
     help: '&7Použijte &8/&a{cmd} help &7pro pomoc.'
     cmd-not-exist: '&cTento příkaz neexistuje. &7Příkaz&3 {command} &7je neplatný.'
   create:
-    land-other: '&cNemůžete mít vlastní území a být členem/kou jiného. &7Nejdříve musíte území&2 {land} &7opustit. &8Administrátor může tuto funkci deaktivovat.'
-    max-own: '&cNemůžete vytvořit více území. &7Dovršili jste maxima &3{max} &7území. &8Pravomoc: lands.ownlands.ČÍSLO'
-    success: '&7Úspěšně jste vytvořili území&2 {land} &7za&c ${cost}&7. Pomocí příkazu &8/&3Lands claim&7 můžete zabírat území. Také můžete použít /Lands selection pro zabírání oblastí. Nastavte území {land} jako Vaše editační území pro budoucí akce &8(/&3Lands edit&8)&7.'
+    land-other: '&cNemůžete mít vlastní území a být členem/kou jiného. &7Nejdříve
+      musíte území&2 {land} &7opustit. &8Administrátor může tuto funkci deaktivovat.'
+    max-own: '&cNemůžete vytvořit více území. &7Dovršili jste maxima &3{max} &7území.
+      &8Pravomoc: lands.ownlands.ČÍSLO'
+    success: '&7Úspěšně jste vytvořili území&2 {land} &7za&c ${cost}&7. Pomocí příkazu
+      &8/&3Lands claim&7 můžete zabírat území. Také můžete použít /Lands selection
+      pro zabírání oblastí. Nastavte území {land} jako Vaše editační území pro budoucí
+      akce &8(/&3Lands edit&8)&7.'
     broadcast: '&7Území&2 {land} &7bylo vytvořeno hráčem/kou&3 {player}&7.'
   rename:
-    success: '&7Úspěšně jste nastavili nový název na&3 {name} &7pro toto území &8(&7Země:&2 {land}&8)&7. Zaplatili jste&c ${cost}&7.'
+    success: '&7Úspěšně jste nastavili nový název na&3 {name} &7pro toto území &8(&7Země:&2
+      {land}&8)&7. Zaplatili jste&c ${cost}&7.'
   edit:
-    success: '&7Spustili jste editační režim pro toto území &8(&7Země:&2 {land}&8)&7. Další akce, jako &8/&3Lands claim &7, nebo &8/&3Lands trust&7, budou automaticky použity pro toto území.'
+    success: '&7Spustili jste editační režim pro toto území &8(&7Země:&2 {land}&8)&7.
+      Další akce, jako &8/&3Lands claim &7, nebo &8/&3Lands trust&7, budou automaticky
+      použity pro toto území.'
   selection:
-    not-complete: '&cVaše selekce není kompletní. &7Ujistěte se prosím, že obě pozice jsou nastaveny &8(&bLEVE KLIKNUTÍ &7a &9PRAVÉ KLIKNUTÍ&8)&7. Můžete vypnout/zapnout selekci pomocí &8/&3Lands selection&7.'
-    max: '&cVaše selekce má příliš mnoho území. &7Velikost:&3 {current} &7Vaše maximální velikost je&3 {max}. &8Pravomoc: lands.selection.ČÍSLO'
+    not-complete: '&cVaše selekce není kompletní. &7Ujistěte se prosím, že obě pozice
+      jsou nastaveny &8(&bLEVE KLIKNUTÍ &7a &9PRAVÉ KLIKNUTÍ&8)&7. Můžete vypnout/zapnout
+      selekci pomocí &8/&3Lands selection&7.'
+    max: '&cVaše selekce má příliš mnoho území. &7Velikost:&3 {current} &7Vaše maximální
+      velikost je&3 {max}. &8Pravomoc: lands.selection.ČÍSLO'
     too-far: '&cKostka na kterou se koukáte je příliš daleko. &7Běžte prosím blíž.'
-    enabled: '&7Aktivovali jste režim selekce. Použijte &bLEVÉ KLIKNUTÍ &pro označení první a &9PRAVÉ KLIKNUTÍ &7pro označení druhé kostky selekce.'
+    enabled: '&7Aktivovali jste režim selekce. Použijte &bLEVÉ KLIKNUTÍ &pro označení
+      první a &9PRAVÉ KLIKNUTÍ &7pro označení druhé kostky selekce.'
     disabled: '#t#&5Řežim Selekce[newline]&cDeaktivován'
-    world: '&cObě pozice musí být ve stejném světě. &7Nastavte prosím obě pozice ve stejném světě.'
+    world: '&cObě pozice musí být ve stejném světě. &7Nastavte prosím obě pozice ve
+      stejném světě.'
     complete: |
       &7Vaše selekce je komplětní. Následující akce budou vykonány:
         &8┏
@@ -469,36 +646,58 @@ command:
         &8┗
     pos:
       warn: '&cVarování: &7Toto území patří jinému pluginu. Název:&3 {plugin}'
-      cancelled: '&cNemůžete vytvořit selekci zde. &7Toto území patří jinému pluginu. Název:&3 {plugin}'
+      cancelled: '&cNemůžete vytvořit selekci zde. &7Toto území patří jinému pluginu.
+        Název:&3 {plugin}'
       one: '#t#&5&lSelekce[newline]&b&lPozice 1 &8-> &7Nastavena'
       two: '#t#&5&lSelekce[newline]&b&lPozice 2 &8-> &7Nastavena'
     area:
-      conflicts: '&cNalezeno&4 {conflicts} &ckonflikt/ů s již přiřazenými oblastmi. &7Použijte &8/&3Lands selection assgin {area} confirm &7pro potvrzení přepsání. Konflikty náleží oblasti: {areas}'
-      assigned: '&7Úspěšně jste přiřadili&3 {chunks} &7území oblasti&6 {area} &8(&7Země:&2 {land}&8)&7.'
+      conflicts: '&cNalezeno&4 {conflicts} &ckonflikt/ů s již přiřazenými oblastmi.
+        &7Použijte &8/&3Lands selection assgin {area} confirm &7pro potvrzení přepsání.
+        Konflikty náleží oblasti: {areas}'
+      assigned: '&7Úspěšně jste přiřadili&3 {chunks} &7území oblasti&6 {area} &8(&7Země:&2
+        {land}&8)&7.'
     expand:
-      enabled: '&7Úspěšně zvětšena selekce z nejnižšího bodu po nejvyšší. (všechny úrovně osy Y)'
+      enabled: '&7Úspěšně zvětšena selekce z nejnižšího bodu po nejvyšší. (všechny
+        úrovně osy Y)'
       disabled: '&7Vaše aktuální pozice již není zvětšena.'
   claim:
-    already: '&cNemůžete zabírat území na tomto místě. &7Tato oblast již náleží území&2 {land}&7.'
-    initial-world: '&cPro území&4 {land} &cmůžete zabírat pouze v počátečním světě &4{world}&c. &7Možná budete chtít vytvořit nové území pro tento svět ({current}) &8/&3Lands create &8<&3název&8>'
-    auto-create: '&7Automaticky pro Vás vytváříme území, protože žádné nemáte. Můžete změnit název, pomocí příkazu &8/&3Lands rename&7.'
-    auto-create-fail: '&cNepodařilo se automaticky vytvořit území. &7Přečtěte si prosím zprávu výše.'
-    near-other: '&cToto je příliš blížko k území&4 {land}&c. &7Musíte se posunout dál od tohot území.'
-    far-land: '&cNemůžete zabrat toto území. &7Vaše území musí být spojeny &8(&7Země: &2{land}&8)&7.'
-    success: '&7Úspěšně zabráno toto území &8(&7Země:&2 {land} &7X: {x} Z: {z}&8) &7za&c ${cost}&7. Další zabráníá bude stát&c ${next}&7.'
-    already-claimed: '&cVe Vaší selekci je území, které je již zabráno a nenáleží Vašemu území &8(&7X: {x} Z: {z}&8)&c. &7Náleží území&2 {land}&7.'
-    max-chunk: '&cNemůžete zabrat&4 {chunks} &cvíce území pro toto území. &7Maximální počet pro území&2 {land} &7je&3 {max}&7. &8Pravomoc: lands.chunks.ČÍSLO'
-    selection: '&7Úspěšně jste zabrali&3 {chunks} &7území pro zemi &8(&7Země:&2 {land}&8)&7. Zaplatili jste&c ${cost}&7.'
+    already: '&cNemůžete zabírat území na tomto místě. &7Tato oblast již náleží území&2
+      {land}&7.'
+    initial-world: '&cPro území&4 {land} &cmůžete zabírat pouze v počátečním světě
+      &4{world}&c. &7Možná budete chtít vytvořit nové území pro tento svět ({current})
+      &8/&3Lands create &8<&3název&8>'
+    auto-create: '&7Automaticky pro Vás vytváříme území, protože žádné nemáte. Můžete
+      změnit název, pomocí příkazu &8/&3Lands rename&7.'
+    auto-create-fail: '&cNepodařilo se automaticky vytvořit území. &7Přečtěte si prosím
+      zprávu výše.'
+    near-other: '&cToto je příliš blížko k území&4 {land}&c. &7Musíte se posunout
+      dál od tohot území.'
+    far-land: '&cNemůžete zabrat toto území. &7Vaše území musí být spojeny &8(&7Země:
+      &2{land}&8)&7.'
+    success: '&7Úspěšně zabráno toto území &8(&7Země:&2 {land} &7X: {x} Z: {z}&8)
+      &7za&c ${cost}&7. Další zabráníá bude stát&c ${next}&7.'
+    already-claimed: '&cVe Vaší selekci je území, které je již zabráno a nenáleží
+      Vašemu území &8(&7X: {x} Z: {z}&8)&c. &7Náleží území&2 {land}&7.'
+    max-chunk: '&cNemůžete zabrat&4 {chunks} &cvíce území pro toto území. &7Maximální
+      počet pro území&2 {land} &7je&3 {max}&7. &8Pravomoc: lands.chunks.ČÍSLO'
+    selection: '&7Úspěšně jste zabrali&3 {chunks} &7území pro zemi &8(&7Země:&2 {land}&8)&7.
+      Zaplatili jste&c ${cost}&7.'
   assign:
-    selection: '&cNejdříve musíte vytvořit selekci. &7Použijte &8/&3Lands selection &7pro vytvoření..'
-    default: '&cNemůžete přiřadit selekci pro výchozí oblast. &7Oblasti můžou být odstraněny v menu.'
-    size: '&cVaše selekce je příliš malá. &7Minimální počet je &3{min} &7kostek a Vaše je&3 {current}&7.'
-    success: '&7Úspěšně jste změnili velikost oblasti &6{area} &7zemi &2{land}&7. Změny jsou zobrazeny.'
+    selection: '&cNejdříve musíte vytvořit selekci. &7Použijte &8/&3Lands selection
+      &7pro vytvoření..'
+    default: '&cNemůžete přiřadit selekci pro výchozí oblast. &7Oblasti můžou být
+      odstraněny v menu.'
+    size: '&cVaše selekce je příliš malá. &7Minimální počet je &3{min} &7kostek a
+      Vaše je&3 {current}&7.'
+    success: '&7Úspěšně jste změnili velikost oblasti &6{area} &7zemi &2{land}&7.
+      Změny jsou zobrazeny.'
     conflict:
       land: '&cVaše selekce je v konfliktu s zemí &4{land}&c. &7Upravte prosím selekci.'
-      area: '&cVaše selekce je v konfliktu s oblastí &4{land}&c. &7Upravte prosím selekci.'
+      area: '&cVaše selekce je v konfliktu s oblastí &4{land}&c. &7Upravte prosím
+        selekci.'
   leave:
-    owner: '&cNemůžete opustit tuto zemi. &7Jako majitel této země ji můžete pouze zrušit nebo předat. Použijte &8/&3Lands delete {land} &7pro zrušení.'
+    owner: '&cNemůžete opustit tuto zemi. &7Jako majitel této země ji můžete pouze
+      zrušit nebo předat. Použijte &8/&3Lands delete {land} &7pro zrušení.'
     land:
       untrusted: '&7Nejste důveryhodní v této bolasti v zemi&2 {land}&7.'
       success: '&7Úspěšně jste opustili zemi&2 {land}&7.'
@@ -506,41 +705,64 @@ command:
       untrusted: '&7Nejste důveryhodní v oblasti&6 {area} &7v zemi&2 {land}&7.'
       success: '&7Úspěšně jste opustili oblast&6 {area} &7v zemi&2 {land}&7.'
   unclaim:
-    rental: '&cNemůžete odebrat toto území&7, protože obsahuje pronajmutou/prodanou oblast &6{area}&7. Nájemce/kyně: &3{player}'
-    connection: '&cNemůžete odebrat toto území, protože by tato akce odpojila ostatní území. &7Území X: {x} Z: {z} by bylo odpojeno.'
-    success: '&7Úspěšně odebráno toto území &8(&7Země:&2 {land} &7X: {x} Z: {z}&8)&7. Obdrželi jste&c ${back} &7zpět.'
+    rental: '&cNemůžete odebrat toto území&7, protože obsahuje pronajmutou/prodanou
+      oblast &6{area}&7. Nájemce/kyně: &3{player}'
+    success: '&7Úspěšně odebráno toto území &8(&7Země:&2 {land} &7X: {x} Z: {z}&8)&7.
+      Obdrželi jste&c ${back} &7zpět.'
     selection:
-      empty: '&cNeodebrali jste žádné území, protože nejsou zabrána, nebo tuto akci nemůžete provést.'
-      rental: '&cNemůžete odebrat tuto selekci&7, protože obsahuje pronajmuté/prodané oblasti &6{area} &7země &2{land}&7. Nájemce/kyně:&3 {player}'
-      connection: '&7Odebrali jste {success} / {size} území této selekce, &cale {failed} nemohlo být odebráno, protože by jiné území bylo odpojeno. &7Obdrželi jste&c ${back} &7zpět.'
-      partly: '&7Úspěšně jste odebrali {success} / {size} území této selekce. Obdrželi jste&c ${back} &7zpět.'
-      success: '&7Úspěšně jste odebrali všechny území této selekce. Obdrželi jste&c ${back} &7zpět.'
+      empty: '&cNeodebrali jste žádné území, protože nejsou zabrána, nebo tuto akci
+        nemůžete provést.'
+      rental: '&cNemůžete odebrat tuto selekci&7, protože obsahuje pronajmuté/prodané
+        oblasti &6{area} &7země &2{land}&7. Nájemce/kyně:&3 {player}'
+      partly: '&7Úspěšně jste odebrali {success} / {size} území této selekce. Obdrželi
+        jste&c ${back} &7zpět.'
+      success: '&7Úspěšně jste odebrali všechny území této selekce. Obdrželi jste&c
+        ${back} &7zpět.'
+      split: '&7You unclaimed {success} / {size} chunks of this selection, &cbut {failed}
+        could not be unclaimed because it would result in your land beeing split up
+        into parts &8(a admin can disable this in config)&7. Parts that would split
+        up are now visualized. You got&c ${back} &7back.'
+    split: '&cYou can''t unclaim this chunk, because this would cause your land to
+      split up into parts &8(a admin can disable this in config)&7. Parts that would
+      split up are now visualized.'
   delete:
-    nation: '&cNemůžete odebrat Vaše území, protože je to hlavní město národu &4{nation}&c. &7Buď musíte odstranit &8(/&3Nations delete&8) &7národ, nebo jej předat &8(/&3Nations setCapital&8)&7.'
+    nation: '&cNemůžete odebrat Vaše území, protože je to hlavní město národu &4{nation}&c.
+      &7Buď musíte odstranit &8(/&3Nations delete&8) &7národ, nebo jej předat &8(/&3Nations
+      setCapital&8)&7.'
     confirm: |
       &cKlikěnte prosím níže pro potvrzení zrušení.
 
         [T]&aPotvrdit: &8[KLIK][H]&7Klikněte pro odstranění země {land}.[/H][C]lands delete {land} confirm[/C][/T]
-    success: '&7Úspěšně odstraněna země &8(&7Země:&2 {land}&8)&7. Obdrželi jste&e ${back} &7zpět.'
+    success: '&7Úspěšně odstraněna země &8(&7Země:&2 {land}&8)&7. Obdrželi jste&e
+      ${back} &7zpět.'
     broadcast: '&7Země&2 {land} &7byla odstraněna hráčem/kou&3 {player}&7.'
   trust:
-    own-land: '&cHráč/ka&4 {player} &cse nemůže připojit k Vaší zemi. &7Nemůžou být součástí dvou zemí najednou. Nejdříve musí odstranit svou zemi &2 {land}&7.'
-    max-lands: '&7Hráč/ka&3 {player} &7již dosáhl/a maximálního počtu zemí. &8Pravomoc: lands.lands.ČÍSLO'
-    max-members: '&cNebylo možné zdůveryhodnit hráče/ku &4 {player} &cv zemi&4 {land}&c. &7Již dosáhli maxima &3 {members} &7členů ve své zemi.'
-    max: '&cHráč/ka&4 {player} &cse nemůže připojit k více zemím. &7Již dosáhli maxima &3 {max} &7zemí pro připojení. &8Pravomoc: lands.lands.ČÍSLO'
+    own-land: '&cHráč/ka&4 {player} &cse nemůže připojit k Vaší zemi. &7Nemůžou být
+      součástí dvou zemí najednou. Nejdříve musí odstranit svou zemi &2 {land}&7.'
+    max-lands: '&7Hráč/ka&3 {player} &7již dosáhl/a maximálního počtu zemí. &8Pravomoc:
+      lands.lands.ČÍSLO'
+    max-members: '&cNebylo možné zdůveryhodnit hráče/ku &4 {player} &cv zemi&4 {land}&c.
+      &7Již dosáhli maxima &3 {members} &7členů ve své zemi.'
+    max: '&cHráč/ka&4 {player} &cse nemůže připojit k více zemím. &7Již dosáhli maxima
+      &3 {max} &7zemí pro připojení. &8Pravomoc: lands.lands.ČÍSLO'
     area:
-      invited: '&cHráč/ka&4 {player} &cjiž byl/a pozván/a do oblasti&4 {area} &cv zemi&4 {land}&c. &7Pozvánka byla odeslána před &5 {time}&7.'
-      trusted: '&7Hráč/ka&3 {player} &7je již důveryhodný/á v oblasti &6 {area} &7země&2 {land}&7.'
-      success: '&7Úspěšně pozván/a hráč/ka&3 {player} &7do oblasti&6 {area} &7v zemi&2 {land}&7. Nyní můžou potvrdit Vaši pozvánku.'
+      invited: '&cHráč/ka&4 {player} &cjiž byl/a pozván/a do oblasti&4 {area} &cv
+        zemi&4 {land}&c. &7Pozvánka byla odeslána před &5 {time}&7.'
+      trusted: '&7Hráč/ka&3 {player} &7je již důveryhodný/á v oblasti &6 {area} &7země&2
+        {land}&7.'
+      success: '&7Úspěšně pozván/a hráč/ka&3 {player} &7do oblasti&6 {area} &7v zemi&2
+        {land}&7. Nyní můžou potvrdit Vaši pozvánku.'
       target: |
         [T]&7Hráč/ka&3 {player} &7Váš pozval/a do oblasti&6 {area} &7v jejich zemi&2 {land}&7.[H]&7Klikněte pro otevření menu.[/H][C]lands invites[/C][/T] &7Daně:&c ${tax}
 
           [T]&2Potvrdit &8[&8KLIK&8][H]&7Klikněte pro potvrzení pozvánky.[/H][C]lands accept {land}[/C][/T]
           [T]&cOdmítnout &8[&8KLIK&8][H]&7Klikněte pro odmítnutí pozvánky.[/H][C]lands deny {land}[/C][/T]
     land:
-      invited: '&cHráč/ka&4 {player} &cjiž byl/a pozván/a do země&4 {lands}&c. &7Pozvánka byla odeslána před &5 {time}&7.'
+      invited: '&cHráč/ka&4 {player} &cjiž byl/a pozván/a do země&4 {lands}&c. &7Pozvánka
+        byla odeslána před &5 {time}&7.'
       trusted: '&7Hráč/ka&3 {player} &7je již důveryhodný/á v zemi &2 {land}&7.'
-      success: '&7Uspěšně jste pozvali hráče/ku &3 {player} &7do Vaší země&2 {land}&7. Nyní můžou potvrdit Vaši pozvánku.'
+      success: '&7Uspěšně jste pozvali hráče/ku &3 {player} &7do Vaší země&2 {land}&7.
+        Nyní můžou potvrdit Vaši pozvánku.'
       target: |
         [T]&7Hráč/ka&3 {player} &7Vás pozvala do své země&2 {land}&7.[H]&7Klikněte pro zobrazení menu.[/H][C]lands invites[/C][/T] &7Daně:&c ${tax}
 
@@ -548,76 +770,114 @@ command:
           [T]&cOdmítnout &8[&8KLIK&8][H]&7Klikněte pro odmítnutí pozvánky.[/H][C]lands deny {land}[/C][/T]
   untrust:
     area:
-      already: '&7Hráč/ka&3 {player} &7není důveryhodný/á v oblasti&6 {area} &8(&7Země:&2 {land}&8) &7a neobdržel/a pozvánku.'
-      revoke: '&7Úspěšně zrušena pozvánka hráče/ky &3 {player} &7v oblasti&6 {area} &8(&7Země:&2 {land}&8)&7. Hráč/ka není důvěryhodná.'
-      success: '&7Úspěšně jste znedůveryhodnili hráče/ku &3{player} &7v oblasti &6{area} &8(&7Land:&2 {land}&8)&7.'
-      rental: '&cNemůžete znedůveryhodnit nájemce/kyni &4{player} &coblasti &4{area}&c. &7Pro odebrání z pronájmu, použijte &8/&3Lands rent remove&7.'
+      already: '&7Hráč/ka&3 {player} &7není důveryhodný/á v oblasti&6 {area} &8(&7Země:&2
+        {land}&8) &7a neobdržel/a pozvánku.'
+      revoke: '&7Úspěšně zrušena pozvánka hráče/ky &3 {player} &7v oblasti&6 {area}
+        &8(&7Země:&2 {land}&8)&7. Hráč/ka není důvěryhodná.'
+      success: '&7Úspěšně jste znedůveryhodnili hráče/ku &3{player} &7v oblasti &6{area}
+        &8(&7Land:&2 {land}&8)&7.'
+      rental: '&cNemůžete znedůveryhodnit nájemce/kyni &4{player} &coblasti &4{area}&c.
+        &7Pro odebrání z pronájmu, použijte &8/&3Lands rent remove&7.'
     land:
-      already: '&7Hráč/ka&3 {player} &7není důveryhodná/ý v zemi&2 {land} &7a neobdržel/a žádné pozvánky.'
-      revoke: '&7Úspěšně odebrána pozvánka pro hráče/ku&3 {player} &7pro zemi&2 {land}&7. Není důveryhodný/á.'
-      success: '&7Úspěšně jste znedůvěryhodnili hráče/ku &3{player} &7v zemi &2{land}&7, kromě oblastí, které mají zakoupené/pronajmuté.'
+      already: '&7Hráč/ka&3 {player} &7není důveryhodná/ý v zemi&2 {land} &7a neobdržel/a
+        žádné pozvánky.'
+      revoke: '&7Úspěšně odebrána pozvánka pro hráče/ku&3 {player} &7pro zemi&2 {land}&7.
+        Není důveryhodný/á.'
+      success: '&7Úspěšně jste znedůvěryhodnili hráče/ku &3{player} &7v zemi &2{land}&7,
+        kromě oblastí, které mají zakoupené/pronajmuté.'
   setrole:
-    visitor: '&cNemůžete nastavit roli&4 {role}&c. &7Pokud chcete znedůvěryhodnit tuto osobu, použijte prosím &8/&3Lands untrust {player} [oblast]&7.'
+    visitor: '&cNemůžete nastavit roli&4 {role}&c. &7Pokud chcete znedůvěryhodnit
+      tuto osobu, použijte prosím &8/&3Lands untrust {player} [oblast]&7.'
     land:
-      untrusted: '&cHráč/ka&4 {player} &cnení důvěryhodný/á&4 {land}&c. &7Nejdříve je musíte zdůveryhodnit.'
-      success: '&7Úspěšně nastavena role&3 {role} &7pro hráče/ku&3 {player} &7v oblastních v zemi&2 {land}&7, ve kterých jsou důveryhodní.'
+      untrusted: '&cHráč/ka&4 {player} &cnení důvěryhodný/á&4 {land}&c. &7Nejdříve
+        je musíte zdůveryhodnit.'
+      success: '&7Úspěšně nastavena role&3 {role} &7pro hráče/ku&3 {player} &7v oblastních
+        v zemi&2 {land}&7, ve kterých jsou důveryhodní.'
     area:
-      untrusted: '&cHráč/ka&4 {player} &cnení důvěryhodný/á v oblasti&4 {area} &cv zemi&4 {land}&c. &7Nejdříve je musíte zdůveryhodnit.'
-      success: '&7Úspěšně nastavena role&3 {role} &7pro hráče/ku&3 {player} &7v oblasti &6{area} v zemi&2 {land}&7.'
+      untrusted: '&cHráč/ka&4 {player} &cnení důvěryhodný/á v oblasti&4 {area} &cv
+        zemi&4 {land}&c. &7Nejdříve je musíte zdůveryhodnit.'
+      success: '&7Úspěšně nastavena role&3 {role} &7pro hráče/ku&3 {player} &7v oblasti
+        &6{area} v zemi&2 {land}&7.'
   accept:
-    max: '&cNemůžete být členem/kou více zemí. &7Dovršili jste maxima&3 {max} &7zemí. &8Pravomoc: lands.lands.ČÍSLO'
+    max: '&cNemůžete být členem/kou více zemí. &7Dovršili jste maxima&3 {max} &7zemí.
+      &8Pravomoc: lands.lands.ČÍSLO'
     not-exist: '&cNemáte pozvánku ze země&4 {land} &c, nebo vypršela.'
-    own-land: '&cNemůžete se připojit do jiné země. &7Nemůžete mít vlastní zemi a být součástí jiné. &7Nejdříve musíte zrušit svoji zemi.'
-    max-lands: '&cNemůžete se připojit k více zemím. &7Můžete být součástí pouze &3{max} &7zemí. &8Pravomoc: lands.lands.ČÍSLO'
-    notification: '&7Stále máte &3{invites} &7pozvánek od jiných zemí. Použijte &8/&3Lands invites &7pro jejich seznam.'
+    own-land: '&cNemůžete se připojit do jiné země. &7Nemůžete mít vlastní zemi a
+      být součástí jiné. &7Nejdříve musíte zrušit svoji zemi.'
+    max-lands: '&cNemůžete se připojit k více zemím. &7Můžete být součástí pouze &3{max}
+      &7zemí. &8Pravomoc: lands.lands.ČÍSLO'
+    notification: '&7Stále máte &3{invites} &7pozvánek od jiných zemí. Použijte &8/&3Lands
+      invites &7pro jejich seznam.'
     area:
       success: '&7Úspěšně jste příjmuli pozvánku ze země &2{land} &7pro území &6{area}&7.'
-      broadcast: '&2{land} &8| &7Hráč/ka&3 {player} &7je nyní členem/kou oblasti&6 {area} &7ve Vaší zemi.'
+      broadcast: '&2{land} &8| &7Hráč/ka&3 {player} &7je nyní členem/kou oblasti&6
+        {area} &7ve Vaší zemi.'
     land:
       success: '&7Úspěšně příjmuta pozvánka ze země &2{land}&7, nyní jste důveryhodní.'
       broadcast: '&2{land} &8| &7Hráč/ka&3 {player} &7je nyní členem/kou Vaší země.'
   setowner:
-    max-lands: '&cHráč/ka&4 {player} &cnemůže vlastnit více zemí. &7Již dosáhl/a maxima &3{max} &7vlastních zemí. &8Pravomoc: lands.ownlands.ČÍSLO'
-    confirm: '&cPotvrďte prosím převod vlastnictví země &2{land} &chráči/ce &3{player}&c: &8/&3Lands setowner {player} confirm'
-    success: '&7Úspěšně jste nastavili hráče/ku&3 {player} &7jako vůdce/kyni země&2 {land}&7. Zaplatili jste&c ${cost}&7.'
+    max-lands: '&cHráč/ka&4 {player} &cnemůže vlastnit více zemí. &7Již dosáhl/a maxima
+      &3{max} &7vlastních zemí. &8Pravomoc: lands.ownlands.ČÍSLO'
+    confirm: '&cPotvrďte prosím převod vlastnictví země &2{land} &chráči/ce &3{player}&c:
+      &8/&3Lands setowner {player} confirm'
+    success: '&7Úspěšně jste nastavili hráče/ku&3 {player} &7jako vůdce/kyni země&2
+      {land}&7. Zaplatili jste&c ${cost}&7.'
   deny:
     not-exist: '&cNemáte žádné pozvánky ze země &4{land} &cnebo expirovala. &7Překlep?'
     success: '&7Úspěšně jste odmítnuli pozvánku ze země &2{land}&7.'
   teleport:
-    chunk-not-claimed: '&cToto území není zabráno &8(&7X: {x} &7Z: {z}&8)&c. &8Pravomoc: lands.bypass.wilderness.teleport'
-    not-trusted: '&cNa tuto pozici se nemůžete teleportovat. &7Nejste důvěryhodní v zemi&2 {land}&7.'
+    chunk-not-claimed: '&cToto území není zabráno &8(&7X: {x} &7Z: {z}&8)&c. &8Pravomoc:
+      lands.bypass.wilderness.teleport'
+    not-trusted: '&cNa tuto pozici se nemůžete teleportovat. &7Nejste důvěryhodní
+      v zemi&2 {land}&7.'
     success: '&7Úspěšně jste se teleportovali na X:&3 {x} &7Z:&3 {z} &7Zabráno: {claimed}'
   setspawn:
-    force-land: '&cMůžete nastavit pouze jeden spawn pro zemi. &7Běžte nejdříve na území&2 {land}&7.'
+    force-land: '&cMůžete nastavit pouze jeden spawn pro zemi. &7Běžte nejdříve na
+      území&2 {land}&7.'
     success: '#t#&7Spawn Nastaven[newline]&7Cena:&c ${cost}'
   spawn:
-    not-exist: '&cNení zde nastaven spawn pro zemi&4 {land}&c. &7Nejdříve jej musí někdo nastavit, pomocí &8/&3Land setspawn&7.'
-    not-allowed: '&cNemůžete se teleportovat na spawn této země. &7Nejdříve Vám tuto pravomoc musí povolit &8(&7Země:&2 {land}&8)&7.'
-    chunk: '&7Země&2 {land} &7nemá nastavený spawn &8(&8/&3Lands setspawn&8)&7. &7Byli jste teleportování do původního území.'
-    unsafe: '&cNebyli jste teleportování na spawn, protože lokace byla detekována jako nebezpečná. &7Teleportace na tuto lokaci by mohla znamenat smrt. Je potřeba pozici zabezpečit, pomocí &8/&3Lands setspawn&7.'
+    not-exist: '&cNení zde nastaven spawn pro zemi&4 {land}&c. &7Nejdříve jej musí
+      někdo nastavit, pomocí &8/&3Land setspawn&7.'
+    not-allowed: '&cNemůžete se teleportovat na spawn této země. &7Nejdříve Vám tuto
+      pravomoc musí povolit &8(&7Země:&2 {land}&8)&7.'
+    chunk: '&7Země&2 {land} &7nemá nastavený spawn &8(&8/&3Lands setspawn&8)&7. &7Byli
+      jste teleportování do původního území.'
+    unsafe: '&cNebyli jste teleportování na spawn, protože lokace byla detekována
+      jako nebezpečná. &7Teleportace na tuto lokaci by mohla znamenat smrt. Je potřeba
+      pozici zabezpečit, pomocí &8/&3Lands setspawn&7.'
     success: '&7Úspěšně teleprtováno na spawn země&2 {land} &7Cena:&c ${cost}'
   wild:
-    no-location: '&cNebylo možné nalézt bezpečnou lokaci, která by se shodovala s Vašimi filtry. &8Upravte prosím maximální a minimální vzdálenost v nastavení (/setworldspawn).'
+    no-location: '&cNebylo možné nalézt bezpečnou lokaci, která by se shodovala s
+      Vašimi filtry. &8Upravte prosím maximální a minimální vzdálenost v nastavení
+      (/setworldspawn).'
     searching: '#t#&6Hledání Destinace[newline]&eTeleportace za chvíli započne..'
-    success: '&7Byli jste náhodně teleprtování &8(&7X: {x} Z: {z}&8)&7. Zaplatili jste&c ${cost}&7.'
+    success: '&7Byli jste náhodně teleprtování &8(&7X: {x} Z: {z}&8)&7. Zaplatili
+      jste&c ${cost}&7.'
   deposit:
-    number: '&7Musíte specifikovat množství financí. Použijte &8/&3Lands deposit &8<&3množství&8> &7, nebo &8/&3Lands deposit &8<&3země&8> <&3množství&8>&7.'
-    success: '&7Úspěšně jste vložili&3 ${cost} &7do banky. &7Nový zůstatek činí:&3 ${bank} &8(&7Země:&2 {land}&8)'
+    number: '&7Musíte specifikovat množství financí. Použijte &8/&3Lands deposit &8<&3množství&8>
+      &7, nebo &8/&3Lands deposit &8<&3země&8> <&3množství&8>&7.'
+    success: '&7Úspěšně jste vložili&3 ${cost} &7do banky. &7Nový zůstatek činí:&3
+      ${bank} &8(&7Země:&2 {land}&8)'
   withdraw:
-    number: '&7Musíte specifikovat množství financí. Použijte &8/&3Lands withdraw &8<&3množství&8> &7, nebo &8/&3Lands withdraw &8<&3země&8> <&3množství&8>&7.'
-    balance: '&cV bance není dostatek množství financí. &7Je zde pouze&3 ${bank} &7k dispozici. Očekáváno:&3 ${take} &8(&7Země:&2 {land}&8)'
-    success: '&7Úspěšně jste odebrali&3 ${cost} &7z Vaší banky. &7Nový zůstatek:&3 ${bank} &8(&7Země:&2 {land}&8)'
+    number: '&7Musíte specifikovat množství financí. Použijte &8/&3Lands withdraw
+      &8<&3množství&8> &7, nebo &8/&3Lands withdraw &8<&3země&8> <&3množství&8>&7.'
+    balance: '&cV bance není dostatek množství financí. &7Je zde pouze&3 ${bank} &7k
+      dispozici. Očekáváno:&3 ${take} &8(&7Země:&2 {land}&8)'
+    success: '&7Úspěšně jste odebrali&3 ${cost} &7z Vaší banky. &7Nový zůstatek:&3
+      ${bank} &8(&7Země:&2 {land}&8)'
   balance: '&7Zůstatek činí&3 ${balance} &8(&7Země:&2 {land}&8)&7.'
   ban:
     area:
-      success: '&7Úspěšné zabanování hráče/ky &3{player} &7z oblasti &6{area} &7v zemi &2{land}&7.'
+      success: '&7Úspěšné zabanování hráče/ky &3{player} &7z oblasti &6{area} &7v
+        zemi &2{land}&7.'
       target: '&cZemě&4 {land} &cVás zabanovala z oblasti &4{area}&c.'
     land:
       success: '&7Úspěšné zabanování hráče/ky &3{player} &7ze země &2{land}&7.'
       target: '&cZemě &4 {land} &cVás kompletně zabanovala&c.'
   unban:
     area:
-      success: '&7Úspěšně jste odbanovali hráče/ku &3{player} &7z této oblasti &8(&7Oblast:&6 {area} &7Země:&2 {land}&8)&7.'
+      success: '&7Úspěšně jste odbanovali hráče/ku &3{player} &7z této oblasti &8(&7Oblast:&6
+        {area} &7Země:&2 {land}&8)&7.'
       target: '&7Země&2 {land} &7Vás odbanovala z oblasti&6 {area}&7.'
     land:
       success: '&7Úspěšně jste odbanovali hráče/ku&3 {player} &7ze země&2 {land}&7.'
@@ -625,7 +885,8 @@ command:
   chat:
     activated: '&7Aktivní chat země.'
     deactivated: '&7Neaktivní chat země.'
-    no-land: '&Nebyla nalezena žádná země. &7Použijte &8/&3Lands chat toggle &7pro deaktivaci.'
+    no-land: '&Nebyla nalezena žádná země. &7Použijte &8/&3Lands chat toggle &7pro
+      deaktivaci.'
     format:
       minecraft: '[NoPrefix]&a{land} &8| {role} &7{player} &8»&f {message}'
       discord: '[NoPrefix]&a{land} &8| &9Discord &7{player} &8»&f {message}'
@@ -683,8 +944,10 @@ list:
 wars:
   message:
     noaccess:
-      action: '&cNemůžete udělat tuto akci ve válce, ve které jste. &8Vlajka: {flag} &8Pravomoc: {bypass}'
-      pillage: '&cNemůžete útočit na zemi, pokud nejsou žádní obránci na serveru. &7Počkejte prosím, až bude alespoň&3 {defenders} &7obránců na serveru.'
+      pillage: '&cNemůžete útočit na zemi, pokud nejsou žádní obránci na serveru.
+        &7Počkejte prosím, až bude alespoň&3 {defenders} &7obránců na serveru.'
+      general: '&cYou''re not allowed to do this in the land&4 {land}&c. &7You''re
+        currently engaged in a war against this land.'
     start:
       broadcast: '&7Válka mezi {attacker} &7a {defender} &7započala. Skončí za&5 {time}&7.'
       participants: |
@@ -697,7 +960,8 @@ wars:
         &5~{time}
     end:
       broadcast: '&7Válka mezi {attacker} &7a {defender} &7skončila. Trvala&5 {time}&7.'
-      surrender: '{object} &7kapitulovali. Válka skončila a zaplatili&c ${tribute} &7nepříteli {enemy}&7.'
+      surrender: '{object} &7kapitulovali. Válka skončila a zaplatili&c ${tribute}
+        &7nepříteli {enemy}&7.'
       draw: '&7Válka mezi {attacker} &7a {defender} &7skončila remízou. Trvala&5 {time}&7.'
       won: |
         &aVálka je u konce:
@@ -720,19 +984,29 @@ wars:
         defenders: '&7Člen/ka&a {defender} &7zabil/a útočníka/kyni&c {attacker}&7.'
   command:
     general:
-      no-war: '&cNejsou žádné nadcházející, nebo aktivní války pro {object}. &7Klidné časy.'
+      no-war: '&cNejsou žádné nadcházející, nebo aktivní války pro {object}. &7Klidné
+        časy.'
     declare:
-      not-allowed: '&cNemůžete začít válku pro {object}&c. &7Vůdce/kyně {object} &7musí rozhodnout tuto akci.'
-      member: '&cNemůžete vyhlásit válku proti {object}&c. &7Vy, nebo vůdce/kyně nepřátelské země jste důveryhodní ve společných územích.'
-      war-shield: '&cAktuálně nemůžete vyhlásit válku proti {object}&c. &7Mají aktivní štít, na dalších &5{time}&7.'
+      not-allowed: '&cNemůžete začít válku pro {object}&c. &7Vůdce/kyně {object} &7musí
+        rozhodnout tuto akci.'
+      member: '&cNemůžete vyhlásit válku proti {object}&c. &7Vy, nebo vůdce/kyně nepřátelské
+        země jste důveryhodní ve společných územích.'
+      war-shield: '&cAktuálně nemůžete vyhlásit válku proti {object}&c. &7Mají aktivní
+        štít, na dalších &5{time}&7.'
       no-nation: '&cNemůžete zaútočit na zemi &4{land}&c. &7Musí být součástí národa.'
       no-target: '&cNení zde žádná země, nebo národ s názvem &4{target}&c. &7Překlep?'
-      ally: '&cNemůžete vyhlásit válku proti {object}&c. &7Jsou součástí stejného národa&9 {nation}&7.'
-      balance: '&cNebylo možné vyhlásit válku. &7Útočníci {object} &7musí mít minimálně &c${min} &7pro započetí.'
-      broadcast: '&7Nepřítel {attacker} &7vyhlásil válku proti {defender}&7. Jejich válka započne za&5 {time}&7.'
-      confirm: '&cJste si jistí, že chcete vyhlásit válku proti {object}&c? &7Potvrďte pomocí &8/&3Wars declare {input} confirm&7.'
-      success: '&7Vaše země &8({attacker}&8) &7úspěšně vyhlásila válku proti {defender}&7. Válka započne za&5 {time}&7.'
-      target: '&7Nepřítel {attacker} &7vyhlásil válku proti {defender} &8(&7VY&8)&7. Válka započne za&5 {time}&7.'
+      ally: '&cNemůžete vyhlásit válku proti {object}&c. &7Jsou součástí stejného
+        národa&9 {nation}&7.'
+      balance: '&cNebylo možné vyhlásit válku. &7Útočníci {object} &7musí mít minimálně
+        &c${min} &7pro započetí.'
+      broadcast: '&7Nepřítel {attacker} &7vyhlásil válku proti {defender}&7. Jejich
+        válka započne za&5 {time}&7.'
+      confirm: '&cJste si jistí, že chcete vyhlásit válku proti {object}&c? &7Potvrďte
+        pomocí &8/&3Wars declare {input} confirm&7.'
+      success: '&7Vaše země &8({attacker}&8) &7úspěšně vyhlásila válku proti {defender}&7.
+        Válka započne za&5 {time}&7.'
+      target: '&7Nepřítel {attacker} &7vyhlásil válku proti {defender} &8(&7VY&8)&7.
+        Válka započne za&5 {time}&7.'
       mutual:
         success: |
           &7Vaše země &8({attacker}&8) &7úspěšně vyhlásila válku {defender}&7.
@@ -745,17 +1019,25 @@ wars:
           [T]&7Příjmout: &8/&3Wars declare {input} &8[&8KLIK&8][H]&7Klikněte pro příjmutí války.[/H][C]Wars declare {input}[/C][/T]
           [T]&7Odmítnout: &8/&3Wars deny &8[&8KLIK&8][H]&7Klikněte pro odmítnutí války.[/H][C]Wars deny[/C][/T]
       already:
-        attacker: '&cNemůžete se připojit do další války. &7Aktuální válka o {object} &7nejdříve musí skončit.'
-        defender: '&cAktuálně proti nim nemůžete vyhlásit válku. &7Cíl {object} &7již je ve válce.'
+        attacker: '&cNemůžete se připojit do další války. &7Aktuální válka o {object}
+          &7nejdříve musí skončit.'
+        defender: '&cAktuálně proti nim nemůžete vyhlásit válku. &7Cíl {object} &7již
+          je ve válce.'
       min-players:
-        attacker: '&cNemůžete se zapojit do války, protože {object} &cmusí mít více důvěryhodných hráčů. &7Požadované minimum pro vyhlášení je &3{min} &7hráčů.'
-        defender: '&cNemůžete vyhlásit válku proti {object}&c, protože musí mít více důveryhodných hráčů. &7Požadované minimum pro vyhlášení je &3{min} &7hráčů.'
+        attacker: '&cNemůžete se zapojit do války, protože {object} &cmusí mít více
+          důvěryhodných hráčů. &7Požadované minimum pro vyhlášení je &3{min} &7hráčů.'
+        defender: '&cNemůžete vyhlásit válku proti {object}&c, protože musí mít více
+          důveryhodných hráčů. &7Požadované minimum pro vyhlášení je &3{min} &7hráčů.'
     deny:
-      attacker: '&cÚtočníci nemůžou odmítnout vyhlášení války. &7Pouze obránci mají tuto pravomoc.'
-      ongoing: '&cNemůžete vyhlásit žádnou probíhající válku proti {enemy}&c. &7Můžete pouze odmítnout vyhlášení války pro {object}&7.'
-      success: '&7Úspěšně jste odmítnuli vyhlášení války pro {object} &7proti nepříteli {enemy}&7.'
+      attacker: '&cÚtočníci nemůžou odmítnout vyhlášení války. &7Pouze obránci mají
+        tuto pravomoc.'
+      ongoing: '&cNemůžete vyhlásit žádnou probíhající válku proti {enemy}&c. &7Můžete
+        pouze odmítnout vyhlášení války pro {object}&7.'
+      success: '&7Úspěšně jste odmítnuli vyhlášení války pro {object} &7proti nepříteli
+        {enemy}&7.'
     menu:
-      mutual: '&cNemůžete otevřít menu. &7Vyhlášení války o {object} &7ještě nebylo příjmuto.'
+      mutual: '&cNemůžete otevřít menu. &7Vyhlášení války o {object} &7ještě nebylo
+        příjmuto.'
     info:
       war: |
         &4Aktuální válka:
@@ -802,3 +1084,55 @@ wars:
 
             &cObránci zatím nepříjmuli
             &cžádost o válku.
+nations:
+  message:
+    current-war: '&cTuto akci nyní nemůžete provést. &7Váš národ&9 {nation} &7je aktuálně zapojen ve válce. &7Zkuste to prosím znovu, jakmile bude válka u konce.'
+  command:
+    general:
+      not-exist: '&cNárod&9 {nation} &cneexistuje. &7Národ s tímto názvem neexistuje.'
+      none: |
+        &cVaše země&4 {land} &cnení součástí žádného národa.
+
+          &7Jakýkoli národ Vás může pozvat, pomocí: &8/&3Nations trust
+          [T]&7Vytvořte si vlastní národ, pomocí: &8/&3Nations create[H]&7Klikněte pro zkopírování.[/H][SC]nations create[/SC][/T]
+      noaccess: '&cNemáte povolení na tuto akci v národu&4 {nation}&c. &8Vlajka:
+        {flag} &8Pravomoc: {bypass}'
+    create:
+      already: '&cVaše země&4 {land} &cje již součástí národa&4 {nation}&c.
+        &7Nejdříve musíte opustit národ, pomocí &8/&3Nations leave&7.'
+      success: '&7Úspěšně jste vytvořili národ&9 {nation} &7se zemí&2
+        {land} &7jako hlavní město. [T]&7Klikněte pro otevření menu.[H]&7Otevřít menu.[/H][C]nations
+        menu[/C][/T]'
+    trust:
+      already: '&cZemě&4 {land} &cje již součástí národa&4 {nation}&c.
+        &7Nejdříve musí národ opustit, pomocí &8/&3Nations leave&7.'
+      added: '&7Úspěšně jste přidali zemi&2 {land} &7k národu&9
+        {nation}&7.'
+      success: '&7Úspěšně jste pozvali zemi&2 {land} &7k Vašemu národu&9 {nation}&7.
+        Pozvánku můžou příjmout, pomocí &8/&3Nations accept {nation}&7.'
+    accept:
+      war: '&cK tomuto národu se nemůžete připojit. &7Národ&9 {nation} &7je aktuálně ve válce. Jejich válka skončí za&5 {time}&7.'
+      none: '&cVaše země&4 {land} &cnemá žádné pozvánky z národa&9 {nation}&c.
+        &7Můžou pozvat Vaši zemi, pomocí &8/&3Nations trust&7.'
+      already: '&cVaše země&4 {land} &cje již součástí národa&4 {nation}&c. &7Nejdříve jej musíte opustit, pomocí &8/&3Nations leave&7.'
+      success: '&7You successfully accepted the invite and joined nation&9 {nation}&7.'
+    deny:
+      success: '&7Úspěšně jste odmítli pozvánku národa&9 {nation}&7.'
+    untrust:
+      capital: '&cNemůžete odstranit tuto zemi. &7Země&2 {land} &7je hlavní město národa&9 {nation}&7.'
+      success: '&7Úspěšně jste odstranili zemi&2 {land} &7z národa&9 {nation}&7.'
+    delete:
+      war: '&cAktuálně nemůžete zrušit Váš národ. &7Národ&9 {nation} &7je aktuálně ve válce.'
+      confirm: |
+        &cPotvrďte prosím že chcete ODSTRANIT národ&4 {nation}&c.
+          [T]&7Potvrdit: &8[KLIK][H]&7Klikněte pro potvrzení zrušení národa.&9 {nation}&7.[/H][C]nations delete {nation} confirm[/C][/T]
+      success: '&7Úspěšně jste odstranili národ. &8(&7Národ:&2 {nation}&8)&7.'
+    leave:
+      capital: '&cVaše země&4 {land} &cnemůže opustit národ&4 {nation}&c, protože je hlavním městem. &7Pro zrušení národa, použijte &8/&3Nations
+        delete&7.'
+      war: '&cNemůžete opustit národ. &7Národ&9 {nation} &7je aktuálně ve válce. Vaše válka skončí za&5 {time}&7.'
+      success: '&7Úspěšně jste opustili národ&9 {nation} &7se zemí&2 {land}&7.'
+      confirm: |
+        &7Potvrďte prosím, že chcete OPUSTIT národ&9 {nation} &7se zemí&2 {land}&7.
+
+          [T]&7Potvrdit: &8[KLIK][H]&7Klikněte pro potvrzení této akce.[/H][C]nations leave confirm[/C][/T]
