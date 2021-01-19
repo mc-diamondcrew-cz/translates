@@ -575,8 +575,8 @@ command:
       přidat svět &3{world}&7.'
     wilderness: '&cNa Vaší pozici není žádné zabrané území. &7Můžete použít &8/&3Lands
       menu &7pro zobrazení území.'
-    player-not-exist: '&cNení zde žádný hráč/ka s jménem &4{player}&c. &7Překlep?'
-    player-offline: '&cNení zde žádný hráč/ka s jménem &4{player}&c. &7Překlep?'
+    player-not-exist: '&cNení zde žádný/á hráč/ka s jménem &4{player}&c. &7Překlep?'
+    player-offline: '&cNení zde žádný/á hráč/ka s jménem &4{player}&c. &7Překlep?'
     player-self: '&cNa tuto akci potřebujete kamarády/ky. &7¯\_(ツ)_/¯'
     banks-disabled: '&7Banky byly vypnuty Administrátorem.'
     land-not-trusted: '&cHráč/ka&4 {player} &7není součástí území &8(&7Země:&2 {land}&8)&7.
