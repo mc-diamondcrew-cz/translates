@@ -845,13 +845,13 @@ command:
     unsafe: '&cNebyli jste teleportování na spawn, protože lokace byla detekována
       jako nebezpečná. &7Teleportace na tuto lokaci by mohla znamenat smrt. Je potřeba
       pozici zabezpečit, pomocí &8/&3Lands setspawn&7.'
-    success: '&7Úspěšně teleprtováno na spawn země&2 {land} &7Cena:&c ${cost}'
+    success: '&7Úspěšně teleportováno na spawn země&2 {land} &7Cena:&c ${cost}'
   wild:
     no-location: '&cNebylo možné nalézt bezpečnou lokaci, která by se shodovala s
       Vašimi filtry. &8Upravte prosím maximální a minimální vzdálenost v nastavení
       (/setworldspawn).'
     searching: '#t#&6Hledání Destinace[newline]&eTeleportace za chvíli započne..'
-    success: '&7Byli jste náhodně teleprtování &8(&7X: {x} Z: {z}&8)&7. Zaplatili
+    success: '&7Byli jste náhodně teleportování &8(&7X: {x} Z: {z}&8)&7. Zaplatili
       jste&c ${cost}&7.'
   deposit:
     number: '&7Musíte specifikovat množství financí. Použijte &8/&3Lands deposit &8<&3množství&8>
