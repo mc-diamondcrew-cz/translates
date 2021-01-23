@@ -4,6 +4,12 @@ HELP: |2-
 
   &e/reactions <hráč/ka> &8» &fOtevře menu se statistikami.
   &e/reactions help &8» &fZobrazí tuto zprávu.
+ADMIN_HELP: |2-
+
+  &a&lReactions Admin-Help
+
+  &e/areactions reload &8» &fZnovu načte konfiguraci. &7(Nedoporučeno.)
+  &e/areactions help &8» &fZobrazí tuto zprávu.
 BROADCAST_START: |2
 
   &e◆ &8| &aReakce &8» {message}
@@ -14,3 +20,4 @@ BROADCAST_NO_WINNER: |2
 
   <hover:show_text:'Odpověď &6{answer}&7.'>&e◆ &8| &aReakce &8» &7Nikdo nevyhrál.
 MENU_TITLE: '&8&lReakce'
+RELOAD: '&aReakce &8» &7Konfigurace &6načtena&7.'
