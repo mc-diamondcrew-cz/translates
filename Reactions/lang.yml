@@ -10,10 +10,10 @@ BROADCAST_START: |2
   &r
 BROADCAST_END: |2
 
-  <hover:show_text:Odpověď &6{answer}&7.>&e◆ &8| &aReakce &8» &e{name} &7vyhrál/a &6${prize}&7!
+  <hover:show_text:'Odpověď &6{answer}&7.'>&e◆ &8| &aReakce &8» &e{name} &7vyhrál/a &6${prize}&7!
   &r
 BROADCAST_NO_WINNER: |2
 
-  <hover:show_text:Odpověď &6{answer}&7.>&e◆ &8| &aReakce &8» &7Nikdo nevyhrál.
+  <hover:show_text:'Odpověď &6{answer}&7.'>&e◆ &8| &aReakce &8» &7Nikdo nevyhrál.
   &r
 MENU_TITLE: '&8&lReakce'
