@@ -55,7 +55,7 @@ Settings:
       - ''
     Category-Settings:
       Armor:
-        Item: 'GOLD_CHESTPLATE'
+        Item: 'GOLDEN_CHESTPLATE'
         Toggle: true
         Slot: 11
         Name: '&b&lBrnění'
@@ -65,7 +65,7 @@ Settings:
           - '&fkusy &bbrnení&f, které se aktuálně prodávají.'
           - ''
       Weapons:
-        Item: 'GOLD_SWORD'
+        Item: 'GOLDEN_SWORD'
         Toggle: true
         Slot: 12
         Name: '&b&lZbraně'
@@ -75,7 +75,7 @@ Settings:
           - '&fkusy &bzbraní&f, které se aktuálně prodávají.'
           - ''
       Tools:
-        Item: 'GOLD_PICKAXE'
+        Item: 'GOLDEN_PICKAXE'
         Toggle: true
         Slot: 13
         Name: '&b&lNástroje'
@@ -95,7 +95,7 @@ Settings:
           - '&fco můžete &bzbaštit&f.'
           - ''
       Potions:
-        Item: 'EXP_BOTTLE'
+        Item: 'EXPERIENCE_BOTTLE'
         Toggle: true
         Slot: 15
         Name: '&b&lLektvary'
@@ -149,7 +149,7 @@ Settings:
         Item: 'POISONOUS_POTATO'
         Toggle: true
         Slot: 47
-        Name: '&rExpirované &7/ &fZrušené předměty'
+        Name: 'Expirované &7/ &fZrušené předměty'
         Lore:
           - ''
           - '&fKlikni pro &bzobrazení &fa &bvybrání'
@@ -162,7 +162,7 @@ Settings:
         Name: '&8&l< &fPředchozí strana'
         Lore: {}
       Refesh: #The button for Refresh Page.
-        Item: 'DOUBLE_PLANT'
+        Item: 'SUNFLOWER'
         Toggle: true
         Slot: 50
         Name: '&bObnovit'
@@ -171,7 +171,7 @@ Settings:
         Item: 'PAPER'
         Toggle: true
         Slot: 51
-        Name: '&rDalší strana &8&l>'
+        Name: 'Další strana &8&l>'
         Lore: {}
       Category1: #The button for Next Page.
         Item: 'CHEST'
