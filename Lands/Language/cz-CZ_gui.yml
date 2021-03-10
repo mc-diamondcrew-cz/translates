@@ -1714,7 +1714,7 @@ gui:
         - '&7od důvěryhodných členů/ek.'
         - ' '
         - '&8- &7Platí pouze za oblasti,'
-        - '  &7vě kterých jsou důvěryhodní.'
+        - '  &7ve kterých jsou důvěryhodní.'
         material: GOLD_INGOT
         slot: 14
       tax_nation:
