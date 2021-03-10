@@ -125,7 +125,7 @@ general:
       yours: '&7Toto území vlastníte Vy. Klikněte pro zobrazení informací o &3{land}&7.'
       trusted: '&7V tomto území jste důvěryhodní. Klikněte pro zobrazení informací
         o &3{land}&7.'
-      others: '&7V tomto území nejste důveryhodní. Klikněte pro zobrazení informací
+      others: '&7V tomto území nejste důvěryhodní. Klikněte pro zobrazení informací
         o &3{land}&7.'
       position: '&7Toto je Vaše aktuální pozice.'
   inbox:
@@ -147,7 +147,7 @@ general:
         deposit: '&8{0}: &7Hráč/ka {1} vložil/a ${2} -> zůstatek = ${3}'
       taxes:
         warning: '&8{0}: &cHráč/ka {1} nezaplatil/a daně.'
-        untrusted: '&8{0}: &cHráč/ka {1} nezaplatil/a daně. Nyní jsou nedůveryhodní.'
+        untrusted: '&8{0}: &cHráč/ka {1} nezaplatil/a daně. Nyní jsou nedůvěryhodní.'
         received: '&8{0}: &7Obdrženo dohromady ${1} v daních -> zůstatek = ${2}'
     war:
       declaration:
@@ -206,8 +206,8 @@ help:
       selection. &7Klikněte pro zkopírování.[/H][SC]lands unclaim[/SC][/T]'
     delete: '[T]&8/&3Lands delete &8<&3země&8> &8- &7Odstraní zemi.[H]&7Klikněte pro
       zkopírování.[/H][SC]lands delete[/SC][/T]'
-    trust: '[T]&8/&3Lands trust &8<&3hráč/ka&8> [&3oblast&8] - &7Zdůveryhodní hráče/ku.[H]&7Použijte
-      *, pro zdůveryhodnění hráče/ky všude. &7Klikněte pro zkopírování.[/H][SC]lands
+    trust: '[T]&8/&3Lands trust &8<&3hráč/ka&8> [&3oblast&8] - &7Zdůvěryhodní hráče/ku.[H]&7Použijte
+      *, pro zdůvěryhodnění hráče/ky všude. &7Klikněte pro zkopírování.[/H][SC]lands
       trust[/SC][/T]'
     untrust: '[T]&8/&3Lands untrust &8<&3hráč/ka&8> &8[&3oblast&8] - &7Znedůvěryhodní
       hráče/ku.[H]&7Použijte *, pro znedůvěryhodnění hráče/ky všude. &7Klikněte pro
@@ -404,7 +404,7 @@ message:
     success: '&7Máte&3 {blocks} &7zabíracích kostek. &7Vložte je do území pro zabrání.'
     not-owner: '&cNemáte povolení na použití zabíracích kostek. &7Patří&3 {owner}&7.'
   blacklist:
-    untrusted: '&cNemůžete zde použít tento příkaz. &7Nejste důveryhodní v oblastí&6
+    untrusted: '&cNemůžete zde použít tento příkaz. &7Nejste důvěryhodní v oblastí&6
       {area} &7v zemi&2 {land}&7. &8Pravomoc: {permission}'
     general: '&cNemůžete použít tento příkaz v zabraných územích. &8Pravomoc: {permission}'
     war: '&cNemůžete použít tento příkaz ve válce. &8Pravomoc: {permission}'
@@ -486,7 +486,7 @@ command:
         &7---------<- &5&lPronájem Oblasti &r&7->---------
     rent:
       trusted: '&cNemůžete si pronajmout oblast &4{area} &cv zemi &4{land}&c. &7V
-        této oblasti jste již důveryhodní.'
+        této oblasti jste již důvěryhodní.'
       expire: '&cNemůžete přidat více času ke svému pronájmu oblasti &4{area}&c. &7Země
         &2{land} &7ji odebrala k pronájmu. Expiruje za &5{time}&7.'
       max: '&cNemůžete přidat více času k pronájmu oblasti &4{area}&c. &7V zemi &2{land}
@@ -699,10 +699,10 @@ command:
     owner: '&cNemůžete opustit tuto zemi. &7Jako majitel této země ji můžete pouze
       zrušit nebo předat. Použijte &8/&3Lands delete {land} &7pro zrušení.'
     land:
-      untrusted: '&7Nejste důveryhodní v této bolasti v zemi&2 {land}&7.'
+      untrusted: '&7Nejste důvěryhodní v této bolasti v zemi&2 {land}&7.'
       success: '&7Úspěšně jste opustili zemi&2 {land}&7.'
     area:
-      untrusted: '&7Nejste důveryhodní v oblasti&6 {area} &7v zemi&2 {land}&7.'
+      untrusted: '&7Nejste důvěryhodní v oblasti&6 {area} &7v zemi&2 {land}&7.'
       success: '&7Úspěšně jste opustili oblast&6 {area} &7v zemi&2 {land}&7.'
   unclaim:
     rental: '&cNemůžete odebrat toto území&7, protože obsahuje pronajmutou/prodanou
@@ -741,14 +741,14 @@ command:
       součástí dvou zemí najednou. Nejdříve musí odstranit svou zemi &2 {land}&7.'
     max-lands: '&7Hráč/ka&3 {player} &7již dosáhl/a maximálního počtu zemí. &8Pravomoc:
       lands.lands.ČÍSLO'
-    max-members: '&cNebylo možné zdůveryhodnit hráče/ku &4 {player} &cv zemi&4 {land}&c.
+    max-members: '&cNebylo možné zdůvěryhodnit hráče/ku &4 {player} &cv zemi&4 {land}&c.
       &7Již dosáhli maxima &3 {members} &7členů ve své zemi.'
     max: '&cHráč/ka&4 {player} &cse nemůže připojit k více zemím. &7Již dosáhli maxima
       &3 {max} &7zemí pro připojení. &8Pravomoc: lands.lands.ČÍSLO'
     area:
       invited: '&cHráč/ka&4 {player} &cjiž byl/a pozván/a do oblasti&4 {area} &cv
         zemi&4 {land}&c. &7Pozvánka byla odeslána před &5 {time}&7.'
-      trusted: '&7Hráč/ka&3 {player} &7je již důveryhodný/á v oblasti &6 {area} &7země&2
+      trusted: '&7Hráč/ka&3 {player} &7je již důvěryhodný/á v oblasti &6 {area} &7země&2
         {land}&7.'
       success: '&7Úspěšně pozván/a hráč/ka&3 {player} &7do oblasti&6 {area} &7v zemi&2
         {land}&7. Nyní můžou potvrdit Vaši pozvánku.'
@@ -760,7 +760,7 @@ command:
     land:
       invited: '&cHráč/ka&4 {player} &cjiž byl/a pozván/a do země&4 {lands}&c. &7Pozvánka
         byla odeslána před &5 {time}&7.'
-      trusted: '&7Hráč/ka&3 {player} &7je již důveryhodný/á v zemi &2 {land}&7.'
+      trusted: '&7Hráč/ka&3 {player} &7je již důvěryhodný/á v zemi &2 {land}&7.'
       success: '&7Uspěšně jste pozvali hráče/ku &3 {player} &7do Vaší země&2 {land}&7.
         Nyní můžou potvrdit Vaši pozvánku.'
       target: |
@@ -770,7 +770,7 @@ command:
           [T]&cOdmítnout &8[&8KLIK&8][H]&7Klikněte pro odmítnutí pozvánky.[/H][C]lands deny {land}[/C][/T]
   untrust:
     area:
-      already: '&7Hráč/ka&3 {player} &7není důveryhodný/á v oblasti&6 {area} &8(&7Země:&2
+      already: '&7Hráč/ka&3 {player} &7není důvěryhodný/á v oblasti&6 {area} &8(&7Země:&2
         {land}&8) &7a neobdržel/a pozvánku.'
       revoke: '&7Úspěšně zrušena pozvánka hráče/ky &3 {player} &7v oblasti&6 {area}
         &8(&7Země:&2 {land}&8)&7. Hráč/ka není důvěryhodná.'
@@ -795,7 +795,7 @@ command:
         v zemi&2 {land}&7, ve kterých jsou důveryhodní.'
     area:
       untrusted: '&cHráč/ka&4 {player} &cnení důvěryhodný/á v oblasti&4 {area} &cv
-        zemi&4 {land}&c. &7Nejdříve je musíte zdůveryhodnit.'
+        zemi&4 {land}&c. &7Nejdříve je musíte zdůvěryhodnit.'
       success: '&7Úspěšně nastavena role&3 {role} &7pro hráče/ku&3 {player} &7v oblasti
         &6{area} v zemi&2 {land}&7.'
   accept:
@@ -813,7 +813,7 @@ command:
       broadcast: '&2{land} &8| &7Hráč/ka&3 {player} &7je nyní členem/kou oblasti&6
         {area} &7ve Vaší zemi.'
     land:
-      success: '&7Úspěšně příjmuta pozvánka ze země &2{land}&7, nyní jste důveryhodní.'
+      success: '&7Úspěšně příjmuta pozvánka ze země &2{land}&7, nyní jste důvěryhodní.'
       broadcast: '&2{land} &8| &7Hráč/ka&3 {player} &7je nyní členem/kou Vaší země.'
   setowner:
     max-lands: '&cHráč/ka&4 {player} &cnemůže vlastnit více zemí. &7Již dosáhl/a maxima
@@ -1027,7 +1027,7 @@ wars:
         attacker: '&cNemůžete se zapojit do války, protože {object} &cmusí mít více
           důvěryhodných hráčů. &7Požadované minimum pro vyhlášení je &3{min} &7hráčů.'
         defender: '&cNemůžete vyhlásit válku proti {object}&c, protože musí mít více
-          důveryhodných hráčů. &7Požadované minimum pro vyhlášení je &3{min} &7hráčů.'
+          důvěryhodných hráčů. &7Požadované minimum pro vyhlášení je &3{min} &7hráčů.'
     deny:
       attacker: '&cÚtočníci nemůžou odmítnout vyhlášení války. &7Pouze obránci mají
         tuto pravomoc.'
