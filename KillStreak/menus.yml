@@ -1,0 +1,26 @@
+MAIN_TOP1:
+  head-owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIzZWFlZmJkNTgxMTU5Mzg0Mjc0Y2RiYmQ1NzZjZWQ4MmViNzI0MjNmMmVhODg3MTI0ZjllZDMzYTY4NzJjIn19fQ==
+  type: PLAYER_HEAD
+  name: '&e1. &7{name}'
+  lore:
+  - '&8► &f{kills}'
+MAIN_TOP2:
+  head-owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIzZWFlZmJkNTgxMTU5Mzg0Mjc0Y2RiYmQ1NzZjZWQ4MmViNzI0MjNmMmVhODg3MTI0ZjllZDMzYTY4NzJjIn19fQ==
+  type: PLAYER_HEAD
+  name: '&e2. &7{name}'
+  lore:
+  - '&8► &f{kills}'
+MAIN_TOP3:
+  head-owner: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIzZWFlZmJkNTgxMTU5Mzg0Mjc0Y2RiYmQ1NzZjZWQ4MmViNzI0MjNmMmVhODg3MTI0ZjllZDMzYTY4NzJjIn19fQ==
+  type: PLAYER_HEAD
+  name: '&e3. &7{name}'
+  lore:
+  - '&8► &f{kills}'
+UPDATE:
+  type: REDSTONE
+  name: '&aAktualizovat'
+  lore:
+  - '&8► &fKlikněte pro aktualizaci.'
+LEADERBOARD:
+  type: OAK_SIGN
+  name: '&eOstatní'
