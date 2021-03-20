@@ -341,13 +341,6 @@ gui:
         - '{inbox}'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJmM2ZjZGNjZmZkOTYzZTQzMzQ4MTgxMDhlMWU5YWUzYTgwNTY2ZDBkM2QyZDRhYjMwNTFhMmNkODExMzQ4YyJ9fX0=
         slot: 16
-      back:
-        name: '&cZpět'
-        lore:
-        - '&7Jít zpět na'
-        - '{back}&7.'
-        material: RED_STAINED_GLASS_PANE
-        slot: 37
       stat:
         name: '&8> &6Statistiky'
         lore:
@@ -374,6 +367,13 @@ gui:
         - '  &7{15}'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmNmYWZmYThjNmM3ZjYyNjIxNjgyZmU1NjcxMWRjM2I4OTQ0NjVmZGY3YTYyZjQzYjMxYTBkMzQwM2YzNGU3In19fQ==
         slot: 17
+      back:
+        name: '&cZpět'
+        lore:
+          - '&7Jít zpět na'
+          - '{back}&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 37
     a:
       failure_teleport_permission:
         name: '&4Zamítnuto: &cPravomoce'
@@ -567,6 +567,67 @@ gui:
         material: GRAY_STAINED_GLASS_PANE
         from: 29
         to: 36
+  inbox:
+    title: '&8Dorůčená Zpráva'
+    size: 36
+    f:
+      filter:
+        name: '&8> &6Filtrovat Podle Typu'
+        lore:
+          - '&7Klikněte pro listování mezi'
+          - '&7dostupnými typy.'
+          - ' '
+          - '&7Aktuálně:&3 {type}'
+        material: HOPPER
+        slot: 32
+      page_previous:
+        name: '&9Předchozí Strana'
+        lore:
+          - '&7Přejděte na předchozí stránku:&9 {previous}'
+          - ' '
+          - '&8- &7Aktuálně:&3 {current}'
+        material: ARROW
+        slot: 30
+      page_next:
+        name: '&aDalší Strana'
+        lore:
+          - '&7Přejděte na další stránku:&9 {next}'
+          - ' '
+          - '&8- &7Aktuálně:&3 {current}'
+        material: ARROW
+        slot: 35
+      back:
+        name: '&cZpět'
+        lore:
+          - '&7Jít zpět na'
+          - '{back}&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 28
+    l:
+      object:
+        name: '&8# &7{id}'
+        lore:
+          - '{message}'
+          - ' '
+          - '&7Klikněte pro odstranění.'
+        material: PAPER
+        from: 10
+        to: 27
+    a:
+      failure_owner:
+        name: '&4Chyba: &cNedostatečné Oprávnení'
+        lore:
+          - '&7Na toto nemáte povolení.'
+          - '&7Pouze vlastník má tuto možnost.'
+    p:
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 1
+        to: 9
+      placeholder_2:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 29
+        to: 36
   area:
     title: '&8Oblast {area}'
     size: 45
@@ -588,7 +649,7 @@ gui:
         - '&7akce v této oblasti.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU3NDcwMTBkODRhYTU2NDgzYjc1ZjYyNDNkOTRmMzRjNTM0NjAzNTg0YjJjYzY4YTQ1YmYzNjU4NDAxMDVmZCJ9fX0=
         slot: 11
-      trusted-players:
+      trusted:
         name: '&8> &6Důvěryhodní/é hráči/ky'
         lore:
         - '&7Zobrazíte seznam hráčů/ek, kteří/ré'
@@ -777,6 +838,99 @@ gui:
         - '&7Přejděte na další stránku:&9 {next}'
         - ' '
         - '&8- &7Aktuálně:&3 {current}'
+        material: ARROW
+        slot: 35
+    p:
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 1
+        to: 9
+      placeholder_2:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 29
+        to: 36
+  area_banned:
+    title: '&8{area} &7- &8Blokace'
+    size: 36
+    l:
+      object_all:
+        name: '&e{player}'
+        lore:
+          - '&7Zablokován/a v oblastích:'
+          - '{areas}'
+          - ' '
+          - '&7Kolečko myši:'
+          - '&7Více informací.'
+        material: PLAYER_HEAD
+        from: 10
+        to: 27
+      object:
+        name: '&e{player}'
+        lore:
+          - '&7Zablokován/a ve Vaší'
+          - '&7aktuální oblasti.'
+          - ' '
+          - '&7Tlačítko myši:'
+          - '&7Více informací.'
+        material: PLAYER_HEAD
+        from: 10
+        to: 27
+    f:
+      toggle:
+        name: '&8> &6Pohled Oblasti'
+        lore:
+          - '&7Zobrazit pouze blokace,'
+          - '&7které se vztahují na'
+          - '&7tuto oblast &8(&6{area}&8)&7?'
+          - ' '
+          - '&7Vypnuto: Zobrazí blokace'
+          - '&7v celé zemi.'
+          - '&7Zároveň můžete zablokovat,'
+          - '&7nebo odblokovat hráče/ky.'
+          - '&7 v celé zemi.'
+          - ' '
+          - '&7Aktuálně: {current}'
+        material: HOPPER
+        slot: 32
+      ban:
+        name: '&8> &cZablokovat'
+        lore:
+          - '&7Klikněte pro udělení'
+          - '&7blokace v této oblasti.'
+          - ' '
+          - '&7Zablokovaní nebudou moci'
+          - '&7do oblasti vstoupit, nebo'
+          - '&7se do ní teleportovat.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
+        slot: 31
+      unban:
+        name: '&8> &aOdblokovat'
+        lore:
+          - '&7Klikněte pro zrušení'
+          - '&7v této oblasti.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0=
+        slot: 33
+      back:
+        name: '&cZpět'
+        lore:
+          - '&7Jít zpět na'
+          - '{back}&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 28
+      page_previous:
+        name: '&9Předchozí Strana'
+        lore:
+          - '&7Přejděte na předchozí stránku:&9 {previous}'
+          - ' '
+          - '&8- &7Aktuálně:&3 {current}'
+        material: ARROW
+        slot: 29
+      page_next:
+        name: '&aDalší Strana'
+        lore:
+          - '&7Přejděte na další stránku:&9 {next}'
+          - ' '
+          - '&8- &7Aktuálně:&3 {current}'
         material: ARROW
         slot: 35
     p:
@@ -1308,6 +1462,14 @@ gui:
         material: HOPPER
         from: 10
         to: 27
+      ender_pearl:
+        name: '&6Použití Ender Perel a Chorus'
+        lore:
+          - '&7Stav: {enabled}'
+          - '&7Odemčeno: {unlocked}'
+        material: ENDER_PEARL
+        from: 10
+        to: 27
       area_assign:
         name: '&6Přiřazení Oblastí'
         lore:
@@ -1450,14 +1612,6 @@ gui:
         - '&8- &7Příkaz:'
         - '  &8/&3Lands withdraw'
         material: GOLD_NUGGET
-        from: 10
-        to: 27
-      ender_pearl:
-        name: '&6Použití Ender Perel a Chorus'
-        lore:
-        - '&7Stav: {enabled}'
-        - '&7Odemčeno: {unlocked}'
-        material: ENDER_PEARL
         from: 10
         to: 27
     a:
@@ -1718,16 +1872,16 @@ gui:
         material: GOLD_INGOT
         slot: 14
       tax_nation:
-        name: '&7Tax:&c ${tax}'
+        name: '&7Daň:&c ${tax}'
         lore:
         - ' '
-        - '&7In&5 {time} &7your nation'
-        - '&7will receive&a ${revenue} &7as taxes'
-        - '&7from the lands in this nation.'
+        - '&7Za&5 {time} &7Váš národ'
+        - '&7obdrží&a ${revenue} &7v daních'
+        - '&7ze zemí tohoto národa.'
         - ' '
-        - '&7This value sets the tax'
-        - '&7per chunk. So bigger lands'
-        - '&7will need to pay more.'
+        - '&7Tato hodnota nastavuje daň'
+        - '&7podle území. Takže větší země'
+        - '&7budou platit více.'
         material: GOLD_INGOT
         slot: 14
     a:
@@ -1987,6 +2141,12 @@ gui:
         - '&e{back}&7.'
         material: RED_STAINED_GLASS_PANE
         slot: 19
+      created:
+        name: '&8> &6Vytvořeno'
+        lore:
+          - '&5{date}'
+        material: CLOCK
+        slot: 11
       players:
         name: '&8> &6Hráči/ky &8(&7{amount}&8)'
         lore:
@@ -1994,11 +2154,21 @@ gui:
         - '&e{players}'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
         slot: 13
-      created:
-        name: '&8> &6Vytvořeno'
+      level:
+        name: '&8> &6Úroveň'
         lore:
-        - '&5{date}'
-        material: CLOCK
+          - '&7Tyto hodnoty jsou aktivní pouze'
+          - '&7pokud země není součástí žádného'
+          - '&7národa.'
+          - ' '
+          - '&7{level}'
+          - '&7{upkeep}% cena nákladů'
+          - '&7{chunks} území'
+          - ' '
+          - '&7Další: {level_next}'
+          - '&c{upkeep_next}% cena nákladů'
+          - '&a{chunks_next} území'
+        material: BEACON
         slot: 15
       war:
         name: '&8> &6Válečné Statistiky'
@@ -2013,22 +2183,6 @@ gui:
         - '  &7KDR:&3 {kdr}'
         material: IRON_SWORD
         slot: 17
-      level:
-        name: '&8> &6Úroveň'
-        lore:
-        - '&7Tyto hodnoty jsou aktivní pouze'
-        - '&7pokud země není součástí žádného'
-        - '&7národa.'
-        - ' '
-        - '&7{level}'
-        - '&7{upkeep}% cena nákladů'
-        - '&7{chunks} území'
-        - ' '
-        - '&7Další: {level_next}'
-        - '&c{upkeep_next}% cena nákladů'
-        - '&a{chunks_next} území'
-        material: BEACON
-        slot: 15
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -2059,13 +2213,6 @@ gui:
         - '&7{name}'
         material: NAME_TAG
         slot: 3
-      back:
-        name: '&cZpět'
-        lore:
-        - '&7Jít zpět na'
-        - '{back}&7.'
-        material: RED_STAINED_GLASS_PANE
-        slot: 1
       title:
         name: '&8> &6Vstupní Zpráva'
         lore:
@@ -2085,6 +2232,13 @@ gui:
         - '&7Zobrazená zpráva: {show}'
         material: OAK_SIGN
         slot: 7
+      back:
+        name: '&cZpět'
+        lore:
+          - '&7Jít zpět na'
+          - '{back}&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 1
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -2562,6 +2716,210 @@ gui:
         material: GRAY_STAINED_GLASS_PANE
         from: 1
         to: 27
+  nation:
+    title: '&8{level} {nation}'
+    size: 36
+    f:
+      back:
+        name: '&cZpět'
+        lore:
+          - '&7Jít zpět na'
+          - '{back}&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 28
+      close:
+        name: '&cZavřít'
+        lore:
+          - '&7Klikněte pro uzavření.'
+          - ' '
+          - '&8- &7Můžete jej opět otevřít,'
+          - '  &7pomocí &8/&3Nation menu&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 9
+      war:
+        name: '&8> &cAktuální Válka'
+        lore:
+          - '&7Informace o aktuální válce.'
+          - ' '
+          - '&7Zobrazí informace o:'
+          - '&8- &7Nepřátelském národu'
+          - '&8- &7Vítězné sumě'
+        material: IRON_SWORD
+        slot: 15
+      no-war:
+        name: '&8> &aKlid'
+        lore:
+          - '&7Váš národ není aktuálně'
+          - '&7součástí žádné války.'
+        material: WOODEN_SWORD
+        slot: 15
+      inbox:
+        name: '&8> &6Doručená Pošta &8(&7{amount}&8)'
+        lore:
+          - '&7Klikněte pro zobrazení více informací.'
+          - ' '
+          - '&7Obdržené zprávy:'
+          - '{inbox}'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJmM2ZjZGNjZmZkOTYzZTQzMzQ4MTgxMDhlMWU5YWUzYTgwNTY2ZDBkM2QyZDRhYjMwNTFhMmNkODExMzQ4YyJ9fX0=
+        slot: 16
+      stats:
+        name: '&8> &6Statistiky'
+        lore:
+          - '&7Členové/ky: {0}'
+          - ' '
+          - '&7Úroveň'
+          - '&7Aktuálně: {1}'
+          - ' &7{2} území za každou zemi'
+          - ' '
+          - '&7Další: {3} &7({4} členů/ek)'
+          - ' &a{5} území za každou zemi'
+          - ' '
+          - '&7Finance'
+          - '&8- &7Národ'
+          - '  &7Zůstatek: ${6}'
+          - '  &7Národ platí náklady&c ${7} &7za'
+          - '  &7in {8}.'
+          - ' '
+          - '&8- &4Vaše země &8({9})'
+          - '  &7Náklady ve výši&c ${10} &7pro národ'
+          - '  &7za {11}.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmNmYWZmYThjNmM3ZjYyNjIxNjgyZmU1NjcxMWRjM2I4OTQ0NjVmZGY3YTYyZjQzYjMxYTBkMzQwM2YzNGU3In19fQ==
+        slot: 17
+    s:
+      information:
+        name: '&6Informace'
+        lore:
+          - '&7Zde můžete zobrazit detailní'
+          - '&7informace o Vašem národu.'
+          - '&7Pomůže Vám to hlídat si všechny'
+          - '&7akce v tomto národě.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU3NDcwMTBkODRhYTU2NDgzYjc1ZjYyNDNkOTRmMzRjNTM0NjAzNTg0YjJjYzY4YTQ1YmYzNjU4NDAxMDVmZCJ9fX0=
+        slot: 11
+      lands:
+        name: '&8> &6Země'
+        lore:
+          - '&7Zobrazí všechny země, které'
+          - '&7jsou součástí tohoto národa.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
+        slot: 13
+      spawn:
+        name: '&8> &6Spawn'
+        lore:
+          - '&7Klikněte pro teleportaci'
+          - '&7do hlavního města národa.'
+        material: ENDER_PEARL
+        slot: 14
+      management:
+        name: '&6Správa'
+        lore:
+          - '&7Zde můžete spravovat Váš národ.'
+          - '&7Můžete nastavit daně národa, upravit'
+          - '&7nastavení zemí, nebo nastavit daně.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRkNDliYWU5NWM3OTBjM2IxZmY1YjJmMDEwNTJhNzE0ZDYxODU0ODFkNWIxYzg1OTMwYjNmOTlkMjMyMTY3NCJ9fX0=
+        slot: 20
+      taxes:
+        name: '&8> &6Daně'
+        lore:
+          - '&7Nastavení taxí pro'
+          - '&7země Vašeho národa.'
+        material: GOLD_INGOT
+        slot: 22
+    p:
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 1
+        to: 36
+      placeholder_2:
+        material: BLUE_STAINED_GLASS_PANE
+        from: 12
+        to: 12
+      placeholder_3:
+        material: BLUE_STAINED_GLASS_PANE
+        from: 21
+        to: 21
+  nation_lands:
+    title: '&8Členové Národa'
+    size: 36
+    f:
+      back:
+        name: '&cZpět'
+        lore:
+          - '&7Jít zpět na'
+          - '{back}&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 28
+      page_previous:
+        name: '&9Předchozí Strana'
+        lore:
+          - '&7Přejděte na předchozí stránku:&9 {previous}'
+          - ' '
+          - '&8- &7Aktuálně:&3 {current}'
+        material: ARROW
+        slot: 30
+      page_next:
+        name: '&aDalší Strana'
+        lore:
+          - '&7Přejděte na další stránku:&9 {next}'
+          - ' '
+          - '&8- &7Aktuálně:&3 {current}'
+        material: ARROW
+        slot: 35
+      trust:
+        name: '&8> &aPozvat Zemi'
+        lore:
+          - '&7Klikněte pro zdůveryhodnění'
+          - '&7země a pozvání do Vašeho národa.'
+          - ' '
+          - '&7Dostupné:&3 {lands} &8/&c {max}'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0=
+        slot: 32
+      untrust:
+        name: '&8> &cOdebrat Zemi'
+        lore:
+          - '&7Klikněte pro znedůveryhodnění'
+          - '&7země a odebrání z Vašeho národa.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
+        slot: 33
+    l:
+      object:
+        name: '&2{level} {land}'
+        lore:
+          - '&7Otevře informace'
+          - '&7o této zemi.'
+          - ' '
+          - '&9PRAVÉ KLIKNUTÍ'
+          - '&7Získejte více informací'
+          - '&7o této zemi.'
+          - ' '
+          - '&8- &7Titul:'
+          - '  &7{title}'
+        material: PLAYER_HEAD
+        from: 10
+        to: 27
+      capital:
+        name: '&4Hlavní Město {land}'
+        lore:
+          - '&7Otevře informace'
+          - '&7o této zemi.'
+          - ' '
+          - '&9PRAVÉ KLIKNUTÍ'
+          - '&7Získejte více informací'
+          - '&7o této zemi.'
+          - ' '
+          - '&8- &7Titul:'
+          - '  &7{title}'
+        material: PLAYER_HEAD
+        from: 10
+        to: 27
+    p:
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 1
+        to: 9
+      placeholder_2:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 29
+        to: 36
   admin_wilderness:
     title: '&8Nastavení Přířody'
     size: 9
@@ -2691,268 +3049,3 @@ gui:
         material: GRAY_STAINED_GLASS_PANE
         from: 19
         to: 27
-  inbox:
-    title: '&8Dorůčená Zpráva'
-    size: 36
-    f:
-      filter:
-        name: '&8> &6Filtrovat Podle Typu'
-        lore:
-        - '&7Klikněte pro listování mezi'
-        - '&7dostupnými typy.'
-        - ' '
-        - '&7Aktuálně:&3 {type}'
-        material: HOPPER
-        slot: 32
-      page_previous:
-        name: '&9Předchozí Strana'
-        lore:
-        - '&7Přejděte na předchozí stránku:&9 {previous}'
-        - ' '
-        - '&8- &7Aktuálně:&3 {current}'
-        material: ARROW
-        slot: 30
-      page_next:
-        name: '&aDalší Strana'
-        lore:
-        - '&7Přejděte na další stránku:&9 {next}'
-        - ' '
-        - '&8- &7Aktuálně:&3 {current}'
-        material: ARROW
-        slot: 35
-      back:
-        name: '&cZpět'
-        lore:
-        - '&7Jít zpět na'
-        - '{back}&7.'
-        material: RED_STAINED_GLASS_PANE
-        slot: 28
-    l:
-      object:
-        name: '&8# &7{id}'
-        lore:
-        - '{message}'
-        - ' '
-        - '&7Klikněte pro odstranění.'
-        material: PAPER
-        from: 10
-        to: 27
-    a:
-      failure_owner:
-        name: '&4Chyba: &cNedostatečné Oprávnení'
-        lore:
-        - '&7Na toto nemáte povolení.'
-        - '&7Pouze vlastník má tuto možnost.'
-    p:
-      placeholder_1:
-        material: GRAY_STAINED_GLASS_PANE
-        from: 1
-        to: 9
-      placeholder_2:
-        material: GRAY_STAINED_GLASS_PANE
-        from: 29
-        to: 36
-  nation:
-    title: '&8{level} {nation}'
-    size: 36
-    f:
-      back:
-        name: '&cZpět'
-        lore:
-        - '&7Jít zpět na'
-        - '{back}&7.'
-        material: RED_STAINED_GLASS_PANE
-        slot: 28
-      close:
-        name: '&cZavřít'
-        lore:
-        - '&7Klikněte pro uzavření.'
-        - ' '
-        - '&8- &7Můžete jej opět otevřít,'
-        - '  &7pomocí &8/&3Nation menu&7.'
-        material: RED_STAINED_GLASS_PANE
-        slot: 9
-      war:
-        name: '&8> &cAktuální Válka'
-        lore:
-        - '&7Informace o aktuální válce.'
-        - ' '
-        - '&7Zobrazí informace o:'
-        - '&8- &7Nepřátelském národu'
-        - '&8- &7Vítězné sumě'
-        material: IRON_SWORD
-        slot: 15
-      no-war:
-        name: '&8> &aKlid'
-        lore:
-        - '&7Váš národ není aktuálně'
-        - '&7součástí žádné války.'
-        material: WOODEN_SWORD
-        slot: 15
-      inbox:
-        name: '&8> &6Doručená Pošta &8(&7{amount}&8)'
-        lore:
-        - '&7Klikněte pro zobrazení více informací.'
-        - ' '
-        - '&7Obdržené zprávy:'
-        - '{inbox}'
-        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJmM2ZjZGNjZmZkOTYzZTQzMzQ4MTgxMDhlMWU5YWUzYTgwNTY2ZDBkM2QyZDRhYjMwNTFhMmNkODExMzQ4YyJ9fX0=
-        slot: 16
-      stats:
-        name: '&8> &6Statistiky'
-        lore:
-        - '&7Členové/ky: {0}'
-        - ' '
-        - '&7Úroveň'
-        - '&7Aktuálně: {1}'
-        - ' &7{2} území za každou zemi'
-        - ' '
-        - '&7Další: {3} &7({4} členů/ek)'
-        - ' &a{5} území za každou zemi'
-        - ' '
-        - '&7Finance'
-        - '&8- &7Národ'
-        - '  &7Zůstatek: ${6}'
-        - '  &7Národ platí náklady&c ${7} &7za'
-        - '  &7in {8}.'
-        - ' '
-        - '&8- &4Vaše země &8({9})'
-        - '  &7Náklady ve výši&c ${10} &7pro národ'
-        - '  &7za {11}.'
-        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmNmYWZmYThjNmM3ZjYyNjIxNjgyZmU1NjcxMWRjM2I4OTQ0NjVmZGY3YTYyZjQzYjMxYTBkMzQwM2YzNGU3In19fQ==
-        slot: 17
-    s:
-      information:
-        name: '&6Informace'
-        lore:
-        - '&7Zde můžete zobrazit detailní'
-        - '&7informace o Vašem národu.'
-        - '&7Pomůže Vám to hlídat si všechny'
-        - '&7akce v tomto národě.'
-        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU3NDcwMTBkODRhYTU2NDgzYjc1ZjYyNDNkOTRmMzRjNTM0NjAzNTg0YjJjYzY4YTQ1YmYzNjU4NDAxMDVmZCJ9fX0=
-        slot: 11
-      lands:
-        name: '&8> &6Země'
-        lore:
-        - '&7Zobrazí všechny země, které'
-        - '&7jsou součástí tohoto národa.'
-        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
-        slot: 13
-      spawn:
-        name: '&8> &6Spawn'
-        lore:
-        - '&7Klikněte pro teleportaci'
-        - '&7do hlavního města národa.'
-        material: ENDER_PEARL
-        slot: 14
-      management:
-        name: '&6Správa'
-        lore:
-        - '&7Zde můžete spravovat Váš národ.'
-        - '&7Můžete nastavit daně národa, upravit'
-        - '&7nastavení zemí, nebo nastavit daně.'
-        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRkNDliYWU5NWM3OTBjM2IxZmY1YjJmMDEwNTJhNzE0ZDYxODU0ODFkNWIxYzg1OTMwYjNmOTlkMjMyMTY3NCJ9fX0=
-        slot: 20
-      taxes:
-        name: '&8> &6Daně'
-        lore:
-        - '&7Nastavení taxí pro'
-        - '&7země Vašeho národa.'
-        material: GOLD_INGOT
-        slot: 22
-    p:
-      placeholder_1:
-        material: GRAY_STAINED_GLASS_PANE
-        from: 1
-        to: 36
-      placeholder_2:
-        material: BLUE_STAINED_GLASS_PANE
-        from: 12
-        to: 12
-      placeholder_3:
-        material: BLUE_STAINED_GLASS_PANE
-        from: 21
-        to: 21
-  nation_lands:
-    title: '&8Členové Národa'
-    size: 36
-    f:
-      back:
-        name: '&cZpět'
-        lore:
-        - '&7Jít zpět na'
-        - '{back}&7.'
-        material: RED_STAINED_GLASS_PANE
-        slot: 28
-      page_previous:
-        name: '&9Předchozí Strana'
-        lore:
-        - '&7Přejděte na předchozí stránku:&9 {previous}'
-        - ' '
-        - '&8- &7Aktuálně:&3 {current}'
-        material: ARROW
-        slot: 30
-      page_next:
-        name: '&aDalší Strana'
-        lore:
-        - '&7Přejděte na další stránku:&9 {next}'
-        - ' '
-        - '&8- &7Aktuálně:&3 {current}'
-        material: ARROW
-        slot: 35
-      trust:
-        name: '&8> &aPozvat Zemi'
-        lore:
-        - '&7Klikněte pro zdůveryhodnění'
-        - '&7země a pozvání do Vašeho národa.'
-        - ' '
-        - '&7Dostupné:&3 {lands} &8/&c {max}'
-        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0=
-        slot: 32
-      untrust:
-        name: '&8> &cOdebrat Zemi'
-        lore:
-        - '&7Klikněte pro znedůveryhodnění'
-        - '&7země a odebrání z Vašeho národa.'
-        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
-        slot: 33
-    l:
-      object:
-        name: '&2{level} {land}'
-        lore:
-        - '&7Otevře informace'
-        - '&7o této zemi.'
-        - ' '
-        - '&9PRAVÉ KLIKNUTÍ'
-        - '&7Získejte více informací'
-        - '&7o této zemi.'
-        - ' '
-        - '&8- &7Titul:'
-        - '  &7{title}'
-        material: PLAYER_HEAD
-        from: 10
-        to: 27
-      capital:
-        name: '&4Hlavní Město {land}'
-        lore:
-        - '&7Otevře informace'
-        - '&7o této zemi.'
-        - ' '
-        - '&9PRAVÉ KLIKNUTÍ'
-        - '&7Získejte více informací'
-        - '&7o této zemi.'
-        - ' '
-        - '&8- &7Titul:'
-        - '  &7{title}'
-        material: PLAYER_HEAD
-        from: 10
-        to: 27
-    p:
-      placeholder_1:
-        material: GRAY_STAINED_GLASS_PANE
-        from: 1
-        to: 9
-      placeholder_2:
-        material: GRAY_STAINED_GLASS_PANE
-        from: 29
-        to: 36
