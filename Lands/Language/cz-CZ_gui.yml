@@ -267,13 +267,6 @@ gui:
         - '&7spawn země.'
         material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU3NDcwMTBkODRhYTU2NDgzYjc1ZjYyNDNkOTRmMzRjNTM0NjAzNTg0YjJjYzY4YTQ1YmYzNjU4NDAxMDVmZCJ9fX0=
         slot: 11
-      trusted-players:
-        name: '&8> &6Důvěryhodní Hráči'
-        lore:
-        - '&7Získáte seznam všech důvěryhodných hráčů,'
-        - '&7bez jakékoli filtrace oblastí.'
-        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
-        slot: 14
       invites:
         name: '&8> &6Pozvánky'
         lore:
@@ -300,6 +293,17 @@ gui:
         - '&7a vložte zprávu.'
         material: BEACON
         slot: 35
+      trusted:
+        name: '&8> &6Důvěryhodní Hráči'
+        lore:
+          - '&7Získáte seznam všech důvěryhodných hráčů,'
+          - '&7bez jakékoli filtrace oblastí.'
+          - ''
+          - '&bSHIFT + LEVÉ KLIKNUTÍ'
+          - '&7Správa všech zablokování'
+          - '&7v celé zemi.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThiOGM2YTQ2ZDg3Y2Y4NmE1NWRmMjE0Y2Y4NGJmNDVjY2EyNWVkYjlhNjc2ZTk2MzY0ZGQ2YTZlZWEyMzViMyJ9fX0=
+        slot: 14
     f:
       land-settings:
         name: '&8> &6Nastavení Území'
@@ -1419,17 +1423,6 @@ gui:
         material: BOW
         from: 10
         to: 27
-      attack_monsters:
-        name: '&6Útočení Na Příšery'
-        lore:
-        - '&7Stav: {enabled}'
-        - '&7Odemčeno: {unlocked}'
-        - ' '
-        - '&8- &7Pokud neaktivní, příšery'
-        - '  &7je nebudou moci napadnout.'
-        material: BOW
-        from: 10
-        to: 27
       vehicle_use:
         name: '&6Použití Vozidel'
         lore:
@@ -1614,6 +1607,17 @@ gui:
         material: GOLD_NUGGET
         from: 10
         to: 27
+      attack_monsters:
+        name: '&6Útočení Na Příšery'
+        lore:
+          - '&7Stav: {enabled}'
+          - '&7Odemčeno: {unlocked}'
+          - ' '
+          - '&8- &7Pokud neaktivní, příšery'
+          - '  &7je nebudou moci napadnout.'
+        material: BOW
+        from: 10
+        to: 27
     a:
       failure_permission:
         name: '&4Chyba: &cNedostatečná Pravomoc'
@@ -1760,6 +1764,14 @@ gui:
         material: VINE
         from: 10
         to: 18
+      snow_melt:
+        name: '&6Tání Sněhu A Ledu'
+        lore:
+          - '&7Stav: {enabled}'
+          - '&7Odemčeno: {unlocked}'
+        material: SNOWBALL
+        from: 10
+        to: 27
     a:
       failure_permission:
         name: '&4Chyba: &cNedostatečná Pravomoc'
