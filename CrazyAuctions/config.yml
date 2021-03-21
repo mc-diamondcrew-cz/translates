@@ -91,7 +91,7 @@ Settings:
         Name: '&b&lJídlo'
         Lore:
           - ''
-          - '&fTato kategorie obsahuje všechno'
+          - '&fTato kategorie obsahuje všechno,'
           - '&fco můžete &bzbaštit&f.'
           - ''
       Potions:
@@ -131,8 +131,8 @@ Settings:
         Name: '&b&lUKAŽ MI VŠECIČKO'
         Lore:
           - ''
-          - '&fChápu to, nemůžeš se rozhodnout,'
-          - '&fprostě to chceš &bVŠECHNO &fvidět.'
+          - '&fChápu to, nemůžeš se rozhodnout.'
+          - '&fProstě to chceš &bVŠECHNO &fvidět.'
           - ''
     OtherSettings: #Other Settings for the GUIs.
       SellingItems: #The button for your current items.
@@ -227,7 +227,7 @@ Settings:
             - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
             - ''
             - "&6Užitečné příkazy:"
-            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce nebo jste je zrušily."
             - "&b/ah listed &8- &fTvé předměty v aukci."
         BiddingShop: #The Book in the main shop.
           Item: 'BOOK'
@@ -243,7 +243,7 @@ Settings:
             - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
             - ''
             - "&6Užitečné příkazy:"
-            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce nebo jste je zrušily."
             - "&b/ah listed &8- &fTvé předměty v aukci."
         CurrentItems: #The Book in the Current items GUI.
           Item: 'BOOK'
@@ -259,7 +259,7 @@ Settings:
             - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
             - ''
             - "&6Užitečné příkazy:"
-            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce nebo jste je zrušily."
             - "&b/ah listed &8- &fTvé předměty v aukci."
         Cancelled/ExpiredItems: #The Book in the Canceled/Expired Items GUI.
           Item: 'BOOK'
@@ -275,7 +275,7 @@ Settings:
             - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
             - ''
             - "&6Užitečné příkazy:"
-            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce nebo jste je zrušily."
             - "&b/ah listed &8- &fTvé předměty v aukci."
         Viewing: #The Book in the Viewing Items GUI.
           Item: 'BOOK'
@@ -291,7 +291,7 @@ Settings:
             - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
             - ''
             - "&6Užitečné příkazy:"
-            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce nebo jste je zrušily."
             - "&b/ah listed &8- &fTvé předměty v aukci."
         Categories: #The Book in the Viewing Items GUI.
           Item: 'BOOK'
@@ -307,7 +307,7 @@ Settings:
             - '&b/ah bid [minimální příhoz] [množství] &8- &fPřidá předmět v ruce do dražby.'
             - ''
             - "&6Užitečné příkazy:"
-            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce, nebo jste je zrušily."
+            - "&b/ah expired &8- &fPředměty, které Vám expirovaly z aukce nebo jste je zrušily."
       Back: #The Back Buttons.
         Item: 'PAPER'
         Slot: 46
@@ -331,7 +331,7 @@ Settings:
         Name: '&cNemůžeš si zakoupit svůj vlastní předmět!'
       Cant-Afford: #The item that shows when you cant afford this item.
         Item: 'BARRIER'
-        Name: '&cNemáš dostatek financína tento předmět!'
+        Name: '&cNemáš dostatek financí na tento předmět!'
       Top-Bidder: #The item for when a player is already the top bidder.
         Item: 'BARRIER'
         Name: '&cJiž jsi přihodil nejvíce.'
