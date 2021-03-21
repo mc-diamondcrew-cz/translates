@@ -29,7 +29,7 @@ cmd-join-arena-full: |-
 cmd-join-arenas-full: '&aBedWars §8» &7Žádná aréna není k dispozici.'
 cmd-join-arena-full-vips: |-
   &aBedWars §8» &7Je nám líto, ale tato aréna je plná.
-  &7Bohužel, v této aréně jsou všichni Premium a proto se nemůžete připojit.
+  &7Bohužel jsou v této aréně všichni Premium, a proto se nemůžete připojit.
 cmd-join-party-big: '&aBedWars §8» &7Vaše parta je přílíš velká.'
 cmd-join-not-leader: '&aBedWars §8» &7Pouze vůdce/kyně může vybrat arénu.'
 cmd-join-success: '&aBedWars §8» &6{player} &7se připojil/a (&a{on}&8/&a{max}&7)!'
@@ -42,7 +42,7 @@ cmd-tp-not-in-arena: '&aBedWars §8» &7Hráč/ka není v této aréně!'
 cmd-tp-not-started: '&aBedWars §8» &7Aréná hráče/ky ještě nezačala!'
 cmd-tp-usage: '&aBedWars §8» &7Použití: §6/bw tp <jméno>'
 cmd-rejoin-no-arena: '&aBedWars §8» &7Není zde aréna pro připojení!'
-cmd-rejoin-denied: '&aBedWars §8» &7Již se nemůžete znovu připojit do arény. Hra skončila,
+cmd-rejoin-denied: '&aBedWars §8» &7Již se nemůžete znovu připojit do arény. Hra skončila
   nebo se zničila postel.'
 cmd-rejoin-allowed: '&aBedWars §8» &7Se připojil/a do arény &6{arena}&7!'
 cmd-rejoin-player-reconnected: '&aBedWars §8» &6{player} &6se připojil/a!'
@@ -85,10 +85,10 @@ cmd-start-no-perm: |-
   §7Zvažte prosím zakoupení Premium pro více funkcí.
 cmd-cooldown: '&7Nemůžeš se připojit! Počkej §6{seconds} §7sekund!'
 arena-kicked-by-vip: |-
-  &aBedWars §8» &7Je nám líto, ale byl/a jste vyhozen/a kvůli připojení Premium.
+  &aBedWars §8» &7Je nám líto, ale byl/a jste vyhozen/a kvůli připojení hráče Premium.
   &7Zvažte prosím zakoupení Premium pro více funkcí. &6&o(klik)
-arena-countdown-stopped: '&aBedWars §8» §7Není dostatek hráčů, odpočet zrušen!'
-arena-restart-kick: '&aBedWars §8» &7Aréna, ve které jste se restartuje.'
+arena-countdown-stopped: '&aBedWars §8» §7Není dostatek hráčů, odpočet byl zrušen!'
+arena-restart-kick: '&aBedWars §8» &7Aréna, ve které jste, se restartuje.'
 arena-status-playing: '&cVe hře'
 arena-status-restarting: '&4Restartování..'
 arena-status-waiting: '&2Čeká na hráče.. §c{full}'
@@ -110,8 +110,8 @@ arena-start-tutorial:
 - '&e                                   &lBedWars'
 - ''
 - §8» §fChraňte svoji postel a zničte postel ostatním.
-- §8» §fVylepšete sebe a svůj tým, pomocí sbírání
-- §8» §fŽeleze, Zlata, Smaragdů a Diamantů z generátorů,
+- §8» §fVylepšete sebe a svůj tým pomocí sbírání
+- §8» §fŽeleza, Zlata, Smaragdů a Diamantů z generátorů
 - §8» §fpro získání mocných vylepšení.
 - ''
 - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
@@ -464,7 +464,7 @@ shop-items-messages:
     content-item-clay-lore:
     - '&7Cena: {cost} {currency}'
     - ''
-    - '&7Jednoduchá kostka na ochranu Vaší postele.'
+    - '&7Jednoduchá kostka pro ochranu Vaší postele.'
     - ''
     - '{quick_buy}'
     - '{buy_status}'
@@ -488,7 +488,7 @@ shop-items-messages:
     content-item-ladder-lore:
     - '&7Cena: {cost} {currency}'
     - ''
-    - '&7Vhodné pro záchranu koček, uvíznutých'
+    - '&7Vhodné pro záchranu koček uvíznutých'
     - '&7na stromech.'
     - ''
     - '{quick_buy}'
@@ -679,7 +679,7 @@ shop-items-messages:
     content-item-bedbug-lore:
     - '&7Cena: {cost} {currency}'
     - ''
-    - '&7Zjeví rostoče na místě, kam'
+    - '&7Zjeví roztoče na místě, kam'
     - '&7dopadla koule pro rozptýlení'
     - '&7nepřátel. Přežije 15 sekund.'
     - ''
@@ -690,7 +690,7 @@ shop-items-messages:
     - '&7Cena: {cost} {currency}'
     - ''
     - '&7Železný Golem, který Vám pomůže ochránit'
-    - '&7Vaši základnu. Přejize 4 minuty.'
+    - '&7Vaší základnu. Přežije 4 minuty.'
     - ''
     - '{quick_buy}'
     - '{buy_status}'
@@ -777,7 +777,7 @@ upgrades-lore-insuff-money: '{color}Nemáš dostatek {currency}'
 upgrades-lore-locked: '&cUZAMČENO'
 upgrades-lore-unlocked: '{color}ODEMČENO'
 upgrades-new-purchase: '&a{player} zakoupil/a &6{upgradeName}'
-upgrades-upgrade-name-forge-tier-1: '{color}Železné Kovárna'
+upgrades-upgrade-name-forge-tier-1: '{color}Železná Kovárna'
 upgrades-upgrade-lore-forge-tier-1:
 - '&7Generátory zdrojů na Vašem ostrově.'
 - ''
@@ -821,14 +821,14 @@ upgrades-category-item-lore-traps:
 upgrades-upgrade-name-swords-tier-1: '{color}Ostré Meče'
 upgrades-upgrade-lore-swords-tier-1:
 - '&7Váš tým získá na všechny meče a sekery'
-- '&7Sharpness I, toto vylepšení je trvalé.'
+- '&7Sharpness I. Toto vylepšení je trvalé.'
 - ''
 - '&7Cena: &b{cost} {currency}'
 - ''
 upgrades-upgrade-name-armor-tier-1: '{color}Překované Brnění I'
 upgrades-upgrade-lore-armor-tier-1:
 - '&7Váš tým získá na všechny částí brnění'
-- '&7Protection, toto vylepšení je trvalé!'
+- '&7Protection. Toto vylepšení je trvalé!'
 - ''
 - '{tierColor}Úroveň 1: Protection I, &b{cost} {currency}'
 - '&7Úroveň 2: Protection II, &b10 Diamantů'
@@ -838,7 +838,7 @@ upgrades-upgrade-lore-armor-tier-1:
 upgrades-upgrade-name-armor-tier-2: '{color}Překované Brnění II'
 upgrades-upgrade-lore-armor-tier-2:
 - '&7Váš tým získá na všechny částí brnění'
-- '&7Protection, toto vylepšení je trvalé!'
+- '&7Protection. Toto vylepšení je trvalé!'
 - ''
 - '&aÚroveň 1: Protection I, &b5 Diamantů'
 - '{tierColor}Úroveň 2: Protection II, &b{cost} {currency}'
@@ -848,7 +848,7 @@ upgrades-upgrade-lore-armor-tier-2:
 upgrades-upgrade-name-armor-tier-3: '{color}Překované Brnění III'
 upgrades-upgrade-lore-armor-tier-3:
 - '&7Váš tým získá na všechny částí brnění'
-- '&7Protection, toto vylepšení je trvalé!'
+- '&7Protection. Toto vylepšení je trvalé!'
 - ''
 - '&aÚroveň 1: Protection I, &b5 Diamantů'
 - '&aÚroveň 2: Protection II, &b10 Diamantů'
@@ -858,7 +858,7 @@ upgrades-upgrade-lore-armor-tier-3:
 upgrades-upgrade-name-armor-tier-4: '{color}Překované Brnění IV'
 upgrades-upgrade-lore-armor-tier-4:
 - '&7Váš tým získá na všechny částí brnění'
-- '&7Protection, toto vylepšení je trvalé!'
+- '&7Protection. Toto vylepšení je trvalé!'
 - ''
 - '&aÚroveň 1: Protection I, &b5 Diamantů'
 - '&aÚroveň 2: Protection II, &b10 Diamantů'
@@ -888,7 +888,7 @@ upgrades-upgrade-lore-heal-pool-tier-1:
 - ''
 upgrades-upgrade-name-dragon-tier-1: '{color}Dračí Vylepšení'
 upgrades-upgrade-lore-dragon-tier-1:
-- '&7Váš tým bude mít 2 draky, místo 1'
+- '&7Váš tým bude mít 2 draky místo 1'
 - '&7v průběhu náhlé smrti!'
 - ''
 - '&7Cena: &b{cost} {currency}'
@@ -903,7 +903,7 @@ upgrades-trap-slot-item-lore1-first:
 - '&7tuto nástrahu!'
 upgrades-trap-slot-item-lore2-first:
 - ''
-- '&7Zakoupení nástrahy ji'
+- '&7Zakoupená nástraha se'
 - '&7přídá zde. Cena nástrahy'
 - '&7se bude odvíjet od množství'
 - '&7nástrah ve frontě.'
@@ -916,7 +916,7 @@ upgrades-trap-slot-item-lore1-second:
 - '&7tuto nástrahu!'
 upgrades-trap-slot-item-lore2-second:
 - ''
-- '&7Zakoupení nástrahy ji'
+- '&7Zakoupená nástraha se'
 - '&7přídá zde. Cena nástrahy'
 - '&7se bude odvíjet od množství'
 - '&7nástrah ve frontě.'
@@ -929,7 +929,7 @@ upgrades-trap-slot-item-lore1-third:
 - '&7tuto nástrahu!'
 upgrades-trap-slot-item-lore2-third:
 - ''
-- '&7Zakoupení nástrahy ji'
+- '&7Zakoupená nástraha se'
 - '&7přídá zde. Cena nástrahy'
 - '&7se bude odvíjet od množství'
 - '&7nástrah ve frontě.'
