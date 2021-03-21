@@ -86,7 +86,7 @@ souls:
     id: 0
     name: '&f&lPočítadlo Duší'
     lore:
-    - '&7Aplikujte na předmět, pro počítání'
+    - '&7Aplikujte na předmět pro počítání'
     - '&7nasbíraných duší.'
     messages:
       success:
