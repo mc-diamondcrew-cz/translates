@@ -20,7 +20,7 @@ arena-join-denied-selector: '&aBedWars §8» &7Do arény se nelze připojit, pou
   §7pro §6sledování§7!'
 arena-spectate-denied-selector: '&aBedWars §8» &7Arénu nemůžeš sledovat, pouzij §6levé-kliknutí
   §7pro §6připojení§7!'
-cmd-not-found: '&aBedWars §8» &7Příkaz §6neexistuje§7, nebo §6nemáte dostatek pravomocí§7!'
+cmd-not-found: '&aBedWars §8» &7Příkaz §6neexistuje§7 nebo §6nemáte dostatek pravomocí§7!'
 cmd-arena-gui-display: '&8- &6/bw gui &o(skupina) &7otevře výběr arén.'
 cmd-arena-gui-hover: |-
   &7Vyberte si arénu
@@ -46,7 +46,7 @@ cmd-join-party-big: '&aBedWars §8» §7Vaše §6parta §7je příliš velká pr
 cmd-join-not-leader: '&aBedWars §8» &7Pouze §6vůdce/kyně §7může vybrat arénu.'
 cmd-join-spectate-denied: '&aBedWars §8» §6Sledování §7není v této aréně povoleno.'
 cmd-rejoin-no-arena: '&aBedWars §8» §7Nelze §6přepojit§7, žádná arená nenalezena.'
-cmd-rejoin-denied: '&aBedWars §8» §7Nelze §6přepojit§7, hra ukončena, nebo Vaše postel
+cmd-rejoin-denied: '&aBedWars §8» §7Nelze §6přepojit§7, hra ukončena nebo Vaše postel
   zničena.'
 cmd-rejoin-allowed: '&aBedWars §8» &7Připojuji na &6{arena}&7.'
 cmd-party-help:
@@ -79,7 +79,7 @@ cmd-party-remove: '&aBedWars §8» &6{player} &7odebrán/a z party.'
 cmd-party-remove-not-in: '&aBedWars §8» &6{player} &7není ve Vaší partě.'
 cmd-tp-usage: '&aBedWars §8» &7Použití: &6/bw tp <jméno>'
 cmd-tp-fail: '&aBedWars §8» &6{player}&7 nenalezen/a.'
-cmd-tp-fai2: '&aBedWars §8» &6{player}&7 nalezen/a na &6{server}&7, připojení ovšem
+cmd-tp-fai2: '&aBedWars §8» &6{player}&7 nalezen/a na &6{server}&7. Připojení ovšem
   není možné.'
 sign-dynamic-content:
   waiting:
