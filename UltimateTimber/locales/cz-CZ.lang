@@ -2,8 +2,8 @@
 
 general:
   nametag:
-    prefix: ''
-  nopermission: '&aKácení &8» &7Na toto nemáte dostatečné pravomoce!'
+    prefix: '&aKácení &8» '
+  nopermission: '&7Na toto nemáte dostatečné pravomoce!'
 # Command Messages
 command:
   reload:
@@ -11,8 +11,8 @@ command:
     reloaded: '&7Konfigurace byla znovu načtena.'
   toggle:
     description: 'Přepne režim kácení.'
-    enabled: '&aEfekty &8» &7Kácení Stromů &8&l| &a&l● &aAktivováno'
-    disabled: '&aEfekty &8» &7Kácení Stromů &8&l| &c&l● &cDeaktivováno'
+    enabled: '&7Kácení Stromů &8&l| &a&l● &aAktivováno'
+    disabled: '&7Kácení Stromů &8&l| &c&l● &cDeaktivováno'
   give:
     not-a-player: '&cNení na serveru'
     given: '&fPřidáno hráči/ce &a%player%'
@@ -20,4 +20,4 @@ command:
 # Event Messages
 event:
   'on':
-    cooldown: '&aEfekty &8» &7Před dalším sekáním musíte chvíli počkat.'
+    cooldown: '&7Před dalším sekáním musíte chvíli počkat.'
