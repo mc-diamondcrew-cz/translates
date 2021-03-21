@@ -1,0 +1,23 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: ''
+  nopermission: '&aKácení &8» &7Na toto nemáte dostatečné pravomoce!'
+# Command Messages
+command:
+  reload:
+    description: 'Znovu-načte konfiguraci'
+    reloaded: '&7Konfigurace byla znovu načtena.'
+  toggle:
+    description: 'Přepne režim kácení.'
+    enabled: '&aEfekty &8» &7Kácení Stromů &8&l| &a&l● &aAktivováno'
+    disabled: '&aEfekty &8» &7Kácení Stromů &8&l| &c&l● &cDeaktivováno'
+  give:
+    not-a-player: '&cNení na serveru'
+    given: '&fPřidáno hráči/ce &a%player%'
+    no-axe: '&cSekera nemohla být načtena.'
+# Event Messages
+event:
+  'on':
+    cooldown: '&aEfekty &8» &7Před dalším sekáním musíte chvíli počkat.'
