@@ -27,3 +27,8 @@ AKIT_GIVE_SUCCESS: '&aKitManager &8» &7Úspěšně jste předali hráči/ce &6{
 AKIT_GIVE_SUCCESS_NOTIFY: '&aKitManager &8» &7Obdrželi jste kit &6{kit} &7od &6{player}&7.'
 AKIT_CREATE_SUCCESS: '&aKitManager &8» &7Úspěšně jste vytvořili kit &6{kit} &7s přebíjecí dobou &6{cooldown}s&7.'
 AKIT_REMOVE_SUCCESS: '&aKitManager &8» &7ÚSpěšně odstraněn kit &6{kit}&7.'
+PAPI_CANCOOLDOWN_YES: '&aDostupné'
+PAPI_CANCOOLDOWN_NO: '&cNedostupné'
+PAPI_CANPERM_YES: '&aAno'
+PAPI_CANPERM_NO: '&cNe'
+PAPI_CANPERM_OFFLINE: '&eCíl není na serveru.'
