@@ -1,0 +1,177 @@
+# Default Language Configuration for CombatLogX
+# Made by SirBlobman for v10.3.8.3
+#
+# Do not set any messages to 'false' or 'null'
+# Do not delete any message entries from this file
+# You can set any message to "" to prevent it from being sent
+
+prefixes:
+  plugin: ""
+  expansion: ""
+
+broadcasts:
+  on-load: "&eBoj &8» &7CombatLogX načítá rozšíření, toto je WIP, nahlašte všechny potíže!"
+  on-enable: "&eBoj &8» &7CombatLogX &6aktivován&7."
+  on-disable: "&eBoj &8» &7CombatLogX &6deaktivován&7."
+
+expansion-logging:
+  loading: "Načítám rozšíření '{name} v{version}'"
+  loaded: "Načtených {amount} rozšíření{s}"
+  enabling: "Aktivuji rozšíření '{name} v{version}'"
+  enabled: "Aktivuji rozšíření '{name} v{version}'"
+
+placeholders:
+  time-left-zero: "&aNejste v boji"
+  unknown-enemy: "&7Neznámé"
+  status:
+    fighting: "&cV boji"
+    idling: "&aNejste v boji"
+    in-combat: "&aAno"
+    not-in-combat: "&cNe"
+    option-enable: "&aAktivní"
+    option-disable: "&cNeaktivní"
+
+errors:
+  unknown-entity-name: "neznáma entita"
+  no-permission: "&aBoj &8» &6Nemáte &7dostatek pravomocí!"
+  not-player: "&aBoj &8» &7Nejste &6hráč!"
+  invalid-target: "&aBoj &8» &7Neplatný cíl: &6{target}&7."
+  target-not-in-combat: "&aBoj &8» &7Cíl není v &6boji&7!"
+  self-not-in-combat: "&c&oYou are not in combat."
+
+commands:
+  combatlogx:
+    reloaded: "&aBoj &8» &7Úspěšně jste načetli všechny soubory."
+    tag-player: "&aBoj &8» &7Přinutili jste &6{target}&7 do boje. Tato akce může způsobit problémy."
+    tag-player-fail: "&aBoj &8» &7Nebylo možné označit &6{target}&7."
+    untag-player: "&aBoj &8» &7Přinutili jste &6{target}&7 z boje. Tato akce může způsobit potíže."
+    help-message-list:
+      - "&7"
+      - "&6&lCombatLogX Příkazy:"
+      - "  &7&l/combatlogx help&7: Zobrazí tuto stránku."
+      - "  &7&l/combatlogx version&7: Zkontroluje verzi pluginu."
+      - "  &7&l/combatlogx tag <hráč>&7: Aktivuej bojový režim pro hráče &cToto může vyvolat potíže!"
+      - "  &7&l/combatlogx untag <hráč>&7: Deaktivuje bojový režim pro hráče &cToto může vyvolat potíže!"
+      - "  &7&l/combatlogx toggle&7: (Vyžaduje rozšíření Notifier) Aktivuje nebo deaktivuje informace v action baru, boss baru nebo scoreboardu."
+      - "&7"
+
+  combat-timer:
+    time-left:
+      self: "&aBoj &8» &7Zbývá &6{time} &7času."
+      other: "&aBoj &8» &7Hráči/ce &6{target} &7zbývá &6{time} &7času."
+
+combat-timer:
+  expire: "&aBoj &8» &aJiž nejste v boji."
+  enemy-death: "&aBoj &8» &aVáš nepřítel zemřel."
+
+tag-messages:
+  unknown: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+  attacked:
+    by-player: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    by-mob: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+  attacker:
+    of-player: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    of-mob: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+
+# Messages after this point are only for Expansions
+
+cheat-prevention:
+  command-blocked: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+  no-riptide: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+  no-totem: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+  no-entity-interaction: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+  no-chat: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+
+  game-mode:
+    force-changed: "&aBoj &8» &7Váš herní režim byl nastaven na &6{game_mode}&7."
+    no-changing: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+
+  flight:
+    force-disabled: "&aBoj &8» &7Vaše &6létání &7bylo deaktivováno."
+    no-flying: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+
+  elytra:
+    force-disabled: "&aBoj &8» &7Vaše &6křídla &7byla deaktivována."
+    no-gliding: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+
+  teleportation:
+    block-pearl: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+    block-other: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+
+  inventory:
+    force-closed: "&aBoj &8» &7Váš &6inventář &7byl zavřen."
+    no-opening: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+
+  blocks:
+    no-breaking: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+    no-placing: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+    no-interaction: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+
+  items:
+    no-pickup: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+    no-dropping: "&aBoj &8» &7Tato &6akce &7není v boji povolena."
+
+damage-tagger:
+  unknown-damage: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+  damage-type:
+    contact: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    suffocation: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    fall: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    fire: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    fire-tick: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    lava: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    drowning: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    block-explosion: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    lightning: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    starvation: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    poison: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    magic: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    wither: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    falling-block: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    custom: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    fly-into-wall: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    hot-floor: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+    cramming: "&aBoj &8» &7Jste v boji. &6Neodpojujte se!"
+
+newbie-helper:
+  status:
+    protected: "&aChráněno"
+    not-protected: "&cNechráněno"
+  pvptoggle:
+    enabled: "&7&lPvP: &aAktivní"
+    disabled: "&7&lPvP: &cNeaktivní"
+    admin-enabled: "&aBoj &8» &7Nastavili jste PvP &e{target}&7 na &aAktivní"
+    admin-disabled: "&aBoj &8» &7Nastavili jste PvP &e{target}&7 na &cNeaktivní"
+  no-pvp:
+    self: "&aBoj &8» &cNemůžete útočit na hráče, pokud máte deaktivované PvP."
+    other: "&aBoj &8» &cTento hráč nemá aktivní PvP"
+    protected: "&aBoj &8» &cTento hráč je chráněn, nemůžete na něj zatím útočit!"
+    protected-self: "&aBoj &8» &cJste chráněni, nemůžete zatím útočit!"
+  protection-disabled:
+    attacker: "&aBoj &8» &cNa někoho jste zaútočili, ochrana nováčku byla deaktivována."
+    expired: "&aBoj &8» &cVaše ochrana nováčku vypršela."
+  check:
+    format: "&a{target}&7 má PvP nastaveno na {settings}"
+    enabled: "&aAKTIVNÍ"
+    disabled: "&cNEAKTIVNÍ"
+
+notifier:
+  toggle-bossbar: "&7&lBoss Bar: {status}"
+  toggle-actionbar: "&7&lAction Bar: {status}"
+  toggle-scoreboard: "&7Scoreboard: {status}"
+
+citizens-join-deny: "&aBoj &8» &7Jako trest za odpojení z boje, se nemůžete připojit, dokut Vaše NPC nezemře."
+
+factions-compatibility-no-entry: "&aBoj &8» &6Nemůžete vstoupit &7do této oblasti počas boje."
+griefprevention-compatibility-no-entry: "&aBoj &8» &6Nemůžete vstoupit &7do této oblasti počas boje."
+lands-compatibility-no-entry: "&aBoj &8» &6Nemůžete vstoupit &7do této oblasti počas boje."
+redprotect-compatibility-no-entry: "&aBoj &8» &6Nemůžete vstoupit &7do této oblasti počas boje."
+residence-compatibility-no-entry: "&aBoj &8» &6Nemůžete vstoupit &7do této oblasti počas boje."
+towny-compatibility-no-entry: "&aBoj &8» &6Nemůžete vstoupit &7do této oblasti počas boje."
+preciousstones-compatibility-no-entry: "&aBoj &8» &6Nemůžete vstoupit &7do této oblasti počas boje."
+preciousstones-compatibility-no-field: "&cYou can't create a protection field during combat."
+disguise-compatibility-remove-disguise: "&cYour disguise was removed."
+
+worldguard-compatibility-no-entry:
+  pvp: "&aBoj &8» &6Nemůžete vstoupit &7do této oblasti počas boje."
+  mob: "&aBoj &8» &6Nemůžete vstoupit &7do této oblasti počas boje."
