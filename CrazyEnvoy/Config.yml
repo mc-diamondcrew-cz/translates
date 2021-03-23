@@ -2,7 +2,7 @@ Settings:
   Prefix: '' #The prefix before the messages CrazyEnvoys sends.
   Toggle-Metrics: true #Turn on and off if your server stats are sent to https://bstats.org/plugin/bukkit/CrazyEnvoy.
   Falling-Block-Toggle: true #Toggle if it spawns a falling block or if the crates just appear.
-  Falling-Block: '138' #The block that will be falling.
+  Falling-Block: 'BEACON' #The block that will be falling.
   Fall-Height: 15 #How high the falling blocks spawn.
   Max-Crate-Toggle: true #If true then only a specified amount of crates will spawn and if false then all crates will spawn.
   Max-Crates: 20 #The max amount of crates that will spawn.
@@ -37,11 +37,11 @@ Settings:
     - '3s'
     - '1s'
   Flares: #Options about flares. Players need the crazyenvoy.flare.use permission to use the flares.
-    Item: '76' #The time the flares are.
+    Item: 'REDSTONE_TORCH' #The time the flares are.
     Name: '&c&lSvětlice' #The name of the flare.
     Lore: #The lore of the flare.
-      - '&fKlikni &bpravým &fpro přivolání'
-      - '&bAirDropu&f.'
+      - '&fKlikněte &bpravým &fpro přivolání'
+      - '&bAir-Dropu&f.'
     World-Guard: #The options for when using world guard regions to make flares work only in those regions.
       Toggle: false #If they have to use flares in specified regions.
       Regions: #The name of the regions you can use flares in.
