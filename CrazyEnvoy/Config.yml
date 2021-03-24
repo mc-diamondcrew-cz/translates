@@ -16,7 +16,7 @@ Settings:
   Envoy-Time: '2:00 AM' #A specified time of the day that an crazyenvoy will happen. Please use 1-12 for hours and 0-59 for minutes.
   Minimum-Players-Toggle: true #When the crazyenvoy is about to start toggle if there needs to be a minimum amount of players. (Does not affect flares)
   Minimum-Flare-Toggle: true #Toggle if using a flare has to meet the minimum players requirement. Minimum-Players-Toggle must be true for this to work.
-  Minimum-Players: 3 #The minimum amount of players needed to start the crazyenvoy.
+  Minimum-Players: 6 #The minimum amount of players needed to start the crazyenvoy.
   Broadcast-Crate-Pick-Up: true #Toggle if when a player gets a crate if it broadcasts the message.
   Crate-Collect-Cooldown: #If when a player collects a crate if they have to wait to collect another.
     Toggle: true #Toggle this option on and off.

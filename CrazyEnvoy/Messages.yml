@@ -20,20 +20,20 @@ Messages:
   Force-Ended: '&aDiamondCrew &8» &6Ukončil &7jsi &6Air-Drop&7.'
   Warning:
     - "&7➹ &8&l︳"
-    - "&7➹ &8&l︳ &e&lAIR-DROP"
+    - "&7➹ &8&l︳ &e&lAIR-DROP &e/warp pvp"
     - "&7➹ &8&l︳ &fZapočne za &e%time%&f!"
     - "&7➹ &8&l︳"
   Started:
     - "&7➹ &8&l︳"
-    - "&7➹ &8&l︳ &e&lAIR-DROP"
+    - "&7➹ &8&l︳ &e&lAIR-DROP &e/warp pvp"
     - "&7➹ &8&l︳ &fPrávě &ezapočal&f!"
     - "&7➹ &8&l︳"
     - "&7➹ &8&l︳ &fPočet beden &8> &f%amount%"
     - "&7➹ &8&l︳"
   Left:
     - "&7➹ &8&l︳"
-    - "&7➹ &8&l︳ &e&lAIR-DROP"
-    - "&7➹ &8&l︳ &e%player% &fnašel truhlu!"
+    - "&7➹ &8&l︳ &e&lAIR-DROP &e/warp pvp"
+    - "&7➹ &8&l︳ &e%player% &fnašel/la truhlu!"
     - "&7➹ &8&l︳"
     - "&7➹ &8&l︳ &fPočet beden &8> &f%amount%"
     - "&7➹ &8&l︳"
