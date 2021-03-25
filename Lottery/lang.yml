@@ -18,14 +18,14 @@ ADMIN_HELP: |2-
 BROADCAST_START: |2
 
   &a&lLOTERIE
-  &7Nová eloterie &7právě započala! &7(&6${cost}&7/lístek&7)
+  &7Nová &eloterie &7právě započala! &7(&6${cost}&7/lístek&7)
   &8» &7Použijte &6/lottery &7pro více informací!
 BROADCAST_END: |2
 
   &a&lLOTERIE
   &eLoterie &7právě skončila!
   &8» &7Výherce/kyně: &e{winner}
-  &8» &7Výhra: &e{winAmount}
+  &8» &7Výhra: &e{winAmount}$
 BROADCAST_NO_WINNER: |2
 
   &a&lLOTERIE
