@@ -12,7 +12,7 @@ enchantment-info:
   # Set to [] to disable
   # Use %list-of-items% for applyable materials in lore and %list-of-items-msg% for message.
   message:
-  - "§aKouzla §8» §7Informace o kouzlu §6%enchant%§7."
+    - "§aKouzla §8» §7Informace o kouzlu §6%enchant%§7."
   inventory:
     # If not enabled, only message will be shown.
     # You can use all variables that are used for items in the message,
@@ -47,18 +47,18 @@ enchantment-info:
         force-glow: false
         name: "&7Informace o Kouzlu &e%enchant%§7."
         lore:
-        - §8╔════════ §d%enchant% §8════════╗
-        - §8║
-        - §8╠═§d§lPopis
-        - §8║ §f%desc%
-        - §8║
-        - §8╠═§d§lLze aplikovat na
-        - §8║ §f%applies-to%
-        - §8║
-        - §8╠═§d§lMaximální úroveň
-        - §8║ §f%max-lvl-roman%
-        - §8║
-        - §8╚════════ §d%enchant% §8════════╝
+          - §8╔════════ §d%enchant% §8════════╗
+          - §8║
+          - §8╠═§d§lPopis
+          - §8║ §f%desc%
+          - §8║
+          - §8╠═§d§lLze aplikovat na
+          - §8║ §f%applies-to%
+          - §8║
+          - §8╠═§d§lMaximální úroveň
+          - §8║ §f%max-lvl-roman%
+          - §8║
+          - §8╚════════ §d%enchant% §8════════╝
         # you can as well use %group-color% to get enchantment color
       3:
         type: STAINED_GLASS_PANE
@@ -84,7 +84,7 @@ enchantments:
   # Message when opening menu
   # Set to [] to disable
   message:
-  - "&7Zobrazuji seznam všech kouzel..."
+    - "&7Zobrazuji seznam všech kouzel..."
   mode:
     # Modes: GROUPS, ALL
     # If set to GROUPS, first group selection inventory will show up
@@ -106,7 +106,7 @@ enchantments:
         type: STAINED_GLASS_PANE
         id: 3
         force-glow: false
-        group: BASIC
+        group: 1STAR
         name: '§7Všechna &b✯§f✯✯✯✯ §7Kouzla'
         lore:
           - ""
@@ -115,7 +115,7 @@ enchantments:
         type: STAINED_GLASS_PANE
         id: 5
         force-glow: false
-        group: RARE
+        group: 2STAR
         name: '§7Všechna §a✯✯§f✯✯✯ §7Kouzla'
         lore:
           - ""
@@ -124,7 +124,7 @@ enchantments:
         type: STAINED_GLASS_PANE
         id: 1
         force-glow: false
-        group: LEGENDARY
+        group: 3STAR
         name: '§7Všechna §6✯✯✯§f✯✯ §7Kouzla'
         lore:
           - ""
@@ -133,7 +133,7 @@ enchantments:
         type: STAINED_GLASS_PANE
         id: 6
         force-glow: false
-        group: DIVINE
+        group: 4STAR
         name: '§7Všechna §c✯✯✯✯§f✯ §7Kouzla'
         lore:
           - ""
@@ -142,7 +142,7 @@ enchantments:
         type: STAINED_GLASS_PANE
         id: 14
         force-glow: false
-        group: IMMORTAL
+        group: 5STAR
         name: '§7Všechna §4✯✯✯✯✯ §7Kouzla'
         lore:
           - ""
@@ -182,15 +182,15 @@ enchantments:
       command: '/enchant %enchantment%'
       name: "&emc.diamondcrew.cz"
       lore:
-      - §8╔════════ §d%enchant% §8════════╗
-      - §8║
-      - §8╠═§d§lPopis
-      - §8║ §f%desc%
-      - §8║
-      - §8╠═§d§lLze aplikovat na
-      - §8║ §f%applies-to%
-      - §8║
-      - §8╠═§d§lMaximální úroveň
-      - §8║ §f%max-lvl-roman%
-      - §8║
-      - §8╚════════ §d%enchant% §8════════╝
+        - §8╔════════ §d%enchant% §8════════╗
+        - §8║
+        - §8╠═§d§lPopis
+        - §8║ §f%desc%
+        - §8║
+        - §8╠═§d§lLze aplikovat na
+        - §8║ §f%applies-to%
+        - §8║
+        - §8╠═§d§lMaximální úroveň
+        - §8║ §f%max-lvl-roman%
+        - §8║
+        - §8╚════════ §d%enchant% §8════════╝

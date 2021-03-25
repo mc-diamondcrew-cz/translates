@@ -5,6 +5,7 @@
 commands:
   - '/armorsets'
   - '/previewsets'
+  - '/soupravy'
 
 gui:
   name: '&7Soupravy'

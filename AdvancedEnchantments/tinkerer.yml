@@ -1,12 +1,12 @@
 messages:
   non-tradeable-item:
-  - "&aKouzla &8» &6Drotář &7nechce tento předmět."
+    - "&aKouzla &8» &6Drotář &7nechce tento předmět."
   trade-accepted:
-  - "&aKouzla &8» &7Obchod &6přijat&7."
+    - "&aKouzla &8» &7Obchod &6přijat&7."
 inventory:
-  open-sound: BLOCK_CHEST_OPEN
-  name: Vy                   Drotář
-  inv-size: 54
+  # set to 'none' to disable
+  open-sound: 'BLOCK_CHEST_OPEN'
+  name: "Vy                   Drotář"
   items:
     agree:
       type: STAINED_GLASS_PANE
@@ -33,21 +33,28 @@ inventory:
       name: '&aKlikněte pro potvrzení transakce.'
       lore: []
 prices:
+  # Exp or money (exp/money)
   type: exp
-  amount: 10
-  formula: (%amount%*%enchants%)*%durability%
+  # Define how much of currency should be paid for items per enchantment number (3 enchantments = x3 the amount, and so on)
+  amount: 26
+  # More advanced formula for tinkerer calculation, set to `%amount%' if you want to give a set amount (from 'amount')
+  # Variables:
+  # %amount% = amount from previous setting
+  # %enchants% = number of enchants on item
+  # %durability% = percent of durability left, so if item had half of it's durability remaining, it would be 0.5
+  formula: '(%amount%*%enchants%)*%durability%'
 items:
   money:
     type: PAPER
     id: 0
     name: '&cPeněžení Poukaz &7(%amount%)'
     lore:
-    - '&cZískáno od &fDrotáře'
-    - '&cObdržel/a &f%name%'
+      - '&cZískáno od &fDrotáře'
+      - '&cObdrželi jste &f%name%'
   exp:
     type: EXP_BOTTLE
     id: 0
     name: '&cEXP Lahvička &7(%amount%)'
     lore:
-    - '&cZískáno od &fDrotáře'
-    - '&cObdržel/a &f%name%'
+      - '&cZískáno od &fDrotáře'
+      - '&cObdrželi jste &f%name%'
