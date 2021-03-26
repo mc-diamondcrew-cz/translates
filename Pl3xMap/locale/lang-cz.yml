@@ -1,0 +1,76 @@
+render-in-progress: <red>Generování je již v průběhu pro svět <world>
+render-not-in-progress: <red>Žádné generování není v průběhu pro svět <world>
+cancelled-render: <green>Generování pro svět <world> bylo zrušeno
+successfully-reset-map: <green>Mapa úspěšně resetována pro svět <world>
+paused-renders: <green>Render deaktivován pro svět <world>
+unpaused-renders: <green>Generování <world> bylo znovu spuštěno
+click-for-help: Klikněte pro nápovědu
+plugin-reloaded: <green><name> v<version> znovunačetno.
+command:
+  prefix: '<white>[<gradient:#C028FF:#5B00FF>Pl3xMap</gradient>]</white> '
+  message:
+    console-must-specify-player: <red>Musíte specifikovat cíl, pokud používáte příkaz z konzole.
+    player-not-found-for-input: <red>Nenalazen žádný hráč pro '<input>'
+    console-must-specify-world: <red>Musíte specifikovat název světa
+    no-such-world: <red>Svět '<world>' nenalezen
+    map-not-enabled-for-world: <red>Mapa není aktivní pro svět '<world>'
+    confirmation-required: <red>Je potřeba potvrzení. Příjměte pomocí /<command>.
+    no-pending-commands: <red>Nemáte žádné příkazy pro potvrzení.
+  description:
+    help: Nápověda pro příkazy
+    resetmap: Resetuje mapu specifikovaného světa
+    confirm: Potvrdí příkaz
+    reload: Znovunačte plugin
+    full-render: Aktivuje plnou generaci světa
+    cancel-render: Zruší generování světa
+    pause-render: Zastaví všechny generace pro daný svět
+    radius-render: Započne generování oblasti
+    hide: Schová hráče z mapy
+    show: Zobrazí hráče na mapě
+  argument:
+    optional-world: Nastaví výchozí svět pro hráče, pokud není definován
+    optional-center: Výchozí je (<white>0<gray>,</gray> 0</white>), pokud není definováno
+    optional-player: Výchozí je hráč, konzole musí hráče specifikovat
+    help-query: Query Nápověda
+  hide:
+    already-hidden: <red><player> není vidět na mapě
+    hidden: <green><player> nyní není vidět na mapě
+  show:
+    not-hidden: <red><player> je vidět na mapě
+    shown: <green><player> nyní je vidět na mapě
+ui:
+  page-title: DCMC | Mapa - {world}
+  coordinates: XZ<br/>{x}, {z}
+  sidebar:
+    player-list: Hráči ({cur}/{max})
+    world-list: Světy
+  layers:
+    player-tracker: Hráči
+    world-spawn: Spawn
+    world-border: Hranice Světa
+log:
+  prefix: <dark_aqua>[<light_purple>Pl3xMap</light_purple>]</dark_aqua>
+  started-full-render: <dark_aqua>Aktivována generace pro svět <yellow><world>
+  started-radius-render: <dark_aqua>Aktivována generace oblasti pro svět <yellow><world>
+  scanning-region-files: <yellow>Skenuji soubory regionů... (toto může chvíli zabrat)
+  found-total-region-files: <green>Nalezeno <gray><total> <green>region souborů
+  finished-rendering: <dark_aqua>Dokončena generace světa <yellow><world>
+  cancelled-rendering: <dark_aqua>Generace světa <yellow><world> <dark_aqua>byla narušena
+  resumed-rendering: <dark_aqua>Generování mapy pro svět <yellow><world> <dark_aqua>bylo znovu spuštěno
+  scanning-region-progress: <gray>(</gray><yellow><percent></yellow><gray>)</gray>
+    <dark_aqua>Svět<gray>:</gray> <yellow><world></yellow> Chunks<gray>:</gray> <yellow><current_chunks></yellow><gray>/</gray><yellow><total_chunks></yellow>
+    Uběhlo<gray>:</gray> <yellow><elapsed></yellow> ETA<gray>:</gray> <yellow><eta></yellow>
+    Míra<gray>:</gray> <yellow><rate></yellow> cps
+  scanning-region-progress-with-regions: <gray>(</gray><yellow><percent></yellow><gray>)</gray>
+    <dark_aqua>Svět<gray>:</gray> <yellow><world></yellow> Regions<gray>:</gray>
+    <yellow><current_regions></yellow><gray>/</gray><yellow><total_regions></yellow>
+    Chunks<gray>:</gray> <yellow><current_chunks></yellow><gray>/</gray><yellow><total_chunks></yellow>
+    Uběhlo<gray>:</gray> <yellow><elapsed></yellow> ETA<gray>:</gray> <yellow><eta></yellow>
+    Míra<gray>:</gray> <yellow><rate></yellow> cps
+  internal-web-disabled: <green>Vnitřní webserver je deaktivován v config.yml
+  internal-web-started: <green>Vnitřní webserver spuštěný na <bind>:<port>
+  internal-web-stopped: <green>Vnitřní webserver vypnut
+  internal-web-start-error: Vnitřní webserver nebylo možné spustit
+  could-not-create-directory: Nebylo možné vytvořit složku! {path}
+  could-not-save-region: Nebylo možné uložit mapu pro region {x},{z}
+  internal-web-not-running: Nastala vnitřní chyba s vnitřním webserverem
