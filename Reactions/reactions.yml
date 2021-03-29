@@ -9,7 +9,7 @@ WORD_SHUFFLE:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 20.0
+  win-amount: 200.0
   message: '&7Rozluštěte &e{word} &7jako první a vyhrajte!'
 WORD_COPY:
   enabled: true
@@ -22,7 +22,7 @@ WORD_COPY:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 10.0
+  win-amount: 100.0
   message: '&7Napište &e{word} &7jako první a vyhrajte!'
 WORD_HIDE:
   enabled: true
@@ -35,7 +35,7 @@ WORD_HIDE:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 15.0
+  win-amount: 150.0
   message: '&e<hover:show_text:''{word}''>&ePřejeďte myškou&7, přes tuto zprávu, opište
     slovo a vyhrajte!'
 BLOCK_PLACE:
@@ -49,7 +49,7 @@ BLOCK_PLACE:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 15.0
+  win-amount: 150.0
   message: '&ePoložte &7náhodnou kostku a vyhrajte!'
 BLOCK_BREAK:
   enabled: true
@@ -62,7 +62,7 @@ BLOCK_BREAK:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 15.0
+  win-amount: 150.0
   message: '&eZničte &7náhodnou kostku a vyhrajte!'
 MOB_KILL:
   enabled: true
@@ -75,7 +75,7 @@ MOB_KILL:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 25.0
+  win-amount: 250.0
   message: '&eZabijte &7náhodnou příšeru a vyhrajte!'
 FISH_CATCH:
   enabled: true
@@ -88,7 +88,7 @@ FISH_CATCH:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 100.0
+  win-amount: 1000.0
   message: '&eChyťte &7rybu a vyhrajte!'
 MATH_SUMMATION:
   enabled: true
@@ -102,7 +102,7 @@ MATH_SUMMATION:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 20.0
+  win-amount: 200.0
   message: '&7Kolik je &e{word}&7?'
 MATH_SUBTRACTION:
   enabled: true
@@ -116,7 +116,7 @@ MATH_SUBTRACTION:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 20.0
+  win-amount: 200.0
   message: '&7Kolik je &e{word}&7?'
 MATH_MULTIPLICATION:
   enabled: true
@@ -130,7 +130,7 @@ MATH_MULTIPLICATION:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 20.0
+  win-amount: 200.0
   message: '&7Kolik je &e{word}&7?'
 JUMP:
   enabled: true
@@ -143,7 +143,7 @@ JUMP:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 10.0
+  win-amount: 100.0
   message: '&7První, kdo &evyskočí &7vyhrajte!'
 ARMOR_CHANGE:
   enabled: true
@@ -156,7 +156,7 @@ ARMOR_CHANGE:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 20.0
+  win-amount: 200.0
   message: '&7První, kdo si &evymění brnení &7vyhraje!'
 BED_ENTER:
   enabled: true
@@ -169,7 +169,7 @@ BED_ENTER:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 20.0
+  win-amount: 200.0
   message: '&7První, kdo si &elehne do postele &7vyhraje!'
 BUCKET_EMPTY:
   enabled: true
@@ -182,7 +182,7 @@ BUCKET_EMPTY:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 15.0
+  win-amount: 150.0
   message: '&eVylijte &7kbelík a vyhrajte!'
 BUCKET_FILL:
   enabled: true
@@ -195,7 +195,7 @@ BUCKET_FILL:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 15.0
+  win-amount: 150.0
   message: '&eNaplňte &7kbelík a vyhrajte!'
 PICKUP_ITEM:
   enabled: true
@@ -208,7 +208,7 @@ PICKUP_ITEM:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 15.0
+  win-amount: 150.0
   message: '&eZvědněte předmět &7a vyhrajte!'
 DROP_ITEM:
   enabled: true
@@ -221,7 +221,7 @@ DROP_ITEM:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 15.0
+  win-amount: 150.0
   message: '&eVyhoďte předmět &7a vyhrajte!'
 SNEAK:
   enabled: true
@@ -234,7 +234,7 @@ SNEAK:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 10.0
+  win-amount: 100.0
   message: '&eSkrčte se &7a vyhrajte!'
 QUIT:
   enabled: true
@@ -247,7 +247,7 @@ QUIT:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 17.0
+  win-amount: 170.0
   message: '&eOpusťte server &7a vyhrajte!'
 EAT:
   enabled: true
@@ -260,5 +260,5 @@ EAT:
     - ''
     - '&aServer top:'
     - '&7{topName} &7- &7{topAmount}'
-  win-amount: 20.0
+  win-amount: 200.0
   message: '&eSnězte jídlo &7a vyhrajte!'
