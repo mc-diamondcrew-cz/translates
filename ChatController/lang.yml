@@ -22,7 +22,7 @@ ADMIN_HELP: |2
   &e/achat <zpráva> &8» &7Odešle zprávu do admin chatu.
   &e/amsg <hráč/ka> <zpráva> &8» &7Odešle soukromou zprávu hráči.
   &e/bc <zpráva> &8» &7Odešle zprávu do chatu.
-ADMIN_CHAT_FORMAT: '&4&lAT &c{player} &4> &c{message}'
+ADMIN_CHAT_FORMAT: '&b(&3{$UNIQUE_NAME}&b) &f{player}: &3{message}'
 ADMIN_SPY: '&cMSG: &8{sender} : {receiver} > &7{message}'
 MSG_FAILURE_IGNORING: '&aChatController &8» &6{player} &7má vypnuté soukromé zprávy.'
 MSG_FAILURE_BLOCKED: '&aChatController &8» &6{player} &7Vás má zablokováného/ou.'
