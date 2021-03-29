@@ -14,7 +14,7 @@ general:
 object:
   bait:
     name: '%bait% &7(Návnada)'
-    lore: '&aPoužíj na rybářském prutu.'
+    lore: '&aPoužij na rybářském prutu.'
     baited: '&eNavnaděno: %bait% &e%uses%/%max%'
 # Interface Messages
 interface:
@@ -28,19 +28,19 @@ interface:
     cannotafford: '&6Nemáš &7dostatek financí.'
     buyfor: '&eZakoupit za &a%price%'
   leaderboard:
-    title: Leaderboard
-    weight: '&6&lRarity Weight:'
+    title: Žebříček
+    weight: '&6&lRarita:'
     name: '&7&l%place%: &6&l%name% &7(%score%)'
     item: '&7%type%: &6%amount%'
 # Event Messages
 event:
   general:
-    nopermission: '&6Nemáš &7dostatečné pravomoce.'
+    nopermission: '&6Nemáte &7dostatečné pravomoce.'
     critical: '&aKritický hod!'
   bait:
-    given: '&7Obdržel jsi &6%amount% %bait%&7.'
+    given: '&7Obdrželi jste &6%amount% %bait%&7.'
   sell:
-    success: '&7Úspěšně jsi prodal svůj úlovek za &6$%total%&7.'
+    success: '&7Úspěšně jste prodali svůj úlovek za &6$%total%&7.'
     fail: '&6Nebylo nalezeno &7nic na prodej...'
   catch:
-    broadcast: '&6%username% &7právě chytil &6%rarity% &7rybu!'
+    broadcast: '&6%username% &7právě chytil/a &7rybu! &6%rarity% '
