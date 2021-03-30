@@ -1607,7 +1607,7 @@ gui:
         material: GOLD_NUGGET
         from: 10
         to: 27
-      attack_monsters:
+      attack_monster:
         name: '&6Útočení Na Příšery'
         lore:
           - '&7Stav: {enabled}'
@@ -1615,7 +1615,7 @@ gui:
           - ' '
           - '&8- &7Pokud neaktivní, příšery'
           - '  &7je nebudou moci napadnout.'
-        material: BOW
+        material: ZOMBIE_HEAD
         from: 10
         to: 27
     a:

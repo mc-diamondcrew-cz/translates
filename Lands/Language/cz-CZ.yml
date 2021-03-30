@@ -56,11 +56,13 @@ general:
     online: '&aaktivní'
     offline: '&cneaktivní'
   top:
-    title: '&7-----<- &5Nejlepší Země &8(&7Celkem:&b {total}&8) &7->-----'
-    entry: '&c#{pos} &a{land} &7Finance:&e ${value}'
-    next-page: '&7Další strana: &8/&2Lands top {next}'
-    last-updated: '&7Poslední aktualizace: &7před {time}'
-    footer: '&7-----<- &5Nejlepší Země &8(&7Celkem:&b {total}&8) &7->-----'
+    entry:
+      balance: '&c#{pos} &a{land} &7Finance:&e ${value}'
+      chunks: '&c#{pos} &a{land} &7Území:&e ${value}'
+      members: '&c#{pos} &a{land} &7Obyvatelstvo:&e ${value}'
+    hologram:
+      title: '&7-----<- &5Nejlepší Země &8(&7Celkem:&b {total}&8) &7->-----'
+      footer: '&7-----<- &5Nejlepší Země &8(&7Celkem:&b {total}&8) &7->-----'
   integration:
     dynmap:
       land:
@@ -138,8 +140,8 @@ general:
     economy:
       upkeep:
         warning: '&8{0}: &cNebylo možné zaplatit náklady: ${1}'
-        unclaimed: '&8{0}: &cNebylo možné zaplatit náklady ${1}. Poslední zabrané
-          území (X: {2} Z: {3}) odebráno.'
+        unclaim: '&8{0}: &cNebylo možné zaplatit náklady ${1}. Posledních {2} zabraných
+          území odebráno.'
         paid: '&8{0}: &7Zaplaceny náklady: ${1}'
         nation: '&8{0}: &7Národ {1} nebyl schopný zapaltit náklady ve výši ${2} a byl odstraněn.'
       bank:
@@ -366,8 +368,6 @@ message:
           z Vašich úzmeí. &7Souboje v aréně můžou být pomocí povolení PvP v nastavení
           rolí.'
         wilderness: '&cNemůžete útočit na hráče v přírodě z vlastní země.'
-    ender_pearl: '&cYou''re not allowed to use this item to teleport into the area&6
-      {area} &7of land&4 {land}&c.'
   area:
     exists: '&cOblast s názvem&4 {area} &cjiž existuje v uzemí&4 {land}&c.'
     not-exist: '&cOblast&4 {area} &cneexistuje v zemi&4 {land}&c.'
@@ -813,6 +813,7 @@ command:
     land:
       success: '&7Úspěšně příjmuta pozvánka ze země &2{land}&7, nyní jste důvěryhodní.'
       broadcast: '&2{land} &8| &7Hráč/ka&3 {player} &7je nyní členem/kou Vaší země.'
+    war: '&cK této zemi se nemůžete připojit. &7Země&9 {land} &7je aktuálně ve válce. Jejich válka skončí za&5 {time}&7.'
   setowner:
     max-lands: '&cHráč/ka&4 {player} &cnemůže vlastnit více zemí. &7Již dosáhl/a maxima
       &3{max} &7vlastních zemí. &8Pravomoc: lands.ownlands.ČÍSLO'
@@ -937,6 +938,17 @@ command:
         &7Zůstatek: ${balance}
         &8Více informací: /Lands taxes
         &7---------<- &4Změna Daní &7->---------
+  top:
+    mode: '&cMód&4 {input} &cnení platný. &7Platné módy:
+      {modes}'
+    title: '[NoPrefix][T]&7-----------&6<<<<&7-[C]lands top {mode} {previous}[/C][H]&7Předchozí strana.[/H][/T] &5Nejelpší Země [T]&7-&6>>>>&7-----------[C]lands
+      top {mode} {next}[/C][H]&7Další strana.[/H][/T]'
+    footer: |
+      [NoPrefix]
+      &7Klikněte na šipky dole pro navigaci.
+      &7Sort by [T]&7Finance &8[KLIK],[H]&7Seřazení podle financí.[/H][C]lands top balance[/C][/T] [T]&7Území &8[KLIK],[H]&7Seřazení podle počtu území.[/H][C]lands top chunks[/C][/T] [T]&7Obyvatelstvo &8[KLIK][H]&7Seřazení podle počtu obyvatelstva.[/H][C]lands top members[/C][/T]
+      &7Celkem zemí: {total} &8| &7Poslední aktualizace: {time} &7ago.
+      [T]&7-----------&6<<<<&7-[C]lands top {mode} {previous}[/C][H]&7Předchozí strana.[/H][/T] &5Nejlepší Země [T]&7-&6>>>>&7-----------[C]lands top {mode} {next}[/C][H]&7Další Strana.[/H][/T]
 list:
   swear-words: []
 wars:
@@ -961,16 +973,27 @@ wars:
       surrender: '{object} &7kapitulovali. Válka skončila a zaplatili&c ${tribute}
         &7nepříteli {enemy}&7.'
       draw: '&7Válka mezi {attacker} &7a {defender} &7skončila remízou. Trvala&5 {time}&7.'
-      won: |
-        &aVálka je u konce:
-        &7Útočníci &8({team}&8) &7vyhráli.
+      won:
+        attackers: |
+          &aVálka je u konce:
+          &7Útočníci &8({team}&8) &7vyhráli.
 
-        &8- &7Statistiky
-            &7Útočníci (zabití):&3 {att-points}
-            &7Obránci (zabití):&3 {def-points}
+          &8- &7Statistiky
+          &7Útočníci (zabití):&3 {att-points}
+          &7Obránci (zabití):&3 {def-points}
 
-        &7Válka trvala:
-        &5~{time}
+          &7Válka trvala:
+          &5~{time}
+        defenders: |
+          &aVálka je u konce:
+          &7Obránci &8({team}&8) &7vyhráli.
+
+          &8- &7Statistiky
+          &7Útočníci (zabití):&3 {att-points}
+          &7Obránci (zabití):&3 {def-points}
+
+          &7Válka trvala:
+          &5~{time}
     war-shield:
       set: '&7Válečný štít {object} &7bude aktivní na&5 {time}&7.'
     kill:
@@ -1120,7 +1143,7 @@ nations:
       none: '&cVaše země&4 {land} &cnemá žádné pozvánky z národa&9 {nation}&c.
         &7Můžou pozvat Vaši zemi, pomocí &8/&3Nations trust&7.'
       already: '&cVaše země&4 {land} &cje již součástí národa&4 {nation}&c. &7Nejdříve jej musíte opustit, pomocí &8/&3Nations leave&7.'
-      success: '&7You successfully accepted the invite and joined nation&9 {nation}&7.'
+      broadcast: '&7Země&2 {land} &7je nyní součásti národa&9 {nation}&7.'
     deny:
       success: '&7Úspěšně jste odmítli pozvánku národa&9 {nation}&7.'
     untrust:
