@@ -1,0 +1,75 @@
+prefix: ''
+iteminfo: '&aObchod &8» &7Informace o předmětu: &r'
+iteminfo_fullname: '&fNázev předmětu: &7%item'
+iteminfo_shopname: '&fCedulka: &7%item'
+iteminfo_repaircost: '&fCena opravy: &7%cost'
+iteminfo_book: |-
+  &fNázev knihy: &7%title
+  &fAutor knihy: &7%author
+  &fStrany knihy: &7%pages
+iteminfo_book_generation: '&fGenerace knihy: &7%generation'
+iteminfo_lore: |-
+  &fPopis:
+  &r%lore
+METRICS: |-
+  &a[Obchod] &fStatistiky:
+  &fÚčty: &7%accounts
+  &fBěžné transakce: &7%totalTransactions &f(nákup: &7%buyTransactions &fprodej: &7%sellTransactions&f)
+  &fBěžně obchodované předměty: &7%totalItems &f(nakoupeno: &7%boughtItems &fprodáno: &7%soldItems&f)
+ACCESS_DENIED: '&aObchod &8» &7Nemáte dostatečné pravomoce pro zobrazení tohoto skladu!'
+TRADE_DENIED: '&aObchod &8» &7Nemáte dostatečné pravomoce pro použití tohoto obchodu!'
+NOT_ENOUGH_MONEY: '&aObchod &8» &7Nemáte dostatek financí!'
+NOT_ENOUGH_MONEY_SHOP: '&aObchod &8» &7Vlastník obchodu nemá dostatek financí!'
+CLIENT_DEPOSIT_FAILED: '&aObchod &8» &7Vklad financí na Váš účet selhal!'
+SHOP_DEPOSIT_FAILED: '&aObchod &8» &7Vklad financí na účet vlastníka selhal!'
+NO_ECONOMY_ACCOUNT: '&aObchod &8» &7Účet vlastníka neexistuje!'
+NO_BUYING_HERE: '&aObchod &8» &7Zde nemůžete nakupovat!'
+NO_SELLING_HERE: '&aObchod &8» &7Zde nemůžete prodávat!'
+NOT_ENOUGH_SPACE_IN_INVENTORY: '&aObchod &8» &7Nemáte dostatek místa v inventáři!'
+NOT_ENOUGH_SPACE_IN_CHEST: '&aObchod &8» &7V truhle není dostatek místa!'
+NOT_ENOUGH_ITEMS_TO_SELL: '&aObchod &8» &7Nemáte dostatek předmětů pro prodej!'
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [%price %item&7 obchod je plný!](&f%seller&7 se pokusil/a prodávat
+  &7Svět: &f%world
+  &7Pozice: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: '&aObchod &8» &7Tento obchod je vyprodaný.'
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [%price %item&7 je vyprodaný!](&f%buyer&7 se pokusil/a nakupovat
+  &7Svět: &f%world
+  &Pozice: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: '&aObchod &8» &7Zakoupil jste %item od %owner za %price.'
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [%buyer zakoupil/a %item za %price.](&7Svět: &f%world
+  &7Pozice: &f%x/%y/%z)
+YOU_SOLD_TO_SHOP: '&aObchod &8» &7Prodali jste %item hráči/ce %buyer 'za %price.'
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [%seller prodal/a %item za %price.](&7Svět: &f%world
+  &7Pozice: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: '&aObchod &8» &7Nemůžete vytvořit tento typ obchodu!'
+NO_CHEST_DETECTED: '&aObchod &8» &7Nebylo možné nalézt truhlu!'
+INVALID_SHOP_DETECTED: '&aObchod &8» &7Obchod nemůže být použit!'
+INVALID_SHOP_PRICE: '&aObchod &8» &7Obchod má neplatnou cenu!'
+INVALID_SHOP_QUANTITY: '&aObchod &8» &7Obchod má neplatné množství!'
+CANNOT_ACCESS_THE_CHEST: '&aObchod &8» &7Nemáte dostatek pravomocí pro přístup do této truhly!'
+SELL_PRICE_ABOVE_MAX: '&aObchod &8» &7Prodejní cena je příliš vysoká!'
+SELL_PRICE_BELOW_MIN: '&aObchod &8» &7Prodejní cena je příliš nízka!'
+BUY_PRICE_ABOVE_MAX: '&aObchod &8» &7Nákupní cena je příliš vysoká!'
+BUY_PRICE_BELOW_MIN: '&aObchod &8» &7Prodejní cena je příliš nízka!'
+CLICK_TO_AUTOFILL_ITEM: '&aObchod &8» &7Klikněte na ceduli tohoto obchodu.'
+NO_ITEM_IN_HAND: '&aObchod &8» &7Nemáte předmět v ruce!'
+PROTECTED_SHOP: '&aObchod &8» &7Úspěšně ochráněn obchod pomocí LWC!'
+PROTECTED_SHOP_SIGN: '&aObchod &8» &7Úspěšně ochráněna cedule pomocí LWC!'
+SHOP_CREATED: '&aObchod &8» &7Obchod úspěšně vyvořen.'
+SHOP_FEE_PAID: '&aObchod &8» &7Bylo Vám naúčtováno %amount.'
+SHOP_REFUNDED: '&aObchod &8» &7Bylo Vám navráceno %amount.'
+ITEM_GIVEN: '&aObchod &8» &7Dali jste %item hráči/'ce %player.'
+RESTRICTED_SIGN_CREATED: '&aObchod &8» &7Cedule vytvořena.'
+PLAYER_NOT_FOUND: '&aObchod &8» &7Cíl nenalezen.'
+NO_PERMISSION: '&aObchod &8» &7Na tuto akci nemáte dostatečné pravomoce.'
+INCORRECT_ITEM_ID: '&aObchod &8» &7Neplatné ID předmětu.'
+NOT_ENOUGH_PROTECTIONS: '&aObchod &8» &7Nebylo možné vyvořit ochranu.'
+CANNOT_CREATE_SHOP_HERE: '&aObchod &8» &7Zde nemůžete vytvořit obchod.'
+TOGGLE_MESSAGES_OFF: '&aObchod &8» &7Již nebudete dostávat zprávy z Vašeho obchodu.'
+TOGGLE_MESSAGES_ON: '&aObchod &8» &7Nyní budete dostávat zprávy z Vašeho obchodu.'
+TOGGLE_ACCESS_ON: '&aObchod &8» &7Již nadále nemůžete obchodovat ve Vašich obchodech.'
+TOGGLE_ACCESS_OFF: '&aObchod &8» &7Nyní můžete obchodovat ve Vašich obchodech.'
