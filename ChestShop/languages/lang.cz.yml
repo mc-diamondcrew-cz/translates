@@ -1,4 +1,4 @@
-prefix: ''
+prefix: '&r'
 iteminfo: '&aObchod &8» &7Informace o předmětu: &r'
 iteminfo_fullname: '&fNázev předmětu: &7%item'
 iteminfo_shopname: '&fCedulka: &7%item'
@@ -41,7 +41,7 @@ YOU_BOUGHT_FROM_SHOP: '&aObchod &8» &7Zakoupil jste %item od %owner za %price.'
 SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
   [%buyer zakoupil/a %item za %price.](&7Svět: &f%world
   &7Pozice: &f%x/%y/%z)
-YOU_SOLD_TO_SHOP: '&aObchod &8» &7Prodali jste %item hráči/ce %buyer 'za %price.'
+YOU_SOLD_TO_SHOP: '&aObchod &8» &7Prodali jste %item hráči/ce %buyer za %price.'
 SOMEBODY_SOLD_TO_YOUR_SHOP: |-
   [%seller prodal/a %item za %price.](&7Svět: &f%world
   &7Pozice: &f%x/%y/%z)
@@ -62,7 +62,7 @@ PROTECTED_SHOP_SIGN: '&aObchod &8» &7Úspěšně ochráněna cedule pomocí LWC
 SHOP_CREATED: '&aObchod &8» &7Obchod úspěšně vyvořen.'
 SHOP_FEE_PAID: '&aObchod &8» &7Bylo Vám naúčtováno %amount.'
 SHOP_REFUNDED: '&aObchod &8» &7Bylo Vám navráceno %amount.'
-ITEM_GIVEN: '&aObchod &8» &7Dali jste %item hráči/'ce %player.'
+ITEM_GIVEN: '&aObchod &8» &7Dali jste %item hráči/ce %player.'
 RESTRICTED_SIGN_CREATED: '&aObchod &8» &7Cedule vytvořena.'
 PLAYER_NOT_FOUND: '&aObchod &8» &7Cíl nenalezen.'
 NO_PERMISSION: '&aObchod &8» &7Na tuto akci nemáte dostatečné pravomoce.'
