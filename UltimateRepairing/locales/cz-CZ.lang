@@ -6,33 +6,38 @@ general:
   hologram:
     click: '&6Levé-Kliknutí &7pro'
     swapclick: '&6Pravé-Kliknutí &7pro'
-    oneclick: '&6Klikni &7pro'
+    oneclick: '&6Klikněte &7pro'
     torepair: '&6opravení&7 předmětu!'
+
+# Interface Messages
+
 interface:
   repair:
-
-    # Interface Messages
-    title: '&7Jak chceš předmět &6opravit&7?'
+    title: '&7Jak chcete předmět &6opravit&7?'
+    xpTitle: '&eXP'
     xp: '&eXP'
-    xplore: '&aKlikni pro opravení pomocí XP'
+    xplore: '&aKlikněte pro opravení pomocí XP'
+    ecoTitle: '&ePeníze'
     eco: '&ePeníze'
-    ecolore: '&aKlikni pro opravení pomocí financí'
+    ecolore: '&aKlikněte pro opravení pomocí financí'
+    itemTitle: '&ePředmět'
     item: '&e%ITEM%'
-    itemlore: '&aKlikni pro opravení pomocí %item%.'
+    itemlore: '&aKlikněte pro opravení pomocí %item%.'
+    swap: '&7Klikněte pro změnu typu opravování.'
   yesno:
     title: '&eOpravit za &6%cost%&e?'
     'yes': '&a&lAno'
     'no': '&c&lNe'
+
+# Event Messages
+
 event:
   general:
-
-    # Event Messages
-    nopermission: '&cNemáš dostatečné pravomoce!'
+    nopermission: '&cNemáte dostatečné pravomoce!'
   repair:
     timeout: '&6Čas &7na opravení &6vypršel&7...'
-    notdamaged: '&7Tento &6předmět není &7poškozený.'
     needspace: '&7Nad kovadlinou musí být &6volný prostor&7!'
-    cantrepair: '&7Tento předmět &6nelze &7opravit!'
-    notenough: '&6Nemáš &7dostatek &6%type% &7pro opravu tohoto předmětu!'
-    success: '&7Tvůj předmět byl &6úspěšně opraven&7!'
+    notenough: '&6Nemáte &7dostatek &6%type% &7pro opravu tohoto předmětu!'
+    success: '&7Váš předmět byl &6úspěšně opraven&7!'
     cancelled: '&7Opravování &6zrušeno&7.'
+    notfound: '&7Předmět nebylo možné nalézt.'
