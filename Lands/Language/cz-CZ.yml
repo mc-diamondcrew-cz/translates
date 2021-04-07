@@ -39,7 +39,7 @@ general:
   land:
     title:
       land: '&7Vlastněno&3 %owner%&7.'
-      safezone: '&7Nyní jste v bezpečí.'
+      admin: '&7Toto území patří serveru.'
     default-area: Výchozí
   area:
     description:
@@ -57,12 +57,12 @@ general:
     offline: '&cneaktivní'
   top:
     entry:
-      balance: '&c#{pos} &a{land} &7Finance:&e ${value}'
-      chunks: '&c#{pos} &a{land} &7Území:&e ${value}'
-      members: '&c#{pos} &a{land} &7Obyvatelstvo:&e ${value}'
+      balance: '&c#{pos} &a{land} &7Balance:&e ${value}'
+      chunks: '&c#{pos} &a{land} &7Chunks:&e {value}'
+      members: '&c#{pos} &a{land} &7Members:&e {value}'
     hologram:
-      title: '&7-----<- &5Nejlepší Země &8(&7Celkem:&b {total}&8) &7->-----'
-      footer: '&7-----<- &5Nejlepší Země &8(&7Celkem:&b {total}&8) &7->-----'
+      title: '&7-----------&6<<<<&7- &5Top 10 Lands &8(&7Total: {total}&8) &7-&6>>>>&7-----------'
+      footer: '&7-----------&6<<<<&7- &5Top 10 Lands &8(&7Total: {total}&8) &7-&6>>>>&7-----------'
   integration:
     dynmap:
       land:
@@ -140,10 +140,11 @@ general:
     economy:
       upkeep:
         warning: '&8{0}: &cNebylo možné zaplatit náklady: ${1}'
-        unclaim: '&8{0}: &cNebylo možné zaplatit náklady ${1}. Posledních {2} zabraných
-          území odebráno.'
         paid: '&8{0}: &7Zaplaceny náklady: ${1}'
-        nation: '&8{0}: &7Národ {1} nebyl schopný zapaltit náklady ve výši ${2} a byl odstraněn.'
+        nation: '&8{0}: &7Národ {1} nebyl schopný zapaltit náklady ve výši ${2} a
+          byl odstraněn.'
+        unclaim: '&8{0}: &cCouldn''t pay the complete upkeep cost of ${1}. The last
+          {2} claimed chunk(s) were unclaimed.'
       bank:
         withdraw: '&8{0}: &cHráč/ka {1} vybral/a ${2} -> zůstatek = ${3}'
         deposit: '&8{0}: &7Hráč/ka {1} vložil/a ${2} -> zůstatek = ${3}'
@@ -179,7 +180,8 @@ general:
         taxes:
           warning: '&8{0}: &cZemě {1} nemohla zaplatit daně.'
           untrusted: '&8{0}: &cZemě {1} nemohla zaplatit daně. Byla odstraněna.'
-          received: '&8{0}: &7Obdrženo celkem ${1} z daní, od všech zemí -> zůstatek = ${2}'
+          received: '&8{0}: &7Obdrženo celkem ${1} z daní, od všech zemí -> zůstatek
+            = ${2}'
   wars:
     object:
       enemy: '&cNepřítel'
@@ -289,33 +291,40 @@ help:
       deny: '[T]&8/&3Wars deny &8- &7Odmítne vyhlášení války.[H]&7Klikněte pro zkopírování.[/H][SC]wars
         deny[/SC][/T]'
     nations:
-      trust: '[T]&8/&3Nations trust &8<&3země&8> - &7Pozvání země[H]&7Klikněte pro zkopírování.[/H][SC]nations
-        trust[/SC][/T]'
-      untrust: '[T]&8/&3Nations untrust &8<&3země&8> - &7Odstranění země[H]&7Klikněte pro zkopírování.[/H][SC]nations untrust[/SC][/T]'
-      accept: '[T]&8/&3Nations accept &8<&3národ&8> - &7Potvrzení pozvánky[H]&7Klikněte pro zkopírování.[/H][SC]nations accept[/SC][/T]'
-      deny: '[T]&8/&3Nations deny &8<&3národ&8> - &7Odmítnutí pozvánky[H]&7Klikněte pro zkopírování.[/H][SC]nations
-        deny[/SC][/T]'
-      menu: '[T]&8/&3Nations menu &8- &7Menu[H]&7Klikněte pro zkopírování.[/H][SC]nations menu[/SC][/T]'
-      create: '[T]&8/&3Nations create &8[&3název&8] - &7Vytvoření národu[H]&7Klikněte pro zkopírování.[/H][SC]nations create[/SC][/T]'
-      delete: '[T]&8/&3Nations delete &8<&3národ&8> &8- &7Odstranění národu[H]&7Klikněte pro zkopírování.[/H][SC]nations delete[/SC][/T]'
+      trust: '[T]&8/&3Nations trust &8<&3země&8> - &7Pozvání země[H]&7Klikněte pro
+        zkopírování.[/H][SC]nations trust[/SC][/T]'
+      untrust: '[T]&8/&3Nations untrust &8<&3země&8> - &7Odstranění země[H]&7Klikněte
+        pro zkopírování.[/H][SC]nations untrust[/SC][/T]'
+      accept: '[T]&8/&3Nations accept &8<&3národ&8> - &7Potvrzení pozvánky[H]&7Klikněte
+        pro zkopírování.[/H][SC]nations accept[/SC][/T]'
+      deny: '[T]&8/&3Nations deny &8<&3národ&8> - &7Odmítnutí pozvánky[H]&7Klikněte
+        pro zkopírování.[/H][SC]nations deny[/SC][/T]'
+      menu: '[T]&8/&3Nations menu &8- &7Menu[H]&7Klikněte pro zkopírování.[/H][SC]nations
+        menu[/SC][/T]'
+      create: '[T]&8/&3Nations create &8[&3název&8] - &7Vytvoření národu[H]&7Klikněte
+        pro zkopírování.[/H][SC]nations create[/SC][/T]'
+      delete: '[T]&8/&3Nations delete &8<&3národ&8> &8- &7Odstranění národu[H]&7Klikněte
+        pro zkopírování.[/H][SC]nations delete[/SC][/T]'
       leave: '[T]&8/&3Nations leave &8- &7Opuštění národu[H]&7Klikněte pro zkopírování.[/H][SC]nations
         leave[/SC][/T]'
       spawn: '[T]&8/&3Nations spawn &8- &7Spawn hlavního města[H]&7Klikněte pro zkopírování.[/H][SC]nations
         spawn[/SC][/T]'
       rename: '[T]&8/&3Nations rename &8- &7Přejmenování národu[H]&7Klikněte pro zkopírování.[/H][SC]nations
         rename[/SC][/T]'
-      setcapital: '[T]&8/&3Nations setcapital &8- &7Nastavení hlavního městal[H]&7Klikněte pro zkopírování.[/H][SC]nations
-        setcapital[/SC][/T]'
+      setcapital: '[T]&8/&3Nations setcapital &8- &7Nastavení hlavního městal[H]&7Klikněte
+        pro zkopírování.[/H][SC]nations setcapital[/SC][/T]'
     admin:
-      admin: '[T]&8/&3Lands admin &8<&3pod-příkaz&8> &8- &7Admin příkazy[H]&7Klikněte pro zkopírování.[/H][SC]lands admin[/SC][/T]'
-      debug: '[T]&8/&3Lands debug &8- &7Statistiky načtených dat[H]&7Klikněte pro zkopírování.[/H][SC]lands
-        debug[/SC][/T]'
-      safezone: '[T]&8/&3Lands safezone &8- &7Nastavení bezpečné zóny[H]&7Klikněte pro zkopírování.[/H][SC]lands
-        safezone[/SC][/T]'
-      reload: '[T]&8/&3Lands reload &8- &7Znovunačtení nastavení a zpráv[H]&7Klikněte pro zkopírování.[/H][SC]lands reload[/SC][/T]'
-      about: '[T]&8/&3Lands about &8- &7Informace o pluginu[H]&7Klikněte pro zkopírování.[/H][SC]lands about[/SC][/T]'
+      admin: '[T]&8/&3Lands admin &8<&3pod-příkaz&8> &8- &7Admin příkazy[H]&7Klikněte
+        pro zkopírování.[/H][SC]lands admin[/SC][/T]'
+      debug: '[T]&8/&3Lands debug &8- &7Statistiky načtených dat[H]&7Klikněte pro
+        zkopírování.[/H][SC]lands debug[/SC][/T]'
+      reload: '[T]&8/&3Lands reload &8- &7Znovunačtení nastavení a zpráv[H]&7Klikněte
+        pro zkopírování.[/H][SC]lands reload[/SC][/T]'
+      about: '[T]&8/&3Lands about &8- &7Informace o pluginu[H]&7Klikněte pro zkopírování.[/H][SC]lands
+        about[/SC][/T]'
     mod:
-      chatspy: '[T]&8/&3Lands chatspy &8[&3země&8] - &7Poslouchání chatu Země[H]&7Klikněte pro zkopírování.[/H][SC]lands chatspy[/SC][/T]'
+      chatspy: '[T]&8/&3Lands chatspy &8[&3země&8] - &7Poslouchání chatu Země[H]&7Klikněte
+        pro zkopírování.[/H][SC]lands chatspy[/SC][/T]'
 message:
   world-not-exist: '&cSvět s názvem&4 {world} &cneexistuje. &7Překlep?'
   world-invalid: '&cTato funkce je v tomto světě vypnuta. &7Požádejte administrátora
@@ -325,49 +334,23 @@ message:
   current-war: '&cTato funkce je nedostupná. &7Vaše země&2 {land} &7je ve válce. &7Zkuste
     to prosím po konfliktu.'
   noaccess:
-    chunk: '&cNemůžete použít tuto funkci na tomto území &8(&7Země:&2 {land} &7X:
-      {x} &7Z: {z}&8)&c. &8Pravomoc: {bypass}'
     area: '&cNemůžete použít tuto funkci v této oblasti &8(&7Oblast:&6 {area} &7Země:&2
       {land} &7X: {x} &7Z: {z}&8)&c. &8Pravomoc: {bypass}'
     land: '&cNemůžete použít tuto funkci v této zemi &8(&7Země:&2 {land}&8)&c. &7Můžete
       si vytvořit vlastní zemi, pomocí &8/&3Lands create &8<&3název&8>&7.'
-    position: '&cNemůžete použít tuto funkci v území&4 {land} &cna aktuální pozici.
-      &8Pravomoc: {bypass}'
     land-not-owner: '&cNemůžete použít tuto funkci v tomto území&4 {land}&c. &7Vyberte
       si vlastní území &8(/&3Lands edit &8<&3země&8>)&7, nebo vytvořte &8(/&3Lands
       create &8<&3název&8>)&7. &8Pravomoc: lands.admin.land_edit'
     claim: '&cZde nemůžete zabírat území. &7Toto území patří jinému pluginu. Název:
       {plugin}'
-    place: '&cNemůžete zde pokládat kostky. &7Tato oblast patří zemi&2 {land}&7.'
-    break: '&cNemůžete zde ničit kostky. &7Tato oblast patří zemi&2 {land}&7.'
-    ignite: '&cNemůžete zde zapalovat kostky. &7Tato oblast patří zemi&2 {land}&7.'
-    enter: '&cNemůžete vejít do oblasti&4 {area} &czemě&4 {land}&c. &7Byli jste teleportování
-      na předchozí lokaci.'
-    vehicle: '&cNemůžete zde používat vozidla. &7Tato oblast patří zemi&2 {land}&7.'
-    fly: '&cNemůžete zde létat. &7Tato oblast patří zemi&2 {land}&7. &8Pravomoc: {bypass}'
-    edit: '&cNemůžete zde upravovat. &7Toto území patří&2 {land}&7.'
     banned: '&cNemůžete zde vejít. &7Jste zablokování v této oblasti &8(&7Oblast:&6
       {area} &7Země:&2 {land}&8)&7. &8Pravomoc: {bypass}'
-    ender_pearl: '&cNemůžete použít tento předmět pro teleportaci do oblasti&6
-      {area} &7země&4 {land}&c.'
-    spawn: '&cNemůžete se teleportovat na spawn země&4 {land}&c. &7Můžou upravit své nastavení rolí, pokud tuto funkci chtějí.'
-    interact:
-      general: '&cNemůžete zde interagovat. &7Tato oblast patří zemi&2 {land}&7.'
-      door: '&cNemůžete zde otevírat dveře. &7Tato oblast patří zemi&2 {land}&7.'
-      mechanism: '&cNemůžete zde používat mechanismy. &7Tato oblast patří zemi&2 {land}&7.'
-      container: '&cNemůžete zde otevírat truhly. &7Tato oblast patří zemi&2 {land}&7.'
-      villager: '&cNemůžete zde obchodovat. &7Tato oblast patří zemi&2 {land}&7.'
     combat:
-      animal: '&cNemůžete zde útočit do zvířat. &7Tato oblast patří zemi&2 {land}&7.'
-      monster: '&cZde nemůžete útočit na příšery. &7Tato oblast patří zemi&2 {land}&7. Také nemůžou útočit ony na Vás.'
-      pvp:
-        attacker: '&cNemůžete zde útočit na hráče/ky. &7Tato oblast patří zemi&2 {land}&7.'
-        target: '&cVáš cíl zde nemůže útočit na hráče/ky. &7Nemůžete s nimi soupeřit.
-          &7Tato oblast patří zemi&2 {land}&7.'
-        ally: '&cNemůžete zaútočit na hráče/ky v přírodě, protože je součástí jednozo
-          z Vašich úzmeí. &7Souboje v aréně můžou být pomocí povolení PvP v nastavení
-          rolí.'
-        wilderness: '&cNemůžete útočit na hráče v přírodě z vlastní země.'
+      attacker: '&cNemůžete zde útočit na hráče/ky. &7Tato oblast patří zemi&2 {land}&7.'
+      target: '&cVáš cíl zde nemůže útočit na hráče/ky. &7Nemůžete s nimi soupeřit. &7Tato oblast patří zemi&2 {land}&7.'
+      ally: '&cNemůžete zaútočit na hráče/ky v přírodě, protože je součástí jednoho z Vašich území. &7Souboje v aréně můžou být pomocí povolení PvP v nastavení rolí.'
+      wilderness: '&cNemůžete útočit na hráče v přírodě z vlastní země.'
+    wilderness: '&cNa tuto akci nemáte v přírodě oprávnění. &8Vlajka: {flag}'
   area:
     exists: '&cOblast s názvem&4 {area} &cjiž existuje v uzemí&4 {land}&c.'
     not-exist: '&cOblast&4 {area} &cneexistuje v zemi&4 {land}&c.'
@@ -378,11 +361,11 @@ message:
       disabled: '&cVaše létání bylo deaktivováno. &7Zde nemáte oprávnění na létání.'
     enter:
       land: '#t#&2&l{land}[newline]&3{title}'
-      safezone: '#t#&2&l{land}[newline]{title}'
       pvp-warning: '#a#&cVstoupili jste do PvP zóny.'
+      admin: '#t#&2&l{land}[newline]{title}'
     leave:
       land: '#t#&2&lPříroda[newline]&7Pociťte divočinu'
-      safezone: '#t#&2&lPříroda[newline]&7Pociťte divočinu'
+      admin: '#t#&2&lPříroda[newline]&7Pociťte divočinu'
   teleportation:
     already: '&cNemůžete započít další teleportaci. Teleportace již probíhá. &7Počkejte
       prosím.'
@@ -450,6 +433,26 @@ message:
         &7Zvolte prosím jiný název.'
       max: '&cNemůžete vytvořit více oblastí pro tuto zemi. &7Již jste dovršili limitu&3
         {max} &7oblastí. Pravomoc: lands.areas.ČÍSLO'
+  flags:
+    block_place: '&cZde nemůžete pokládat kostky. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    block_break: '&cZde nemůžete ničit kostky. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    block_ignite: '&cZde nemůžete zapalovat. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    interact_general: '&cZde nemůžete interagovat. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    interact_door: '&cZde nemůžete otevírat dveře. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    interact_mechanism: '&cZde nemůžete používat mechanismy. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    interact_container: '&cZde nemůžete otevírat truhly. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    interact_villager: '&cZde nemůžete obchodovat s vesničany. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    fly: '&cZde nemůžete létat. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    spawn_teleport: '&cNemůžete se teleportovat na spawn země.&4 {land}&c.
+      &7Můžou upravit své nastavní, aby tato funkce fungovala. &8Vlajka: {flag}'
+    land_enter: '&cNemůžete vstoupit do oblasti&4 {area} &czemě&4 {land}&c
+      (&cOblast:&4 {area} &cZemě:&4 {land}&c). &7Byli jste teleportování na poslední lokaci. &8Vlajka: {flag}'
+    vehicle_use: '&cZde nemůžete používat vozidla. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    item_pickup: '&cZde nemůžete zvedat předměty. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    ender_pearl: '&cNemůžete používat předměty pro teleportaci do oblasti&6
+      {area} &7země&4 {land}&c. &8Vlajka: {flag}'
+    attack_animal: '&cZde nemůžete útočit na zvířata (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    attack_monster: '&cZde nemůžete útočit na příšery (&cOblast:&4 {area} &cZemě:&4 {land}&c). &7Toto funguje i pro příšery, nemůžou na Vás útočit. &8Vlajka: {flag}'
 command:
   rent:
     edit: '&cAktuálně nemůžete upravit oblast&4 {area} &czemě&4 {land}&7, protože
@@ -656,8 +659,6 @@ command:
       conflicts: '&cNalezeno&4 {conflicts} &ckonflikt/ů s již přiřazenými oblastmi.
         &7Použijte &8/&3Lands selection assgin {area} confirm &7pro potvrzení přepsání.
         Konflikty náleží oblasti: {areas}'
-      assigned: '&7Úspěšně jste přiřadili&3 {chunks} &7území oblasti&6 {area} &8(&7Země:&2
-        {land}&8)&7.'
     expand:
       enabled: '&7Úspěšně zvětšena selekce z nejnižšího bodu po nejvyšší. (všechny
         úrovně osy Y)'
@@ -813,7 +814,9 @@ command:
     land:
       success: '&7Úspěšně příjmuta pozvánka ze země &2{land}&7, nyní jste důvěryhodní.'
       broadcast: '&2{land} &8| &7Hráč/ka&3 {player} &7je nyní členem/kou Vaší země.'
-    war: '&cK této zemi se nemůžete připojit. &7Země&9 {land} &7je aktuálně ve válce. Jejich válka skončí za&5 {time}&7.'
+    war: '&cK této zemi se nemůžete připojit. &7Země&9 {land} &7je aktuálně ve válce.
+      Jejich válka skončí za&5 {time}&7.'
+    max-members: '&cNemůžete se připojit k zemi&4 {land}&c. &7dosáhli maxima&3 {members} &7obyvatel.'
   setowner:
     max-lands: '&cHráč/ka&4 {player} &cnemůže vlastnit více zemí. &7Již dosáhl/a maxima
       &3{max} &7vlastních zemí. &8Pravomoc: lands.ownlands.ČÍSLO'
@@ -852,6 +855,8 @@ command:
     searching: '#t#&6Hledání Destinace[newline]&eTeleportace za chvíli započne..'
     success: '&7Byli jste náhodně teleportování &8(&7X: {x} Z: {z}&8)&7. Zaplatili
       jste&c ${cost}&7.'
+    perm: '&cNemůžete použít náhodnou teleportaci ve světě&4 {world}&c.
+      &8Potřebujete pravomoc {perm} pro tento svět.'
   deposit:
     number: '&7Musíte specifikovat množství financí. Použijte &8/&3Lands deposit &8<&3množství&8>
       &7, nebo &8/&3Lands deposit &8<&3země&8> <&3množství&8>&7.'
@@ -939,10 +944,10 @@ command:
         &8Více informací: /Lands taxes
         &7---------<- &4Změna Daní &7->---------
   top:
-    mode: '&cMód&4 {input} &cnení platný. &7Platné módy:
-      {modes}'
-    title: '[NoPrefix][T]&7-----------&6<<<<&7-[C]lands top {mode} {previous}[/C][H]&7Předchozí strana.[/H][/T] &5Nejelpší Země [T]&7-&6>>>>&7-----------[C]lands
-      top {mode} {next}[/C][H]&7Další strana.[/H][/T]'
+    mode: '&cMód&4 {input} &cnení platný. &7Platné módy: {modes}'
+    title: '[NoPrefix][T]&7-----------&6<<<<&7-[C]lands top {mode} {previous}[/C][H]&7Předchozí
+      strana.[/H][/T] &5Nejelpší Země [T]&7-&6>>>>&7-----------[C]lands top {mode}
+      {next}[/C][H]&7Další strana.[/H][/T]'
     footer: |
       [NoPrefix]
       &7Klikněte na šipky dole pro navigaci.
@@ -954,10 +959,11 @@ list:
 wars:
   message:
     noaccess:
-      general: '&cNemáte povolení na tuto akci v zemi&4 {land}&c. &7Aktuálně
-        jste s nimi ve válce.'
+      general: '&cNemáte povolení na tuto akci v zemi&4 {land}&c. &7Aktuálně jste
+        s nimi ve válce.'
       pillage: '&cNemůžete útočit na zemi, pokud nejsou žádní obránci na serveru.
         &7Počkejte prosím, až bude alespoň&3 {defenders} &7obránců na serveru.'
+      wilderness: '&cNa tuto akci v přírodě nemáte pravomoce, protože jste ve válce. &8Vlajka: {flag} &8Pravomoc: {bypass}'
     start:
       broadcast: '&7Válka mezi {attacker} &7a {defender} &7započala. Skončí za&5 {time}&7.'
       participants: |
@@ -1107,7 +1113,8 @@ wars:
             &cžádost o válku.
 nations:
   message:
-    current-war: '&cTuto akci nyní nemůžete provést. &7Váš národ&9 {nation} &7je aktuálně zapojen ve válce. &7Zkuste to prosím znovu, jakmile bude válka u konce.'
+    current-war: '&cTuto akci nyní nemůžete provést. &7Váš národ&9 {nation} &7je aktuálně
+      zapojen ve válce. &7Zkuste to prosím znovu, jakmile bude válka u konce.'
   command:
     general:
       not-exist: '&cNárod&9 {nation} &cneexistuje. &7Národ s tímto názvem neexistuje.'
@@ -1116,21 +1123,22 @@ nations:
 
           &7Jakýkoli národ Vás může pozvat, pomocí: &8/&3Nations trust
           [T]&7Vytvořte si vlastní národ, pomocí: &8/&3Nations create[H]&7Klikněte pro zkopírování.[/H][SC]nations create[/SC][/T]
-      noaccess: '&cNemáte povolení na tuto akci v národu&4 {nation}&c. &8Vlajka:
-        {flag} &8Pravomoc: {bypass}'
+      noaccess: '&cNemáte povolení na tuto akci v národu&4 {nation}&c. &8Vlajka: {flag}
+        &8Pravomoc: {bypass}'
+      not-trusted: '&cNárod&4 {land} &cnení součástí Vašeho národa&4 {nation}&c.'
     create:
-      already: '&cVaše země&4 {land} &cje již součástí národa&4 {nation}&c.
-        &7Nejdříve musíte opustit národ, pomocí &8/&3Nations leave&7.'
-      war: '&cNemůžete utvořít národ se zemí&4 {land} &cjako hlavní město,
-        aktuálně jsou ve válce s&4 {object}&c. &7Zkuste to prosím znovu, až bude válka u konce.'
-      success: '&7Úspěšně jste vytvořili národ&9 {nation} &7se zemí&2
-        {land} &7jako hlavní město. [T]&7Klikněte pro otevření menu.[H]&7Otevřít menu.[/H][C]nations
+      already: '&cVaše země&4 {land} &cje již součástí národa&4 {nation}&c. &7Nejdříve
+        musíte opustit národ, pomocí &8/&3Nations leave&7.'
+      war: '&cNemůžete utvořít národ se zemí&4 {land} &cjako hlavní město, aktuálně
+        jsou ve válce s&4 {object}&c. &7Zkuste to prosím znovu, až bude válka u konce.'
+      success: '&7Úspěšně jste vytvořili národ&9 {nation} &7se zemí&2 {land} &7jako
+        hlavní město. [T]&7Klikněte pro otevření menu.[H]&7Otevřít menu.[/H][C]nations
         menu[/C][/T]'
+      level: '&cAktuálně nemůžete založit národ. &7Vaše Země&2 {land} &7potřebuje mít úroveň alespoň&3 {level} &8(&7Aktuální: {current}&8)&7.'
     trust:
-      already: '&cZemě&4 {land} &cje již součástí národa&4 {nation}&c.
-        &7Nejdříve musí národ opustit, pomocí &8/&3Nations leave&7.'
-      added: '&7Úspěšně jste přidali zemi&2 {land} &7k národu&9
-        {nation}&7.'
+      already: '&cZemě&4 {land} &cje již součástí národa&4 {nation}&c. &7Nejdříve
+        musí národ opustit, pomocí &8/&3Nations leave&7.'
+      added: '&7Úspěšně jste přidali zemi&2 {land} &7k národu&9 {nation}&7.'
       success: '&7Úspěšně jste pozvali zemi&2 {land} &7k Vašemu národu&9 {nation}&7.
         Pozvánku můžou příjmout, pomocí &8/&3Nations accept {nation}&7.'
       target: |
@@ -1139,26 +1147,31 @@ nations:
          [T]&2Příjmout &8[&8KLIK&8][H]&7Klikněte pro příjmutí pozvánky.[/H][C]nations accept {nation}[/C][/T]
          [T]&cOdmítnout &8[&8KLIK&8][H]&7Klikněte pro odmítnutí pozvánky.[/H][C]nations deny {nation}[/C][/T]
     accept:
-      war: '&cK tomuto národu se nemůžete připojit. &7Národ&9 {nation} &7je aktuálně ve válce. Jejich válka skončí za&5 {time}&7.'
-      none: '&cVaše země&4 {land} &cnemá žádné pozvánky z národa&9 {nation}&c.
-        &7Můžou pozvat Vaši zemi, pomocí &8/&3Nations trust&7.'
-      already: '&cVaše země&4 {land} &cje již součástí národa&4 {nation}&c. &7Nejdříve jej musíte opustit, pomocí &8/&3Nations leave&7.'
+      war: '&cK tomuto národu se nemůžete připojit. &7Národ&9 {nation} &7je aktuálně
+        ve válce. Jejich válka skončí za&5 {time}&7.'
+      none: '&cVaše země&4 {land} &cnemá žádné pozvánky z národa&9 {nation}&c. &7Můžou
+        pozvat Vaši zemi, pomocí &8/&3Nations trust&7.'
+      already: '&cVaše země&4 {land} &cje již součástí národa&4 {nation}&c. &7Nejdříve
+        jej musíte opustit, pomocí &8/&3Nations leave&7.'
       broadcast: '&7Země&2 {land} &7je nyní součásti národa&9 {nation}&7.'
     deny:
       success: '&7Úspěšně jste odmítli pozvánku národa&9 {nation}&7.'
     untrust:
-      capital: '&cNemůžete odstranit tuto zemi. &7Země&2 {land} &7je hlavní město národa&9 {nation}&7.'
+      capital: '&cNemůžete odstranit tuto zemi. &7Země&2 {land} &7je hlavní město
+        národa&9 {nation}&7.'
       success: '&7Úspěšně jste odstranili zemi&2 {land} &7z národa&9 {nation}&7.'
     delete:
-      war: '&cAktuálně nemůžete zrušit Váš národ. &7Národ&9 {nation} &7je aktuálně ve válce.'
+      war: '&cAktuálně nemůžete zrušit Váš národ. &7Národ&9 {nation} &7je aktuálně
+        ve válce.'
       confirm: |
         &cPotvrďte prosím že chcete ODSTRANIT národ&4 {nation}&c.
           [T]&7Potvrdit: &8[KLIK][H]&7Klikněte pro potvrzení zrušení národa.&9 {nation}&7.[/H][C]nations delete {nation} confirm[/C][/T]
       success: '&7Úspěšně jste odstranili národ. &8(&7Národ:&2 {nation}&8)&7.'
     leave:
-      capital: '&cVaše země&4 {land} &cnemůže opustit národ&4 {nation}&c, protože je hlavním městem. &7Pro zrušení národa, použijte &8/&3Nations
-        delete&7.'
-      war: '&cNemůžete opustit národ. &7Národ&9 {nation} &7je aktuálně ve válce. Vaše válka skončí za&5 {time}&7.'
+      capital: '&cVaše země&4 {land} &cnemůže opustit národ&4 {nation}&c, protože
+        je hlavním městem. &7Pro zrušení národa, použijte &8/&3Nations delete&7.'
+      war: '&cNemůžete opustit národ. &7Národ&9 {nation} &7je aktuálně ve válce. Vaše
+        válka skončí za&5 {time}&7.'
       success: '&7Úspěšně jste opustili národ&9 {nation} &7se zemí&2 {land}&7.'
       confirm: |
         &7Potvrďte prosím, že chcete OPUSTIT národ&9 {nation} &7se zemí&2 {land}&7.
@@ -1174,3 +1187,5 @@ nations:
          [T]&aPotvrzení: &8[KLIK][H]&7Klikněte pro potvrzení této akce.[/H][C]nations setcapital {land} confirm[/C][/T]
       success: '&7Úspěšně jste nastavili zemi&2 {land} &7jako nový kapitál pro národ&9
         {nation}&7.'
+      level: '&cNemůžete nastavit Zemi&4 {land} &cjako nové hlavní město pro národ&4
+        {nation}&c. &7Musí mít úroveň alespoň&3 {level} &8(&7Aktuální: {current}&8)&7.'
