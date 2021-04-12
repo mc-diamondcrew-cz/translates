@@ -7,7 +7,7 @@
 #|                                                                                                      |#
 #+------------------------------------------------------------------------------------------------------+#
 
-version: 'CLEARED-Bungee-1.5.0'
+version: 'CLEARED-Bungee-1.9.4'
 
 preLoginErrorAntiBot: '§aPřihlášení §8» &7Zkuste se prosím připojit znovu za §63 minuty§7.'
 preLoginErrorInvalidNickname: '§aPřihlášení §8» §7Použijte prosím jiné §6uživatelské jméno§7.'
@@ -30,7 +30,7 @@ joinSessionPremiumTitle: '&aPřihlášení'
 joinSessionPremiumSubTitle: '&7Detekován §6originální účet§7.'
 joinSessionPremiumFadeIn: 30
 joinSessionPremiumStay: 100
-joinSessionPremiunFadeOut: 30
+joinSessionPremiumFadeOut: 30
 joinSessionPremiumChat: ''
 joinSessionCrackedTitle: '&aPřihlášení'
 joinSessionCrackedSubTitle: '&7Detekován §6neoriginální účet§7.'
@@ -245,5 +245,121 @@ forceRecoveryPasswordErrorUsage: '§aPřihlášení §8» &7Použití: /forcerec
 forceRecoveryPasswordErrorUserNotExist: '§aPřihlášení §8» §6%nickname% §7neexistuje!'
 forceRecoveryPasswordErrorUserPremium:  '§aPřihlášení §8» §6%nickname% §7vlastní §6originální účet§7!'
 forceRecoveryPasswordErrorUserNotRegistered: '§aPřihlášení §8» §6%nickname% §7není §6zaregistrován/a§7!'
-forceRecoveryPasswordErrorUserHasNotMailAddress: '§aPřihlášení §8» §6%nickname% §7does not have a mail address!'
-forceRecoveryPasswordSuccessPasswordRecovered: '§aPřihlášení §8» &7%nickname%''s password has been recovered!'
+forceRecoveryPasswordErrorUserHasNotMailAddress: '§aPřihlášení §8» §6%nickname% §7nemá e-mailovou adresu.'
+forceRecoveryPasswordSuccessPasswordRecovered: '§aPřihlášení §8» &7Heslo hráč/ky &6%nickname% &7nebylo možné zjistit.'
+
+preLoginErrorUserCannotBeLoaded: '§aPřihlášení §8» &7Nepodařilo se načíst Váš herní profil.'
+preLoginErrorUserNotLoaded: '§aPřihlášení §8» &7Váš profil nebyl načten.'
+preLoginPremiumVerification: '§aPřihlášení §8» &7Váš Premium účet byl ověřen, připojte se prosím znovu.'
+
+disconnectRedirectionTitle: ''
+disconnectRedirectionSubTitle: ''
+disconnectRedirectionFadeIn: 0
+disconnectRedirectionStay: 0
+disconnectRedirectionFadeOut: 0
+disconnectRedirectionChat: '§aPřihlášení §8» &7Byly jste odpojeni ze server a následně přesměrování na jiný. Důvod: ''%reason%&7''.'
+
+joinSessionBedrockTitle: '&aPřihlášení'
+joinSessionBedrockSubTitle: '&7Detekován §6bedrock účet§7.'
+joinSessionBedrockFadeIn: 30
+joinSessionBedrockStay: 100
+joinSessionBedrockFadeOut: 30
+joinSessionBedrockChat: ''
+
+loginErrorUserBedrock: '§aPřihlášení §8» &7Jste bedrock uživatel!'
+
+registerErrorUserBedrock: '§aPřihlášení §8» &7Jste bedrock uživatel!'
+registerErrorDifferentPasswords: '§aPřihlášení §8» &7Hesla se neshodují!'
+registerErrorPasswordContainsNickname: '§aPřihlášení §8» &7Heslo nemůže obsahovat Vaše jméno!'
+registerErrorPasswordTooWeak: '§aPřihlášení §8» &7Heslo je příliš slabé!'
+registerErrorWrongCaptchaCode: '§aPřihlášení §8» &7Nesprávný captcha kód!'
+
+unregisterErrorUserBedrock: '§aPřihlášení §8» &7Jste bedrock uživatel!'
+
+changePasswordErrorUserHasNotPassword: '§aPřihlášení §8» &7Nemáte heslo!'
+changePasswordErrorDifferentNewPasswords: '§aPřihlášení §8» &7Hesla se neshodují!'
+changePasswordErrorNewPasswordContainsNickname: '§aPřihlášení §8» &7Heslo nemůže obsahovat Vaše jméno!'
+changePasswordErrorPasswordTooWeak: '§aPřihlášení §8» &7Heslo je příliš slabé!'
+
+createPasswordErrorUserNotRegistered: '§aPřihlášení §8» &7Nejste registrovaní!'
+createPasswordErrorUserNotLogged: '§aPřihlášení §8» &7Nejste přihlášení!'
+createPasswordErrorUserAlreadyHasPassword: '§aPřihlášení §8» &7Již máte heslo!'
+createPasswordErrorUsage: '§aPřihlášení §8» &7Použití: /createpassword <heslo>'
+createPasswordErrorDifferentPasswords: '§aPřihlášení §8» &7Hesla se neshodují!'
+createPasswordErrorUnsafePassword: '§aPřihlášení §8» &7Hesla musí mít minimální délku 6!'
+createPasswordErrorPasswordContainsNickname: '§aPřihlášení §8» &7Heslo nemůže obsahovat Vaše jméno!'
+createPasswordErrorPasswordTooWeak: '§aPřihlášení §8» &7Heslo je příliš slabé!'
+createPasswordSuccessPasswordCreated: '§aPřihlášení §8» &7Heslo bylo vytvořeno!'
+
+premiumErrorFeatureDisabled: '§aPřihlášení §8» &7Podpora změny typu účtu není aktivní!'
+premiumErrorUserBedrock: '§aPřihlášení §8» &7Jste bedrock uživatel!'
+premiumErrorUserAlreadyPremium: '§aPřihlášení §8» &7Jste prémium uživatel!'
+premiumErrorDatabaseDown: '§aPřihlášení §8» &7Databáze nereaguje!'
+premiumErrorUserAlreadyExists: '§aPřihlášení §8» &7Premium uživatel s tímto ID již existuje! Kontaktujte prosím administrátory!'
+
+crackedErrorFeatureDisabled: '§aPřihlášení §8» &7Tento server nepodporuje změnu typu účtu!'
+crackedErrorUserBedrock: '§aPřihlášení §8» &7Jste bedrock uživatel!'
+crackedErrorUserHasNotPassword: '§aPřihlášení §8» &7Nemáte heslo!'
+crackedErrorWrongPassword: '§aPřihlášení §8» &7Špatné heslo!'
+
+startSessionErrorUserBedrock: '§aPřihlášení §8» &7Jste bedrock uživatel!'
+
+destroySessionErrorUserBedrock: '§aPřihlášení §8» &7Jste bedrock uživatel!'
+
+changeEmailAddressErrorUserNotRegistered: '§aPřihlášení §8» &7Nejste registrovaní!'
+changeEmailAddressErrorUserNotLogged: '§aPřihlášení §8» &7Nejste přihlášení!'
+changeEmailAddressErrorUserHasNotPassword: '§aPřihlášení §8» &7Nemáte heslo!'
+changeEmailAddressErrorUsage: '§aPřihlášení §8» &7Použití: /changeemailaddress <heslo> <email>'
+changeEmailAddressErrorWrongPassword: '§aPřihlášení §8» &7Špatné heslo!'
+changeEmailAddressErrorWrongEmailAddress: '§aPřihlášení §8» &7Špatná emailová adresa!'
+changeEmailAddressSuccessEmailAddressChanged: '§aPřihlášení §8» &7Váš email byl změnen!'
+
+recoveryPasswordErrorUserHasNotPassword: '§aPřihlášení §8» &7Nemáte žádné heslo!'
+recoveryPasswordErrorUserHasNotEmailAddress: '§aPřihlášení §8» &7Nemáte žádnou emailovou adresu!'
+recoveryPasswordErrorWrongEmailAddress: '§aPřihlášení §8» &7Neplatná emailová adresa!'
+recoveryPasswordErrorRecoveringDelay: '§aPřihlášení §8» &7Heslo můžete obnovit každou 1 hodinu!'
+recoveryPasswordSuccessEmailSubject: 'Obnovení Hesla'
+recoveryPasswordSuccessEmailMessage: 'Zdravím, %nickname%! Zažádali jste o obnovu hesla z IP adresy %address% IP address! Nové heslo: <b>%password%</b>. Připojte se prosím na server a změnte ho co nejrychleji, pomocí příkazu <b>/changepassword %password% <heslo> <heslo></b>!'
+
+forceLoginErrorUserBedrock: '§aPřihlášení §8» &7Toto je bedrock uživatel!'
+
+forceRegisterErrorUserBedrock: '§aPřihlášení §8» &7Toto je bedrock uživatel!'
+
+forceUnregisterErrorUserBedrock: '§aPřihlášení §8» &7Toto je bedrock uživatel!'
+
+forceChangePasswordErrorUserHasNotPassword: '§aPřihlášení §8» &7Uživatel nemá heslo!'
+
+forceCreatePasswordErrorUsage: '§aPřihlášení §8» &7Použití: /forcecreatepassword <jméno> <heslo>'
+forceCreatePasswordErrorUserNotExist: '§aPřihlášení §8» &7Tento uživatel neexistuje!'
+forceCreatePasswordErrorUserNotRegistered: '§aPřihlášení §8» &7Tento uživatel není registrován!'
+forceCreatePasswordErrorUserAlreadyHasPassword: '§aPřihlášení §8» &7Uživatel již má heslo!'
+forceCreatePasswordSuccessPasswordCreated: '§aPřihlášení §8» &7Uživatelovo heslo bylo vytvořeno!'
+
+forcePremiumErrorFeatureDisabled: '§aPřihlášení §8» &7Tento server nepodporuje změnu typu účtů!'
+forcePremiumErrorUserBedrock: '§aPřihlášení §8» &7Toto je bedrock uživatel!'
+forcePremiumErrorDatabaseDown: '§aPřihlášení §8» &7Databáze nereaguje!'
+forcePremiumErrorUserAlreadyExists: '§aPřihlášení §8» &7Premium uživatel s tímto ID již existuje!'
+
+forceCrackedErrorFeatureDisabled: '§aPřihlášení §8» &7This server does not support changing an account type!'
+forceCrackedErrorUserBedrock: '§aPřihlášení §8» &7The user is a bedrock player!'
+forceCrackedUserHasNotPassword: '§aPřihlášení §8» &7The user does not have a password!'
+
+forceStartSessionErrorUserBedrock: '§aPřihlášení §8» &7The user is a bedrock player!'
+forceStartSessionErrorUserAlreadyHasSession: '§aPřihlášení §8» &7The user already has a session!'
+
+forceDestroySessionErrorUserBedrock: '§aPřihlášení §8» &7The user is a bedrock player!'
+
+forceChangeEmailAddressErrorUsage: '§aPřihlášení §8» &7Usage: /forcechangemail <nickname> <email-address>'
+forceChangeEmailAddressErrorUserNotExist: '§aPřihlášení §8» &7Such a user is not exist!'
+forceChangeEmailAddressErrorUserNotRegistered: '§aPřihlášení §8» &7The user is not registered!'
+forceChangeEmailAddressErrorUserHasNotPassword: '§aPřihlášení §8» &7The user does not have a password!'
+forceChangeEmailAddressErrorWrongEmailAddress: '§aPřihlášení §8» &7A wrong email address!'
+forceChangeEmailAddressSuccessEmailAddressChanged: '&8[&a&l»&8] &7The user''s email address has been changed!'
+
+forceRecoveryPasswordErrorUserHasNotPassword: '§aPřihlášení §8» &7The user does not have a password!'
+forceRecoveryPasswordErrorUserHasNotEmailAddress: '§aPřihlášení §8» &7The user does not have an email address!'
+
+forcePurgeUserProfileErrorUsage: '§aPřihlášení §8» &7Usage: /forcepurgeuserprofile <nickname>'
+forcePurgeUserProfileErrorUserNotExist: '§aPřihlášení §8» &7Such a user is not exist!'
+forcePurgeUserProfileSuccessUserProfilePurged: '&8[&a&l»&8] &7The user has been purged!'
+forcePurgeUserProfileSuccessKickedMessage: '&8[&a&l»&8] &7You have been purged!'
