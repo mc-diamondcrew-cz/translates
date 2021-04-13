@@ -1,0 +1,733 @@
+economy:
+  error:
+    nomoney: '&aPráce &8» &7Je nám líto, ale není dostatek financí v bance!'
+limitedItem:
+  error:
+    levelup: '&aPráce &8» &7Musíte mít vyšší úroveň v praci &6[jobname] &7pro použití
+      tohoto předmětu!'
+general:
+  info:
+    toplineseparator: '&7-----&8 ====== &2%playername% &8====== &7-----'
+    separator: '&7-----&8 ================== &7-----'
+    time:
+      days: '&e%days% &6dní '
+      hours: '&e%hours% &6hodin '
+      mins: '&e%mins% &6minut '
+      secs: '&e%secs% &6sekund '
+    invalidPage: '&cNeplatná strana'
+    'true': '&2Ano'
+    'false': '&cNe'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
+  admin:
+    error: '&aPráce &8» &7Při zpracování tohoto příkazu došlo k chybě.'
+    success: '&aPráce &8» &7Příkaz byl vykonán.'
+  error:
+    noHelpPage: '&aPráce &8» &7Nápověda s touto stranou neexistuje.'
+    notNumber: '&aPráce &8» &7Použijte prosím čísla.'
+    job: '&aPráce &8» &7Vybraná práce buď neexistuje, nebo ji nemáte zvolenou.'
+    noCommand: '&aPráce &8» &7Příkaz s tímto názvem neexistuje.'
+    permission: '&aPráce &8» &7Na tuto akci nemáte dostatečné pravomoce.'
+    noinfo: '&aPráce &8» &7Nebyly nalezeny žádné informace.'
+    noinfoByPlayer: '&aPráce &8» &7Nebyly nalezeny žádné informace o hráči/ce &6[%playername%]&7.'
+    ingame: '&aPráce &8» &7Tento příkaz je pouze pro herní použití.'
+    fromconsole: '&aPráce &8» &7Tento příkaz lze použít pouze z konzole.'
+    worldisdisabled: '&aPráce &8» &7Tento příkaz nemůžete použít v tomto světě.'
+    newRegistration: '&aPráce &8» &7Registrováno nové vlastnictví pro &6[block]&7.
+      &a[current]&8/&a[max]'
+    noRegistration: '&aPráce &8» &7Dosáhli jste maximálního počtu pro &6[block]&7.!'
+command:
+  help:
+    output:
+      info: '&aPráce &8» &7Použijte /jobs [cmd] ? pro více informací o příkazu.'
+      cmdUsage: '&aPráce &8» &7Použití: &6[command]'
+      label: jobs
+      cmdInfoFormat: '[command] &8- &7[description]'
+      cmdFormat: '&8/&3[command] &3[arguments]'
+      helpPageDescription: '&aPráce &8| &7Popis: &6[description]'
+      title: '&7------&8 ======= &2Práce &2 &8======= &7------'
+      page: '&7-----&8 ====== Strana &6[1] &ez &6[2] &8====== &7-----'
+      fliperSimbols: '&e----------'
+      prevPage: '&7--&6<<<&7--&8 ======='
+      prevPageOff: '&7--&8<<<&7--&8 ======='
+      nextPage: '&8======= &7--&6>>>&7--'
+      nextPageOff: '&8======= &7--&8>>>&7--'
+      pageCount: ' &2[&3[current]&7/&3[total]&2] '
+      pageCountHover: '&e[totalEntries] záznamů'
+      prevPageGui: '&6Předchozí Strana'
+      nextPageGui: '&6Další Strana'
+  moneyboost:
+    help:
+      info: Zvýšení výdělku.
+      args: '&8<&3práce&8>/&3all&8/&3reset &8[&3čas&8]/[&3hodnota&8]'
+    output:
+      allreset: '&aPráce &8» &7Bonus pro všechny deaktivován'
+      jobsboostreset: '&aPráce &8» &7Bonus pro práci &6%jobname% &7byl deaktivován.'
+      nothingtoreset: '&aPráce &8» &7Není co resetovat.'
+      boostalladded: '&aPráce &8» &7Bonus &6%boost% &7byl přidán pro &6všechny &7práce.'
+      boostadded: '&aPráce &8» &7Bonus &6%boost% &7byl přidán pro práci &6%jobname%&7.'
+      infostats: '&d&l$$$ Bonus &dx%boost%'
+  pointboost:
+    help:
+      info: Zvýšení obdržených bodů.
+      args: '&8<&3práce&8>/&3all&8/&3reset &8<&3čas&8>/<&3hodnota>'
+    output:
+      allreset: '&aPráce &8» &7Bonus pro všechny deaktivován'
+      jobsboostreset: '&aPráce &8» &7Bonus pro práci &6%jobname% &7byl deaktivován.'
+      nothingtoreset: '&aPráce &8» &7Není co resetovat.'
+      boostalladded: '&aPráce &8» &7Bonus &6%boost% &7byl přidán pro &6všechny &7práce.'
+      boostadded: '&aPráce &8» &7Bonus &6%boost% &7byl přidán pro práci &6%jobname%&7.'
+      infostats: '&d&lEXP Bonus &dx%boost%'
+  expboost:
+    help:
+      info: Zvýšení obdrženého EXP.
+      args: '&8<&3práce&8>/&3all&8/&3reset &8<&3čas&8>/<&3hodnota>'
+    output:
+      allreset: '&aPráce &8» &7Bonus pro všechny deaktivován'
+      jobsboostreset: '&aPráce &8» &7Bonus pro práci &6%jobname% &7byl deaktivován.'
+      nothingtoreset: '&aPráce &8» &7Není co resetovat.'
+      boostalladded: '&aPráce &8» &7Bonus &6%boost% &7byl přidán pro &6všechny &7práce.'
+      boostadded: '&aPráce &8» &7Bonus &6%boost% &7byl přidán pro práci &6%jobname%&7.'
+      infostats: '&d&lEXP Bonus &dx%boost%'
+  schedule:
+    help:
+      info: Aktivuje daný plánovač.
+      args: enable &8<&3názec&8> &8<&3časDoKdy&8>
+    output:
+      noScheduleFound: '&aPráce &8» &7Žádný plánovač s tímto názvem nenalezen.'
+      alreadyEnabled: '&aPráce &8» &7Tento plánovač je již povolen.'
+      enabled: '&aPráce &8» &7Plánovač byl aktivoán od &6%from% &7do &6%until%&7.'
+  itembonus:
+    help:
+      info: Zobrazí bonus předmětu.
+      args: ''
+    output:
+      list: '&8» &7[jobname]: &3%money% &6%points% &e%exp%'
+      notAplyingList: '&8» [jobname]: %money% %points% %exp%'
+      hover: '&7%itemtype%'
+      hoverLevelLimits: "&7Od úrovně: %from% \n&7Do úrovně: %until%"
+  edititembonus:
+    help:
+      info: Úprava bonusu předmětů.
+      args: list&8/&3add&8/&3remove &8<&3práce&8> <&3názevBonusu&8>
+  bonus:
+    help:
+      info: Zobrazí Vaše bonusy.
+      args: '&8<&3práce&8>'
+    output:
+      topline: '&7-----&8 ====== &3$$$ &8| &6Body &8| &eEXP &8====== &7-----'
+      permission: '&8» &7Bonus pravomocí: &3%money% &6%points% &e%exp%'
+      item: '&8» &7Bonus předmětu: &3%money% &6%points% &e%exp%'
+      global: '&8» &7Globalní bonus: &3%money% &6%points% &e%exp%'
+      dynamic: '&8» &7Dynamický bonus: &3%money% &6%points% &e%exp%'
+      nearspawner: '&8» &7Spawner bonus: &3%money% &6%points% &e%exp%'
+      petpay: '&8» &7PetPay bonus: &3%money% &6%points% &e%exp%'
+      area: '&8» &7Bonus oblasti: &3%money% &6%points% &e%exp%'
+      mcmmo: '&8» &7McMMO bonus: &3%money% &6%points% &e%exp%'
+      final: '&8» &7Celkový bonus: &3%money% &6%points% &e%exp%'
+      finalExplanation: ' &eNeobsahuje Petbay a blízkost spawneru bonus/penalizaci.'
+  convert:
+    help:
+      info: Změní typ databáze z SQLite na MySQL a naopak.
+      args: ''
+  limit:
+    help:
+      info: Zobrazí limity plateb.
+      args: '&8<&3jméno&8>'
+    output:
+      moneytime: '&aPráce &8» &7Zbývající čas do restartu peněžního limitu: &6%time%'
+      moneyLimit: '&aPráce &8» &7Peněžení limit: &3%current%&8/&3%total%'
+      exptime: '&aPráce &8» &7Zbývající čas do restartu EXP limitu: &6%time%'
+      expLimit: '&aPráce &8» &7EXP limit: &3%current%&8/&3%total%'
+      pointstime: '&aPráce &8» &7Zbývající čas do restartu limitu bodů: &6%time%'
+      pointsLimit: '&aPráce &8» &7Peněžení limit: &3%current%&8/&3%total%'
+      reachedmoneylimit: '&aPráce &8» &7Dosáhli jste peněžního limitu.'
+      reachedmoneylimit2: '&aPráce &8» &7Své limity můžete zobrzit pomocí příkazu
+        &6/jobs limit&7.'
+      reachedmoneylimit3: '&aPráce &8» &7Získané finance jsou snížené.'
+      reachedexplimit: '&aPráce &8» &7Dosáhli jste EXP limitu.'
+      reachedexplimit2: '&aPráce &8» &7Své limity můžete zobrzit pomocí příkazu &6/jobs
+        limit&7.'
+      reachedpointslimit: '&aPráce &8» &7Dosáhli jste limitu bodů.'
+      reachedpointslimit2: '&aPráce &8» &7Své limity můžete zobrzit pomocí příkazu
+        &6/jobs limit&7.'
+      notenabled: '&aPráce &8» &7Peněžní limit není aktivní.'
+  resetlimit:
+    help:
+      info: Resetuje limity.
+      args: '&8<&3jméno&8>'
+    output:
+      reseted: '&aPráce &8» &7Limity byly nastaveny pro hráče/ku &6%playername%&7.'
+  resetquest:
+    help:
+      info: Resetuje hráčův úkol.
+      args: '&8<&3jméno&8> &8<&3práce&8>'
+    output:
+      reseted: '&aPráce &8» &7Úkol byl restartován pro hráče/ku &6%playername%&7.'
+      noQuests: '&aPráce &8» &7Nebylo možné nalézt žádné úkoly.'
+  points:
+    help:
+      info: Zobrazí aktuální počet bodů hráče/ky.
+      args: '&8<&3jméno&8>'
+    currentpoints: '&aPráce &8» &7Aktuální počet bodů: &6%currentpoints%&7.'
+    totalpoints: ' &aPráce &8» &7Celkem nazbíráno bodů: &6%totalpoints%&7.'
+  editpoints:
+    help:
+      info: Úprava bodů.
+      args: set&8/&3add&8/&3take &8<&3jméno&8> <&3množství&8>
+    output:
+      set: '&aPráce &8» &7Body hráče/ky &6%playername% &7byly nastaveny na &6%amount%&7.'
+      add: '&aPráce &8» &6%amount% &7bodů bylo přidáno hráči/ce &6%playername%&7,
+        nyní mají &6%total% &7bodů.'
+      take: '&aPráce &8» &6%amount% &7bodů bylo odebráno hráči/ce &6%playername%&7,
+        nyní mají &6%total% &7bodů.'
+  editjobs:
+    help:
+      info: Úprava aktuálních prací.
+      args: ''
+      list:
+        job: '&aPráce:'
+        jobs: '  &8» [&3%jobname%&8]'
+        actions: '    &8» [&3%actionname%&8]'
+        material: '      &8» [&3%materialname%&8]      '
+        materialRemove: '&c[X]'
+        materialAdd: '      &8» [&a+&8]'
+        money: '        &8» &7Peníze: &3%amount%'
+        exp: '        &8» &7EXP: &3%amount%'
+        points: '        &8» &7Body: &3%amount%'
+      modify:
+        newValue: '&aPráce &8» &7Zadejte novou hodnotu.'
+        enter: '&aPráce &8» &7Zadejte novou hodnotu, nebo zmáčkněte '
+        hand: '&6HAND '
+        handHover: '&aPráce &8» &7Klikněte pro získání informací z drženého předmětu.'
+        or: '&7nebo '
+        look: '&6LOOKING AT'
+        lookHover: '&aPráce &8» &7Klikněte pro získání informací z kostky, na kterou
+          se koukáte.'
+  editquests:
+    help:
+      info: Úprava aktuální úkoly.
+      args: ''
+      list:
+        quest: '&aÚkoly:'
+        jobs: '  &8» [&3%jobname%&8]'
+        quests: '  &8» [&3%questname%&8]'
+        actions: '    &8» [&3%actionname%&8]'
+        objectives: '      &8» [&3%objectivename%&8]'
+        objectiveRemove: '&c[X]'
+        objectiveAdd: '      &8» [&a+&8]'
+      modify:
+        newValue: '&aPráce &8» &7Zadejte novou hodnotu.'
+        enter: '&aPráce &8» &7Zadejte novou hodnotu, nebo zmáčkněte '
+        hand: '&6HAND '
+        handHover: '&aPráce &8» &7Klikněte pro získání informací z drženého předmětu.'
+        or: '&7nebo '
+        look: '&6LOOKING AT'
+        lookHover: '&aPráce &8» &7Klikněte pro získání informací z kostky, na kterou
+          se koukáte.'
+  blockinfo:
+    help:
+      info: Zobrazí informace o kostce, na kterou se koukáte.
+      args: ''
+    output:
+      name: ' &8» &7Název: &3%blockname%'
+      id: ' &8» &7ID: &3%blockid%'
+      data: ' &8» &7Data: &3%blockdata%'
+      usage: ' &8» &7Použití: &3%first%&7, nebo &3%second%'
+  iteminfo:
+    help:
+      info: Zobrazí informace o předmětu, který držíte.
+      args: ''
+    output:
+      name: ' &8» &7Název: &3%itemname%'
+      id: ' &8» &7ID: &3%itemid%'
+      data: ' &8» &7Data: &3%itemdata%'
+      usage: ' &8» &7Použití: &3%first%&7, nebo &3%second%'
+  placeholders:
+    help:
+      info: Napíše všechny proměnné.
+      args: parse &8<&3proměnná&8>
+    output:
+      list: '&8[&6[place]&8] &7[placeholder]'
+      outputResult: ' &8» &3[result]'
+      parse: '&aPráce &8» &6[placeholder] &7od &6[source] &8» &3[result]'
+  entitylist:
+    help:
+      info: Zobrazí všechny možné entity, které můžou být použity s pluginem.
+      args: ''
+  stats:
+    help:
+      info: Zobrazí všechny úrovně Vašich prací.
+      args: '&8<&3jméno&8>'
+    error:
+      nojob: '&aPráce &8» &7První si najděte prosím práci.'
+    output:
+      message: '&7Úroveň &3%joblevel% &7v práci &3%jobname%&7: &3%jobxp%&8/&3%jobmaxxp%
+        &7EXP'
+      max-level: '     &cMax. Úroveň   -   %jobname%'
+    bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
+    bossBarGain: ' &7(&f%gain%&7)'
+  shop:
+    help:
+      info: Otevře speciální obchod.
+      args: ''
+    info:
+      title: '&e------- &8Jobs shop &e-------'
+      currentPoints: '&eYou have: &6%currentpoints%'
+      price: '&ePrice: &6%price%'
+      reqJobs: '&eRequired jobs:'
+      reqJobsList: '  &6%jobsname%&e: &e%level% lvl'
+      reqTotalLevel: '&6Required total level: &e%totalLevel%'
+      reqJobsColor: '&4'
+      reqJobsLevelColor: '&4'
+      reqTotalLevelColor: '&4'
+      cantOpen: '&cCan''t open this page'
+      NoPermForItem: '&cYou don''t have required permissions for this item!'
+      NoPermToBuy: '&cNo permissions to buy this item'
+      NoJobReqForitem: '&cYou don''t have the required job (&6%jobname%&e) with required
+        (&6%joblevel%&e) level'
+      NoPoints: '&cYou don''t have enough points'
+      NoTotalLevel: '&cTotal jobs level is too low (%totalLevel%)'
+      Paid: '&eYou have paid &6%amount% &efor this item'
+  archive:
+    help:
+      info: Zobrazí všechny uložené práce.
+      args: '&8<&3jméno&8>'
+    error:
+      nojob: '&aPráce &8» &7Nejsou zde žádné uložené práce.'
+  give:
+    help:
+      info: Předá předmět podle názvu práce a kategorie.
+      args: '&8<&3jméno&8> <&3práce&8> <&3items&8/&3limiteditems&8> <&3názevPředmětu&8>'
+    output:
+      notonline: '&aPráce &8» &7Cíl není na serveru.'
+      noitem: '&aPráce &8» &7Nebylo možné nalézt předmět s tímto názvem.'
+  info:
+    help:
+      title: '&2*** &ePráce&2 ***'
+      info: Zobrazení kolik práce vyděláva a jak.
+      penalty: '&aPráce &8» &7Tato práce má penalizaci ve výši &6[penalty]%&7, protože
+        má příliš zaměstnanců.'
+      bonus: '&aPráce &8» &7Tato práce má bonus ve výši &6[penalty]%&7, protože má
+        nedostatek zaměstnanců.'
+      args: '&8<&3práce&8> <&3akce&8>'
+      actions: '&aPráce &8» &7Platné akce jsou: &3%actions%'
+      max: ' &8» &7max úroveň:&f '
+      newMax: ' &7Max úroveň: &f[max]'
+      material: '&8» &7%material%&8'
+      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &aúrovní)'
+      levelFrom: ' &a(od úrovně &e%levelFrom% &a)'
+      levelUntil: ' &a(do úrovně &e%levelUntil% &a)'
+      money: ' &3%money%$'
+      points: ' &6%points%Bodů'
+      exp: ' &e%exp%EXP'
+    gui:
+      pickjob: '&bPráce &8| Vyberte si povolání.'
+      jobinfo: '&3[jobname] info'
+      actions: '&7Platné akce jsou:'
+      leftClick: '&3◄ &7Levé kliknutí pro více informací.'
+      middleClick: '&3● &7Kolečko pro opuštění této práce.'
+      rightClick: '&3► &7Pravé kliknutí pro vybrání této práce.'
+      leftSlots: '&eZbylé sloty:&f '
+      working: '&6&l! &eZde jste již zaměstnaní.'
+      cantJoin: '&cNemůžete se připojit do této práce.'
+      max: '&8» &7Maximální úroveň:&3 '
+      back: '&7--&6<<<&7--'
+      next: '&7--&6>>>&7--'
+    output:
+      break:
+        info: '&8| &3Ničení'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává ničením kostek.'
+      tntbreak:
+        info: '&8| &3Ničení s TNT'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává ničením pomocí TNT.'
+      place:
+        info: '&8| &3Pokládání Kostek'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává pokládáním kostek.'
+      striplogs:
+        info: '&8| &3Holení Stromů'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává holením stromů.'
+      kill:
+        info: '&8| &3Zabíjení Příšer'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává zabíjením zvířat.'
+      mmkill:
+        info: '&8| &3Zabíjení M-Příšer'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává za zabíjení mýtickích příšer.'
+      fish:
+        info: '&8| &3Rybaření'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává rybařením.'
+      craft:
+        info: '&8| &3Vyrábění'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává vyráběním.'
+      smelt:
+        info: '&8| &3Tavení'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává tavením.'
+      brew:
+        info: '&8| &3Vaření'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává vařením.'
+      eat:
+        info: '&8| &3Jezení'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává jezením.'
+      dye:
+        info: '&8| &3Obarvování'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává barvením.'
+      enchant:
+        info: '&8| &3Okouzlování'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává okouzlováním.'
+      vtrade:
+        info: '&8| &3Obchodování s Vesničany'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává obchodováním s vesničany.'
+      repair:
+        info: '&8| &3Opravování'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává opravováním.'
+      breed:
+        info: '&8| &3Rozmnožování Zvířat'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává rozmnožováním zvířat.'
+      tame:
+        info: '&8| &3Ochočování Zvířat'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává ochočováním.'
+      milk:
+        info: '&8| &3Dojení Krav'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává dojením.'
+      shear:
+        info: '&8| &3Stříhání Ovcí'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává stříháním ovcí.'
+      explore:
+        info: '&8| &3Prozkoumávání'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává prozkoumáváním.'
+      custom-kill:
+        info: '&8| &3Zabíjení Hráčů'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává zabíjením hráčů/ek.'
+      collect:
+        info: '&8| &3Získávání Předmětů'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává získáváním předmětů.'
+      bake:
+        info: '&8| &3Vaření Jídla'
+        none: '&aPráce &8» &6%jobname% &7si nevydělává vařením jídla.'
+  playerinfo:
+    help:
+      info: Zobrazí kolik a jak práce vydělává pro ostatní.
+      args: '&8<&3jméno&8> <&3práce&8> <&3akce&8>'
+  join:
+    help:
+      info: Připojení k vybrané práci.
+      args: '&8<&3práce&8>'
+    error:
+      alreadyin: '&aPráce &8» &7Již jste zaměstnaní jako &6%jobname%&7.'
+      fullslots: '&aPráce &8» &6%jobname% &7je plná.'
+      maxjobs: '&aPráce &8» &7Již jste dosáhli maxima zaměstnání.'
+      rejoin: '&aPráce &8» &7Před připojením zpět musíte chvíli počkat.'
+    rejoin: '&aKlikněte pro znovu-připojení do této práce: '
+    success: '&aPráce &8» &7Připojili jste se do práce &6%jobname%&7.'
+    confirm: '&aPráce &8» &7Klikněte pro potvrezení připojení do práce &6[jobname]&7.'
+  leave:
+    help:
+      info: Opuštění aktuální práce.
+      args: '&8<&3práce&8>'
+    success: '&aPráce &8» &7Opustili jste práci &6%jobname%&7.'
+    confirmationNeed: '&aPráce &8» &7Pro opuštění práce, &6napiště příkaz znovu&7.'
+  leaveall:
+    help:
+      info: Opuštění všech prací.
+    error:
+      nojobs: '&aPráce &8» &7Jste nezaměstnaní.'
+    success: '&aPráce &8» &7Opustili jste všechny práce.'
+    confirmationNeed: '&aPráce &8» &7Pro opuštění prací, &6napiště příkaz znovu&7.'
+  explored:
+    help:
+      info: Zobrazí, kdo objevil toto území.
+    error:
+      noexplore: '&aPráce &8» &7Toto území není objeveno.'
+    fullExplore: '&aPráce &8» &7Toto území je plně prozkoumáno.'
+    list: '&7%place%. &3%playername%'
+  browse:
+    help:
+      info: Seznam dostupných prací.
+    error:
+      nojobs: '&aPráce &8» &7Nejsou zde žádné práce k připojení.'
+    output:
+      header: 'You are allowed to join the following jobs:'
+      footer: For more information type in /jobs info [JobName]
+      totalWorkers: ' &8» &7Zaměstnanců: &3[amount]'
+      penalty: ' &8» &7Penalizace: &3[amount]%'
+      bonus: ' &8» &7Bonus: &3[amount]%'
+      newHeader: '&2========== [amount] Available Jobs ========='
+      description: '[description]'
+      list: '    &8[place]. &7[jobname]'
+      console:
+        newHeader: '&2========== [amount] Available Jobs ========='
+        description: '[description]'
+        totalWorkers: ' &7Workers: &e[amount]'
+        penalty: ' &4Penalty: &c[amount]%'
+        bonus: ' &2Bonus: &a[amount]%'
+        list: ' &6[jobname]'
+        newMax: ' &eMax level: &f[max]'
+      click: '&bClick on the job to see more info about it!'
+      detailed: '&bClick to see more detailed list on job actions'
+      jobHeader: '&2========== [jobname] ========='
+      chooseJob: '&7&n&oChoose this job'
+      chooseJobHover: '&7Click here to get this job'
+  clearownership:
+    help:
+      info: Clear block ownership
+      args: '[playername]'
+    output:
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2
+        smokers and &7[blast]&2 blast furnaces.'
+  skipquest:
+    help:
+      info: Skip defined quest and get new one
+      args: '[jobname] [questname] (playerName)'
+    output:
+      questSkipForCost: '&2You skipped the quest and paid:&e %amount%$'
+  quests:
+    help:
+      info: List available quests
+      args: '[playername]'
+    error:
+      noquests: '&cThere are no quests'
+    toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2)
+      &7***********************'
+    status:
+      changed: '&2The quests status has been changed to&r %status%'
+      started: '&aStarted'
+      stopped: '&cStopped'
+    output:
+      completed: '&2      !Completed!&r      '
+      questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
+      skip: '&7Click to skip this quest'
+      skips: '&7Left skips: &f[skips]'
+      hover: "&f[jobName] \n[desc] \n&7New quest in: [time]"
+  fire:
+    help:
+      info: Fire the player from the job.
+      args: '[playername] [jobname]'
+    error:
+      nojob: Player does not have the job %jobname%.
+    output:
+      target: You have been fired from %jobname%.
+  fireall:
+    help:
+      info: Fire player from all their jobs.
+      args: '[playername]/all'
+    error:
+      nojobs: Player does not have any jobs to be fired from!
+    output:
+      target: You have been fired from all your jobs.
+  employ:
+    help:
+      info: Employ the player to the job.
+      args: '[playername] [jobname]'
+    error:
+      alreadyin: Player is already in the job %jobname%.
+      fullslots: You cannot join the job %jobname%, there are no slots available.
+    output:
+      target: You have been employed as a %jobname%.
+  top:
+    help:
+      info: Shows top players by jobs name.
+      args: '[jobname]/clear pageNumber'
+    error:
+      nojob: Can't find any job with this name.
+    output:
+      topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
+      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
+      prev: '&e<<<<< Prev page &2|'
+      next: '&2|&e Next Page >>>>'
+      show: '&2Show from &e[from] &2until &e[until] &2top list'
+  gtop:
+    help:
+      info: Shows top players by global jobs level.
+      args: clear/pageNumber
+    error:
+      nojob: Can't find any information.
+    output:
+      topline: '&aTop&e %amount% &aplayers by global job level'
+      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
+      prev: '&e<<<<< Prev page &2|'
+      next: '&2|&e Next Page >>>>'
+      show: '&2Show from &e[from] &2until &e[until] &2global top list'
+  area:
+    help:
+      info: Modify restricted areas.
+      args: add/remove/info/list
+      addUsage: '&eUsage: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
+      removeUsage: '&eUsage: &6/Jobs area remove [areaName]'
+    output:
+      addedNew: '&eAdded a new restricted area with &6%bonus% &ebonus'
+      removed: '&eRemoved the restricted area &6%name%'
+      list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%)
+        &6%bonus%'
+      wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
+      noAreas: '&eThere are no saved restricted areas'
+      noAreasByLoc: '&eThere are no restricted areas in this location'
+      areaList: '&eRestricted areas by your location: &6%list%'
+      selected1: '&eSelected the first point: &6%x%:%y%:%z%'
+      selected2: '&eSelected the second point: &6%x%:%y%:%z%'
+      select: '&eSelect 2 points with the selection tool (%tool%)'
+      exist: '&eRestriction area by this name already exists'
+      dontExist: '&eRestriction area by this name does not exist'
+      wgDontExist: '&eWorldGuard area by this name does not exist'
+  log:
+    help:
+      info: Shows statistics.
+      args: '[playername]'
+    output:
+      topline: '&7************************* &6%playername% &7*************************'
+      ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
+      money: '&6money: %amount% '
+      exp: '&eexp: %amount% '
+      points: '&6points: %amount%'
+      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2
+        %points%'
+      bottomline: '&7***********************************************************'
+      prev: '&e<<<<< Prev page &2|'
+      next: '&2|&e Next Page >>>>'
+      nodata: '&cData not found'
+  glog:
+    help:
+      info: Shows global statistics.
+      args: ''
+    output:
+      topline: '&7*********************** &6Global statistics &7***********************'
+      ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
+      money: '&6money: %amount% '
+      exp: '&eexp: %amount% '
+      points: '&6points: %amount%'
+      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2
+        %points%'
+      bottomline: '&7**************************************************************'
+      nodata: '&cData not found'
+  transfer:
+    help:
+      info: Transfer a player's job from an old job to a new job.
+      args: '[playername] [oldjob] [newjob]'
+    output:
+      target: You have been transferred from %oldjobname% to %newjobname%.
+  promote:
+    help:
+      info: Promote the player X levels in a job.
+      args: '[playername] [jobname] [levels]'
+    output:
+      target: You have been promoted %levelsgained% levels in %jobname%.
+  exp:
+    help:
+      info: Change the player exp for job.
+      args: '[playername] [jobname] set/add/take [amount]'
+    error:
+      nojob: '&cThis player must first join a job.'
+    output:
+      target: '&eYour exp was changed for %jobname% &eand now you at &6%level%lvl
+        &eand with &6%exp%exp.'
+  level:
+    help:
+      info: Change the player's level in a job.
+      args: '[playername] [jobname] set/add/take [amount]'
+    error:
+      nojob: '&cThis player must first join a job.'
+    output:
+      target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl
+        &eand with &6%exp%exp.'
+  demote:
+    help:
+      info: Demote the player X levels in a job.
+      args: '[playername] [jobname] [levels]'
+    output:
+      target: You have been demoted %levelslost% levels in %jobname%.
+  grantxp:
+    help:
+      info: Grants the player X experience in a job.
+      args: '[playername] [jobname] [xp]'
+    output:
+      target: You have been granted %xpgained% experience in %jobname%.
+  removexp:
+    help:
+      info: Remove X experience from the player in a job.
+      args: '[playername] [jobname] [xp]'
+    output:
+      target: You have lost %xplost% experience in %jobname%.
+  signupdate:
+    help:
+      info: Manually updates a sign by its name
+      args: '[jobname]'
+  bp:
+    help:
+      info: Shows block protections around you in 10 block radius
+      args: ''
+    output:
+      found: '&eFound &6%amount% &eprotected blocks around you'
+      notFound: '&eNo protected blocks found around you'
+  reload:
+    help:
+      info: Reload configurations.
+  toggle:
+    help:
+      info: Toggles payment output on action bar or bossbar.
+      args: actionbar/bossbar
+    output:
+      turnedoff: '&4This feature is turned off!'
+      paid:
+        main: '&aYou got:'
+        money: '&e[amount] money'
+        exp: '&7[exp] exp'
+        points: '&6[points] points'
+      'on': '&aToggled: &aON'
+      'off': '&aToggled: &4OFF'
+message:
+  skillup:
+    broadcast: '%playername% has been promoted to a %titlename% %jobname%.'
+    nobroadcast: Congratulations, you have been promoted to a %titlename% %jobname%.
+  max-level-reached:
+    title: '&2Max level reached'
+    subtitle: '&2in %jobname%!'
+    chat: '&cYou have reached the maximum level in %jobname%!'
+  levelup:
+    broadcast: '%playername% is now a level %joblevel% %jobname%.'
+    nobroadcast: You are now level %joblevel% %jobname%.
+  leveldown:
+    message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
+  cowtimer: '&eYou still need to wait &6%time% &esec to get paid for this job.'
+  blocktimer: '&eYou need to wait &3[time] &esec more to get paid for this!'
+  taxes: '&3[amount] &eserver taxes were transferred to this account'
+  boostStarted: '&eJobs boost time have been started!'
+  boostStoped: '&eJobs boost time have been ended!'
+  crafting:
+    fullinventory: '&cYour inventory is full!'
+signs:
+  List: '&0[number].&8[player]&7:&4[level]'
+  questList: '&0[number].&8[player]&7:&4[quests]'
+  SpecialList:
+    p1: '&b** &81. &b**'
+    p2: '&b** &82. &b**'
+    p3: '&b** &83. &b**'
+    p4: '&b** &84. &b**'
+    p5: '&b** &85. &b**'
+    p6: '&b** &86. &b**'
+    p7: '&b** &87. &b**'
+    p8: '&b** &88. &b**'
+    p9: '&b** &89. &b**'
+    p10: '&b** &810. &b**'
+    name: '&9[player]'
+    level: '&8úroveň [level]'
+    quests: '&8úkolů [quests]'
+    bottom: '&b************'
+  cantcreate: '&4Nemůžete vytvořit tuto ceduli!'
+  cantdestroy: '&4Nemůžete zničit tuto ceduli!'
+  topline: '&0[Jobs]'
+  secondline:
+    join: '&0Připojit se'
+    leave: '&0Opustit'
+    toggle: '&0Změnit'
+    top: '&0Top'
+    browse: '&0Procházet'
+    stats: '&0Statistiky'
+    limit: '&0Limit'
+    info: '&0Info'
+    archive: '&0Archiv'
+scoreboard:
+  topline: '&7Nejlepší &3%jobname%'
+  gtopline: '&7Žebříček nejlepších'
+  line: '&3%number%. &7%playername% &8(&3%level%&8)'
