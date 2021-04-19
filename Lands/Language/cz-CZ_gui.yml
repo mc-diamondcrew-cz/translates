@@ -358,11 +358,10 @@ gui:
           - '&7Lokace: {0}, x={1}, z={2}'
           - ' '
           - '&7Národ: {3}'
-          - '&7Území: {4} / {5} &7+ {6} (nation)'
-          - '&7Členové/ky: {7} / {8}'
+          - '&7Území: {4} / {5}'
+          - '&7Členové/ky: {6} / {7}'
           - ' '
-          - '&7{level}'
-          - '&7Další: {level_next} &8({members_next} členů/ek)'
+          - '&7{8}'
           - '&7Klikněte pro více informací.'
           - ' '
           - '&7Finance'
@@ -1252,6 +1251,13 @@ gui:
           - '&7prioritu jako Vy.'
           - ' '
           - '&8Pravomoc: {bypass}'
+      failure_owner:
+        name: '&cNemůžete upravit vlastníka'
+        lore:
+          - '&7Vlastníci nemůžou upravovat'
+          - '&7vlastní vlajky. Tato možnost'
+          - '&7je pouze pro administrátory'
+          - '&7serveru.'
     p:
       placeholder_1:
         material: GRAY_STAINED_GLASS_PANE
@@ -2214,7 +2220,7 @@ gui:
         material: IRON_SWORD
         slot: 17
       levels:
-        name: '&8> &6Level'
+        name: '&8> &6Úroveň'
         lore:
           - '&7Tyto hodnoty jsou aktivní pouze'
           - '&7pokud země není součástí žádného'
@@ -2224,7 +2230,7 @@ gui:
           - '&7{1}% cena nákladů'
           - '&7{2} území'
           - ' '
-          - '&7Next: {3}'
+          - '&7Další: {3}'
           - '&c{4}% cena nákladů'
           - '&a{5} území'
           - ' '

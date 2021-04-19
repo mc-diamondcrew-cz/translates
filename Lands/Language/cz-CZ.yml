@@ -347,8 +347,11 @@ message:
       {area} &7Země:&2 {land}&8)&7. &8Pravomoc: {bypass}'
     combat:
       attacker: '&cNemůžete zde útočit na hráče/ky. &7Tato oblast patří zemi&2 {land}&7.'
-      target: '&cVáš cíl zde nemůže útočit na hráče/ky. &7Nemůžete s nimi soupeřit. &7Tato oblast patří zemi&2 {land}&7.'
-      ally: '&cNemůžete zaútočit na hráče/ky v přírodě, protože je součástí jednoho z Vašich území. &7Souboje v aréně můžou být pomocí povolení PvP v nastavení rolí.'
+      target: '&cVáš cíl zde nemůže útočit na hráče/ky. &7Nemůžete s nimi soupeřit.
+        &7Tato oblast patří zemi&2 {land}&7.'
+      ally: '&cNemůžete zaútočit na hráče/ky v přírodě, protože je součástí jednoho
+        z Vašich území. &7Souboje v aréně můžou být pomocí povolení PvP v nastavení
+        rolí.'
       wilderness: '&cNemůžete útočit na hráče v přírodě z vlastní země.'
     wilderness: '&cNa tuto akci nemáte v přírodě oprávnění. &8Vlajka: {flag}'
   area:
@@ -434,25 +437,39 @@ message:
       max: '&cNemůžete vytvořit více oblastí pro tuto zemi. &7Již jste dovršili limitu&3
         {max} &7oblastí. Pravomoc: lands.areas.ČÍSLO'
   flags:
-    block_place: '&cZde nemůžete pokládat kostky. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    block_break: '&cZde nemůžete ničit kostky. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    block_ignite: '&cZde nemůžete zapalovat. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    interact_general: '&cZde nemůžete interagovat. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    interact_door: '&cZde nemůžete otevírat dveře. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    interact_mechanism: '&cZde nemůžete používat mechanismy. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    interact_container: '&cZde nemůžete otevírat truhly. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    interact_villager: '&cZde nemůžete obchodovat s vesničany. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    fly: '&cZde nemůžete létat. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    spawn_teleport: '&cNemůžete se teleportovat na spawn země.&4 {land}&c.
-      &7Můžou upravit své nastavní, aby tato funkce fungovala. &8Vlajka: {flag}'
-    land_enter: '&cNemůžete vstoupit do oblasti&4 {area} &czemě&4 {land}&c
-      (&cOblast:&4 {area} &cZemě:&4 {land}&c). &7Byli jste teleportování na poslední lokaci. &8Vlajka: {flag}'
-    vehicle_use: '&cZde nemůžete používat vozidla. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    item_pickup: '&cZde nemůžete zvedat předměty. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    ender_pearl: '&cNemůžete používat předměty pro teleportaci do oblasti&6
-      {area} &7země&4 {land}&c. &8Vlajka: {flag}'
-    attack_animal: '&cZde nemůžete útočit na zvířata (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka: {flag}'
-    attack_monster: '&cZde nemůžete útočit na příšery (&cOblast:&4 {area} &cZemě:&4 {land}&c). &7Toto funguje i pro příšery, nemůžou na Vás útočit. &8Vlajka: {flag}'
+    block_place: '&cZde nemůžete pokládat kostky. (&cOblast:&4 {area} &cZemě:&4 {land}&c).
+      &8Vlajka: {flag}'
+    block_break: '&cZde nemůžete ničit kostky. (&cOblast:&4 {area} &cZemě:&4 {land}&c).
+      &8Vlajka: {flag}'
+    block_ignite: '&cZde nemůžete zapalovat. (&cOblast:&4 {area} &cZemě:&4 {land}&c).
+      &8Vlajka: {flag}'
+    interact_general: '&cZde nemůžete interagovat. (&cOblast:&4 {area} &cZemě:&4 {land}&c).
+      &8Vlajka: {flag}'
+    interact_door: '&cZde nemůžete otevírat dveře. (&cOblast:&4 {area} &cZemě:&4 {land}&c).
+      &8Vlajka: {flag}'
+    interact_mechanism: '&cZde nemůžete používat mechanismy. (&cOblast:&4 {area} &cZemě:&4
+      {land}&c). &8Vlajka: {flag}'
+    interact_container: '&cZde nemůžete otevírat truhly. (&cOblast:&4 {area} &cZemě:&4
+      {land}&c). &8Vlajka: {flag}'
+    interact_villager: '&cZde nemůžete obchodovat s vesničany. (&cOblast:&4 {area}
+      &cZemě:&4 {land}&c). &8Vlajka: {flag}'
+    fly: '&cZde nemůžete létat. (&cOblast:&4 {area} &cZemě:&4 {land}&c). &8Vlajka:
+      {flag}'
+    spawn_teleport: '&cNemůžete se teleportovat na spawn země.&4 {land}&c. &7Můžou
+      upravit své nastavní, aby tato funkce fungovala. &8Vlajka: {flag}'
+    land_enter: '&cNemůžete vstoupit do oblasti&4 {area} &czemě&4 {land}&c (&cOblast:&4
+      {area} &cZemě:&4 {land}&c). &7Byli jste teleportování na poslední lokaci. &8Vlajka:
+      {flag}'
+    vehicle_use: '&cZde nemůžete používat vozidla. (&cOblast:&4 {area} &cZemě:&4 {land}&c).
+      &8Vlajka: {flag}'
+    item_pickup: '&cZde nemůžete zvedat předměty. (&cOblast:&4 {area} &cZemě:&4 {land}&c).
+      &8Vlajka: {flag}'
+    ender_pearl: '&cNemůžete používat předměty pro teleportaci do oblasti&6 {area}
+      &7země&4 {land}&c. &8Vlajka: {flag}'
+    attack_animal: '&cZde nemůžete útočit na zvířata (&cOblast:&4 {area} &cZemě:&4
+      {land}&c). &8Vlajka: {flag}'
+    attack_monster: '&cZde nemůžete útočit na příšery (&cOblast:&4 {area} &cZemě:&4
+      {land}&c). &7Toto funguje i pro příšery, nemůžou na Vás útočit. &8Vlajka: {flag}'
 command:
   rent:
     edit: '&cAktuálně nemůžete upravit oblast&4 {area} &czemě&4 {land}&7, protože
@@ -816,7 +833,8 @@ command:
       broadcast: '&2{land} &8| &7Hráč/ka&3 {player} &7je nyní členem/kou Vaší země.'
     war: '&cK této zemi se nemůžete připojit. &7Země&9 {land} &7je aktuálně ve válce.
       Jejich válka skončí za&5 {time}&7.'
-    max-members: '&cNemůžete se připojit k zemi&4 {land}&c. &7dosáhli maxima&3 {members} &7obyvatel.'
+    max-members: '&cNemůžete se připojit k zemi&4 {land}&c. &7dosáhli maxima&3 {members}
+      &7obyvatel.'
   setowner:
     max-lands: '&cHráč/ka&4 {player} &cnemůže vlastnit více zemí. &7Již dosáhl/a maxima
       &3{max} &7vlastních zemí. &8Pravomoc: lands.ownlands.ČÍSLO'
@@ -834,9 +852,8 @@ command:
       v zemi&2 {land}&7.'
     success: '&7Úspěšně jste se teleportovali na X:&3 {x} &7Z:&3 {z} &7Zabráno: {claimed}'
   setspawn:
-    force-land: '&cMůžete nastavit pouze jeden spawn pro zemi. &7Běžte nejdříve na
-      území&2 {land}&7.'
     success: '#t#&7Spawn Nastaven[newline]&7Cena:&c ${cost}'
+    wilderness: '&cSpawn můžete nastavit pouze ve své zemi.'
   spawn:
     not-exist: '&cNení zde nastaven spawn pro zemi&4 {land}&c. &7Nejdříve jej musí
       někdo nastavit, pomocí &8/&3Land setspawn&7.'
@@ -855,8 +872,8 @@ command:
     searching: '#t#&6Hledání Destinace[newline]&eTeleportace za chvíli započne..'
     success: '&7Byli jste náhodně teleportování &8(&7X: {x} Z: {z}&8)&7. Zaplatili
       jste&c ${cost}&7.'
-    perm: '&cNemůžete použít náhodnou teleportaci ve světě&4 {world}&c.
-      &8Potřebujete pravomoc {perm} pro tento svět.'
+    perm: '&cNemůžete použít náhodnou teleportaci ve světě&4 {world}&c. &8Potřebujete
+      pravomoc {perm} pro tento svět.'
   deposit:
     number: '&7Musíte specifikovat množství financí. Použijte &8/&3Lands deposit &8<&3množství&8>
       &7, nebo &8/&3Lands deposit &8<&3země&8> <&3množství&8>&7.'
@@ -917,6 +934,10 @@ command:
       &8Hráči/ky:&7 {players}
       &8Popis:&r {description}
       &7---------<- &5&lOblast&r&7->---------
+    y-level: '&7Aktuálně jste v přírodě, ale toto území je již zabráno zemí&2 {land} &7na jíné Y-úrovni.'
+    y-lock:
+      enabled: '&cPřepnutý y-lock mód: &7Hranice země Vás nyní nebudou následovat nahoru a dolů.'
+      disabled: '&aPřepnutý y-lock mód: &7Hranice země Vás nyní budou následovat nahoru a dolů.'
   map:
     header: '&7-<------------<- &6Mapa Území &7->------------>-[newline]'
     footer: '[newline]&7-<------------<- &6Mapa Území &7->------------>-'
@@ -963,7 +984,8 @@ wars:
         s nimi ve válce.'
       pillage: '&cNemůžete útočit na zemi, pokud nejsou žádní obránci na serveru.
         &7Počkejte prosím, až bude alespoň&3 {defenders} &7obránců na serveru.'
-      wilderness: '&cNa tuto akci v přírodě nemáte pravomoce, protože jste ve válce. &8Vlajka: {flag} &8Pravomoc: {bypass}'
+      wilderness: '&cNa tuto akci v přírodě nemáte pravomoce, protože jste ve válce.
+        &8Vlajka: {flag} &8Pravomoc: {bypass}'
     start:
       broadcast: '&7Válka mezi {attacker} &7a {defender} &7započala. Skončí za&5 {time}&7.'
       participants: |
@@ -1134,7 +1156,8 @@ nations:
       success: '&7Úspěšně jste vytvořili národ&9 {nation} &7se zemí&2 {land} &7jako
         hlavní město. [T]&7Klikněte pro otevření menu.[H]&7Otevřít menu.[/H][C]nations
         menu[/C][/T]'
-      level: '&cAktuálně nemůžete založit národ. &7Vaše Země&2 {land} &7potřebuje mít úroveň alespoň&3 {level} &8(&7Aktuální: {current}&8)&7.'
+      level: '&cAktuálně nemůžete založit národ. &7Vaše Země&2 {land} &7potřebuje
+        mít úroveň alespoň&3 {level} &8(&7Aktuální: {current}&8)&7.'
     trust:
       already: '&cZemě&4 {land} &cje již součástí národa&4 {nation}&c. &7Nejdříve
         musí národ opustit, pomocí &8/&3Nations leave&7.'
